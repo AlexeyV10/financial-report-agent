@@ -1,0 +1,14 @@
+{
+  "admission_version": "1.0",
+  "context_id": "kp3-real-corpus-v1-calculator-v1",
+  "data_origin": "real",
+  "catalog_id": "kp3-real-corpus-v1",
+  "component_digests": {
+    "catalog": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+    "dictionary": "4404a201044d982ff630175a71d08cadb7093e959b988a97533a43f021b6783a",
+    "bindings": "14f62b7b6c7ddc3a4629cc68d096d621bc6616c86df14650df76fe90ca48d0b7",
+    "checks": "335bcbdd8806dd230f55f000d433a19561d9507870c21c6f01496b2a3826dbed"
+  },
+  "resource_policy": "required_for_real",
+  "comparability_records": []
+}

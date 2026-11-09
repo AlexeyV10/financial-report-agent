@@ -1,0 +1,21 @@
+{
+  "child_baseline_files": 542,
+  "unchanged_child_files": 539,
+  "changed_child_baseline_files": [
+    "README.md",
+    "STATUS.md",
+    "docs/decisions.md"
+  ],
+  "previous_doc_bytes_preserved_as_suffix": true,
+  "root_baseline_files": 453,
+  "changed_root_files": [
+    "STATUS.md",
+    "docs/decisions.md"
+  ],
+  "unchanged_root_files": 451,
+  "root_branch": "codex/kp3-01-02-scope-baseline",
+  "root_head": "c18e3febfdbce731c542607a1041cccf190f5798",
+  "parent06_clean": true,
+  "new_primary_files_published": 0,
+  "old_catalogs_gold_tests_src_preserved": true
+}

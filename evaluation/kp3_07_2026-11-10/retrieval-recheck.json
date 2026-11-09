@@ -1,0 +1,72 @@
+{
+  "prepared": {
+    "index": {
+      "status": "indexed",
+      "kind": "prepared",
+      "records": 48,
+      "documents": 8,
+      "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+      "configuration_signature": "ad6f60ca3529bf857197b868b13994c3244e7d95bea478caffe32b1af41a26be",
+      "financial_status": null,
+      "facts_admitted": 0
+    },
+    "case_count": 56,
+    "complete_evidence_cases": 56,
+    "complete_table_cases": 56,
+    "by_family": {
+      "single_cell": {
+        "cases": 48,
+        "all_required_evidence": 48,
+        "all_required_tables": 48
+      },
+      "all_three_two_periods": {
+        "cases": 8,
+        "all_required_evidence": 8,
+        "all_required_tables": 8
+      }
+    },
+    "historical_blocked": 56,
+    "case_status_counts": {
+      "found": 56
+    }
+  },
+  "automatic": {
+    "index": {
+      "status": "indexed",
+      "kind": "automatic",
+      "records": 48,
+      "documents": 8,
+      "index_sha256": "7d1dc62d3020272dec4695aefbbb8a523000c08c9ef208b21dcc11dd1da81943",
+      "configuration_signature": "ad6f60ca3529bf857197b868b13994c3244e7d95bea478caffe32b1af41a26be",
+      "financial_status": null,
+      "facts_admitted": 0
+    },
+    "case_count": 56,
+    "complete_evidence_cases": 46,
+    "complete_table_cases": 46,
+    "by_family": {
+      "single_cell": {
+        "cases": 48,
+        "all_required_evidence": 40,
+        "all_required_tables": 40
+      },
+      "all_three_two_periods": {
+        "cases": 8,
+        "all_required_evidence": 6,
+        "all_required_tables": 6
+      }
+    },
+    "historical_blocked": 56,
+    "case_status_counts": {
+      "unsupported_layout": 8,
+      "found": 46,
+      "partial": 2
+    }
+  },
+  "source_cells_matched": 40,
+  "source_cells_total": 48,
+  "new_index_path": "ignored tmp/retrieval-run-07",
+  "worker_rerun": false,
+  "exports_reused_byte_for_byte": true,
+  "old_signature_dependencies_unchanged": true
+}

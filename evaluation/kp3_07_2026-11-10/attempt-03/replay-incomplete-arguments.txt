@@ -1,0 +1,2 @@
+usage: measure_step12.py [-h] --run-dir RUN_DIR {prepare,collect,grade,replay}
+measure_step12.py: error: the following arguments are required: --run-dir
