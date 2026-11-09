@@ -1,0 +1,438 @@
+{
+  "pdf_worker": "CPython3.12.14; pypdf text locator aid; pdfplumber0.11.9/pdfminer.six20251230 unchanged",
+  "core": "CPython3.14.7 MSYS2; SQLite3.53.4",
+  "renderer": "Existing Poppler pdftoppm, selected pages, no OCR/new library installation",
+  "documents": [
+    {
+      "document_id": "phosagro-2023",
+      "pdf_sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+      "pages": 22,
+      "rendered_financial_pages": [
+        {
+          "local_render_name": "phos23-p4-04.png",
+          "sha256": "ed761b8058c88268e7de9ece159ce365398de2b4642a8a2580b3a20db2ddba00",
+          "visually_inspected_by": "Codex",
+          "public_copy": false
+        },
+        {
+          "local_render_name": "phos23-p5-05.png",
+          "sha256": "630ddc908c5bfcb133ee6d25bdb641e8ea477f706677f4bbb27c7135b23b5206",
+          "visually_inspected_by": "Codex",
+          "public_copy": false
+        }
+      ],
+      "file_status": "available",
+      "preparation_status": "ready",
+      "extraction_status": "unsupported_layout"
+    },
+    {
+      "document_id": "phosagro-2024",
+      "pdf_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "pages": 23,
+      "rendered_financial_pages": [
+        {
+          "local_render_name": "phos24-04.png",
+          "sha256": "1b54f070c76bb356ce24e3e3e7b3f46078c3cc2aaaacce63f0c6615596f8a61f",
+          "visually_inspected_by": "Codex",
+          "public_copy": false
+        },
+        {
+          "local_render_name": "phos24-05.png",
+          "sha256": "3722236eabdc9d082450e64904ab8c933d616f0c714b22ea733a09e13b8edbba",
+          "visually_inspected_by": "Codex",
+          "public_copy": false
+        }
+      ],
+      "file_status": "available",
+      "preparation_status": "ready",
+      "extraction_status": "extracted"
+    },
+    {
+      "document_id": "phosagro-2025",
+      "pdf_sha256": "c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+      "pages": 45,
+      "rendered_financial_pages": [
+        {
+          "local_render_name": "phos25-p8-08.png",
+          "sha256": "6f7ba8238c884e314591469d825abc8f6b6abc2efd80b5628ef7ae24dd99eb9e",
+          "visually_inspected_by": "Codex",
+          "public_copy": false
+        },
+        {
+          "local_render_name": "phos25-p10-10.png",
+          "sha256": "137d123002032bc665345c86d61752f28f0336fa819e16ab51abcfb941a38fc4",
+          "visually_inspected_by": "Codex",
+          "public_copy": false
+        }
+      ],
+      "file_status": "available",
+      "preparation_status": "ready",
+      "extraction_status": "extracted"
+    },
+    {
+      "document_id": "phosagro-2025-q1",
+      "pdf_sha256": "8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+      "pages": 24,
+      "rendered_financial_pages": [
+        {
+          "local_render_name": "phosq1-p5-05.png",
+          "sha256": "c7db505a560415bff432a1c96ae6bd95e07a32dd9915f497ad0b110b5a9b0fab",
+          "visually_inspected_by": "Codex",
+          "public_copy": false
+        },
+        {
+          "local_render_name": "phosq1-p7-07.png",
+          "sha256": "3f02b39aecd01385021163099c05b95f4d5f171a980aea69b596528cf5bb3830",
+          "visually_inspected_by": "Codex",
+          "public_copy": false
+        }
+      ],
+      "file_status": "available",
+      "preparation_status": "ready",
+      "extraction_status": "unsupported_layout"
+    },
+    {
+      "document_id": "phosagro-2025-h1",
+      "pdf_sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+      "pages": 25,
+      "rendered_financial_pages": [
+        {
+          "local_render_name": "phosh1-p5-05.png",
+          "sha256": "698ac69d12c2d83589b2bfc20a6deca934bc41b9de38c520acb0edaaa034cfa9",
+          "visually_inspected_by": "Codex",
+          "public_copy": false
+        },
+        {
+          "local_render_name": "phosh1-p7-07.png",
+          "sha256": "379a9f99556cd0cf784641a6ee66203b48aeda6ed1011fb308a6fef16f91e78f",
+          "visually_inspected_by": "Codex",
+          "public_copy": false
+        }
+      ],
+      "file_status": "available",
+      "preparation_status": "ready",
+      "extraction_status": "extracted"
+    },
+    {
+      "document_id": "phosagro-2025-9m",
+      "pdf_sha256": "147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+      "pages": 24,
+      "rendered_financial_pages": [
+        {
+          "local_render_name": "phos9m-p5-05.png",
+          "sha256": "841fda1363b5ae8bf5d467e1c961b3f589dbb8d385d12de3adeaa58820c641f0",
+          "visually_inspected_by": "Codex",
+          "public_copy": false
+        },
+        {
+          "local_render_name": "phos9m-p7-07.png",
+          "sha256": "c1aa38757c192d17372d1ccee0afcf684defc4526dbdcd7d4b1ea08b1b620c16",
+          "visually_inspected_by": "Codex",
+          "public_copy": false
+        }
+      ],
+      "file_status": "available",
+      "preparation_status": "ready",
+      "extraction_status": "extracted"
+    },
+    {
+      "document_id": "segezha-2021",
+      "pdf_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+      "pages": 61,
+      "rendered_financial_pages": [
+        {
+          "local_render_name": "seg21-p11-11.png",
+          "sha256": "6c1e4690684c0acd2466e1379f1873e11940eb27bd8b763f226f2c6b7b77c1e5",
+          "visually_inspected_by": "Codex",
+          "public_copy": false
+        },
+        {
+          "local_render_name": "seg21-p14-14.png",
+          "sha256": "7d9b88e83f4d6374e6930b572a6f3aaeeb04f4d13892e2e90e43999227b8c1e9",
+          "visually_inspected_by": "Codex",
+          "public_copy": false
+        }
+      ],
+      "file_status": "available",
+      "preparation_status": "ready",
+      "extraction_status": "extracted"
+    },
+    {
+      "document_id": "segezha-2022",
+      "pdf_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+      "pages": 58,
+      "rendered_financial_pages": [
+        {
+          "local_render_name": "seg22-p9-09.png",
+          "sha256": "2fe45b64b8779feb483900d7950ab47d62e8f9eb52c4c9c5c823d73efb4dcea5",
+          "visually_inspected_by": "Codex",
+          "public_copy": false
+        },
+        {
+          "local_render_name": "seg22-p12-12.png",
+          "sha256": "7d9485b9c56aace392d42f2fed5304d811b252efa2019a5104f177cfb5fdb841",
+          "visually_inspected_by": "Codex",
+          "public_copy": false
+        }
+      ],
+      "file_status": "available",
+      "preparation_status": "ready",
+      "extraction_status": "extracted"
+    }
+  ],
+  "text_token_corroborations": 40,
+  "text_token_missing": 8,
+  "tokens": [
+    {
+      "evidence_id": "phosagro-2023-revenue-2023-ev",
+      "raw_token_found": false,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2023-revenue-2022-ev",
+      "raw_token_found": false,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2023-operating_profit-2023-ev",
+      "raw_token_found": false,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2023-operating_profit-2022-ev",
+      "raw_token_found": false,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2023-operating_cash_flow-2023-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2023-operating_cash_flow-2022-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2024-revenue-2024-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2024-revenue-2023-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2024-operating_profit-2024-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2024-operating_profit-2023-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2024-operating_cash_flow-2024-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2024-operating_cash_flow-2023-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-revenue-2025-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-revenue-2024-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-operating_profit-2025-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-operating_profit-2024-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-operating_cash_flow-2025-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-operating_cash_flow-2024-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-q1-revenue-2025-ev",
+      "raw_token_found": false,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-q1-revenue-2024-ev",
+      "raw_token_found": false,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-q1-operating_profit-2025-ev",
+      "raw_token_found": false,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-q1-operating_profit-2024-ev",
+      "raw_token_found": false,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-q1-operating_cash_flow-2025-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-q1-operating_cash_flow-2024-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-h1-revenue-2025-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-h1-revenue-2024-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-h1-operating_profit-2025-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-h1-operating_profit-2024-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-h1-operating_cash_flow-2025-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-h1-operating_cash_flow-2024-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-9m-revenue-2025-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-9m-revenue-2024-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-9m-operating_profit-2025-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-9m-operating_profit-2024-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-9m-operating_cash_flow-2025-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "phosagro-2025-9m-operating_cash_flow-2024-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "segezha-2021-revenue-2021-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "segezha-2021-revenue-2020-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "segezha-2021-operating_profit-2021-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "segezha-2021-operating_profit-2020-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "segezha-2021-operating_cash_flow-2021-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "segezha-2021-operating_cash_flow-2020-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "segezha-2022-revenue-2022-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "segezha-2022-revenue-2021-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "segezha-2022-operating_profit-2022-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "segezha-2022-operating_profit-2021-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "segezha-2022-operating_cash_flow-2022-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    },
+    {
+      "evidence_id": "segezha-2022-operating_cash_flow-2021-ev",
+      "raw_token_found": true,
+      "financial_meaning_proven_by_text_search": false
+    }
+  ],
+  "financial_page_images_inspected": 16,
+  "excluded_vk_basis_page_inspected": 12,
+  "raw_resources_committed": false,
+  "diagnostics": [
+    "PhosAgro2023 andQ1 2025 income tables missing in text; visual/manual preparation recorded, unsupported_layout retained.",
+    "Poppler emitted missing Symbol/ArialUnicode/font-type warnings; selected rendered cells/headers were legible and inspected.",
+    "First old-PDF render used wrong relative path and failed; corrected to actual existing file, no re-download/overwrite.",
+    "One exploratory PowerShell quoting error; moved inspection into a local script.",
+    "e-disclosure HTML fetch HTTP403 after real escalated request; no exact publication binding established."
+  ],
+  "limitations": "SHA/render hash only identifies bytes. Visual review is assistant_checked, no independent human review, no general extraction accuracy metric."
+}

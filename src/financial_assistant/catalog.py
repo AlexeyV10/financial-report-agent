@@ -149,7 +149,7 @@ def validate_catalog(catalog):
             need(locator["kind"] == "synthetic", "invalid_synthetic_locator")
             for key in ("record_id", "row_label", "column_label", "unit_header"):
                 text(locator[key])
-        need(ev["numeric_encoding"] in {"decimal_string", "comma_thousands_integer"}, "unsupported_numeric_encoding")
+        need(ev["numeric_encoding"] in {"decimal_string", "comma_thousands_integer", "space_thousands_integer"}, "unsupported_numeric_encoding")
         if ev["raw_value"] is not None:
             _raw_number(ev)
         provenance(ev["provenance"])
@@ -190,6 +190,16 @@ def validate_catalog(catalog):
 def _raw_number(ev):
     if ev["numeric_encoding"] == "decimal_string":
         return number(ev["raw_value"])
+    if ev["numeric_encoding"] == "space_thousands_integer":
+        # Explicit source notation, not locale guessing or PDF extraction.
+        import re
+        raw = ev["raw_value"]
+        need(isinstance(raw, str) and len(raw) <= 60, "invalid_raw_number")
+        negative = raw.startswith("(") and raw.endswith(")")
+        body = raw[1:-1] if negative else raw
+        need(re.fullmatch(r"(?:[0-9]{1,3}(?: [0-9]{3})+|[0-9]+)", body) is not None,
+             "invalid_raw_number")
+        return number(("-" if negative else "") + body.replace(" ", ""))
     from .contracts import source_number, ContractError as LegacyError
     try:
         return source_number(ev["raw_value"])

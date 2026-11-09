@@ -1,0 +1,20 @@
+{
+  "purpose": "Versioned preparation artifacts, NOT final evaluation freeze14",
+  "final_eval_freeze": false,
+  "file_sha256": {
+    "data/catalogs/kp3_corpus_v1/runtime_catalog.json": "2fc834375994a396023c058246a460eebd67181dc0234dd34dca5294978d8e58",
+    "data/catalogs/kp3_corpus_v1/source_bindings.json": "603b13fc4070cf95aacdc0f3392a310bccf80374ac7a51065d25fa3a14feef10",
+    "data/catalogs/kp3_corpus_v1/manifest.json": "b3fbbb04ac2ce2e6d0433d4d9b75b8f0a12901a68d21b7fce0ffda1ceb86de3b",
+    "scripts/check_kp3_corpus.py": "1f98ff2ce0ac9c99335e87c302686b214cd1cdef93100a941c901ec2c50850fb",
+    "tests/test_kp3_corpus.py": "4304dd4556e4618c95d65c9ca7317ac3e1a5984a9ce0f16cd4e7f296f2d11a6d",
+    "src/financial_assistant/catalog.py": "bd6f6f32d8c43db3f8d11a686a2fb63a16029c59e73b12996e6919a50805a8ae",
+    "docs/kp3/contracts_v02.md": "ee093b7229a24b63ae62f5805ce2f77da6d6710e32b9b1d302fdcf4b4754eb4a",
+    "docs/kp3/corpus_v1.md": "cabde93e3215ce499c873ce868a3913f121315c17208c043fce3ddb514496bfc",
+    "prompts/kp3_06_generalize_extraction_and_search.md": "baf174dffe0f02b95f5c92748e2b4067b7a65ee009a1331f45eede53e753aef8",
+    "README.md": "c9b83158817f433d9be1ec6b93e4f01a8f462cb641d1580c5869df5529fe9857",
+    "STATUS.md": "a3dd667fba812acf50d070d5a5665ff9344bba8f2689299fc3dbff444a7ad679",
+    "docs/decisions.md": "bcd353544272354919dede5b4c3709701685b82bf90d9cdeb4ff5ac072b612ad"
+  },
+  "parent_method_gold_sha256": "546343e11f857a614bd4a56a8363a2e7193439291b782f4c51c97ec8b3281318",
+  "frozen_kp2_and_prior_evidence_preserved": true
+}

@@ -1,0 +1,28 @@
+{
+  "corpus_version": "1.0",
+  "schema_version": "0.2",
+  "catalog_id": "kp3-real-corpus-v1",
+  "requires_numeric_encoding": [
+    "comma_thousands_integer",
+    "space_thousands_integer"
+  ],
+  "file_sha256": {
+    "data/catalogs/kp3_corpus_v1/runtime_catalog.json": "2fc834375994a396023c058246a460eebd67181dc0234dd34dca5294978d8e58",
+    "data/catalogs/kp3_corpus_v1/source_bindings.json": "603b13fc4070cf95aacdc0f3392a310bccf80374ac7a51065d25fa3a14feef10",
+    "evaluation/kp3_05_2026-11-09/source-checks.json": "89fbdf454c4a3606db3ec0502fe407001a939dcd0467e319b6fc62dba22a807f",
+    "evaluation/kp3_05_2026-11-09/candidates.json": "9ab35f5ad6458dd12acc2941a07231775a3513863aac271470fb81ce0b053b2c",
+    "evaluation/kp3_05_2026-11-09/control-calculations.json": "4285fe2c222f33c15400561d320bc5cb08a13c054b952ed9b6a215c6920d5b74",
+    "evaluation/kp3_05_2026-11-09/version-observations.json": "96b8a1f3c4daa04f92840775e4720d352eddfcc09e5c3504523bd5d367805ac7",
+    "evaluation/kp3_05_2026-11-09/publication-investigation.json": "16fa9dfb6108261636be809691a94268788b98b46d88b4c6d32b88a69d567bde"
+  },
+  "families": {
+    "phosagro_spread": "open_dev_known_to_developer",
+    "phosagro_standalone": "open_dev_known_to_developer",
+    "segezha_standalone": "open_dev_known_to_developer"
+  },
+  "final_eval_freeze": false,
+  "reserved_unseen_real_documents": 0,
+  "raw_sources_in_git": false,
+  "legacy_reused_cells": 2,
+  "newly_annotated_version_cells": 46
+}

@@ -1,0 +1,1033 @@
+{
+  "binding_version": "1.0",
+  "catalog_id": "kp3-real-corpus-v1",
+  "bindings": [
+    {
+      "binding_id": "phosagro-2023-binding",
+      "document_id": "phosagro-2023",
+      "document_sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+      "organization_id": "phosagro_group",
+      "standard": "IFRS",
+      "nonfinancial_group": true,
+      "definition_ids": [
+        "revenue:nonfinancial_ifrs_reported_v1",
+        "operating_profit:nonfinancial_ifrs_reported_v1",
+        "operating_cash_flow:nonfinancial_ifrs_net_v1"
+      ],
+      "source_pages": {
+        "income": 4,
+        "cash_flow": 5,
+        "basis": 6,
+        "audit": 1
+      },
+      "unit_header": "Млн руб.",
+      "scale": 1000000,
+      "currency": "RUB",
+      "column_years": [
+        2023,
+        2022
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2022-01-01",
+          "end": "2022-12-31"
+        }
+      ],
+      "layout_family": "phosagro_spread",
+      "official_anchor": {
+        "page_url": "https://ar2023.phosagro.ru/additional-information/financial-statements",
+        "page_sha256": "e2965524fceb331e9120cb525def8e6f25731434fe809c3e49df27b756563032",
+        "document_url": "https://ar2023.phosagro.ru/pdf/ar/ru/additional-information_financial-statements.pdf",
+        "checked_on": "2026-11-09"
+      },
+      "fact_ids": [
+        "phosagro-2023-revenue-2023",
+        "phosagro-2023-revenue-2022",
+        "phosagro-2023-operating_profit-2023",
+        "phosagro-2023-operating_profit-2022",
+        "phosagro-2023-operating_cash_flow-2023",
+        "phosagro-2023-operating_cash_flow-2022"
+      ],
+      "op_composition": {
+        "row_labels": [
+          "Валовая прибыль",
+          "Административные и коммерческие расходы",
+          "Налоги, кроме налога на прибыль",
+          "Прочие расходы, нетто",
+          "Курсовые разницы по операционной деятельности, нетто"
+        ],
+        "signed_values_by_column": [
+          [
+            188688,
+            -32282,
+            -12779,
+            -7557,
+            14686
+          ],
+          [
+            300509,
+            -42403,
+            -11327,
+            -9371,
+            -9068
+          ]
+        ],
+        "reported_totals": [
+          150756,
+          228340
+        ],
+        "meaning": "Reported subtotal including the listed issuer-specific operating items; excludes the financial rows below. Not EBITDA; not an IFRS18 standardized subtotal."
+      },
+      "cfo_composition": {
+        "row_labels": [
+          "Денежные средства от операционной деятельности до уплаты налога на прибыль и процентов",
+          "Налог на прибыль уплаченный",
+          "Финансовые расходы уплаченные",
+          "Обеспечительный платеж по налогу на сверхприбыль"
+        ],
+        "signed_values_by_column": [
+          [
+            177796,
+            -29777,
+            -7378,
+            -6355
+          ],
+          [
+            250367,
+            -41811,
+            -5275,
+            0
+          ]
+        ],
+        "reported_totals": [
+          134286,
+          203281
+        ],
+        "meaning": "Final signed net operating subtotal AFTER the displayed tax/interest items. No positive-outflow sign inversion."
+      },
+      "revenue_basis": "Reported consolidated revenue row; sales/IFRS15 policy, not cash receipts. Own source mapping; legacy mapping not inherited.",
+      "comparability": "Within the exact two printed columns only. Cross-version/issuer comparability is not automatically established.",
+      "ifrs18_basis": "PhosAgro annual note2 lists IFRS18 among not early adopted standards (PDF p7 for 2023/2024; p14 for 2025); interim note2 retains annual2024 policies. Segezha2021/2022 report-defined subtotal predates the standard; no claim of adoption.",
+      "extraction_detail": "Text layer incomplete: income table needs visual/manual preparation; extracted does not mean every table extracted.",
+      "review_status": "assistant_checked",
+      "human_reviewer": null,
+      "negative_source_context": {
+        "pdf_page": 4,
+        "row_label": "Административные и коммерческие расходы",
+        "column_label": "2023",
+        "raw_value": "(32,282)",
+        "signed_value": "-32282",
+        "currency": "RUB",
+        "scale": 1000000,
+        "document_sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+        "status": "assistant_checked",
+        "admitted_as_runtime_fact": false,
+        "reason": "Expense context verifies sign/composition; no fourth metric definition introduced."
+      }
+    },
+    {
+      "binding_id": "phosagro-2024-binding",
+      "document_id": "phosagro-2024",
+      "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "organization_id": "phosagro_group",
+      "standard": "IFRS",
+      "nonfinancial_group": true,
+      "definition_ids": [
+        "revenue:nonfinancial_ifrs_reported_v1",
+        "operating_profit:nonfinancial_ifrs_reported_v1",
+        "operating_cash_flow:nonfinancial_ifrs_net_v1"
+      ],
+      "source_pages": {
+        "income": 4,
+        "cash_flow": 5,
+        "basis": 6,
+        "audit": 1
+      },
+      "unit_header": "Млн руб.",
+      "scale": 1000000,
+      "currency": "RUB",
+      "column_years": [
+        2024,
+        2023
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        }
+      ],
+      "layout_family": "phosagro_spread",
+      "official_anchor": {
+        "page_url": "https://ar2024.phosagro.ru/additional-information/financial-statements",
+        "page_sha256": "fbb56dc4be11058110b1f2edafc2be47cd6209ad0e4bd6bd75c1ce5b47f9a52a",
+        "document_url": "https://ar2024.phosagro.ru/pdf/ar/ru/additional-information_financial-statements.pdf",
+        "checked_on": "2026-11-09"
+      },
+      "fact_ids": [
+        "phosagro-2024-revenue-2024",
+        "phosagro-2024-revenue-2023",
+        "phosagro-2024-operating_profit-2024",
+        "phosagro-2024-operating_profit-2023",
+        "phosagro-2024-operating_cash_flow-2024",
+        "phosagro-2024-operating_cash_flow-2023"
+      ],
+      "op_composition": {
+        "row_labels": [
+          "Валовая прибыль",
+          "Административные и коммерческие расходы",
+          "Налоги, кроме налога на прибыль",
+          "Прочие расходы, нетто",
+          "Курсовые разницы по операционной деятельности, нетто"
+        ],
+        "signed_values_by_column": [
+          [
+            201530,
+            -41620,
+            -15489,
+            -10414,
+            6452
+          ],
+          [
+            188688,
+            -32282,
+            -12779,
+            -7557,
+            14686
+          ]
+        ],
+        "reported_totals": [
+          140459,
+          150756
+        ],
+        "meaning": "Reported subtotal including the listed issuer-specific operating items; excludes the financial rows below. Not EBITDA; not an IFRS18 standardized subtotal."
+      },
+      "cfo_composition": {
+        "row_labels": [
+          "Денежные средства от операционной деятельности до уплаты налога на прибыль и процентов",
+          "Налог на прибыль уплаченный",
+          "Финансовые расходы уплаченные",
+          "Обеспечительный платеж по налогу на сверхприбыль"
+        ],
+        "signed_values_by_column": [
+          [
+            128340,
+            -20953,
+            -14670,
+            0
+          ],
+          [
+            177796,
+            -29777,
+            -7378,
+            -6355
+          ]
+        ],
+        "reported_totals": [
+          92717,
+          134286
+        ],
+        "meaning": "Final signed net operating subtotal AFTER the displayed tax/interest items. No positive-outflow sign inversion."
+      },
+      "revenue_basis": "Reported consolidated revenue row; sales/IFRS15 policy, not cash receipts. Own source mapping; legacy mapping not inherited.",
+      "comparability": "Within the exact two printed columns only. Cross-version/issuer comparability is not automatically established.",
+      "ifrs18_basis": "PhosAgro annual note2 lists IFRS18 among not early adopted standards (PDF p7 for 2023/2024; p14 for 2025); interim note2 retains annual2024 policies. Segezha2021/2022 report-defined subtotal predates the standard; no claim of adoption.",
+      "extraction_detail": "Page text obtained; numeric meaning admitted only after visual checks.",
+      "review_status": "assistant_checked",
+      "human_reviewer": null,
+      "negative_source_context": {
+        "pdf_page": 4,
+        "row_label": "Административные и коммерческие расходы",
+        "column_label": "2024",
+        "raw_value": "(41,620)",
+        "signed_value": "-41620",
+        "currency": "RUB",
+        "scale": 1000000,
+        "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+        "status": "assistant_checked",
+        "admitted_as_runtime_fact": false,
+        "reason": "Expense context verifies sign/composition; no fourth metric definition introduced."
+      }
+    },
+    {
+      "binding_id": "phosagro-2025-binding",
+      "document_id": "phosagro-2025",
+      "document_sha256": "c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+      "organization_id": "phosagro_group",
+      "standard": "IFRS",
+      "nonfinancial_group": true,
+      "definition_ids": [
+        "revenue:nonfinancial_ifrs_reported_v1",
+        "operating_profit:nonfinancial_ifrs_reported_v1",
+        "operating_cash_flow:nonfinancial_ifrs_net_v1"
+      ],
+      "source_pages": {
+        "income": 8,
+        "cash_flow": 10,
+        "basis": 13,
+        "audit": 3
+      },
+      "unit_header": "Млн руб.",
+      "scale": 1000000,
+      "currency": "RUB",
+      "column_years": [
+        2025,
+        2024
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "layout_family": "phosagro_standalone_two_columns",
+      "official_anchor": {
+        "page_url": "https://www.phosagro.ru/ori/phosagro/godovaya-i-promezhutochnaya-bukhgalterskaya-otchetnost-obshchestva/",
+        "page_sha256": "051087a58eb52112281f814ee6d0b8ab6a86f7ac7695ef569621d1ba918b5bf4",
+        "document_url": "https://cdn.phosagro.ru/upload/iblock/67b/jh26rx7hvbf68rtnjraycvyc8wq0poiu.pdf",
+        "checked_on": "2026-11-09"
+      },
+      "fact_ids": [
+        "phosagro-2025-revenue-2025",
+        "phosagro-2025-revenue-2024",
+        "phosagro-2025-operating_profit-2025",
+        "phosagro-2025-operating_profit-2024",
+        "phosagro-2025-operating_cash_flow-2025",
+        "phosagro-2025-operating_cash_flow-2024"
+      ],
+      "op_composition": {
+        "row_labels": [
+          "Валовая прибыль",
+          "Административные и коммерческие расходы",
+          "Налоги, кроме налога на прибыль",
+          "Прочие расходы, нетто",
+          "Курсовые разницы по операционной деятельности, нетто"
+        ],
+        "signed_values_by_column": [
+          [
+            226369,
+            -45288,
+            -11856,
+            -10489,
+            -23131
+          ],
+          [
+            201530,
+            -41620,
+            -15489,
+            -10414,
+            6452
+          ]
+        ],
+        "reported_totals": [
+          135605,
+          140459
+        ],
+        "meaning": "Reported subtotal including the listed issuer-specific operating items; excludes the financial rows below. Not EBITDA; not an IFRS18 standardized subtotal."
+      },
+      "cfo_composition": {
+        "row_labels": [
+          "Денежные средства от операционной деятельности до уплаты налога на прибыль и процентов",
+          "Налог на прибыль уплаченный",
+          "Финансовые расходы уплаченные"
+        ],
+        "signed_values_by_column": [
+          [
+            150944,
+            -34430,
+            -23400
+          ],
+          [
+            128340,
+            -20953,
+            -14670
+          ]
+        ],
+        "reported_totals": [
+          93114,
+          92717
+        ],
+        "meaning": "Final signed net operating subtotal AFTER the displayed tax/interest items. No positive-outflow sign inversion."
+      },
+      "revenue_basis": "Reported consolidated revenue row; sales/IFRS15 policy, not cash receipts. Own source mapping; legacy mapping not inherited.",
+      "comparability": "Within the exact two printed columns only. Cross-version/issuer comparability is not automatically established.",
+      "ifrs18_basis": "PhosAgro annual note2 lists IFRS18 among not early adopted standards (PDF p7 for 2023/2024; p14 for 2025); interim note2 retains annual2024 policies. Segezha2021/2022 report-defined subtotal predates the standard; no claim of adoption.",
+      "extraction_detail": "Page text obtained; numeric meaning admitted only after visual checks.",
+      "review_status": "assistant_checked",
+      "human_reviewer": null,
+      "negative_source_context": {
+        "pdf_page": 8,
+        "row_label": "Административные и коммерческие расходы",
+        "column_label": "2025",
+        "raw_value": "(45,288)",
+        "signed_value": "-45288",
+        "currency": "RUB",
+        "scale": 1000000,
+        "document_sha256": "c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+        "status": "assistant_checked",
+        "admitted_as_runtime_fact": false,
+        "reason": "Expense context verifies sign/composition; no fourth metric definition introduced."
+      }
+    },
+    {
+      "binding_id": "phosagro-2025-q1-binding",
+      "document_id": "phosagro-2025-q1",
+      "document_sha256": "8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+      "organization_id": "phosagro_group",
+      "standard": "IFRS",
+      "nonfinancial_group": true,
+      "definition_ids": [
+        "revenue:nonfinancial_ifrs_reported_v1",
+        "operating_profit:nonfinancial_ifrs_reported_v1",
+        "operating_cash_flow:nonfinancial_ifrs_net_v1"
+      ],
+      "source_pages": {
+        "income": 5,
+        "cash_flow": 7,
+        "basis": 10,
+        "audit": 3
+      },
+      "unit_header": "Млн руб.",
+      "scale": 1000000,
+      "currency": "RUB",
+      "column_years": [
+        2025,
+        2024
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "quarter",
+          "start": "2025-01-01",
+          "end": "2025-03-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "quarter",
+          "start": "2024-01-01",
+          "end": "2024-03-31"
+        }
+      ],
+      "layout_family": "phosagro_standalone_two_columns",
+      "official_anchor": {
+        "page_url": "https://www.phosagro.ru/ori/phosagro/godovaya-i-promezhutochnaya-bukhgalterskaya-otchetnost-obshchestva/",
+        "page_sha256": "051087a58eb52112281f814ee6d0b8ab6a86f7ac7695ef569621d1ba918b5bf4",
+        "document_url": "https://cdn.phosagro.ru/upload/iblock/de1/v2nf4rrgafflloe52noadg1jxxl0ytv6.pdf",
+        "checked_on": "2026-11-09"
+      },
+      "fact_ids": [
+        "phosagro-2025-q1-revenue-2025",
+        "phosagro-2025-q1-revenue-2024",
+        "phosagro-2025-q1-operating_profit-2025",
+        "phosagro-2025-q1-operating_profit-2024",
+        "phosagro-2025-q1-operating_cash_flow-2025",
+        "phosagro-2025-q1-operating_cash_flow-2024"
+      ],
+      "op_composition": {
+        "row_labels": [
+          "Валовая прибыль",
+          "Административные и коммерческие расходы",
+          "Налоги, кроме налога на прибыль",
+          "Прочие расходы, нетто",
+          "Курсовые разницы по операционной деятельности, нетто"
+        ],
+        "signed_values_by_column": [
+          [
+            70943,
+            -10281,
+            -3110,
+            -2300,
+            -16436
+          ],
+          [
+            43774,
+            -9597,
+            -3457,
+            -2099,
+            1184
+          ]
+        ],
+        "reported_totals": [
+          38816,
+          29805
+        ],
+        "meaning": "Reported subtotal including the listed issuer-specific operating items; excludes the financial rows below. Not EBITDA; not an IFRS18 standardized subtotal."
+      },
+      "cfo_composition": {
+        "row_labels": [
+          "Денежные средства от операционной деятельности до уплаты налога на прибыль и процентов",
+          "Налог на прибыль уплаченный",
+          "Финансовые расходы уплаченные"
+        ],
+        "signed_values_by_column": [
+          [
+            66902,
+            -9107,
+            -6955
+          ],
+          [
+            28800,
+            -6321,
+            -2773
+          ]
+        ],
+        "reported_totals": [
+          50840,
+          19706
+        ],
+        "meaning": "Final signed net operating subtotal AFTER the displayed tax/interest items. No positive-outflow sign inversion."
+      },
+      "revenue_basis": "Reported consolidated revenue row; sales/IFRS15 policy, not cash receipts. Own source mapping; legacy mapping not inherited.",
+      "comparability": "Within the exact two printed columns only. Cross-version/issuer comparability is not automatically established.",
+      "ifrs18_basis": "PhosAgro annual note2 lists IFRS18 among not early adopted standards (PDF p7 for 2023/2024; p14 for 2025); interim note2 retains annual2024 policies. Segezha2021/2022 report-defined subtotal predates the standard; no claim of adoption.",
+      "extraction_detail": "Text layer incomplete: income table needs visual/manual preparation; extracted does not mean every table extracted.",
+      "review_status": "assistant_checked",
+      "human_reviewer": null,
+      "negative_source_context": {
+        "pdf_page": 5,
+        "row_label": "Административные и коммерческие расходы",
+        "column_label": "2025",
+        "raw_value": "(10,281)",
+        "signed_value": "-10281",
+        "currency": "RUB",
+        "scale": 1000000,
+        "document_sha256": "8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+        "status": "assistant_checked",
+        "admitted_as_runtime_fact": false,
+        "reason": "Expense context verifies sign/composition; no fourth metric definition introduced."
+      }
+    },
+    {
+      "binding_id": "phosagro-2025-h1-binding",
+      "document_id": "phosagro-2025-h1",
+      "document_sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+      "organization_id": "phosagro_group",
+      "standard": "IFRS",
+      "nonfinancial_group": true,
+      "definition_ids": [
+        "revenue:nonfinancial_ifrs_reported_v1",
+        "operating_profit:nonfinancial_ifrs_reported_v1",
+        "operating_cash_flow:nonfinancial_ifrs_net_v1"
+      ],
+      "source_pages": {
+        "income": 5,
+        "cash_flow": 7,
+        "basis": 10,
+        "audit": 3
+      },
+      "unit_header": "Млн руб.",
+      "scale": 1000000,
+      "currency": "RUB",
+      "column_years": [
+        2025,
+        2024
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "year_to_date",
+          "start": "2025-01-01",
+          "end": "2025-06-30"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "year_to_date",
+          "start": "2024-01-01",
+          "end": "2024-06-30"
+        }
+      ],
+      "layout_family": "phosagro_standalone_four_columns",
+      "official_anchor": {
+        "page_url": "https://www.phosagro.ru/ori/phosagro/godovaya-i-promezhutochnaya-bukhgalterskaya-otchetnost-obshchestva/",
+        "page_sha256": "051087a58eb52112281f814ee6d0b8ab6a86f7ac7695ef569621d1ba918b5bf4",
+        "document_url": "https://cdn.phosagro.ru/upload/iblock/c2c/fsrd93o32jfpw73r5r4817rju383q066.pdf",
+        "checked_on": "2026-11-09"
+      },
+      "fact_ids": [
+        "phosagro-2025-h1-revenue-2025",
+        "phosagro-2025-h1-revenue-2024",
+        "phosagro-2025-h1-operating_profit-2025",
+        "phosagro-2025-h1-operating_profit-2024",
+        "phosagro-2025-h1-operating_cash_flow-2025",
+        "phosagro-2025-h1-operating_cash_flow-2024"
+      ],
+      "op_composition": {
+        "row_labels": [
+          "Валовая прибыль",
+          "Административные и коммерческие расходы",
+          "Налоги, кроме налога на прибыль",
+          "Прочие расходы, нетто",
+          "Курсовые разницы по операционной деятельности, нетто"
+        ],
+        "signed_values_by_column": [
+          [
+            126562,
+            -21000,
+            -5975,
+            -4059,
+            -20682
+          ],
+          [
+            90816,
+            -19972,
+            -7585,
+            -4944,
+            -2280
+          ]
+        ],
+        "reported_totals": [
+          74846,
+          56035
+        ],
+        "meaning": "Reported subtotal including the listed issuer-specific operating items; excludes the financial rows below. Not EBITDA; not an IFRS18 standardized subtotal."
+      },
+      "cfo_composition": {
+        "row_labels": [
+          "Денежные средства от операционной деятельности до уплаты налога на прибыль и процентов",
+          "Налог на прибыль уплаченный",
+          "Финансовые расходы уплаченные"
+        ],
+        "signed_values_by_column": [
+          [
+            121795,
+            -18510,
+            -13796
+          ],
+          [
+            81407,
+            -10969,
+            -5983
+          ]
+        ],
+        "reported_totals": [
+          89489,
+          64455
+        ],
+        "meaning": "Final signed net operating subtotal AFTER the displayed tax/interest items. No positive-outflow sign inversion."
+      },
+      "revenue_basis": "Reported consolidated revenue row; sales/IFRS15 policy, not cash receipts. Own source mapping; legacy mapping not inherited.",
+      "comparability": "Within the exact two printed columns only. Cross-version/issuer comparability is not automatically established.",
+      "ifrs18_basis": "PhosAgro annual note2 lists IFRS18 among not early adopted standards (PDF p7 for 2023/2024; p14 for 2025); interim note2 retains annual2024 policies. Segezha2021/2022 report-defined subtotal predates the standard; no claim of adoption.",
+      "extraction_detail": "Page text obtained; numeric meaning admitted only after visual checks.",
+      "review_status": "assistant_checked",
+      "human_reviewer": null,
+      "negative_source_context": {
+        "pdf_page": 5,
+        "row_label": "Административные и коммерческие расходы",
+        "column_label": "2025",
+        "raw_value": "(21,000)",
+        "signed_value": "-21000",
+        "currency": "RUB",
+        "scale": 1000000,
+        "document_sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+        "status": "assistant_checked",
+        "admitted_as_runtime_fact": false,
+        "reason": "Expense context verifies sign/composition; no fourth metric definition introduced."
+      }
+    },
+    {
+      "binding_id": "phosagro-2025-9m-binding",
+      "document_id": "phosagro-2025-9m",
+      "document_sha256": "147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+      "organization_id": "phosagro_group",
+      "standard": "IFRS",
+      "nonfinancial_group": true,
+      "definition_ids": [
+        "revenue:nonfinancial_ifrs_reported_v1",
+        "operating_profit:nonfinancial_ifrs_reported_v1",
+        "operating_cash_flow:nonfinancial_ifrs_net_v1"
+      ],
+      "source_pages": {
+        "income": 5,
+        "cash_flow": 7,
+        "basis": 10,
+        "audit": 3
+      },
+      "unit_header": "Млн руб.",
+      "scale": 1000000,
+      "currency": "RUB",
+      "column_years": [
+        2025,
+        2024
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "year_to_date",
+          "start": "2025-01-01",
+          "end": "2025-09-30"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "year_to_date",
+          "start": "2024-01-01",
+          "end": "2024-09-30"
+        }
+      ],
+      "layout_family": "phosagro_standalone_four_columns",
+      "official_anchor": {
+        "page_url": "https://www.phosagro.ru/ori/phosagro/godovaya-i-promezhutochnaya-bukhgalterskaya-otchetnost-obshchestva/",
+        "page_sha256": "051087a58eb52112281f814ee6d0b8ab6a86f7ac7695ef569621d1ba918b5bf4",
+        "document_url": "https://cdn.phosagro.ru/upload/iblock/aae/23ow6wos9l3tcnrbqb0pp29l246tcsn3.pdf",
+        "checked_on": "2026-11-09"
+      },
+      "fact_ids": [
+        "phosagro-2025-9m-revenue-2025",
+        "phosagro-2025-9m-revenue-2024",
+        "phosagro-2025-9m-operating_profit-2025",
+        "phosagro-2025-9m-operating_profit-2024",
+        "phosagro-2025-9m-operating_cash_flow-2025",
+        "phosagro-2025-9m-operating_cash_flow-2024"
+      ],
+      "op_composition": {
+        "row_labels": [
+          "Валовая прибыль",
+          "Административные и коммерческие расходы",
+          "Налоги, кроме налога на прибыль",
+          "Прочие расходы, нетто",
+          "Курсовые разницы по операционной деятельности, нетто"
+        ],
+        "signed_values_by_column": [
+          [
+            182054,
+            -32215,
+            -8863,
+            -7030,
+            -18626
+          ],
+          [
+            143579,
+            -30329,
+            -11280,
+            -7481,
+            1111
+          ]
+        ],
+        "reported_totals": [
+          115320,
+          95600
+        ],
+        "meaning": "Reported subtotal including the listed issuer-specific operating items; excludes the financial rows below. Not EBITDA; not an IFRS18 standardized subtotal."
+      },
+      "cfo_composition": {
+        "row_labels": [
+          "Денежные средства от операционной деятельности до уплаты налога на прибыль и процентов",
+          "Налог на прибыль уплаченный",
+          "Финансовые расходы уплаченные"
+        ],
+        "signed_values_by_column": [
+          [
+            149843,
+            -22702,
+            -18160
+          ],
+          [
+            111599,
+            -14919,
+            -9224
+          ]
+        ],
+        "reported_totals": [
+          108981,
+          87456
+        ],
+        "meaning": "Final signed net operating subtotal AFTER the displayed tax/interest items. No positive-outflow sign inversion."
+      },
+      "revenue_basis": "Reported consolidated revenue row; sales/IFRS15 policy, not cash receipts. Own source mapping; legacy mapping not inherited.",
+      "comparability": "Within the exact two printed columns only. Cross-version/issuer comparability is not automatically established.",
+      "ifrs18_basis": "PhosAgro annual note2 lists IFRS18 among not early adopted standards (PDF p7 for 2023/2024; p14 for 2025); interim note2 retains annual2024 policies. Segezha2021/2022 report-defined subtotal predates the standard; no claim of adoption.",
+      "extraction_detail": "Page text obtained; numeric meaning admitted only after visual checks.",
+      "review_status": "assistant_checked",
+      "human_reviewer": null,
+      "negative_source_context": {
+        "pdf_page": 5,
+        "row_label": "Административные и коммерческие расходы",
+        "column_label": "2025",
+        "raw_value": "(32,215)",
+        "signed_value": "-32215",
+        "currency": "RUB",
+        "scale": 1000000,
+        "document_sha256": "147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+        "status": "assistant_checked",
+        "admitted_as_runtime_fact": false,
+        "reason": "Expense context verifies sign/composition; no fourth metric definition introduced."
+      }
+    },
+    {
+      "binding_id": "segezha-2021-binding",
+      "document_id": "segezha-2021",
+      "document_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+      "organization_id": "segezha_group",
+      "standard": "IFRS",
+      "nonfinancial_group": true,
+      "definition_ids": [
+        "revenue:nonfinancial_ifrs_reported_v1",
+        "operating_profit:nonfinancial_ifrs_reported_v1",
+        "operating_cash_flow:nonfinancial_ifrs_net_v1"
+      ],
+      "source_pages": {
+        "income": 11,
+        "cash_flow": 14,
+        "basis": 17,
+        "audit": 4
+      },
+      "unit_header": "(в тысячах российских рублей)",
+      "scale": 1000,
+      "currency": "RUB",
+      "column_years": [
+        2021,
+        2020
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2021-01-01",
+          "end": "2021-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2020-01-01",
+          "end": "2020-12-31"
+        }
+      ],
+      "layout_family": "segezha_standalone",
+      "official_anchor": {
+        "page_url": "https://segezha-group.com/investors/report/financial-results/",
+        "page_sha256": "7e4bc02c682822f137fa906b7396d584e365820735d5ce467164df03fb865fbc",
+        "document_url": "https://segezha-group.com/upload/iblock/21a/an6vxpgppglbo6a4sya3zkwwuw3iko6v.pdf",
+        "checked_on": "2026-11-09"
+      },
+      "fact_ids": [
+        "segezha-2021-revenue-2021",
+        "segezha-2021-revenue-2020",
+        "segezha-2021-operating_profit-2021",
+        "segezha-2021-operating_profit-2020",
+        "segezha-2021-operating_cash_flow-2021",
+        "segezha-2021-operating_cash_flow-2020"
+      ],
+      "op_composition": {
+        "row_labels": [
+          "Валовая прибыль",
+          "Коммерческие и управленческие расходы",
+          "Доход от приобретения бизнеса",
+          "Прочие операционные (расходы)/доходы, нетто"
+        ],
+        "signed_values_by_column": [
+          [
+            39425876,
+            -19999990,
+            3821825,
+            -897789
+          ],
+          [
+            23509460,
+            -14545143,
+            988745,
+            1213365
+          ]
+        ],
+        "reported_totals": [
+          22349922,
+          11166427
+        ],
+        "meaning": "Reported subtotal including the listed issuer-specific operating items; excludes the financial rows below. Not EBITDA; not an IFRS18 standardized subtotal."
+      },
+      "cfo_composition": {
+        "row_labels": [
+          "Денежные средства, полученные от операционной деятельности",
+          "Проценты уплаченные",
+          "Налог на прибыль уплаченный"
+        ],
+        "signed_values_by_column": [
+          [
+            21745475,
+            -2547568,
+            -6105982
+          ],
+          [
+            18512981,
+            -2099438,
+            -1679085
+          ]
+        ],
+        "reported_totals": [
+          13091925,
+          14734458
+        ],
+        "meaning": "Final signed net operating subtotal AFTER the displayed tax/interest items. No positive-outflow sign inversion."
+      },
+      "revenue_basis": "Reported consolidated revenue row; sales/IFRS15 policy, not cash receipts. Own source mapping; legacy mapping not inherited.",
+      "comparability": "Within the exact two printed columns only. Cross-version/issuer comparability is not automatically established.",
+      "ifrs18_basis": "PhosAgro annual note2 lists IFRS18 among not early adopted standards (PDF p7 for 2023/2024; p14 for 2025); interim note2 retains annual2024 policies. Segezha2021/2022 report-defined subtotal predates the standard; no claim of adoption.",
+      "extraction_detail": "Page text obtained; numeric meaning admitted only after visual checks.",
+      "review_status": "assistant_checked",
+      "human_reviewer": null,
+      "negative_source_context": {
+        "pdf_page": 11,
+        "row_label": "Коммерческие и управленческие расходы",
+        "column_label": "2021",
+        "raw_value": "(19 999 990)",
+        "signed_value": "-19999990",
+        "currency": "RUB",
+        "scale": 1000,
+        "document_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+        "status": "assistant_checked",
+        "admitted_as_runtime_fact": false,
+        "reason": "Expense context verifies sign/composition; no fourth metric definition introduced."
+      }
+    },
+    {
+      "binding_id": "segezha-2022-binding",
+      "document_id": "segezha-2022",
+      "document_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+      "organization_id": "segezha_group",
+      "standard": "IFRS",
+      "nonfinancial_group": true,
+      "definition_ids": [
+        "revenue:nonfinancial_ifrs_reported_v1",
+        "operating_profit:nonfinancial_ifrs_reported_v1",
+        "operating_cash_flow:nonfinancial_ifrs_net_v1"
+      ],
+      "source_pages": {
+        "income": 9,
+        "cash_flow": 12,
+        "basis": 15,
+        "audit": 4
+      },
+      "unit_header": "(в миллионах российских рублей)",
+      "scale": 1000000,
+      "currency": "RUB",
+      "column_years": [
+        2022,
+        2021
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2022-01-01",
+          "end": "2022-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2021-01-01",
+          "end": "2021-12-31"
+        }
+      ],
+      "layout_family": "segezha_standalone",
+      "official_anchor": {
+        "page_url": "https://segezha-group.com/investors/report/financial-results/",
+        "page_sha256": "7e4bc02c682822f137fa906b7396d584e365820735d5ce467164df03fb865fbc",
+        "document_url": "https://segezha-group.com/upload/iblock/91d/0r3xa6k330atuj72rx7prs6hbixb65st.pdf",
+        "checked_on": "2026-11-09"
+      },
+      "fact_ids": [
+        "segezha-2022-revenue-2022",
+        "segezha-2022-revenue-2021",
+        "segezha-2022-operating_profit-2022",
+        "segezha-2022-operating_profit-2021",
+        "segezha-2022-operating_cash_flow-2022",
+        "segezha-2022-operating_cash_flow-2021"
+      ],
+      "op_composition": {
+        "row_labels": [
+          "Выручка",
+          "Себестоимость реализованной продукции",
+          "Коммерческие и управленческие расходы",
+          "Доход от приобретения бизнеса",
+          "Прочие операционные доходы/(расходы), нетто"
+        ],
+        "signed_values_by_column": [
+          [
+            106766,
+            -74062,
+            -28216,
+            0,
+            5623
+          ],
+          [
+            92442,
+            -53016,
+            -20000,
+            3822,
+            -898
+          ]
+        ],
+        "reported_totals": [
+          10111,
+          22350
+        ],
+        "meaning": "Reported subtotal including the listed issuer-specific operating items; excludes the financial rows below. Not EBITDA; not an IFRS18 standardized subtotal."
+      },
+      "cfo_composition": {
+        "row_labels": [
+          "Денежные средства, полученные от операционной деятельности",
+          "Проценты уплаченные",
+          "Налог на прибыль уплаченный"
+        ],
+        "signed_values_by_column": [
+          [
+            12196,
+            -8258,
+            -1679
+          ],
+          [
+            21722,
+            -2548,
+            -6106
+          ]
+        ],
+        "reported_totals": [
+          2259,
+          13068
+        ],
+        "meaning": "Final signed net operating subtotal AFTER the displayed tax/interest items. No positive-outflow sign inversion."
+      },
+      "revenue_basis": "Reported consolidated revenue row; sales/IFRS15 policy, not cash receipts. Own source mapping; legacy mapping not inherited.",
+      "comparability": "Within the exact two printed columns only. Cross-version/issuer comparability is not automatically established.",
+      "ifrs18_basis": "PhosAgro annual note2 lists IFRS18 among not early adopted standards (PDF p7 for 2023/2024; p14 for 2025); interim note2 retains annual2024 policies. Segezha2021/2022 report-defined subtotal predates the standard; no claim of adoption.",
+      "extraction_detail": "Page text obtained; numeric meaning admitted only after visual checks.",
+      "review_status": "assistant_checked",
+      "human_reviewer": null,
+      "negative_source_context": {
+        "pdf_page": 9,
+        "row_label": "Себестоимость реализованной продукции",
+        "column_label": "2022",
+        "raw_value": "(74 062)",
+        "signed_value": "-74062",
+        "currency": "RUB",
+        "scale": 1000000,
+        "document_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+        "status": "assistant_checked",
+        "admitted_as_runtime_fact": false,
+        "reason": "Expense context verifies sign/composition; no fourth metric definition introduced."
+      }
+    }
+  ]
+}

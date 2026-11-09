@@ -1,0 +1,28 @@
+{
+  "checked_on": "2026-11-09",
+  "exact_versions_bound": 0,
+  "unknown_versions": 8,
+  "historical_scenario": "blocked",
+  "investigations": [
+    {
+      "source_url": "https://e-disclosure.ru/portal/files.aspx?id=38038&type=4",
+      "observed": "Official disclosure registry lists placement dates 31.03.2022 for2021 and31.03.2023 for2022, linked ZIPs, via web read.",
+      "precision": "displayed_date_only",
+      "exact_pdf_sha_bound": false,
+      "timezone_proven": false,
+      "conclusion": "unknown/unproven; archive contents not downloaded/hashed, no promotion to PublicationEvidence",
+      "local_page_fetch": "HTTP403 upstream after escalated network request"
+    },
+    {
+      "source_url": "https://ar2024.phosagro.ru/additional-information/financial-statements",
+      "observed": "Current official anchor rechecked, old local PDF SHA/size reused; release date2025-02-13 refers to related release.",
+      "conclusion": "No proof of first publication of these exact bytes."
+    },
+    {
+      "source_url": "https://www.phosagro.ru/ori/phosagro/godovaya-i-promezhutochnaya-bukhgalterskaya-otchetnost-obshchestva/",
+      "observed": "Official list identifies periods and direct file links; approval dates are visible within PDFs.",
+      "conclusion": "Period labels/approval/HTTP metadata/fetched_at do not establish publication."
+    }
+  ],
+  "retained_unknown_policy": "No publication invented from signatures, approval, fiscal end, PDF metadata or fetch timestamps. Snapshot prepared facts remain usable."
+}

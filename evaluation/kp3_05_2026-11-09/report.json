@@ -1,0 +1,61 @@
+{
+  "stage": "KP3-05",
+  "completed": true,
+  "completed_at": "2026-11-09T17:25:46.894537+00:00",
+  "base": "22d12d36289bedb3dbca797f9a1c13cac9b4ded5",
+  "catalog_version": "1.0",
+  "pdf_versions": 8,
+  "organizations": 2,
+  "version_cells": 48,
+  "legacy_reused_cells": 2,
+  "newly_annotated_cells": 46,
+  "economic_contexts_without_version": 39,
+  "additional_version_cells": 9,
+  "per_metric": 16,
+  "negative_source_expense_contexts": 8,
+  "negative_runtime_p0_facts": 0,
+  "source_bridges_checked": 32,
+  "independent_fraction_decimal_margin_controls": 8,
+  "assistant_checked": 48,
+  "human_reviewed": 0,
+  "publication_bound_versions": 0,
+  "historical_blocked": 48,
+  "snapshot_bindings": 48,
+  "text_token_corrob": 40,
+  "visual_only_cells": 8,
+  "automatic_extraction_metric": false,
+  "scope_exclusions": [
+    "VK2026H1 summarized/non-IAS34/no OP",
+    "MOEX financial group"
+  ],
+  "tests": {
+    "unit": 334,
+    "previous": 314,
+    "new": 20,
+    "final_elapsed_s": 30.239,
+    "first_successful_elapsed_s": 30.152,
+    "legacy_cli": 5,
+    "method04_gold_unchanged": true
+  },
+  "new_models": 0,
+  "new_libraries": 0,
+  "ui_changed": false,
+  "source_runtime_change": "Only explicit strict space_thousands_integer notation; fields0.2/old encodings/formulas unchanged.",
+  "final_eval_freeze": false,
+  "reserved_unseen_real": 0,
+  "old_metrics_unchanged": [
+    "QA07 C/call_limit",
+    "3/10financial",
+    "reserved financial n=0"
+  ],
+  "limitations": [
+    "All prepared data known to developer",
+    "Unknown exact publication/rights; historical scenarios blocked",
+    "Two income tables unsupported by text extraction, manually prepared",
+    "Observed Segezha comparative CFO difference not attributed to a proven cause",
+    "Quarter-only right columns not admitted under current origin_role"
+  ],
+  "next_prompt": "prompts/kp3_06_generalize_extraction_and_search.md",
+  "next_stage_started": false,
+  "merge_authorized": false
+}
