@@ -1,0 +1,113 @@
+[
+  {
+    "name": "unit-regression",
+    "command": [
+      "C:\\msys64\\ucrt64\\bin\\python.exe",
+      "-I",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "exit_code": 0,
+    "elapsed_s": 28.804057,
+    "log": "unit-regression.txt"
+  },
+  {
+    "name": "bindings",
+    "command": [
+      "C:\\msys64\\ucrt64\\bin\\python.exe",
+      "-I",
+      "scripts/check_kp3_contracts.py"
+    ],
+    "exit_code": 0,
+    "elapsed_s": 0.078827,
+    "log": "bindings.txt"
+  },
+  {
+    "name": "fixed-manual",
+    "command": [
+      "C:\\msys64\\ucrt64\\bin\\python.exe",
+      "-I",
+      "scripts/run_local.py",
+      "fixed",
+      "--source",
+      "manual"
+    ],
+    "exit_code": 0,
+    "elapsed_s": 0.11213,
+    "log": "fixed-manual.txt"
+  },
+  {
+    "name": "synthetic",
+    "command": [
+      "C:\\msys64\\ucrt64\\bin\\python.exe",
+      "-I",
+      "scripts/run_local.py",
+      "scenario"
+    ],
+    "exit_code": 0,
+    "elapsed_s": 0.18729,
+    "log": "synthetic.txt"
+  },
+  {
+    "name": "real-source",
+    "command": [
+      "C:\\msys64\\ucrt64\\bin\\python.exe",
+      "-I",
+      "scripts/run_local.py",
+      "scenario",
+      "--case",
+      "real-source",
+      "--trace",
+      "tmp/real-source-kp3-03.json"
+    ],
+    "exit_code": 0,
+    "elapsed_s": 0.182495,
+    "log": "real-source.txt"
+  },
+  {
+    "name": "questions-frozen",
+    "command": [
+      "C:\\msys64\\ucrt64\\bin\\python.exe",
+      "-I",
+      "scripts/run_local.py",
+      "questions"
+    ],
+    "exit_code": 0,
+    "elapsed_s": 0.201359,
+    "log": "questions-frozen.txt"
+  },
+  {
+    "name": "offline-replay",
+    "command": [
+      "C:\\msys64\\ucrt64\\bin\\python.exe",
+      "-I",
+      "scripts/run_local.py",
+      "replay",
+      "--run-dir",
+      "evaluation/step12_2026-11-09/run-02-environment-retry"
+    ],
+    "exit_code": 0,
+    "elapsed_s": 0.116636,
+    "log": "offline-replay.txt"
+  },
+  {
+    "name": "agent-mock",
+    "command": [
+      "C:\\msys64\\ucrt64\\bin\\python.exe",
+      "-I",
+      "scripts/run_local.py",
+      "agent",
+      "--source",
+      "manual",
+      "--adapter",
+      "mock"
+    ],
+    "exit_code": 0,
+    "elapsed_s": 1.169814,
+    "log": "agent-mock.txt"
+  }
+]

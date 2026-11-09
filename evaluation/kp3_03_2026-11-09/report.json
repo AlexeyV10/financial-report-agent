@@ -1,0 +1,293 @@
+{
+  "stage": "KP3-03",
+  "date": "2026-11-09",
+  "timezone": "Europe/Moscow",
+  "status": "technically_complete",
+  "schema_version": "0.2",
+  "branch": "codex/kp3-03-tasks-catalog-contracts",
+  "base_commit": "f349717c5ca2acc33decf3dd7ce12b2756ce6d8b",
+  "scope": [
+    "independent Organization/Metric/Document/Evidence/Fact catalog",
+    "explicit Task and version/original/comparative selection",
+    "separate execution/financial/clarification outcome contract",
+    "explicit nonmutating v0.1 adapter",
+    "own multi-organization synthetic fixtures",
+    "binding-only demonstration"
+  ],
+  "unit_tests": {
+    "passed": 303,
+    "total": 303,
+    "old_tests": 267,
+    "new_tests": 36,
+    "elapsed_s": 27.572,
+    "log": "unit-regression-release.txt"
+  },
+  "ui_compat": {
+    "passed": 5,
+    "total": 5,
+    "private_copy": true,
+    "ui_changed": false,
+    "visual_review_repeated": false,
+    "venv_reinstalled": false,
+    "note": "Unchanged old UI uses unchanged legacy imports. Private copy contains v0.2 modules; final custom-period guard is outside the UI import path."
+  },
+  "cli_cases": 7,
+  "runs": [
+    {
+      "name": "unit-regression",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 28.804057,
+      "log": "unit-regression.txt"
+    },
+    {
+      "name": "bindings",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/check_kp3_contracts.py"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.078827,
+      "log": "bindings.txt"
+    },
+    {
+      "name": "fixed-manual",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "fixed",
+        "--source",
+        "manual"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.11213,
+      "log": "fixed-manual.txt"
+    },
+    {
+      "name": "synthetic",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "scenario"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.18729,
+      "log": "synthetic.txt"
+    },
+    {
+      "name": "real-source",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "scenario",
+        "--case",
+        "real-source",
+        "--trace",
+        "tmp/real-source-kp3-03.json"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.182495,
+      "log": "real-source.txt"
+    },
+    {
+      "name": "questions-frozen",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "questions"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.201359,
+      "log": "questions-frozen.txt"
+    },
+    {
+      "name": "offline-replay",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "replay",
+        "--run-dir",
+        "evaluation/step12_2026-11-09/run-02-environment-retry"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.116636,
+      "log": "offline-replay.txt"
+    },
+    {
+      "name": "agent-mock",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "agent",
+        "--source",
+        "manual",
+        "--adapter",
+        "mock"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 1.169814,
+      "log": "agent-mock.txt"
+    }
+  ],
+  "binding_cases": {
+    "schema_version": "0.2",
+    "stage": "contract_binding_only",
+    "model_calls": 0,
+    "financial_calculations": 0,
+    "cases": [
+      {
+        "origin": "legacy assistant_checked registry; no new PDF check",
+        "schema_version": "0.2",
+        "task_id": "first-revenue-growth",
+        "binding_status": "ready",
+        "reason_code": "ok",
+        "fact_ids": [
+          "phosagro-revenue-2023",
+          "phosagro-revenue-2024"
+        ],
+        "candidate_fact_ids": [
+          "phosagro-revenue-2023",
+          "phosagro-revenue-2024"
+        ],
+        "calculations_performed": false,
+        "catalog_digest": "60b52de2df9496e56dd6494607d0e70c40da2e40361fd565f3f8ec68bee276c0"
+      },
+      {
+        "origin": "legacy historical gate",
+        "schema_version": "0.2",
+        "task_id": "first-revenue-growth",
+        "binding_status": "missing",
+        "reason_code": "publication_unknown",
+        "fact_ids": [],
+        "candidate_fact_ids": [],
+        "calculations_performed": false,
+        "catalog_digest": "60b52de2df9496e56dd6494607d0e70c40da2e40361fd565f3f8ec68bee276c0"
+      },
+      {
+        "origin": "SYNTHETIC ONLY, not issuer data",
+        "schema_version": "0.2",
+        "task_id": "synthetic_alpha-direct",
+        "binding_status": "ready",
+        "reason_code": "ok",
+        "fact_ids": [
+          "synthetic_alpha-2022-fact"
+        ],
+        "candidate_fact_ids": [
+          "synthetic_alpha-2022-fact"
+        ],
+        "calculations_performed": false,
+        "catalog_digest": "e5f98b3879816e71cd1b33e0a1e6abd63d6fef69f71a402f9952a9f7b43b036c"
+      },
+      {
+        "origin": "SYNTHETIC ONLY, not issuer data",
+        "schema_version": "0.2",
+        "task_id": "synthetic_alpha-compare",
+        "binding_status": "ready",
+        "reason_code": "ok",
+        "fact_ids": [
+          "synthetic_alpha-2021-fact",
+          "synthetic_alpha-2022-fact"
+        ],
+        "candidate_fact_ids": [
+          "synthetic_alpha-2021-fact",
+          "synthetic_alpha-2022-fact"
+        ],
+        "calculations_performed": false,
+        "catalog_digest": "e5f98b3879816e71cd1b33e0a1e6abd63d6fef69f71a402f9952a9f7b43b036c"
+      },
+      {
+        "origin": "SYNTHETIC ONLY, not issuer data",
+        "schema_version": "0.2",
+        "task_id": "synthetic_beta-direct",
+        "binding_status": "ready",
+        "reason_code": "ok",
+        "fact_ids": [
+          "synthetic_beta-2023-fact"
+        ],
+        "candidate_fact_ids": [
+          "synthetic_beta-2023-fact"
+        ],
+        "calculations_performed": false,
+        "catalog_digest": "e5f98b3879816e71cd1b33e0a1e6abd63d6fef69f71a402f9952a9f7b43b036c"
+      },
+      {
+        "origin": "SYNTHETIC ONLY, not issuer data",
+        "schema_version": "0.2",
+        "task_id": "synthetic_beta-compare",
+        "binding_status": "ready",
+        "reason_code": "ok",
+        "fact_ids": [
+          "synthetic_beta-2022-fact",
+          "synthetic_beta-2023-fact"
+        ],
+        "candidate_fact_ids": [
+          "synthetic_beta-2022-fact",
+          "synthetic_beta-2023-fact"
+        ],
+        "calculations_performed": false,
+        "catalog_digest": "e5f98b3879816e71cd1b33e0a1e6abd63d6fef69f71a402f9952a9f7b43b036c"
+      }
+    ]
+  },
+  "real_source_result": {
+    "scenario_result_schema_version": "0.1",
+    "label": "ПРОВЕРКА НАСТОЯЩЕГО ИСТОЧНИКА — ТОРГОВЛИ НЕТ",
+    "status": "blocked",
+    "reason_code": "publication_unknown",
+    "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+    "document_version": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+    "decision_at": "2025-06-04T19:30:00+03:00",
+    "ledger": [],
+    "return_pct": null,
+    "legacy_gate": {
+      "status": "blocked",
+      "reasons": [
+        "publication_of_exact_version_unknown",
+        "no_valid_calculation",
+        "calendar_and_prices_missing",
+        "simulation_not_implemented"
+      ]
+    }
+  },
+  "offline_replay_matches_saved": true,
+  "core_code_data_tests_frozen_evidence_archives_preserved": true,
+  "previous_dirty_root_preserved_except_stage_status_decisions": true,
+  "new_real_financial_facts": 0,
+  "financial_calculations_by_new_modules": 0,
+  "llm_generations": 0,
+  "pdf_worker_runs": 0,
+  "downloads": 0,
+  "new_dependencies": 0,
+  "prior_UI_or_scope_published": false,
+  "development_checks": [
+    "Initial 33 contract tests passed; later review added publication hash, instant, ASCII and custom-period boundaries. Final 36 new tests and303 full tests passed.",
+    "No pinned old checks or gold rewritten."
+  ],
+  "limits": [
+    "binding ready is not an answered financial task or a claim of local PDF availability",
+    "no general parser/new formulas/service or UI integration",
+    "catalog consistency does not independently verify source truth or permission",
+    "legacy prose clarification requires explicit normalized field migration",
+    "only modern Moscow fixed UTC+03 and UTC date policy supported",
+    "real source publication_unknown/IFRS8/assistant_checked/unknown rights unchanged",
+    "QA07 C/call_limit remains dev error;3/10financial and reserved n=0 unchanged"
+  ],
+  "next_prompt": "prompts/kp3_04_financial_dictionary_and_method.md",
+  "git_delivery": "Separate commits/push/open PR to be recorded in git-publication.json; no merge authorized."
+}

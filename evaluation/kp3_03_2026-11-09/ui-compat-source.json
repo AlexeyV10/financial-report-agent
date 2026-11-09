@@ -1,0 +1,105 @@
+{
+  "note": "Previous local UI files copied only under excluded tmp; not included in this PR. Includes new v0.2 modules alongside unchanged old src.",
+  "files": {
+    "app/__init__.py": {
+      "origin": "unchanged local KP3-01/02, private compatibility copy only",
+      "sha256": "8ec5675d5055f81604e1d28fb767ed31f1e1a7ca7a6e2ba717a8af6f84292aa4"
+    },
+    "app/legacy_demo.py": {
+      "origin": "unchanged local KP3-01/02, private compatibility copy only",
+      "sha256": "76684c97c6bdb5bf9eff132fe520c9b3352edbe1617d4892491f39bdf620cf32"
+    },
+    "app/streamlit_app.py": {
+      "origin": "unchanged local KP3-01/02, private compatibility copy only",
+      "sha256": "f854954924d5dc18f3a905dde0d03290f0b0f0fde9147db1710ed609385a39b1"
+    },
+    "tests_ui/test_shell.py": {
+      "origin": "unchanged local KP3-01/02, private compatibility copy only",
+      "sha256": "e531b3367b33241ff9e7878c89b6bd6e9b7bc0f9b69d3fe44784eaf492fa5ac0"
+    },
+    "evaluation/kp3_01_2026-11-09/fixed-manual.txt": {
+      "origin": "unchanged local KP3-01/02, private compatibility copy only",
+      "sha256": "7fd6c5ff3c1e65c1f5b6c381b9a80a58b940dbfde8186e743bc2d02d30dd900c"
+    },
+    "evaluation/kp3_01_2026-11-09/synthetic.txt": {
+      "origin": "unchanged local KP3-01/02, private compatibility copy only",
+      "sha256": "43bc214cc4f054b4b797dda9f88abd3ca1dc749892797a17380254eb73421a70"
+    },
+    "evaluation/kp3_01_2026-11-09/real-source.txt": {
+      "origin": "unchanged local KP3-01/02, private compatibility copy only",
+      "sha256": "d8150978ed746e859c5444c0380d0a4ac7b5f260058af1ad7a2b0e0121c1e3e6"
+    },
+    "src\\financial_assistant\\agent.py": {
+      "origin": "KP3-03 worktree",
+      "sha256": "d851b643ba501a9a73e51076b936cd0f7907e68b9ee0bb55904eb2a8f0c40efb"
+    },
+    "src\\financial_assistant\\catalog.py": {
+      "origin": "KP3-03 worktree",
+      "sha256": "c791b54d9c2515b76e4056e299f3178f75d039a7a5aefc52562912de86905d5d"
+    },
+    "src\\financial_assistant\\contracts.py": {
+      "origin": "KP3-03 worktree",
+      "sha256": "5894effc517efdbddb3b9a10d4bd7268f9d277bde283e2e476fe9ea0b8a55ac2"
+    },
+    "src\\financial_assistant\\contracts_v2.py": {
+      "origin": "KP3-03 worktree",
+      "sha256": "bc6162e7aabf4a4b69a55cd0454c5c8ae8955a306d2779dd12c2fffa0f4dfddc"
+    },
+    "src\\financial_assistant\\finance.py": {
+      "origin": "KP3-03 worktree",
+      "sha256": "2f19dec687077097544c0e0149af1877981ecfcbbeabe7debe8936739608d6e4"
+    },
+    "src\\financial_assistant\\legacy_adapter.py": {
+      "origin": "KP3-03 worktree",
+      "sha256": "27ae33e8aa06db12dd17290f798945285d5a312b448ca4b9027bafd7f8c8d908"
+    },
+    "src\\financial_assistant\\local_model.py": {
+      "origin": "KP3-03 worktree",
+      "sha256": "361c0fa61d5b9682c0946a61a8bdc69adaf611689782f095e21baecd9f3cc202"
+    },
+    "src\\financial_assistant\\measurement.py": {
+      "origin": "KP3-03 worktree",
+      "sha256": "448ed93962e95a287a51e6dae2d3bf72934d060c1ec79e69ba003ec2929dc560"
+    },
+    "src\\financial_assistant\\measurement_collect.py": {
+      "origin": "KP3-03 worktree",
+      "sha256": "2fb6e665064c6044fe2c3698a89f9ae71e1569e8032196b7c6bb894a7312f9c9"
+    },
+    "src\\financial_assistant\\question_set.py": {
+      "origin": "KP3-03 worktree",
+      "sha256": "da3742fc718527859c67190af24a1c5459aa38951b6ca2c533739ca28e23f377"
+    },
+    "src\\financial_assistant\\retrieval.py": {
+      "origin": "KP3-03 worktree",
+      "sha256": "1606742a9819c3a4e83f3a1538c1c13c958dfff0f263f77c5d2be469c53e7564"
+    },
+    "src\\financial_assistant\\simulation.py": {
+      "origin": "KP3-03 worktree",
+      "sha256": "0e7b69c6c69021648485c33f7cbb95bf27909078ec9e6e24e88d4c35c1a45801"
+    },
+    "src\\financial_assistant\\simulation_view.py": {
+      "origin": "KP3-03 worktree",
+      "sha256": "48cf83bce3d64909d2c321fbd196f45650fd7552ea1e32073742ff1142053065"
+    },
+    "src\\financial_assistant\\tasks.py": {
+      "origin": "KP3-03 worktree",
+      "sha256": "8283d2576eea39ac09077ae26888f07977b75a5553518b601b1812fbcf796fc0"
+    },
+    "src\\financial_assistant\\user_path.py": {
+      "origin": "KP3-03 worktree",
+      "sha256": "9ac7f5faa094846d4ed4e130834a23bfad7759e4a1e6863f7da010e18e53ee1f"
+    },
+    "src\\financial_assistant\\__init__.py": {
+      "origin": "KP3-03 worktree",
+      "sha256": "eea0bfd15364208285f19580630c0e9312142e1bc876cf5fc23af7fc473834e7"
+    },
+    "data\\examples\\reference_bundle.json": {
+      "origin": "KP3-03 worktree",
+      "sha256": "93e51d6dc834e4627dce6e6c75c43aec465cd2c9308bac35d443040b5a394c3a"
+    },
+    "data\\synthetic\\scenario_v1.json": {
+      "origin": "KP3-03 worktree",
+      "sha256": "b864e1ca6c9e82b62425919199ae9d3d59fee6f3621a258be6933d7422e474f2"
+    }
+  }
+}
