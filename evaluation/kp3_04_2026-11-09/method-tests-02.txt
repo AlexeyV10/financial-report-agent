@@ -1,0 +1,16 @@
+test_all_answered_gold_checked_by_independent_decimal_arithmetic (test_financial_method.FinancialMethodTests.test_all_answered_gold_checked_by_independent_decimal_arithmetic) ... ok
+test_artifacts_are_own_open_dev_with_separate_valid_runtime_and_gold (test_financial_method.FinancialMethodTests.test_artifacts_are_own_open_dev_with_separate_valid_runtime_and_gold) ... ok
+test_checker_matches_gold_and_refuses_overwrite (test_financial_method.FinancialMethodTests.test_checker_matches_gold_and_refuses_overwrite) ... ok
+test_definition_scope_explicit_legacy_map_and_no_runtime_gold_dependency (test_financial_method.FinancialMethodTests.test_definition_scope_explicit_legacy_map_and_no_runtime_gold_dependency) ... ok
+test_gold_can_be_reproduced_with_production_imports_files_network_and_shell_denied (test_financial_method.FinancialMethodTests.test_gold_can_be_reproduced_with_production_imports_files_network_and_shell_denied) ... ok
+test_half_rounding_away_from_zero_repeating_fraction_and_exact_amounts (test_financial_method.FinancialMethodTests.test_half_rounding_away_from_zero_repeating_fraction_and_exact_amounts) ... ok
+test_negative_base_zero_denominator_negative_profit_and_signed_cash_flow (test_financial_method.FinancialMethodTests.test_negative_base_zero_denominator_negative_profit_and_signed_cash_flow) ... ok
+test_percentage_points_are_not_relative_percent_and_high_margin_not_clamped (test_financial_method.FinancialMethodTests.test_percentage_points_are_not_relative_percent_and_high_margin_not_clamped) ... ok
+test_refusal_taxonomy_periods_units_definitions_versions_and_unknown_evidence (test_financial_method.FinancialMethodTests.test_refusal_taxonomy_periods_units_definitions_versions_and_unknown_evidence) ... ok
+test_source_instructions_and_fixture_extra_executable_fields_are_inert_or_rejected (test_financial_method.FinancialMethodTests.test_source_instructions_and_fixture_extra_executable_fields_are_inert_or_rejected) ... ok
+test_technical_errors_clarification_limits_not_financial_refusals (test_financial_method.FinancialMethodTests.test_technical_errors_clarification_limits_not_financial_refusals) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.031s
+
+OK

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "fixed-manual",
+    "command": [
+      "C:\\msys64\\ucrt64\\bin\\python.exe",
+      "-I",
+      "scripts/run_local.py",
+      "fixed",
+      "--source",
+      "manual"
+    ],
+    "exit_code": 0,
+    "elapsed_s": 0.11595719999968424
+  },
+  {
+    "name": "synthetic",
+    "command": [
+      "C:\\msys64\\ucrt64\\bin\\python.exe",
+      "-I",
+      "scripts/run_local.py",
+      "scenario"
+    ],
+    "exit_code": 0,
+    "elapsed_s": 0.1905202999996618
+  },
+  {
+    "name": "real-source",
+    "command": [
+      "C:\\msys64\\ucrt64\\bin\\python.exe",
+      "-I",
+      "scripts/run_local.py",
+      "scenario",
+      "--case",
+      "real-source",
+      "--trace",
+      "tmp/kp3-04-real-source.json"
+    ],
+    "exit_code": 0,
+    "elapsed_s": 0.17949939999925846
+  },
+  {
+    "name": "questions",
+    "command": [
+      "C:\\msys64\\ucrt64\\bin\\python.exe",
+      "-I",
+      "scripts/run_local.py",
+      "questions"
+    ],
+    "exit_code": 0,
+    "elapsed_s": 0.22295220000069094
+  },
+  {
+    "name": "replay",
+    "command": [
+      "C:\\msys64\\ucrt64\\bin\\python.exe",
+      "-I",
+      "scripts/run_local.py",
+      "replay",
+      "--run-dir",
+      "evaluation/step12_2026-11-09/run-02-environment-retry"
+    ],
+    "exit_code": 0,
+    "elapsed_s": 0.12045269999998709
+  }
+]
