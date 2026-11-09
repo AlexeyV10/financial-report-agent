@@ -1,0 +1,57 @@
+test_all_open_reference_cases_and_decimal80 (test_financial_calculator.CalculatorTests.test_all_open_reference_cases_and_decimal80) ... ok
+test_candidate_structure_and_document_unchecked (test_financial_calculator.CalculatorTests.test_candidate_structure_and_document_unchecked) ... ok
+test_conflicting_values_same_context_are_financial_conflict (test_financial_calculator.CalculatorTests.test_conflicting_values_same_context_are_financial_conflict) ... ok
+test_context_manifest_tampering_fails_before_math (test_financial_calculator.CalculatorTests.test_context_manifest_tampering_fails_before_math) ... ok
+test_cross_document_comparative_not_original (test_financial_calculator.CalculatorTests.test_cross_document_comparative_not_original) ... ok
+test_cross_original_different_sha_requires_trusted_proof (test_financial_calculator.CalculatorTests.test_cross_original_different_sha_requires_trusted_proof) ... ok
+test_duplicate_ids_are_technical_context_error (test_financial_calculator.CalculatorTests.test_duplicate_ids_are_technical_context_error) ... ok
+test_duplicate_input_reference (test_financial_calculator.CalculatorTests.test_duplicate_input_reference) ... ok
+test_exact_bound_synthetic_publication_date_conservative_zone_gate (test_financial_calculator.CalculatorTests.test_exact_bound_synthetic_publication_date_conservative_zone_gate) ... ok
+test_loaded_context_files_are_guarded (test_financial_calculator.CalculatorTests.test_loaded_context_files_are_guarded) ... ok
+test_margin_different_exact_versions_rejected (test_financial_calculator.CalculatorTests.test_margin_different_exact_versions_rejected) ... ok
+test_margin_zero_and_negative_revenue (test_financial_calculator.CalculatorTests.test_margin_zero_and_negative_revenue) ... ok
+test_missing_evidence_or_wrong_hash_no_answer (test_financial_calculator.CalculatorTests.test_missing_evidence_or_wrong_hash_no_answer) ... ok
+test_missing_fields_and_nested_period_require_clarification (test_financial_calculator.CalculatorTests.test_missing_fields_and_nested_period_require_clarification) ... ok
+test_mocked_partial_and_automatic_retrieval_never_calculate (test_financial_calculator.CalculatorTests.test_mocked_partial_and_automatic_retrieval_never_calculate) ... ok
+test_model_values_formulas_paths_and_code_are_rejected (test_financial_calculator.CalculatorTests.test_model_values_formulas_paths_and_code_are_rejected) ... ok
+test_negative_profit_and_half_up_ties (test_financial_calculator.CalculatorTests.test_negative_profit_and_half_up_ties) ... ok
+test_no_empty_defaults (test_financial_calculator.CalculatorTests.test_no_empty_defaults) ... ok
+test_no_fx_or_silent_scaling (test_financial_calculator.CalculatorTests.test_no_fx_or_silent_scaling) ... ok
+test_nonpositive_base_checked_before_division_and_difference (test_financial_calculator.CalculatorTests.test_nonpositive_base_checked_before_division_and_difference) ... ok
+test_original_policy_does_not_take_comparative (test_financial_calculator.CalculatorTests.test_original_policy_does_not_take_comparative) ... ok
+test_outcome_tamper_rejected_including_false_refusal (test_financial_calculator.CalculatorTests.test_outcome_tamper_rejected_including_false_refusal) ... ok
+test_period_order_overlap_ytd_quarter_and_custom (test_financial_calculator.CalculatorTests.test_period_order_overlap_ytd_quarter_and_custom) ... ok
+test_prepared_hit_from_other_cell_rejected (test_financial_calculator.CalculatorTests.test_prepared_hit_from_other_cell_rejected) ... FAIL
+test_private_prepared_retrieval_integration_and_stale_index (test_financial_calculator.CalculatorTests.test_private_prepared_retrieval_integration_and_stale_index) ... ok
+test_question_is_untrusted_text_not_executed (test_financial_calculator.CalculatorTests.test_question_is_untrusted_text_not_executed) ... ok
+test_real_missing_and_changed_source_technical_not_financial_missing (test_financial_calculator.CalculatorTests.test_real_missing_and_changed_source_technical_not_financial_missing) ... ok
+test_real_source_check_page_header_and_composition_binding_guards (test_financial_calculator.CalculatorTests.test_real_source_check_page_header_and_composition_binding_guards) ... ok
+test_registry_exact_five_and_no_annual_growth_alias (test_financial_calculator.CalculatorTests.test_registry_exact_five_and_no_annual_growth_alias) ... ok
+test_runtime_never_loads_gold (test_financial_calculator.CalculatorTests.test_runtime_never_loads_gold) ... ok
+test_scale_negative_zero_invalid_target_and_fx (test_financial_calculator.CalculatorTests.test_scale_negative_zero_invalid_target_and_fx) ... ok
+test_signed_approved_and_fetched_not_publication (test_financial_calculator.CalculatorTests.test_signed_approved_and_fetched_not_publication) ... ok
+test_technical_or_refusal_cannot_hide_result (test_financial_calculator.CalculatorTests.test_technical_or_refusal_cannot_hide_result) ... ok
+test_unknown_identifiers (test_financial_calculator.CalculatorTests.test_unknown_identifiers) ... ok
+test_unknown_publication_snapshot_and_historical (test_financial_calculator.CalculatorTests.test_unknown_publication_snapshot_and_historical) ... ok
+test_wrong_definition_and_metric (test_financial_calculator.CalculatorTests.test_wrong_definition_and_metric) ... ok
+test_wrong_group_standard_and_other_organization (test_financial_calculator.CalculatorTests.test_wrong_group_standard_and_other_organization) ... ok
+test_wrong_roles_and_percent_is_not_percentage_point (test_financial_calculator.CalculatorTests.test_wrong_roles_and_percent_is_not_percentage_point) ... ok
+test_wrong_version_period_currency_scale (test_financial_calculator.CalculatorTests.test_wrong_version_period_currency_scale) ... ok
+test_zero_negative_fact_and_money_not_rounded_to_cents (test_financial_calculator.CalculatorTests.test_zero_negative_fact_and_money_not_rounded_to_cents) ... ok
+
+======================================================================
+FAIL: test_prepared_hit_from_other_cell_rejected (test_financial_calculator.CalculatorTests.test_prepared_hit_from_other_cell_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\���������\ChatGPT\��������� ��������\tmp\kp3-07-worktree\tests\test_financial_calculator.py", line 272, in test_prepared_hit_from_other_cell_rejected
+    self.assertEqual(r['reason_code'],'artifact_integrity_error');self.assertIsNone(r['financial_result'])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'context_invalid' != 'artifact_integrity_error'
+- context_invalid
++ artifact_integrity_error
+
+
+----------------------------------------------------------------------
+Ran 40 tests in 1.348s
+
+FAILED (failures=1)

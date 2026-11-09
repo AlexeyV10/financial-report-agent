@@ -1,0 +1,103 @@
+{
+  "source_check_origin": "Existing 48 primary visual source checks05, unchanged; this stage rechecks bindings/checks/hash and calculates, not new financial annotation.",
+  "documents": [
+    {
+      "document_id": "phosagro-2023",
+      "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+      "sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+      "byte_length": 2020478,
+      "pdf_pages_from_verified_05": 22,
+      "bytes_match_verified_05": true,
+      "publication": "unknown/unproven",
+      "rights": "unconfirmed",
+      "human_reviewed": false
+    },
+    {
+      "document_id": "phosagro-2024",
+      "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "byte_length": 1521928,
+      "pdf_pages_from_verified_05": 23,
+      "bytes_match_verified_05": true,
+      "publication": "unknown/unproven",
+      "rights": "unconfirmed",
+      "human_reviewed": false
+    },
+    {
+      "document_id": "phosagro-2025",
+      "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+      "sha256": "c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+      "byte_length": 3574640,
+      "pdf_pages_from_verified_05": 45,
+      "bytes_match_verified_05": true,
+      "publication": "unknown/unproven",
+      "rights": "unconfirmed",
+      "human_reviewed": false
+    },
+    {
+      "document_id": "phosagro-2025-q1",
+      "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+      "sha256": "8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+      "byte_length": 1839208,
+      "pdf_pages_from_verified_05": 24,
+      "bytes_match_verified_05": true,
+      "publication": "unknown/unproven",
+      "rights": "unconfirmed",
+      "human_reviewed": false
+    },
+    {
+      "document_id": "phosagro-2025-h1",
+      "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+      "sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+      "byte_length": 1705179,
+      "pdf_pages_from_verified_05": 25,
+      "bytes_match_verified_05": true,
+      "publication": "unknown/unproven",
+      "rights": "unconfirmed",
+      "human_reviewed": false
+    },
+    {
+      "document_id": "phosagro-2025-9m",
+      "version_id": "sha256:147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+      "sha256": "147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+      "byte_length": 2158562,
+      "pdf_pages_from_verified_05": 24,
+      "bytes_match_verified_05": true,
+      "publication": "unknown/unproven",
+      "rights": "unconfirmed",
+      "human_reviewed": false
+    },
+    {
+      "document_id": "segezha-2021",
+      "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+      "sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+      "byte_length": 1856644,
+      "pdf_pages_from_verified_05": 61,
+      "bytes_match_verified_05": true,
+      "publication": "unknown/unproven",
+      "rights": "unconfirmed",
+      "human_reviewed": false
+    },
+    {
+      "document_id": "segezha-2022",
+      "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+      "sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+      "byte_length": 1819697,
+      "pdf_pages_from_verified_05": 58,
+      "bytes_match_verified_05": true,
+      "publication": "unknown/unproven",
+      "rights": "unconfirmed",
+      "human_reviewed": false
+    }
+  ],
+  "new_downloads": 0,
+  "new_primary_files": 0,
+  "new_real_facts": 0,
+  "source_checks_sha256": "89fbdf454c4a3606db3ec0502fe407001a939dcd0467e319b6fc62dba22a807f",
+  "source_bindings_sha256": "603b13fc4070cf95aacdc0f3392a310bccf80374ac7a51065d25fa3a14feef10",
+  "real_catalog_sha256": "2fc834375994a396023c058246a460eebd67181dc0234dd34dca5294978d8e58",
+  "pdf_skill": "Read PDF SKILL.md; no new PDF authored/changed; source bytes reused. Primary PDFs/full pages/text/exports/indexes stay ignored tmp.",
+  "historical_blocked_documents": 8,
+  "automatic_candidates_admitted": 0,
+  "real_cross_original_comparability_records": 0
+}

@@ -1,0 +1,1654 @@
+{
+  "schema_version": "1.0",
+  "model_calls": 0,
+  "final_eval_freeze": false,
+  "reserved_unseen_real": 0,
+  "cases": [
+    {
+      "case_id": "synthetic-001",
+      "data_origin": "synthetic",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-002",
+      "data_origin": "synthetic",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-003",
+      "data_origin": "synthetic",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-004",
+      "data_origin": "synthetic",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-005",
+      "data_origin": "synthetic",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-006",
+      "data_origin": "synthetic",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-007",
+      "data_origin": "synthetic",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-008",
+      "data_origin": "synthetic",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-009",
+      "data_origin": "synthetic",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-010",
+      "data_origin": "synthetic",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-011",
+      "data_origin": "synthetic",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-012",
+      "data_origin": "synthetic",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-013",
+      "data_origin": "synthetic",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-014",
+      "data_origin": "synthetic",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-015",
+      "data_origin": "synthetic",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-016",
+      "data_origin": "synthetic",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-017",
+      "data_origin": "synthetic",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-018",
+      "data_origin": "synthetic",
+      "operation_id": "relative_change_v1",
+      "financial_status": "unsupported",
+      "reason_code": "nonpositive_base",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-019",
+      "data_origin": "synthetic",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-020",
+      "data_origin": "synthetic",
+      "operation_id": "relative_change_v1",
+      "financial_status": "unsupported",
+      "reason_code": "nonpositive_base",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-021",
+      "data_origin": "synthetic",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-022",
+      "data_origin": "synthetic",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-023",
+      "data_origin": "synthetic",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-024",
+      "data_origin": "synthetic",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-025",
+      "data_origin": "synthetic",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-026",
+      "data_origin": "synthetic",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-027",
+      "data_origin": "synthetic",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-028",
+      "data_origin": "synthetic",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-029",
+      "data_origin": "synthetic",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-030",
+      "data_origin": "synthetic",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-031",
+      "data_origin": "synthetic",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-032",
+      "data_origin": "synthetic",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-033",
+      "data_origin": "synthetic",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-034",
+      "data_origin": "synthetic",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-035",
+      "data_origin": "synthetic",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-036",
+      "data_origin": "synthetic",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-037",
+      "data_origin": "synthetic",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "unsupported",
+      "reason_code": "zero_denominator",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-038",
+      "data_origin": "synthetic",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "unsupported",
+      "reason_code": "negative_revenue_denominator",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-039",
+      "data_origin": "synthetic",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "unsupported",
+      "reason_code": "zero_denominator",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-040",
+      "data_origin": "synthetic",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-041",
+      "data_origin": "synthetic",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-042",
+      "data_origin": "synthetic",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-043",
+      "data_origin": "synthetic",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-044",
+      "data_origin": "synthetic",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "synthetic-045",
+      "data_origin": "synthetic",
+      "operation_id": "relative_change_v1",
+      "financial_status": "unsupported",
+      "reason_code": "nonpositive_base",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-001",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-002",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-003",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-004",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-005",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-006",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-007",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-008",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-009",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-010",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-011",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-012",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-013",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-014",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-015",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-016",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-017",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-018",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-019",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-020",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-021",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-022",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-023",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-024",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-025",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-026",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-027",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-028",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-029",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-030",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-031",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-032",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-033",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-034",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-035",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-036",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-037",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-038",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-039",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-040",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-041",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-042",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-043",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-044",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-045",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-046",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-047",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-048",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-049",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-050",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-051",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-052",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-053",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-054",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-055",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-056",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-057",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-058",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-059",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-060",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-061",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-062",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-063",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-064",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-065",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-066",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-067",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-068",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-069",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-070",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-071",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-072",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-073",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-074",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-075",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-076",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-077",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-078",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-079",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-080",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-081",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-082",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-083",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-084",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-085",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-086",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-087",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-088",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-089",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-090",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-091",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-092",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-093",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-094",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-095",
+      "data_origin": "real",
+      "operation_id": "direct_fact_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-096",
+      "data_origin": "real",
+      "operation_id": "scale_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-097",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-098",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-099",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-100",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-101",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-102",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-103",
+      "data_origin": "real",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-104",
+      "data_origin": "real",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-105",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-106",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-107",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-108",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-109",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-110",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-111",
+      "data_origin": "real",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-112",
+      "data_origin": "real",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-113",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-114",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-115",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-116",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-117",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-118",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-119",
+      "data_origin": "real",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-120",
+      "data_origin": "real",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-121",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-122",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-123",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-124",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-125",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-126",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-127",
+      "data_origin": "real",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-128",
+      "data_origin": "real",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-129",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-130",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-131",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-132",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-133",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-134",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-135",
+      "data_origin": "real",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-136",
+      "data_origin": "real",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-137",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-138",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-139",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-140",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-141",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-142",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-143",
+      "data_origin": "real",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-144",
+      "data_origin": "real",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-145",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-146",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-147",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-148",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-149",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-150",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-151",
+      "data_origin": "real",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-152",
+      "data_origin": "real",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-153",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-154",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-155",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-156",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-157",
+      "data_origin": "real",
+      "operation_id": "absolute_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-158",
+      "data_origin": "real",
+      "operation_id": "relative_change_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-159",
+      "data_origin": "real",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    },
+    {
+      "case_id": "real-160",
+      "data_origin": "real",
+      "operation_id": "operating_margin_v1",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "matched_reference": true
+    }
+  ],
+  "reference_decimal80_matched": 199,
+  "counts": {
+    "real": 160,
+    "synthetic": 45
+  },
+  "real_source_bytes_checked": true
+}

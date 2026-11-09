@@ -1,0 +1,50 @@
+{
+  "stage": "KP3-07",
+  "status": "technically_complete",
+  "client_date": "2026-11-10",
+  "timezone": "Europe/Moscow",
+  "unit_tests": {
+    "old": 363,
+    "new": 40,
+    "total": 403,
+    "passed": 403
+  },
+  "checkers": "03-07 passed; old gold04 unchanged",
+  "legacy_cli": 5,
+  "new_cli": 40,
+  "real_dev": 160,
+  "synthetic_dev": 45,
+  "numeric_gold": 199,
+  "expected_unsupported": 6,
+  "reference": "independent Fraction/integer, separately Decimal80/HALF_UP",
+  "operations": [
+    "direct_fact_v1",
+    "absolute_change_v1",
+    "relative_change_v1",
+    "scale_v1",
+    "operating_margin_v1"
+  ],
+  "new_real_facts": 0,
+  "real_pdf_versions": 8,
+  "real_facts": 48,
+  "human_reviewed": 0,
+  "publication_proven": 0,
+  "known_to_developer": true,
+  "unseen_reserved_real": 0,
+  "model_calls": 0,
+  "final_eval_freeze": false,
+  "real_cross_original_comparability_admitted": 0,
+  "limits": [
+    "P0 standard durations only; no custom/instant",
+    "No parser/service/agent/UI/new source/OCR/real scenario",
+    "No percentage-point operation; no FX/FCF/capex",
+    "Unknown real publication blocks historical",
+    "Automatic candidates never admitted",
+    "Tests over repeated known facts do not measure model quality"
+  ],
+  "unchanged_old_metrics": [
+    "QA07 C/call_limit error",
+    "3/10 financial",
+    "reserved financial n=0"
+  ]
+}

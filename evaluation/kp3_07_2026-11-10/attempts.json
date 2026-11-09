@@ -1,0 +1,34 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "issues": [
+        "New CLI name collided with frozen scripts/calculate_financial.py; restored exact HEAD bytes and renamed new CLI v3.",
+        "Two own test fixture errors: missing %PDF- prefix and invalid comparative period."
+      ],
+      "resolved": true
+    },
+    {
+      "attempt": 2,
+      "issues": [
+        "Mock prepared_records shared locator objects with context; deepcopy added to negative test."
+      ],
+      "resolved": true
+    },
+    {
+      "attempt": 3,
+      "issues": [
+        "Stricter comparability support rejected candidate fixture before target gate; removed unused proof in that owned test.",
+        "Legacy replay invocation lacked required --run-dir; corrected arguments, preserved first failed output."
+      ],
+      "resolved": true
+    }
+  ],
+  "final_unit": {
+    "total": 403,
+    "old": 363,
+    "new": 40,
+    "passed": true
+  },
+  "first_snapshot_inspection_error": "Non-mutating diagnostic requested absent reporting_period key; corrected to report_period."
+}

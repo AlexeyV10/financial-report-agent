@@ -1,0 +1,517 @@
+{
+  "checks": [
+    {
+      "name": "real-direct_fact_v1",
+      "expected_financial_status": "answered",
+      "reason_code": "ok",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "direct_fact_v1",
+      "fact_ids": [
+        "phosagro-2024-revenue-2024"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "real-absolute_change_v1",
+      "expected_financial_status": "answered",
+      "reason_code": "ok",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "absolute_change_v1",
+      "fact_ids": [
+        "phosagro-2024-revenue-2023",
+        "phosagro-2024-revenue-2024"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "real-relative_change_v1",
+      "expected_financial_status": "answered",
+      "reason_code": "ok",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "relative_change_v1",
+      "fact_ids": [
+        "phosagro-2024-revenue-2023",
+        "phosagro-2024-revenue-2024"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "real-scale_v1",
+      "expected_financial_status": "answered",
+      "reason_code": "ok",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "scale_v1",
+      "fact_ids": [
+        "phosagro-2024-revenue-2024"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "real-operating_margin_v1",
+      "expected_financial_status": "answered",
+      "reason_code": "ok",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2024-operating_profit-2024",
+        "phosagro-2024-revenue-2024"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "prepared-phosagro-2023",
+      "expected_financial_status": "answered",
+      "reason_code": "ok",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2023-operating_profit-2023",
+        "phosagro-2023-revenue-2023"
+      ],
+      "retrieval_kind": "prepared"
+    },
+    {
+      "name": "automatic-blocked-phosagro-2023",
+      "expected_financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2023-operating_profit-2023",
+        "phosagro-2023-revenue-2023"
+      ],
+      "retrieval_kind": "automatic"
+    },
+    {
+      "name": "historical-phosagro-2023",
+      "expected_financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2023-operating_profit-2023",
+        "phosagro-2023-revenue-2023"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "prepared-phosagro-2024",
+      "expected_financial_status": "answered",
+      "reason_code": "ok",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2024-operating_profit-2024",
+        "phosagro-2024-revenue-2024"
+      ],
+      "retrieval_kind": "prepared"
+    },
+    {
+      "name": "automatic-blocked-phosagro-2024",
+      "expected_financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2024-operating_profit-2024",
+        "phosagro-2024-revenue-2024"
+      ],
+      "retrieval_kind": "automatic"
+    },
+    {
+      "name": "historical-phosagro-2024",
+      "expected_financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2024-operating_profit-2024",
+        "phosagro-2024-revenue-2024"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "prepared-phosagro-2025",
+      "expected_financial_status": "answered",
+      "reason_code": "ok",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2025-operating_profit-2025",
+        "phosagro-2025-revenue-2025"
+      ],
+      "retrieval_kind": "prepared"
+    },
+    {
+      "name": "automatic-blocked-phosagro-2025",
+      "expected_financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2025-operating_profit-2025",
+        "phosagro-2025-revenue-2025"
+      ],
+      "retrieval_kind": "automatic"
+    },
+    {
+      "name": "historical-phosagro-2025",
+      "expected_financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2025-operating_profit-2025",
+        "phosagro-2025-revenue-2025"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "prepared-phosagro-2025-q1",
+      "expected_financial_status": "answered",
+      "reason_code": "ok",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2025-q1-operating_profit-2025",
+        "phosagro-2025-q1-revenue-2025"
+      ],
+      "retrieval_kind": "prepared"
+    },
+    {
+      "name": "automatic-blocked-phosagro-2025-q1",
+      "expected_financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2025-q1-operating_profit-2025",
+        "phosagro-2025-q1-revenue-2025"
+      ],
+      "retrieval_kind": "automatic"
+    },
+    {
+      "name": "historical-phosagro-2025-q1",
+      "expected_financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2025-q1-operating_profit-2025",
+        "phosagro-2025-q1-revenue-2025"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "prepared-phosagro-2025-h1",
+      "expected_financial_status": "answered",
+      "reason_code": "ok",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2025-h1-operating_profit-2025",
+        "phosagro-2025-h1-revenue-2025"
+      ],
+      "retrieval_kind": "prepared"
+    },
+    {
+      "name": "automatic-blocked-phosagro-2025-h1",
+      "expected_financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2025-h1-operating_profit-2025",
+        "phosagro-2025-h1-revenue-2025"
+      ],
+      "retrieval_kind": "automatic"
+    },
+    {
+      "name": "historical-phosagro-2025-h1",
+      "expected_financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2025-h1-operating_profit-2025",
+        "phosagro-2025-h1-revenue-2025"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "prepared-phosagro-2025-9m",
+      "expected_financial_status": "answered",
+      "reason_code": "ok",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2025-9m-operating_profit-2025",
+        "phosagro-2025-9m-revenue-2025"
+      ],
+      "retrieval_kind": "prepared"
+    },
+    {
+      "name": "automatic-blocked-phosagro-2025-9m",
+      "expected_financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2025-9m-operating_profit-2025",
+        "phosagro-2025-9m-revenue-2025"
+      ],
+      "retrieval_kind": "automatic"
+    },
+    {
+      "name": "historical-phosagro-2025-9m",
+      "expected_financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "phosagro-2025-9m-operating_profit-2025",
+        "phosagro-2025-9m-revenue-2025"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "prepared-segezha-2021",
+      "expected_financial_status": "answered",
+      "reason_code": "ok",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "segezha-2021-operating_profit-2021",
+        "segezha-2021-revenue-2021"
+      ],
+      "retrieval_kind": "prepared"
+    },
+    {
+      "name": "automatic-blocked-segezha-2021",
+      "expected_financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "segezha-2021-operating_profit-2021",
+        "segezha-2021-revenue-2021"
+      ],
+      "retrieval_kind": "automatic"
+    },
+    {
+      "name": "historical-segezha-2021",
+      "expected_financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "segezha-2021-operating_profit-2021",
+        "segezha-2021-revenue-2021"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "prepared-segezha-2022",
+      "expected_financial_status": "answered",
+      "reason_code": "ok",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "segezha-2022-operating_profit-2022",
+        "segezha-2022-revenue-2022"
+      ],
+      "retrieval_kind": "prepared"
+    },
+    {
+      "name": "automatic-blocked-segezha-2022",
+      "expected_financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "segezha-2022-operating_profit-2022",
+        "segezha-2022-revenue-2022"
+      ],
+      "retrieval_kind": "automatic"
+    },
+    {
+      "name": "historical-segezha-2022",
+      "expected_financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "operating_margin_v1",
+      "fact_ids": [
+        "segezha-2022-operating_profit-2022",
+        "segezha-2022-revenue-2022"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "historical-unknown",
+      "expected_financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "direct_fact_v1",
+      "fact_ids": [
+        "phosagro-2023-revenue-2023"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "historical-no-as-of",
+      "expected_financial_status": null,
+      "reason_code": "missing_fields",
+      "exit_code": 3,
+      "passed": true,
+      "operation_id": "direct_fact_v1",
+      "fact_ids": [
+        "phosagro-2023-revenue-2023"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "unknown-fact",
+      "expected_financial_status": null,
+      "reason_code": "input_invalid",
+      "exit_code": 2,
+      "passed": true,
+      "operation_id": "direct_fact_v1",
+      "fact_ids": [
+        "unknown"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "no-default-organization",
+      "expected_financial_status": null,
+      "reason_code": "missing_fields",
+      "exit_code": 3,
+      "passed": true,
+      "operation_id": "direct_fact_v1",
+      "fact_ids": [
+        "phosagro-2023-revenue-2023"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "no-fx",
+      "expected_financial_status": "unsupported",
+      "reason_code": "currency_conversion_not_supported",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "direct_fact_v1",
+      "fact_ids": [
+        "phosagro-2023-revenue-2023"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "comparative-not-original",
+      "expected_financial_status": "missing",
+      "reason_code": "original_version_missing",
+      "exit_code": 0,
+      "passed": true,
+      "operation_id": "relative_change_v1",
+      "fact_ids": [
+        "phosagro-2023-revenue-2022",
+        "phosagro-2023-revenue-2023"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "missing-source",
+      "expected_financial_status": null,
+      "reason_code": "source_missing",
+      "exit_code": 2,
+      "passed": true,
+      "operation_id": "direct_fact_v1",
+      "fact_ids": [
+        "phosagro-2023-revenue-2023"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "wrong-exact-pdf",
+      "expected_financial_status": null,
+      "reason_code": "source_version_mismatch",
+      "exit_code": 2,
+      "passed": true,
+      "operation_id": "direct_fact_v1",
+      "fact_ids": [
+        "phosagro-2023-revenue-2023"
+      ],
+      "retrieval_kind": null
+    },
+    {
+      "name": "stale-index",
+      "expected_financial_status": null,
+      "reason_code": "artifact_integrity_error",
+      "exit_code": 2,
+      "passed": true,
+      "operation_id": "direct_fact_v1",
+      "fact_ids": [
+        "phosagro-2023-revenue-2023"
+      ],
+      "retrieval_kind": "prepared"
+    },
+    {
+      "name": "stale-config",
+      "expected_financial_status": null,
+      "reason_code": "artifact_integrity_error",
+      "exit_code": 2,
+      "passed": true,
+      "operation_id": "direct_fact_v1",
+      "fact_ids": [
+        "phosagro-2023-revenue-2023"
+      ],
+      "retrieval_kind": "prepared"
+    },
+    {
+      "name": "stale-export",
+      "expected_financial_status": null,
+      "reason_code": "artifact_integrity_error",
+      "exit_code": 2,
+      "passed": true,
+      "operation_id": "direct_fact_v1",
+      "fact_ids": [
+        "phosagro-2023-revenue-2023"
+      ],
+      "retrieval_kind": "automatic"
+    }
+  ],
+  "counts": {
+    "total": 40,
+    "passed": 40
+  },
+  "all_data_known_to_developer": true
+}
