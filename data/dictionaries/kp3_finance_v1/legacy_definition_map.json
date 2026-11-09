@@ -1,0 +1,18 @@
+{
+  "map_version": "1.0",
+  "automatic_rewrite": false,
+  "legacy_definition_id": "revenue:legacy-row-v1",
+  "target_definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+  "scope": {
+    "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+    "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+    "sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+    "fact_ids": [
+      "phosagro-revenue-2023",
+      "phosagro-revenue-2024"
+    ]
+  },
+  "status": "explicit_mapping_to_previously_assistant_checked_row; original artifacts unchanged; no new PDF verification",
+  "new_real_metric_facts": 0,
+  "other_legacy_or_synthetic_definitions": "not automatically mapped"
+}
