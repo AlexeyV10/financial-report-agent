@@ -1,0 +1,2798 @@
+{
+  "case_version": "1.0",
+  "data_origin": "synthetic",
+  "all_known_to_developer": true,
+  "final_eval_freeze": false,
+  "cases": [
+    {
+      "case_id": "synthetic-001",
+      "family": "direct_fact_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2024",
+          "value": "0"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-001",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "direct_fact_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "fact",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-002",
+      "family": "scale_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2024",
+          "value": "0"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-002",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "scale_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "fact",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1000000000
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-003",
+      "family": "direct_fact_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2024",
+          "value": "-0"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-003",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "direct_fact_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "fact",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-004",
+      "family": "scale_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2024",
+          "value": "-0"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-004",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "scale_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "fact",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1000000000
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-005",
+      "family": "direct_fact_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2024",
+          "value": "-5"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-005",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "direct_fact_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "fact",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-006",
+      "family": "scale_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2024",
+          "value": "-5"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-006",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "scale_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "fact",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1000000000
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-007",
+      "family": "direct_fact_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2024",
+          "value": "123.4500"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-007",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "direct_fact_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "fact",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-008",
+      "family": "scale_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2024",
+          "value": "123.4500"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-008",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "scale_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "fact",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1000000000
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-009",
+      "family": "direct_fact_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2024",
+          "value": "0.000000001"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-009",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "direct_fact_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "fact",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-010",
+      "family": "scale_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2024",
+          "value": "0.000000001"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-010",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "scale_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "fact",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1000000000
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-011",
+      "family": "direct_fact_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2024",
+          "value": "999999999999999999999999999999.999999999"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-011",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "direct_fact_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "fact",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-012",
+      "family": "scale_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2024",
+          "value": "999999999999999999999999999999.999999999"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-012",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "scale_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "fact",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1000000000
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-013",
+      "family": "absolute_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "100"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "120"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-013",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "absolute_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-014",
+      "family": "relative_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "100"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "120"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-014",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "relative_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-015",
+      "family": "absolute_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "100"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "80"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-015",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "absolute_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-016",
+      "family": "relative_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "100"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "80"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-016",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "relative_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-017",
+      "family": "absolute_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "0"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "12"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-017",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "absolute_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-018",
+      "family": "relative_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "0"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "12"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-018",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "relative_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-019",
+      "family": "absolute_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "-5"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "12"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-019",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "absolute_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-020",
+      "family": "relative_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "-5"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "12"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-020",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "relative_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-021",
+      "family": "absolute_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "100"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "0"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-021",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "absolute_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-022",
+      "family": "relative_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "100"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "0"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-022",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "relative_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-023",
+      "family": "absolute_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "32"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "32.01"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-023",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "absolute_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-024",
+      "family": "relative_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "32"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "32.01"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-024",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "relative_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-025",
+      "family": "absolute_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "32"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "31.99"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-025",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "absolute_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-026",
+      "family": "relative_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "32"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "31.99"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-026",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "relative_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-027",
+      "family": "absolute_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "100000"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "99999"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-027",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "absolute_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-028",
+      "family": "relative_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "100000"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "99999"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-028",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "relative_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-029",
+      "family": "absolute_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "100"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "-10"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-029",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "absolute_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-030",
+      "family": "relative_change_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "revenue-2023-comparative",
+          "value": "100"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "-10"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-030",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "relative_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023-comparative",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-031",
+      "family": "operating_margin_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "operating_profit-2024",
+          "value": "18"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "120"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-031",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "operating_margin_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "profit",
+            "fact_id": "operating_profit-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "revenue",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-032",
+      "family": "operating_margin_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "operating_profit-2024",
+          "value": "-18"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "120"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-032",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "operating_margin_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "profit",
+            "fact_id": "operating_profit-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "revenue",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-033",
+      "family": "operating_margin_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "operating_profit-2024",
+          "value": "0"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "120"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-033",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "operating_margin_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "profit",
+            "fact_id": "operating_profit-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "revenue",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-034",
+      "family": "operating_margin_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "operating_profit-2024",
+          "value": "1"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "32"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-034",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "operating_margin_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "profit",
+            "fact_id": "operating_profit-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "revenue",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-035",
+      "family": "operating_margin_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "operating_profit-2024",
+          "value": "-1"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "32"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-035",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "operating_margin_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "profit",
+            "fact_id": "operating_profit-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "revenue",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-036",
+      "family": "operating_margin_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "operating_profit-2024",
+          "value": "-0.000001"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "100"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-036",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "operating_margin_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "profit",
+            "fact_id": "operating_profit-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "revenue",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-037",
+      "family": "operating_margin_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "operating_profit-2024",
+          "value": "1"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "0"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-037",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "operating_margin_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "profit",
+            "fact_id": "operating_profit-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "revenue",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-038",
+      "family": "operating_margin_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "operating_profit-2024",
+          "value": "1"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "-100"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-038",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "operating_margin_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "profit",
+            "fact_id": "operating_profit-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "revenue",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-039",
+      "family": "operating_margin_v1",
+      "fixture_overrides": [
+        {
+          "fact_id": "operating_profit-2024",
+          "value": "0"
+        },
+        {
+          "fact_id": "revenue-2024",
+          "value": "0"
+        }
+      ],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-039",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "operating_margin_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "profit",
+            "fact_id": "operating_profit-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "revenue",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-040",
+      "family": "absolute_change_v1",
+      "fixture_overrides": [],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-040",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "absolute_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023",
+            "document_id": "method-synthetic-2023",
+            "version_id": "own-2023-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": "own-revenue",
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-041",
+      "family": "absolute_change_v1",
+      "fixture_overrides": [],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-041",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "absolute_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "operating_profit-2023",
+            "document_id": "method-synthetic-2023",
+            "version_id": "own-2023-v1",
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "operating_profit-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": "own-operating_profit",
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-042",
+      "family": "absolute_change_v1",
+      "fixture_overrides": [],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-042",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "absolute_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "operating_cash_flow-2023",
+            "document_id": "method-synthetic-2023",
+            "version_id": "own-2023-v1",
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "operating_cash_flow-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": "own-operating_cash_flow",
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-043",
+      "family": "relative_change_v1",
+      "fixture_overrides": [],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-043",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "relative_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "revenue-2023",
+            "document_id": "method-synthetic-2023",
+            "version_id": "own-2023-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "revenue-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": "own-revenue",
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-044",
+      "family": "relative_change_v1",
+      "fixture_overrides": [],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-044",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "relative_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "operating_profit-2023",
+            "document_id": "method-synthetic-2023",
+            "version_id": "own-2023-v1",
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "operating_profit-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": "own-operating_profit",
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    },
+    {
+      "case_id": "synthetic-045",
+      "family": "relative_change_v1",
+      "fixture_overrides": [],
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "synthetic-045",
+        "original_question": "Explicit structured dev request; no language parser.",
+        "operation_id": "relative_change_v1",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "operating_cash_flow-2023",
+            "document_id": "method-synthetic-2023",
+            "version_id": "own-2023-v1",
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "operating_cash_flow-2024",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": "own-operating_cash_flow",
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      }
+    }
+  ]
+}

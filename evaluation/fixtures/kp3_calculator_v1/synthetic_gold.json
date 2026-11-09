@@ -1,0 +1,427 @@
+{
+  "reference_version": "1.0",
+  "oracle": "Fraction/integer, separately Decimal80/HALF_UP checked",
+  "runtime_allowed": false,
+  "cases": [
+    {
+      "case_id": "synthetic-001",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "display_value": "0"
+    },
+    {
+      "case_id": "synthetic-002",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "display_value": "0"
+    },
+    {
+      "case_id": "synthetic-003",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "display_value": "-0"
+    },
+    {
+      "case_id": "synthetic-004",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "display_value": "0"
+    },
+    {
+      "case_id": "synthetic-005",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-5",
+        "denominator": "1"
+      },
+      "display_value": "-5"
+    },
+    {
+      "case_id": "synthetic-006",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-1",
+        "denominator": "200000000"
+      },
+      "display_value": "-0.000000005"
+    },
+    {
+      "case_id": "synthetic-007",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "2469",
+        "denominator": "20"
+      },
+      "display_value": "123.4500"
+    },
+    {
+      "case_id": "synthetic-008",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "2469",
+        "denominator": "20000000000"
+      },
+      "display_value": "0.00000012345"
+    },
+    {
+      "case_id": "synthetic-009",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "1",
+        "denominator": "1000000000"
+      },
+      "display_value": "0.000000001"
+    },
+    {
+      "case_id": "synthetic-010",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "1",
+        "denominator": "1000000000000000000"
+      },
+      "display_value": "0.000000000000000001"
+    },
+    {
+      "case_id": "synthetic-011",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "999999999999999999999999999999999999999",
+        "denominator": "1000000000"
+      },
+      "display_value": "999999999999999999999999999999.999999999"
+    },
+    {
+      "case_id": "synthetic-012",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "999999999999999999999999999999999999999",
+        "denominator": "1000000000000000000"
+      },
+      "display_value": "999999999999999999999.999999999999999999"
+    },
+    {
+      "case_id": "synthetic-013",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "20",
+        "denominator": "1"
+      },
+      "display_value": "20"
+    },
+    {
+      "case_id": "synthetic-014",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "20",
+        "denominator": "1"
+      },
+      "display_value": "20.00"
+    },
+    {
+      "case_id": "synthetic-015",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-20",
+        "denominator": "1"
+      },
+      "display_value": "-20"
+    },
+    {
+      "case_id": "synthetic-016",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-20",
+        "denominator": "1"
+      },
+      "display_value": "-20.00"
+    },
+    {
+      "case_id": "synthetic-017",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "12",
+        "denominator": "1"
+      },
+      "display_value": "12"
+    },
+    {
+      "case_id": "synthetic-018",
+      "status": "unsupported",
+      "reason": "nonpositive_base"
+    },
+    {
+      "case_id": "synthetic-019",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "17",
+        "denominator": "1"
+      },
+      "display_value": "17"
+    },
+    {
+      "case_id": "synthetic-020",
+      "status": "unsupported",
+      "reason": "nonpositive_base"
+    },
+    {
+      "case_id": "synthetic-021",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-100",
+        "denominator": "1"
+      },
+      "display_value": "-100"
+    },
+    {
+      "case_id": "synthetic-022",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-100",
+        "denominator": "1"
+      },
+      "display_value": "-100.00"
+    },
+    {
+      "case_id": "synthetic-023",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "1",
+        "denominator": "100"
+      },
+      "display_value": "0.01"
+    },
+    {
+      "case_id": "synthetic-024",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "1",
+        "denominator": "32"
+      },
+      "display_value": "0.03"
+    },
+    {
+      "case_id": "synthetic-025",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-1",
+        "denominator": "100"
+      },
+      "display_value": "-0.01"
+    },
+    {
+      "case_id": "synthetic-026",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-1",
+        "denominator": "32"
+      },
+      "display_value": "-0.03"
+    },
+    {
+      "case_id": "synthetic-027",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-1",
+        "denominator": "1"
+      },
+      "display_value": "-1"
+    },
+    {
+      "case_id": "synthetic-028",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-1",
+        "denominator": "1000"
+      },
+      "display_value": "0.00"
+    },
+    {
+      "case_id": "synthetic-029",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-110",
+        "denominator": "1"
+      },
+      "display_value": "-110"
+    },
+    {
+      "case_id": "synthetic-030",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-110",
+        "denominator": "1"
+      },
+      "display_value": "-110.00"
+    },
+    {
+      "case_id": "synthetic-031",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "15",
+        "denominator": "1"
+      },
+      "display_value": "15.00"
+    },
+    {
+      "case_id": "synthetic-032",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-15",
+        "denominator": "1"
+      },
+      "display_value": "-15.00"
+    },
+    {
+      "case_id": "synthetic-033",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "display_value": "0.00"
+    },
+    {
+      "case_id": "synthetic-034",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "25",
+        "denominator": "8"
+      },
+      "display_value": "3.13"
+    },
+    {
+      "case_id": "synthetic-035",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-25",
+        "denominator": "8"
+      },
+      "display_value": "-3.13"
+    },
+    {
+      "case_id": "synthetic-036",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-1",
+        "denominator": "1000000"
+      },
+      "display_value": "0.00"
+    },
+    {
+      "case_id": "synthetic-037",
+      "status": "unsupported",
+      "reason": "zero_denominator"
+    },
+    {
+      "case_id": "synthetic-038",
+      "status": "unsupported",
+      "reason": "negative_revenue_denominator"
+    },
+    {
+      "case_id": "synthetic-039",
+      "status": "unsupported",
+      "reason": "zero_denominator"
+    },
+    {
+      "case_id": "synthetic-040",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "20",
+        "denominator": "1"
+      },
+      "display_value": "20"
+    },
+    {
+      "case_id": "synthetic-041",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "8",
+        "denominator": "1"
+      },
+      "display_value": "8"
+    },
+    {
+      "case_id": "synthetic-042",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "17",
+        "denominator": "1"
+      },
+      "display_value": "17"
+    },
+    {
+      "case_id": "synthetic-043",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "20",
+        "denominator": "1"
+      },
+      "display_value": "20.00"
+    },
+    {
+      "case_id": "synthetic-044",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "80",
+        "denominator": "1"
+      },
+      "display_value": "80.00"
+    },
+    {
+      "case_id": "synthetic-045",
+      "status": "unsupported",
+      "reason": "nonpositive_base"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "admission_version": "1.0",
+  "context_id": "kp3_calculator_dev_v1-calculator-v1",
+  "data_origin": "synthetic",
+  "catalog_id": "kp3_calculator_dev_v1",
+  "component_digests": {
+    "catalog": "149158e7fbda9b29981988a4e8bb1b0ed5ec22f6d5a823fd985bad9acbcadc3a",
+    "dictionary": "4404a201044d982ff630175a71d08cadb7093e959b988a97533a43f021b6783a",
+    "bindings": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+    "checks": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+  },
+  "resource_policy": "required_for_real",
+  "comparability_records": [
+    {
+      "comparability_id": "own-revenue",
+      "organization_id": "method_synthetic_group",
+      "metric_id": "revenue",
+      "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+      "review_status": "assistant_checked",
+      "documents": [
+        {
+          "document_id": "method-synthetic-2023",
+          "version_id": "own-2023-v1",
+          "document_sha256": "06c3fbe3adfd2beed396bc92f066b5d421ad150577a86ae07d0495371aa8a8c7"
+        },
+        {
+          "document_id": "method-synthetic-2024",
+          "version_id": "own-2024-v1",
+          "document_sha256": "13582e3f2c7d6b6b06ba2b2208e88ed62c1662f6c33d7b7d025e46132a213f7b"
+        }
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "basis": "Own artificial construction with identical definition/classification. This does not establish comparability of real issuer versions.",
+      "support_evidence_ids": [
+        "revenue-2023-ev",
+        "revenue-2024-ev"
+      ],
+      "same_definition_and_classification": true,
+      "source_checks_reviewed": true
+    },
+    {
+      "comparability_id": "own-operating_profit",
+      "organization_id": "method_synthetic_group",
+      "metric_id": "operating_profit",
+      "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+      "review_status": "assistant_checked",
+      "documents": [
+        {
+          "document_id": "method-synthetic-2023",
+          "version_id": "own-2023-v1",
+          "document_sha256": "06c3fbe3adfd2beed396bc92f066b5d421ad150577a86ae07d0495371aa8a8c7"
+        },
+        {
+          "document_id": "method-synthetic-2024",
+          "version_id": "own-2024-v1",
+          "document_sha256": "13582e3f2c7d6b6b06ba2b2208e88ed62c1662f6c33d7b7d025e46132a213f7b"
+        }
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "basis": "Own artificial construction with identical definition/classification. This does not establish comparability of real issuer versions.",
+      "support_evidence_ids": [
+        "operating_profit-2023-ev",
+        "operating_profit-2024-ev"
+      ],
+      "same_definition_and_classification": true,
+      "source_checks_reviewed": true
+    },
+    {
+      "comparability_id": "own-operating_cash_flow",
+      "organization_id": "method_synthetic_group",
+      "metric_id": "operating_cash_flow",
+      "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+      "review_status": "assistant_checked",
+      "documents": [
+        {
+          "document_id": "method-synthetic-2023",
+          "version_id": "own-2023-v1",
+          "document_sha256": "06c3fbe3adfd2beed396bc92f066b5d421ad150577a86ae07d0495371aa8a8c7"
+        },
+        {
+          "document_id": "method-synthetic-2024",
+          "version_id": "own-2024-v1",
+          "document_sha256": "13582e3f2c7d6b6b06ba2b2208e88ed62c1662f6c33d7b7d025e46132a213f7b"
+        }
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "basis": "Own artificial construction with identical definition/classification. This does not establish comparability of real issuer versions.",
+      "support_evidence_ids": [
+        "operating_cash_flow-2023-ev",
+        "operating_cash_flow-2024-ev"
+      ],
+      "same_definition_and_classification": true,
+      "source_checks_reviewed": true
+    }
+  ]
+}

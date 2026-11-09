@@ -1,0 +1,661 @@
+{
+  "schema_version": "0.2",
+  "catalog_id": "kp3_calculator_dev_v1",
+  "organizations": [
+    {
+      "organization_id": "method_synthetic_group",
+      "name": "ИСКУССТВЕННАЯ нефинансовая группа для методики04",
+      "aliases": [
+        "method synthetic group"
+      ],
+      "consolidation": "group",
+      "accounting_standards": [
+        "IFRS"
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "metric_id": "revenue",
+      "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+      "label": "Выручка",
+      "period_kinds": [
+        "duration"
+      ]
+    },
+    {
+      "metric_id": "operating_profit",
+      "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+      "label": "Операционная прибыль (убыток)",
+      "period_kinds": [
+        "duration"
+      ]
+    },
+    {
+      "metric_id": "operating_cash_flow",
+      "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+      "label": "Чистый денежный поток от операционной деятельности",
+      "period_kinds": [
+        "duration"
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "document_id": "method-synthetic-2023",
+      "organization_id": "method_synthetic_group",
+      "accounting_standard": "IFRS",
+      "document_type": "synthetic_fixture",
+      "report_period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "version_id": "own-2023-v1",
+      "sha256": "06c3fbe3adfd2beed396bc92f066b5d421ad150577a86ae07d0495371aa8a8c7",
+      "byte_length": null,
+      "pdf_pages": null,
+      "source_url": null,
+      "document_url": null,
+      "fetched_at": null,
+      "signed_on": null,
+      "approved_on": null,
+      "publication": {
+        "precision": "unknown",
+        "value": null,
+        "timezone": "Europe/Moscow",
+        "binding": "unproven",
+        "record_id": null,
+        "source_url": null,
+        "version_id": null,
+        "document_sha256": null
+      },
+      "availability": {
+        "local_resource_id": "method-synthetic-2023",
+        "file_status": "not_checked",
+        "extraction_status": "not_run"
+      },
+      "preparation_status": "checked",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      },
+      "rights": {
+        "status": "confirmed",
+        "public_copy_allowed": true,
+        "note": "Own synthetic fixture, not financial reporting.",
+        "checked_on": "2026-11-09"
+      },
+      "audit": {
+        "opinion": "not_applicable",
+        "limitation": "Artificial data, no audit opinion."
+      },
+      "data_origin": "synthetic",
+      "related_release": null
+    },
+    {
+      "document_id": "method-synthetic-2024",
+      "organization_id": "method_synthetic_group",
+      "accounting_standard": "IFRS",
+      "document_type": "synthetic_fixture",
+      "report_period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "version_id": "own-2024-v1",
+      "sha256": "13582e3f2c7d6b6b06ba2b2208e88ed62c1662f6c33d7b7d025e46132a213f7b",
+      "byte_length": null,
+      "pdf_pages": null,
+      "source_url": null,
+      "document_url": null,
+      "fetched_at": null,
+      "signed_on": null,
+      "approved_on": null,
+      "publication": {
+        "precision": "unknown",
+        "value": null,
+        "timezone": "Europe/Moscow",
+        "binding": "unproven",
+        "record_id": null,
+        "source_url": null,
+        "version_id": null,
+        "document_sha256": null
+      },
+      "availability": {
+        "local_resource_id": "method-synthetic-2024",
+        "file_status": "not_checked",
+        "extraction_status": "not_run"
+      },
+      "preparation_status": "checked",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      },
+      "rights": {
+        "status": "confirmed",
+        "public_copy_allowed": true,
+        "note": "Own synthetic fixture, not financial reporting.",
+        "checked_on": "2026-11-09"
+      },
+      "audit": {
+        "opinion": "not_applicable",
+        "limitation": "Artificial data, no audit opinion."
+      },
+      "data_origin": "synthetic",
+      "related_release": null
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "revenue-2023-ev",
+      "document_id": "method-synthetic-2023",
+      "version_id": "own-2023-v1",
+      "document_sha256": "06c3fbe3adfd2beed396bc92f066b5d421ad150577a86ae07d0495371aa8a8c7",
+      "locator": {
+        "kind": "synthetic",
+        "record_id": "revenue-2023",
+        "row_label": "Выручка",
+        "column_label": "2023",
+        "unit_header": "RUB x1"
+      },
+      "metric_id": "revenue",
+      "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1,
+      "raw_value": "100",
+      "numeric_encoding": "decimal_string",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      }
+    },
+    {
+      "evidence_id": "operating_profit-2023-ev",
+      "document_id": "method-synthetic-2023",
+      "version_id": "own-2023-v1",
+      "document_sha256": "06c3fbe3adfd2beed396bc92f066b5d421ad150577a86ae07d0495371aa8a8c7",
+      "locator": {
+        "kind": "synthetic",
+        "record_id": "operating_profit-2023",
+        "row_label": "Операционная прибыль (убыток)",
+        "column_label": "2023",
+        "unit_header": "RUB x1"
+      },
+      "metric_id": "operating_profit",
+      "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1,
+      "raw_value": "10",
+      "numeric_encoding": "decimal_string",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      }
+    },
+    {
+      "evidence_id": "operating_cash_flow-2023-ev",
+      "document_id": "method-synthetic-2023",
+      "version_id": "own-2023-v1",
+      "document_sha256": "06c3fbe3adfd2beed396bc92f066b5d421ad150577a86ae07d0495371aa8a8c7",
+      "locator": {
+        "kind": "synthetic",
+        "record_id": "operating_cash_flow-2023",
+        "row_label": "Чистый денежный поток от операционной деятельности",
+        "column_label": "2023",
+        "unit_header": "RUB x1"
+      },
+      "metric_id": "operating_cash_flow",
+      "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1,
+      "raw_value": "-5",
+      "numeric_encoding": "decimal_string",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      }
+    },
+    {
+      "evidence_id": "revenue-2024-ev",
+      "document_id": "method-synthetic-2024",
+      "version_id": "own-2024-v1",
+      "document_sha256": "13582e3f2c7d6b6b06ba2b2208e88ed62c1662f6c33d7b7d025e46132a213f7b",
+      "locator": {
+        "kind": "synthetic",
+        "record_id": "revenue-2024",
+        "row_label": "Выручка",
+        "column_label": "2024",
+        "unit_header": "RUB x1"
+      },
+      "metric_id": "revenue",
+      "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1,
+      "raw_value": "120",
+      "numeric_encoding": "decimal_string",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      }
+    },
+    {
+      "evidence_id": "operating_profit-2024-ev",
+      "document_id": "method-synthetic-2024",
+      "version_id": "own-2024-v1",
+      "document_sha256": "13582e3f2c7d6b6b06ba2b2208e88ed62c1662f6c33d7b7d025e46132a213f7b",
+      "locator": {
+        "kind": "synthetic",
+        "record_id": "operating_profit-2024",
+        "row_label": "Операционная прибыль (убыток)",
+        "column_label": "2024",
+        "unit_header": "RUB x1"
+      },
+      "metric_id": "operating_profit",
+      "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1,
+      "raw_value": "18",
+      "numeric_encoding": "decimal_string",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      }
+    },
+    {
+      "evidence_id": "operating_cash_flow-2024-ev",
+      "document_id": "method-synthetic-2024",
+      "version_id": "own-2024-v1",
+      "document_sha256": "13582e3f2c7d6b6b06ba2b2208e88ed62c1662f6c33d7b7d025e46132a213f7b",
+      "locator": {
+        "kind": "synthetic",
+        "record_id": "operating_cash_flow-2024",
+        "row_label": "Чистый денежный поток от операционной деятельности",
+        "column_label": "2024",
+        "unit_header": "RUB x1"
+      },
+      "metric_id": "operating_cash_flow",
+      "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1,
+      "raw_value": "12",
+      "numeric_encoding": "decimal_string",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      }
+    },
+    {
+      "evidence_id": "revenue-2023-ev-comparative",
+      "document_id": "method-synthetic-2024",
+      "version_id": "own-2024-v1",
+      "document_sha256": "13582e3f2c7d6b6b06ba2b2208e88ed62c1662f6c33d7b7d025e46132a213f7b",
+      "locator": {
+        "kind": "synthetic",
+        "record_id": "revenue-2023-comparative",
+        "row_label": "Выручка",
+        "column_label": "2023",
+        "unit_header": "RUB x1"
+      },
+      "metric_id": "revenue",
+      "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1,
+      "raw_value": "100",
+      "numeric_encoding": "decimal_string",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      }
+    },
+    {
+      "evidence_id": "operating_profit-2023-ev-comparative",
+      "document_id": "method-synthetic-2024",
+      "version_id": "own-2024-v1",
+      "document_sha256": "13582e3f2c7d6b6b06ba2b2208e88ed62c1662f6c33d7b7d025e46132a213f7b",
+      "locator": {
+        "kind": "synthetic",
+        "record_id": "operating_profit-2023-comparative",
+        "row_label": "Операционная прибыль (убыток)",
+        "column_label": "2023",
+        "unit_header": "RUB x1"
+      },
+      "metric_id": "operating_profit",
+      "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1,
+      "raw_value": "10",
+      "numeric_encoding": "decimal_string",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      }
+    },
+    {
+      "evidence_id": "operating_cash_flow-2023-ev-comparative",
+      "document_id": "method-synthetic-2024",
+      "version_id": "own-2024-v1",
+      "document_sha256": "13582e3f2c7d6b6b06ba2b2208e88ed62c1662f6c33d7b7d025e46132a213f7b",
+      "locator": {
+        "kind": "synthetic",
+        "record_id": "operating_cash_flow-2023-comparative",
+        "row_label": "Чистый денежный поток от операционной деятельности",
+        "column_label": "2023",
+        "unit_header": "RUB x1"
+      },
+      "metric_id": "operating_cash_flow",
+      "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1,
+      "raw_value": "-5",
+      "numeric_encoding": "decimal_string",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      }
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "revenue-2023",
+      "organization_id": "method_synthetic_group",
+      "document_id": "method-synthetic-2023",
+      "version_id": "own-2023-v1",
+      "metric_id": "revenue",
+      "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+      "value": "100",
+      "original_label": "Выручка",
+      "currency": "RUB",
+      "scale": 1,
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "evidence_id": "revenue-2023-ev",
+      "evidence_digest": "efd41e893fa3385fb6a0eed53bbe6aa622a70e297b65671961febe1ab234785d",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      },
+      "origin_role": "reported_period"
+    },
+    {
+      "fact_id": "operating_profit-2023",
+      "organization_id": "method_synthetic_group",
+      "document_id": "method-synthetic-2023",
+      "version_id": "own-2023-v1",
+      "metric_id": "operating_profit",
+      "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+      "value": "10",
+      "original_label": "Операционная прибыль (убыток)",
+      "currency": "RUB",
+      "scale": 1,
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "evidence_id": "operating_profit-2023-ev",
+      "evidence_digest": "9533a58428384cbb20122b1ba97c5576eb4e998c0d3817290bbaf3f581a3daf0",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      },
+      "origin_role": "reported_period"
+    },
+    {
+      "fact_id": "operating_cash_flow-2023",
+      "organization_id": "method_synthetic_group",
+      "document_id": "method-synthetic-2023",
+      "version_id": "own-2023-v1",
+      "metric_id": "operating_cash_flow",
+      "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+      "value": "-5",
+      "original_label": "Чистый денежный поток от операционной деятельности",
+      "currency": "RUB",
+      "scale": 1,
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "evidence_id": "operating_cash_flow-2023-ev",
+      "evidence_digest": "e83aadea593cc41351917241fea28cbead80e29ccb500b6b766926f0e2e9d1a2",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      },
+      "origin_role": "reported_period"
+    },
+    {
+      "fact_id": "revenue-2024",
+      "organization_id": "method_synthetic_group",
+      "document_id": "method-synthetic-2024",
+      "version_id": "own-2024-v1",
+      "metric_id": "revenue",
+      "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+      "value": "120",
+      "original_label": "Выручка",
+      "currency": "RUB",
+      "scale": 1,
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "evidence_id": "revenue-2024-ev",
+      "evidence_digest": "74e79c00f14835892d8c11758f16a31f9b4ddda2a5a87f967a60c8a522191b4a",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      },
+      "origin_role": "reported_period"
+    },
+    {
+      "fact_id": "operating_profit-2024",
+      "organization_id": "method_synthetic_group",
+      "document_id": "method-synthetic-2024",
+      "version_id": "own-2024-v1",
+      "metric_id": "operating_profit",
+      "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+      "value": "18",
+      "original_label": "Операционная прибыль (убыток)",
+      "currency": "RUB",
+      "scale": 1,
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "evidence_id": "operating_profit-2024-ev",
+      "evidence_digest": "5a4d583ec7c1432ecf17378ebb649cd862e9848cc29dffe10fc3b3bdc585e9f4",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      },
+      "origin_role": "reported_period"
+    },
+    {
+      "fact_id": "operating_cash_flow-2024",
+      "organization_id": "method_synthetic_group",
+      "document_id": "method-synthetic-2024",
+      "version_id": "own-2024-v1",
+      "metric_id": "operating_cash_flow",
+      "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+      "value": "12",
+      "original_label": "Чистый денежный поток от операционной деятельности",
+      "currency": "RUB",
+      "scale": 1,
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "evidence_id": "operating_cash_flow-2024-ev",
+      "evidence_digest": "01d0a8f4ce51b6ed2da7ac13e7372c5bea85b434d2bc100efaa928ac7f43014b",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      },
+      "origin_role": "reported_period"
+    },
+    {
+      "fact_id": "revenue-2023-comparative",
+      "organization_id": "method_synthetic_group",
+      "document_id": "method-synthetic-2024",
+      "version_id": "own-2024-v1",
+      "metric_id": "revenue",
+      "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+      "value": "100",
+      "original_label": "Выручка",
+      "currency": "RUB",
+      "scale": 1,
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "evidence_id": "revenue-2023-ev-comparative",
+      "evidence_digest": "cdc472a16595a21733e2b0b6bf2ccdc087cd0bdacea4e89a04a155756ae4a13d",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      },
+      "origin_role": "comparative_period"
+    },
+    {
+      "fact_id": "operating_profit-2023-comparative",
+      "organization_id": "method_synthetic_group",
+      "document_id": "method-synthetic-2024",
+      "version_id": "own-2024-v1",
+      "metric_id": "operating_profit",
+      "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+      "value": "10",
+      "original_label": "Операционная прибыль (убыток)",
+      "currency": "RUB",
+      "scale": 1,
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "evidence_id": "operating_profit-2023-ev-comparative",
+      "evidence_digest": "44e17b65e0f73f486055b45da1e7c4c6111a204fd078d6690c091c3ef27cde4f",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      },
+      "origin_role": "comparative_period"
+    },
+    {
+      "fact_id": "operating_cash_flow-2023-comparative",
+      "organization_id": "method_synthetic_group",
+      "document_id": "method-synthetic-2024",
+      "version_id": "own-2024-v1",
+      "metric_id": "operating_cash_flow",
+      "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+      "value": "-5",
+      "original_label": "Чистый денежный поток от операционной деятельности",
+      "currency": "RUB",
+      "scale": 1,
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "evidence_id": "operating_cash_flow-2023-ev-comparative",
+      "evidence_digest": "feb5727717acaabea4ab4b55c6891f2f51fc29f53974b0bf56653bb438849b42",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      },
+      "origin_role": "comparative_period"
+    }
+  ]
+}

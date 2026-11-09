@@ -1,0 +1,1607 @@
+{
+  "reference_version": "1.0",
+  "oracle": "Fraction/integer, separately Decimal80/HALF_UP checked",
+  "runtime_allowed": false,
+  "cases": [
+    {
+      "case_id": "real-001",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "440304",
+        "denominator": "1"
+      },
+      "display_value": "440304"
+    },
+    {
+      "case_id": "real-002",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "55038",
+        "denominator": "125"
+      },
+      "display_value": "440.304"
+    },
+    {
+      "case_id": "real-003",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "569527",
+        "denominator": "1"
+      },
+      "display_value": "569527"
+    },
+    {
+      "case_id": "real-004",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "569527",
+        "denominator": "1000"
+      },
+      "display_value": "569.527"
+    },
+    {
+      "case_id": "real-005",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "150756",
+        "denominator": "1"
+      },
+      "display_value": "150756"
+    },
+    {
+      "case_id": "real-006",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "37689",
+        "denominator": "250"
+      },
+      "display_value": "150.756"
+    },
+    {
+      "case_id": "real-007",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "228340",
+        "denominator": "1"
+      },
+      "display_value": "228340"
+    },
+    {
+      "case_id": "real-008",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "11417",
+        "denominator": "50"
+      },
+      "display_value": "228.34"
+    },
+    {
+      "case_id": "real-009",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "134286",
+        "denominator": "1"
+      },
+      "display_value": "134286"
+    },
+    {
+      "case_id": "real-010",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "67143",
+        "denominator": "500"
+      },
+      "display_value": "134.286"
+    },
+    {
+      "case_id": "real-011",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "203281",
+        "denominator": "1"
+      },
+      "display_value": "203281"
+    },
+    {
+      "case_id": "real-012",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "203281",
+        "denominator": "1000"
+      },
+      "display_value": "203.281"
+    },
+    {
+      "case_id": "real-013",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "507689",
+        "denominator": "1"
+      },
+      "display_value": "507689"
+    },
+    {
+      "case_id": "real-014",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "507689",
+        "denominator": "1000"
+      },
+      "display_value": "507.689"
+    },
+    {
+      "case_id": "real-015",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "440304",
+        "denominator": "1"
+      },
+      "display_value": "440304"
+    },
+    {
+      "case_id": "real-016",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "55038",
+        "denominator": "125"
+      },
+      "display_value": "440.304"
+    },
+    {
+      "case_id": "real-017",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "140459",
+        "denominator": "1"
+      },
+      "display_value": "140459"
+    },
+    {
+      "case_id": "real-018",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "140459",
+        "denominator": "1000"
+      },
+      "display_value": "140.459"
+    },
+    {
+      "case_id": "real-019",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "150756",
+        "denominator": "1"
+      },
+      "display_value": "150756"
+    },
+    {
+      "case_id": "real-020",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "37689",
+        "denominator": "250"
+      },
+      "display_value": "150.756"
+    },
+    {
+      "case_id": "real-021",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "92717",
+        "denominator": "1"
+      },
+      "display_value": "92717"
+    },
+    {
+      "case_id": "real-022",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "92717",
+        "denominator": "1000"
+      },
+      "display_value": "92.717"
+    },
+    {
+      "case_id": "real-023",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "134286",
+        "denominator": "1"
+      },
+      "display_value": "134286"
+    },
+    {
+      "case_id": "real-024",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "67143",
+        "denominator": "500"
+      },
+      "display_value": "134.286"
+    },
+    {
+      "case_id": "real-025",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "573628",
+        "denominator": "1"
+      },
+      "display_value": "573628"
+    },
+    {
+      "case_id": "real-026",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "143407",
+        "denominator": "250"
+      },
+      "display_value": "573.628"
+    },
+    {
+      "case_id": "real-027",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "507689",
+        "denominator": "1"
+      },
+      "display_value": "507689"
+    },
+    {
+      "case_id": "real-028",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "507689",
+        "denominator": "1000"
+      },
+      "display_value": "507.689"
+    },
+    {
+      "case_id": "real-029",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "135605",
+        "denominator": "1"
+      },
+      "display_value": "135605"
+    },
+    {
+      "case_id": "real-030",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "27121",
+        "denominator": "200"
+      },
+      "display_value": "135.605"
+    },
+    {
+      "case_id": "real-031",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "140459",
+        "denominator": "1"
+      },
+      "display_value": "140459"
+    },
+    {
+      "case_id": "real-032",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "140459",
+        "denominator": "1000"
+      },
+      "display_value": "140.459"
+    },
+    {
+      "case_id": "real-033",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "93114",
+        "denominator": "1"
+      },
+      "display_value": "93114"
+    },
+    {
+      "case_id": "real-034",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "46557",
+        "denominator": "500"
+      },
+      "display_value": "93.114"
+    },
+    {
+      "case_id": "real-035",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "92717",
+        "denominator": "1"
+      },
+      "display_value": "92717"
+    },
+    {
+      "case_id": "real-036",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "92717",
+        "denominator": "1000"
+      },
+      "display_value": "92.717"
+    },
+    {
+      "case_id": "real-037",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "159390",
+        "denominator": "1"
+      },
+      "display_value": "159390"
+    },
+    {
+      "case_id": "real-038",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "15939",
+        "denominator": "100"
+      },
+      "display_value": "159.39"
+    },
+    {
+      "case_id": "real-039",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "119272",
+        "denominator": "1"
+      },
+      "display_value": "119272"
+    },
+    {
+      "case_id": "real-040",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "14909",
+        "denominator": "125"
+      },
+      "display_value": "119.272"
+    },
+    {
+      "case_id": "real-041",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "38816",
+        "denominator": "1"
+      },
+      "display_value": "38816"
+    },
+    {
+      "case_id": "real-042",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "4852",
+        "denominator": "125"
+      },
+      "display_value": "38.816"
+    },
+    {
+      "case_id": "real-043",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "29805",
+        "denominator": "1"
+      },
+      "display_value": "29805"
+    },
+    {
+      "case_id": "real-044",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "5961",
+        "denominator": "200"
+      },
+      "display_value": "29.805"
+    },
+    {
+      "case_id": "real-045",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "50840",
+        "denominator": "1"
+      },
+      "display_value": "50840"
+    },
+    {
+      "case_id": "real-046",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "1271",
+        "denominator": "25"
+      },
+      "display_value": "50.84"
+    },
+    {
+      "case_id": "real-047",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "19706",
+        "denominator": "1"
+      },
+      "display_value": "19706"
+    },
+    {
+      "case_id": "real-048",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "9853",
+        "denominator": "500"
+      },
+      "display_value": "19.706"
+    },
+    {
+      "case_id": "real-049",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "298556",
+        "denominator": "1"
+      },
+      "display_value": "298556"
+    },
+    {
+      "case_id": "real-050",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "74639",
+        "denominator": "250"
+      },
+      "display_value": "298.556"
+    },
+    {
+      "case_id": "real-051",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "241563",
+        "denominator": "1"
+      },
+      "display_value": "241563"
+    },
+    {
+      "case_id": "real-052",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "241563",
+        "denominator": "1000"
+      },
+      "display_value": "241.563"
+    },
+    {
+      "case_id": "real-053",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "74846",
+        "denominator": "1"
+      },
+      "display_value": "74846"
+    },
+    {
+      "case_id": "real-054",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "37423",
+        "denominator": "500"
+      },
+      "display_value": "74.846"
+    },
+    {
+      "case_id": "real-055",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "56035",
+        "denominator": "1"
+      },
+      "display_value": "56035"
+    },
+    {
+      "case_id": "real-056",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "11207",
+        "denominator": "200"
+      },
+      "display_value": "56.035"
+    },
+    {
+      "case_id": "real-057",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "89489",
+        "denominator": "1"
+      },
+      "display_value": "89489"
+    },
+    {
+      "case_id": "real-058",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "89489",
+        "denominator": "1000"
+      },
+      "display_value": "89.489"
+    },
+    {
+      "case_id": "real-059",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "64455",
+        "denominator": "1"
+      },
+      "display_value": "64455"
+    },
+    {
+      "case_id": "real-060",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "12891",
+        "denominator": "200"
+      },
+      "display_value": "64.455"
+    },
+    {
+      "case_id": "real-061",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "441736",
+        "denominator": "1"
+      },
+      "display_value": "441736"
+    },
+    {
+      "case_id": "real-062",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "55217",
+        "denominator": "125"
+      },
+      "display_value": "441.736"
+    },
+    {
+      "case_id": "real-063",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "371035",
+        "denominator": "1"
+      },
+      "display_value": "371035"
+    },
+    {
+      "case_id": "real-064",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "74207",
+        "denominator": "200"
+      },
+      "display_value": "371.035"
+    },
+    {
+      "case_id": "real-065",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "115320",
+        "denominator": "1"
+      },
+      "display_value": "115320"
+    },
+    {
+      "case_id": "real-066",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "2883",
+        "denominator": "25"
+      },
+      "display_value": "115.32"
+    },
+    {
+      "case_id": "real-067",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "95600",
+        "denominator": "1"
+      },
+      "display_value": "95600"
+    },
+    {
+      "case_id": "real-068",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "478",
+        "denominator": "5"
+      },
+      "display_value": "95.6"
+    },
+    {
+      "case_id": "real-069",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "108981",
+        "denominator": "1"
+      },
+      "display_value": "108981"
+    },
+    {
+      "case_id": "real-070",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "108981",
+        "denominator": "1000"
+      },
+      "display_value": "108.981"
+    },
+    {
+      "case_id": "real-071",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "87456",
+        "denominator": "1"
+      },
+      "display_value": "87456"
+    },
+    {
+      "case_id": "real-072",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "10932",
+        "denominator": "125"
+      },
+      "display_value": "87.456"
+    },
+    {
+      "case_id": "real-073",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "92442267",
+        "denominator": "1"
+      },
+      "display_value": "92442267"
+    },
+    {
+      "case_id": "real-074",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "92442267",
+        "denominator": "1000000"
+      },
+      "display_value": "92.442267"
+    },
+    {
+      "case_id": "real-075",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "68986649",
+        "denominator": "1"
+      },
+      "display_value": "68986649"
+    },
+    {
+      "case_id": "real-076",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "68986649",
+        "denominator": "1000000"
+      },
+      "display_value": "68.986649"
+    },
+    {
+      "case_id": "real-077",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "22349922",
+        "denominator": "1"
+      },
+      "display_value": "22349922"
+    },
+    {
+      "case_id": "real-078",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "11174961",
+        "denominator": "500000"
+      },
+      "display_value": "22.349922"
+    },
+    {
+      "case_id": "real-079",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "11166427",
+        "denominator": "1"
+      },
+      "display_value": "11166427"
+    },
+    {
+      "case_id": "real-080",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "11166427",
+        "denominator": "1000000"
+      },
+      "display_value": "11.166427"
+    },
+    {
+      "case_id": "real-081",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "13091925",
+        "denominator": "1"
+      },
+      "display_value": "13091925"
+    },
+    {
+      "case_id": "real-082",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "523677",
+        "denominator": "40000"
+      },
+      "display_value": "13.091925"
+    },
+    {
+      "case_id": "real-083",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "14734458",
+        "denominator": "1"
+      },
+      "display_value": "14734458"
+    },
+    {
+      "case_id": "real-084",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "7367229",
+        "denominator": "500000"
+      },
+      "display_value": "14.734458"
+    },
+    {
+      "case_id": "real-085",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "106766",
+        "denominator": "1"
+      },
+      "display_value": "106766"
+    },
+    {
+      "case_id": "real-086",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "53383",
+        "denominator": "500"
+      },
+      "display_value": "106.766"
+    },
+    {
+      "case_id": "real-087",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "92442",
+        "denominator": "1"
+      },
+      "display_value": "92442"
+    },
+    {
+      "case_id": "real-088",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "46221",
+        "denominator": "500"
+      },
+      "display_value": "92.442"
+    },
+    {
+      "case_id": "real-089",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "10111",
+        "denominator": "1"
+      },
+      "display_value": "10111"
+    },
+    {
+      "case_id": "real-090",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "10111",
+        "denominator": "1000"
+      },
+      "display_value": "10.111"
+    },
+    {
+      "case_id": "real-091",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "22350",
+        "denominator": "1"
+      },
+      "display_value": "22350"
+    },
+    {
+      "case_id": "real-092",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "447",
+        "denominator": "20"
+      },
+      "display_value": "22.35"
+    },
+    {
+      "case_id": "real-093",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "2259",
+        "denominator": "1"
+      },
+      "display_value": "2259"
+    },
+    {
+      "case_id": "real-094",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "2259",
+        "denominator": "1000"
+      },
+      "display_value": "2.259"
+    },
+    {
+      "case_id": "real-095",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "13068",
+        "denominator": "1"
+      },
+      "display_value": "13068"
+    },
+    {
+      "case_id": "real-096",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "3267",
+        "denominator": "250"
+      },
+      "display_value": "13.068"
+    },
+    {
+      "case_id": "real-097",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-129223",
+        "denominator": "1"
+      },
+      "display_value": "-129223"
+    },
+    {
+      "case_id": "real-098",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-12922300",
+        "denominator": "569527"
+      },
+      "display_value": "-22.69"
+    },
+    {
+      "case_id": "real-099",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-77584",
+        "denominator": "1"
+      },
+      "display_value": "-77584"
+    },
+    {
+      "case_id": "real-100",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-387920",
+        "denominator": "11417"
+      },
+      "display_value": "-33.98"
+    },
+    {
+      "case_id": "real-101",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-68995",
+        "denominator": "1"
+      },
+      "display_value": "-68995"
+    },
+    {
+      "case_id": "real-102",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-6899500",
+        "denominator": "203281"
+      },
+      "display_value": "-33.94"
+    },
+    {
+      "case_id": "real-103",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "314075",
+        "denominator": "9173"
+      },
+      "display_value": "34.24"
+    },
+    {
+      "case_id": "real-104",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "466000",
+        "denominator": "11623"
+      },
+      "display_value": "40.09"
+    },
+    {
+      "case_id": "real-105",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "67385",
+        "denominator": "1"
+      },
+      "display_value": "67385"
+    },
+    {
+      "case_id": "real-106",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "1684625",
+        "denominator": "110076"
+      },
+      "display_value": "15.30"
+    },
+    {
+      "case_id": "real-107",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-10297",
+        "denominator": "1"
+      },
+      "display_value": "-10297"
+    },
+    {
+      "case_id": "real-108",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-257425",
+        "denominator": "37689"
+      },
+      "display_value": "-6.83"
+    },
+    {
+      "case_id": "real-109",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-41569",
+        "denominator": "1"
+      },
+      "display_value": "-41569"
+    },
+    {
+      "case_id": "real-110",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-2078450",
+        "denominator": "67143"
+      },
+      "display_value": "-30.96"
+    },
+    {
+      "case_id": "real-111",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "14045900",
+        "denominator": "507689"
+      },
+      "display_value": "27.67"
+    },
+    {
+      "case_id": "real-112",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "314075",
+        "denominator": "9173"
+      },
+      "display_value": "34.24"
+    },
+    {
+      "case_id": "real-113",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "65939",
+        "denominator": "1"
+      },
+      "display_value": "65939"
+    },
+    {
+      "case_id": "real-114",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "6593900",
+        "denominator": "507689"
+      },
+      "display_value": "12.99"
+    },
+    {
+      "case_id": "real-115",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-4854",
+        "denominator": "1"
+      },
+      "display_value": "-4854"
+    },
+    {
+      "case_id": "real-116",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-485400",
+        "denominator": "140459"
+      },
+      "display_value": "-3.46"
+    },
+    {
+      "case_id": "real-117",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "397",
+        "denominator": "1"
+      },
+      "display_value": "397"
+    },
+    {
+      "case_id": "real-118",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "39700",
+        "denominator": "92717"
+      },
+      "display_value": "0.43"
+    },
+    {
+      "case_id": "real-119",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "3390125",
+        "denominator": "143407"
+      },
+      "display_value": "23.64"
+    },
+    {
+      "case_id": "real-120",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "14045900",
+        "denominator": "507689"
+      },
+      "display_value": "27.67"
+    },
+    {
+      "case_id": "real-121",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "40118",
+        "denominator": "1"
+      },
+      "display_value": "40118"
+    },
+    {
+      "case_id": "real-122",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "501475",
+        "denominator": "14909"
+      },
+      "display_value": "33.64"
+    },
+    {
+      "case_id": "real-123",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "9011",
+        "denominator": "1"
+      },
+      "display_value": "9011"
+    },
+    {
+      "case_id": "real-124",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "180220",
+        "denominator": "5961"
+      },
+      "display_value": "30.23"
+    },
+    {
+      "case_id": "real-125",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "31134",
+        "denominator": "1"
+      },
+      "display_value": "31134"
+    },
+    {
+      "case_id": "real-126",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "1556700",
+        "denominator": "9853"
+      },
+      "display_value": "157.99"
+    },
+    {
+      "case_id": "real-127",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "388160",
+        "denominator": "15939"
+      },
+      "display_value": "24.35"
+    },
+    {
+      "case_id": "real-128",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "745125",
+        "denominator": "29818"
+      },
+      "display_value": "24.99"
+    },
+    {
+      "case_id": "real-129",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "56993",
+        "denominator": "1"
+      },
+      "display_value": "56993"
+    },
+    {
+      "case_id": "real-130",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "5699300",
+        "denominator": "241563"
+      },
+      "display_value": "23.59"
+    },
+    {
+      "case_id": "real-131",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "18811",
+        "denominator": "1"
+      },
+      "display_value": "18811"
+    },
+    {
+      "case_id": "real-132",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "376220",
+        "denominator": "11207"
+      },
+      "display_value": "33.57"
+    },
+    {
+      "case_id": "real-133",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "25034",
+        "denominator": "1"
+      },
+      "display_value": "25034"
+    },
+    {
+      "case_id": "real-134",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "500680",
+        "denominator": "12891"
+      },
+      "display_value": "38.84"
+    },
+    {
+      "case_id": "real-135",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "1871150",
+        "denominator": "74639"
+      },
+      "display_value": "25.07"
+    },
+    {
+      "case_id": "real-136",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "800500",
+        "denominator": "34509"
+      },
+      "display_value": "23.20"
+    },
+    {
+      "case_id": "real-137",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "70701",
+        "denominator": "1"
+      },
+      "display_value": "70701"
+    },
+    {
+      "case_id": "real-138",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "1414020",
+        "denominator": "74207"
+      },
+      "display_value": "19.06"
+    },
+    {
+      "case_id": "real-139",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "19720",
+        "denominator": "1"
+      },
+      "display_value": "19720"
+    },
+    {
+      "case_id": "real-140",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "4930",
+        "denominator": "239"
+      },
+      "display_value": "20.63"
+    },
+    {
+      "case_id": "real-141",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "21525",
+        "denominator": "1"
+      },
+      "display_value": "21525"
+    },
+    {
+      "case_id": "real-142",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "179375",
+        "denominator": "7288"
+      },
+      "display_value": "24.61"
+    },
+    {
+      "case_id": "real-143",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "1441500",
+        "denominator": "55217"
+      },
+      "display_value": "26.11"
+    },
+    {
+      "case_id": "real-144",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "1912000",
+        "denominator": "74207"
+      },
+      "display_value": "25.77"
+    },
+    {
+      "case_id": "real-145",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "23455618",
+        "denominator": "1"
+      },
+      "display_value": "23455618"
+    },
+    {
+      "case_id": "real-146",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "2345561800",
+        "denominator": "68986649"
+      },
+      "display_value": "34.00"
+    },
+    {
+      "case_id": "real-147",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "11183495",
+        "denominator": "1"
+      },
+      "display_value": "11183495"
+    },
+    {
+      "case_id": "real-148",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "1118349500",
+        "denominator": "11166427"
+      },
+      "display_value": "100.15"
+    },
+    {
+      "case_id": "real-149",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-1642533",
+        "denominator": "1"
+      },
+      "display_value": "-1642533"
+    },
+    {
+      "case_id": "real-150",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-27375550",
+        "denominator": "2455743"
+      },
+      "display_value": "-11.15"
+    },
+    {
+      "case_id": "real-151",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "744997400",
+        "denominator": "30814089"
+      },
+      "display_value": "24.18"
+    },
+    {
+      "case_id": "real-152",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "1116642700",
+        "denominator": "68986649"
+      },
+      "display_value": "16.19"
+    },
+    {
+      "case_id": "real-153",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "14324",
+        "denominator": "1"
+      },
+      "display_value": "14324"
+    },
+    {
+      "case_id": "real-154",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "716200",
+        "denominator": "46221"
+      },
+      "display_value": "15.50"
+    },
+    {
+      "case_id": "real-155",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-12239",
+        "denominator": "1"
+      },
+      "display_value": "-12239"
+    },
+    {
+      "case_id": "real-156",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-24478",
+        "denominator": "447"
+      },
+      "display_value": "-54.76"
+    },
+    {
+      "case_id": "real-157",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-10809",
+        "denominator": "1"
+      },
+      "display_value": "-10809"
+    },
+    {
+      "case_id": "real-158",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-30025",
+        "denominator": "363"
+      },
+      "display_value": "-82.71"
+    },
+    {
+      "case_id": "real-159",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "505550",
+        "denominator": "53383"
+      },
+      "display_value": "9.47"
+    },
+    {
+      "case_id": "real-160",
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "372500",
+        "denominator": "15407"
+      },
+      "display_value": "24.18"
+    }
+  ]
+}
