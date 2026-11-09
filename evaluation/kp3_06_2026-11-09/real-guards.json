@@ -1,0 +1,55 @@
+{
+  "checks": [
+    {
+      "name": "initial_and_later_comparative_not_silently_merged",
+      "passed": true,
+      "origin_roles": [
+        "reported_period",
+        "comparative_period"
+      ],
+      "cause_of_difference": "not_established"
+    },
+    {
+      "name": "later_comparative_cannot_be_original",
+      "passed": true
+    },
+    {
+      "name": "four_column_header_preserves_h1_and_q2",
+      "passed": true,
+      "primary_header_visually_rechecked": true,
+      "derived_by_subtraction": false
+    },
+    {
+      "name": "quarter_candidate_is_not_catalog_fact",
+      "passed": true
+    },
+    {
+      "name": "missing_income_table_is_explicit_partial",
+      "passed": true
+    },
+    {
+      "name": "scale_filter_does_not_convert",
+      "passed": true
+    },
+    {
+      "name": "currency_filter_does_not_apply_fx",
+      "passed": true
+    },
+    {
+      "name": "no_temporal_upgrade",
+      "passed": true
+    },
+    {
+      "name": "wrong_export_resources_rejected",
+      "passed": true,
+      "reason_code": "extraction_hash_mismatch"
+    },
+    {
+      "name": "bool_is_not_a_result_limit",
+      "passed": true,
+      "reason_code": "invalid_top_k"
+    }
+  ],
+  "new_facts_admitted": 0,
+  "model_calls": 0
+}

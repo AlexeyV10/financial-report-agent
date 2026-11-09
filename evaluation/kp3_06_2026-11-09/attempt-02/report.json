@@ -1,0 +1,87 @@
+{
+  "stage": "KP3-06",
+  "started_local_date": "2026-11-09",
+  "completed_local_date": "2026-11-10",
+  "timezone": "Europe/Moscow",
+  "checked_at": "2026-11-09T22:37:19.259459+00:00",
+  "checked_local": "2026-11-10T01:37:19.259475+03:00",
+  "base_commit": "61d4c8ba4e330e6420f77ebce113f5d4d26e8fcf",
+  "branch": "codex/kp3-06-extraction-search",
+  "base_branch": "codex/kp3-05-verified-corpus",
+  "pdf_versions": 8,
+  "prepared_evidence_cells": 48,
+  "economic_contexts_without_version": 39,
+  "prepared": {
+    "single_cell": 48,
+    "all_required_single_cell": 48,
+    "multi_cell_cases": 8,
+    "all_required_multi_cell": 8,
+    "total_cases": 56,
+    "all_required_evidence_cases": 56,
+    "all_required_table_cases": 56
+  },
+  "automatic": {
+    "target_cells": 48,
+    "exact_matched_target_cells": 40,
+    "unsupported_target_cells": 8,
+    "candidate_cells": 48,
+    "out_of_catalog_quarter_cells": 8,
+    "multi_cell_complete": 6,
+    "multi_cell_cases": 8,
+    "total_cases": 56,
+    "all_required_evidence_cases": 46,
+    "statuses": {
+      "unsupported_layout": 8,
+      "found": 46,
+      "partial": 2
+    },
+    "candidate_review_status": "candidate_not_assistant_checked"
+  },
+  "historical_blocked_per_mode": 56,
+  "independent_unseen_data": false,
+  "all_families_known_to_developer": true,
+  "reserved_unseen_real": 0,
+  "final_benchmark": false,
+  "final_eval_freeze": false,
+  "new_financial_facts_admitted": 0,
+  "new_financial_formulas": 0,
+  "model_calls": 0,
+  "new_libraries": 0,
+  "ocr": false,
+  "tests": {
+    "unit": 363,
+    "previous": 334,
+    "new": 29,
+    "unit_elapsed_s": 29.741,
+    "legacy_cli": 5,
+    "new_cli": 9,
+    "real_source_guards": 10,
+    "worker_error_cases": 2,
+    "method04_gold_unchanged": true
+  },
+  "legacy_metrics_unchanged": [
+    "QA07 C/call_limit",
+    "3/10financial",
+    "reserved financial n=0"
+  ],
+  "no_UI_or_agent_or_service_changes": true,
+  "hash_guards": [
+    "PDF version/size/SHA",
+    "extractor code/config/environment",
+    "export raw SHA",
+    "index raw SHA plus metadata digest",
+    "catalog digest",
+    "retrieval, validation dependency code and lexicon/config signatures"
+  ],
+  "limits": [
+    "Horizontal Russian statement layouts in selected profile, not arbitrary PDF/rotated tables/OCR",
+    "Two income tables remain unsupported; denominator48 retained",
+    "Prepared lookup and automatic candidates measured separately",
+    "Auto candidate metric/definition IDs are hypotheses inside curated document metadata, not financial admission",
+    "Publication/rights/human review do not change",
+    "Eight quarter candidates are outside the frozen48 Fact catalog"
+  ],
+  "next_stage_started": false,
+  "next_prompt": "prompts/kp3_07_expand_financial_calculator.md",
+  "merge_authorized": false
+}

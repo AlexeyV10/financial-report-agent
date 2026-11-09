@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-11-09T22:49:29.247179+00:00",
+  "base_files": 467,
+  "base_unchanged": 464,
+  "base_changed_only": [
+    "README.md",
+    "STATUS.md",
+    "docs/decisions.md"
+  ],
+  "root_files_before": 447,
+  "root_unchanged": 445,
+  "root_changed_only": [
+    "STATUS.md",
+    "docs/decisions.md"
+  ],
+  "original_doc_bytes_preserved": true,
+  "previous_worktrees_clean": true,
+  "root_branch_unchanged": true,
+  "root_original_dirty_materials_preserved": true,
+  "prior_src_data_contracts_tests_evidence_gold_unchanged": true,
+  "raw_primary_sources_uploaded": false,
+  "model_runs": 0,
+  "final_eval_freeze": false
+}
