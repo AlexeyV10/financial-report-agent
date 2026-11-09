@@ -1,0 +1,32 @@
+{
+  "phase": "PR created; subsequent receipt-only commit may advance head",
+  "date": "2026-11-09",
+  "timezone": "Europe/Moscow",
+  "branch": "codex/kp3-03-tasks-catalog-contracts",
+  "base_commit": "f349717c5ca2acc33decf3dd7ce12b2756ce6d8b",
+  "verified_code_commit": "f165f8fefd30cb30bd0a87fae3c1bfa20df643c8",
+  "code_commits": [
+    "adb314f53dd795b4d19412ae1112a0ebcbabb9b9",
+    "f165f8fefd30cb30bd0a87fae3c1bfa20df643c8"
+  ],
+  "tag": "kp3-03-contracts-v0.2-2026-11-09",
+  "tag_commit": "f165f8fefd30cb30bd0a87fae3c1bfa20df643c8",
+  "pr_url": "https://github.com/AlexeyV10/financial-report-agent/pull/3",
+  "pr_number": 3,
+  "pr_state": "open",
+  "merged": false,
+  "mergeable": true,
+  "mergeable_state": "clean",
+  "public_file_count": 33,
+  "remote_diff_matches_allowlist": true,
+  "active_main_rules_preserved": true,
+  "github_check_run_count": 0,
+  "ci_configured_by_this_stage": false,
+  "tests": {
+    "unit": 303,
+    "ui_compat": 5,
+    "cli": 7
+  },
+  "old_UI_scope_or_private_source_included": false,
+  "no_merge_authorized": true
+}

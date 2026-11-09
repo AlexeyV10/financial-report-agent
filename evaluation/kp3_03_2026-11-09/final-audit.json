@@ -1,0 +1,150 @@
+{
+  "checked_at": "2026-11-09T16:20:03.009002+00:00",
+  "base_files": 373,
+  "base_files_unchanged": 370,
+  "changed_base_files": [
+    "README.md",
+    "STATUS.md",
+    "docs/decisions.md"
+  ],
+  "root_files_before": 437,
+  "root_unchanged": 435,
+  "root_changed_only": [
+    "STATUS.md",
+    "docs/decisions.md"
+  ],
+  "unexpected_changes": [],
+  "all_original_code_data_tests_archives_evidence_unchanged": true,
+  "prior_local_UI_and_scope_not_in_commit": true,
+  "manifest": {
+    "README.md": {
+      "sha256": "90a2865ed0977882a2d83db90d73a7ac6dfdab521cc6ea63d399a8cc0aa848ae",
+      "bytes": 29385
+    },
+    "STATUS.md": {
+      "sha256": "0662c0b8c8f3a245490fc7f392a21b89c6a0b6a3361d1963cd211dd7fdd730dc",
+      "bytes": 26660
+    },
+    "data/catalogs/kp3_v02/synthetic_catalog.json": {
+      "sha256": "01c9e6dcdf12b04f779af46ac2b64af3e33cd3ad847f73d438b7e25ad1667fae",
+      "bytes": 16630
+    },
+    "data/tasks/kp3_v02/examples.json": {
+      "sha256": "a74facbd29015362a6c86c1d6365b3dd0e6eee58f49b0d5b4bb61ef287880b0e",
+      "bytes": 4551
+    },
+    "docs/decisions.md": {
+      "sha256": "fbce9acb248f12b3c401c7b15112a94e76b2d06946d3117ccfee2ceca602835f",
+      "bytes": 34253
+    },
+    "docs/kp3/contracts_v02.md": {
+      "sha256": "e3809e414fdd476c8da0ee9f49f9d8e3f5df53845dc46501f98c001c1286d95e",
+      "bytes": 17963
+    },
+    "evaluation/kp3_03_2026-11-09/README.md": {
+      "sha256": "5a607ac1de858a7a3ac4097493c557f75959067d0a0535c746e370386ef004bc",
+      "bytes": 4238
+    },
+    "evaluation/kp3_03_2026-11-09/agent-mock.txt": {
+      "sha256": "bdaccd82c72fe544848fe1de2c5de0b5d591efe82f9f11d6c4d5e89905471fa3",
+      "bytes": 3928
+    },
+    "evaluation/kp3_03_2026-11-09/bindings-final.txt": {
+      "sha256": "6e81a72e096f55e08543a89fdd10d46d396ff062c86cbae810810596d847d02c",
+      "bytes": 3182
+    },
+    "evaluation/kp3_03_2026-11-09/bindings.txt": {
+      "sha256": "6e81a72e096f55e08543a89fdd10d46d396ff062c86cbae810810596d847d02c",
+      "bytes": 3182
+    },
+    "evaluation/kp3_03_2026-11-09/contracts-tests-01.txt": {
+      "sha256": "0ebc0c7bf4febc42b29a7a59f4c237b19d3dd602cb45816d8861e0683176aa57",
+      "bytes": 5794
+    },
+    "evaluation/kp3_03_2026-11-09/contracts-tests-02.txt": {
+      "sha256": "ff978379929024ecb101be4fda63bad03eeaeac10debe25f8f0c393cbc8cc48d",
+      "bytes": 6374
+    },
+    "evaluation/kp3_03_2026-11-09/fixed-manual.txt": {
+      "sha256": "7fd6c5ff3c1e65c1f5b6c381b9a80a58b940dbfde8186e743bc2d02d30dd900c",
+      "bytes": 3714
+    },
+    "evaluation/kp3_03_2026-11-09/offline-replay.txt": {
+      "sha256": "23eef42b127ccd6d6fff0c8215bdd5aeb51ba54e595738b9a0cd65dc5e1a0daa",
+      "bytes": 1947
+    },
+    "evaluation/kp3_03_2026-11-09/questions-frozen.txt": {
+      "sha256": "93499f10df697d8e8c8133a88c767c101a4a9e8ddea102e59caefe64ded66124",
+      "bytes": 882
+    },
+    "evaluation/kp3_03_2026-11-09/real-source.txt": {
+      "sha256": "d8150978ed746e859c5444c0380d0a4ac7b5f260058af1ad7a2b0e0121c1e3e6",
+      "bytes": 710
+    },
+    "evaluation/kp3_03_2026-11-09/report.json": {
+      "sha256": "e1e2903f74a6d8c8db43a1f70ef1236fa78f93449bc49c9c808b0447524150fa",
+      "bytes": 9303
+    },
+    "evaluation/kp3_03_2026-11-09/runs.json": {
+      "sha256": "ced8e0b05c0a1b332b66198dc42da55e0ad7e2416b553085f8ca79beb01d0b22",
+      "bytes": 2347
+    },
+    "evaluation/kp3_03_2026-11-09/synthetic.txt": {
+      "sha256": "43bc214cc4f054b4b797dda9f88abd3ca1dc749892797a17380254eb73421a70",
+      "bytes": 3701
+    },
+    "evaluation/kp3_03_2026-11-09/ui-compat-source.json": {
+      "sha256": "6bf513c3ec3388c326cb82369d452e38562c6f80fe9c7be3b2f37de3d6578f3f",
+      "bytes": 4853
+    },
+    "evaluation/kp3_03_2026-11-09/ui-compat-tests.txt": {
+      "sha256": "9314c3f3cf8e170f5da2ecf0be8dbf1656b146b68e8633917f643686f03de435",
+      "bytes": 1462
+    },
+    "evaluation/kp3_03_2026-11-09/unit-regression-final.txt": {
+      "sha256": "9b9f09574ec4a6dc98be312f53518405562ae40cdc261f8a582d6a0a2220e090",
+      "bytes": 39025
+    },
+    "evaluation/kp3_03_2026-11-09/unit-regression-release.txt": {
+      "sha256": "f777803dc98612abd032d87fae80839b05d5b0567c9ff34de32452f06fcaf7a7",
+      "bytes": 39025
+    },
+    "evaluation/kp3_03_2026-11-09/unit-regression.txt": {
+      "sha256": "05641d1d3e2722d41da2f2010f4ad814a4e2fb4b51863a80f649cf388ad96c8e",
+      "bytes": 38643
+    },
+    "evaluation/kp3_03_2026-11-09/worktree-before.json": {
+      "sha256": "74b634ffa492a50100c09317d0b433c5318f01f7eacd663beebf290e57e4ba55",
+      "bytes": 47135
+    },
+    "prompts/kp3_04_financial_dictionary_and_method.md": {
+      "sha256": "e37c4c268d0bb797838a17d4b92cf46b652fcab0325f843d7b2f01ac0ec18809",
+      "bytes": 16111
+    },
+    "scripts/check_kp3_contracts.py": {
+      "sha256": "8bf81fcbb61fd7529baf6149882328dd23d9cf09319863038ef32b962d99608a",
+      "bytes": 1366
+    },
+    "src/financial_assistant/catalog.py": {
+      "sha256": "c791b54d9c2515b76e4056e299f3178f75d039a7a5aefc52562912de86905d5d",
+      "bytes": 13162
+    },
+    "src/financial_assistant/contracts_v2.py": {
+      "sha256": "bc6162e7aabf4a4b69a55cd0454c5c8ae8955a306d2779dd12c2fffa0f4dfddc",
+      "bytes": 8101
+    },
+    "src/financial_assistant/legacy_adapter.py": {
+      "sha256": "27ae33e8aa06db12dd17290f798945285d5a312b448ca4b9027bafd7f8c8d908",
+      "bytes": 7192
+    },
+    "src/financial_assistant/tasks.py": {
+      "sha256": "77ef9e40805410457c8ff989569e0e48738fb520931b0b9371feebdd837b23d0",
+      "bytes": 7633
+    },
+    "tests/test_kp3_contracts.py": {
+      "sha256": "1de1fb94cce727195c93569f82a4b60ba801f68bf79131f5d455eee9f1a3888d",
+      "bytes": 21812
+    }
+  },
+  "manifest_excludes_self": true
+}

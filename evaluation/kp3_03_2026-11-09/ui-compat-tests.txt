@@ -1,0 +1,15 @@
+test_initial_page_and_unselected_submit_do_not_run_finance (test_shell.ShellChecks.test_initial_page_and_unselected_submit_do_not_run_finance) ... 2026-11-09 19:13:13.688 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_manual_matches_cli_and_rerun_does_not_recalculate (test_shell.ShellChecks.test_manual_matches_cli_and_rerun_does_not_recalculate) ... 2026-11-09 19:13:14.890 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_real_source_remains_blocked_without_trades (test_shell.ShellChecks.test_real_source_remains_blocked_without_trades) ... 2026-11-09 19:13:14.983 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_synthetic_matches_cli (test_shell.ShellChecks.test_synthetic_matches_cli) ... 2026-11-09 19:13:15.067 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_untrusted_mode_and_missing_file_are_technical_errors (test_shell.ShellChecks.test_untrusted_mode_and_missing_file_are_technical_errors) ... 2026-11-09 19:13:15.153 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.575s
+
+OK
