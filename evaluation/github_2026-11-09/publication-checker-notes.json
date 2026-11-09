@@ -1,0 +1,9 @@
+{
+  "credential_access": "Sandbox credential enumeration returned access denied; authorized elevated account inspection succeeded. No token printed or stored.",
+  "scope_checker_fix": "Initially rejected every directory named raw; corrected to exclude data/raw while preserving our evaluation/.../raw test outputs.",
+  "first_staging_attempt": "Detected three new parallel KP3-planning drafts before staging and stopped. A subsequent push had no commit to send and did not modify remote.",
+  "resolution": "Explicitly stage audited snapshot and our publication proofs. Preserve parallel unreviewed drafts locally without staging or deletion.",
+  "unit_timeout": "Attempt01 exceeded60s. Attempt02 streamed output with240s budget:267 tests passed in62.410s, then8 minimal scenarios passed.",
+  "production_code_or_tests_changed_for_validation": false,
+  "new_model_calls": 0
+}

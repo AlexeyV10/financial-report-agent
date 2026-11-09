@@ -1,0 +1,15 @@
+{
+  "commit": "1b46f83e35540fef3fb4fd63990d552100e94f47",
+  "staged_files": 350,
+  "staged_git_blobs_match_working_bytes": true,
+  "original_files_match_prepublication_snapshot": true,
+  "remote": "https://github.com/AlexeyV10/financial-report-agent.git",
+  "financial_code_changed": false,
+  "new_model_calls": 0,
+  "concurrent_unreviewed_files_preserved_outside_initial_commit": [
+    "evaluation/kp3_planning_2026-11-09/before.json",
+    "evaluation/kp3_planning_2026-11-09/planning-calculations.json",
+    "evaluation/kp3_planning_2026-11-09/status-before.md"
+  ],
+  "validation_wrapper_correction": "Only data/raw is excluded: evaluation/.../raw contains our own recorded test outputs, not primary PDF extraction."
+}

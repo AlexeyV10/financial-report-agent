@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-09",
+  "timezone": "Europe/Moscow",
+  "repository": "https://github.com/AlexeyV10/financial-report-agent",
+  "private": true,
+  "branch": "main",
+  "verified_initial_commit": "1b46f83e35540fef3fb4fd63990d552100e94f47",
+  "verified_initial_files": 350,
+  "fresh_clone_byte_check": true,
+  "unit_tests_passed": 267,
+  "minimal_cases_passed": 8,
+  "same_machine_not_new_model_installation": true,
+  "model_calls": 0,
+  "prior_protected_files_in_snapshot": 346,
+  "allowed_document_updates": [
+    "README.md",
+    "STATUS.md",
+    "docs/decisions.md",
+    "docs/github_collaboration.md",
+    "docs/transfer.md",
+    "docs/workflow.md",
+    "ПЛАН_РАБОТЫ_КП2.md"
+  ],
+  "all_other_snapshot_files_byte_unchanged": true,
+  "financial_core_data_tests_prior_evidence_office_materials_archives_byte_unchanged": true,
+  "concurrent_drafts_preserved_unstaged": [
+    "evaluation/kp3_planning_2026-11-09/before.json",
+    "evaluation/kp3_planning_2026-11-09/planning-calculations.json",
+    "evaluation/kp3_planning_2026-11-09/status-before.md",
+    "ПЛАН_РАБОТЫ_КП3.md"
+  ],
+  "invited_user": "kostyaNegoday",
+  "invitation_state_at_initial_verification": "pending_acceptance",
+  "access": "write",
+  "next_prompt": {
+    "path": "prompts/github_continue_collaboration.md",
+    "sha256": "057b79ef4ebab3c2c7ef87c3a59107c6a29f951f1ad8309576ab40abbd8e8073"
+  },
+  "final_revision_binding": "Final HEAD and remote tree verified after push in ignored local delivery/github-publication-2026-11-09.receipt.json",
+  "course_submission_performed": false,
+  "human_reviewed": false
+}

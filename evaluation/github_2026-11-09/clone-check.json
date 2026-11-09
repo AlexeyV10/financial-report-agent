@@ -1,0 +1,217 @@
+{
+  "checked_commit": "1b46f83e35540fef3fb4fd63990d552100e94f47",
+  "clone_url": "https://github.com/AlexeyV10/financial-report-agent.git",
+  "environment": "Python 3.14.7",
+  "machine": "same Windows computer; fresh remote clone, not another participant computer",
+  "tracked_files_byte_matched_git": 350,
+  "unit_tests_passed": 267,
+  "minimal_demo": {
+    "phase": "minimal",
+    "checked_at": "2026-11-09T12:45:25.768820+00:00",
+    "root": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\github_publish\\remote-checkout",
+    "python": "3.14.7 (main, Aug  8 2026, 21:15:19)  [MINGW GCC UCRT 16.2.0 64 bit (AMD64)]",
+    "interpreter": "C:\\msys64\\ucrt64\\bin\\python.exe",
+    "isolated_child_python": true,
+    "runs": [
+      {
+        "case": "B-manual",
+        "command": [
+          "python",
+          "-I",
+          "scripts/run_local.py",
+          "fixed",
+          "--source",
+          "manual"
+        ],
+        "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\github_publish\\remote-checkout",
+        "interpreter": "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "passed": true,
+        "elapsed_s": 0.2727334000001065,
+        "stdout_file": "B-manual.txt"
+      },
+      {
+        "case": "partial-year",
+        "command": [
+          "python",
+          "-I",
+          "scripts/run_local.py",
+          "fixed",
+          "--year",
+          "9 месяцев 2024"
+        ],
+        "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\github_publish\\remote-checkout",
+        "interpreter": "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "exit_code": 1,
+        "expected_exit_code": 1,
+        "passed": true,
+        "elapsed_s": 0.241009600000325,
+        "stdout_file": "partial-year.txt"
+      },
+      {
+        "case": "synthetic",
+        "command": [
+          "python",
+          "-I",
+          "scripts/run_local.py",
+          "scenario",
+          "--trace",
+          "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\github_publish\\remote-checkout\\output\\step13-minimal\\synthetic.trace.json"
+        ],
+        "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\github_publish\\remote-checkout",
+        "interpreter": "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "passed": true,
+        "elapsed_s": 0.4922888999999486,
+        "stdout_file": "synthetic.txt"
+      },
+      {
+        "case": "real-blocked",
+        "command": [
+          "python",
+          "-I",
+          "scripts/run_local.py",
+          "scenario",
+          "--case",
+          "real-source",
+          "--trace",
+          "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\github_publish\\remote-checkout\\output\\step13-minimal\\real-blocked.trace.json"
+        ],
+        "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\github_publish\\remote-checkout",
+        "interpreter": "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "passed": true,
+        "elapsed_s": 0.4691458000002058,
+        "stdout_file": "real-blocked.txt"
+      },
+      {
+        "case": "C-mock-manual",
+        "command": [
+          "python",
+          "-I",
+          "scripts/run_local.py",
+          "agent",
+          "--adapter",
+          "mock",
+          "--source",
+          "manual",
+          "--trace",
+          "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\github_publish\\remote-checkout\\output\\step13-minimal\\C-mock-manual.trace.json"
+        ],
+        "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\github_publish\\remote-checkout",
+        "interpreter": "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "passed": true,
+        "elapsed_s": 2.709252600000127,
+        "stdout_file": "C-mock-manual.txt",
+        "adapter": {
+          "kind": "deterministic_mock",
+          "adapter": "observed-mock-v1",
+          "model": null
+        },
+        "decision_attempts": 4,
+        "usage": {
+          "input_tokens": null,
+          "output_tokens": null,
+          "cost": null,
+          "cost_status": "не измерено"
+        },
+        "financial_status": "answered",
+        "stop_reason": "validated_financial_result"
+      },
+      {
+        "case": "question-freeze",
+        "command": [
+          "python",
+          "-I",
+          "scripts/run_local.py",
+          "questions"
+        ],
+        "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\github_publish\\remote-checkout",
+        "interpreter": "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "passed": true,
+        "elapsed_s": 0.48931949999996505,
+        "stdout_file": "question-freeze.txt"
+      },
+      {
+        "case": "offline-replay",
+        "command": [
+          "python",
+          "-I",
+          "scripts/run_local.py",
+          "replay",
+          "--run-dir",
+          "evaluation/step12_2026-11-09/run-02-environment-retry"
+        ],
+        "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\github_publish\\remote-checkout",
+        "interpreter": "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "exit_code": 0,
+        "expected_exit_code": 0,
+        "passed": true,
+        "elapsed_s": 0.26886419999982536,
+        "stdout_file": "offline-replay.txt"
+      },
+      {
+        "case": "search-source-missing",
+        "command": [
+          "python",
+          "-I",
+          "scripts/run_local.py",
+          "fixed",
+          "--pdf",
+          "tmp/absent-primary.pdf"
+        ],
+        "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\github_publish\\remote-checkout",
+        "interpreter": "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "exit_code": 2,
+        "expected_exit_code": 2,
+        "passed": true,
+        "elapsed_s": 0.247521499999948,
+        "stdout_file": "search-source-missing.txt"
+      }
+    ],
+    "passed": true,
+    "scope": "Integration launch, not new model quality benchmark"
+  },
+  "commands": [
+    {
+      "name": "unit-tests",
+      "argv": [
+        "C:/msys64/ucrt64/bin/python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 62.985003600000255
+    },
+    {
+      "name": "minimal-demo",
+      "argv": [
+        "C:/msys64/ucrt64/bin/python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_local_demo.py",
+        "minimal"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 5.394545999999991
+    }
+  ],
+  "new_model_calls": 0,
+  "pdf_index_weights_copied_to_clone": false,
+  "source_model_installation_on_other_pc_tested": false
+}

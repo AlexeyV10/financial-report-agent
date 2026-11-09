@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/AlexeyV10/financial-report-agent",
+  "private": true,
+  "branch": "main",
+  "commit": "1b46f83e35540fef3fb4fd63990d552100e94f47",
+  "remote_tree_matches_local": true,
+  "files": 350,
+  "collaborator": "kostyaNegoday",
+  "collaborator_state": "pending_acceptance",
+  "financial_source_resources_uploaded": false,
+  "new_model_calls": 0
+}

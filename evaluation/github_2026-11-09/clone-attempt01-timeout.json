@@ -1,0 +1,8 @@
+{
+  "phase": "full unit suite from fresh remote clone",
+  "outcome": "validation wrapper timeout after60 seconds",
+  "test_result": "not established in attempt01; captured subprocess output was not persisted before exception",
+  "source_code_changed": false,
+  "resolution": "Repeat unresolved suite with240-second process budget and streaming output files; this is not a new LLM experiment",
+  "new_model_calls": 0
+}

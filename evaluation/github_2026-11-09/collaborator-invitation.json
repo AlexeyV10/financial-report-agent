@@ -1,0 +1,10 @@
+{
+  "action": "invitation_created",
+  "state": "pending_acceptance",
+  "invitee": "kostyaNegoday",
+  "invitation_id": 342425874,
+  "permissions": "write",
+  "created_at": "2026-11-09T12:40:20Z",
+  "html_url": "https://github.com/AlexeyV10/financial-report-agent/invitations",
+  "confirmed_by_list": true
+}

@@ -1,0 +1,8 @@
+B-manual PASS 0
+partial-year PASS 1
+synthetic PASS 0
+real-blocked PASS 0
+C-mock-manual PASS 0
+question-freeze PASS 0
+offline-replay PASS 0
+search-source-missing PASS 2
