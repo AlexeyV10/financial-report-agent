@@ -1,0 +1,1345 @@
+{
+  "case_schema_version": "1.0",
+  "dataset_id": "kp3-financial-method-dev-v1",
+  "known_to_codex": true,
+  "purpose": "Open development method fixtures, not model evaluation; overrides are isolated reference inputs, never edits/admission of runtime facts.",
+  "cases": [
+    {
+      "case_id": "D01",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "D02",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "operating_cash_flow-2023"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "D03",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "value": "0"
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "A01",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "absolute_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "A02",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "absolute_change_v1",
+      "input_fact_ids": [
+        "operating_cash_flow-2023",
+        "operating_cash_flow-2024"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "R01",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "relative_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "R02",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "relative_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "value": "0"
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "R03",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "relative_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "value": "-20"
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "R04",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "relative_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2023": {
+          "value": "0"
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "R05",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "relative_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2023": {
+          "value": "-100"
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "R06",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "relative_change_v1",
+      "input_fact_ids": [
+        "operating_cash_flow-2023",
+        "operating_cash_flow-2024"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "R07",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "annual_growth_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "S01",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "scale_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "value": "507689",
+          "scale": 1000000
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1000000000
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "S02",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "scale_v1",
+      "input_fact_ids": [
+        "operating_cash_flow-2023"
+      ],
+      "input_overrides": {
+        "operating_cash_flow-2023": {
+          "value": "-1.25",
+          "scale": 1000000
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "S03",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "scale_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "amount",
+        "currency": "USD",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "M01",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "operating_margin_v1",
+      "input_fact_ids": [
+        "operating_profit-2024",
+        "revenue-2024"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "M02",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "operating_margin_v1",
+      "input_fact_ids": [
+        "operating_profit-2024",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "operating_profit-2024": {
+          "value": "-20"
+        },
+        "revenue-2024": {
+          "value": "100"
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "M03",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "operating_margin_v1",
+      "input_fact_ids": [
+        "operating_profit-2024",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "value": "0"
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "M04",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "operating_margin_v1",
+      "input_fact_ids": [
+        "operating_profit-2024",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "value": "-100"
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "M05",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "operating_margin_v1",
+      "input_fact_ids": [
+        "operating_profit-2024",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "operating_profit-2024": {
+          "value": "1"
+        },
+        "revenue-2024": {
+          "value": "32"
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "M06",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "operating_margin_v1",
+      "input_fact_ids": [
+        "operating_profit-2024",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "operating_profit-2024": {
+          "value": "-1"
+        },
+        "revenue-2024": {
+          "value": "32"
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "M07",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "operating_margin_v1",
+      "input_fact_ids": [
+        "operating_profit-2024",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "operating_profit-2024": {
+          "value": "0"
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "M08",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "operating_margin_v1",
+      "input_fact_ids": [
+        "operating_profit-2024",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "operating_profit-2024": {
+          "value": "180"
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "P01",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "margin_change_pp_v1",
+      "input_fact_ids": [
+        "operating_profit-2023",
+        "revenue-2023",
+        "operating_profit-2024",
+        "revenue-2024"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "percentage_point"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N01",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "absolute_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "currency": "USD"
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N02",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "absolute_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "scale": 1000
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N03",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "absolute_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "definition_id": "other_definition"
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N04",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "absolute_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "organization_id": "other_group"
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N05",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "absolute_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "accounting_standard": "RAS"
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N06",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "absolute_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "consolidation": "legal_entity"
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N07",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "absolute_change_v1",
+      "input_fact_ids": [
+        "revenue-2024",
+        "revenue-2023"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N08",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "relative_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "period": {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2024-01-01",
+            "end": "2024-09-30"
+          }
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N09",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "relative_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "period": {
+            "kind": "instant",
+            "date": "2024-12-31"
+          }
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N10",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "relative_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "version_id": "own-v2"
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N11",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "operating_margin_v1",
+      "input_fact_ids": [
+        "operating_profit-2024",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "operating_profit-2024": {
+          "document_id": "another_version"
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N12",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "provenance_status": "candidate"
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N13",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "evidence_present": false,
+          "provenance_status": "candidate"
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N14",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "value": null
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N15",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "unknown_fact"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N16",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "historical",
+      "as_of": "2025-02-14T10:00:00+03:00",
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N17",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "historical",
+      "as_of": "2025-02-14T10:00:00",
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N18",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": "2025-02-14T10:00:00+03:00",
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N19",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "fcf_v1",
+      "input_fact_ids": [
+        "operating_cash_flow-2023",
+        "operating_cash_flow-2024"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "N20",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "quarter_from_ytd_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "version_id": "own-v2"
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "B01",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "value": true
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "B02",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "value": 1.25
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "B03",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "value": "NaN"
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "B04",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "value": "Infinity"
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "B05",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "value": "1e3"
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "B06",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "value": "1,000"
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "B07",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2024": {
+          "scale": true
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "T01",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": "source_missing"
+    },
+    {
+      "case_id": "T02",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": "model_unavailable"
+    },
+    {
+      "case_id": "T03",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2024"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": "call_limit"
+    },
+    {
+      "case_id": "T04",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": "missing_period"
+    },
+    {
+      "case_id": "Q01",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "relative_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2023": {
+          "period": {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2023-01-01",
+            "end": "2023-09-30"
+          }
+        },
+        "revenue-2024": {
+          "period": {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2024-01-01",
+            "end": "2024-09-30"
+          }
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "Q02",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "relative_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2023": {
+          "period": {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2023-10-01",
+            "end": "2023-12-31"
+          }
+        },
+        "revenue-2024": {
+          "period": {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2024-10-01",
+            "end": "2024-12-31"
+          }
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "Q03",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "absolute_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2023": {
+          "period": {
+            "kind": "duration",
+            "duration_type": "custom",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          }
+        },
+        "revenue-2024": {
+          "period": {
+            "kind": "duration",
+            "duration_type": "custom",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "V01",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "direct_fact_v1",
+      "input_fact_ids": [
+        "revenue-2023"
+      ],
+      "input_overrides": {
+        "revenue-2023": {
+          "origin_role": "comparative_period"
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null,
+      "version_policy": "original_period_documents"
+    },
+    {
+      "case_id": "N21",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "absolute_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2023"
+      ],
+      "input_overrides": {},
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "R08",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "relative_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2023": {
+          "value": "3"
+        },
+        "revenue-2024": {
+          "value": "4"
+        }
+      },
+      "result_unit": {
+        "kind": "percent"
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    },
+    {
+      "case_id": "A03",
+      "split": "dev_open",
+      "data_origin": "own_synthetic",
+      "operation_id": "absolute_change_v1",
+      "input_fact_ids": [
+        "revenue-2023",
+        "revenue-2024"
+      ],
+      "input_overrides": {
+        "revenue-2023": {
+          "value": "1.005"
+        },
+        "revenue-2024": {
+          "value": "1.015"
+        }
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "execution_fixture": null
+    }
+  ]
+}

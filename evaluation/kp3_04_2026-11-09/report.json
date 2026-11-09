@@ -1,0 +1,173 @@
+{
+  "stage": "KP3-04",
+  "date": "2026-11-09",
+  "timezone": "Europe/Moscow",
+  "status": "technically_complete_method_only",
+  "branch": "codex/kp3-04-financial-method",
+  "base_commit": "ab47731d94ada6becff0becd8bd5120c7537f26b",
+  "stacked_base_branch": "codex/kp3-03-tasks-catalog-contracts",
+  "base_PR": 3,
+  "main_at_start": "f349717c5ca2acc33decf3dd7ce12b2756ce6d8b",
+  "definitions": [
+    "revenue:nonfinancial_ifrs_reported_v1",
+    "operating_profit:nonfinancial_ifrs_reported_v1",
+    "operating_cash_flow:nonfinancial_ifrs_net_v1"
+  ],
+  "method_operations": 7,
+  "new_production_operations": 0,
+  "synthetic_runtime_facts": 6,
+  "open_dev_cases": 62,
+  "numeric_gold_cases": 22,
+  "quality_metrics_measured": false,
+  "independent_arithmetic": [
+    "Fraction with integer quotient/remainder HALF_UP",
+    "Decimal80 with ROUND_HALF_UP for all22 numeric gold cases"
+  ],
+  "oracle_isolation": "All62 cases reproduced with production imports, file I/O, socket and subprocess denied",
+  "runtime_does_not_import_gold": true,
+  "tests": {
+    "passed": 314,
+    "total": 314,
+    "previous_tests": 303,
+    "new_tests": 11,
+    "unittest_elapsed_s": 28.653,
+    "final_log": "unit-regression-final.txt"
+  },
+  "legacy_cli": [
+    {
+      "name": "fixed-manual",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "fixed",
+        "--source",
+        "manual"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.11595719999968424
+    },
+    {
+      "name": "synthetic",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "scenario"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.1905202999996618
+    },
+    {
+      "name": "real-source",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "scenario",
+        "--case",
+        "real-source",
+        "--trace",
+        "tmp/kp3-04-real-source.json"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.17949939999925846
+    },
+    {
+      "name": "questions",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "questions"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.22295220000069094
+    },
+    {
+      "name": "replay",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "replay",
+        "--run-dir",
+        "evaluation/step12_2026-11-09/run-02-environment-retry"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.12045269999998709
+    }
+  ],
+  "method_checker": {
+    "dictionary_version": "1.0",
+    "definitions": 3,
+    "method_operations": 7,
+    "synthetic_runtime_facts": 6,
+    "open_dev_cases": 62,
+    "outcome_counts": {
+      "completed/answered": 22,
+      "completed/unsupported": 8,
+      "completed/conflict": 13,
+      "completed/missing": 5,
+      "error/None": 12,
+      "limit_exceeded/None": 1,
+      "awaiting_clarification/None": 1
+    },
+    "independent_gold_matches": true,
+    "production_answer_calls": 0,
+    "new_real_financial_facts": 0,
+    "quality_metric": false
+  },
+  "real_source": {
+    "scenario_result_schema_version": "0.1",
+    "label": "ПРОВЕРКА НАСТОЯЩЕГО ИСТОЧНИКА — ТОРГОВЛИ НЕТ",
+    "status": "blocked",
+    "reason_code": "publication_unknown",
+    "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+    "document_version": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+    "decision_at": "2025-06-04T19:30:00+03:00",
+    "ledger": [],
+    "return_pct": null,
+    "legacy_gate": {
+      "status": "blocked",
+      "reasons": [
+        "publication_of_exact_version_unknown",
+        "no_valid_calculation",
+        "calendar_and_prices_missing",
+        "simulation_not_implemented"
+      ]
+    }
+  },
+  "replay_matches_saved": true,
+  "development_failure": {
+    "log": "method-tests-01.txt",
+    "outcome": "test import SyntaxError in multiline with; no method tests ran",
+    "fix": "test syntax corrected,11 tests then final314 passed; numerical gold values unchanged",
+    "raw_log_encoding": "Windows path in the original failing traceback contains replacement characters; retained verbatim, not treated as source corruption or successful UTF-8 source validation"
+  },
+  "core_src_old_tests_data_archives_evidence_unchanged": true,
+  "previous_worktrees_preserved": true,
+  "new_real_financial_facts": 0,
+  "new_real_primary_pdf_verification": false,
+  "human_reviewed_assigned": false,
+  "LLM_calls": 0,
+  "PDF_worker_runs": 0,
+  "financial_PDF_or_model_downloads": 0,
+  "dependencies_installed": 0,
+  "external_sources": "Three official IFRS overview pages checked for method semantics; no standard text copied and no new issuer numbers proven",
+  "UI_changed": false,
+  "UI_checks_repeated": false,
+  "limitations": [
+    "Method only; no new production calculator/parser/corpus/service",
+    "Operating profit and CFO have no new verified real facts",
+    "All cases synthetic/dev_open/known to Codex; no blind/model/market benchmark",
+    "Reference overlays are not admitted runtime Fact changes",
+    "Task0.2 result_unit cannot express percent/percentage_point outputs; explicit later migration required",
+    "IFRS18 adoption/report subtotal composition must be checked per actual source",
+    "CFO positive outflow magnitude cannot be normalized by label alone",
+    "Old publication_unknown/IFRS8/unknown rights/assistant_checked preserved",
+    "Old QA07 C/call_limit remains dev error;3/10financial and reserved n=0 unchanged"
+  ],
+  "next_prompt": "prompts/kp3_05_curate_verified_corpus.md",
+  "Git_delivery": "Separate commits/tag and stacked PR against03; no merge authorized. Actual receipt follows publication."
+}

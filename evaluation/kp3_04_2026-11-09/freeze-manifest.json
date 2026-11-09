@@ -1,0 +1,55 @@
+{
+  "freeze_schema_version": "1.0",
+  "stage": "KP3-04",
+  "dictionary_version": "1.0",
+  "frozen_at": "2026-11-09T16:46:39.682800+00:00",
+  "timezone": "Europe/Moscow",
+  "data_role": "open development method fixtures; not a final evaluation set",
+  "known_to_codex": true,
+  "runtime_gold_separated": true,
+  "primary_source_text_included": false,
+  "cases": 62,
+  "numeric_gold_cases": 22,
+  "files": {
+    "data/dictionaries/kp3_finance_v1/definitions.json": {
+      "sha256": "99a48df712795a3f7ba9ca2a177989b7fcbaeb944d49caec7bc81cfaf69d438c",
+      "bytes": 8998
+    },
+    "data/dictionaries/kp3_finance_v1/legacy_definition_map.json": {
+      "sha256": "277fe736822d0e336a04254e8c06ea74f524546b3ae830aa09c2d6439e285458",
+      "bytes": 760
+    },
+    "data/catalogs/kp3_finance_dev_v1/runtime_catalog.json": {
+      "sha256": "deaf9b6782a719a28aaa431121ff340ed5969337df8bafcfe25595245212fb4e",
+      "bytes": 17508
+    },
+    "data/dev_cases/kp3_finance_v1/cases.json": {
+      "sha256": "4a3654263897d87e58ebee9b1b1f85c805baa7641291419963a47281e59f459f",
+      "bytes": 32245
+    },
+    "evaluation/reference/kp3_finance_v1/oracle.py": {
+      "sha256": "934c57cd4cb3127d6e291baab982917c3e6982579f62729d69701789a2461dfe",
+      "bytes": 13336
+    },
+    "evaluation/fixtures/kp3_finance_v1/gold.json": {
+      "sha256": "546343e11f857a614bd4a56a8363a2e7193439291b782f4c51c97ec8b3281318",
+      "bytes": 36861
+    },
+    "scripts/check_kp3_financial_method.py": {
+      "sha256": "0b63aba543e2a0d7d5d9fe5ef1130c51e18f6e3499e73f48cc94eb15bcd31d24",
+      "bytes": 3567
+    },
+    "tests/test_financial_method.py": {
+      "sha256": "1836be6df8036c787c5974930e68a03d0393ae512c90d8e7639b9f5ea3a465a9",
+      "bytes": 11406
+    },
+    "docs/kp3/financial_method_v1.md": {
+      "sha256": "b5ea011a5f1d174d7218cbe2ffdd52b8afdf93af0e7acee93ff288b525ae2d35",
+      "bytes": 24402
+    },
+    "evaluation/kp3_04_2026-11-09/sources.json": {
+      "sha256": "24fde4555d0e3862a690a96f2fbd23b69144e168237192a3298341917b10f182",
+      "bytes": 1413
+    }
+  }
+}

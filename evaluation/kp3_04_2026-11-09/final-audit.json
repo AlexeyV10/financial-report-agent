@@ -1,0 +1,172 @@
+{
+  "checked_at": "2026-11-09T16:46:39.729321+00:00",
+  "base_files": 404,
+  "base_unchanged": 401,
+  "base_changed_only": [
+    "README.md",
+    "STATUS.md",
+    "docs/decisions.md"
+  ],
+  "root_files_before": 440,
+  "root_unchanged": 438,
+  "root_changed_only": [
+    "docs/decisions.md",
+    "STATUS.md"
+  ],
+  "old_src_and_financial_data_tests_frozen_history_unchanged": true,
+  "previous03_worktree_clean": true,
+  "new_paths": [
+    "data/catalogs/kp3_finance_dev_v1/runtime_catalog.json",
+    "data/dev_cases/kp3_finance_v1/cases.json",
+    "data/dictionaries/kp3_finance_v1/definitions.json",
+    "data/dictionaries/kp3_finance_v1/legacy_definition_map.json",
+    "docs/kp3/financial_method_v1.md",
+    "evaluation/fixtures/kp3_finance_v1/gold.json",
+    "evaluation/kp3_04_2026-11-09/README.md",
+    "evaluation/kp3_04_2026-11-09/before.json",
+    "evaluation/kp3_04_2026-11-09/fixed-manual.txt",
+    "evaluation/kp3_04_2026-11-09/freeze-manifest.json",
+    "evaluation/kp3_04_2026-11-09/legacy-cli-runs.json",
+    "evaluation/kp3_04_2026-11-09/method-check-01.txt",
+    "evaluation/kp3_04_2026-11-09/method-check-final.txt",
+    "evaluation/kp3_04_2026-11-09/method-tests-01.txt",
+    "evaluation/kp3_04_2026-11-09/method-tests-02.txt",
+    "evaluation/kp3_04_2026-11-09/questions.txt",
+    "evaluation/kp3_04_2026-11-09/real-source.txt",
+    "evaluation/kp3_04_2026-11-09/replay.txt",
+    "evaluation/kp3_04_2026-11-09/report.json",
+    "evaluation/kp3_04_2026-11-09/sources.json",
+    "evaluation/kp3_04_2026-11-09/synthetic.txt",
+    "evaluation/kp3_04_2026-11-09/unit-regression-final.txt",
+    "evaluation/kp3_04_2026-11-09/unit-regression.txt",
+    "evaluation/reference/kp3_finance_v1/oracle.py",
+    "prompts/kp3_05_curate_verified_corpus.md",
+    "scripts/check_kp3_financial_method.py",
+    "tests/test_financial_method.py"
+  ],
+  "raw_diagnostic_encoding_exceptions": [
+    "evaluation/kp3_04_2026-11-09/method-tests-01.txt"
+  ],
+  "manifest_excludes_self": {
+    "README.md": {
+      "sha256": "446c0819c52715f2ddd9c18c8f50e260f9d5c9638c0ce385f3d3f1330e6a5e84",
+      "bytes": 30059
+    },
+    "STATUS.md": {
+      "sha256": "331a8bfe14b040ae28b161783dd0d178252df2e01bdaf2b26c9221a49e77b6cc",
+      "bytes": 31349
+    },
+    "data/catalogs/kp3_finance_dev_v1/runtime_catalog.json": {
+      "sha256": "deaf9b6782a719a28aaa431121ff340ed5969337df8bafcfe25595245212fb4e",
+      "bytes": 17508
+    },
+    "data/dev_cases/kp3_finance_v1/cases.json": {
+      "sha256": "4a3654263897d87e58ebee9b1b1f85c805baa7641291419963a47281e59f459f",
+      "bytes": 32245
+    },
+    "data/dictionaries/kp3_finance_v1/definitions.json": {
+      "sha256": "99a48df712795a3f7ba9ca2a177989b7fcbaeb944d49caec7bc81cfaf69d438c",
+      "bytes": 8998
+    },
+    "data/dictionaries/kp3_finance_v1/legacy_definition_map.json": {
+      "sha256": "277fe736822d0e336a04254e8c06ea74f524546b3ae830aa09c2d6439e285458",
+      "bytes": 760
+    },
+    "docs/decisions.md": {
+      "sha256": "2b9474800c15d3e1dec5c9e43faa0466a339ad03a6db44efcc8c1ab5c3c6d38c",
+      "bytes": 36588
+    },
+    "docs/kp3/financial_method_v1.md": {
+      "sha256": "b5ea011a5f1d174d7218cbe2ffdd52b8afdf93af0e7acee93ff288b525ae2d35",
+      "bytes": 24402
+    },
+    "evaluation/fixtures/kp3_finance_v1/gold.json": {
+      "sha256": "546343e11f857a614bd4a56a8363a2e7193439291b782f4c51c97ec8b3281318",
+      "bytes": 36861
+    },
+    "evaluation/kp3_04_2026-11-09/README.md": {
+      "sha256": "580e3acddf4fa123f3d499878fbc33d8654e406266ba30fe61c66515804c2221",
+      "bytes": 4521
+    },
+    "evaluation/kp3_04_2026-11-09/before.json": {
+      "sha256": "8b27984976cca624f3f3ca30faeb8d0e67c17ece0cf6f449c7fc3bca54cc5686",
+      "bytes": 50982
+    },
+    "evaluation/kp3_04_2026-11-09/fixed-manual.txt": {
+      "sha256": "7fd6c5ff3c1e65c1f5b6c381b9a80a58b940dbfde8186e743bc2d02d30dd900c",
+      "bytes": 3714
+    },
+    "evaluation/kp3_04_2026-11-09/freeze-manifest.json": {
+      "sha256": "a0927a41d19625822c52b8737368e0f8b20e44b9b69ffa6572d64291b63cd19c",
+      "bytes": 2110
+    },
+    "evaluation/kp3_04_2026-11-09/legacy-cli-runs.json": {
+      "sha256": "6c7e9df7a2b4b4395070cb63c600cf231c5863cf66b3dd68269ccfc1280329f5",
+      "bytes": 1367
+    },
+    "evaluation/kp3_04_2026-11-09/method-check-01.txt": {
+      "sha256": "11dd13e089e1828d871130ac000d0a9796e1feb6653ecc5dfc9b35f22594ef4c",
+      "bytes": 520
+    },
+    "evaluation/kp3_04_2026-11-09/method-check-final.txt": {
+      "sha256": "11dd13e089e1828d871130ac000d0a9796e1feb6653ecc5dfc9b35f22594ef4c",
+      "bytes": 520
+    },
+    "evaluation/kp3_04_2026-11-09/method-tests-01.txt": {
+      "sha256": "0f50091fc11b94d64e4e33ab37dfdd9cec40dd059a849f0926954285760eea02",
+      "bytes": 1277
+    },
+    "evaluation/kp3_04_2026-11-09/method-tests-02.txt": {
+      "sha256": "85adba2ff5a0c2b9a800a93f6062155c494986c998a9f4762775badf85645e36",
+      "bytes": 2257
+    },
+    "evaluation/kp3_04_2026-11-09/questions.txt": {
+      "sha256": "93499f10df697d8e8c8133a88c767c101a4a9e8ddea102e59caefe64ded66124",
+      "bytes": 882
+    },
+    "evaluation/kp3_04_2026-11-09/real-source.txt": {
+      "sha256": "d8150978ed746e859c5444c0380d0a4ac7b5f260058af1ad7a2b0e0121c1e3e6",
+      "bytes": 710
+    },
+    "evaluation/kp3_04_2026-11-09/replay.txt": {
+      "sha256": "23eef42b127ccd6d6fff0c8215bdd5aeb51ba54e595738b9a0cd65dc5e1a0daa",
+      "bytes": 1947
+    },
+    "evaluation/kp3_04_2026-11-09/report.json": {
+      "sha256": "e19aeb70a95a4a92c5096e379c486f47745a62dc1cd28659343268751872e692",
+      "bytes": 6064
+    },
+    "evaluation/kp3_04_2026-11-09/sources.json": {
+      "sha256": "24fde4555d0e3862a690a96f2fbd23b69144e168237192a3298341917b10f182",
+      "bytes": 1413
+    },
+    "evaluation/kp3_04_2026-11-09/synthetic.txt": {
+      "sha256": "43bc214cc4f054b4b797dda9f88abd3ca1dc749892797a17380254eb73421a70",
+      "bytes": 3701
+    },
+    "evaluation/kp3_04_2026-11-09/unit-regression-final.txt": {
+      "sha256": "5c16daf9dddbfbe751ae18182e4f6052371fc9d5f25abdad625c8e6addb10bd5",
+      "bytes": 41178
+    },
+    "evaluation/kp3_04_2026-11-09/unit-regression.txt": {
+      "sha256": "f7ad4ab8592c913c986d45f11ed17445d621e67321e08fc59e67a03f6fe2359f",
+      "bytes": 41178
+    },
+    "evaluation/reference/kp3_finance_v1/oracle.py": {
+      "sha256": "934c57cd4cb3127d6e291baab982917c3e6982579f62729d69701789a2461dfe",
+      "bytes": 13336
+    },
+    "prompts/kp3_05_curate_verified_corpus.md": {
+      "sha256": "4cfc3f35e0de3c2e1eaa76f10728b1959d7866f70d88701f522425e28c3f18e4",
+      "bytes": 20276
+    },
+    "scripts/check_kp3_financial_method.py": {
+      "sha256": "0b63aba543e2a0d7d5d9fe5ef1130c51e18f6e3499e73f48cc94eb15bcd31d24",
+      "bytes": 3567
+    },
+    "tests/test_financial_method.py": {
+      "sha256": "1836be6df8036c787c5974930e68a03d0393ae512c90d8e7639b9f5ea3a465a9",
+      "bytes": 11406
+    }
+  }
+}

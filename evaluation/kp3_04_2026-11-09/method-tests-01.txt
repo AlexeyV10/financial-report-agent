@@ -1,0 +1,22 @@
+test_financial_method (unittest.loader._FailedTest.test_financial_method) ... ERROR
+
+======================================================================
+ERROR: test_financial_method (unittest.loader._FailedTest.test_financial_method)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_financial_method
+Traceback (most recent call last):
+  File "C:\msys64\ucrt64\lib\python3.14\unittest\loader.py", line 433, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\msys64\ucrt64\lib\python3.14\unittest\loader.py", line 374, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\Value\OneDrive\���������\ChatGPT\��������� ��������\tmp\kp3-04-worktree\tests\test_financial_method.py", line 128
+    with patch('builtins.__import__',side_effect=guarded),patch('builtins.open',side_effect=AssertionError('No file I/O')),
+                                                                                                                           ^
+SyntaxError: invalid syntax
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)

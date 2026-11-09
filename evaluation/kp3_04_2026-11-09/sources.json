@@ -1,0 +1,13 @@
+{
+  "checked_on": "2026-11-09",
+  "timezone": "Europe/Moscow",
+  "sources": [
+    {"id":"IFRS15","url":"https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/","kind":"official standard overview","supports":"Revenue recognition principles for customer contracts; does not verify any new issuer line or amount."},
+    {"id":"IAS7","url":"https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/","kind":"official standard overview","supports":"Operating/investing/financing classification, direct/indirect operating methods, notice of IFRS18 consequential changes. Does not establish a particular issuer subtotal."},
+    {"id":"IFRS18","url":"https://www.ifrs.org/issued-standards/list-of-standards/ifrs-18-presentation-and-disclosure-in-financial-statements/","kind":"official standard overview","supports":"Defined operating subtotal; effective for annual periods beginning on/after2027-01-01, earlier application permitted. No assumption of adoption by the legacy issuer."},
+    {"id":"LEGACY_REVENUE","path":"data/examples/reference_bundle.json","kind":"previous assistant_checked manual annotation","supports":"Only previously checked revenue context of the existing exact-PDF version; no new source verification in04."}
+  ],
+  "source_text_copied": false,
+  "primary_pdf_downloads": 0,
+  "new_real_financial_values_verified": 0
+}

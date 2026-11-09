@@ -1,0 +1,1293 @@
+{
+  "gold_schema_version": "1.0",
+  "dataset_id": "kp3-financial-method-dev-v1",
+  "basis": "independent Fraction/integer development oracle, not production answers",
+  "blind_evaluation": false,
+  "model_calls": 0,
+  "cases": [
+    {
+      "case_id": "D01",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "direct_fact_v1",
+        "inputs": [
+          {
+            "fact_id": "revenue-2024",
+            "value": "120",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {},
+        "exact_result": {
+          "numerator": "120",
+          "denominator": "1"
+        },
+        "display_value": "120",
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "rounding": "exact_input_decimal",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "D02",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "direct_fact_v1",
+        "inputs": [
+          {
+            "fact_id": "operating_cash_flow-2023",
+            "value": "-5",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {},
+        "exact_result": {
+          "numerator": "-5",
+          "denominator": "1"
+        },
+        "display_value": "-5",
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "rounding": "exact_input_decimal",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "D03",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "direct_fact_v1",
+        "inputs": [
+          {
+            "fact_id": "revenue-2024",
+            "value": "0",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {},
+        "exact_result": {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        "display_value": "0",
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "rounding": "exact_input_decimal",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "A01",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "absolute_change_v1",
+        "inputs": [
+          {
+            "fact_id": "revenue-2023",
+            "value": "100",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "revenue-2024",
+            "value": "120",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {
+          "difference": {
+            "numerator": "20",
+            "denominator": "1"
+          }
+        },
+        "exact_result": {
+          "numerator": "20",
+          "denominator": "1"
+        },
+        "display_value": "20",
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "rounding": "exact_finite_decimal",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "A02",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "absolute_change_v1",
+        "inputs": [
+          {
+            "fact_id": "operating_cash_flow-2023",
+            "value": "-5",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "operating_cash_flow-2024",
+            "value": "12",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {
+          "difference": {
+            "numerator": "17",
+            "denominator": "1"
+          }
+        },
+        "exact_result": {
+          "numerator": "17",
+          "denominator": "1"
+        },
+        "display_value": "17",
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "rounding": "exact_finite_decimal",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "R01",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "relative_change_v1",
+        "inputs": [
+          {
+            "fact_id": "revenue-2023",
+            "value": "100",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "revenue-2024",
+            "value": "120",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {
+          "difference": {
+            "numerator": "20",
+            "denominator": "1"
+          },
+          "current_divided_by_previous": {
+            "numerator": "6",
+            "denominator": "5"
+          }
+        },
+        "exact_result": {
+          "numerator": "20",
+          "denominator": "1"
+        },
+        "display_value": "20.00",
+        "result_unit": {
+          "kind": "percent"
+        },
+        "rounding": "integer_HALF_UP_2",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "R02",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "relative_change_v1",
+        "inputs": [
+          {
+            "fact_id": "revenue-2023",
+            "value": "100",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "revenue-2024",
+            "value": "0",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {
+          "difference": {
+            "numerator": "-100",
+            "denominator": "1"
+          },
+          "current_divided_by_previous": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        "exact_result": {
+          "numerator": "-100",
+          "denominator": "1"
+        },
+        "display_value": "-100.00",
+        "result_unit": {
+          "kind": "percent"
+        },
+        "rounding": "integer_HALF_UP_2",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "R03",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "relative_change_v1",
+        "inputs": [
+          {
+            "fact_id": "revenue-2023",
+            "value": "100",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "revenue-2024",
+            "value": "-20",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {
+          "difference": {
+            "numerator": "-120",
+            "denominator": "1"
+          },
+          "current_divided_by_previous": {
+            "numerator": "-1",
+            "denominator": "5"
+          }
+        },
+        "exact_result": {
+          "numerator": "-120",
+          "denominator": "1"
+        },
+        "display_value": "-120.00",
+        "result_unit": {
+          "kind": "percent"
+        },
+        "rounding": "integer_HALF_UP_2",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "R04",
+      "execution_status": "completed",
+      "financial_status": "unsupported",
+      "reason_code": "nonpositive_base",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "R05",
+      "execution_status": "completed",
+      "financial_status": "unsupported",
+      "reason_code": "nonpositive_base",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "R06",
+      "execution_status": "completed",
+      "financial_status": "unsupported",
+      "reason_code": "nonpositive_base",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "R07",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "annual_growth_v1",
+        "inputs": [
+          {
+            "fact_id": "revenue-2023",
+            "value": "100",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "revenue-2024",
+            "value": "120",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {
+          "difference": {
+            "numerator": "20",
+            "denominator": "1"
+          },
+          "current_divided_by_previous": {
+            "numerator": "6",
+            "denominator": "5"
+          }
+        },
+        "exact_result": {
+          "numerator": "20",
+          "denominator": "1"
+        },
+        "display_value": "20.00",
+        "result_unit": {
+          "kind": "percent"
+        },
+        "rounding": "integer_HALF_UP_2",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "S01",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "scale_v1",
+        "inputs": [
+          {
+            "fact_id": "revenue-2024",
+            "value": "507689",
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "intermediates": {
+          "scale_multiplier": {
+            "numerator": "1",
+            "denominator": "1000"
+          }
+        },
+        "exact_result": {
+          "numerator": "507689",
+          "denominator": "1000"
+        },
+        "display_value": "507.689",
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1000000000
+        },
+        "rounding": "exact_finite_decimal",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "S02",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "scale_v1",
+        "inputs": [
+          {
+            "fact_id": "operating_cash_flow-2023",
+            "value": "-1.25",
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "intermediates": {
+          "scale_multiplier": {
+            "numerator": "1000000",
+            "denominator": "1"
+          }
+        },
+        "exact_result": {
+          "numerator": "-1250000",
+          "denominator": "1"
+        },
+        "display_value": "-1250000",
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "rounding": "exact_finite_decimal",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "S03",
+      "execution_status": "completed",
+      "financial_status": "unsupported",
+      "reason_code": "currency_conversion_not_supported",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "M01",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "operating_margin_v1",
+        "inputs": [
+          {
+            "fact_id": "operating_profit-2024",
+            "value": "18",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "revenue-2024",
+            "value": "120",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {
+          "profit_divided_by_revenue": {
+            "numerator": "3",
+            "denominator": "20"
+          }
+        },
+        "exact_result": {
+          "numerator": "15",
+          "denominator": "1"
+        },
+        "display_value": "15.00",
+        "result_unit": {
+          "kind": "percent"
+        },
+        "rounding": "integer_HALF_UP_2",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "M02",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "operating_margin_v1",
+        "inputs": [
+          {
+            "fact_id": "operating_profit-2024",
+            "value": "-20",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "revenue-2024",
+            "value": "100",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {
+          "profit_divided_by_revenue": {
+            "numerator": "-1",
+            "denominator": "5"
+          }
+        },
+        "exact_result": {
+          "numerator": "-20",
+          "denominator": "1"
+        },
+        "display_value": "-20.00",
+        "result_unit": {
+          "kind": "percent"
+        },
+        "rounding": "integer_HALF_UP_2",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "M03",
+      "execution_status": "completed",
+      "financial_status": "unsupported",
+      "reason_code": "zero_denominator",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "M04",
+      "execution_status": "completed",
+      "financial_status": "unsupported",
+      "reason_code": "negative_revenue_denominator",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "M05",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "operating_margin_v1",
+        "inputs": [
+          {
+            "fact_id": "operating_profit-2024",
+            "value": "1",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "revenue-2024",
+            "value": "32",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {
+          "profit_divided_by_revenue": {
+            "numerator": "1",
+            "denominator": "32"
+          }
+        },
+        "exact_result": {
+          "numerator": "25",
+          "denominator": "8"
+        },
+        "display_value": "3.13",
+        "result_unit": {
+          "kind": "percent"
+        },
+        "rounding": "integer_HALF_UP_2",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "M06",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "operating_margin_v1",
+        "inputs": [
+          {
+            "fact_id": "operating_profit-2024",
+            "value": "-1",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "revenue-2024",
+            "value": "32",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {
+          "profit_divided_by_revenue": {
+            "numerator": "-1",
+            "denominator": "32"
+          }
+        },
+        "exact_result": {
+          "numerator": "-25",
+          "denominator": "8"
+        },
+        "display_value": "-3.13",
+        "result_unit": {
+          "kind": "percent"
+        },
+        "rounding": "integer_HALF_UP_2",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "M07",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "operating_margin_v1",
+        "inputs": [
+          {
+            "fact_id": "operating_profit-2024",
+            "value": "0",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "revenue-2024",
+            "value": "120",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {
+          "profit_divided_by_revenue": {
+            "numerator": "0",
+            "denominator": "1"
+          }
+        },
+        "exact_result": {
+          "numerator": "0",
+          "denominator": "1"
+        },
+        "display_value": "0.00",
+        "result_unit": {
+          "kind": "percent"
+        },
+        "rounding": "integer_HALF_UP_2",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "M08",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "operating_margin_v1",
+        "inputs": [
+          {
+            "fact_id": "operating_profit-2024",
+            "value": "180",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "revenue-2024",
+            "value": "120",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {
+          "profit_divided_by_revenue": {
+            "numerator": "3",
+            "denominator": "2"
+          }
+        },
+        "exact_result": {
+          "numerator": "150",
+          "denominator": "1"
+        },
+        "display_value": "150.00",
+        "result_unit": {
+          "kind": "percent"
+        },
+        "rounding": "integer_HALF_UP_2",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "P01",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "margin_change_pp_v1",
+        "inputs": [
+          {
+            "fact_id": "operating_profit-2023",
+            "value": "10",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "revenue-2023",
+            "value": "100",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "operating_profit-2024",
+            "value": "18",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "revenue-2024",
+            "value": "120",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {
+          "previous_margin_pct": {
+            "numerator": "10",
+            "denominator": "1"
+          },
+          "current_margin_pct": {
+            "numerator": "15",
+            "denominator": "1"
+          }
+        },
+        "exact_result": {
+          "numerator": "5",
+          "denominator": "1"
+        },
+        "display_value": "5.00",
+        "result_unit": {
+          "kind": "percentage_point"
+        },
+        "rounding": "integer_HALF_UP_2",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N01",
+      "execution_status": "completed",
+      "financial_status": "conflict",
+      "reason_code": "incompatible_units",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N02",
+      "execution_status": "completed",
+      "financial_status": "conflict",
+      "reason_code": "incompatible_units",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N03",
+      "execution_status": "completed",
+      "financial_status": "conflict",
+      "reason_code": "definition_mismatch",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N04",
+      "execution_status": "completed",
+      "financial_status": "conflict",
+      "reason_code": "entity_or_standard_mismatch",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N05",
+      "execution_status": "completed",
+      "financial_status": "conflict",
+      "reason_code": "entity_or_standard_mismatch",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N06",
+      "execution_status": "completed",
+      "financial_status": "conflict",
+      "reason_code": "entity_or_standard_mismatch",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N07",
+      "execution_status": "completed",
+      "financial_status": "conflict",
+      "reason_code": "incompatible_periods",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N08",
+      "execution_status": "completed",
+      "financial_status": "conflict",
+      "reason_code": "incompatible_periods",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N09",
+      "execution_status": "completed",
+      "financial_status": "conflict",
+      "reason_code": "incompatible_periods",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N10",
+      "execution_status": "completed",
+      "financial_status": "conflict",
+      "reason_code": "incompatible_versions",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N11",
+      "execution_status": "completed",
+      "financial_status": "conflict",
+      "reason_code": "incompatible_versions",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N12",
+      "execution_status": "completed",
+      "financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N13",
+      "execution_status": "completed",
+      "financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N14",
+      "execution_status": "completed",
+      "financial_status": "missing",
+      "reason_code": "value_missing",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N15",
+      "execution_status": "error",
+      "financial_status": null,
+      "reason_code": "input_invalid",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N16",
+      "execution_status": "completed",
+      "financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N17",
+      "execution_status": "error",
+      "financial_status": null,
+      "reason_code": "input_invalid",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N18",
+      "execution_status": "error",
+      "financial_status": null,
+      "reason_code": "input_invalid",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N19",
+      "execution_status": "completed",
+      "financial_status": "unsupported",
+      "reason_code": "unsupported_operation",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N20",
+      "execution_status": "completed",
+      "financial_status": "unsupported",
+      "reason_code": "unsupported_operation",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "B01",
+      "execution_status": "error",
+      "financial_status": null,
+      "reason_code": "input_invalid",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "B02",
+      "execution_status": "error",
+      "financial_status": null,
+      "reason_code": "input_invalid",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "B03",
+      "execution_status": "error",
+      "financial_status": null,
+      "reason_code": "input_invalid",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "B04",
+      "execution_status": "error",
+      "financial_status": null,
+      "reason_code": "input_invalid",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "B05",
+      "execution_status": "error",
+      "financial_status": null,
+      "reason_code": "input_invalid",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "B06",
+      "execution_status": "error",
+      "financial_status": null,
+      "reason_code": "input_invalid",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "B07",
+      "execution_status": "error",
+      "financial_status": null,
+      "reason_code": "input_invalid",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "T01",
+      "execution_status": "error",
+      "financial_status": null,
+      "reason_code": "source_missing",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "T02",
+      "execution_status": "error",
+      "financial_status": null,
+      "reason_code": "model_unavailable",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "T03",
+      "execution_status": "limit_exceeded",
+      "financial_status": null,
+      "reason_code": "call_limit",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "T04",
+      "execution_status": "awaiting_clarification",
+      "financial_status": null,
+      "reason_code": "missing_fields",
+      "clarification_fields": [
+        "periods"
+      ],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "Q01",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "relative_change_v1",
+        "inputs": [
+          {
+            "fact_id": "revenue-2023",
+            "value": "100",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "revenue-2024",
+            "value": "120",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {
+          "difference": {
+            "numerator": "20",
+            "denominator": "1"
+          },
+          "current_divided_by_previous": {
+            "numerator": "6",
+            "denominator": "5"
+          }
+        },
+        "exact_result": {
+          "numerator": "20",
+          "denominator": "1"
+        },
+        "display_value": "20.00",
+        "result_unit": {
+          "kind": "percent"
+        },
+        "rounding": "integer_HALF_UP_2",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "Q02",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "relative_change_v1",
+        "inputs": [
+          {
+            "fact_id": "revenue-2023",
+            "value": "100",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "revenue-2024",
+            "value": "120",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {
+          "difference": {
+            "numerator": "20",
+            "denominator": "1"
+          },
+          "current_divided_by_previous": {
+            "numerator": "6",
+            "denominator": "5"
+          }
+        },
+        "exact_result": {
+          "numerator": "20",
+          "denominator": "1"
+        },
+        "display_value": "20.00",
+        "result_unit": {
+          "kind": "percent"
+        },
+        "rounding": "integer_HALF_UP_2",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "Q03",
+      "execution_status": "completed",
+      "financial_status": "conflict",
+      "reason_code": "incompatible_periods",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "V01",
+      "execution_status": "completed",
+      "financial_status": "missing",
+      "reason_code": "original_version_missing",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "N21",
+      "execution_status": "completed",
+      "financial_status": "conflict",
+      "reason_code": "duplicate_candidates",
+      "clarification_fields": [],
+      "calculation": null,
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "R08",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "relative_change_v1",
+        "inputs": [
+          {
+            "fact_id": "revenue-2023",
+            "value": "3",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "revenue-2024",
+            "value": "4",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {
+          "difference": {
+            "numerator": "1",
+            "denominator": "1"
+          },
+          "current_divided_by_previous": {
+            "numerator": "4",
+            "denominator": "3"
+          }
+        },
+        "exact_result": {
+          "numerator": "100",
+          "denominator": "3"
+        },
+        "display_value": "33.33",
+        "result_unit": {
+          "kind": "percent"
+        },
+        "rounding": "integer_HALF_UP_2",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    },
+    {
+      "case_id": "A03",
+      "execution_status": "completed",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "clarification_fields": [],
+      "calculation": {
+        "formula_id": "absolute_change_v1",
+        "inputs": [
+          {
+            "fact_id": "revenue-2023",
+            "value": "1.005",
+            "currency": "RUB",
+            "scale": 1
+          },
+          {
+            "fact_id": "revenue-2024",
+            "value": "1.015",
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "intermediates": {
+          "difference": {
+            "numerator": "1",
+            "denominator": "100"
+          }
+        },
+        "exact_result": {
+          "numerator": "1",
+          "denominator": "100"
+        },
+        "display_value": "0.01",
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "rounding": "exact_finite_decimal",
+        "precision_note": "Exact arithmetic on supplied rounded inputs does not improve source precision."
+      },
+      "label": "SYNTHETIC_METHOD_ONLY"
+    }
+  ],
+  "input_digests": {
+    "dictionary": "4404a201044d982ff630175a71d08cadb7093e959b988a97533a43f021b6783a",
+    "runtime_catalog": "85297d99fe074c09aa0a108d5f76af4d35b6cf650ce2db32bbaaa6bb09b45a62",
+    "dev_cases": "2a6693cb5b000841f892788af7483daafb7a12dbc7d9ad92d418a30e02221f92"
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "dictionary_version": "1.0",
+  "scope": "educational_method_only; no new production formulas",
+  "definitions": [
+    {
+      "metric_id": "revenue",
+      "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+      "label": "Выручка",
+      "meaning": "Итоговая выручка нефинансовой группы по выбранной строке отчёта о прибыли или убытке и её учётной политике; поступление денег не является определением выручки.",
+      "candidate_row_labels": [
+        "Выручка",
+        "Revenue"
+      ],
+      "excluded_labels": [
+        "Процентные доходы",
+        "Комиссионные доходы",
+        "Прочие доходы",
+        "Денежные поступления от покупателей"
+      ],
+      "real_fact_status": "prior_revenue_annotation_only_no_new_verification",
+      "source_ids": [
+        "IFRS15",
+        "LEGACY_REVENUE"
+      ],
+      "version": "1.0",
+      "accounting_standard": "IFRS",
+      "consolidation": "group",
+      "organization_type": "nonfinancial",
+      "period_kinds": [
+        "duration"
+      ],
+      "duration_types": [
+        "full_year",
+        "year_to_date",
+        "quarter"
+      ],
+      "currencies": [
+        "RUB",
+        "USD"
+      ],
+      "scales": [
+        1,
+        1000,
+        1000000,
+        1000000000
+      ],
+      "sign_policy": "preserve_reported_signed_value_including_zero; no absolute-value normalization",
+      "version_policy": "as_reported_exact_version; no automatic original/comparative mixing",
+      "alias_policy": "Candidate labels for source preparation, never automatic semantic equivalence or parser support"
+    },
+    {
+      "metric_id": "operating_profit",
+      "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+      "label": "Операционная прибыль (убыток)",
+      "meaning": "Промежуточный итог операционной прибыли/убытка именно выбранного отчёта с проверенным составом статей; для прежних отчётов не предполагается универсальная формула IFRS18.",
+      "candidate_row_labels": [
+        "Операционная прибыль",
+        "Операционная прибыль (убыток)",
+        "Прибыль (убыток) от операционной деятельности",
+        "Operating profit"
+      ],
+      "excluded_labels": [
+        "EBITDA",
+        "Adjusted EBITDA",
+        "Скорректированная операционная прибыль",
+        "Прибыль до налогообложения",
+        "Чистая прибыль"
+      ],
+      "real_fact_status": "method_only_no_real_fact",
+      "source_ids": [
+        "IFRS18"
+      ],
+      "version": "1.0",
+      "accounting_standard": "IFRS",
+      "consolidation": "group",
+      "organization_type": "nonfinancial",
+      "period_kinds": [
+        "duration"
+      ],
+      "duration_types": [
+        "full_year",
+        "year_to_date",
+        "quarter"
+      ],
+      "currencies": [
+        "RUB",
+        "USD"
+      ],
+      "scales": [
+        1,
+        1000,
+        1000000,
+        1000000000
+      ],
+      "sign_policy": "preserve_reported_signed_value_including_zero; no absolute-value normalization",
+      "version_policy": "as_reported_exact_version; no automatic original/comparative mixing",
+      "alias_policy": "Candidate labels for source preparation, never automatic semantic equivalence or parser support"
+    },
+    {
+      "metric_id": "operating_cash_flow",
+      "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+      "label": "Чистый денежный поток от операционной деятельности",
+      "meaning": "Конечный нетто-итог раздела операционной деятельности отчёта о движении денежных средств после всех отнесённых к нему корректировок/налогов/процентов по политике выбранной версии.",
+      "candidate_row_labels": [
+        "Чистые денежные средства, полученные от операционной деятельности",
+        "Чистые денежные средства от операционной деятельности",
+        "Чистые денежные средства, использованные в операционной деятельности",
+        "Net cash from operating activities"
+      ],
+      "excluded_labels": [
+        "Денежные средства от операционной деятельности до уплаты налогов",
+        "Денежные поступления от покупателей",
+        "Изменение денежных средств",
+        "Операционная прибыль"
+      ],
+      "real_fact_status": "method_only_no_real_fact",
+      "source_ids": [
+        "IAS7"
+      ],
+      "version": "1.0",
+      "accounting_standard": "IFRS",
+      "consolidation": "group",
+      "organization_type": "nonfinancial",
+      "period_kinds": [
+        "duration"
+      ],
+      "duration_types": [
+        "full_year",
+        "year_to_date",
+        "quarter"
+      ],
+      "currencies": [
+        "RUB",
+        "USD"
+      ],
+      "scales": [
+        1,
+        1000,
+        1000000,
+        1000000000
+      ],
+      "sign_policy": "preserve_reported_signed_value_including_zero; no absolute-value normalization",
+      "version_policy": "as_reported_exact_version; no automatic original/comparative mixing",
+      "alias_policy": "Candidate labels for source preparation, never automatic semantic equivalence or parser support"
+    }
+  ],
+  "operations": [
+    {
+      "operation_id": "direct_fact_v1",
+      "formula": "value",
+      "result_kind": "amount",
+      "rounding": "exact_input_decimal",
+      "preconditions": "One verified fact; duration only for these definitions.",
+      "production_status": "planned_except_legacy_annual_growth"
+    },
+    {
+      "operation_id": "absolute_change_v1",
+      "formula": "current - previous",
+      "result_kind": "amount",
+      "rounding": "exact_finite_decimal",
+      "preconditions": "Same definition, currency, scale, reporting basis; comparable ordered periods.",
+      "production_status": "planned_except_legacy_annual_growth"
+    },
+    {
+      "operation_id": "relative_change_v1",
+      "formula": "(current / previous - 1) * 100",
+      "result_kind": "percent",
+      "rounding": "HALF_UP_2",
+      "preconditions": "Same context, previous > 0; zero or negative base unsupported.",
+      "production_status": "planned_except_legacy_annual_growth"
+    },
+    {
+      "operation_id": "annual_growth_v1",
+      "formula": "(current / previous - 1) * 100",
+      "result_kind": "percent",
+      "rounding": "HALF_UP_2",
+      "preconditions": "Legacy operation keeps its existing scope/meaning; two consecutive full calendar years; reference only here.",
+      "production_status": "planned_except_legacy_annual_growth"
+    },
+    {
+      "operation_id": "scale_v1",
+      "formula": "value * source_scale / target_scale",
+      "result_kind": "amount",
+      "rounding": "exact_finite_decimal",
+      "preconditions": "Only same-currency powers-of-ten scale conversion; no FX rate.",
+      "production_status": "planned_except_legacy_annual_growth"
+    },
+    {
+      "operation_id": "operating_margin_v1",
+      "formula": "operating_profit / revenue * 100",
+      "result_kind": "percent",
+      "rounding": "HALF_UP_2",
+      "preconditions": "Same entity/standard/period/exact document; revenue > 0; profit may be negative.",
+      "production_status": "planned_except_legacy_annual_growth"
+    },
+    {
+      "operation_id": "margin_change_pp_v1",
+      "formula": "current_margin_pct - previous_margin_pct",
+      "result_kind": "percentage_point",
+      "rounding": "HALF_UP_2",
+      "preconditions": "Diagnostic method only, four compatible monetary inputs; not relative percent change.",
+      "production_status": "planned_except_legacy_annual_growth"
+    }
+  ],
+  "excluded": [
+    "financial organizations need separate definitions",
+    "RAS needs separate verified definitions; synthetic RAS from03 is not mapped",
+    "IFRS18 classification/adoption needs a separate definition review",
+    "FX conversion",
+    "FCF/capex P1",
+    "custom period comparison",
+    "quarter derivation from cumulative periods"
+  ]
+}
