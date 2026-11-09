@@ -1,0 +1,383 @@
+{
+  "target_version": "1.0",
+  "catalog_digest": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+  "purpose": "Separate evidence targets, never worker/search inputs",
+  "cases": [
+    {
+      "case_id": "direct:phosagro-2023-revenue-2023",
+      "required_evidence_ids": [
+        "phosagro-2023-revenue-2023-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2023-revenue-2022",
+      "required_evidence_ids": [
+        "phosagro-2023-revenue-2022-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2023-operating_profit-2023",
+      "required_evidence_ids": [
+        "phosagro-2023-operating_profit-2023-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2023-operating_profit-2022",
+      "required_evidence_ids": [
+        "phosagro-2023-operating_profit-2022-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2023-operating_cash_flow-2023",
+      "required_evidence_ids": [
+        "phosagro-2023-operating_cash_flow-2023-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2023-operating_cash_flow-2022",
+      "required_evidence_ids": [
+        "phosagro-2023-operating_cash_flow-2022-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2024-revenue-2024",
+      "required_evidence_ids": [
+        "phosagro-2024-revenue-2024-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2024-revenue-2023",
+      "required_evidence_ids": [
+        "phosagro-2024-revenue-2023-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2024-operating_profit-2024",
+      "required_evidence_ids": [
+        "phosagro-2024-operating_profit-2024-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2024-operating_profit-2023",
+      "required_evidence_ids": [
+        "phosagro-2024-operating_profit-2023-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2024-operating_cash_flow-2024",
+      "required_evidence_ids": [
+        "phosagro-2024-operating_cash_flow-2024-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2024-operating_cash_flow-2023",
+      "required_evidence_ids": [
+        "phosagro-2024-operating_cash_flow-2023-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-revenue-2025",
+      "required_evidence_ids": [
+        "phosagro-2025-revenue-2025-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-revenue-2024",
+      "required_evidence_ids": [
+        "phosagro-2025-revenue-2024-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-operating_profit-2025",
+      "required_evidence_ids": [
+        "phosagro-2025-operating_profit-2025-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-operating_profit-2024",
+      "required_evidence_ids": [
+        "phosagro-2025-operating_profit-2024-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-operating_cash_flow-2025",
+      "required_evidence_ids": [
+        "phosagro-2025-operating_cash_flow-2025-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-operating_cash_flow-2024",
+      "required_evidence_ids": [
+        "phosagro-2025-operating_cash_flow-2024-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-revenue-2025",
+      "required_evidence_ids": [
+        "phosagro-2025-q1-revenue-2025-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-revenue-2024",
+      "required_evidence_ids": [
+        "phosagro-2025-q1-revenue-2024-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-operating_profit-2025",
+      "required_evidence_ids": [
+        "phosagro-2025-q1-operating_profit-2025-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-operating_profit-2024",
+      "required_evidence_ids": [
+        "phosagro-2025-q1-operating_profit-2024-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-operating_cash_flow-2025",
+      "required_evidence_ids": [
+        "phosagro-2025-q1-operating_cash_flow-2025-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-operating_cash_flow-2024",
+      "required_evidence_ids": [
+        "phosagro-2025-q1-operating_cash_flow-2024-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-revenue-2025",
+      "required_evidence_ids": [
+        "phosagro-2025-h1-revenue-2025-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-revenue-2024",
+      "required_evidence_ids": [
+        "phosagro-2025-h1-revenue-2024-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-operating_profit-2025",
+      "required_evidence_ids": [
+        "phosagro-2025-h1-operating_profit-2025-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-operating_profit-2024",
+      "required_evidence_ids": [
+        "phosagro-2025-h1-operating_profit-2024-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-operating_cash_flow-2025",
+      "required_evidence_ids": [
+        "phosagro-2025-h1-operating_cash_flow-2025-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-operating_cash_flow-2024",
+      "required_evidence_ids": [
+        "phosagro-2025-h1-operating_cash_flow-2024-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-revenue-2025",
+      "required_evidence_ids": [
+        "phosagro-2025-9m-revenue-2025-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-revenue-2024",
+      "required_evidence_ids": [
+        "phosagro-2025-9m-revenue-2024-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-operating_profit-2025",
+      "required_evidence_ids": [
+        "phosagro-2025-9m-operating_profit-2025-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-operating_profit-2024",
+      "required_evidence_ids": [
+        "phosagro-2025-9m-operating_profit-2024-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-operating_cash_flow-2025",
+      "required_evidence_ids": [
+        "phosagro-2025-9m-operating_cash_flow-2025-ev"
+      ]
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-operating_cash_flow-2024",
+      "required_evidence_ids": [
+        "phosagro-2025-9m-operating_cash_flow-2024-ev"
+      ]
+    },
+    {
+      "case_id": "direct:segezha-2021-revenue-2021",
+      "required_evidence_ids": [
+        "segezha-2021-revenue-2021-ev"
+      ]
+    },
+    {
+      "case_id": "direct:segezha-2021-revenue-2020",
+      "required_evidence_ids": [
+        "segezha-2021-revenue-2020-ev"
+      ]
+    },
+    {
+      "case_id": "direct:segezha-2021-operating_profit-2021",
+      "required_evidence_ids": [
+        "segezha-2021-operating_profit-2021-ev"
+      ]
+    },
+    {
+      "case_id": "direct:segezha-2021-operating_profit-2020",
+      "required_evidence_ids": [
+        "segezha-2021-operating_profit-2020-ev"
+      ]
+    },
+    {
+      "case_id": "direct:segezha-2021-operating_cash_flow-2021",
+      "required_evidence_ids": [
+        "segezha-2021-operating_cash_flow-2021-ev"
+      ]
+    },
+    {
+      "case_id": "direct:segezha-2021-operating_cash_flow-2020",
+      "required_evidence_ids": [
+        "segezha-2021-operating_cash_flow-2020-ev"
+      ]
+    },
+    {
+      "case_id": "direct:segezha-2022-revenue-2022",
+      "required_evidence_ids": [
+        "segezha-2022-revenue-2022-ev"
+      ]
+    },
+    {
+      "case_id": "direct:segezha-2022-revenue-2021",
+      "required_evidence_ids": [
+        "segezha-2022-revenue-2021-ev"
+      ]
+    },
+    {
+      "case_id": "direct:segezha-2022-operating_profit-2022",
+      "required_evidence_ids": [
+        "segezha-2022-operating_profit-2022-ev"
+      ]
+    },
+    {
+      "case_id": "direct:segezha-2022-operating_profit-2021",
+      "required_evidence_ids": [
+        "segezha-2022-operating_profit-2021-ev"
+      ]
+    },
+    {
+      "case_id": "direct:segezha-2022-operating_cash_flow-2022",
+      "required_evidence_ids": [
+        "segezha-2022-operating_cash_flow-2022-ev"
+      ]
+    },
+    {
+      "case_id": "direct:segezha-2022-operating_cash_flow-2021",
+      "required_evidence_ids": [
+        "segezha-2022-operating_cash_flow-2021-ev"
+      ]
+    },
+    {
+      "case_id": "all-three:phosagro-2023",
+      "required_evidence_ids": [
+        "phosagro-2023-revenue-2023-ev",
+        "phosagro-2023-revenue-2022-ev",
+        "phosagro-2023-operating_profit-2023-ev",
+        "phosagro-2023-operating_profit-2022-ev",
+        "phosagro-2023-operating_cash_flow-2023-ev",
+        "phosagro-2023-operating_cash_flow-2022-ev"
+      ]
+    },
+    {
+      "case_id": "all-three:phosagro-2024",
+      "required_evidence_ids": [
+        "phosagro-2024-revenue-2024-ev",
+        "phosagro-2024-revenue-2023-ev",
+        "phosagro-2024-operating_profit-2024-ev",
+        "phosagro-2024-operating_profit-2023-ev",
+        "phosagro-2024-operating_cash_flow-2024-ev",
+        "phosagro-2024-operating_cash_flow-2023-ev"
+      ]
+    },
+    {
+      "case_id": "all-three:phosagro-2025",
+      "required_evidence_ids": [
+        "phosagro-2025-revenue-2025-ev",
+        "phosagro-2025-revenue-2024-ev",
+        "phosagro-2025-operating_profit-2025-ev",
+        "phosagro-2025-operating_profit-2024-ev",
+        "phosagro-2025-operating_cash_flow-2025-ev",
+        "phosagro-2025-operating_cash_flow-2024-ev"
+      ]
+    },
+    {
+      "case_id": "all-three:phosagro-2025-q1",
+      "required_evidence_ids": [
+        "phosagro-2025-q1-revenue-2025-ev",
+        "phosagro-2025-q1-revenue-2024-ev",
+        "phosagro-2025-q1-operating_profit-2025-ev",
+        "phosagro-2025-q1-operating_profit-2024-ev",
+        "phosagro-2025-q1-operating_cash_flow-2025-ev",
+        "phosagro-2025-q1-operating_cash_flow-2024-ev"
+      ]
+    },
+    {
+      "case_id": "all-three:phosagro-2025-h1",
+      "required_evidence_ids": [
+        "phosagro-2025-h1-revenue-2025-ev",
+        "phosagro-2025-h1-revenue-2024-ev",
+        "phosagro-2025-h1-operating_profit-2025-ev",
+        "phosagro-2025-h1-operating_profit-2024-ev",
+        "phosagro-2025-h1-operating_cash_flow-2025-ev",
+        "phosagro-2025-h1-operating_cash_flow-2024-ev"
+      ]
+    },
+    {
+      "case_id": "all-three:phosagro-2025-9m",
+      "required_evidence_ids": [
+        "phosagro-2025-9m-revenue-2025-ev",
+        "phosagro-2025-9m-revenue-2024-ev",
+        "phosagro-2025-9m-operating_profit-2025-ev",
+        "phosagro-2025-9m-operating_profit-2024-ev",
+        "phosagro-2025-9m-operating_cash_flow-2025-ev",
+        "phosagro-2025-9m-operating_cash_flow-2024-ev"
+      ]
+    },
+    {
+      "case_id": "all-three:segezha-2021",
+      "required_evidence_ids": [
+        "segezha-2021-revenue-2021-ev",
+        "segezha-2021-revenue-2020-ev",
+        "segezha-2021-operating_profit-2021-ev",
+        "segezha-2021-operating_profit-2020-ev",
+        "segezha-2021-operating_cash_flow-2021-ev",
+        "segezha-2021-operating_cash_flow-2020-ev"
+      ]
+    },
+    {
+      "case_id": "all-three:segezha-2022",
+      "required_evidence_ids": [
+        "segezha-2022-revenue-2022-ev",
+        "segezha-2022-revenue-2021-ev",
+        "segezha-2022-operating_profit-2022-ev",
+        "segezha-2022-operating_profit-2021-ev",
+        "segezha-2022-operating_cash_flow-2022-ev",
+        "segezha-2022-operating_cash_flow-2021-ev"
+      ]
+    }
+  ]
+}

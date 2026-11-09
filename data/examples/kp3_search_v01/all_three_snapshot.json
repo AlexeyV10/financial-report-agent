@@ -1,0 +1,51 @@
+{
+  "schema_version": "kp3-search-0.1",
+  "query": "выручка и операционная прибыль и CFO",
+  "organization_id": "phosagro_group",
+  "consolidation": "group",
+  "accounting_standard": "IFRS",
+  "metrics": [
+    {
+      "metric_id": "revenue",
+      "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+    },
+    {
+      "metric_id": "operating_profit",
+      "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+    },
+    {
+      "metric_id": "operating_cash_flow",
+      "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+    }
+  ],
+  "periods": [
+    {
+      "kind": "duration",
+      "duration_type": "year_to_date",
+      "start": "2025-01-01",
+      "end": "2025-06-30"
+    },
+    {
+      "kind": "duration",
+      "duration_type": "year_to_date",
+      "start": "2024-01-01",
+      "end": "2024-06-30"
+    }
+  ],
+  "documents": [
+    {
+      "document_id": "phosagro-2025-h1",
+      "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+    }
+  ],
+  "source_units": [
+    {
+      "currency": "RUB",
+      "scale": 1000000
+    }
+  ],
+  "version_policy": "explicit_versions",
+  "mode": "snapshot",
+  "as_of": null,
+  "top_k": 12
+}

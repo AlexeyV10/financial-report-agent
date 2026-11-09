@@ -1,0 +1,16 @@
+{
+  "profile_version": "1.0",
+  "max_pdf_bytes": 20000000,
+  "max_pages": 100,
+  "spread_aspect_min": 1.25,
+  "x_tolerance": 2,
+  "y_tolerance": 3,
+  "line_tolerance": 3,
+  "horizontal_text_only": true,
+  "title_top_fraction": 0.23,
+  "statement_types": ["income", "cash_flow"],
+  "ocr": false,
+  "worker_python": "3.12.14",
+  "pdfplumber": "0.11.9",
+  "pdfminer_six": "20251230"
+}
