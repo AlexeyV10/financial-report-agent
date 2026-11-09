@@ -1,0 +1,7 @@
+{
+  "visibility_change": "succeeded: repository became public by explicit user choice",
+  "first_ruleset_creation": "HTTP403 Repository has been locked",
+  "cause": "GitHub reported a repository lock immediately after the visibility operation; no ruleset was claimed active",
+  "resolution": "Read current visibility/rulesets again, then retry only the already-authorized ruleset creation",
+  "new_commits_or_pushes": false
+}

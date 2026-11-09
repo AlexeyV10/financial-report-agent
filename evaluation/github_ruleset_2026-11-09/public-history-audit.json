@@ -1,0 +1,16 @@
+{
+  "commits": [
+    "c18e3febfdbce731c542607a1041cccf190f5798",
+    "1b46f83e35540fef3fb4fd63990d552100e94f47"
+  ],
+  "files_per_commit": {
+    "c18e3febfdbce731c542607a1041cccf190f5798": 362,
+    "1b46f83e35540fef3fb4fd63990d552100e94f47": 350
+  },
+  "unique_file_payloads_scanned": 340,
+  "known_secret_findings": [],
+  "primary_pdf_pages_full_text_indexes_weights_excluded": true,
+  "source": "Committed history only; parallel uncommitted KP3 files are not published",
+  "scope": "Known credential patterns and file/embedded archive scope, not exhaustive secret detection",
+  "user_explicitly_authorized_public_visibility": true
+}
