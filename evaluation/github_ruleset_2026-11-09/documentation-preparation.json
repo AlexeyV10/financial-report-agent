@@ -1,0 +1,34 @@
+{
+  "base_commit": "c18e3febfdbce731c542607a1041cccf190f5798",
+  "user_chose_public_visibility": true,
+  "ruleset_id": 26853277,
+  "policy_status": "active and effective for main",
+  "required_approvals": 0,
+  "bypass_actors": [],
+  "server_documents_built_from_github_base": true,
+  "parallel_local_kp3_content_not_uploaded": true,
+  "local_document_updates": {
+    "AGENTS.md": {
+      "before_sha256": "9373a2872a2547aebe1df2b54813682e357e4995ffebaa2ff8c44f942397a440",
+      "after_sha256": "64760c24d9d811b191aab0c1f8fb66d48a90e095fcbdddd4f6f27e1094a2201f",
+      "source": "addressed policy insertion; prior bytes saved only in ignored tmp, not uploaded"
+    },
+    "README.md": {
+      "before_sha256": "8f63cc09946527cbd455cf571024b30c2e811268e67315ab407fae9b8a5e096d",
+      "after_sha256": "1756aeac2d9e64d700c259cba88948daf3742665a575046daac4f30fd0d14a14",
+      "source": "addressed policy insertion; prior bytes saved only in ignored tmp, not uploaded"
+    },
+    "STATUS.md": {
+      "before_sha256": "b20029a42ba4dfff6246fbfdc92f57f42a3b2579c9f05ea1543a5a346dbb32e4",
+      "after_sha256": "d2511f00caa1076a7bc8cefac9734e98ac7858325dba72410ffd979803c415c9",
+      "source": "addressed policy insertion; prior bytes saved only in ignored tmp, not uploaded"
+    },
+    "docs/github_collaboration.md": {
+      "before_sha256": "8b21ec83ad20a11340310bb8a28a608b4214a1b699337d5549e7507ca4eb7fd6",
+      "after_sha256": "18d6e24b1e72b784b0df9ff3e68d5989f8bb24315a1eb7725c8e3156f732280b",
+      "source": "addressed policy insertion; prior bytes saved only in ignored tmp, not uploaded"
+    }
+  },
+  "financial_code_changed": false,
+  "new_model_calls": 0
+}

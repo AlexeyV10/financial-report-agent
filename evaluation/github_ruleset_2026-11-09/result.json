@@ -1,0 +1,16 @@
+{
+  "repository": "https://github.com/AlexeyV10/financial-report-agent",
+  "visibility": "public",
+  "ruleset_id": 26853277,
+  "ruleset_url": "https://github.com/AlexeyV10/financial-report-agent/rules/26853277",
+  "enforcement": "active",
+  "main_changes_require_pull_request": true,
+  "required_approvals": 0,
+  "bypass_actors": [],
+  "force_push_blocked": true,
+  "deletion_blocked": true,
+  "main_commit_unchanged": "c18e3febfdbce731c542607a1041cccf190f5798",
+  "checked_at": "2026-11-09T13:01:24.938992+00:00",
+  "verification": "read back active configuration and effective branch rules, no probe commit pushed",
+  "local_parallel_changes_touched": false
+}
