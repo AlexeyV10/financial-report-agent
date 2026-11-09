@@ -1,0 +1,492 @@
+{
+  "schema_version": "0.2",
+  "catalog_id": "synthetic-contracts-v02",
+  "organizations": [
+    {
+      "organization_id": "synthetic_alpha",
+      "name": "ИСКУССТВЕННАЯ организация synthetic_alpha",
+      "aliases": [
+        "synthetic alpha"
+      ],
+      "consolidation": "group",
+      "accounting_standards": [
+        "IFRS"
+      ]
+    },
+    {
+      "organization_id": "synthetic_beta",
+      "name": "ИСКУССТВЕННАЯ организация synthetic_beta",
+      "aliases": [
+        "synthetic beta"
+      ],
+      "consolidation": "legal_entity",
+      "accounting_standards": [
+        "RAS"
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "metric_id": "synthetic_revenue",
+      "definition_id": "synthetic_revenue:fixture-v1",
+      "label": "Искусственная строка synthetic_revenue",
+      "period_kinds": [
+        "duration"
+      ]
+    },
+    {
+      "metric_id": "synthetic_operating_cash_flow",
+      "definition_id": "synthetic_operating_cash_flow:fixture-v1",
+      "label": "Искусственная строка synthetic_operating_cash_flow",
+      "period_kinds": [
+        "duration"
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "document_id": "synthetic_alpha-2021",
+      "organization_id": "synthetic_alpha",
+      "accounting_standard": "IFRS",
+      "document_type": "synthetic_fixture",
+      "report_period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2021-01-01",
+        "end": "2021-12-31"
+      },
+      "version_id": "fixture-v1",
+      "sha256": "f9b57166ce6115b704a78d6579d95965d4d3c958d883795d74a5907ec7487534",
+      "byte_length": null,
+      "pdf_pages": null,
+      "source_url": null,
+      "document_url": null,
+      "fetched_at": null,
+      "signed_on": null,
+      "approved_on": null,
+      "publication": {
+        "precision": "unknown",
+        "value": null,
+        "timezone": "Europe/Moscow",
+        "binding": "unproven",
+        "record_id": null,
+        "source_url": null,
+        "version_id": null,
+        "document_sha256": null
+      },
+      "availability": {
+        "local_resource_id": "synthetic_alpha-2021",
+        "file_status": "not_checked",
+        "extraction_status": "not_run"
+      },
+      "preparation_status": "checked",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own artificial fixture; internal consistency checked by Codex, no issuer facts or human review.",
+        "human_reviewer": null
+      },
+      "rights": {
+        "status": "confirmed",
+        "public_copy_allowed": true,
+        "note": "Own synthetic fixture, not financial reporting.",
+        "checked_on": "2026-11-09"
+      },
+      "audit": {
+        "opinion": "not_applicable",
+        "limitation": "Artificial data, no audit opinion."
+      },
+      "data_origin": "synthetic",
+      "related_release": null
+    },
+    {
+      "document_id": "synthetic_alpha-2022",
+      "organization_id": "synthetic_alpha",
+      "accounting_standard": "IFRS",
+      "document_type": "synthetic_fixture",
+      "report_period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2022-01-01",
+        "end": "2022-12-31"
+      },
+      "version_id": "fixture-v1",
+      "sha256": "2880ac826deb4fd4aa826ad177c3b1e67a19eed0f400fb0a986acc9bb246235d",
+      "byte_length": null,
+      "pdf_pages": null,
+      "source_url": null,
+      "document_url": null,
+      "fetched_at": null,
+      "signed_on": null,
+      "approved_on": null,
+      "publication": {
+        "precision": "unknown",
+        "value": null,
+        "timezone": "Europe/Moscow",
+        "binding": "unproven",
+        "record_id": null,
+        "source_url": null,
+        "version_id": null,
+        "document_sha256": null
+      },
+      "availability": {
+        "local_resource_id": "synthetic_alpha-2022",
+        "file_status": "not_checked",
+        "extraction_status": "not_run"
+      },
+      "preparation_status": "checked",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own artificial fixture; internal consistency checked by Codex, no issuer facts or human review.",
+        "human_reviewer": null
+      },
+      "rights": {
+        "status": "confirmed",
+        "public_copy_allowed": true,
+        "note": "Own synthetic fixture, not financial reporting.",
+        "checked_on": "2026-11-09"
+      },
+      "audit": {
+        "opinion": "not_applicable",
+        "limitation": "Artificial data, no audit opinion."
+      },
+      "data_origin": "synthetic",
+      "related_release": null
+    },
+    {
+      "document_id": "synthetic_beta-2022",
+      "organization_id": "synthetic_beta",
+      "accounting_standard": "RAS",
+      "document_type": "synthetic_fixture",
+      "report_period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2022-01-01",
+        "end": "2022-12-31"
+      },
+      "version_id": "fixture-v1",
+      "sha256": "0dc02dba4bb3c238a9a827bb5541cb05c28c308adb3c517dcfc49a91d3342e09",
+      "byte_length": null,
+      "pdf_pages": null,
+      "source_url": null,
+      "document_url": null,
+      "fetched_at": null,
+      "signed_on": null,
+      "approved_on": null,
+      "publication": {
+        "precision": "unknown",
+        "value": null,
+        "timezone": "Europe/Moscow",
+        "binding": "unproven",
+        "record_id": null,
+        "source_url": null,
+        "version_id": null,
+        "document_sha256": null
+      },
+      "availability": {
+        "local_resource_id": "synthetic_beta-2022",
+        "file_status": "not_checked",
+        "extraction_status": "not_run"
+      },
+      "preparation_status": "checked",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own artificial fixture; internal consistency checked by Codex, no issuer facts or human review.",
+        "human_reviewer": null
+      },
+      "rights": {
+        "status": "confirmed",
+        "public_copy_allowed": true,
+        "note": "Own synthetic fixture, not financial reporting.",
+        "checked_on": "2026-11-09"
+      },
+      "audit": {
+        "opinion": "not_applicable",
+        "limitation": "Artificial data, no audit opinion."
+      },
+      "data_origin": "synthetic",
+      "related_release": null
+    },
+    {
+      "document_id": "synthetic_beta-2023",
+      "organization_id": "synthetic_beta",
+      "accounting_standard": "RAS",
+      "document_type": "synthetic_fixture",
+      "report_period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "version_id": "fixture-v1",
+      "sha256": "f32ff109f8a3ed95237742eb98a6e5477f4076fee053a3cda2dba470f211218d",
+      "byte_length": null,
+      "pdf_pages": null,
+      "source_url": null,
+      "document_url": null,
+      "fetched_at": null,
+      "signed_on": null,
+      "approved_on": null,
+      "publication": {
+        "precision": "unknown",
+        "value": null,
+        "timezone": "Europe/Moscow",
+        "binding": "unproven",
+        "record_id": null,
+        "source_url": null,
+        "version_id": null,
+        "document_sha256": null
+      },
+      "availability": {
+        "local_resource_id": "synthetic_beta-2023",
+        "file_status": "not_checked",
+        "extraction_status": "not_run"
+      },
+      "preparation_status": "checked",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own artificial fixture; internal consistency checked by Codex, no issuer facts or human review.",
+        "human_reviewer": null
+      },
+      "rights": {
+        "status": "confirmed",
+        "public_copy_allowed": true,
+        "note": "Own synthetic fixture, not financial reporting.",
+        "checked_on": "2026-11-09"
+      },
+      "audit": {
+        "opinion": "not_applicable",
+        "limitation": "Artificial data, no audit opinion."
+      },
+      "data_origin": "synthetic",
+      "related_release": null
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "synthetic_alpha-2021-evidence",
+      "document_id": "synthetic_alpha-2021",
+      "version_id": "fixture-v1",
+      "document_sha256": "f9b57166ce6115b704a78d6579d95965d4d3c958d883795d74a5907ec7487534",
+      "locator": {
+        "kind": "synthetic",
+        "record_id": "synthetic_alpha-2021-fact",
+        "row_label": "synthetic_revenue",
+        "column_label": "2021",
+        "unit_header": "RUB x1"
+      },
+      "metric_id": "synthetic_revenue",
+      "definition_id": "synthetic_revenue:fixture-v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2021-01-01",
+        "end": "2021-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1,
+      "raw_value": "100",
+      "numeric_encoding": "decimal_string",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own artificial fixture; internal consistency checked by Codex, no issuer facts or human review.",
+        "human_reviewer": null
+      }
+    },
+    {
+      "evidence_id": "synthetic_alpha-2022-evidence",
+      "document_id": "synthetic_alpha-2022",
+      "version_id": "fixture-v1",
+      "document_sha256": "2880ac826deb4fd4aa826ad177c3b1e67a19eed0f400fb0a986acc9bb246235d",
+      "locator": {
+        "kind": "synthetic",
+        "record_id": "synthetic_alpha-2022-fact",
+        "row_label": "synthetic_revenue",
+        "column_label": "2022",
+        "unit_header": "RUB x1"
+      },
+      "metric_id": "synthetic_revenue",
+      "definition_id": "synthetic_revenue:fixture-v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2022-01-01",
+        "end": "2022-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1,
+      "raw_value": "120",
+      "numeric_encoding": "decimal_string",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own artificial fixture; internal consistency checked by Codex, no issuer facts or human review.",
+        "human_reviewer": null
+      }
+    },
+    {
+      "evidence_id": "synthetic_beta-2022-evidence",
+      "document_id": "synthetic_beta-2022",
+      "version_id": "fixture-v1",
+      "document_sha256": "0dc02dba4bb3c238a9a827bb5541cb05c28c308adb3c517dcfc49a91d3342e09",
+      "locator": {
+        "kind": "synthetic",
+        "record_id": "synthetic_beta-2022-fact",
+        "row_label": "synthetic_operating_cash_flow",
+        "column_label": "2022",
+        "unit_header": "RUB x1000"
+      },
+      "metric_id": "synthetic_operating_cash_flow",
+      "definition_id": "synthetic_operating_cash_flow:fixture-v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2022-01-01",
+        "end": "2022-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1000,
+      "raw_value": "-25",
+      "numeric_encoding": "decimal_string",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own artificial fixture; internal consistency checked by Codex, no issuer facts or human review.",
+        "human_reviewer": null
+      }
+    },
+    {
+      "evidence_id": "synthetic_beta-2023-evidence",
+      "document_id": "synthetic_beta-2023",
+      "version_id": "fixture-v1",
+      "document_sha256": "f32ff109f8a3ed95237742eb98a6e5477f4076fee053a3cda2dba470f211218d",
+      "locator": {
+        "kind": "synthetic",
+        "record_id": "synthetic_beta-2023-fact",
+        "row_label": "synthetic_operating_cash_flow",
+        "column_label": "2023",
+        "unit_header": "RUB x1000"
+      },
+      "metric_id": "synthetic_operating_cash_flow",
+      "definition_id": "synthetic_operating_cash_flow:fixture-v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1000,
+      "raw_value": "0",
+      "numeric_encoding": "decimal_string",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own artificial fixture; internal consistency checked by Codex, no issuer facts or human review.",
+        "human_reviewer": null
+      }
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "synthetic_alpha-2021-fact",
+      "organization_id": "synthetic_alpha",
+      "document_id": "synthetic_alpha-2021",
+      "version_id": "fixture-v1",
+      "metric_id": "synthetic_revenue",
+      "definition_id": "synthetic_revenue:fixture-v1",
+      "value": "100",
+      "original_label": "synthetic_revenue",
+      "currency": "RUB",
+      "scale": 1,
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2021-01-01",
+        "end": "2021-12-31"
+      },
+      "evidence_id": "synthetic_alpha-2021-evidence",
+      "evidence_digest": "0768de961798e77335ec1ec63215470b9a00f430e74af46bd3d248150c4c6279",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own artificial fixture; internal consistency checked by Codex, no issuer facts or human review.",
+        "human_reviewer": null
+      },
+      "origin_role": "reported_period"
+    },
+    {
+      "fact_id": "synthetic_alpha-2022-fact",
+      "organization_id": "synthetic_alpha",
+      "document_id": "synthetic_alpha-2022",
+      "version_id": "fixture-v1",
+      "metric_id": "synthetic_revenue",
+      "definition_id": "synthetic_revenue:fixture-v1",
+      "value": "120",
+      "original_label": "synthetic_revenue",
+      "currency": "RUB",
+      "scale": 1,
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2022-01-01",
+        "end": "2022-12-31"
+      },
+      "evidence_id": "synthetic_alpha-2022-evidence",
+      "evidence_digest": "61bc4003cecd3a0893f08abf7432a99809f1955dbdf2ba92c22412425da490b3",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own artificial fixture; internal consistency checked by Codex, no issuer facts or human review.",
+        "human_reviewer": null
+      },
+      "origin_role": "reported_period"
+    },
+    {
+      "fact_id": "synthetic_beta-2022-fact",
+      "organization_id": "synthetic_beta",
+      "document_id": "synthetic_beta-2022",
+      "version_id": "fixture-v1",
+      "metric_id": "synthetic_operating_cash_flow",
+      "definition_id": "synthetic_operating_cash_flow:fixture-v1",
+      "value": "-25",
+      "original_label": "synthetic_operating_cash_flow",
+      "currency": "RUB",
+      "scale": 1000,
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2022-01-01",
+        "end": "2022-12-31"
+      },
+      "evidence_id": "synthetic_beta-2022-evidence",
+      "evidence_digest": "cd05bf37b5f35de30e5b9e404c6999436838c3be76c660e089561081c29dc01f",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own artificial fixture; internal consistency checked by Codex, no issuer facts or human review.",
+        "human_reviewer": null
+      },
+      "origin_role": "reported_period"
+    },
+    {
+      "fact_id": "synthetic_beta-2023-fact",
+      "organization_id": "synthetic_beta",
+      "document_id": "synthetic_beta-2023",
+      "version_id": "fixture-v1",
+      "metric_id": "synthetic_operating_cash_flow",
+      "definition_id": "synthetic_operating_cash_flow:fixture-v1",
+      "value": "0",
+      "original_label": "synthetic_operating_cash_flow",
+      "currency": "RUB",
+      "scale": 1000,
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "evidence_id": "synthetic_beta-2023-evidence",
+      "evidence_digest": "0af02820fd236ce0a8c8d1c0997636512a2d850bf9ae12f00cf8ce05bcdf1959",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own artificial fixture; internal consistency checked by Codex, no issuer facts or human review.",
+        "human_reviewer": null
+      },
+      "origin_role": "reported_period"
+    }
+  ]
+}
