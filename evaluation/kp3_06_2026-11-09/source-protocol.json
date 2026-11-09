@@ -1,0 +1,139 @@
+{
+  "worker_inputs": [
+    "Explicit local PDF path",
+    "Private output path",
+    "Declarative geometry config"
+  ],
+  "worker_receives_catalog": false,
+  "worker_receives_gold": false,
+  "worker_receives_source_checks": false,
+  "documents": [
+    {
+      "document_id": "phosagro-2023",
+      "pdf_sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+      "byte_length": 2020478,
+      "pdf_pages": 22,
+      "extractor_fingerprint": "a1fc937dbe3002e6fb582f3e273198e0316dc65b0bf79be5de88fa18d44be41f",
+      "export_sha256": "074c6a5923ca8fe03ef101515ff48679d2c2a31734958893c5eab6d7560ddfd5",
+      "environment": {
+        "python": "3.12.14",
+        "pdfplumber": "0.11.9",
+        "pdfminer_six": "20251230"
+      },
+      "financial_tables": 1,
+      "export_in_git": false
+    },
+    {
+      "document_id": "phosagro-2024",
+      "pdf_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "byte_length": 1521928,
+      "pdf_pages": 23,
+      "extractor_fingerprint": "a1fc937dbe3002e6fb582f3e273198e0316dc65b0bf79be5de88fa18d44be41f",
+      "export_sha256": "7c32620eb2705a5e65a22af9d3a6efd26f60cd89a144865a0da1bdbd154ce405",
+      "environment": {
+        "python": "3.12.14",
+        "pdfplumber": "0.11.9",
+        "pdfminer_six": "20251230"
+      },
+      "financial_tables": 2,
+      "export_in_git": false
+    },
+    {
+      "document_id": "phosagro-2025",
+      "pdf_sha256": "c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+      "byte_length": 3574640,
+      "pdf_pages": 45,
+      "extractor_fingerprint": "a1fc937dbe3002e6fb582f3e273198e0316dc65b0bf79be5de88fa18d44be41f",
+      "export_sha256": "b9b3e8b10a20266245a75eef0f3d63d076bdeb3ec742574a3af7c259ee249725",
+      "environment": {
+        "python": "3.12.14",
+        "pdfplumber": "0.11.9",
+        "pdfminer_six": "20251230"
+      },
+      "financial_tables": 2,
+      "export_in_git": false
+    },
+    {
+      "document_id": "phosagro-2025-q1",
+      "pdf_sha256": "8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+      "byte_length": 1839208,
+      "pdf_pages": 24,
+      "extractor_fingerprint": "a1fc937dbe3002e6fb582f3e273198e0316dc65b0bf79be5de88fa18d44be41f",
+      "export_sha256": "3569f6e70f2a6cbfa85c0b75ef700e91f953612c9d009931018df6feedb03396",
+      "environment": {
+        "python": "3.12.14",
+        "pdfplumber": "0.11.9",
+        "pdfminer_six": "20251230"
+      },
+      "financial_tables": 1,
+      "export_in_git": false
+    },
+    {
+      "document_id": "phosagro-2025-h1",
+      "pdf_sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+      "byte_length": 1705179,
+      "pdf_pages": 25,
+      "extractor_fingerprint": "a1fc937dbe3002e6fb582f3e273198e0316dc65b0bf79be5de88fa18d44be41f",
+      "export_sha256": "4e9cbf499f581efa6e163cff081b96141db6ef5e9269a68dd4947027e5c96a04",
+      "environment": {
+        "python": "3.12.14",
+        "pdfplumber": "0.11.9",
+        "pdfminer_six": "20251230"
+      },
+      "financial_tables": 2,
+      "export_in_git": false
+    },
+    {
+      "document_id": "phosagro-2025-9m",
+      "pdf_sha256": "147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+      "byte_length": 2158562,
+      "pdf_pages": 24,
+      "extractor_fingerprint": "a1fc937dbe3002e6fb582f3e273198e0316dc65b0bf79be5de88fa18d44be41f",
+      "export_sha256": "8c3e910e0a46f4e98424f9f74adbc937e5bb9f83e19da832235d59f6c97ceecc",
+      "environment": {
+        "python": "3.12.14",
+        "pdfplumber": "0.11.9",
+        "pdfminer_six": "20251230"
+      },
+      "financial_tables": 2,
+      "export_in_git": false
+    },
+    {
+      "document_id": "segezha-2021",
+      "pdf_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+      "byte_length": 1856644,
+      "pdf_pages": 61,
+      "extractor_fingerprint": "a1fc937dbe3002e6fb582f3e273198e0316dc65b0bf79be5de88fa18d44be41f",
+      "export_sha256": "ecaaaac096bc4b63e05e4df1c9edb7bece414a5ec024a1772564c44708773ab6",
+      "environment": {
+        "python": "3.12.14",
+        "pdfplumber": "0.11.9",
+        "pdfminer_six": "20251230"
+      },
+      "financial_tables": 3,
+      "export_in_git": false
+    },
+    {
+      "document_id": "segezha-2022",
+      "pdf_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+      "byte_length": 1819697,
+      "pdf_pages": 58,
+      "extractor_fingerprint": "a1fc937dbe3002e6fb582f3e273198e0316dc65b0bf79be5de88fa18d44be41f",
+      "export_sha256": "1d37680ff9efe2a527039c6862e5d7a5770bda313b667ccc53e63e8d1362f721",
+      "environment": {
+        "python": "3.12.14",
+        "pdfplumber": "0.11.9",
+        "pdfminer_six": "20251230"
+      },
+      "financial_tables": 3,
+      "export_in_git": false
+    }
+  ],
+  "visually_rechecked": [
+    "PhosAgro2025H1 income full page: separate six-month/quarter groups",
+    "Segezha2021 income full page: thousands/RUB and spaced numbers"
+  ],
+  "primary_render_files_private": true,
+  "source_metadata_inherited_from_curated_catalog_not_inferred_from_untrusted_text": true,
+  "new_facts_admitted": 0
+}

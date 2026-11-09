@@ -1,0 +1,137 @@
+{
+  "python": "3.14.7 (main, Aug  8 2026, 21:15:19)  [MINGW GCC UCRT 16.2.0 64 bit (AMD64)]",
+  "sqlite": "3.53.4",
+  "completed_at": "2026-11-09T22:30:02.226592+00:00",
+  "runs": [
+    {
+      "name": "unit-regression",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 31.5649
+    },
+    {
+      "name": "contracts03",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/check_kp3_contracts.py"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.0811
+    },
+    {
+      "name": "method04",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/check_kp3_financial_method.py"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.1154
+    },
+    {
+      "name": "corpus05",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/check_kp3_corpus.py",
+        "--resource-map",
+        "tmp/local-resources.json"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.3316
+    },
+    {
+      "name": "retrieval06",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/check_kp3_retrieval.py"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.1203
+    },
+    {
+      "name": "real-guards",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "tmp/real_guard_checks.py"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.2075
+    },
+    {
+      "name": "fixed-manual",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "fixed",
+        "--source",
+        "manual"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.1365
+    },
+    {
+      "name": "synthetic",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "scenario"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.1909
+    },
+    {
+      "name": "real-source",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "scenario",
+        "--case",
+        "real-source",
+        "--trace",
+        "tmp/kp3-06-real-source.json"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.1841
+    },
+    {
+      "name": "questions",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "questions"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.2065
+    },
+    {
+      "name": "replay",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "replay",
+        "--run-dir",
+        "evaluation/step12_2026-11-09/run-02-environment-retry"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.3047
+    }
+  ]
+}

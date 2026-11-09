@@ -1,0 +1,72 @@
+{
+  "catalog_id": "kp3-real-corpus-v1",
+  "pdf_versions": 8,
+  "facts": 48,
+  "evidence": 48,
+  "unique_organization_metric_period_contexts": 39,
+  "version_specific_additional_cells": 9,
+  "per_metric": {
+    "revenue": 16,
+    "operating_profit": 16,
+    "operating_cash_flow": 16
+  },
+  "source_bridge_controls": 32,
+  "snapshot_bindings": 48,
+  "historical_blocked": 48,
+  "human_reviewed": 0,
+  "production_answer_calls": 0,
+  "model_calls": 0,
+  "general_extractor_evaluated": false,
+  "final_benchmark": false,
+  "independent_margin_controls": 8,
+  "local_files": [
+    {
+      "document_id": "phosagro-2023",
+      "file_status": "available",
+      "extraction_status": "not_run",
+      "bytes_checked": 2020478
+    },
+    {
+      "document_id": "phosagro-2024",
+      "file_status": "available",
+      "extraction_status": "not_run",
+      "bytes_checked": 1521928
+    },
+    {
+      "document_id": "phosagro-2025",
+      "file_status": "available",
+      "extraction_status": "not_run",
+      "bytes_checked": 3574640
+    },
+    {
+      "document_id": "phosagro-2025-q1",
+      "file_status": "available",
+      "extraction_status": "not_run",
+      "bytes_checked": 1839208
+    },
+    {
+      "document_id": "phosagro-2025-h1",
+      "file_status": "available",
+      "extraction_status": "not_run",
+      "bytes_checked": 1705179
+    },
+    {
+      "document_id": "phosagro-2025-9m",
+      "file_status": "available",
+      "extraction_status": "not_run",
+      "bytes_checked": 2158562
+    },
+    {
+      "document_id": "segezha-2021",
+      "file_status": "available",
+      "extraction_status": "not_run",
+      "bytes_checked": 1856644
+    },
+    {
+      "document_id": "segezha-2022",
+      "file_status": "available",
+      "extraction_status": "not_run",
+      "bytes_checked": 1819697
+    }
+  ]
+}

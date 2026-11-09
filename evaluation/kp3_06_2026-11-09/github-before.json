@@ -1,0 +1,38 @@
+{
+  "checked_at": "2026-11-09T17:34:39.238716+00:00",
+  "main": "f349717c5ca2acc33decf3dd7ce12b2756ce6d8b",
+  "prs": {
+    "3": {
+      "state": "open",
+      "merged": false,
+      "mergeable": true,
+      "mergeable_state": "clean",
+      "html_url": "https://github.com/AlexeyV10/financial-report-agent/pull/3",
+      "head": "ab47731d94ada6becff0becd8bd5120c7537f26b",
+      "branch": "codex/kp3-03-tasks-catalog-contracts",
+      "base": "main"
+    },
+    "4": {
+      "state": "open",
+      "merged": false,
+      "mergeable": true,
+      "mergeable_state": "clean",
+      "html_url": "https://github.com/AlexeyV10/financial-report-agent/pull/4",
+      "head": "22d12d36289bedb3dbca797f9a1c13cac9b4ded5",
+      "branch": "codex/kp3-04-financial-method",
+      "base": "codex/kp3-03-tasks-catalog-contracts"
+    },
+    "5": {
+      "state": "open",
+      "merged": false,
+      "mergeable": true,
+      "mergeable_state": "clean",
+      "html_url": "https://github.com/AlexeyV10/financial-report-agent/pull/5",
+      "head": "61d4c8ba4e330e6420f77ebce113f5d4d26e8fcf",
+      "branch": "codex/kp3-05-verified-corpus",
+      "base": "codex/kp3-04-financial-method"
+    }
+  },
+  "ruleset_active": true,
+  "bypass_actors": []
+}

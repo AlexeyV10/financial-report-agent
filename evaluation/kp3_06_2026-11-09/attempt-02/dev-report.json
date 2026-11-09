@@ -1,0 +1,1648 @@
+{
+  "purpose": "Open dev diagnostics, not final benchmark/model quality",
+  "prepared": {
+    "index": {
+      "status": "indexed",
+      "kind": "prepared",
+      "records": 48,
+      "documents": 8,
+      "index_sha256": "f86142e539d5c7cf27169b1a80e69ee5387274da8cdc9c19f8df96673e0f25b1",
+      "configuration_signature": "97e57edebad1694a6de8bd20493769dc500dbd7ae57f66db656526e8855cfa88",
+      "financial_status": null,
+      "facts_admitted": 0
+    },
+    "case_count": 56,
+    "complete_evidence_cases": 56,
+    "complete_table_cases": 56,
+    "by_family": {
+      "single_cell": {
+        "cases": 48,
+        "all_required_evidence": 48,
+        "all_required_tables": 48
+      },
+      "all_three_two_periods": {
+        "cases": 8,
+        "all_required_evidence": 8,
+        "all_required_tables": 8
+      }
+    },
+    "historical_blocked": 56,
+    "case_status_counts": {
+      "found": 56
+    }
+  },
+  "automatic": {
+    "index": {
+      "status": "indexed",
+      "kind": "automatic",
+      "records": 48,
+      "documents": 8,
+      "index_sha256": "c71875f8b9d501fe618066c419329f939dc0858de3d0dfe956b3ff8eedf1a913",
+      "configuration_signature": "97e57edebad1694a6de8bd20493769dc500dbd7ae57f66db656526e8855cfa88",
+      "financial_status": null,
+      "facts_admitted": 0
+    },
+    "case_count": 56,
+    "complete_evidence_cases": 46,
+    "complete_table_cases": 46,
+    "by_family": {
+      "single_cell": {
+        "cases": 48,
+        "all_required_evidence": 40,
+        "all_required_tables": 40
+      },
+      "all_three_two_periods": {
+        "cases": 8,
+        "all_required_evidence": 6,
+        "all_required_tables": 6
+      }
+    },
+    "historical_blocked": 56,
+    "case_status_counts": {
+      "unsupported_layout": 8,
+      "found": 46,
+      "partial": 2
+    }
+  },
+  "extraction": {
+    "target_cells": 48,
+    "matched": 40,
+    "not_extracted": 8,
+    "candidate_cells": 48,
+    "out_of_catalog_subperiod_candidates": 8,
+    "other_wrong_target_context_candidates": 0,
+    "matrix": [
+      {
+        "document_id": "phosagro-2023",
+        "table_counts": {
+          "income": 0,
+          "cash_flow": 1
+        },
+        "candidate_cells": 2,
+        "pdf_sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+        "extractor_fingerprint": "bb511275404dd8bab236ac0bc24a84c295082be2c558b929ca528cfead9666ba",
+        "export_sha256": "6683b6fca12439da0275231b8019836fd11c46ce1a3d988c2c99a67654f87a6a"
+      },
+      {
+        "document_id": "phosagro-2024",
+        "table_counts": {
+          "income": 1,
+          "cash_flow": 1
+        },
+        "candidate_cells": 6,
+        "pdf_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+        "extractor_fingerprint": "bb511275404dd8bab236ac0bc24a84c295082be2c558b929ca528cfead9666ba",
+        "export_sha256": "3d4ba87ac85a6e248d8fb237b6a5dfba6f5bdd2eff1cdb000a35fc12055e0e98"
+      },
+      {
+        "document_id": "phosagro-2025",
+        "table_counts": {
+          "income": 1,
+          "cash_flow": 1
+        },
+        "candidate_cells": 6,
+        "pdf_sha256": "c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+        "extractor_fingerprint": "bb511275404dd8bab236ac0bc24a84c295082be2c558b929ca528cfead9666ba",
+        "export_sha256": "ce5a912b647bef2601c081d4ab0e0f997ade1e5da9f7b8bf2a12b3360adcf697"
+      },
+      {
+        "document_id": "phosagro-2025-q1",
+        "table_counts": {
+          "income": 0,
+          "cash_flow": 1
+        },
+        "candidate_cells": 2,
+        "pdf_sha256": "8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+        "extractor_fingerprint": "bb511275404dd8bab236ac0bc24a84c295082be2c558b929ca528cfead9666ba",
+        "export_sha256": "be8a8b7f35b296f3d6a7861cd70d2cdefb6eab66ad3fef0d9328b3fff07bf2ff"
+      },
+      {
+        "document_id": "phosagro-2025-h1",
+        "table_counts": {
+          "income": 1,
+          "cash_flow": 1
+        },
+        "candidate_cells": 10,
+        "pdf_sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+        "extractor_fingerprint": "bb511275404dd8bab236ac0bc24a84c295082be2c558b929ca528cfead9666ba",
+        "export_sha256": "4f52070f70657c249b57db320735198f3366329660f884457aad41e2879b80aa"
+      },
+      {
+        "document_id": "phosagro-2025-9m",
+        "table_counts": {
+          "income": 1,
+          "cash_flow": 1
+        },
+        "candidate_cells": 10,
+        "pdf_sha256": "147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+        "extractor_fingerprint": "bb511275404dd8bab236ac0bc24a84c295082be2c558b929ca528cfead9666ba",
+        "export_sha256": "389be2870ea1a81a32c309e5f5194613829593c33a9ca9a0fdcb3fc78773bd81"
+      },
+      {
+        "document_id": "segezha-2021",
+        "table_counts": {
+          "income": 1,
+          "cash_flow": 2
+        },
+        "candidate_cells": 6,
+        "pdf_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+        "extractor_fingerprint": "bb511275404dd8bab236ac0bc24a84c295082be2c558b929ca528cfead9666ba",
+        "export_sha256": "6803653e23bbc23357f53eb208d442ffa57dbd6f627905667291c5f3950f0c67"
+      },
+      {
+        "document_id": "segezha-2022",
+        "table_counts": {
+          "income": 1,
+          "cash_flow": 2
+        },
+        "candidate_cells": 6,
+        "pdf_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+        "extractor_fingerprint": "bb511275404dd8bab236ac0bc24a84c295082be2c558b929ca528cfead9666ba",
+        "export_sha256": "c4da661e90938afd8895df65cb2dc38326cd620b30d45f580bd2ed8678768f2d"
+      }
+    ],
+    "cell_coverage": [
+      {
+        "evidence_id": "phosagro-2023-revenue-2023-ev",
+        "exact_cell_matches": 0,
+        "matched": false
+      },
+      {
+        "evidence_id": "phosagro-2023-revenue-2022-ev",
+        "exact_cell_matches": 0,
+        "matched": false
+      },
+      {
+        "evidence_id": "phosagro-2023-operating_profit-2023-ev",
+        "exact_cell_matches": 0,
+        "matched": false
+      },
+      {
+        "evidence_id": "phosagro-2023-operating_profit-2022-ev",
+        "exact_cell_matches": 0,
+        "matched": false
+      },
+      {
+        "evidence_id": "phosagro-2023-operating_cash_flow-2023-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2023-operating_cash_flow-2022-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2024-revenue-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2024-revenue-2023-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2024-operating_profit-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2024-operating_profit-2023-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2024-operating_cash_flow-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2024-operating_cash_flow-2023-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-revenue-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-revenue-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-operating_profit-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-operating_profit-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-operating_cash_flow-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-operating_cash_flow-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-q1-revenue-2025-ev",
+        "exact_cell_matches": 0,
+        "matched": false
+      },
+      {
+        "evidence_id": "phosagro-2025-q1-revenue-2024-ev",
+        "exact_cell_matches": 0,
+        "matched": false
+      },
+      {
+        "evidence_id": "phosagro-2025-q1-operating_profit-2025-ev",
+        "exact_cell_matches": 0,
+        "matched": false
+      },
+      {
+        "evidence_id": "phosagro-2025-q1-operating_profit-2024-ev",
+        "exact_cell_matches": 0,
+        "matched": false
+      },
+      {
+        "evidence_id": "phosagro-2025-q1-operating_cash_flow-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-q1-operating_cash_flow-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-h1-revenue-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-h1-revenue-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-h1-operating_profit-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-h1-operating_profit-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-h1-operating_cash_flow-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-h1-operating_cash_flow-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-9m-revenue-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-9m-revenue-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-9m-operating_profit-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-9m-operating_profit-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-9m-operating_cash_flow-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-9m-operating_cash_flow-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2021-revenue-2021-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2021-revenue-2020-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2021-operating_profit-2021-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2021-operating_profit-2020-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2021-operating_cash_flow-2021-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2021-operating_cash_flow-2020-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2022-revenue-2022-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2022-revenue-2021-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2022-operating_profit-2022-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2022-operating_profit-2021-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2022-operating_cash_flow-2022-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2022-operating_cash_flow-2021-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      }
+    ],
+    "annotation_reused_as_extraction": false
+  },
+  "cases": [
+    {
+      "case_id": "direct:phosagro-2023-revenue-2023",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2023-revenue-2022",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2023-operating_profit-2023",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2023-operating_profit-2022",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2023-operating_cash_flow-2023",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2023-operating_cash_flow-2022",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2024-revenue-2024",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2024-revenue-2023",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2024-operating_profit-2024",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2024-operating_profit-2023",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2024-operating_cash_flow-2024",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2024-operating_cash_flow-2023",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-revenue-2025",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-revenue-2024",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-operating_profit-2025",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-operating_profit-2024",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-operating_cash_flow-2025",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-operating_cash_flow-2024",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-revenue-2025",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-revenue-2024",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-operating_profit-2025",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-operating_profit-2024",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-operating_cash_flow-2025",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-operating_cash_flow-2024",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-revenue-2025",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-revenue-2024",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-operating_profit-2025",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-operating_profit-2024",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-operating_cash_flow-2025",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-operating_cash_flow-2024",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-revenue-2025",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-revenue-2024",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-operating_profit-2025",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-operating_profit-2024",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-operating_cash_flow-2025",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-operating_cash_flow-2024",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2021-revenue-2021",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2021-revenue-2020",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2021-operating_profit-2021",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2021-operating_profit-2020",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2021-operating_cash_flow-2021",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2021-operating_cash_flow-2020",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2022-revenue-2022",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2022-revenue-2021",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2022-operating_profit-2022",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2022-operating_profit-2021",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2022-operating_cash_flow-2022",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2022-operating_cash_flow-2021",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "all-three:phosagro-2023",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 6,
+      "matched_evidence": 6,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 6
+    },
+    {
+      "case_id": "all-three:phosagro-2024",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 6,
+      "matched_evidence": 6,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 6
+    },
+    {
+      "case_id": "all-three:phosagro-2025",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 6,
+      "matched_evidence": 6,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 6
+    },
+    {
+      "case_id": "all-three:phosagro-2025-q1",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 6,
+      "matched_evidence": 6,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 6
+    },
+    {
+      "case_id": "all-three:phosagro-2025-h1",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 6,
+      "matched_evidence": 6,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 6
+    },
+    {
+      "case_id": "all-three:phosagro-2025-9m",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 6,
+      "matched_evidence": 6,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 6
+    },
+    {
+      "case_id": "all-three:segezha-2021",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 6,
+      "matched_evidence": 6,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 6
+    },
+    {
+      "case_id": "all-three:segezha-2022",
+      "kind": "prepared",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 6,
+      "matched_evidence": 6,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 6
+    },
+    {
+      "case_id": "direct:phosagro-2023-revenue-2023",
+      "kind": "automatic",
+      "status": "unsupported_layout",
+      "reason_code": "statement_table_unavailable",
+      "required_evidence": 1,
+      "matched_evidence": 0,
+      "all_required_evidence": false,
+      "all_required_tables": false,
+      "result_count": 0
+    },
+    {
+      "case_id": "direct:phosagro-2023-revenue-2022",
+      "kind": "automatic",
+      "status": "unsupported_layout",
+      "reason_code": "statement_table_unavailable",
+      "required_evidence": 1,
+      "matched_evidence": 0,
+      "all_required_evidence": false,
+      "all_required_tables": false,
+      "result_count": 0
+    },
+    {
+      "case_id": "direct:phosagro-2023-operating_profit-2023",
+      "kind": "automatic",
+      "status": "unsupported_layout",
+      "reason_code": "statement_table_unavailable",
+      "required_evidence": 1,
+      "matched_evidence": 0,
+      "all_required_evidence": false,
+      "all_required_tables": false,
+      "result_count": 0
+    },
+    {
+      "case_id": "direct:phosagro-2023-operating_profit-2022",
+      "kind": "automatic",
+      "status": "unsupported_layout",
+      "reason_code": "statement_table_unavailable",
+      "required_evidence": 1,
+      "matched_evidence": 0,
+      "all_required_evidence": false,
+      "all_required_tables": false,
+      "result_count": 0
+    },
+    {
+      "case_id": "direct:phosagro-2023-operating_cash_flow-2023",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2023-operating_cash_flow-2022",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2024-revenue-2024",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2024-revenue-2023",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2024-operating_profit-2024",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2024-operating_profit-2023",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2024-operating_cash_flow-2024",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2024-operating_cash_flow-2023",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-revenue-2025",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-revenue-2024",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-operating_profit-2025",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-operating_profit-2024",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-operating_cash_flow-2025",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-operating_cash_flow-2024",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-revenue-2025",
+      "kind": "automatic",
+      "status": "unsupported_layout",
+      "reason_code": "statement_table_unavailable",
+      "required_evidence": 1,
+      "matched_evidence": 0,
+      "all_required_evidence": false,
+      "all_required_tables": false,
+      "result_count": 0
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-revenue-2024",
+      "kind": "automatic",
+      "status": "unsupported_layout",
+      "reason_code": "statement_table_unavailable",
+      "required_evidence": 1,
+      "matched_evidence": 0,
+      "all_required_evidence": false,
+      "all_required_tables": false,
+      "result_count": 0
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-operating_profit-2025",
+      "kind": "automatic",
+      "status": "unsupported_layout",
+      "reason_code": "statement_table_unavailable",
+      "required_evidence": 1,
+      "matched_evidence": 0,
+      "all_required_evidence": false,
+      "all_required_tables": false,
+      "result_count": 0
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-operating_profit-2024",
+      "kind": "automatic",
+      "status": "unsupported_layout",
+      "reason_code": "statement_table_unavailable",
+      "required_evidence": 1,
+      "matched_evidence": 0,
+      "all_required_evidence": false,
+      "all_required_tables": false,
+      "result_count": 0
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-operating_cash_flow-2025",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-q1-operating_cash_flow-2024",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-revenue-2025",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-revenue-2024",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-operating_profit-2025",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-operating_profit-2024",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-operating_cash_flow-2025",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-h1-operating_cash_flow-2024",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-revenue-2025",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-revenue-2024",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-operating_profit-2025",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-operating_profit-2024",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-operating_cash_flow-2025",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:phosagro-2025-9m-operating_cash_flow-2024",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2021-revenue-2021",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2021-revenue-2020",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2021-operating_profit-2021",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2021-operating_profit-2020",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2021-operating_cash_flow-2021",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2021-operating_cash_flow-2020",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2022-revenue-2022",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2022-revenue-2021",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2022-operating_profit-2022",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2022-operating_profit-2021",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2022-operating_cash_flow-2022",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "direct:segezha-2022-operating_cash_flow-2021",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 1,
+      "matched_evidence": 1,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 1
+    },
+    {
+      "case_id": "all-three:phosagro-2023",
+      "kind": "automatic",
+      "status": "partial",
+      "reason_code": "incomplete_evidence_context",
+      "required_evidence": 6,
+      "matched_evidence": 2,
+      "all_required_evidence": false,
+      "all_required_tables": false,
+      "result_count": 2
+    },
+    {
+      "case_id": "all-three:phosagro-2024",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 6,
+      "matched_evidence": 6,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 6
+    },
+    {
+      "case_id": "all-three:phosagro-2025",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 6,
+      "matched_evidence": 6,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 6
+    },
+    {
+      "case_id": "all-three:phosagro-2025-q1",
+      "kind": "automatic",
+      "status": "partial",
+      "reason_code": "incomplete_evidence_context",
+      "required_evidence": 6,
+      "matched_evidence": 2,
+      "all_required_evidence": false,
+      "all_required_tables": false,
+      "result_count": 2
+    },
+    {
+      "case_id": "all-three:phosagro-2025-h1",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 6,
+      "matched_evidence": 6,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 6
+    },
+    {
+      "case_id": "all-three:phosagro-2025-9m",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 6,
+      "matched_evidence": 6,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 6
+    },
+    {
+      "case_id": "all-three:segezha-2021",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 6,
+      "matched_evidence": 6,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 6
+    },
+    {
+      "case_id": "all-three:segezha-2022",
+      "kind": "automatic",
+      "status": "found",
+      "reason_code": "ok",
+      "required_evidence": 6,
+      "matched_evidence": 6,
+      "all_required_evidence": true,
+      "all_required_tables": true,
+      "result_count": 6
+    }
+  ],
+  "production_answers": 0,
+  "model_calls": 0,
+  "new_facts_admitted": 0,
+  "all_cells_known_to_developer": true,
+  "final_eval_freeze": false,
+  "reserved_unseen_real": 0
+}

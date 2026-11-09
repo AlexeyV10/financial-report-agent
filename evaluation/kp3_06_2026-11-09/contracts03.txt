@@ -1,0 +1,100 @@
+{
+  "schema_version": "0.2",
+  "stage": "contract_binding_only",
+  "model_calls": 0,
+  "financial_calculations": 0,
+  "cases": [
+    {
+      "origin": "legacy assistant_checked registry; no new PDF check",
+      "schema_version": "0.2",
+      "task_id": "first-revenue-growth",
+      "binding_status": "ready",
+      "reason_code": "ok",
+      "fact_ids": [
+        "phosagro-revenue-2023",
+        "phosagro-revenue-2024"
+      ],
+      "candidate_fact_ids": [
+        "phosagro-revenue-2023",
+        "phosagro-revenue-2024"
+      ],
+      "calculations_performed": false,
+      "catalog_digest": "60b52de2df9496e56dd6494607d0e70c40da2e40361fd565f3f8ec68bee276c0"
+    },
+    {
+      "origin": "legacy historical gate",
+      "schema_version": "0.2",
+      "task_id": "first-revenue-growth",
+      "binding_status": "missing",
+      "reason_code": "publication_unknown",
+      "fact_ids": [],
+      "candidate_fact_ids": [],
+      "calculations_performed": false,
+      "catalog_digest": "60b52de2df9496e56dd6494607d0e70c40da2e40361fd565f3f8ec68bee276c0"
+    },
+    {
+      "origin": "SYNTHETIC ONLY, not issuer data",
+      "schema_version": "0.2",
+      "task_id": "synthetic_alpha-direct",
+      "binding_status": "ready",
+      "reason_code": "ok",
+      "fact_ids": [
+        "synthetic_alpha-2022-fact"
+      ],
+      "candidate_fact_ids": [
+        "synthetic_alpha-2022-fact"
+      ],
+      "calculations_performed": false,
+      "catalog_digest": "e5f98b3879816e71cd1b33e0a1e6abd63d6fef69f71a402f9952a9f7b43b036c"
+    },
+    {
+      "origin": "SYNTHETIC ONLY, not issuer data",
+      "schema_version": "0.2",
+      "task_id": "synthetic_alpha-compare",
+      "binding_status": "ready",
+      "reason_code": "ok",
+      "fact_ids": [
+        "synthetic_alpha-2021-fact",
+        "synthetic_alpha-2022-fact"
+      ],
+      "candidate_fact_ids": [
+        "synthetic_alpha-2021-fact",
+        "synthetic_alpha-2022-fact"
+      ],
+      "calculations_performed": false,
+      "catalog_digest": "e5f98b3879816e71cd1b33e0a1e6abd63d6fef69f71a402f9952a9f7b43b036c"
+    },
+    {
+      "origin": "SYNTHETIC ONLY, not issuer data",
+      "schema_version": "0.2",
+      "task_id": "synthetic_beta-direct",
+      "binding_status": "ready",
+      "reason_code": "ok",
+      "fact_ids": [
+        "synthetic_beta-2023-fact"
+      ],
+      "candidate_fact_ids": [
+        "synthetic_beta-2023-fact"
+      ],
+      "calculations_performed": false,
+      "catalog_digest": "e5f98b3879816e71cd1b33e0a1e6abd63d6fef69f71a402f9952a9f7b43b036c"
+    },
+    {
+      "origin": "SYNTHETIC ONLY, not issuer data",
+      "schema_version": "0.2",
+      "task_id": "synthetic_beta-compare",
+      "binding_status": "ready",
+      "reason_code": "ok",
+      "fact_ids": [
+        "synthetic_beta-2022-fact",
+        "synthetic_beta-2023-fact"
+      ],
+      "candidate_fact_ids": [
+        "synthetic_beta-2022-fact",
+        "synthetic_beta-2023-fact"
+      ],
+      "calculations_performed": false,
+      "catalog_digest": "e5f98b3879816e71cd1b33e0a1e6abd63d6fef69f71a402f9952a9f7b43b036c"
+    }
+  ]
+}
