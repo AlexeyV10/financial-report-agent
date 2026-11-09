@@ -1,0 +1,120 @@
+{
+  "role": "Own open preparation QA, not final eval gold; all inputs known to developer",
+  "source_bridge_count": 32,
+  "margin_controls": [
+    {
+      "control_id": "phosagro-2023-margin-audit",
+      "input_fact_ids": [
+        "phosagro-2023-operating_profit-2023",
+        "phosagro-2023-revenue-2023"
+      ],
+      "operation": "operating_profit / revenue * 100",
+      "exact_fraction": "314075/9173",
+      "rounded_percent": "34.24",
+      "rounding": "HALF_UP,2",
+      "independent_decimal80_matches": true,
+      "role": "open_preparation_control_not_runtime_answer",
+      "production_calls": 0
+    },
+    {
+      "control_id": "phosagro-2024-margin-audit",
+      "input_fact_ids": [
+        "phosagro-2024-operating_profit-2024",
+        "phosagro-2024-revenue-2024"
+      ],
+      "operation": "operating_profit / revenue * 100",
+      "exact_fraction": "14045900/507689",
+      "rounded_percent": "27.67",
+      "rounding": "HALF_UP,2",
+      "independent_decimal80_matches": true,
+      "role": "open_preparation_control_not_runtime_answer",
+      "production_calls": 0
+    },
+    {
+      "control_id": "phosagro-2025-margin-audit",
+      "input_fact_ids": [
+        "phosagro-2025-operating_profit-2025",
+        "phosagro-2025-revenue-2025"
+      ],
+      "operation": "operating_profit / revenue * 100",
+      "exact_fraction": "3390125/143407",
+      "rounded_percent": "23.64",
+      "rounding": "HALF_UP,2",
+      "independent_decimal80_matches": true,
+      "role": "open_preparation_control_not_runtime_answer",
+      "production_calls": 0
+    },
+    {
+      "control_id": "phosagro-2025-q1-margin-audit",
+      "input_fact_ids": [
+        "phosagro-2025-q1-operating_profit-2025",
+        "phosagro-2025-q1-revenue-2025"
+      ],
+      "operation": "operating_profit / revenue * 100",
+      "exact_fraction": "388160/15939",
+      "rounded_percent": "24.35",
+      "rounding": "HALF_UP,2",
+      "independent_decimal80_matches": true,
+      "role": "open_preparation_control_not_runtime_answer",
+      "production_calls": 0
+    },
+    {
+      "control_id": "phosagro-2025-h1-margin-audit",
+      "input_fact_ids": [
+        "phosagro-2025-h1-operating_profit-2025",
+        "phosagro-2025-h1-revenue-2025"
+      ],
+      "operation": "operating_profit / revenue * 100",
+      "exact_fraction": "1871150/74639",
+      "rounded_percent": "25.07",
+      "rounding": "HALF_UP,2",
+      "independent_decimal80_matches": true,
+      "role": "open_preparation_control_not_runtime_answer",
+      "production_calls": 0
+    },
+    {
+      "control_id": "phosagro-2025-9m-margin-audit",
+      "input_fact_ids": [
+        "phosagro-2025-9m-operating_profit-2025",
+        "phosagro-2025-9m-revenue-2025"
+      ],
+      "operation": "operating_profit / revenue * 100",
+      "exact_fraction": "1441500/55217",
+      "rounded_percent": "26.11",
+      "rounding": "HALF_UP,2",
+      "independent_decimal80_matches": true,
+      "role": "open_preparation_control_not_runtime_answer",
+      "production_calls": 0
+    },
+    {
+      "control_id": "segezha-2021-margin-audit",
+      "input_fact_ids": [
+        "segezha-2021-operating_profit-2021",
+        "segezha-2021-revenue-2021"
+      ],
+      "operation": "operating_profit / revenue * 100",
+      "exact_fraction": "744997400/30814089",
+      "rounded_percent": "24.18",
+      "rounding": "HALF_UP,2",
+      "independent_decimal80_matches": true,
+      "role": "open_preparation_control_not_runtime_answer",
+      "production_calls": 0
+    },
+    {
+      "control_id": "segezha-2022-margin-audit",
+      "input_fact_ids": [
+        "segezha-2022-operating_profit-2022",
+        "segezha-2022-revenue-2022"
+      ],
+      "operation": "operating_profit / revenue * 100",
+      "exact_fraction": "505550/53383",
+      "rounded_percent": "9.47",
+      "rounding": "HALF_UP,2",
+      "independent_decimal80_matches": true,
+      "role": "open_preparation_control_not_runtime_answer",
+      "production_calls": 0
+    }
+  ],
+  "model_calls": 0,
+  "production_answer_calls": 0
+}

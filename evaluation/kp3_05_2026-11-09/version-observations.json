@@ -1,0 +1,31 @@
+{
+  "observations": [
+    {
+      "organization_id": "segezha_group",
+      "metric_id": "operating_cash_flow",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2021-01-01",
+        "end": "2021-12-31"
+      },
+      "initial_period_fact_id": "segezha-2021-operating_cash_flow-2021",
+      "later_comparative_fact_id": "segezha-2022-operating_cash_flow-2021",
+      "initial_period_value_rub": "13091925000",
+      "later_comparative_value_rub": "13068000000",
+      "later_minus_initial_rub": "-23925000",
+      "status": "observed_difference_reason_not_established",
+      "rounding_alone_explains": false,
+      "notes": "2022 PDF p10 footnote and p24 note5 disclose retrospective comparative balance/acquisition adjustments. Attribution of the CFO difference to a particular cause is NOT established. Do not substitute comparative for original or call this a within-version conflict.",
+      "comparability": "explicit_version_required_no_automatic_cross_version_equivalence"
+    }
+  ],
+  "original_period_missing": [
+    "PhosAgro2022",
+    "PhosAgro2024Q1",
+    "PhosAgro2024H1",
+    "PhosAgro2024NineMonths",
+    "Segezha2020"
+  ],
+  "meaning": "Missing from selected catalog, not a claim that an original report does not exist anywhere. Period documents are not certified first-publication versions."
+}

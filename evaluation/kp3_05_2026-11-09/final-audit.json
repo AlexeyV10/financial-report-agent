@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-11-09T17:25:46.923647+00:00",
+  "base_files": 433,
+  "base_unchanged": 428,
+  "base_changed_only": [
+    "README.md",
+    "STATUS.md",
+    "docs/decisions.md",
+    "docs/kp3/contracts_v02.md",
+    "src/financial_assistant/catalog.py"
+  ],
+  "root_files_before": 443,
+  "root_unchanged": 441,
+  "root_changed_only": [
+    "docs/decisions.md",
+    "STATUS.md"
+  ],
+  "root_branch": "codex/kp3-01-02-scope-baseline",
+  "root_head": "c18e3febfdbce731c542607a1041cccf190f5798",
+  "root_original_dirty_files_preserved": true,
+  "root_status_after": " M AGENTS.md\n M README.md\n M STATUS.md\n M docs/decisions.md\n M docs/github_collaboration.md\n M docs/workflow.md\n?? app/__init__.py\n?? app/legacy_demo.py\n?? app/streamlit_app.py\n?? docs/kp3/analysis.md\n?? docs/kp3/baseline.md\n?? docs/kp3/product_scope.md\n?? docs/kp3/sources.md\n?? evaluation/github_branch_granularity_2026-11-09/before.json\n?? evaluation/github_branch_granularity_2026-11-09/result.json\n?? evaluation/github_ruleset_2026-11-09/apply-result.json\n?? evaluation/github_ruleset_2026-11-09/before.json\n?? evaluation/github_ruleset_2026-11-09/documentation-pr-created.json\n?? evaluation/github_ruleset_2026-11-09/documentation-pr-result.json\n?? evaluation/github_ruleset_2026-11-09/documentation-preparation.json\n?? evaluation/github_ruleset_2026-11-09/effective-rules.json\n?? evaluation/github_ruleset_2026-11-09/first-public-apply-error.json\n?? evaluation/github_ruleset_2026-11-09/public-history-audit.json\n?? evaluation/github_ruleset_2026-11-09/requested-ruleset.json\n?? evaluation/github_ruleset_2026-11-09/result.json\n?? evaluation/github_ruleset_2026-11-09/rulesets-after-public.json\n?? evaluation/github_ruleset_2026-11-09/visibility-result.json\n?? evaluation/github_workflow_memory_2026-11-09/before.json\n?? evaluation/github_workflow_memory_2026-11-09/prepared.json\n?? evaluation/github_workflow_memory_2026-11-09/result.json\n?? evaluation/kp3_01_2026-11-09/README.md\n?? evaluation/kp3_01_2026-11-09/baseline-runs.json\n?? evaluation/kp3_01_2026-11-09/before.json\n?? evaluation/kp3_01_2026-11-09/cpython312-ensurepip.txt\n?? evaluation/kp3_01_2026-11-09/cpython312-streamlit-install.txt\n?? evaluation/kp3_01_2026-11-09/environment-core.json\n?? evaluation/kp3_01_2026-11-09/environment-final.json\n?? evaluation/kp3_01_2026-11-09/final-audit.json\n?? evaluation/kp3_01_2026-11-09/fixed-manual.txt\n?? evaluation/kp3_01_2026-11-09/local-resources.json\n?? evaluation/kp3_01_2026-11-09/msys-ensurepip-retry.txt\n?? evaluation/kp3_01_2026-11-09/msys-ensurepip.txt\n?? evaluation/kp3_01_2026-11-09/msys-streamlit-dry-run.txt\n?? evaluation/kp3_01_2026-11-09/msys-streamlit-network-retry.txt\n?? evaluation/kp3_01_2026-11-09/offline-replay.txt\n?? evaluation/kp3_01_2026-11-09/pdf-worker-run.json\n?? evaluation/kp3_01_2026-11-09/pdf-worker.txt\n?? evaluation/kp3_01_2026-11-09/real-source.txt\n?? evaluation/kp3_01_2026-11-09/report.json\n?? evaluation/kp3_01_2026-11-09/sandbox-test-cleanup.json\n?? evaluation/kp3_01_2026-11-09/synthetic.txt\n?? evaluation/kp3_01_2026-11-09/ui-browser-observation.txt\n?? evaluation/kp3_01_2026-11-09/ui-freeze.txt\n?? evaluation/kp3_01_2026-11-09/ui-install-report.json\n?? evaluation/kp3_01_2026-11-09/ui-pip-check.txt\n?? evaluation/kp3_01_2026-11-09/ui-server-03-outside-sandbox.txt\n?? evaluation/kp3_01_2026-11-09/ui-server-first-attempt.json\n?? evaluation/kp3_01_2026-11-09/ui-server-lifecycle-03-outside-sandbox.json\n?? evaluation/kp3_01_2026-11-09/ui-server-lifecycle.json\n?? evaluation/kp3_01_2026-11-09/ui-server.txt\n?? evaluation/kp3_01_2026-11-09/ui-start-diagnostic.txt\n?? evaluation/kp3_01_2026-11-09/ui-tests-02.txt\n?? evaluation/kp3_01_2026-11-09/ui-tests-03-outside-sandbox.txt\n?? evaluation/kp3_01_2026-11-09/ui-tests-04-form-submit.txt\n?? evaluation/kp3_01_2026-11-09/ui-tests-interrupted.txt\n?? evaluation/kp3_01_2026-11-09/ui-tests.txt\n?? evaluation/kp3_01_2026-11-09/unit-tests.txt\n?? evaluation/kp3_01_2026-11-09/worker-packages-after.json\n?? evaluation/kp3_03_2026-11-09/README.md\n?? evaluation/kp3_03_2026-11-09/git-publication.json\n?? evaluation/kp3_03_2026-11-09/root-before.json\n?? evaluation/kp3_04_2026-11-09/README.md\n?? evaluation/kp3_04_2026-11-09/git-publication.json\n?? evaluation/kp3_04_2026-11-09/root-before.json\n?? evaluation/kp3_05_2026-11-09/root-before.json\n?? evaluation/kp3_planning_2026-11-09/before.json\n?? evaluation/kp3_planning_2026-11-09/final-audit.json\n?? evaluation/kp3_planning_2026-11-09/planning-calculations.json\n?? evaluation/kp3_planning_2026-11-09/status-before.md\n?? evaluation/kp3_planning_2026-11-09/verification.json\n?? prompts/github_pr_only_continuation.md\n?? prompts/github_workflow_continuation.md\n?? prompts/kp3_01_product_scope_and_baseline.md\n?? prompts/kp3_03_tasks_catalog_contracts.md\n?? requirements-ui-windows-py312.lock.txt\n?? requirements-ui.txt\n?? tests_ui/test_shell.py\n?? ПЛАН_РАБОТЫ_КП3.md\n",
+  "previous_worktrees": {
+    "03": "clean",
+    "04": "clean"
+  },
+  "old_finance_extractor_search_agent_data_tests_evidence_unchanged": true,
+  "exception_catalog_encoding_explicit": true,
+  "new_paths": [
+    "data/catalogs/kp3_corpus_v1/manifest.json",
+    "data/catalogs/kp3_corpus_v1/runtime_catalog.json",
+    "data/catalogs/kp3_corpus_v1/source_bindings.json",
+    "docs/kp3/corpus_v1.md",
+    "evaluation/kp3_05_2026-11-09/attempt-01/check-runs.json",
+    "evaluation/kp3_05_2026-11-09/attempt-01/unit-regression.txt",
+    "evaluation/kp3_05_2026-11-09/before.json",
+    "evaluation/kp3_05_2026-11-09/candidates.json",
+    "evaluation/kp3_05_2026-11-09/check-runs.json",
+    "evaluation/kp3_05_2026-11-09/contracts-check.txt",
+    "evaluation/kp3_05_2026-11-09/control-calculations.json",
+    "evaluation/kp3_05_2026-11-09/corpus-check.txt",
+    "evaluation/kp3_05_2026-11-09/fixed-manual.txt",
+    "evaluation/kp3_05_2026-11-09/github-prepublication.json",
+    "evaluation/kp3_05_2026-11-09/method-check.txt",
+    "evaluation/kp3_05_2026-11-09/publication-investigation.json",
+    "evaluation/kp3_05_2026-11-09/questions.txt",
+    "evaluation/kp3_05_2026-11-09/real-source.txt",
+    "evaluation/kp3_05_2026-11-09/replay.txt",
+    "evaluation/kp3_05_2026-11-09/report.json",
+    "evaluation/kp3_05_2026-11-09/root-preservation-before.json",
+    "evaluation/kp3_05_2026-11-09/source-checks.json",
+    "evaluation/kp3_05_2026-11-09/source-technical-record.json",
+    "evaluation/kp3_05_2026-11-09/synthetic.txt",
+    "evaluation/kp3_05_2026-11-09/unit-regression.txt",
+    "evaluation/kp3_05_2026-11-09/version-observations.json",
+    "prompts/kp3_06_generalize_extraction_and_search.md",
+    "scripts/check_kp3_corpus.py",
+    "tests/test_kp3_corpus.py"
+  ],
+  "raw_sources_in_git": false,
+  "original_dirty_root_doc_bytes_preserved_verified_by_before_hash": true
+}
