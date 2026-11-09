@@ -1,0 +1,13 @@
+{
+  "python": "3.14.7 (main, Aug  8 2026, 21:15:19)  [MINGW GCC UCRT 16.2.0 64 bit (AMD64)]",
+  "protected_sha256": {
+    "src/financial_assistant/contracts.py": "5894effc517efdbddb3b9a10d4bd7268f9d277bde283e2e476fe9ea0b8a55ac2",
+    "src/financial_assistant/finance.py": "2f19dec687077097544c0e0149af1877981ecfcbbeabe7debe8936739608d6e4",
+    "src/financial_assistant/retrieval.py": "1606742a9819c3a4e83f3a1538c1c13c958dfff0f263f77c5d2be469c53e7564",
+    "src/financial_assistant/user_path.py": "59540e4914f7ff7e62e7b6450cc3f17448030e951c43b571caa2242b4d25b7c3",
+    "scripts/assistant.py": "f3840332a8fc3f7c23fa19571b8a7fbbfb150c4bb3148f51a6fea07309370970",
+    "data/examples/reference_bundle.json": "93e51d6dc834e4627dce6e6c75c43aec465cd2c9308bac35d443040b5a394c3a"
+  },
+  "git_repository": false,
+  "readiness": "No configured provider/model/budget found; known API variables absent in this process; ollama command not found. This is not proof that no access exists elsewhere."
+}

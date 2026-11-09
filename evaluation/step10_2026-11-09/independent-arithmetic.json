@@ -1,0 +1,8 @@
+{
+  "method": "Fraction and literal control from user; independent of simulator Decimal/ledger implementation",
+  "final_cash": "10098",
+  "return_pct": "49/50",
+  "cash_after_buy": "7999",
+  "fees": "2",
+  "passed": true
+}

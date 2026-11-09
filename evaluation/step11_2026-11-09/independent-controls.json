@@ -1,0 +1,29 @@
+{
+  "checked_by": "Codex",
+  "human_reviewed": false,
+  "prototype_answering_calls": 0,
+  "model_calls": 0,
+  "methods": [
+    "integer quotient/remainder unit conversion",
+    "integer milli-RUB/cent ledger",
+    "literal control from step10 user request"
+  ],
+  "QA04": {
+    "507689_div_1000_quotient": 507,
+    "remainder": 689,
+    "billion_RUB": "507.689"
+  },
+  "SC02": {
+    "buy_price_milli_RUB": 100500,
+    "sell_price_milli_RUB": 104475,
+    "quantity": 20,
+    "buy_notional_cents": 201000,
+    "sell_notional_cents": 208950,
+    "fee_cents_each": 300,
+    "final_cents": 1007350,
+    "final_RUB": "10073.50",
+    "return_pct_display": "0.74"
+  },
+  "SC01_literal_final_RUB": "10098",
+  "scope": "Supplemental arithmetic reference proof only; no prototype answering evaluation."
+}

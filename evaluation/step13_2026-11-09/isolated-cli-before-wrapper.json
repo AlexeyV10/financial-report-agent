@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python",
+    "-I",
+    "scripts/agent_assistant.py",
+    "--adapter",
+    "mock",
+    "--source",
+    "manual"
+  ],
+  "exit_code": 1,
+  "failure": "Isolated Python removes scripts/ from implicit sys.path; sibling assistant module not found",
+  "model_calls": 0,
+  "diagnostic_capture_note": "Initial diagnostic capture used UTF8 for Windows native stderr and failed decoding. Retried byte capture with explicit decoding; no model calls in either attempt.",
+  "fix": "New allowlisted run_local.py adds packaged scripts/src; prior pinned core unchanged"
+}

@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "scanned_candidate_files": 347,
+  "total_candidate_bytes": 4958167,
+  "credential_patterns": [
+    "private_key",
+    "github_token",
+    "openai_token",
+    "aws_access_key",
+    "password_in_github_url"
+  ],
+  "credential_findings": [],
+  "archive_checks": [
+    {
+      "path": "delivery/kp2-local-step13-v1-2026-11-09.zip",
+      "members": 206,
+      "crc": "passed",
+      "content_scope": "passed"
+    },
+    {
+      "path": "delivery/kp2-materials-step14-v1-2026-11-09.zip",
+      "members": 8,
+      "crc": "passed",
+      "content_scope": "passed"
+    },
+    {
+      "path": "delivery/stage1-local-v2-2026-11-09.zip",
+      "members": 29,
+      "crc": "passed",
+      "content_scope": "passed"
+    },
+    {
+      "path": "delivery/stage1-review-2026-11-09.zip",
+      "members": 28,
+      "crc": "passed",
+      "content_scope": "passed"
+    },
+    {
+      "path": "materials/kp2_2026-11-09/KP2_report_v2.docx",
+      "members": 18,
+      "crc": "passed",
+      "content_scope": "passed"
+    },
+    {
+      "path": "materials/kp2_2026-11-09/KP2_slides_v2.pptx",
+      "members": 47,
+      "crc": "passed",
+      "content_scope": "passed"
+    }
+  ],
+  "allowed_own_pdfs": [
+    "materials/kp2_2026-11-09/KP2_report_v2.pdf",
+    "materials/kp2_2026-11-09/KP2_slides_v2.pdf"
+  ],
+  "allowed_archives": [
+    "delivery/kp2-local-step13-v1-2026-11-09.zip",
+    "delivery/kp2-materials-step14-v1-2026-11-09.zip",
+    "delivery/stage1-local-v2-2026-11-09.zip",
+    "delivery/stage1-review-2026-11-09.zip"
+  ],
+  "primary_pdf_pages_text_index_model_weights_excluded": true,
+  "ignore_probes": [
+    ".env",
+    ".env.production",
+    "tmp/pdfs/phosagro-2024-ru.pdf",
+    "tmp/retrieval/document.sqlite",
+    "tmp/ollama/models/blobs/large-model",
+    "output/private-result.json",
+    "data/private/document.json",
+    "data/raw/extracted.txt",
+    "weights.gguf",
+    "personal.key",
+    "other-report.pdf"
+  ],
+  "ignore_probes_passed": true,
+  "byte_preserving_gitattributes": true,
+  "limitation": "Pattern and scope checks reduce accidental disclosure; not a claim of exhaustive secret detection",
+  "new_model_calls": 0,
+  "financial_code_changed": false
+}

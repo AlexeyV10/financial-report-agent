@@ -1,0 +1,688 @@
+{
+  "run_id": "9622e659-d823-4b50-a1be-11adaa690fb8",
+  "started_at": "2026-11-09T02:28:11.651292+00:00",
+  "ended_at": "2026-11-09T02:28:11.654928+00:00",
+  "elapsed_s": 0.0036428000003070338,
+  "case": "synthetic",
+  "request_sha256": "c3693f58ce24b8b37a2a8cad1e8fe849016b7fee54e61cd184c20f275c22e4a2",
+  "versions": {
+    "scenario_schema": "0.1",
+    "financial_contract": "0.1",
+    "growth_formula": "annual_growth_v1",
+    "code_sha256": {
+      "simulation.py": "0e7b69c6c69021648485c33f7cbb95bf27909078ec9e6e24e88d4c35c1a45801",
+      "simulation_view.py": "48cf83bce3d64909d2c321fbd196f45650fd7552ea1e32073742ff1142053065",
+      "contracts.py": "5894effc517efdbddb3b9a10d4bd7268f9d277bde283e2e476fe9ea0b8a55ac2",
+      "finance.py": "2f19dec687077097544c0e0149af1877981ecfcbbeabe7debe8936739608d6e4"
+    }
+  },
+  "model_calls": 0,
+  "result": {
+    "scenario_result_schema_version": "0.1",
+    "scenario_id": "synthetic-revenue-scenario-v1",
+    "label": "ИСКУССТВЕННЫЕ ДАННЫЕ / ВИРТУАЛЬНЫЙ СЦЕНАРИЙ",
+    "status": "completed",
+    "reason_code": "signal_true",
+    "request_sha256": "c3693f58ce24b8b37a2a8cad1e8fe849016b7fee54e61cd184c20f275c22e4a2",
+    "financial_result": {
+      "financial_tool_schema_version": "0.1",
+      "request": {
+        "operation_id": "annual_growth_v1",
+        "previous_fact_id": "synthetic-revenue-2023",
+        "current_fact_id": "synthetic-revenue-2024",
+        "mode": "historical_as_of",
+        "as_of": "2025-06-04T19:30:00+03:00"
+      },
+      "status": "answered",
+      "reason_code": "ok",
+      "message": "Изменение выручки рассчитано по вручную проверенной версии документа.",
+      "basis": "preverified_manual_fact_registry",
+      "document_id": "synthetic-revenue-document-v1",
+      "entity_name": "Вымышленная группа «Учебный пример»",
+      "accounting_standard": "IFRS",
+      "metric_id": "revenue",
+      "requested_periods": {
+        "previous": {
+          "kind": "duration",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        "current": {
+          "kind": "duration",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      },
+      "answer": {
+        "schema_version": "0.1",
+        "request_id": "synthetic-growth-v1",
+        "status": "answered",
+        "reason_code": "ok",
+        "message": "Изменение выручки рассчитано по вручную проверенной версии документа.",
+        "fact_ids": [
+          "synthetic-revenue-2023",
+          "synthetic-revenue-2024"
+        ],
+        "claims": [
+          {
+            "kind": "input_fact",
+            "fact_id": "synthetic-revenue-2023",
+            "evidence_ids": [
+              "synthetic-revenue-2023-table1"
+            ]
+          },
+          {
+            "kind": "input_fact",
+            "fact_id": "synthetic-revenue-2024",
+            "evidence_ids": [
+              "synthetic-revenue-2024-table1"
+            ]
+          },
+          {
+            "kind": "calculation",
+            "formula_id": "annual_growth_v1",
+            "evidence_ids": [
+              "synthetic-revenue-2023-table1",
+              "synthetic-revenue-2024-table1"
+            ]
+          }
+        ],
+        "calculation": {
+          "formula_id": "annual_growth_v1",
+          "formula": "(current / previous - 1) * 100",
+          "input_fact_ids": [
+            "synthetic-revenue-2023",
+            "synthetic-revenue-2024"
+          ],
+          "delta": "20",
+          "delta_currency": "RUB",
+          "delta_scale": 1000000,
+          "growth_pct": "20.0",
+          "growth_pct_display": "20.00",
+          "precision": 50,
+          "rounding": "ROUND_HALF_UP",
+          "decimal_places": 2
+        },
+        "warnings": [
+          "manual_annotation",
+          "source_checked_by_assistant",
+          "source_rounding_limits_precision"
+        ],
+        "analysis_mode": "historical_as_of",
+        "as_of": "2025-06-04T19:30:00+03:00",
+        "document_version": "sha256:fe497bd3e06fc65cda46fe77b5030a715d5f0066095e4599a571d0743e03d170",
+        "availability_from": "2025-06-04T19:00:00+03:00",
+        "scenario_gate": {
+          "status": "blocked",
+          "reasons": [
+            "calendar_and_prices_missing",
+            "simulation_not_implemented"
+          ]
+        }
+      },
+      "inputs": [
+        {
+          "fact_id": "synthetic-revenue-2023",
+          "evidence_id": "synthetic-revenue-2023-table1",
+          "entity_id": "synthetic_example_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "metric_id": "revenue",
+          "original_label": "Синтетическая выручка",
+          "value": "100",
+          "currency": "RUB",
+          "scale": 1000000,
+          "period": {
+            "kind": "duration",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          },
+          "version_id": "sha256:fe497bd3e06fc65cda46fe77b5030a715d5f0066095e4599a571d0743e03d170",
+          "review": {
+            "status": "assistant_checked",
+            "method": "Self-created fictional table; technical consistency only, no issuer PDF or human review.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "fact_id": "synthetic-revenue-2024",
+          "evidence_id": "synthetic-revenue-2024-table1",
+          "entity_id": "synthetic_example_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "metric_id": "revenue",
+          "original_label": "Синтетическая выручка",
+          "value": "120",
+          "currency": "RUB",
+          "scale": 1000000,
+          "period": {
+            "kind": "duration",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          },
+          "version_id": "sha256:fe497bd3e06fc65cda46fe77b5030a715d5f0066095e4599a571d0743e03d170",
+          "review": {
+            "status": "assistant_checked",
+            "method": "Self-created fictional table; technical consistency only, no issuer PDF or human review.",
+            "human_reviewer": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "evidence_id": "synthetic-revenue-2023-table1",
+          "document_id": "synthetic-revenue-document-v1",
+          "version_id": "sha256:fe497bd3e06fc65cda46fe77b5030a715d5f0066095e4599a571d0743e03d170",
+          "document_sha256": "fe497bd3e06fc65cda46fe77b5030a715d5f0066095e4599a571d0743e03d170",
+          "pdf_page": 1,
+          "printed_page": "synthetic-table-1",
+          "statement_page": "virtual-1",
+          "page_region": "synthetic_table_not_pdf",
+          "table_title": "Вымышленная таблица для проверки кода",
+          "row_label": "Синтетическая выручка",
+          "column_label": "2023",
+          "period": {
+            "kind": "duration",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "unit_header": "Условные млн RUB",
+          "raw_value": "100",
+          "review": {
+            "status": "assistant_checked",
+            "method": "Self-created fictional table; technical consistency only, no issuer PDF or human review.",
+            "human_reviewer": null
+          },
+          "url": "https://example.invalid/synthetic/revenue-v1#page=1"
+        },
+        {
+          "evidence_id": "synthetic-revenue-2024-table1",
+          "document_id": "synthetic-revenue-document-v1",
+          "version_id": "sha256:fe497bd3e06fc65cda46fe77b5030a715d5f0066095e4599a571d0743e03d170",
+          "document_sha256": "fe497bd3e06fc65cda46fe77b5030a715d5f0066095e4599a571d0743e03d170",
+          "pdf_page": 1,
+          "printed_page": "synthetic-table-1",
+          "statement_page": "virtual-1",
+          "page_region": "synthetic_table_not_pdf",
+          "table_title": "Вымышленная таблица для проверки кода",
+          "row_label": "Синтетическая выручка",
+          "column_label": "2024",
+          "period": {
+            "kind": "duration",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "unit_header": "Условные млн RUB",
+          "raw_value": "120",
+          "review": {
+            "status": "assistant_checked",
+            "method": "Self-created fictional table; technical consistency only, no issuer PDF or human review.",
+            "human_reviewer": null
+          },
+          "url": "https://example.invalid/synthetic/revenue-v1#page=1"
+        }
+      ],
+      "warnings": [
+        "manual_annotation",
+        "source_checked_by_assistant",
+        "source_rounding_limits_precision"
+      ],
+      "retrieval_resolution": null
+    },
+    "eligibility": {
+      "publication_available_from": "2025-06-04T19:00:00+03:00",
+      "decision_at": "2025-06-04T19:30:00+03:00",
+      "rule_id": "synthetic-revenue-threshold",
+      "rule_version": "1",
+      "legacy_gate": {
+        "status": "blocked",
+        "reasons": [
+          "calendar_and_prices_missing",
+          "simulation_not_implemented"
+        ]
+      },
+      "admission_contract": "SyntheticScenarioResult-0.1",
+      "source_kind": "self_created_synthetic"
+    },
+    "scenario": {
+      "entry_at": "2025-06-05T10:00:00+03:00",
+      "exit_at": "2025-06-09T18:00:00+03:00",
+      "ledger": [
+        {
+          "at": "2025-06-04T10:00:00+03:00",
+          "event": "initial",
+          "traded_quantity": 0,
+          "raw_price": null,
+          "execution_price": null,
+          "notional": "0",
+          "fee": "0",
+          "slippage_cost": "0",
+          "cash": "10000",
+          "quantity": 0,
+          "equity": "10000"
+        },
+        {
+          "at": "2025-06-04T10:00:00+03:00",
+          "event": "mark",
+          "traded_quantity": 0,
+          "raw_price": "99",
+          "execution_price": null,
+          "notional": "0",
+          "fee": "0",
+          "slippage_cost": "0",
+          "cash": "10000",
+          "quantity": 0,
+          "equity": "10000.00"
+        },
+        {
+          "at": "2025-06-04T18:00:00+03:00",
+          "event": "mark",
+          "traded_quantity": 0,
+          "raw_price": "99",
+          "execution_price": null,
+          "notional": "0",
+          "fee": "0",
+          "slippage_cost": "0",
+          "cash": "10000",
+          "quantity": 0,
+          "equity": "10000.00"
+        },
+        {
+          "at": "2025-06-04T19:30:00+03:00",
+          "event": "signal_true",
+          "traded_quantity": 0,
+          "raw_price": null,
+          "execution_price": null,
+          "notional": "0",
+          "fee": "0",
+          "slippage_cost": "0",
+          "cash": "10000",
+          "quantity": 0,
+          "equity": "10000"
+        },
+        {
+          "at": "2025-06-05T10:00:00+03:00",
+          "event": "buy",
+          "traded_quantity": 20,
+          "raw_price": "100",
+          "execution_price": "100",
+          "notional": "2000.00",
+          "fee": "1",
+          "slippage_cost": "0.00",
+          "cash": "7999.00",
+          "quantity": 20,
+          "equity": "9999.00"
+        },
+        {
+          "at": "2025-06-05T18:00:00+03:00",
+          "event": "mark",
+          "traded_quantity": 0,
+          "raw_price": "101",
+          "execution_price": null,
+          "notional": "0",
+          "fee": "0",
+          "slippage_cost": "0",
+          "cash": "7999.00",
+          "quantity": 20,
+          "equity": "10019.00"
+        },
+        {
+          "at": "2025-06-06T10:00:00+03:00",
+          "event": "mark",
+          "traded_quantity": 0,
+          "raw_price": "102",
+          "execution_price": null,
+          "notional": "0",
+          "fee": "0",
+          "slippage_cost": "0",
+          "cash": "7999.00",
+          "quantity": 20,
+          "equity": "10039.00"
+        },
+        {
+          "at": "2025-06-06T18:00:00+03:00",
+          "event": "mark",
+          "traded_quantity": 0,
+          "raw_price": "98",
+          "execution_price": null,
+          "notional": "0",
+          "fee": "0",
+          "slippage_cost": "0",
+          "cash": "7999.00",
+          "quantity": 20,
+          "equity": "9959.00"
+        },
+        {
+          "at": "2025-06-09T10:00:00+03:00",
+          "event": "mark",
+          "traded_quantity": 0,
+          "raw_price": "103",
+          "execution_price": null,
+          "notional": "0",
+          "fee": "0",
+          "slippage_cost": "0",
+          "cash": "7999.00",
+          "quantity": 20,
+          "equity": "10059.00"
+        },
+        {
+          "at": "2025-06-09T18:00:00+03:00",
+          "event": "sell",
+          "traded_quantity": 20,
+          "raw_price": "105",
+          "execution_price": "105",
+          "notional": "2100.00",
+          "fee": "1",
+          "slippage_cost": "0.00",
+          "cash": "10098.00",
+          "quantity": 0,
+          "equity": "10098.00"
+        }
+      ],
+      "final_cash": "10098.00",
+      "final_quantity": 0,
+      "final_equity": "10098.00",
+      "pnl": "98.00",
+      "return_pct": "0.98",
+      "fees": "2",
+      "slippage_cost": "0.00"
+    },
+    "comparisons": {
+      "cash_no_interest": {
+        "entry_at": "2025-06-05T10:00:00+03:00",
+        "exit_at": "2025-06-09T18:00:00+03:00",
+        "ledger": [
+          {
+            "at": "2025-06-04T10:00:00+03:00",
+            "event": "initial",
+            "traded_quantity": 0,
+            "raw_price": null,
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "10000",
+            "quantity": 0,
+            "equity": "10000"
+          },
+          {
+            "at": "2025-06-04T10:00:00+03:00",
+            "event": "mark",
+            "traded_quantity": 0,
+            "raw_price": "99",
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "10000",
+            "quantity": 0,
+            "equity": "10000.00"
+          },
+          {
+            "at": "2025-06-04T18:00:00+03:00",
+            "event": "mark",
+            "traded_quantity": 0,
+            "raw_price": "99",
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "10000",
+            "quantity": 0,
+            "equity": "10000.00"
+          },
+          {
+            "at": "2025-06-04T19:30:00+03:00",
+            "event": "cash_reference",
+            "traded_quantity": 0,
+            "raw_price": null,
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "10000",
+            "quantity": 0,
+            "equity": "10000"
+          },
+          {
+            "at": "2025-06-05T10:00:00+03:00",
+            "event": "mark",
+            "traded_quantity": 0,
+            "raw_price": "100",
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "10000",
+            "quantity": 0,
+            "equity": "10000.00"
+          },
+          {
+            "at": "2025-06-05T18:00:00+03:00",
+            "event": "mark",
+            "traded_quantity": 0,
+            "raw_price": "101",
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "10000",
+            "quantity": 0,
+            "equity": "10000.00"
+          },
+          {
+            "at": "2025-06-06T10:00:00+03:00",
+            "event": "mark",
+            "traded_quantity": 0,
+            "raw_price": "102",
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "10000",
+            "quantity": 0,
+            "equity": "10000.00"
+          },
+          {
+            "at": "2025-06-06T18:00:00+03:00",
+            "event": "mark",
+            "traded_quantity": 0,
+            "raw_price": "98",
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "10000",
+            "quantity": 0,
+            "equity": "10000.00"
+          },
+          {
+            "at": "2025-06-09T10:00:00+03:00",
+            "event": "mark",
+            "traded_quantity": 0,
+            "raw_price": "103",
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "10000",
+            "quantity": 0,
+            "equity": "10000.00"
+          },
+          {
+            "at": "2025-06-09T18:00:00+03:00",
+            "event": "mark",
+            "traded_quantity": 0,
+            "raw_price": "105",
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "10000",
+            "quantity": 0,
+            "equity": "10000.00"
+          }
+        ],
+        "final_cash": "10000",
+        "final_quantity": 0,
+        "final_equity": "10000",
+        "pnl": "0",
+        "return_pct": "0.00",
+        "fees": "0",
+        "slippage_cost": "0"
+      },
+      "buy_and_hold_same_allocation": {
+        "entry_at": "2025-06-05T10:00:00+03:00",
+        "exit_at": "2025-06-09T18:00:00+03:00",
+        "ledger": [
+          {
+            "at": "2025-06-04T10:00:00+03:00",
+            "event": "initial",
+            "traded_quantity": 0,
+            "raw_price": null,
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "10000",
+            "quantity": 0,
+            "equity": "10000"
+          },
+          {
+            "at": "2025-06-04T10:00:00+03:00",
+            "event": "mark",
+            "traded_quantity": 0,
+            "raw_price": "99",
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "10000",
+            "quantity": 0,
+            "equity": "10000.00"
+          },
+          {
+            "at": "2025-06-04T18:00:00+03:00",
+            "event": "mark",
+            "traded_quantity": 0,
+            "raw_price": "99",
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "10000",
+            "quantity": 0,
+            "equity": "10000.00"
+          },
+          {
+            "at": "2025-06-04T19:30:00+03:00",
+            "event": "benchmark_entry_scheduled",
+            "traded_quantity": 0,
+            "raw_price": null,
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "10000",
+            "quantity": 0,
+            "equity": "10000"
+          },
+          {
+            "at": "2025-06-05T10:00:00+03:00",
+            "event": "buy",
+            "traded_quantity": 20,
+            "raw_price": "100",
+            "execution_price": "100",
+            "notional": "2000.00",
+            "fee": "1",
+            "slippage_cost": "0.00",
+            "cash": "7999.00",
+            "quantity": 20,
+            "equity": "9999.00"
+          },
+          {
+            "at": "2025-06-05T18:00:00+03:00",
+            "event": "mark",
+            "traded_quantity": 0,
+            "raw_price": "101",
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "7999.00",
+            "quantity": 20,
+            "equity": "10019.00"
+          },
+          {
+            "at": "2025-06-06T10:00:00+03:00",
+            "event": "mark",
+            "traded_quantity": 0,
+            "raw_price": "102",
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "7999.00",
+            "quantity": 20,
+            "equity": "10039.00"
+          },
+          {
+            "at": "2025-06-06T18:00:00+03:00",
+            "event": "mark",
+            "traded_quantity": 0,
+            "raw_price": "98",
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "7999.00",
+            "quantity": 20,
+            "equity": "9959.00"
+          },
+          {
+            "at": "2025-06-09T10:00:00+03:00",
+            "event": "mark",
+            "traded_quantity": 0,
+            "raw_price": "103",
+            "execution_price": null,
+            "notional": "0",
+            "fee": "0",
+            "slippage_cost": "0",
+            "cash": "7999.00",
+            "quantity": 20,
+            "equity": "10059.00"
+          },
+          {
+            "at": "2025-06-09T18:00:00+03:00",
+            "event": "sell",
+            "traded_quantity": 20,
+            "raw_price": "105",
+            "execution_price": "105",
+            "notional": "2100.00",
+            "fee": "1",
+            "slippage_cost": "0.00",
+            "cash": "10098.00",
+            "quantity": 0,
+            "equity": "10098.00"
+          }
+        ],
+        "final_cash": "10098.00",
+        "final_quantity": 0,
+        "final_equity": "10098.00",
+        "pnl": "98.00",
+        "return_pct": "0.98",
+        "fees": "2",
+        "slippage_cost": "0.00"
+      }
+    },
+    "warnings": [
+      "synthetic_only_not_market_performance",
+      "no_broker_or_model",
+      "legacy_gate_is_not_scenario_admission"
+    ]
+  }
+}

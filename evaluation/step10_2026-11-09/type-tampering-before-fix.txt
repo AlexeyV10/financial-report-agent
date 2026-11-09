@@ -1,0 +1,51 @@
+test_bad_numeric_parameters_and_bool_lot (test_simulation.SimulationTests.test_bad_numeric_parameters_and_bool_lot) ... ok
+test_bool_is_not_an_integer_quantity_in_a_saved_result (test_simulation.SimulationTests.test_bool_is_not_an_integer_quantity_in_a_saved_result) ... FAIL
+test_calendar_order_timezone_and_overlap (test_simulation.SimulationTests.test_calendar_order_timezone_and_overlap) ... ok
+test_currency_instrument_and_corporate_action_guards (test_simulation.SimulationTests.test_currency_instrument_and_corporate_action_guards) ... ok
+test_date_only_cannot_signal_on_publication_date (test_simulation.SimulationTests.test_date_only_cannot_signal_on_publication_date) ... ok
+test_duplicate_price_including_equal_utc_instant_rejected (test_simulation.SimulationTests.test_duplicate_price_including_equal_utc_instant_rejected) ... ok
+test_fee_increase_lowers_result_with_same_size (test_simulation.SimulationTests.test_fee_increase_lowers_result_with_same_size) ... ok
+test_financial_candidate_and_missingness_keep_refusal (test_simulation.SimulationTests.test_financial_candidate_and_missingness_keep_refusal) ... ok
+test_financial_conflict_and_nonpositive_base_keep_refusal (test_simulation.SimulationTests.test_financial_conflict_and_nonpositive_base_keep_refusal) ... ok
+test_first_execution_after_after_close_signal (test_simulation.SimulationTests.test_first_execution_after_after_close_signal) ... ok
+test_future_publication_blocks_without_deals (test_simulation.SimulationTests.test_future_publication_blocks_without_deals) ... ok
+test_impossible_lot_has_no_fractional_trade (test_simulation.SimulationTests.test_impossible_lot_has_no_fractional_trade) ... ok
+test_input_and_output_tampering_rejected_before_display (test_simulation.SimulationTests.test_input_and_output_tampering_rejected_before_display) ... ok
+test_inputs_unchanged_global_decimal_context_does_not_change_result (test_simulation.SimulationTests.test_inputs_unchanged_global_decimal_context_does_not_change_result) ... ok
+test_intraday_decision_uses_next_listed_open (test_simulation.SimulationTests.test_intraday_decision_uses_next_listed_open) ... ok
+test_legacy_gate_stays_blocked_own_admission_is_explicit (test_simulation.SimulationTests.test_legacy_gate_stays_blocked_own_admission_is_explicit) ... ok
+test_literal_manual_control_and_independent_fraction_ledger (test_simulation.SimulationTests.test_literal_manual_control_and_independent_fraction_ledger) ... ok
+test_missing_price_at_entry_or_exit_never_filled (test_simulation.SimulationTests.test_missing_price_at_entry_or_exit_never_filled) ... ok
+test_notional_limit_excludes_fee_but_cash_check_includes_it (test_simulation.SimulationTests.test_notional_limit_excludes_fee_but_cash_check_includes_it) ... ok
+test_ordinary_scenario_equals_hold_and_cash_has_no_interest (test_simulation.SimulationTests.test_ordinary_scenario_equals_hold_and_cash_has_no_interest) ... ok
+test_prices_unsorted_or_outside_calendar_rejected (test_simulation.SimulationTests.test_prices_unsorted_or_outside_calendar_rejected) ... ok
+test_publication_before_period_end_rejected (test_simulation.SimulationTests.test_publication_before_period_end_rejected) ... ok
+test_real_facts_never_join_synthetic_prices (test_simulation.SimulationTests.test_real_facts_never_join_synthetic_prices) ... ok
+test_real_source_refuses_without_trade_or_return (test_simulation.SimulationTests.test_real_source_refuses_without_trade_or_return) ... ok
+test_same_open_requires_later_open_not_current_price (test_simulation.SimulationTests.test_same_open_requires_later_open_not_current_price) ... ok
+test_size_rounds_down_to_whole_lots (test_simulation.SimulationTests.test_size_rounds_down_to_whole_lots) ... ok
+test_slippage_adverse_both_sides_not_subtracted_twice (test_simulation.SimulationTests.test_slippage_adverse_both_sides_not_subtracted_twice) ... ok
+test_slippage_can_change_size_separately_from_cost_effect (test_simulation.SimulationTests.test_slippage_can_change_size_separately_from_cost_effect) ... ok
+test_source_hash_and_raw_table_row_are_bound (test_simulation.SimulationTests.test_source_hash_and_raw_table_row_are_bound) ... ok
+test_source_instructions_are_not_printed_or_executed (test_simulation.SimulationTests.test_source_instructions_are_not_printed_or_executed) ... ok
+test_strict_threshold_no_signal_and_comparisons (test_simulation.SimulationTests.test_strict_threshold_no_signal_and_comparisons) ... ok
+test_timezone_required_and_equivalent_offset_supported (test_simulation.SimulationTests.test_timezone_required_and_equivalent_offset_supported) ... ok
+test_unknown_fields_and_versions_and_rules_not_executed (test_simulation.SimulationTests.test_unknown_fields_and_versions_and_rules_not_executed) ... ok
+test_unknown_publication_and_version_unproven_do_not_use_fetch_or_approval (test_simulation.SimulationTests.test_unknown_publication_and_version_unproven_do_not_use_fetch_or_approval) ... ok
+test_weekend_publication_uses_monday_of_synthetic_calendar (test_simulation.SimulationTests.test_weekend_publication_uses_monday_of_synthetic_calendar) ... ok
+test_window_and_last_session_guards (test_simulation.SimulationTests.test_window_and_last_session_guards) ... ok
+test_zero_negative_or_nonfinite_price_rejected (test_simulation.SimulationTests.test_zero_negative_or_nonfinite_price_rejected) ... ok
+
+======================================================================
+FAIL: test_bool_is_not_an_integer_quantity_in_a_saved_result (test_simulation.SimulationTests.test_bool_is_not_an_integer_quantity_in_a_saved_result)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\���������\ChatGPT\��������� ��������\tests\test_simulation.py", line 276, in test_bool_is_not_an_integer_quantity_in_a_saved_result
+    with self.assertRaises(ScenarioError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+AssertionError: ScenarioError not raised
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.072s
+
+FAILED (failures=1)

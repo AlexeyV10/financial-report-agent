@@ -1,0 +1,294 @@
+{
+  "scenario_schema_version": "0.1",
+  "scenario_id": "synthetic-revenue-scenario-v1",
+  "data_mode": "synthetic_only",
+  "provenance": {
+    "kind": "self_created_synthetic",
+    "label": "ИСКУССТВЕННЫЕ ДАННЫЕ / ВИРТУАЛЬНЫЙ СЦЕНАРИЙ",
+    "source_text": "SELF-CREATED SYNTHETIC TABLE; NOT A PDF OR ISSUER REPORT\n2023|revenue|100|RUB|1000000\n2024|revenue|120|RUB|1000000\n",
+    "note": "All entities, values, publication/approval/release dates, sessions and prices are fictional. fetched_at records capture of this authored text; no report was downloaded. Page fields are legacy compatibility only."
+  },
+  "financial_bundle": {
+    "schema_version": "0.1",
+    "document": {
+      "document_id": "synthetic-revenue-document-v1",
+      "entity_id": "synthetic_example_group",
+      "entity_name": "Вымышленная группа «Учебный пример»",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "document_type": "synthetic_contract_fixture_not_a_pdf",
+      "report_period": {
+        "kind": "duration",
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "source_page_url": "https://example.invalid/synthetic/revenue-v1",
+      "document_url": "https://example.invalid/synthetic/revenue-v1",
+      "version_id": "sha256:fe497bd3e06fc65cda46fe77b5030a715d5f0066095e4599a571d0743e03d170",
+      "sha256": "fe497bd3e06fc65cda46fe77b5030a715d5f0066095e4599a571d0743e03d170",
+      "byte_length": 115,
+      "pdf_pages": 1,
+      "fetched_at": "2026-11-09T00:20:22.372881+00:00",
+      "approval_date": "2025-06-04",
+      "publication": {
+        "precision": "timestamp",
+        "value": "2025-06-04T19:00:00+03:00",
+        "timezone": "Europe/Moscow",
+        "version_binding": "document_version",
+        "source_url": "https://example.invalid/synthetic/revenue-v1"
+      },
+      "related_release": {
+        "url": "https://example.invalid/synthetic/revenue-v1",
+        "displayed_date": "2025-06-04",
+        "binds_pdf_version": false
+      },
+      "rights": {
+        "status": "confirmed",
+        "public_copy_allowed": true,
+        "note": "Own synthetic text, not third-party reporting. Compatibility PDF/page fields denote a virtual table, not a downloaded PDF.",
+        "checked_on": "2026-11-09"
+      },
+      "audit": {
+        "opinion": "not_applicable_synthetic",
+        "limitation": "Fictional fixture, no auditor opinion."
+      },
+      "review": {
+        "status": "assistant_checked",
+        "method": "Self-created fictional table; technical consistency only, no issuer PDF or human review.",
+        "human_reviewer": null
+      }
+    },
+    "evidence": [
+      {
+        "evidence_id": "synthetic-revenue-2023-table1",
+        "document_id": "synthetic-revenue-document-v1",
+        "version_id": "sha256:fe497bd3e06fc65cda46fe77b5030a715d5f0066095e4599a571d0743e03d170",
+        "document_sha256": "fe497bd3e06fc65cda46fe77b5030a715d5f0066095e4599a571d0743e03d170",
+        "pdf_page": 1,
+        "printed_page": "synthetic-table-1",
+        "statement_page": "virtual-1",
+        "page_region": "synthetic_table_not_pdf",
+        "table_title": "Вымышленная таблица для проверки кода",
+        "row_label": "Синтетическая выручка",
+        "column_label": "2023",
+        "period": {
+          "kind": "duration",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        "currency": "RUB",
+        "scale": 1000000,
+        "unit_header": "Условные млн RUB",
+        "raw_value": "100",
+        "numeric_encoding": "comma_thousands_integer",
+        "review": {
+          "status": "assistant_checked",
+          "method": "Self-created fictional table; technical consistency only, no issuer PDF or human review.",
+          "human_reviewer": null
+        }
+      },
+      {
+        "evidence_id": "synthetic-revenue-2024-table1",
+        "document_id": "synthetic-revenue-document-v1",
+        "version_id": "sha256:fe497bd3e06fc65cda46fe77b5030a715d5f0066095e4599a571d0743e03d170",
+        "document_sha256": "fe497bd3e06fc65cda46fe77b5030a715d5f0066095e4599a571d0743e03d170",
+        "pdf_page": 1,
+        "printed_page": "synthetic-table-1",
+        "statement_page": "virtual-1",
+        "page_region": "synthetic_table_not_pdf",
+        "table_title": "Вымышленная таблица для проверки кода",
+        "row_label": "Синтетическая выручка",
+        "column_label": "2024",
+        "period": {
+          "kind": "duration",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        },
+        "currency": "RUB",
+        "scale": 1000000,
+        "unit_header": "Условные млн RUB",
+        "raw_value": "120",
+        "numeric_encoding": "comma_thousands_integer",
+        "review": {
+          "status": "assistant_checked",
+          "method": "Self-created fictional table; technical consistency only, no issuer PDF or human review.",
+          "human_reviewer": null
+        }
+      }
+    ],
+    "facts": [
+      {
+        "fact_id": "synthetic-revenue-2023",
+        "evidence_id": "synthetic-revenue-2023-table1",
+        "entity_id": "synthetic_example_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metric_id": "revenue",
+        "original_label": "Синтетическая выручка",
+        "value": "100",
+        "currency": "RUB",
+        "scale": 1000000,
+        "period": {
+          "kind": "duration",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        "version_id": "sha256:fe497bd3e06fc65cda46fe77b5030a715d5f0066095e4599a571d0743e03d170",
+        "review": {
+          "status": "assistant_checked",
+          "method": "Self-created fictional table; technical consistency only, no issuer PDF or human review.",
+          "human_reviewer": null
+        }
+      },
+      {
+        "fact_id": "synthetic-revenue-2024",
+        "evidence_id": "synthetic-revenue-2024-table1",
+        "entity_id": "synthetic_example_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metric_id": "revenue",
+        "original_label": "Синтетическая выручка",
+        "value": "120",
+        "currency": "RUB",
+        "scale": 1000000,
+        "period": {
+          "kind": "duration",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        },
+        "version_id": "sha256:fe497bd3e06fc65cda46fe77b5030a715d5f0066095e4599a571d0743e03d170",
+        "review": {
+          "status": "assistant_checked",
+          "method": "Self-created fictional table; technical consistency only, no issuer PDF or human review.",
+          "human_reviewer": null
+        }
+      }
+    ],
+    "request": {
+      "request_id": "synthetic-growth-v1",
+      "question": "Искусственная выручка: 2024 к 2023",
+      "entity_id": "synthetic_example_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "metric_id": "revenue",
+      "current_period": {
+        "kind": "duration",
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "previous_period": {
+        "kind": "duration",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "mode": "document_snapshot",
+      "as_of": null,
+      "formula_id": "annual_growth_v1"
+    },
+    "scenario": {
+      "rule_id": "legacy-synthetic-placeholder",
+      "rule_version": "draft-1",
+      "condition": "growth_pct_gt",
+      "threshold_pct": "10",
+      "data_mode": "synthetic_only",
+      "signal_at": null,
+      "calendar_id": null,
+      "price_snapshot_id": null,
+      "execution_at": null
+    }
+  },
+  "inputs": {
+    "previous_fact_id": "synthetic-revenue-2023",
+    "current_fact_id": "synthetic-revenue-2024",
+    "operation_id": "annual_growth_v1"
+  },
+  "decision_at": "2025-06-04T19:30:00+03:00",
+  "rule": {
+    "rule_id": "synthetic-revenue-threshold",
+    "version": "1",
+    "condition": "growth_pct_gt",
+    "threshold_pct": "10",
+    "execution_policy": "next_session_open",
+    "close_policy": "window_last_close"
+  },
+  "portfolio": {
+    "currency": "RUB",
+    "initial_cash": "10000",
+    "max_notional_fraction": "0.20",
+    "lot_size": 1,
+    "fee_fixed": "1",
+    "slippage_bps": "0"
+  },
+  "instrument": {
+    "instrument_id": "SYNTH_ASSET",
+    "currency": "RUB",
+    "corporate_actions": "none_in_fixture"
+  },
+  "window": {
+    "start": "2025-06-04T10:00:00+03:00",
+    "end": "2025-06-09T18:00:00+03:00"
+  },
+  "calendar": {
+    "calendar_id": "synthetic-sessions-v1",
+    "timezone": "Europe/Moscow",
+    "synthetic": true,
+    "sessions": [
+      {
+        "open": "2025-06-04T10:00:00+03:00",
+        "close": "2025-06-04T18:00:00+03:00"
+      },
+      {
+        "open": "2025-06-05T10:00:00+03:00",
+        "close": "2025-06-05T18:00:00+03:00"
+      },
+      {
+        "open": "2025-06-06T10:00:00+03:00",
+        "close": "2025-06-06T18:00:00+03:00"
+      },
+      {
+        "open": "2025-06-09T10:00:00+03:00",
+        "close": "2025-06-09T18:00:00+03:00"
+      }
+    ]
+  },
+  "prices": {
+    "snapshot_id": "synthetic-prices-v1",
+    "synthetic": true,
+    "instrument_id": "SYNTH_ASSET",
+    "currency": "RUB",
+    "observations": [
+      {
+        "at": "2025-06-04T10:00:00+03:00",
+        "price": "99"
+      },
+      {
+        "at": "2025-06-04T18:00:00+03:00",
+        "price": "99"
+      },
+      {
+        "at": "2025-06-05T10:00:00+03:00",
+        "price": "100"
+      },
+      {
+        "at": "2025-06-05T18:00:00+03:00",
+        "price": "101"
+      },
+      {
+        "at": "2025-06-06T10:00:00+03:00",
+        "price": "102"
+      },
+      {
+        "at": "2025-06-06T18:00:00+03:00",
+        "price": "98"
+      },
+      {
+        "at": "2025-06-09T10:00:00+03:00",
+        "price": "103"
+      },
+      {
+        "at": "2025-06-09T18:00:00+03:00",
+        "price": "105"
+      }
+    ]
+  }
+}

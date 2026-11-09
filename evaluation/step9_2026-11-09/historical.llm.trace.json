@@ -1,0 +1,237 @@
+{
+  "agent_schema_version": "0.1",
+  "run_id": "dc2f4a7b-63fd-4888-a870-08a9b0c2edfb",
+  "started_at": "2026-11-08T23:59:36.872550+00:00",
+  "versions": {
+    "controller": "0.1",
+    "prompt": "bounded-json-dialogue-v4",
+    "prompt_sha256": "303d531767f34ded368848b78fd7ba4c9a5fbdc8a534a9d06f3d21b6ba8fcfb2",
+    "tools_sha256": "0acce026d1a13a2f37284d152ec57b199864d657ad1ae2122140e41b761f6b49",
+    "bundle_sha256": "caff3e36e661700cc37ca0ed46ad2eda47515208b28047c6c03c62478c3aeb7e",
+    "code_sha256": {
+      "__init__.py": "eea0bfd15364208285f19580630c0e9312142e1bc876cf5fc23af7fc473834e7",
+      "agent.py": "cc109e1875c8753466462e220e7db553a96fa85d7d6886b08b0b56423aa72287",
+      "contracts.py": "5894effc517efdbddb3b9a10d4bd7268f9d277bde283e2e476fe9ea0b8a55ac2",
+      "finance.py": "2f19dec687077097544c0e0149af1877981ecfcbbeabe7debe8936739608d6e4",
+      "local_model.py": "361c0fa61d5b9682c0946a61a8bdc69adaf611689782f095e21baecd9f3cc202",
+      "retrieval.py": "1606742a9819c3a4e83f3a1538c1c13c958dfff0f263f77c5d2be469c53e7564",
+      "user_path.py": "59540e4914f7ff7e62e7b6450cc3f17448030e951c43b571caa2242b4d25b7c3"
+    },
+    "document": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+    "schema": "0.1",
+    "financial_tool": "0.1",
+    "retrieval": "0.1"
+  },
+  "adapter": {
+    "kind": "local_llm",
+    "adapter": "ollama-json-dialogue-v4-limits",
+    "model": "qwen3:4b",
+    "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "server_version": "0.40.15",
+    "endpoint": "http://127.0.0.1:11435",
+    "think": false,
+    "temperature": 0,
+    "num_ctx": 8192
+  },
+  "limits": {
+    "max_calls": 6,
+    "timeout_s": 180,
+    "per_call_s": 90,
+    "max_action_bytes": 4096,
+    "max_observation_bytes": 32768,
+    "max_tool_bytes": 8192,
+    "max_search_results": 5,
+    "max_output_tokens": 256
+  },
+  "events": [
+    {
+      "attempt": 1,
+      "started_at": "2026-11-08T23:59:36.873745+00:00",
+      "usage": {
+        "input_tokens": 1193,
+        "output_tokens": 46
+      },
+      "action_sha256": "a7a64e201e34e67921c5c8ae63f4efd82caac67e7ed1c6f34a053c17dc50d983",
+      "tool": "search_evidence",
+      "arguments": {
+        "query": "выручка 2024 2023",
+        "top_k": 5
+      },
+      "status": "ok",
+      "output": {
+        "status": "missing",
+        "reason_code": "publication_unknown",
+        "top_k": 5,
+        "hits": []
+      },
+      "ended_at": "2026-11-08T23:59:38.349253+00:00",
+      "elapsed_s": 1.47551
+    },
+    {
+      "attempt": 2,
+      "started_at": "2026-11-08T23:59:38.349321+00:00",
+      "usage": {
+        "input_tokens": 1287,
+        "output_tokens": 37
+      },
+      "action_sha256": "ad7d572e8da7934e6ac9e5b98cd691bb5a2868334f470d80ebd9442e019cd108",
+      "tool": "get_verified_fact",
+      "arguments": {
+        "fact_id": "phosagro-revenue-2023"
+      },
+      "status": "ok",
+      "output": {
+        "fact_id": "phosagro-revenue-2023",
+        "status": "unavailable",
+        "reason_code": "publication_unknown"
+      },
+      "ended_at": "2026-11-08T23:59:39.173781+00:00",
+      "elapsed_s": 0.824465
+    },
+    {
+      "attempt": 3,
+      "started_at": "2026-11-08T23:59:39.173859+00:00",
+      "usage": {
+        "input_tokens": 1401,
+        "output_tokens": 37
+      },
+      "action_sha256": "122dc9f6157b9b74abc44843883afe2ff215bc1749a8a08e231c2e7dc5c1c01b",
+      "tool": "get_verified_fact",
+      "arguments": {
+        "fact_id": "phosagro-revenue-2024"
+      },
+      "status": "ok",
+      "output": {
+        "fact_id": "phosagro-revenue-2024",
+        "status": "unavailable",
+        "reason_code": "publication_unknown"
+      },
+      "ended_at": "2026-11-08T23:59:40.012802+00:00",
+      "elapsed_s": 0.838948
+    },
+    {
+      "attempt": 4,
+      "started_at": "2026-11-08T23:59:40.012880+00:00",
+      "usage": {
+        "input_tokens": 1515,
+        "output_tokens": 35
+      },
+      "action_sha256": "c4b791372c375500bfde6385e11e485e7eaee415544a05798d8ff974fc203e64",
+      "status": "error",
+      "reason_code": "invalid_result_id",
+      "ended_at": "2026-11-08T23:59:40.891496+00:00",
+      "elapsed_s": 0.878622
+    },
+    {
+      "attempt": 5,
+      "started_at": "2026-11-08T23:59:40.891585+00:00",
+      "usage": {
+        "input_tokens": 1537,
+        "output_tokens": 67
+      },
+      "action_sha256": "0083e8df7a56401c93c4ba3826c4cc2654e707034b74c31484d6866b8c0a2a6a",
+      "tool": "calculate_growth",
+      "arguments": {
+        "current_fact_id": "phosagro-revenue-2024",
+        "operation_id": "annual_growth_v1",
+        "previous_fact_id": "phosagro-revenue-2023"
+      },
+      "status": "ok",
+      "output": {
+        "result_id": "891615a9a0fd2ae7a553dcd11d6d5713dbe10882181daaf8c3d2c5b3ba9b69d2",
+        "status": "missing",
+        "reason_code": "publication_unknown"
+      },
+      "ended_at": "2026-11-08T23:59:42.358013+00:00",
+      "elapsed_s": 1.466431
+    },
+    {
+      "attempt": 6,
+      "started_at": "2026-11-08T23:59:42.358092+00:00",
+      "usage": {
+        "input_tokens": 1813,
+        "output_tokens": 80
+      },
+      "action_sha256": "9da4ad46844b2d5c061b74c2e998f35fd9a423672cd2f256ed1e6925f9a8276f",
+      "tool": "finish",
+      "arguments": {
+        "result_id": "891615a9a0fd2ae7a553dcd11d6d5713dbe10882181daaf8c3d2c5b3ba9b69d2"
+      },
+      "status": "ok",
+      "output": {
+        "validated": true
+      },
+      "ended_at": "2026-11-08T23:59:44.189467+00:00",
+      "elapsed_s": 1.831374
+    }
+  ],
+  "usage": {
+    "input_tokens": 8746,
+    "output_tokens": 302,
+    "cost": null,
+    "cost_status": "не измерено"
+  },
+  "cloud_calls": "forbidden",
+  "full_source_text_in_model_or_trace": false,
+  "environment": {
+    "python": "3.14.7",
+    "platform": "Windows"
+  },
+  "context": {
+    "context_id": "90098b07176358186baca0c3966425838d7f9ffd577ce620ed0f2625e35ff527",
+    "query": {
+      "company": "ФосАгро",
+      "standard": "МСФО",
+      "metric": "выручка",
+      "year": "2024",
+      "compare": "2023",
+      "scope": "группа",
+      "mode": "historical",
+      "as_of": "2025-02-14T10:00:00+03:00",
+      "source": "search"
+    },
+    "search_keywords": [
+      "выручка",
+      "2024",
+      "2023"
+    ],
+    "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+    "document_version": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+    "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+    "publication": {
+      "precision": "unknown",
+      "value": null,
+      "version_binding": "unproven"
+    },
+    "catalog": [
+      {
+        "role": "previous",
+        "fact_id": "phosagro-revenue-2023",
+        "evidence_id": "phosagro-revenue-2023-p4",
+        "period": {
+          "kind": "duration",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        "metric_id": "revenue"
+      },
+      {
+        "role": "current",
+        "fact_id": "phosagro-revenue-2024",
+        "evidence_id": "phosagro-revenue-2024-p4",
+        "period": {
+          "kind": "duration",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        },
+        "metric_id": "revenue"
+      }
+    ]
+  },
+  "ended_at": "2026-11-08T23:59:44.189464+00:00",
+  "elapsed_s": 7.316917,
+  "stop_reason": "validated_financial_result",
+  "status": "completed",
+  "financial_status": "missing",
+  "financial_reason": "publication_unknown"
+}

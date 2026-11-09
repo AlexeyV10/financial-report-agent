@@ -1,0 +1,131 @@
+{
+  "record_schema_version": "0.1",
+  "case_id": "UI01",
+  "variant": "C/LLM",
+  "suite": "interface",
+  "split": "dev_open",
+  "origin": "real",
+  "input": {
+    "asset_path": "data/examples/reference_bundle.json",
+    "asset_sha256": "93e51d6dc834e4627dce6e6c75c43aec465cd2c9308bac35d443040b5a394c3a",
+    "reproduction": {
+      "entrypoint": "user_query",
+      "parameters": {
+        "company": "ФосАгро",
+        "scope": "группа",
+        "standard": "МСФО",
+        "metric": "выручка",
+        "year": "9 месяцев 2024",
+        "compare": "2023",
+        "mode": "snapshot",
+        "as_of": null,
+        "source": "search"
+      },
+      "top_k": 5
+    },
+    "document": {
+      "entity_id": "phosagro_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+      "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+    }
+  },
+  "started_at": "2026-11-09T01:55:58.836679+00:00",
+  "availability": "executed",
+  "origin_notices": [],
+  "searches": [],
+  "output": {
+    "agent_schema_version": "0.1",
+    "status": "clarification",
+    "reason_code": "period_needs_clarification",
+    "user_response": {
+      "user_path_schema_version": "0.1",
+      "query": {
+        "company": "ФосАгро",
+        "standard": "МСФО",
+        "metric": "выручка",
+        "year": "9 месяцев 2024",
+        "compare": "2023",
+        "scope": "группа",
+        "mode": "snapshot",
+        "as_of": null,
+        "source": "search"
+      },
+      "status": "clarification",
+      "reason_code": "period_needs_clarification",
+      "text": "Учебный анализ отчётности — ограниченный сценарий\nВопрос: Как изменилась выручка (ФосАгро, группа, МСФО) за 9 месяцев 2024 год по сравнению с 2023 годом?\nРежим: анализ выбранной версии отчётности; её доступность в прошлом не утверждается.\nИсточник данных: локальный поиск и прежний проверенный реестр фактов.\n\nУточните запрос.\nУкажите два полных года четырьмя цифрами. Квартал или девять месяцев нельзя считать полным годом.\n",
+      "financial_result": null
+    },
+    "trace": {
+      "agent_schema_version": "0.1",
+      "run_id": "17dbbeba-303a-4e33-b3d9-9af34274d913",
+      "started_at": "2026-11-09T01:55:58.836712+00:00",
+      "versions": {
+        "controller": "0.1",
+        "prompt": "bounded-json-dialogue-v4",
+        "prompt_sha256": "303d531767f34ded368848b78fd7ba4c9a5fbdc8a534a9d06f3d21b6ba8fcfb2",
+        "tools_sha256": "0acce026d1a13a2f37284d152ec57b199864d657ad1ae2122140e41b761f6b49",
+        "bundle_sha256": "caff3e36e661700cc37ca0ed46ad2eda47515208b28047c6c03c62478c3aeb7e",
+        "code_sha256": {
+          "__init__.py": "eea0bfd15364208285f19580630c0e9312142e1bc876cf5fc23af7fc473834e7",
+          "agent.py": "d851b643ba501a9a73e51076b936cd0f7907e68b9ee0bb55904eb2a8f0c40efb",
+          "contracts.py": "5894effc517efdbddb3b9a10d4bd7268f9d277bde283e2e476fe9ea0b8a55ac2",
+          "finance.py": "2f19dec687077097544c0e0149af1877981ecfcbbeabe7debe8936739608d6e4",
+          "local_model.py": "361c0fa61d5b9682c0946a61a8bdc69adaf611689782f095e21baecd9f3cc202",
+          "measurement.py": "448ed93962e95a287a51e6dae2d3bf72934d060c1ec79e69ba003ec2929dc560",
+          "measurement_collect.py": "2fb6e665064c6044fe2c3698a89f9ae71e1569e8032196b7c6bb894a7312f9c9",
+          "question_set.py": "da3742fc718527859c67190af24a1c5459aa38951b6ca2c533739ca28e23f377",
+          "retrieval.py": "1606742a9819c3a4e83f3a1538c1c13c958dfff0f263f77c5d2be469c53e7564",
+          "simulation.py": "0e7b69c6c69021648485c33f7cbb95bf27909078ec9e6e24e88d4c35c1a45801",
+          "simulation_view.py": "48cf83bce3d64909d2c321fbd196f45650fd7552ea1e32073742ff1142053065",
+          "user_path.py": "9ac7f5faa094846d4ed4e130834a23bfad7759e4a1e6863f7da010e18e53ee1f"
+        }
+      },
+      "adapter": {
+        "kind": "local_llm",
+        "adapter": "ollama-json-dialogue-v4-limits",
+        "model": "qwen3:4b",
+        "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+        "server_version": "0.40.15",
+        "endpoint": "http://127.0.0.1:11435",
+        "think": false,
+        "temperature": 0,
+        "num_ctx": 8192,
+        "measurement_wrapper": "request-counters-v1"
+      },
+      "limits": {
+        "max_calls": 6,
+        "timeout_s": 180,
+        "per_call_s": 90,
+        "max_action_bytes": 4096,
+        "max_observation_bytes": 32768,
+        "max_tool_bytes": 8192,
+        "max_search_results": 5,
+        "max_output_tokens": 256
+      },
+      "events": [],
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null,
+        "cost_status": "не измерено"
+      },
+      "cloud_calls": "forbidden",
+      "full_source_text_in_model_or_trace": false,
+      "environment": {
+        "python": "3.14.7",
+        "platform": "Windows"
+      },
+      "ended_at": "2026-11-09T01:55:58.859387+00:00",
+      "elapsed_s": 0.022684,
+      "stop_reason": "period_needs_clarification",
+      "status": "clarification",
+      "financial_status": "clarification",
+      "financial_reason": "period_needs_clarification"
+    }
+  },
+  "ended_at": "2026-11-09T01:55:58.859403+00:00",
+  "elapsed_s": 0.022717700001521735
+}

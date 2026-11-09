@@ -1,0 +1,107 @@
+{
+  "record_schema_version": "0.1",
+  "case_id": "QA10",
+  "variant": "finance_component",
+  "suite": "financial_qa",
+  "split": "dev_open",
+  "origin": "self_created_synthetic",
+  "input": {
+    "asset_path": "data/question_sets/kp2_v1/assets/conflict-bundle.json",
+    "asset_sha256": "21a3c1b2112b266aa9a1c4cc8aade8b39c5ce9fbb40bb008d9f144370540efd1",
+    "reproduction": {
+      "entrypoint": "finance_tool",
+      "parameters": {
+        "operation_id": "annual_growth_v1",
+        "previous_fact_id": "synthetic-qa-conflict-2023",
+        "current_fact_id": "synthetic-qa-conflict-2024",
+        "mode": "document_snapshot",
+        "as_of": null
+      },
+      "top_k": null
+    },
+    "document": {
+      "entity_id": "synthetic-qa-conflict-group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "document_id": "synthetic-qa-conflict-v1",
+      "version_id": "sha256:f0aa685d0df29240a76860b9a52723a6e60092e67d3ac1d8872d2ede252a23bd",
+      "sha256": "f0aa685d0df29240a76860b9a52723a6e60092e67d3ac1d8872d2ede252a23bd"
+    }
+  },
+  "started_at": "2026-11-09T01:54:28.902243+00:00",
+  "availability": "executed",
+  "origin_notices": [
+    "synthetic_data_not_issuer_facts"
+  ],
+  "searches": [],
+  "output": {
+    "status": "conflict",
+    "reason_code": "incompatible_units",
+    "financial_result": {
+      "financial_tool_schema_version": "0.1",
+      "request": {
+        "operation_id": "annual_growth_v1",
+        "previous_fact_id": "synthetic-qa-conflict-2023",
+        "current_fact_id": "synthetic-qa-conflict-2024",
+        "mode": "document_snapshot",
+        "as_of": null
+      },
+      "status": "conflict",
+      "reason_code": "incompatible_units",
+      "message": "Валюта или масштаб различаются; автоматическая конвертация не поддерживается.",
+      "basis": "preverified_manual_fact_registry",
+      "document_id": "synthetic-qa-conflict-v1",
+      "entity_name": "Вымышленная группа «conflict»",
+      "accounting_standard": "IFRS",
+      "metric_id": "revenue",
+      "requested_periods": {
+        "previous": {
+          "kind": "duration",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        "current": {
+          "kind": "duration",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      },
+      "answer": {
+        "schema_version": "0.1",
+        "request_id": "synthetic-qa-conflict-request",
+        "status": "conflict",
+        "reason_code": "incompatible_units",
+        "message": "Валюта или масштаб различаются; автоматическая конвертация не поддерживается.",
+        "fact_ids": [],
+        "claims": [],
+        "calculation": null,
+        "warnings": [
+          "manual_annotation",
+          "source_checked_by_assistant"
+        ],
+        "analysis_mode": "document_snapshot",
+        "as_of": null,
+        "document_version": "sha256:f0aa685d0df29240a76860b9a52723a6e60092e67d3ac1d8872d2ede252a23bd",
+        "availability_from": "2025-06-04T19:00:00+03:00",
+        "scenario_gate": {
+          "status": "blocked",
+          "reasons": [
+            "no_valid_calculation",
+            "calendar_and_prices_missing",
+            "simulation_not_implemented"
+          ]
+        }
+      },
+      "inputs": [],
+      "sources": [],
+      "warnings": [
+        "manual_annotation",
+        "source_checked_by_assistant"
+      ],
+      "retrieval_resolution": null
+    },
+    "text": "Искусственный реестр: не факты эмитента."
+  },
+  "ended_at": "2026-11-09T01:54:28.902874+00:00",
+  "elapsed_s": 0.0006248999998206273
+}

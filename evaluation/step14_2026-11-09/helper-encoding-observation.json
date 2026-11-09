@@ -1,0 +1,13 @@
+{
+  "path": "scripts/local_model.ps1",
+  "baseline_sha256": "46dfc994daa3498a8c04873a653fde1508d113c8d28323488115cde6e39fd043",
+  "current_sha256": "dd6e1f1aad77a2faaeff2db7929a752aec18b0941f772d39aeb86a3ac90b311d",
+  "baseline_bytes": 4237,
+  "current_bytes": 4240,
+  "difference": "exactly one leading UTF8 BOM added, remaining bytes identical",
+  "origin": "not established",
+  "current_file_preserved": true,
+  "helper_executed_in_step14": false,
+  "technical_archive_unchanged": true,
+  "no_reversion_or_production_fix_performed": true
+}

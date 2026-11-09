@@ -1,0 +1,1 @@
+The first test process did not start: expected Scripts/python.exe was absent. MSYS2 venv uses bin/python.exe. See venv-layout-diagnostic.json; actual test log is restored-unit-tests-bin.txt.

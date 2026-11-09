@@ -1,0 +1,59 @@
+{
+  "checked_at": "2026-11-08T22:34:24.495160+00:00",
+  "python": "3.14.7",
+  "historical_report_checked_at": "2026-11-08T21:09:55.444526+00:00",
+  "historical_hash_comparison": {
+    "src/financial_assistant/contracts.py": {
+      "previous": "71220d41d1ec99a024e104a37a356cfa666a2084294a8a46980341300768043e",
+      "current": "5894effc517efdbddb3b9a10d4bd7268f9d277bde283e2e476fe9ea0b8a55ac2",
+      "matches": false
+    },
+    "scripts/check_stage1.py": {
+      "previous": "1b2c6fa2af366f455d072a33ce46de3adf62410cf3018e34aff5134f70fa41dd",
+      "current": "1b2c6fa2af366f455d072a33ce46de3adf62410cf3018e34aff5134f70fa41dd",
+      "matches": true
+    },
+    "data/examples/reference_bundle.json": {
+      "previous": "93e51d6dc834e4627dce6e6c75c43aec465cd2c9308bac35d443040b5a394c3a",
+      "current": "93e51d6dc834e4627dce6e6c75c43aec465cd2c9308bac35d443040b5a394c3a",
+      "matches": true
+    },
+    "data/examples/cases.json": {
+      "previous": "ea51c0a472216b52fdedd3bcee6797e6c26922d474d9e9f0a06d916c50536277",
+      "current": "ea51c0a472216b52fdedd3bcee6797e6c26922d474d9e9f0a06d916c50536277",
+      "matches": true
+    },
+    "tests/test_contracts.py": {
+      "previous": "5200b261c4f2b388f33206d546794f3da0f3bb2e3deaaf4022fc39dd1d566410",
+      "current": "6800c63f307261f7e84dbd15ba9d615d145e9390fac1fb3ad7f14fb75887f679",
+      "matches": false
+    }
+  },
+  "expected_changed_files": [
+    "src/financial_assistant/contracts.py",
+    "tests/test_contracts.py"
+  ],
+  "contract_examples_passed": 4,
+  "contract_examples_total": 4,
+  "unit_tests_passed": 41,
+  "commands_exit_codes": [
+    0,
+    0
+  ],
+  "source_checks": {
+    "tmp/pdfs/phosagro-2024-ru.pdf": {
+      "sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "bytes": 1521928,
+      "matches_reference": true
+    },
+    "tmp/pdfs/phosagro-2024-ru-recheck-2026-11-09.pdf": {
+      "sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "bytes": 1521928,
+      "matches_reference": true
+    }
+  },
+  "source_visual_review": "separately documented in docs/acceptance_recheck.md; not performed by this script",
+  "workflow": "single_user_with_codex",
+  "fact_verification_provenance": "assistant_checked_not_a_claim_of_user_review",
+  "quality_metrics_measured": false
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "case_id": "normal_snapshot",
+    "kind": "real_manual_reference",
+    "patches": [],
+    "expected": {"status": "answered", "reason_code": "ok", "delta": "67385", "growth_pct_display": "15.30", "scenario_status": "blocked"}
+  },
+  {
+    "case_id": "missing_value",
+    "kind": "synthetic_mutation_do_not_attribute_to_issuer",
+    "patches": [
+      {"path": ["facts", 1, "value"], "value": null},
+      {"path": ["evidence", 1, "raw_value"], "value": null}
+    ],
+    "expected": {"status": "missing", "reason_code": "value_missing", "scenario_status": "blocked"}
+  },
+  {
+    "case_id": "incompatible_periods",
+    "kind": "synthetic_mutation_do_not_attribute_to_issuer",
+    "patches": [
+      {"path": ["request", "current_period", "end"], "value": "2024-09-30"}
+    ],
+    "expected": {"status": "conflict", "reason_code": "incompatible_periods", "scenario_status": "blocked"}
+  },
+  {
+    "case_id": "unknown_publication_historical",
+    "kind": "synthetic_request_on_real_snapshot",
+    "patches": [
+      {"path": ["request", "mode"], "value": "historical_as_of"},
+      {"path": ["request", "as_of"], "value": "2025-02-14T10:00:00+03:00"}
+    ],
+    "expected": {"status": "missing", "reason_code": "publication_unknown", "scenario_status": "blocked"}
+  }
+]

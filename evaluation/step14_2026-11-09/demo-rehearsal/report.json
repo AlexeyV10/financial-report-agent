@@ -1,0 +1,70 @@
+{
+  "commands": [
+    {
+      "name": "manual",
+      "argv": [
+        "C:/msys64/ucrt64/bin/python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "fixed",
+        "--source",
+        "manual"
+      ],
+      "exit_code": 0,
+      "exit_code_basis": "all per-command assertions completed before the metadata NameError",
+      "elapsed_s": null,
+      "timing_status": "not preserved after metadata error",
+      "stdout_sha256": "768b97a88689bc46cb0100a9f859458906c9d999155ca874a16e7bb04b334114",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "real-source-blocked",
+      "argv": [
+        "C:/msys64/ucrt64/bin/python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "scenario",
+        "--case",
+        "real-source"
+      ],
+      "exit_code": 0,
+      "exit_code_basis": "all per-command assertions completed before the metadata NameError",
+      "elapsed_s": null,
+      "timing_status": "not preserved after metadata error",
+      "stdout_sha256": "4379dc837c28f1d8235826d2232bd4f0ae83401486d046d4867cfac655bcc250",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    },
+    {
+      "name": "synthetic",
+      "argv": [
+        "C:/msys64/ucrt64/bin/python.exe",
+        "-I",
+        "scripts/run_local.py",
+        "scenario"
+      ],
+      "exit_code": 0,
+      "exit_code_basis": "all per-command assertions completed before the metadata NameError",
+      "elapsed_s": null,
+      "timing_status": "not preserved after metadata error",
+      "stdout_sha256": "c218c005981c56f3aeacf939489dcb2e89103d2a0b8b79ac117eeaa2b578bc3a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true
+    }
+  ],
+  "new_model_calls": 0,
+  "new_source_verification": false,
+  "kind": "technical offline route rehearsal, not user speech",
+  "speech_words": [
+    31,
+    42,
+    60,
+    50,
+    45
+  ],
+  "speech_total_words": 228,
+  "estimated_s_at_130_wpm_plus_15_s": 120.23076923076923,
+  "user_spoken_rehearsal_measured": false,
+  "metadata_resume": "All three commands passed; report construction initially lacked counts in the partial-resume namespace. Rebuilt report from saved outputs without rerunning commands. Per-command durations not recovered."
+}

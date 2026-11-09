@@ -1,0 +1,104 @@
+{
+  "dataset_canonical_sha256": "a255a12974bdb606e0ab1f92ad3aa178402b78344bf6fdc87e937d5c94143f7f",
+  "checked_by": "Codex",
+  "human_reviewed": false,
+  "production_calculator_used_for_gold": false,
+  "simulate_run_for_reserved": false,
+  "prototype_answers_run": 0,
+  "model_calls": 0,
+  "exact_reference_growth_pct": "1684625/110076",
+  "exact_revenue_billion": "507689/1000",
+  "reserved_SC02_exact_final_equity": "20147/2",
+  "reserved_SC02_exact_return_pct": "147/200",
+  "cases": [
+    {
+      "case_id": "QA01",
+      "outputs": {
+        "revenue": "440304"
+      },
+      "check": "Fraction/literal/reference-inventory semantics; no prototype answering calls"
+    },
+    {
+      "case_id": "QA02",
+      "outputs": {
+        "revenue": "507689"
+      },
+      "check": "Fraction/literal/reference-inventory semantics; no prototype answering calls"
+    },
+    {
+      "case_id": "QA03",
+      "outputs": {
+        "previous_revenue": "440304",
+        "current_revenue": "507689",
+        "delta": "67385",
+        "growth_pct": "15.30"
+      },
+      "check": "Fraction/literal/reference-inventory semantics; no prototype answering calls"
+    },
+    {
+      "case_id": "QA04",
+      "outputs": {
+        "revenue": "507.689"
+      },
+      "check": "Fraction/literal/reference-inventory semantics; no prototype answering calls"
+    },
+    {
+      "case_id": "QA05",
+      "outputs": {},
+      "check": "Fraction/literal/reference-inventory semantics; no prototype answering calls"
+    },
+    {
+      "case_id": "QA06",
+      "outputs": {},
+      "check": "Fraction/literal/reference-inventory semantics; no prototype answering calls"
+    },
+    {
+      "case_id": "QA07",
+      "outputs": {},
+      "check": "Fraction/literal/reference-inventory semantics; no prototype answering calls"
+    },
+    {
+      "case_id": "QA08",
+      "outputs": {
+        "previous_revenue": "440304",
+        "current_revenue": "507689",
+        "delta": "67385",
+        "growth_pct": "15.30"
+      },
+      "check": "Fraction/literal/reference-inventory semantics; no prototype answering calls"
+    },
+    {
+      "case_id": "QA09",
+      "outputs": {},
+      "check": "Fraction/literal/reference-inventory semantics; no prototype answering calls"
+    },
+    {
+      "case_id": "QA10",
+      "outputs": {},
+      "check": "Fraction/literal/reference-inventory semantics; no prototype answering calls"
+    },
+    {
+      "case_id": "UI01",
+      "outputs": {},
+      "check": "Fraction/literal/reference-inventory semantics; no prototype answering calls"
+    },
+    {
+      "case_id": "SC01",
+      "outputs": {
+        "final_equity": "10098.00",
+        "total_fees": "2.00",
+        "return_pct": "0.98"
+      },
+      "check": "Fraction/literal/reference-inventory semantics; no prototype answering calls"
+    },
+    {
+      "case_id": "SC02",
+      "outputs": {
+        "final_equity": "10073.50",
+        "total_fees": "6.00",
+        "return_pct": "0.74"
+      },
+      "check": "Fraction/literal/reference-inventory semantics; no prototype answering calls"
+    }
+  ]
+}

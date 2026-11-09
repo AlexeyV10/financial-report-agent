@@ -1,0 +1,11 @@
+{
+  "candidate": "candidate-01.zip",
+  "test_run": "267 tests, 1 error",
+  "failed_test": "test_request_counter_excludes_probes_and_omits_content",
+  "cause": "Step12 test creates TemporaryDirectory(dir=ROOT/tmp) before a later test class happens to create ROOT/tmp. Fresh archive has no tmp payload.",
+  "logs": ["restored-unit-tests-bin.txt", "restored-unit-tests-bin-decoded.txt"],
+  "capture_note": "Native unittest stderr uses the Windows locale; decoded UTF8 copy saved separately. Printing the first raw log tail also encountered console encoding; original log preserved.",
+  "fix": "Restorer creates an empty private tmp after validating/extracting payload. Standard archive extraction documents this prerequisite. Existing source/tests/step12 gold and grader unchanged.",
+  "regression": "Archive restore test now asserts empty tmp exists; next complete run uses a newly restored candidate.",
+  "real_model_calls": 0
+}

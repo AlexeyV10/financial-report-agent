@@ -1,0 +1,9 @@
+{
+  "report_source": "build_report.py",
+  "metrics_source_sha256": "87cb4c05d99545f9fbba219718a76ab45a7d7b13b09565af3eee970875e1b1ec",
+  "archive_sha256": "10920fd2e55614eb6c06b28f4499e55d4f0b58bf2d7156a7f6eaa3199ed4efec",
+  "old_KP1_binary_available": false,
+  "new_model_calls": 0,
+  "primary_pages_copied": false,
+  "report_sections": 10
+}

@@ -1,0 +1,104 @@
+{
+  "stage": 14,
+  "completed_at": "2026-11-09T10:57:55.943588+00:00",
+  "status": "local_report_slides_and_supporting_materials_complete",
+  "materials": [
+    {
+      "path": "KP2_report_v2.docx",
+      "bytes": 52358,
+      "sha256": "ecb02d47e62942f29c8f0fd73d115a6f1b64c1e83366ad80d82e17cd1ed275fe"
+    },
+    {
+      "path": "KP2_report_v2.pdf",
+      "bytes": 403258,
+      "sha256": "d57e946c96dd7797bb80433519026c70e9945d9ff25b97ae577f51cc74633779"
+    },
+    {
+      "path": "KP2_slides_v2.pptx",
+      "bytes": 38357,
+      "sha256": "e62a363baa6442d18f08a1f91507b5949e5190715e58d561f78167780ed4606d"
+    },
+    {
+      "path": "KP2_slides_v2.pdf",
+      "bytes": 103444,
+      "sha256": "d01210b4d7667cb79f5ea9e8f8a15cb98bfdef4ff9cee4e06cd001528c7e9cdc"
+    },
+    {
+      "path": "speech_and_demo.md",
+      "bytes": 13128,
+      "sha256": "02a37852d0091dca317f5b22d60545de391c094c7fe402d73dbfd06018e557ba"
+    },
+    {
+      "path": "report_source.md",
+      "bytes": 34560,
+      "sha256": "892fe6fa7595e83556fad48d76b7db1b500695ffb5b0ea171ebed6c1071b5b4e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5106,
+      "sha256": "bb81cf13069fe1e6fdd22057e669962be1587b351ed4b5f63e6115c4d906a8b5"
+    }
+  ],
+  "archive": {
+    "schema": "kp2-authored-materials-receipt-v1",
+    "archive": "delivery/kp2-materials-step14-v1-2026-11-09.zip",
+    "sha256": "c2ee969614a52042af1253c92b73f984fc8f4c5977d4d72e1e2f45e2c3157c4d",
+    "bytes": 554901,
+    "members": 8,
+    "allowlist": [
+      "kp2_2026-11-09/KP2_report_v2.docx",
+      "kp2_2026-11-09/KP2_report_v2.pdf",
+      "kp2_2026-11-09/KP2_slides_v2.pptx",
+      "kp2_2026-11-09/KP2_slides_v2.pdf",
+      "kp2_2026-11-09/speech_and_demo.md",
+      "kp2_2026-11-09/report_source.md",
+      "kp2_2026-11-09/README.md",
+      "kp2_2026-11-09/artifact_manifest.json"
+    ],
+    "verification": {
+      "crc": "passed",
+      "member_bytes_match_local_files": true,
+      "manifest_hashes": "passed",
+      "only_authored_pdfs": true
+    },
+    "technical_archive": {
+      "path": "delivery/kp2-local-step13-v1-2026-11-09.zip",
+      "bytes": 559580,
+      "sha256": "10920fd2e55614eb6c06b28f4499e55d4f0b58bf2d7156a7f6eaa3199ed4efec",
+      "receipt_sha256": "d8e6cd7f5a8f224e71ab0d532866132d93c95547991f80f512e4ba646922483a"
+    },
+    "submitted": false,
+    "upload_or_publication": false,
+    "meaning": "Local integrity receipt, not course submission receipt"
+  },
+  "report_pages": 10,
+  "slides": 5,
+  "speech_words": 228,
+  "speech_estimate_s": [
+    108,
+    129
+  ],
+  "speech_is_working_assumption": true,
+  "native_export": [
+    "word-native-v2.json",
+    "powerpoint-native-v2.json"
+  ],
+  "checks": [
+    "content-checks.json",
+    "visual-review.json",
+    "presentation-validation-v2.json",
+    "demo-rehearsal/report.json"
+  ],
+  "new_model_calls": 0,
+  "financial_source_review_repeated": false,
+  "full_test_suite_repeated": false,
+  "old_measurements_denominators_unchanged": true,
+  "known_top1_failure_preserved": true,
+  "human_reviewed": false,
+  "course_regulations_current": "unknown",
+  "submission_status": "not_submitted",
+  "historical_deadline": "2026-11-05 12:00, timezone not proved by historical text",
+  "helper_encoding_observation": "helper-encoding-observation.json",
+  "next_prompt": "prompts/step15_submit_and_preserve_receipt.md",
+  "step15_executed": false
+}

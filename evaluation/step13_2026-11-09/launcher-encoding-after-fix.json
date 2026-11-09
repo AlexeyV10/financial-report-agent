@@ -1,0 +1,7 @@
+{
+  "exit_code": 2,
+  "utf8_message": "Выберите локальный режим: fixed, agent, scenario, questions, replay.\n",
+  "stderr_empty": true,
+  "passed": true,
+  "model_calls": 0
+}

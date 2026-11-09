@@ -1,0 +1,55 @@
+{
+  "agent_schema_version": "0.1",
+  "run_id": "eb9afc2e-a27e-45e2-8770-abe8964b0a30",
+  "started_at": "2026-11-08T23:58:44.066663+00:00",
+  "versions": {
+    "controller": "0.1",
+    "prompt": "bounded-json-dialogue-v4",
+    "prompt_sha256": "303d531767f34ded368848b78fd7ba4c9a5fbdc8a534a9d06f3d21b6ba8fcfb2",
+    "tools_sha256": "0acce026d1a13a2f37284d152ec57b199864d657ad1ae2122140e41b761f6b49",
+    "bundle_sha256": "caff3e36e661700cc37ca0ed46ad2eda47515208b28047c6c03c62478c3aeb7e",
+    "code_sha256": {
+      "__init__.py": "eea0bfd15364208285f19580630c0e9312142e1bc876cf5fc23af7fc473834e7",
+      "agent.py": "cc109e1875c8753466462e220e7db553a96fa85d7d6886b08b0b56423aa72287",
+      "contracts.py": "5894effc517efdbddb3b9a10d4bd7268f9d277bde283e2e476fe9ea0b8a55ac2",
+      "finance.py": "2f19dec687077097544c0e0149af1877981ecfcbbeabe7debe8936739608d6e4",
+      "local_model.py": "361c0fa61d5b9682c0946a61a8bdc69adaf611689782f095e21baecd9f3cc202",
+      "retrieval.py": "1606742a9819c3a4e83f3a1538c1c13c958dfff0f263f77c5d2be469c53e7564",
+      "user_path.py": "59540e4914f7ff7e62e7b6450cc3f17448030e951c43b571caa2242b4d25b7c3"
+    }
+  },
+  "adapter": {
+    "kind": "deterministic_mock",
+    "adapter": "observed-mock-v1",
+    "model": null
+  },
+  "limits": {
+    "max_calls": 6,
+    "timeout_s": 180,
+    "per_call_s": 90,
+    "max_action_bytes": 4096,
+    "max_observation_bytes": 32768,
+    "max_tool_bytes": 8192,
+    "max_search_results": 5,
+    "max_output_tokens": 256
+  },
+  "events": [],
+  "usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost": null,
+    "cost_status": "не измерено"
+  },
+  "cloud_calls": "forbidden",
+  "full_source_text_in_model_or_trace": false,
+  "environment": {
+    "python": "3.14.7",
+    "platform": "Windows"
+  },
+  "ended_at": "2026-11-08T23:58:44.067495+00:00",
+  "elapsed_s": 0.000837,
+  "stop_reason": "company_not_supported",
+  "status": "clarification",
+  "financial_status": "clarification",
+  "financial_reason": "company_not_supported"
+}

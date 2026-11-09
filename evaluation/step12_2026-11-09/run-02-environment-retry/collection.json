@@ -1,0 +1,24 @@
+{
+  "ended_at": "2026-11-09T01:56:27.698845+00:00",
+  "raw_sha256": {
+    "QA03-B.json": "787f2319541ae678265f91d5bddf03c6f2a8a1dc9a0d20840ddc8cb82b43e498",
+    "QA03-C_LLM.calls.jsonl": "e9d1aa9ce65e6c6452c10a3b68577b524e4fefaa1da5b5b388827dcd7605ad69",
+    "QA03-C_LLM.json": "3fa733f561ae78fa2d242c077932ebe62107fff75b4f67b1adf5d4522518506f",
+    "QA06-B.json": "a9f97e9198034a3a2c32c17ee01b3fc7198a67a8935f8002db7b78935b4a9f0a",
+    "QA06-C_LLM.calls.jsonl": "54ab8ed9aefa08568c292769bd2d09c492a1a1d7bd201b515e6e0e7b8dfb77b1",
+    "QA06-C_LLM.json": "62073ec68ab6a7ef8d7c98e3215dfb4b4327b353d8da66a28645fb2ce1cac005",
+    "QA07-B.json": "823fdc7e83cfa9a3a266b365fbf1ee1000b56170ddc45f62090a35537a03bd03",
+    "QA07-C_LLM.calls.jsonl": "82efedfb5486dbab672d29681a30cf15ebd54e6fade899f42b2616aacf24dd61",
+    "QA07-C_LLM.json": "9926569795f4cda7e31d3858fe495dd8d6a998badddb76632a79e6d2c84ace6a",
+    "QA09-finance_component.json": "2bd65e5370e8cd001f8a22f5634c917f7a1320a41601a50012d777ab0ba32427",
+    "QA10-finance_component.json": "46213ad22fdeee6c5e78d80e8dbae4d045c666003e1d586029b2cf70c41671b9",
+    "R1.json": "91d575f9cceedab870292621cdf777845fed032b18828218ad77df20c7453d0c",
+    "R5.json": "0551072c61bb24b4ffa91a8d0cea88501bbebf9a0a58729e1a540456c1bee10b",
+    "SAFE01.json": "ff7fe70408ecf93b76227f4a9d90af9e365aa0547891d0c2da020352b6e1f188",
+    "SC01-simulator.json": "4d52b164104dffecfab0d1e835320d4b66365d19ab9019ae2fc1b3acd1d7972b",
+    "SC02-simulator.json": "af8f7fe91cc9dbf42ba663d04372cfca764846eb30125fa9a7b4f9cf4e1760de",
+    "UI01-B.json": "f7a8afb14919fb227815f791d6e0977317c18b902bd59839d6ff31f2731368bf",
+    "UI01-C_LLM.json": "9dd858185e18439aa5e15767b49a98f45409c975678193b6fdd0b685cd21d2ed"
+  },
+  "one_pass": true
+}

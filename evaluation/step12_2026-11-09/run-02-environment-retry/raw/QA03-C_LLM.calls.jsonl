@@ -1,0 +1,10 @@
+{"event": "chat_request_started", "at": "2026-11-09T01:55:59.092765+00:00"}
+{"event": "chat_response_received", "at": "2026-11-09T01:56:05.458672+00:00", "elapsed_s": 6.3659208999997645, "input_tokens": 1172, "output_tokens": 46, "load_duration_ns": 5424142900, "total_duration_ns": 6341195500}
+{"event": "chat_request_started", "at": "2026-11-09T01:56:05.841923+00:00"}
+{"event": "chat_response_received", "at": "2026-11-09T01:56:07.318962+00:00", "elapsed_s": 1.4770755999998073, "input_tokens": 3896, "output_tokens": 37, "load_duration_ns": 3176900, "total_duration_ns": 1454799500}
+{"event": "chat_request_started", "at": "2026-11-09T01:56:07.574272+00:00"}
+{"event": "chat_response_received", "at": "2026-11-09T01:56:08.792579+00:00", "elapsed_s": 1.2183198000002449, "input_tokens": 4313, "output_tokens": 37, "load_duration_ns": 2941700, "total_duration_ns": 1188365200}
+{"event": "chat_request_started", "at": "2026-11-09T01:56:09.038002+00:00"}
+{"event": "chat_response_received", "at": "2026-11-09T01:56:10.752270+00:00", "elapsed_s": 1.7142809000015404, "input_tokens": 4731, "output_tokens": 67, "load_duration_ns": 4494800, "total_duration_ns": 1682332200}
+{"event": "chat_request_started", "at": "2026-11-09T01:56:11.088351+00:00"}
+{"event": "chat_response_received", "at": "2026-11-09T01:56:13.827032+00:00", "elapsed_s": 2.738694800000303, "input_tokens": 5008, "output_tokens": 81, "load_duration_ns": 2930100, "total_duration_ns": 2718923100}

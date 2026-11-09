@@ -1,0 +1,211 @@
+{
+  "checked_at": "2026-11-08T23:19:34.877155+00:00",
+  "python": "3.14.7",
+  "unit_tests_passed": 127,
+  "cli_cases": [
+    {
+      "case": "default_live",
+      "expected_status": "answered",
+      "exit_code": 0,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "manual_explicit_without_pdf",
+      "expected_status": "answered",
+      "exit_code": 0,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "unknown_company",
+      "expected_status": "clarification",
+      "exit_code": 1,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "ambiguous_company",
+      "expected_status": "clarification",
+      "exit_code": 1,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "wrong_metric",
+      "expected_status": "clarification",
+      "exit_code": 1,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "wrong_year",
+      "expected_status": "clarification",
+      "exit_code": 1,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "partial_year",
+      "expected_status": "clarification",
+      "exit_code": 1,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "wrong_standard",
+      "expected_status": "clarification",
+      "exit_code": 1,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "historical_live",
+      "expected_status": "missing",
+      "exit_code": 0,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "historical_manual",
+      "expected_status": "missing",
+      "exit_code": 0,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "as_of_not_ignored",
+      "expected_status": "clarification",
+      "exit_code": 1,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "missing_as_of",
+      "expected_status": "clarification",
+      "exit_code": 1,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "missing_pdf",
+      "expected_status": "error",
+      "exit_code": 2,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "changed_pdf",
+      "expected_status": "error",
+      "exit_code": 2,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "missing_index",
+      "expected_status": "error",
+      "exit_code": 2,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "corrupt_index",
+      "expected_status": "error",
+      "exit_code": 2,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "too_few_hits",
+      "expected_status": "missing",
+      "exit_code": 0,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "invalid_results",
+      "expected_status": "error",
+      "exit_code": 2,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "invalid_registry",
+      "expected_status": "error",
+      "exit_code": 2,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "save_report",
+      "expected_status": "answered",
+      "exit_code": 0,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "protect_registry_on_save",
+      "expected_status": "error",
+      "exit_code": 2,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "protect_pdf_on_save",
+      "expected_status": "error",
+      "exit_code": 2,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    },
+    {
+      "case": "bad_arguments",
+      "expected_status": "error",
+      "exit_code": 2,
+      "required_meaning_present": true,
+      "forbidden_numeric_or_fallback_text_absent": true,
+      "passed": true
+    }
+  ],
+  "used_search_ranks": [
+    2
+  ],
+  "protected_files_unchanged_from_step7": {
+    "src/financial_assistant/contracts.py": true,
+    "src/financial_assistant/finance.py": true,
+    "src/financial_assistant/retrieval.py": true,
+    "data/examples/reference_bundle.json": true
+  },
+  "sha256": {
+    "src/financial_assistant/contracts.py": "5894effc517efdbddb3b9a10d4bd7268f9d277bde283e2e476fe9ea0b8a55ac2",
+    "src/financial_assistant/finance.py": "2f19dec687077097544c0e0149af1877981ecfcbbeabe7debe8936739608d6e4",
+    "src/financial_assistant/retrieval.py": "1606742a9819c3a4e83f3a1538c1c13c958dfff0f263f77c5d2be469c53e7564",
+    "data/examples/reference_bundle.json": "93e51d6dc834e4627dce6e6c75c43aec465cd2c9308bac35d443040b5a394c3a",
+    "src/financial_assistant/user_path.py": "59540e4914f7ff7e62e7b6450cc3f17448030e951c43b571caa2242b4d25b7c3",
+    "scripts/assistant.py": "f3840332a8fc3f7c23fa19571b8a7fbbfb150c4bb3148f51a6fea07309370970",
+    "scripts/check_step8.py": "074f40c91487e5e195ee99fbdbc5fad4a6e75e8d6bca5321fe6429d5a40bafec",
+    "tests/test_user_path.py": "037776bcd770a02f64374603d8c095fcea5d8d643dd3e9e9561bc965411b05f6"
+  },
+  "limits": "one bounded scenario and public deterministic checks; not a natural-language model or agent-quality evaluation"
+}

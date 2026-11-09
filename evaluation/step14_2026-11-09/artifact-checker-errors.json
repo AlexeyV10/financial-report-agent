@@ -1,0 +1,27 @@
+{
+  "scope": "Only document preparation/validation wrappers, no financial code changes",
+  "events": [
+    {
+      "error": "Default CP1251 decode failed on UTF8 JSON",
+      "resolution": "Explicit UTF8 in inspection command"
+    },
+    {
+      "error": "First offline demo check expected English blocked in Russian CLI",
+      "resolution": "Use actual Russian marker and publication_unknown",
+      "preserved": "demo-rehearsal-attempt01/"
+    },
+    {
+      "error": "Partial resume namespace missed speech counts when serializing completed demo results",
+      "resolution": "All three command assertions had passed; saved outputs retained, exit0 inferred from passed assertions, durations left null; metadata reconstructed without rerun"
+    },
+    {
+      "error": "python-docx paragraph text omits native OMML equation; checker expected literal cost=null absent from prose",
+      "resolution": "Read native math XML and test actual unmeasured-cost prose; no document change"
+    },
+    {
+      "error": "Speaker-source assertion allowed evaluation/data but omitted src/docs",
+      "resolution": "Accept the real code references already present in notes; no slide change"
+    }
+  ],
+  "additional_render_errors": "render-environment.json, word/powerpoint native receipts; intermediate source/render files retained in tmp/step14/"
+}

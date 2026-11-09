@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "metrics_bound_to_results_sha256": "87cb4c05d99545f9fbba219718a76ab45a7d7b13b09565af3eee970875e1b1ec",
+  "archive_sha256": "10920fd2e55614eb6c06b28f4499e55d4f0b58bf2d7156a7f6eaa3199ed4efec",
+  "archive_bytes": 559580,
+  "archive_payload_count": 205,
+  "report_native_pages": 10,
+  "slide_native_pages": 5,
+  "metric_table_checked_against_results": true,
+  "slide_metric_table_checked": true,
+  "top1_failure_kept": true,
+  "financial_context_and_limitations_kept": true,
+  "growth_and_synthetic_arithmetic_recomputed": true,
+  "native_equations": 1,
+  "docx_embedded_images": 0,
+  "docx_title_rules": 0,
+  "pptx_native_tables": 3,
+  "speaker_notes_match_all_five_speech_paragraphs": true,
+  "native_export_bound_to_same_docx_pptx_hashes": true,
+  "new_model_calls": 0,
+  "limitation": "targeted content checks, no new financial source review or generalized model assessment",
+  "routine_local_read_error": "initial inspection used CP1251 default; repeated with explicit UTF8, no files changed"
+}

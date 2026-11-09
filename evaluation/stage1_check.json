@@ -1,0 +1,217 @@
+{
+  "checked_at": "2026-11-08T21:09:55.444526+00:00",
+  "python": "3.14.7",
+  "scope": "4 public contract examples; not assistant quality metrics or a held-out benchmark",
+  "inputs_sha256": {
+    "src/financial_assistant/contracts.py": "71220d41d1ec99a024e104a37a356cfa666a2084294a8a46980341300768043e",
+    "scripts/check_stage1.py": "1b2c6fa2af366f455d072a33ce46de3adf62410cf3018e34aff5134f70fa41dd",
+    "data/examples/reference_bundle.json": "93e51d6dc834e4627dce6e6c75c43aec465cd2c9308bac35d443040b5a394c3a",
+    "data/examples/cases.json": "ea51c0a472216b52fdedd3bcee6797e6c26922d474d9e9f0a06d916c50536277",
+    "tests/test_contracts.py": "5200b261c4f2b388f33206d546794f3da0f3bb2e3deaaf4022fc39dd1d566410"
+  },
+  "passed": 4,
+  "total": 4,
+  "cases": [
+    {
+      "case_id": "normal_snapshot",
+      "kind": "real_manual_reference",
+      "passed": true,
+      "expected": {
+        "status": "answered",
+        "reason_code": "ok",
+        "delta": "67385",
+        "growth_pct_display": "15.30",
+        "scenario_status": "blocked"
+      },
+      "actual": {
+        "schema_version": "0.1",
+        "request_id": "first-revenue-growth",
+        "status": "answered",
+        "reason_code": "ok",
+        "message": "Изменение выручки рассчитано по вручную проверенной версии документа.",
+        "fact_ids": [
+          "phosagro-revenue-2023",
+          "phosagro-revenue-2024"
+        ],
+        "claims": [
+          {
+            "kind": "input_fact",
+            "fact_id": "phosagro-revenue-2023",
+            "evidence_ids": [
+              "phosagro-revenue-2023-p4"
+            ]
+          },
+          {
+            "kind": "input_fact",
+            "fact_id": "phosagro-revenue-2024",
+            "evidence_ids": [
+              "phosagro-revenue-2024-p4"
+            ]
+          },
+          {
+            "kind": "calculation",
+            "formula_id": "annual_growth_v1",
+            "evidence_ids": [
+              "phosagro-revenue-2023-p4",
+              "phosagro-revenue-2024-p4"
+            ]
+          }
+        ],
+        "calculation": {
+          "formula_id": "annual_growth_v1",
+          "formula": "(current / previous - 1) * 100",
+          "input_fact_ids": [
+            "phosagro-revenue-2023",
+            "phosagro-revenue-2024"
+          ],
+          "delta": "67385",
+          "delta_currency": "RUB",
+          "delta_scale": 1000000,
+          "growth_pct": "15.304198917111813656019477451942294414767978487590",
+          "growth_pct_display": "15.30",
+          "precision": 50,
+          "rounding": "ROUND_HALF_UP",
+          "decimal_places": 2
+        },
+        "warnings": [
+          "manual_annotation",
+          "human_acceptance_pending",
+          "rights_for_public_copy_unconfirmed",
+          "auditor_qualified_opinion_segment_disclosure",
+          "snapshot_only_publication_unknown",
+          "source_rounding_limits_precision"
+        ],
+        "analysis_mode": "document_snapshot",
+        "as_of": null,
+        "document_version": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+        "availability_from": null,
+        "scenario_gate": {
+          "status": "blocked",
+          "reasons": [
+            "publication_of_exact_version_unknown",
+            "calendar_and_prices_missing",
+            "simulation_not_implemented"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "missing_value",
+      "kind": "synthetic_mutation_do_not_attribute_to_issuer",
+      "passed": true,
+      "expected": {
+        "status": "missing",
+        "reason_code": "value_missing",
+        "scenario_status": "blocked"
+      },
+      "actual": {
+        "schema_version": "0.1",
+        "request_id": "first-revenue-growth",
+        "status": "missing",
+        "reason_code": "value_missing",
+        "message": "Отсутствует одно из двух необходимых значений выручки.",
+        "fact_ids": [],
+        "claims": [],
+        "calculation": null,
+        "warnings": [
+          "manual_annotation",
+          "human_acceptance_pending",
+          "rights_for_public_copy_unconfirmed",
+          "auditor_qualified_opinion_segment_disclosure",
+          "snapshot_only_publication_unknown"
+        ],
+        "analysis_mode": "document_snapshot",
+        "as_of": null,
+        "document_version": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+        "availability_from": null,
+        "scenario_gate": {
+          "status": "blocked",
+          "reasons": [
+            "publication_of_exact_version_unknown",
+            "no_valid_calculation",
+            "calendar_and_prices_missing",
+            "simulation_not_implemented"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "incompatible_periods",
+      "kind": "synthetic_mutation_do_not_attribute_to_issuer",
+      "passed": true,
+      "expected": {
+        "status": "conflict",
+        "reason_code": "incompatible_periods",
+        "scenario_status": "blocked"
+      },
+      "actual": {
+        "schema_version": "0.1",
+        "request_id": "first-revenue-growth",
+        "status": "conflict",
+        "reason_code": "incompatible_periods",
+        "message": "Нужны два последовательных полных календарных года.",
+        "fact_ids": [],
+        "claims": [],
+        "calculation": null,
+        "warnings": [
+          "manual_annotation",
+          "human_acceptance_pending",
+          "rights_for_public_copy_unconfirmed",
+          "auditor_qualified_opinion_segment_disclosure"
+        ],
+        "analysis_mode": "document_snapshot",
+        "as_of": null,
+        "document_version": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+        "availability_from": null,
+        "scenario_gate": {
+          "status": "blocked",
+          "reasons": [
+            "publication_of_exact_version_unknown",
+            "no_valid_calculation",
+            "calendar_and_prices_missing",
+            "simulation_not_implemented"
+          ]
+        }
+      }
+    },
+    {
+      "case_id": "unknown_publication_historical",
+      "kind": "synthetic_request_on_real_snapshot",
+      "passed": true,
+      "expected": {
+        "status": "missing",
+        "reason_code": "publication_unknown",
+        "scenario_status": "blocked"
+      },
+      "actual": {
+        "schema_version": "0.1",
+        "request_id": "first-revenue-growth",
+        "status": "missing",
+        "reason_code": "publication_unknown",
+        "message": "Дата доступности этой версии не подтверждена; исторический ответ запрещён.",
+        "fact_ids": [],
+        "claims": [],
+        "calculation": null,
+        "warnings": [
+          "manual_annotation",
+          "human_acceptance_pending",
+          "rights_for_public_copy_unconfirmed",
+          "auditor_qualified_opinion_segment_disclosure"
+        ],
+        "analysis_mode": "historical_as_of",
+        "as_of": "2025-02-14T10:00:00+03:00",
+        "document_version": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+        "availability_from": null,
+        "scenario_gate": {
+          "status": "blocked",
+          "reasons": [
+            "publication_of_exact_version_unknown",
+            "no_valid_calculation",
+            "calendar_and_prices_missing",
+            "simulation_not_implemented"
+          ]
+        }
+      }
+    }
+  ]
+}

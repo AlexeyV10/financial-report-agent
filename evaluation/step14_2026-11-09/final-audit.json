@@ -1,0 +1,92 @@
+{
+  "stage": 14,
+  "protected_prior_file_count": 305,
+  "prior_files_byte_unchanged": 300,
+  "expected_document_updates": [
+    "README.md",
+    "STATUS.md",
+    "docs/decisions.md",
+    "ПЛАН_РАБОТЫ_КП2.md"
+  ],
+  "existing_changed_files": {
+    "README.md": {
+      "before": "84a810541c0523eda3df1550bb3f313907700c5dd5bdbd6b18b3cce9a1828204",
+      "after": "0979cc2708c5b4e6fa973e675dc0f0030bfbb250baa6db09a182767636787bac"
+    },
+    "STATUS.md": {
+      "before": "f9676e8e23f75d46409a3b1daec4b9cda6c1772a93a5e692eceddbef4f5f4aca",
+      "after": "ad08712ddf3d2f6139d73ed29569bfb182dfa10cddfcffea917294fcb39aa86f"
+    },
+    "ПЛАН_РАБОТЫ_КП2.md": {
+      "before": "e3168e4e49a9ac53ceff5e8f8d4f84cc11e0c4c255b1d96bf182db588f16a6a9",
+      "after": "648630aab42dcbc3c4139934603dbfe51121093f1730b955e92e8367e59481ae"
+    },
+    "docs/decisions.md": {
+      "before": "6e28591712e42bdcf481174e8dbea38ddba2035f8bdcda7d4a26155652d61d8f",
+      "after": "e0c2163433d04a88f5ef11190dffb71ea49e4db0bb7f63cc4fbb1eab9900371b"
+    },
+    "scripts/local_model.ps1": {
+      "before": "46dfc994daa3498a8c04873a653fde1508d113c8d28323488115cde6e39fd043",
+      "after": "dd6e1f1aad77a2faaeff2db7929a752aec18b0941f772d39aeb86a3ac90b311d"
+    }
+  },
+  "only_other_difference": "scripts/local_model.ps1 leading UTF8 BOM, remaining bytes equal; origin unknown, preserved",
+  "all_prior_financial_core_data_tests_and_evidence_unchanged": true,
+  "technical_zip_and_receipt_byte_unchanged": true,
+  "old_KP1_materials_unchanged": true,
+  "new_files_scope_check": "passed",
+  "new_files_before_final_audit_and_prompt": [
+    "delivery/kp2-materials-step14-v1-2026-11-09.receipt.json",
+    "delivery/kp2-materials-step14-v1-2026-11-09.zip",
+    "evaluation/step14_2026-11-09/artifact-checker-errors.json",
+    "evaluation/step14_2026-11-09/before.json",
+    "evaluation/step14_2026-11-09/content-checks.json",
+    "evaluation/step14_2026-11-09/content-snapshot.json",
+    "evaluation/step14_2026-11-09/demo-rehearsal-attempt01-error.json",
+    "evaluation/step14_2026-11-09/demo-rehearsal-attempt01/manual.stderr.txt",
+    "evaluation/step14_2026-11-09/demo-rehearsal-attempt01/manual.stdout.txt",
+    "evaluation/step14_2026-11-09/demo-rehearsal-attempt01/real-source-blocked.stderr.txt",
+    "evaluation/step14_2026-11-09/demo-rehearsal-attempt01/real-source-blocked.stdout.txt",
+    "evaluation/step14_2026-11-09/demo-rehearsal/manual.stderr.txt",
+    "evaluation/step14_2026-11-09/demo-rehearsal/manual.stdout.txt",
+    "evaluation/step14_2026-11-09/demo-rehearsal/real-source-blocked.stderr.txt",
+    "evaluation/step14_2026-11-09/demo-rehearsal/real-source-blocked.stdout.txt",
+    "evaluation/step14_2026-11-09/demo-rehearsal/report.json",
+    "evaluation/step14_2026-11-09/demo-rehearsal/synthetic.stderr.txt",
+    "evaluation/step14_2026-11-09/demo-rehearsal/synthetic.stdout.txt",
+    "evaluation/step14_2026-11-09/helper-encoding-observation.json",
+    "evaluation/step14_2026-11-09/powerpoint-native-v1.json",
+    "evaluation/step14_2026-11-09/powerpoint-native-v2.json",
+    "evaluation/step14_2026-11-09/presentation-validation-v2.json",
+    "evaluation/step14_2026-11-09/presentation-validation.json",
+    "evaluation/step14_2026-11-09/render-environment.json",
+    "evaluation/step14_2026-11-09/report.json",
+    "evaluation/step14_2026-11-09/status-before.md",
+    "evaluation/step14_2026-11-09/visual-review.json",
+    "evaluation/step14_2026-11-09/word-native-v1.json",
+    "evaluation/step14_2026-11-09/word-native-v2.json",
+    "materials/kp2_2026-11-09/KP2_report_v2.docx",
+    "materials/kp2_2026-11-09/KP2_report_v2.pdf",
+    "materials/kp2_2026-11-09/KP2_slides_v2.pdf",
+    "materials/kp2_2026-11-09/KP2_slides_v2.pptx",
+    "materials/kp2_2026-11-09/README.md",
+    "materials/kp2_2026-11-09/artifact_manifest.json",
+    "materials/kp2_2026-11-09/report_source.md",
+    "materials/kp2_2026-11-09/speech_and_demo.md"
+  ],
+  "audit_scope_note": "Prior baseline excludes ignored tmp/output and caches. Their global byte preservation is not claimed; final authored files and all305 protected files are checked explicitly.",
+  "own_materials_manifest_verified": true,
+  "materials_archive_verified": true,
+  "full_primary_pdf_or_pages_in_materials": false,
+  "weights_index_secrets_in_materials": false,
+  "new_model_calls": 0,
+  "submission_performed": false,
+  "stage15_performed": false,
+  "next_prompt": {
+    "path": "prompts/step15_submit_and_preserve_receipt.md",
+    "sha256": "a76de94cd8048ca35ce1856fb5988491580a725bcede87cb1a0d776d30f5bf9d",
+    "write": "last operation of finalization after all checks, verified from exact bytes"
+  },
+  "human_reviewed": false,
+  "stage14_status": "complete_as_local_draft_without_claiming_current_course_rules"
+}

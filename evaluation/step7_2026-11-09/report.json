@@ -1,0 +1,131 @@
+{
+  "checked_at": "2026-11-08T23:04:04.132287+00:00",
+  "python": "3.14.7",
+  "unit_tests_passed": 98,
+  "cli_cases": [
+    {
+      "case": "direct_real",
+      "kind": "real_manual_reference",
+      "exit_code": 0,
+      "status": "answered",
+      "reason_code": "ok",
+      "growth_pct_display": "15.30",
+      "used_search_ranks": [],
+      "passed": true
+    },
+    {
+      "case": "live_search_real",
+      "kind": "real_manual_reference",
+      "exit_code": 0,
+      "status": "answered",
+      "reason_code": "ok",
+      "growth_pct_display": "15.30",
+      "used_search_ranks": [
+        2
+      ],
+      "passed": true
+    },
+    {
+      "case": "top_one_does_not_cover_evidence",
+      "kind": "real_search_restricted",
+      "exit_code": 0,
+      "status": "missing",
+      "reason_code": "verified_evidence_not_retrieved",
+      "growth_pct_display": null,
+      "used_search_ranks": [],
+      "passed": true
+    },
+    {
+      "case": "historical_unknown_direct",
+      "kind": "real_snapshot_historical_request",
+      "exit_code": 0,
+      "status": "missing",
+      "reason_code": "publication_unknown",
+      "growth_pct_display": null,
+      "used_search_ranks": [],
+      "passed": true
+    },
+    {
+      "case": "historical_unknown_search",
+      "kind": "real_snapshot_historical_request",
+      "exit_code": 0,
+      "status": "missing",
+      "reason_code": "publication_unknown",
+      "growth_pct_display": null,
+      "used_search_ranks": [],
+      "passed": true
+    },
+    {
+      "case": "unknown_id",
+      "kind": "invalid_tool_input",
+      "exit_code": 2,
+      "status": "error",
+      "reason_code": "invalid_financial_input",
+      "growth_pct_display": null,
+      "used_search_ranks": [],
+      "passed": true
+    },
+    {
+      "case": "wrong_order",
+      "kind": "invalid_period_binding",
+      "exit_code": 0,
+      "status": "conflict",
+      "reason_code": "input_fact_context_mismatch",
+      "growth_pct_display": null,
+      "used_search_ranks": [],
+      "passed": true
+    },
+    {
+      "case": "twenty_percent",
+      "kind": "synthetic_not_issuer_data",
+      "exit_code": 0,
+      "status": "answered",
+      "reason_code": "ok",
+      "growth_pct_display": "20.00",
+      "used_search_ranks": [],
+      "passed": true
+    },
+    {
+      "case": "zero_base",
+      "kind": "synthetic_not_issuer_data",
+      "exit_code": 0,
+      "status": "unsupported",
+      "reason_code": "nonpositive_base",
+      "growth_pct_display": null,
+      "used_search_ranks": [],
+      "passed": true
+    },
+    {
+      "case": "negative_base",
+      "kind": "synthetic_not_issuer_data",
+      "exit_code": 0,
+      "status": "unsupported",
+      "reason_code": "nonpositive_base",
+      "growth_pct_display": null,
+      "used_search_ranks": [],
+      "passed": true
+    },
+    {
+      "case": "missing_value",
+      "kind": "synthetic_not_issuer_data",
+      "exit_code": 0,
+      "status": "missing",
+      "reason_code": "value_missing",
+      "growth_pct_display": null,
+      "used_search_ranks": [],
+      "passed": true
+    }
+  ],
+  "financial_bundle_unchanged": true,
+  "reference_calculator": "contracts.answer reused without a second arithmetic implementation",
+  "limits": "open deterministic checks; not agent/LLM quality metrics; facts remain manually verified",
+  "sha256": {
+    "src/financial_assistant/contracts.py": "5894effc517efdbddb3b9a10d4bd7268f9d277bde283e2e476fe9ea0b8a55ac2",
+    "src/financial_assistant/finance.py": "2f19dec687077097544c0e0149af1877981ecfcbbeabe7debe8936739608d6e4",
+    "src/financial_assistant/retrieval.py": "1606742a9819c3a4e83f3a1538c1c13c958dfff0f263f77c5d2be469c53e7564",
+    "scripts/calculate_financial.py": "d05c31bb646704492d28568df4e762c6bc7f5e92d8e0b23ff0ab503b54be9579",
+    "scripts/check_step7.py": "dde435a304a9970cb52bf053b42cbe30d11b46edba258ff876c2e4937c46db83",
+    "tests/test_finance.py": "87ce1a9e0cbf880df00f3210118f875148a4f4b42b01d2661799edafd5358252",
+    "data/examples/reference_bundle.json": "93e51d6dc834e4627dce6e6c75c43aec465cd2c9308bac35d443040b5a394c3a"
+  }
+}

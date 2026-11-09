@@ -1,0 +1,484 @@
+{
+  "grading_version": "step12-structured-grader-v1",
+  "run_manifest_sha256": "9ac4a8d8a8d683c8ed932b006199d0f1078ca9c61f3473fc54da8c2ea20acf86",
+  "collection_sha256": "a803c5503a14fa9e8330ecde06a5a90871d25a7adc9d2f963af4ff454d131ac4",
+  "rows": [
+    {
+      "case_id": "QA03",
+      "variant": "B",
+      "suite": "financial_qa",
+      "split": "dev_open",
+      "origin": "real",
+      "elapsed_s": 0.004441200000655954,
+      "availability": "executed",
+      "passed": true,
+      "issues": [],
+      "confirmed": 4,
+      "checked": 4,
+      "actual_status": "answered",
+      "actual_reason": "ok",
+      "execution_status": "answered",
+      "execution_reason": "ok"
+    },
+    {
+      "case_id": "QA06",
+      "variant": "B",
+      "suite": "financial_qa",
+      "split": "dev_open",
+      "origin": "real",
+      "elapsed_s": 0.0023717000003671274,
+      "availability": "executed",
+      "passed": true,
+      "issues": [],
+      "confirmed": 0,
+      "checked": 0,
+      "actual_status": "missing",
+      "actual_reason": "publication_unknown",
+      "execution_status": "missing",
+      "execution_reason": "publication_unknown"
+    },
+    {
+      "case_id": "QA07",
+      "variant": "B",
+      "suite": "financial_qa",
+      "split": "dev_open",
+      "origin": "real",
+      "elapsed_s": 0.003871900000376627,
+      "availability": "executed",
+      "passed": true,
+      "issues": [],
+      "confirmed": 0,
+      "checked": 0,
+      "actual_status": "missing",
+      "actual_reason": "verified_evidence_not_retrieved",
+      "execution_status": "missing",
+      "execution_reason": "verified_evidence_not_retrieved"
+    },
+    {
+      "case_id": "UI01",
+      "variant": "B",
+      "suite": "interface",
+      "split": "dev_open",
+      "origin": "real",
+      "elapsed_s": 4.1300001612398773e-05,
+      "availability": "executed",
+      "passed": true,
+      "issues": [],
+      "confirmed": 0,
+      "checked": 0,
+      "actual_status": "clarification",
+      "actual_reason": "period_needs_clarification",
+      "execution_status": "clarification",
+      "execution_reason": "period_needs_clarification"
+    },
+    {
+      "case_id": "UI01",
+      "variant": "C/LLM",
+      "suite": "interface",
+      "split": "dev_open",
+      "origin": "real",
+      "elapsed_s": 0.02350560000013502,
+      "availability": "executed",
+      "passed": true,
+      "issues": [],
+      "confirmed": 0,
+      "checked": 0,
+      "actual_status": "clarification",
+      "actual_reason": "period_needs_clarification",
+      "execution_status": "clarification",
+      "execution_reason": "period_needs_clarification",
+      "usage": {
+        "decision_attempts": 0,
+        "chat_requests_started": 0,
+        "chat_responses_received": 0,
+        "usage_complete": true,
+        "observed_input_tokens": 0,
+        "observed_output_tokens": 0,
+        "cost": null,
+        "load_duration_ns": []
+      }
+    },
+    {
+      "case_id": "QA09",
+      "variant": "finance_component",
+      "suite": "financial_qa",
+      "split": "dev_open",
+      "origin": "self_created_synthetic",
+      "elapsed_s": 0.000620699998762575,
+      "availability": "executed",
+      "passed": true,
+      "issues": [],
+      "confirmed": 0,
+      "checked": 0,
+      "actual_status": "missing",
+      "actual_reason": "value_missing",
+      "execution_status": "missing",
+      "execution_reason": "value_missing"
+    },
+    {
+      "case_id": "QA10",
+      "variant": "finance_component",
+      "suite": "financial_qa",
+      "split": "dev_open",
+      "origin": "self_created_synthetic",
+      "elapsed_s": 0.0006248999998206273,
+      "availability": "executed",
+      "passed": true,
+      "issues": [],
+      "confirmed": 0,
+      "checked": 0,
+      "actual_status": "conflict",
+      "actual_reason": "incompatible_units",
+      "execution_status": "conflict",
+      "execution_reason": "incompatible_units"
+    },
+    {
+      "case_id": "SC01",
+      "variant": "simulator",
+      "suite": "scenario",
+      "split": "dev_open",
+      "origin": "self_created_synthetic",
+      "elapsed_s": 0.00375259999964328,
+      "availability": "executed",
+      "passed": true,
+      "issues": [],
+      "confirmed": 0,
+      "checked": 0,
+      "actual_status": "completed",
+      "actual_reason": "signal_true",
+      "execution_status": "completed",
+      "execution_reason": "signal_true"
+    },
+    {
+      "case_id": "SC02",
+      "variant": "simulator",
+      "suite": "scenario",
+      "split": "evaluation_reserved",
+      "origin": "self_created_synthetic",
+      "elapsed_s": 0.0033356999992975034,
+      "availability": "executed",
+      "passed": true,
+      "issues": [],
+      "confirmed": 0,
+      "checked": 0,
+      "actual_status": "completed",
+      "actual_reason": "signal_true",
+      "execution_status": "completed",
+      "execution_reason": "signal_true"
+    },
+    {
+      "case_id": "QA03",
+      "variant": "C/LLM",
+      "suite": "financial_qa",
+      "split": "dev_open",
+      "origin": "real",
+      "elapsed_s": 0.2793005000003177,
+      "availability": "executed",
+      "passed": false,
+      "issues": [
+        "agent_execution_error:local_model_version_mismatch",
+        "no_financial_payload"
+      ],
+      "confirmed": 0,
+      "checked": 0,
+      "actual_status": "error",
+      "actual_reason": "local_model_version_mismatch",
+      "execution_status": "error",
+      "execution_reason": "local_model_version_mismatch",
+      "usage": {
+        "decision_attempts": 1,
+        "chat_requests_started": 0,
+        "chat_responses_received": 0,
+        "usage_complete": true,
+        "observed_input_tokens": 0,
+        "observed_output_tokens": 0,
+        "cost": null,
+        "load_duration_ns": []
+      }
+    },
+    {
+      "case_id": "QA06",
+      "variant": "C/LLM",
+      "suite": "financial_qa",
+      "split": "dev_open",
+      "origin": "real",
+      "elapsed_s": 0.2354646000003413,
+      "availability": "executed",
+      "passed": false,
+      "issues": [
+        "agent_execution_error:local_model_version_mismatch",
+        "no_financial_payload"
+      ],
+      "confirmed": 0,
+      "checked": 0,
+      "actual_status": "error",
+      "actual_reason": "local_model_version_mismatch",
+      "execution_status": "error",
+      "execution_reason": "local_model_version_mismatch",
+      "usage": {
+        "decision_attempts": 1,
+        "chat_requests_started": 0,
+        "chat_responses_received": 0,
+        "usage_complete": true,
+        "observed_input_tokens": 0,
+        "observed_output_tokens": 0,
+        "cost": null,
+        "load_duration_ns": []
+      }
+    },
+    {
+      "case_id": "QA07",
+      "variant": "C/LLM",
+      "suite": "financial_qa",
+      "split": "dev_open",
+      "origin": "real",
+      "elapsed_s": 0.22341269999924407,
+      "availability": "executed",
+      "passed": false,
+      "issues": [
+        "agent_execution_error:local_model_version_mismatch",
+        "no_financial_payload"
+      ],
+      "confirmed": 0,
+      "checked": 0,
+      "actual_status": "error",
+      "actual_reason": "local_model_version_mismatch",
+      "execution_status": "error",
+      "execution_reason": "local_model_version_mismatch",
+      "usage": {
+        "decision_attempts": 1,
+        "chat_requests_started": 0,
+        "chat_responses_received": 0,
+        "usage_complete": true,
+        "observed_input_tokens": 0,
+        "observed_output_tokens": 0,
+        "cost": null,
+        "load_duration_ns": []
+      }
+    }
+  ],
+  "metrics": {
+    "B": {
+      "numeric_accuracy": {
+        "correct": 1,
+        "total": 1,
+        "fraction": "1/1",
+        "status": "measured"
+      },
+      "correct_refusals": {
+        "correct": 2,
+        "total": 2,
+        "fraction": "2/2",
+        "status": "measured"
+      },
+      "claim_confirmation": {
+        "correct": 4,
+        "total": 4,
+        "fraction": "4/4",
+        "status": "measured"
+      },
+      "reserved_financial": {
+        "correct": 0,
+        "total": 0,
+        "fraction": null,
+        "status": "not_measured"
+      },
+      "supported_financial_coverage": "3/10",
+      "failed_answerable_cases": []
+    },
+    "C/LLM": {
+      "numeric_accuracy": {
+        "correct": 0,
+        "total": 1,
+        "fraction": "0/1",
+        "status": "measured"
+      },
+      "correct_refusals": {
+        "correct": 0,
+        "total": 2,
+        "fraction": "0/2",
+        "status": "measured"
+      },
+      "claim_confirmation": {
+        "correct": 0,
+        "total": 0,
+        "fraction": null,
+        "status": "not_measured"
+      },
+      "reserved_financial": {
+        "correct": 0,
+        "total": 0,
+        "fraction": null,
+        "status": "not_measured"
+      },
+      "supported_financial_coverage": "3/10",
+      "failed_answerable_cases": [
+        "QA03"
+      ]
+    },
+    "B/interface": {
+      "correct": 1,
+      "total": 1,
+      "fraction": "1/1",
+      "status": "measured"
+    },
+    "C/LLM/interface": {
+      "correct": 1,
+      "total": 1,
+      "fraction": "1/1",
+      "status": "measured"
+    },
+    "finance_component/financial_qa": {
+      "correct": 2,
+      "total": 2,
+      "fraction": "2/2",
+      "status": "measured"
+    },
+    "simulator/scenario": {
+      "correct": 2,
+      "total": 2,
+      "fraction": "2/2",
+      "status": "measured"
+    }
+  },
+  "retrieval": [
+    {
+      "case_id": "R1",
+      "query": "выручка 2024 2023",
+      "top_k": 1,
+      "required_evidence_covered": [],
+      "required_count": 2,
+      "covered_count": 0,
+      "both_found": false,
+      "elapsed_s": 0.002972500000396394,
+      "hits": [
+        {
+          "rank": 1,
+          "fragment_id": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1:11:left_half_of_spread",
+          "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "pdf_page": 11,
+          "page_region": "left_half_of_spread",
+          "verification_status": "candidate",
+          "existing_manual_evidence_ids": []
+        }
+      ]
+    },
+    {
+      "case_id": "R5",
+      "query": "выручка 2024 2023",
+      "top_k": 5,
+      "required_evidence_covered": [
+        "phosagro-revenue-2023-p4",
+        "phosagro-revenue-2024-p4"
+      ],
+      "required_count": 2,
+      "covered_count": 2,
+      "both_found": true,
+      "elapsed_s": 0.0025190999986079987,
+      "hits": [
+        {
+          "rank": 1,
+          "fragment_id": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1:11:left_half_of_spread",
+          "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "pdf_page": 11,
+          "page_region": "left_half_of_spread",
+          "verification_status": "candidate",
+          "existing_manual_evidence_ids": []
+        },
+        {
+          "rank": 2,
+          "fragment_id": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1:4:left_half_of_spread",
+          "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "pdf_page": 4,
+          "page_region": "left_half_of_spread",
+          "verification_status": "candidate",
+          "existing_manual_evidence_ids": [
+            "phosagro-revenue-2023-p4",
+            "phosagro-revenue-2024-p4"
+          ]
+        },
+        {
+          "rank": 3,
+          "fragment_id": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1:10:left_half_of_spread",
+          "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "pdf_page": 10,
+          "page_region": "left_half_of_spread",
+          "verification_status": "candidate",
+          "existing_manual_evidence_ids": []
+        },
+        {
+          "rank": 4,
+          "fragment_id": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1:9:right_half_of_spread",
+          "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "pdf_page": 9,
+          "page_region": "right_half_of_spread",
+          "verification_status": "candidate",
+          "existing_manual_evidence_ids": []
+        },
+        {
+          "rank": 5,
+          "fragment_id": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1:19:left_half_of_spread",
+          "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "pdf_page": 19,
+          "page_region": "left_half_of_spread",
+          "verification_status": "candidate",
+          "existing_manual_evidence_ids": []
+        }
+      ]
+    }
+  ],
+  "real_source_safety": [
+    {
+      "case_id": "SAFE01",
+      "passed": true,
+      "output": {
+        "scenario_result_schema_version": "0.1",
+        "label": "ПРОВЕРКА НАСТОЯЩЕГО ИСТОЧНИКА — ТОРГОВЛИ НЕТ",
+        "status": "blocked",
+        "reason_code": "publication_unknown",
+        "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+        "document_version": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+        "decision_at": "2025-06-04T19:30:00+03:00",
+        "ledger": [],
+        "return_pct": null,
+        "legacy_gate": {
+          "status": "blocked",
+          "reasons": [
+            "publication_of_exact_version_unknown",
+            "no_valid_calculation",
+            "calendar_and_prices_missing",
+            "simulation_not_implemented"
+          ]
+        }
+      },
+      "elapsed_s": 0.000640600001133862
+    }
+  ],
+  "unsupported_financial_ids": [
+    "QA01",
+    "QA02",
+    "QA04",
+    "QA05",
+    "QA08"
+  ],
+  "monetary_cost": null,
+  "human_reviewed": false,
+  "limitations": [
+    "One real PDF/two facts; only 3/10 financial tasks supported",
+    "All financial B/C cases dev/open; no supported reserved financial cases",
+    "Single pass, one numeric question; no market quality/advantage claim",
+    "Separate interface/component/simulator denominators; structured renderer, not general free-text QA"
+  ]
+}

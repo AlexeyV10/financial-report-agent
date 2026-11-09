@@ -1,0 +1,306 @@
+[
+  {
+    "key": "QA03-B",
+    "case_id": "QA03",
+    "variant": "B",
+    "suite": "financial_qa",
+    "origin": "real",
+    "split": "dev_open",
+    "asset_path": "data/examples/reference_bundle.json",
+    "reproduction": {
+      "entrypoint": "user_query",
+      "parameters": {
+        "company": "ФосАгро",
+        "scope": "группа",
+        "standard": "МСФО",
+        "metric": "выручка",
+        "year": "2024",
+        "compare": "2023",
+        "mode": "snapshot",
+        "as_of": null,
+        "source": "search"
+      },
+      "top_k": 5
+    }
+  },
+  {
+    "key": "QA06-B",
+    "case_id": "QA06",
+    "variant": "B",
+    "suite": "financial_qa",
+    "origin": "real",
+    "split": "dev_open",
+    "asset_path": "data/examples/reference_bundle.json",
+    "reproduction": {
+      "entrypoint": "user_query",
+      "parameters": {
+        "company": "ФосАгро",
+        "scope": "группа",
+        "standard": "МСФО",
+        "metric": "выручка",
+        "year": "2024",
+        "compare": "2023",
+        "mode": "historical",
+        "as_of": "2025-02-14T10:00:00+03:00",
+        "source": "search"
+      },
+      "top_k": 5
+    }
+  },
+  {
+    "key": "QA07-B",
+    "case_id": "QA07",
+    "variant": "B",
+    "suite": "financial_qa",
+    "origin": "real",
+    "split": "dev_open",
+    "asset_path": "data/examples/reference_bundle.json",
+    "reproduction": {
+      "entrypoint": "user_query",
+      "parameters": {
+        "company": "ФосАгро",
+        "scope": "группа",
+        "standard": "МСФО",
+        "metric": "выручка",
+        "year": "2024",
+        "compare": "2023",
+        "mode": "snapshot",
+        "as_of": null,
+        "source": "search"
+      },
+      "top_k": 1
+    }
+  },
+  {
+    "key": "UI01-B",
+    "case_id": "UI01",
+    "variant": "B",
+    "suite": "interface",
+    "origin": "real",
+    "split": "dev_open",
+    "asset_path": "data/examples/reference_bundle.json",
+    "reproduction": {
+      "entrypoint": "user_query",
+      "parameters": {
+        "company": "ФосАгро",
+        "scope": "группа",
+        "standard": "МСФО",
+        "metric": "выручка",
+        "year": "9 месяцев 2024",
+        "compare": "2023",
+        "mode": "snapshot",
+        "as_of": null,
+        "source": "search"
+      },
+      "top_k": 5
+    }
+  },
+  {
+    "key": "UI01-C_LLM",
+    "case_id": "UI01",
+    "variant": "C/LLM",
+    "suite": "interface",
+    "origin": "real",
+    "split": "dev_open",
+    "asset_path": "data/examples/reference_bundle.json",
+    "reproduction": {
+      "entrypoint": "user_query",
+      "parameters": {
+        "company": "ФосАгро",
+        "scope": "группа",
+        "standard": "МСФО",
+        "metric": "выручка",
+        "year": "9 месяцев 2024",
+        "compare": "2023",
+        "mode": "snapshot",
+        "as_of": null,
+        "source": "search"
+      },
+      "top_k": 5
+    }
+  },
+  {
+    "key": "QA09-finance_component",
+    "case_id": "QA09",
+    "variant": "finance_component",
+    "suite": "financial_qa",
+    "origin": "self_created_synthetic",
+    "split": "dev_open",
+    "asset_path": "data/question_sets/kp2_v1/assets/missing-bundle.json",
+    "reproduction": {
+      "entrypoint": "finance_tool",
+      "parameters": {
+        "operation_id": "annual_growth_v1",
+        "previous_fact_id": "synthetic-qa-missing-2023",
+        "current_fact_id": "synthetic-qa-missing-2024",
+        "mode": "document_snapshot",
+        "as_of": null
+      },
+      "top_k": null
+    }
+  },
+  {
+    "key": "QA10-finance_component",
+    "case_id": "QA10",
+    "variant": "finance_component",
+    "suite": "financial_qa",
+    "origin": "self_created_synthetic",
+    "split": "dev_open",
+    "asset_path": "data/question_sets/kp2_v1/assets/conflict-bundle.json",
+    "reproduction": {
+      "entrypoint": "finance_tool",
+      "parameters": {
+        "operation_id": "annual_growth_v1",
+        "previous_fact_id": "synthetic-qa-conflict-2023",
+        "current_fact_id": "synthetic-qa-conflict-2024",
+        "mode": "document_snapshot",
+        "as_of": null
+      },
+      "top_k": null
+    }
+  },
+  {
+    "key": "SC01-simulator",
+    "case_id": "SC01",
+    "variant": "simulator",
+    "suite": "scenario",
+    "origin": "self_created_synthetic",
+    "split": "dev_open",
+    "asset_path": "data/synthetic/scenario_v1.json",
+    "reproduction": {
+      "entrypoint": "synthetic_simulation",
+      "parameters": null,
+      "top_k": null
+    }
+  },
+  {
+    "key": "SC02-simulator",
+    "case_id": "SC02",
+    "variant": "simulator",
+    "suite": "scenario",
+    "origin": "self_created_synthetic",
+    "split": "evaluation_reserved",
+    "asset_path": "data/question_sets/kp2_v1/assets/reserved-costs-scenario.json",
+    "reproduction": {
+      "entrypoint": "synthetic_simulation",
+      "parameters": null,
+      "top_k": null
+    }
+  },
+  {
+    "key": "R1",
+    "case_id": "R1",
+    "variant": "retrieval_component",
+    "suite": "retrieval_control",
+    "origin": "real",
+    "split": "dev_open",
+    "asset_path": "data/examples/reference_bundle.json",
+    "reproduction": {
+      "entrypoint": "retrieval_component",
+      "parameters": null,
+      "top_k": 1
+    }
+  },
+  {
+    "key": "R5",
+    "case_id": "R5",
+    "variant": "retrieval_component",
+    "suite": "retrieval_control",
+    "origin": "real",
+    "split": "dev_open",
+    "asset_path": "data/examples/reference_bundle.json",
+    "reproduction": {
+      "entrypoint": "retrieval_component",
+      "parameters": null,
+      "top_k": 5
+    }
+  },
+  {
+    "key": "SAFE01",
+    "case_id": "SAFE01",
+    "variant": "real_safety",
+    "suite": "scenario_safety_control",
+    "origin": "real",
+    "split": "dev_open",
+    "asset_path": "data/examples/reference_bundle.json",
+    "reproduction": {
+      "entrypoint": "real_safety",
+      "parameters": {
+        "as_of": "2025-06-04T19:30:00+03:00"
+      },
+      "top_k": null
+    }
+  },
+  {
+    "key": "QA03-C_LLM",
+    "case_id": "QA03",
+    "variant": "C/LLM",
+    "suite": "financial_qa",
+    "origin": "real",
+    "split": "dev_open",
+    "asset_path": "data/examples/reference_bundle.json",
+    "reproduction": {
+      "entrypoint": "user_query",
+      "parameters": {
+        "company": "ФосАгро",
+        "scope": "группа",
+        "standard": "МСФО",
+        "metric": "выручка",
+        "year": "2024",
+        "compare": "2023",
+        "mode": "snapshot",
+        "as_of": null,
+        "source": "search"
+      },
+      "top_k": 5
+    }
+  },
+  {
+    "key": "QA06-C_LLM",
+    "case_id": "QA06",
+    "variant": "C/LLM",
+    "suite": "financial_qa",
+    "origin": "real",
+    "split": "dev_open",
+    "asset_path": "data/examples/reference_bundle.json",
+    "reproduction": {
+      "entrypoint": "user_query",
+      "parameters": {
+        "company": "ФосАгро",
+        "scope": "группа",
+        "standard": "МСФО",
+        "metric": "выручка",
+        "year": "2024",
+        "compare": "2023",
+        "mode": "historical",
+        "as_of": "2025-02-14T10:00:00+03:00",
+        "source": "search"
+      },
+      "top_k": 5
+    }
+  },
+  {
+    "key": "QA07-C_LLM",
+    "case_id": "QA07",
+    "variant": "C/LLM",
+    "suite": "financial_qa",
+    "origin": "real",
+    "split": "dev_open",
+    "asset_path": "data/examples/reference_bundle.json",
+    "reproduction": {
+      "entrypoint": "user_query",
+      "parameters": {
+        "company": "ФосАгро",
+        "scope": "группа",
+        "standard": "МСФО",
+        "metric": "выручка",
+        "year": "2024",
+        "compare": "2023",
+        "mode": "snapshot",
+        "as_of": null,
+        "source": "search"
+      },
+      "top_k": 1
+    }
+  }
+]

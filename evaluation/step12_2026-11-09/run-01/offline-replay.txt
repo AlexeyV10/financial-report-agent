@@ -1,0 +1,87 @@
+{
+  "metrics": {
+    "B": {
+      "numeric_accuracy": {
+        "correct": 1,
+        "total": 1,
+        "fraction": "1/1",
+        "status": "measured"
+      },
+      "correct_refusals": {
+        "correct": 2,
+        "total": 2,
+        "fraction": "2/2",
+        "status": "measured"
+      },
+      "claim_confirmation": {
+        "correct": 4,
+        "total": 4,
+        "fraction": "4/4",
+        "status": "measured"
+      },
+      "reserved_financial": {
+        "correct": 0,
+        "total": 0,
+        "fraction": null,
+        "status": "not_measured"
+      },
+      "supported_financial_coverage": "3/10",
+      "failed_answerable_cases": []
+    },
+    "C/LLM": {
+      "numeric_accuracy": {
+        "correct": 0,
+        "total": 1,
+        "fraction": "0/1",
+        "status": "measured"
+      },
+      "correct_refusals": {
+        "correct": 0,
+        "total": 2,
+        "fraction": "0/2",
+        "status": "measured"
+      },
+      "claim_confirmation": {
+        "correct": 0,
+        "total": 0,
+        "fraction": null,
+        "status": "not_measured"
+      },
+      "reserved_financial": {
+        "correct": 0,
+        "total": 0,
+        "fraction": null,
+        "status": "not_measured"
+      },
+      "supported_financial_coverage": "3/10",
+      "failed_answerable_cases": [
+        "QA03"
+      ]
+    },
+    "B/interface": {
+      "correct": 1,
+      "total": 1,
+      "fraction": "1/1",
+      "status": "measured"
+    },
+    "C/LLM/interface": {
+      "correct": 1,
+      "total": 1,
+      "fraction": "1/1",
+      "status": "measured"
+    },
+    "finance_component/financial_qa": {
+      "correct": 2,
+      "total": 2,
+      "fraction": "2/2",
+      "status": "measured"
+    },
+    "simulator/scenario": {
+      "correct": 2,
+      "total": 2,
+      "fraction": "2/2",
+      "status": "measured"
+    }
+  },
+  "offline_replay_matches_saved": true
+}

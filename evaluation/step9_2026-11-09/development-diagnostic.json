@@ -1,0 +1,8 @@
+{
+  "purpose": "One local native-tool format diagnostic; not an agent demonstration or quality test",
+  "model": "qwen3:4b",
+  "done_reason": "length",
+  "input_tokens": 166,
+  "output_tokens": 256,
+  "content_saved_in_evaluation": false
+}

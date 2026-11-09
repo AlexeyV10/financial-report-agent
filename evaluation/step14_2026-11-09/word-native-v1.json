@@ -1,0 +1,10 @@
+{
+  "source_read_only": true,
+  "engine": "Word",
+  "pages": 10,
+  "existing_user_documents_closed": false,
+  "exported_at": "2026-11-09T10:33:51.4441495+00:00",
+  "input": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\materials\\kp2_2026-11-09\\KP2_report.docx",
+  "source_sha256": "7ABF21C6FBCDB6ED4F0953B7E9186C5438DC94EF24389897D47FC602E2097E24",
+  "output": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step14\\build\\report-native-v1.pdf"
+}

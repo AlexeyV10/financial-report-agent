@@ -1,0 +1,24 @@
+{
+  "unit_tests": 198,
+  "cli_passed": 25,
+  "regressions_passed": 4,
+  "unchanged_existing_files_count": 25,
+  "intentional_existing_changes": [
+    "src/financial_assistant/user_path.py",
+    "tests/test_user_path.py"
+  ],
+  "current_module_hashes_match_executed_trace": true,
+  "new_files_sha256": {
+    "src/financial_assistant/simulation.py": "0e7b69c6c69021648485c33f7cbb95bf27909078ec9e6e24e88d4c35c1a45801",
+    "src/financial_assistant/simulation_view.py": "48cf83bce3d64909d2c321fbd196f45650fd7552ea1e32073742ff1142053065",
+    "scripts/simulate_scenario.py": "1eea6282b8d40c99c743b451088334135cf50739e4f06c213d7e4a8eb38c80b2",
+    "scripts/prepare_synthetic_fixture.py": "fa994c4527f60efc65e3665d7129fd1c5c673f381cea21ece2115db9d2a107f0",
+    "scripts/check_step10.py": "ba0b0fe3517ba2ad2a9212fdacbf5edfeb6abfb701a0d975b5ebc12e275bf4af",
+    "tests/test_simulation.py": "ad45fd3696edd8948be25696b51e6b7026f84b8e024d04293ccab5aec3804323",
+    "data/synthetic/scenario_v1.json": "b864e1ca6c9e82b62425919199ae9d3d59fee6f3621a258be6933d7422e474f2",
+    "data/synthetic/frozen_rule_v1.json": "560192b6797dd5f4694d1da2c90338eceffb35a13815af84f3bb07aa15c317d0",
+    "data/synthetic/manual_expected_v1.json": "cc3d6b748d663dae2203a587126558b519a9e2033fcf87c2ab1b7f02533728b3"
+  },
+  "model_calls": 0,
+  "scope": "Synthetic virtual execution only; real-source blocked without prices/trades/return."
+}

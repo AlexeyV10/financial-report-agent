@@ -1,0 +1,299 @@
+{
+  "unit_tests": {
+    "run": 198,
+    "successful": true
+  },
+  "cli": [
+    {
+      "case": "normal",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "status": "completed",
+      "reason": "signal_true"
+    },
+    {
+      "case": "real_source",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "status": "blocked",
+      "reason": "publication_unknown"
+    },
+    {
+      "case": "no_signal",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "status": "completed",
+      "reason": "signal_false"
+    },
+    {
+      "case": "missing_entry_price",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "status": "blocked",
+      "reason": "missing_price"
+    },
+    {
+      "case": "missing_final_price",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "status": "blocked",
+      "reason": "missing_price"
+    },
+    {
+      "case": "future_publication",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "status": "blocked",
+      "reason": "not_yet_available"
+    },
+    {
+      "case": "unknown_publication",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "status": "blocked",
+      "reason": "publication_unknown"
+    },
+    {
+      "case": "date_only",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "status": "completed",
+      "reason": "signal_true"
+    },
+    {
+      "case": "weekend",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "status": "completed",
+      "reason": "signal_true"
+    },
+    {
+      "case": "insufficient_cash",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "status": "blocked",
+      "reason": "insufficient_cash"
+    },
+    {
+      "case": "zero_lot",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "status": "blocked",
+      "reason": "zero_lot"
+    },
+    {
+      "case": "invalid_fee",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true,
+      "status": "error",
+      "reason": "invalid_fee"
+    },
+    {
+      "case": "wrong_currency",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true,
+      "status": "error",
+      "reason": "currency_mismatch"
+    },
+    {
+      "case": "corporate_action",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true,
+      "status": "error",
+      "reason": "unsupported_instrument_or_actions"
+    },
+    {
+      "case": "slippage_fixed_quantity",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "status": "completed",
+      "reason": "signal_true"
+    },
+    {
+      "case": "naive_date",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true,
+      "status": "error",
+      "reason": "invalid_timestamp"
+    },
+    {
+      "case": "real_synthetic_mixing",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true,
+      "status": "error",
+      "reason": "real_synthetic_mixing_forbidden"
+    },
+    {
+      "case": "invalid_json",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true,
+      "status": null,
+      "reason": null
+    },
+    {
+      "case": "missing_fixture",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true,
+      "status": null,
+      "reason": null
+    },
+    {
+      "case": "synthetic_as_of_not_ignored",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true,
+      "status": null,
+      "reason": null
+    },
+    {
+      "case": "real_empty_as_of",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true,
+      "status": null,
+      "reason": null
+    },
+    {
+      "case": "real_fixture_forbidden",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true,
+      "status": null,
+      "reason": null
+    },
+    {
+      "case": "protect_reference",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true,
+      "status": null,
+      "reason": null
+    },
+    {
+      "case": "protect_code",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true,
+      "status": null,
+      "reason": null
+    },
+    {
+      "case": "unknown_code_argument",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true,
+      "status": null,
+      "reason": null
+    }
+  ],
+  "regressions": [
+    {
+      "case": "B_normal",
+      "passed": true
+    },
+    {
+      "case": "B_historical",
+      "passed": true
+    },
+    {
+      "case": "C_mock_normal",
+      "passed": true
+    },
+    {
+      "case": "C_mock_historical",
+      "passed": true
+    }
+  ],
+  "independent_arithmetic": {
+    "method": "Fraction and literal control from user; independent of simulator Decimal/ledger implementation",
+    "final_cash": "10098",
+    "return_pct": "49/50",
+    "cash_after_buy": "7999",
+    "fees": "2",
+    "passed": true
+  },
+  "frozen_rule_sha256": "b864e1ca6c9e82b62425919199ae9d3d59fee6f3621a258be6933d7422e474f2",
+  "protected_sha256": {
+    "data/examples/cases.json": "ea51c0a472216b52fdedd3bcee6797e6c26922d474d9e9f0a06d916c50536277",
+    "data/examples/reference_bundle.json": "93e51d6dc834e4627dce6e6c75c43aec465cd2c9308bac35d443040b5a394c3a",
+    "scripts/agent_assistant.py": "13af35670ab1511be87063987a44945e34a0738e829e1c1d340a001c2a243f99",
+    "scripts/assistant.py": "f3840332a8fc3f7c23fa19571b8a7fbbfb150c4bb3148f51a6fea07309370970",
+    "scripts/build_review_archive.py": "f9bfcfb16b66b59d2bef9a52a1749e55f1fe7f66bb73228126f818cf543b8650",
+    "scripts/calculate_financial.py": "d05c31bb646704492d28568df4e762c6bc7f5e92d8e0b23ff0ab503b54be9579",
+    "scripts/check_review.py": "81e881886dfc9dd7436335be1558d06179fae813ce4cb226d77a34b7ff7ef4cd",
+    "scripts/check_stage1.py": "1b2c6fa2af366f455d072a33ce46de3adf62410cf3018e34aff5134f70fa41dd",
+    "scripts/check_step6.py": "65d320c0cd197f0196545889427b0880657a9309ff2b091f09871710dd0029b7",
+    "scripts/check_step7.py": "dde435a304a9970cb52bf053b42cbe30d11b46edba258ff876c2e4937c46db83",
+    "scripts/check_step8.py": "074f40c91487e5e195ee99fbdbc5fad4a6e75e8d6bca5321fe6429d5a40bafec",
+    "scripts/check_step9.py": "b9ea1f1a1d42153d4fdaf124530a8b1822b704801f9d7d1ab1a32afcdb148996",
+    "scripts/extract_pdf.py": "cbab9270e0e1a6ba5a0c6d9384f28dcf4a8ce2c5e7db3f06aab0ca6cb81e5539",
+    "scripts/prepare_manual_fixture.py": "cfb10766d99b11c108929aacf108eb642af5da178c4750149127030c980848f0",
+    "scripts/search_documents.py": "b1dde7b1eae1c1d15865e1e2539139876aa6057b5357e6c244202fd4552fd4fe",
+    "src/financial_assistant/__init__.py": "eea0bfd15364208285f19580630c0e9312142e1bc876cf5fc23af7fc473834e7",
+    "src/financial_assistant/agent.py": "d851b643ba501a9a73e51076b936cd0f7907e68b9ee0bb55904eb2a8f0c40efb",
+    "src/financial_assistant/contracts.py": "5894effc517efdbddb3b9a10d4bd7268f9d277bde283e2e476fe9ea0b8a55ac2",
+    "src/financial_assistant/finance.py": "2f19dec687077097544c0e0149af1877981ecfcbbeabe7debe8936739608d6e4",
+    "src/financial_assistant/local_model.py": "361c0fa61d5b9682c0946a61a8bdc69adaf611689782f095e21baecd9f3cc202",
+    "src/financial_assistant/retrieval.py": "1606742a9819c3a4e83f3a1538c1c13c958dfff0f263f77c5d2be469c53e7564",
+    "src/financial_assistant/user_path.py": "9ac7f5faa094846d4ed4e130834a23bfad7759e4a1e6863f7da010e18e53ee1f",
+    "tests/test_agent.py": "8e8c6c530bfa5240de12203faa4e5884fc6a252f7e23a1ac6b7e69ba898b6f6a",
+    "tests/test_contracts.py": "6800c63f307261f7e84dbd15ba9d615d145e9390fac1fb3ad7f14fb75887f679",
+    "tests/test_finance.py": "87ce1a9e0cbf880df00f3210118f875148a4f4b42b01d2661799edafd5358252",
+    "tests/test_retrieval.py": "0f0e32486c17f7b06365a1f341fb4d8fa2994727bf18dcb6916a3912630a22cd",
+    "tests/test_user_path.py": "d3e2a8aaab1d7987abe50dccbedb3378d1bc93b7407d5ac46e7991f203dd5d96"
+  },
+  "unchanged_existing_files": [
+    "data/examples/cases.json",
+    "data/examples/reference_bundle.json",
+    "scripts/agent_assistant.py",
+    "scripts/assistant.py",
+    "scripts/build_review_archive.py",
+    "scripts/calculate_financial.py",
+    "scripts/check_review.py",
+    "scripts/check_stage1.py",
+    "scripts/check_step6.py",
+    "scripts/check_step7.py",
+    "scripts/check_step8.py",
+    "scripts/check_step9.py",
+    "scripts/extract_pdf.py",
+    "scripts/prepare_manual_fixture.py",
+    "scripts/search_documents.py",
+    "src/financial_assistant/__init__.py",
+    "src/financial_assistant/agent.py",
+    "src/financial_assistant/contracts.py",
+    "src/financial_assistant/finance.py",
+    "src/financial_assistant/local_model.py",
+    "src/financial_assistant/retrieval.py",
+    "tests/test_agent.py",
+    "tests/test_contracts.py",
+    "tests/test_finance.py",
+    "tests/test_retrieval.py"
+  ],
+  "intentional_existing_changes": [
+    "src/financial_assistant/user_path.py",
+    "tests/test_user_path.py"
+  ],
+  "only_declared_footer_and_test_changed": true,
+  "models_started": false,
+  "model_calls": 0,
+  "scope": "Synthetic code/time/arithmetic checks only. Not market returns, model quality, or strategy superiority."
+}

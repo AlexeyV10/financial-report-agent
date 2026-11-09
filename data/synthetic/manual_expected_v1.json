@@ -1,0 +1,20 @@
+{
+  "provenance": "Independent literal control from the user's step-10 request; not computed by the simulator. All data fictional.",
+  "initial_cash": "10000",
+  "quantity": 20,
+  "buy_raw_price": "100",
+  "buy_notional": "2000",
+  "buy_fee": "1",
+  "cash_after_buy": "7999",
+  "sell_raw_price": "105",
+  "sell_notional": "2100",
+  "sell_fee": "1",
+  "final_cash": "10098",
+  "final_quantity": 0,
+  "total_fees": "2",
+  "pnl": "98",
+  "return_pct": "0.98",
+  "slippage_cost": "0",
+  "max_notional_fraction": "0.20",
+  "allocation_includes_fee": false
+}

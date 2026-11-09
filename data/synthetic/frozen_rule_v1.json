@@ -1,0 +1,21 @@
+{
+  "frozen_before_first_execution": true,
+  "purpose": "Parameters fixed for code checks, no performance optimisation",
+  "fixture_sha256": "b864e1ca6c9e82b62425919199ae9d3d59fee6f3621a258be6933d7422e474f2",
+  "rule": {
+    "rule_id": "synthetic-revenue-threshold",
+    "version": "1",
+    "condition": "growth_pct_gt",
+    "threshold_pct": "10",
+    "execution_policy": "next_session_open",
+    "close_policy": "window_last_close"
+  },
+  "portfolio": {
+    "currency": "RUB",
+    "initial_cash": "10000",
+    "max_notional_fraction": "0.20",
+    "lot_size": 1,
+    "fee_fixed": "1",
+    "slippage_bps": "0"
+  }
+}

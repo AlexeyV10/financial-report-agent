@@ -1,0 +1,189 @@
+{
+  "schema_version": "0.1",
+  "document": {
+    "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+    "entity_id": "phosagro_group",
+    "entity_name": "ПАО «ФосАгро» и дочерние общества",
+    "consolidation": "group",
+    "accounting_standard": "IFRS",
+    "document_type": "financial_statements_extract_from_integrated_annual_report",
+    "report_period": {
+      "kind": "duration",
+      "start": "2024-01-01",
+      "end": "2024-12-31"
+    },
+    "source_page_url": "https://ar2024.phosagro.ru/additional-information/financial-statements",
+    "document_url": "https://ar2024.phosagro.ru/pdf/ar/ru/additional-information_financial-statements.pdf",
+    "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+    "sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+    "byte_length": 1521928,
+    "pdf_pages": 23,
+    "fetched_at": "2026-11-08T23:57:34+03:00",
+    "approval_date": "2025-02-13",
+    "publication": {
+      "precision": "unknown",
+      "value": null,
+      "source_url": null,
+      "timezone": "Europe/Moscow",
+      "version_binding": "unproven"
+    },
+    "related_release": {
+      "url": "https://www.phosagro.ru/press/company/fosagro-publikuet-operatsionnye-i-finansovye-rezultaty-za-12-mesyatsev-2024-g/",
+      "displayed_date": "2025-02-13",
+      "binds_pdf_version": false
+    },
+    "rights": {
+      "status": "unconfirmed",
+      "public_copy_allowed": false,
+      "note": "Открыты просмотр и ссылка скачивания. Лицензия на повторную публикацию PDF, страниц и корпуса не установлена. В проекте только локальная исключённая копия и минимальная ручная разметка; не юридическое заключение.",
+      "checked_on": "2026-11-08"
+    },
+    "audit": {
+      "opinion": "qualified",
+      "limitation": "Нераскрытие информации о сегментах за 2024 и 2023 годы, требуемой IFRS 8; PDF-страница 1. Это не безоговорочное аудиторское мнение."
+    },
+    "review": {
+      "status": "assistant_checked",
+      "method": "Веб-извлечение PDF и локальный рендер Poppler; сверка с отдельным релизом эмитента. Это не независимая человеческая приёмка.",
+      "human_reviewer": null
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "phosagro-revenue-2023-p4",
+      "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+      "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "pdf_page": 4,
+      "printed_page": "320",
+      "statement_page": "1",
+      "page_region": "left_half_of_spread",
+      "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2024 год",
+      "row_label": "Выручка",
+      "column_label": "2023",
+      "period": {
+        "kind": "duration",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1000000,
+      "unit_header": "Млн руб.",
+      "raw_value": "440,304",
+      "numeric_encoding": "comma_thousands_integer",
+      "review": {
+        "status": "assistant_checked",
+        "method": "Ручная сверка строки, заголовков, валюты, масштаба и положительного знака на изображении PDF-страницы 4; релиз подтверждает числа с пробелом-разделителем.",
+        "human_reviewer": null
+      }
+    },
+    {
+      "evidence_id": "phosagro-revenue-2024-p4",
+      "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+      "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "pdf_page": 4,
+      "printed_page": "320",
+      "statement_page": "1",
+      "page_region": "left_half_of_spread",
+      "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2024 год",
+      "row_label": "Выручка",
+      "column_label": "2024",
+      "period": {
+        "kind": "duration",
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1000000,
+      "unit_header": "Млн руб.",
+      "raw_value": "507,689",
+      "numeric_encoding": "comma_thousands_integer",
+      "review": {
+        "status": "assistant_checked",
+        "method": "Ручная сверка строки, заголовков, валюты, масштаба и положительного знака на изображении PDF-страницы 4; релиз подтверждает числа с пробелом-разделителем.",
+        "human_reviewer": null
+      }
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "phosagro-revenue-2023",
+      "evidence_id": "phosagro-revenue-2023-p4",
+      "entity_id": "phosagro_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "metric_id": "revenue",
+      "original_label": "Выручка",
+      "value": "440304",
+      "currency": "RUB",
+      "scale": 1000000,
+      "period": {
+        "kind": "duration",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "review": {
+        "status": "assistant_checked",
+        "method": "Перенесено вручную из проверенной ячейки; значение 2023 — сравнительный столбец версии отчёта 2024, а не исходный отчёт 2023.",
+        "human_reviewer": null
+      }
+    },
+    {
+      "fact_id": "phosagro-revenue-2024",
+      "evidence_id": "phosagro-revenue-2024-p4",
+      "entity_id": "phosagro_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "metric_id": "revenue",
+      "original_label": "Выручка",
+      "value": "507689",
+      "currency": "RUB",
+      "scale": 1000000,
+      "period": {
+        "kind": "duration",
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "review": {
+        "status": "assistant_checked",
+        "method": "Перенесено вручную из проверенной ячейки; значение 2023 — сравнительный столбец версии отчёта 2024, а не исходный отчёт 2023.",
+        "human_reviewer": null
+      }
+    }
+  ],
+  "request": {
+    "request_id": "first-revenue-growth",
+    "question": "Как изменилась выручка группы «ФосАгро» по МСФО за 2024 год по сравнению с 2023 годом по выбранной версии отчётности? Укажи оба значения, изменение в млн рублей, процент и страницу.",
+    "entity_id": "phosagro_group",
+    "consolidation": "group",
+    "accounting_standard": "IFRS",
+    "metric_id": "revenue",
+    "current_period": {
+      "kind": "duration",
+      "start": "2024-01-01",
+      "end": "2024-12-31"
+    },
+    "previous_period": {
+      "kind": "duration",
+      "start": "2023-01-01",
+      "end": "2023-12-31"
+    },
+    "mode": "document_snapshot",
+    "as_of": null,
+    "formula_id": "annual_growth_v1"
+  },
+  "scenario": {
+    "rule_id": "educational_revenue_threshold",
+    "rule_version": "draft-1",
+    "condition": "growth_pct_gt",
+    "threshold_pct": "10",
+    "data_mode": "synthetic_only",
+    "signal_at": null,
+    "calendar_id": null,
+    "price_snapshot_id": null,
+    "execution_at": null
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "kp2-authored-materials-receipt-v1",
+  "archive": "delivery/kp2-materials-step14-v1-2026-11-09.zip",
+  "sha256": "c2ee969614a52042af1253c92b73f984fc8f4c5977d4d72e1e2f45e2c3157c4d",
+  "bytes": 554901,
+  "members": 8,
+  "allowlist": [
+    "kp2_2026-11-09/KP2_report_v2.docx",
+    "kp2_2026-11-09/KP2_report_v2.pdf",
+    "kp2_2026-11-09/KP2_slides_v2.pptx",
+    "kp2_2026-11-09/KP2_slides_v2.pdf",
+    "kp2_2026-11-09/speech_and_demo.md",
+    "kp2_2026-11-09/report_source.md",
+    "kp2_2026-11-09/README.md",
+    "kp2_2026-11-09/artifact_manifest.json"
+  ],
+  "verification": {
+    "crc": "passed",
+    "member_bytes_match_local_files": true,
+    "manifest_hashes": "passed",
+    "only_authored_pdfs": true
+  },
+  "technical_archive": {
+    "path": "delivery/kp2-local-step13-v1-2026-11-09.zip",
+    "bytes": 559580,
+    "sha256": "10920fd2e55614eb6c06b28f4499e55d4f0b58bf2d7156a7f6eaa3199ed4efec",
+    "receipt_sha256": "d8e6cd7f5a8f224e71ab0d532866132d93c95547991f80f512e4ba646922483a"
+  },
+  "submitted": false,
+  "upload_or_publication": false,
+  "meaning": "Local integrity receipt, not course submission receipt"
+}

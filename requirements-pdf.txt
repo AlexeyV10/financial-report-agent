@@ -1,0 +1,4 @@
+# Optional extraction worker. Search and contract checks use standard Python.
+# Observed together in bundled CPython 3.12.14, not installed into primary 3.14.
+pdfplumber==0.11.9
+pdfminer.six==20251230

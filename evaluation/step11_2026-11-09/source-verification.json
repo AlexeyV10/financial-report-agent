@@ -1,0 +1,27 @@
+{
+  "checked_at": "2026-11-09T01:04:18.040135+00:00",
+  "checked_by": "Codex",
+  "human_reviewed": false,
+  "method": "Fresh local Poppler render of complete PDF page 4, visually inspected by assistant; no download/reindex",
+  "pdf_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+  "pdf_bytes": 1521928,
+  "pdf_relative_path": "tmp/pdfs/phosagro-2024-ru.pdf",
+  "image_relative_path": "tmp/step11-source/phosagro-p4.png",
+  "image_sha256": "1532c50b56011b817ed4984f57daca602d06f5d1be8fd503ddcd0d56b5e2541d",
+  "verified": {
+    "pdf_page": 4,
+    "page_region": "left_half_of_spread",
+    "printed_page": "320",
+    "statement_page": "1",
+    "row": "Выручка",
+    "note": "6",
+    "unit": "Млн руб.",
+    "2024_raw": "507,689",
+    "2023_raw": "440,304",
+    "sign": "positive",
+    "encoding": "comma_thousands_integer"
+  },
+  "scope_and_IFRS": "Reused earlier source verification, docs/source_verification.md; not claimed as new page-1 review",
+  "publication": "unknown/unproven unchanged; 13 February approval on this page is not proof of PDF publication",
+  "rights": "PDF and rendered page remain in tmp; no source pages or full extracted text in question set"
+}

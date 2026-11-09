@@ -1,0 +1,67 @@
+{
+  "schema": "kp2-authored-materials-v1",
+  "prepared_date": "2026-11-09",
+  "project": "Агентный ассистент для проверяемого анализа финансовой отчётности и моделирования торговых решений для бизнеса",
+  "files": [
+    {
+      "path": "KP2_report_v2.docx",
+      "bytes": 52358,
+      "sha256": "ecb02d47e62942f29c8f0fd73d115a6f1b64c1e83366ad80d82e17cd1ed275fe"
+    },
+    {
+      "path": "KP2_report_v2.pdf",
+      "bytes": 403258,
+      "sha256": "d57e946c96dd7797bb80433519026c70e9945d9ff25b97ae577f51cc74633779"
+    },
+    {
+      "path": "KP2_slides_v2.pptx",
+      "bytes": 38357,
+      "sha256": "e62a363baa6442d18f08a1f91507b5949e5190715e58d561f78167780ed4606d"
+    },
+    {
+      "path": "KP2_slides_v2.pdf",
+      "bytes": 103444,
+      "sha256": "d01210b4d7667cb79f5ea9e8f8a15cb98bfdef4ff9cee4e06cd001528c7e9cdc"
+    },
+    {
+      "path": "speech_and_demo.md",
+      "bytes": 13128,
+      "sha256": "02a37852d0091dca317f5b22d60545de391c094c7fe402d73dbfd06018e557ba"
+    },
+    {
+      "path": "report_source.md",
+      "bytes": 34560,
+      "sha256": "892fe6fa7595e83556fad48d76b7db1b500695ffb5b0ea171ebed6c1071b5b4e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5106,
+      "sha256": "bb81cf13069fe1e6fdd22057e669962be1587b351ed4b5f63e6115c4d906a8b5"
+    }
+  ],
+  "technical_package": {
+    "path": "delivery/kp2-local-step13-v1-2026-11-09.zip",
+    "bytes": 559580,
+    "sha256": "10920fd2e55614eb6c06b28f4499e55d4f0b58bf2d7156a7f6eaa3199ed4efec",
+    "receipt_sha256": "d8e6cd7f5a8f224e71ab0d532866132d93c95547991f80f512e4ba646922483a"
+  },
+  "metric_source": {
+    "path": "evaluation/step12_2026-11-09/run-02-environment-retry/results.json",
+    "sha256": "87cb4c05d99545f9fbba219718a76ab45a7d7b13b09565af3eee970875e1b1ec"
+  },
+  "provenance": "User decisions and Codex implementation/checks/material preparation; formal roles do not imply contributions",
+  "new_model_calls": 0,
+  "human_reviewed": false,
+  "submitted": false,
+  "assumptions": [
+    "Five slides and approximately two minutes are a draft, current course rules unknown",
+    "Speech timing calculated, not user speaking time"
+  ],
+  "primary_document_content": "Only minimal values and locators; no complete pages, extracted text, index or weights",
+  "own_authored_pdfs": [
+    "KP2_report_v2.pdf",
+    "KP2_slides_v2.pdf"
+  ],
+  "audit": "evaluation/step14_2026-11-09/ in original working folder",
+  "helper_encoding_note": "Original folder helper has one added UTF8 BOM, remaining bytes match archive; archive itself unchanged"
+}

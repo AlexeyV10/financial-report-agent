@@ -1,0 +1,41 @@
+test_answer_requires_both_evidence_references (test_contracts.ContractsTest.test_answer_requires_both_evidence_references) ... ok
+test_changed_decimal_context_does_not_change_result (test_contracts.ContractsTest.test_changed_decimal_context_does_not_change_result) ... ok
+test_company_group_and_standard_are_checked (test_contracts.ContractsTest.test_company_group_and_standard_are_checked) ... ok
+test_currency_mismatch (test_contracts.ContractsTest.test_currency_mismatch) ... ok
+test_decline (test_contracts.ContractsTest.test_decline) ... ok
+test_duplicate_fact_is_conflict (test_contracts.ContractsTest.test_duplicate_fact_is_conflict) ... ok
+test_duplicate_id_is_malformed (test_contracts.ContractsTest.test_duplicate_id_is_malformed) ... ok
+test_equal_values (test_contracts.ContractsTest.test_equal_values) ... ok
+test_float_nan_and_numeric_range_rejected (test_contracts.ContractsTest.test_float_nan_and_numeric_range_rejected) ... ok
+test_four_saved_examples (test_contracts.ContractsTest.test_four_saved_examples) ... ok
+test_future_revision_is_not_used (test_contracts.ContractsTest.test_future_revision_is_not_used) ... ok
+test_known_date_no_same_day_signal (test_contracts.ContractsTest.test_known_date_no_same_day_signal) ... ok
+test_leap_year_is_comparable (test_contracts.ContractsTest.test_leap_year_is_comparable) ... ok
+test_missing_evidence_is_malformed (test_contracts.ContractsTest.test_missing_evidence_is_malformed) ... ok
+test_missing_fact (test_contracts.ContractsTest.test_missing_fact) ... ok
+test_naive_timestamp_rejected (test_contracts.ContractsTest.test_naive_timestamp_rejected) ... ok
+test_negative_base (test_contracts.ContractsTest.test_negative_base) ... ok
+test_nine_months_cannot_be_annual (test_contracts.ContractsTest.test_nine_months_cannot_be_annual) ... ok
+test_nonconsecutive_years (test_contracts.ContractsTest.test_nonconsecutive_years) ... ok
+test_real_result_against_independent_fraction (test_contracts.ContractsTest.test_real_result_against_independent_fraction) ... ok
+test_refusal_cannot_smuggle_a_calculation (test_contracts.ContractsTest.test_refusal_cannot_smuggle_a_calculation) ... ok
+test_report_instructions_are_only_data (test_contracts.ContractsTest.test_report_instructions_are_only_data) ... ok
+test_round_half_up_boundary (test_contracts.ContractsTest.test_round_half_up_boundary) ... ok
+test_scale_mismatch (test_contracts.ContractsTest.test_scale_mismatch) ... ok
+test_source_grouping_and_parentheses (test_contracts.ContractsTest.test_source_grouping_and_parentheses) ... ok
+test_timestamp_before_at_and_equivalent_offset (test_contracts.ContractsTest.test_timestamp_before_at_and_equivalent_offset) ... ok
+test_unchecked_fact_evidence_and_document (test_contracts.ContractsTest.test_unchecked_fact_evidence_and_document) ... ok
+test_unknown_fields_are_rejected (test_contracts.ContractsTest.test_unknown_fields_are_rejected) ... ok
+test_unknown_publication_never_uses_approval_or_retrieval (test_contracts.ContractsTest.test_unknown_publication_never_uses_approval_or_retrieval) ... ok
+test_unproven_version_binding_blocks_history (test_contracts.ContractsTest.test_unproven_version_binding_blocks_history) ... ok
+test_unsupported_formula (test_contracts.ContractsTest.test_unsupported_formula) ... ok
+test_weekend_date_does_not_invent_a_trading_session (test_contracts.ContractsTest.test_weekend_date_does_not_invent_a_trading_session) ... ok
+test_wrong_hash_and_page_and_reference_are_malformed (test_contracts.ContractsTest.test_wrong_hash_and_page_and_reference_are_malformed) ... ok
+test_wrong_sign_or_number_is_malformed (test_contracts.ContractsTest.test_wrong_sign_or_number_is_malformed) ... ok
+test_zero_base (test_contracts.ContractsTest.test_zero_base) ... ok
+test_zero_current_is_a_real_value (test_contracts.ContractsTest.test_zero_current_is_a_real_value) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 0.058s
+
+OK

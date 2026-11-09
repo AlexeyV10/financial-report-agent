@@ -1,0 +1,53 @@
+{
+  "checks": [
+    {
+      "case": "help",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    },
+    {
+      "case": "unsafe_folder",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true
+    },
+    {
+      "case": "reject_reprepare",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true
+    },
+    {
+      "case": "reject_recollect",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true
+    },
+    {
+      "case": "reject_regrade_overwrite",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true
+    },
+    {
+      "case": "unknown_argument",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true
+    },
+    {
+      "case": "offline_replay_run-01",
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "case": "offline_replay_run-02-environment-retry",
+      "exit_code": 0,
+      "passed": true
+    }
+  ],
+  "passed": 8,
+  "existing_run_artifacts_unchanged": true,
+  "new_model_calls": 0
+}

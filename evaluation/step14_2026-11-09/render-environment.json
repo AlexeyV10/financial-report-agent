@@ -1,0 +1,8 @@
+{
+  "authoring_runtime": "Bundled 26.1105.12137 Node and Python",
+  "initial_presentation_finalization": "Failed first-party reimport because RUNTIME_NODE_MODULES was not supplied to its child process; private builder now sets exact loader-returned paths.",
+  "initial_document_render": "Canonical render_docx.py failed: LibreOffice soffice.exe not on PATH. Bundled loader contains no Windows LibreOffice; installed desktop LibreOffice is not used.",
+  "planned_document_fallback": "Read-only native Word PDF export of the authored DOCX, then canonical render_docx.py rasterizer with a conversion adapter bound to that exact exported PDF. Managed skill files remain unchanged.",
+  "new_model_calls": 0,
+  "full_primary_PDF_pages_copied": false
+}

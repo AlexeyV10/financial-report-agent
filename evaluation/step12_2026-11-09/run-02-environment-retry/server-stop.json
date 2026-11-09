@@ -1,0 +1,6 @@
+{
+  "checked_at": "2026-11-09T02:03:50.596338+00:00",
+  "fixed_loopback_endpoint_not_responding": true,
+  "stop_scope": "Only owner PID/path/start time recorded in server-start.json; no other processes stopped",
+  "model_calls_for_check": 0
+}

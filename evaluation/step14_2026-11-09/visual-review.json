@@ -1,0 +1,129 @@
+{
+  "reviewer": "Codex",
+  "human_reviewed": false,
+  "final_version": "v2",
+  "report": {
+    "docx_sha256": "ecb02d47e62942f29c8f0fd73d115a6f1b64c1e83366ad80d82e17cd1ed275fe",
+    "pdf_sha256": "d57e946c96dd7797bb80433519026c70e9945d9ff25b97ae577f51cc74633779",
+    "engine": "Word native export + canonical render_docx rasterization of bound PDF",
+    "pages": [
+      {
+        "page": 1,
+        "image": "tmp/step14/docx-render-word-v2/page-1.png",
+        "sha256": "9720284d282f44896699391e03ffe7472046ad5b674eeb13ba8e48f922875f9a",
+        "visual_pass": true
+      },
+      {
+        "page": 2,
+        "image": "tmp/step14/docx-render-word-v2/page-2.png",
+        "sha256": "b32bcfb83fad21b9b486d7ac7797697f6a701b80aa87b680e0ce1faecc7d2dbc",
+        "visual_pass": true
+      },
+      {
+        "page": 3,
+        "image": "tmp/step14/docx-render-word-v2/page-3.png",
+        "sha256": "83cb3efb029cb62d362e0c9a52b92d3595d16594949b934957f8c9697bb0fb6b",
+        "visual_pass": true
+      },
+      {
+        "page": 4,
+        "image": "tmp/step14/docx-render-word-v2/page-4.png",
+        "sha256": "1f38364d1595cdd43da1dcd7374d0d8c6cb3707991aa6419095bf12c7cd11c4d",
+        "visual_pass": true
+      },
+      {
+        "page": 5,
+        "image": "tmp/step14/docx-render-word-v2/page-5.png",
+        "sha256": "13c60d5fbf1c73f4fabf2a5084e6015946291a4673ebaba444b47019b7232286",
+        "visual_pass": true
+      },
+      {
+        "page": 6,
+        "image": "tmp/step14/docx-render-word-v2/page-6.png",
+        "sha256": "a27da698b727ab8dcec04dc4af223f510e0db8afcac611467e7b7c33d7592f10",
+        "visual_pass": true
+      },
+      {
+        "page": 7,
+        "image": "tmp/step14/docx-render-word-v2/page-7.png",
+        "sha256": "4b1609ba1938ce93c403fffc3e41d23f2a7428f1104a575d7d460e8f8dd36c68",
+        "visual_pass": true
+      },
+      {
+        "page": 8,
+        "image": "tmp/step14/docx-render-word-v2/page-8.png",
+        "sha256": "24ad914f5bdb4325bcf6cecf632ad760629e2786e242639efc4f4eb4895b15df",
+        "visual_pass": true
+      },
+      {
+        "page": 9,
+        "image": "tmp/step14/docx-render-word-v2/page-9.png",
+        "sha256": "d0aad0405f1e421767d9b69768a1782cc77440de370b79853251f479551b5fa8",
+        "visual_pass": true
+      },
+      {
+        "page": 10,
+        "image": "tmp/step14/docx-render-word-v2/page-10.png",
+        "sha256": "3b708934b118728dd98ab8a41a236d9b176f72821cae462ddf720809f29f434d",
+        "visual_pass": true
+      }
+    ]
+  },
+  "slides": {
+    "pptx_sha256": "e62a363baa6442d18f08a1f91507b5949e5190715e58d561f78167780ed4606d",
+    "pdf_sha256": "d01210b4d7667cb79f5ea9e8f8a15cb98bfdef4ff9cee4e06cd001528c7e9cdc",
+    "engine": "PowerPoint native PDF export + Poppler PNG",
+    "pages": [
+      {
+        "slide": 1,
+        "image": "tmp/step14/build/slide-native-v2-1.png",
+        "sha256": "4fb70ca0a203641b7d9c34183cf1432f1b55f728ea20740d21098987332c9fc3",
+        "visual_pass": true
+      },
+      {
+        "slide": 2,
+        "image": "tmp/step14/build/slide-native-v2-2.png",
+        "sha256": "c41720bec5205aaa2e1623375d27dff66d95cb97229b5e68a9eb5eaed6e168cc",
+        "visual_pass": true
+      },
+      {
+        "slide": 3,
+        "image": "tmp/step14/build/slide-native-v2-3.png",
+        "sha256": "dbd562254448d7d2df5fbf4562bb6e1fee179a0a7f95ff91546faffeeaf4cca3",
+        "visual_pass": true
+      },
+      {
+        "slide": 4,
+        "image": "tmp/step14/build/slide-native-v2-4.png",
+        "sha256": "aa8263424657b34b4c754acdd9957d84cc3d0a8480032b6434b9027e0feca6ac",
+        "visual_pass": true
+      },
+      {
+        "slide": 5,
+        "image": "tmp/step14/build/slide-native-v2-5.png",
+        "sha256": "a939d3cb52cc06d53fb1683e9b377060f14e62120d8b3e176a74ad3ba760bc6b",
+        "visual_pass": true
+      }
+    ]
+  },
+  "fixed_after_v1": [
+    "inherited blue title rule removed",
+    "report plan table columns widened and headers shortened",
+    "diagram arrows now point left-to-right",
+    "fee label replaced by Russian commission"
+  ],
+  "checks": [
+    "readable Russian text",
+    "no clipped text or overlapping objects",
+    "table values visible",
+    "full title visible",
+    "native equation visible",
+    "one PDF version and synthetic separation explicit"
+  ],
+  "not_claimed": [
+    "manual user rehearsal",
+    "new primary PDF source verification",
+    "general model quality"
+  ],
+  "intermediate_files_remain_only_in_tmp": true
+}

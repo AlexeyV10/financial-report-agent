@@ -1,0 +1,174 @@
+{
+  "phase": "minimal",
+  "checked_at": "2026-11-09T02:16:18.518268+00:00",
+  "root": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-candidate-01",
+  "python": "3.14.7 (main, Aug  8 2026, 21:15:19)  [MINGW GCC UCRT 16.2.0 64 bit (AMD64)]",
+  "interpreter": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\clean-venv\\bin\\python.exe",
+  "isolated_child_python": true,
+  "runs": [
+    {
+      "case": "B-manual",
+      "command": [
+        "python",
+        "-I",
+        "scripts/run_local.py",
+        "fixed",
+        "--source",
+        "manual"
+      ],
+      "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-candidate-01",
+      "interpreter": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\clean-venv\\bin\\python.exe",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.1659036000000924,
+      "stdout_file": "B-manual.txt"
+    },
+    {
+      "case": "partial-year",
+      "command": [
+        "python",
+        "-I",
+        "scripts/run_local.py",
+        "fixed",
+        "--year",
+        "9 месяцев 2024"
+      ],
+      "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-candidate-01",
+      "interpreter": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\clean-venv\\bin\\python.exe",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "elapsed_s": 0.08114620000014838,
+      "stdout_file": "partial-year.txt"
+    },
+    {
+      "case": "synthetic",
+      "command": [
+        "python",
+        "-I",
+        "scripts/run_local.py",
+        "scenario",
+        "--trace",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-candidate-01\\output\\step13-minimal\\synthetic.trace.json"
+      ],
+      "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-candidate-01",
+      "interpreter": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\clean-venv\\bin\\python.exe",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.3087226000006922,
+      "stdout_file": "synthetic.txt"
+    },
+    {
+      "case": "real-blocked",
+      "command": [
+        "python",
+        "-I",
+        "scripts/run_local.py",
+        "scenario",
+        "--case",
+        "real-source",
+        "--trace",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-candidate-01\\output\\step13-minimal\\real-blocked.trace.json"
+      ],
+      "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-candidate-01",
+      "interpreter": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\clean-venv\\bin\\python.exe",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.12842170000112674,
+      "stdout_file": "real-blocked.txt"
+    },
+    {
+      "case": "C-mock-manual",
+      "command": [
+        "python",
+        "-I",
+        "scripts/run_local.py",
+        "agent",
+        "--adapter",
+        "mock",
+        "--source",
+        "manual",
+        "--trace",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-candidate-01\\output\\step13-minimal\\C-mock-manual.trace.json"
+      ],
+      "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-candidate-01",
+      "interpreter": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\clean-venv\\bin\\python.exe",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.6617829000006168,
+      "stdout_file": "C-mock-manual.txt",
+      "adapter": {
+        "kind": "deterministic_mock",
+        "adapter": "observed-mock-v1",
+        "model": null
+      },
+      "decision_attempts": 4,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null,
+        "cost_status": "не измерено"
+      },
+      "financial_status": "answered",
+      "stop_reason": "validated_financial_result"
+    },
+    {
+      "case": "question-freeze",
+      "command": [
+        "python",
+        "-I",
+        "scripts/run_local.py",
+        "questions"
+      ],
+      "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-candidate-01",
+      "interpreter": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\clean-venv\\bin\\python.exe",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.1414666999990004,
+      "stdout_file": "question-freeze.txt"
+    },
+    {
+      "case": "offline-replay",
+      "command": [
+        "python",
+        "-I",
+        "scripts/run_local.py",
+        "replay",
+        "--run-dir",
+        "evaluation/step12_2026-11-09/run-02-environment-retry"
+      ],
+      "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-candidate-01",
+      "interpreter": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\clean-venv\\bin\\python.exe",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.09162719999949331,
+      "stdout_file": "offline-replay.txt"
+    },
+    {
+      "case": "search-source-missing",
+      "command": [
+        "python",
+        "-I",
+        "scripts/run_local.py",
+        "fixed",
+        "--pdf",
+        "tmp/absent-primary.pdf"
+      ],
+      "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-candidate-01",
+      "interpreter": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\clean-venv\\bin\\python.exe",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true,
+      "elapsed_s": 0.082149699999718,
+      "stdout_file": "search-source-missing.txt"
+    }
+  ],
+  "passed": true,
+  "scope": "Integration launch, not new model quality benchmark"
+}

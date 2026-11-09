@@ -1,0 +1,11 @@
+{
+  "phase": "grader development before protocol freeze and model measurement",
+  "initial_unit_tests": 20,
+  "initial_failures": 2,
+  "failure": "Valid old open fixture was rejected by numeric text audit: source captions contain year2024 and unit Млн руб., and were incorrectly treated as extra amount claims.",
+  "affected_tests": ["test_valid_open_structured_fixture", "test_no_production_solver_during_grading"],
+  "fix": "Include the existing renderer's source-caption lines in its narrow text grammar. Sources still checked against frozen Evidence locators. Extra numeric sentence test remains rejecting.",
+  "new_model_calls": 0,
+  "reserved_simulator_runs": 0,
+  "not_a_model_benchmark_failure": true
+}

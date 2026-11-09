@@ -1,0 +1,15 @@
+{
+  "powershell_version": "7.6.9",
+  "direct_start_exit": 0,
+  "direct_start_observed_elapsed_s": 6.2059026,
+  "direct_status_exit": 0,
+  "status_server_version": "0.40.15",
+  "direct_stop_exit": 0,
+  "stop_observed_elapsed_s": 2.5385516,
+  "final_status": "server stopped",
+  "server_left_running": false,
+  "cloud_disabled_logged": true,
+  "stopped_model_cli_exit": 2,
+  "stopped_model_result": "adapter_unavailable",
+  "nested_pwsh_note": "Nested bundled pwsh -File held its parent tool invocation until the server was stopped separately. Instructions use direct .\\scripts\\local_model.ps1 calls, independently observed to return."
+}

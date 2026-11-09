@@ -1,0 +1,8 @@
+{
+  "case": "python -I scripts/run_local.py not-allowed",
+  "observed_exit_code": 2,
+  "observed_issue": "Unknown-mode Russian message used native Windows encoding under -I; UTF8 subprocess capture raised reader-thread UnicodeDecodeError. Valid application entry points already configure stdout.",
+  "fix": "New launcher explicitly configures its own stdout as UTF8 before handling modes. Existing financial/agent modules and model prompt unchanged.",
+  "verification": "Targeted unknown-mode check now asserts exit2 and readable UTF8 text. Final delivered archive gets fresh smoke checks.",
+  "model_calls": 0
+}

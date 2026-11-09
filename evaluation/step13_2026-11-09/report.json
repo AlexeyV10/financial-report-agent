@@ -1,0 +1,60 @@
+{
+  "stage": 13,
+  "completed_at": "2026-11-09T02:29:06.146036+00:00",
+  "status": "limited_local_restore_and_launch_complete",
+  "archive": "delivery\\kp2-local-step13-v1-2026-11-09.zip",
+  "archive_sha256": "10920fd2e55614eb6c06b28f4499e55d4f0b58bf2d7156a7f6eaa3199ed4efec",
+  "archive_bytes": 559580,
+  "payload_files": 205,
+  "zip_members": 206,
+  "allowlist": "packaging/kp2_local_v1_files.json",
+  "receipt": "delivery\\kp2-local-step13-v1-2026-11-09.receipt.json",
+  "final_restore_root": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-final-v1",
+  "environment": "Same computer, separate no-pip MSYS2 CPython3.14.7 venv, isolated Python (-I); not new model installation/another PC",
+  "final_minimal_cases_passed": 8,
+  "final_source_cases_passed": 4,
+  "candidate02_unit_tests": {
+    "passed": 267,
+    "previous": 255,
+    "new_archive_boundary_tests": 12,
+    "proof": "restored-unit-tests-after-bootstrap.txt"
+  },
+  "packaging_cli_checks_passed": 8,
+  "real_C_LLM_normal": {
+    "passed": true,
+    "proof": "candidate02-llm/report.json",
+    "decisions": 5,
+    "usage": {
+      "input_tokens": 19120,
+      "output_tokens": 268,
+      "cost": null,
+      "cost_status": "не измерено"
+    },
+    "elapsed_cli_s": 14.611095000000205,
+    "new_quality_benchmark": false
+  },
+  "all_previous_runtime_core_and_tests_unchanged": true,
+  "post_C_runtime_note": "Only new launcher stdout UTF8 initialization changed; core/adapter/prompt/limits identical, final smoke checks passed. No second LLM call was needed.",
+  "original_files_before": 237,
+  "original_files_unchanged": 232,
+  "allowed_original_files_updated": [
+    "README.md",
+    "STATUS.md",
+    "ПЛАН_РАБОТЫ_КП2.md",
+    "docs/decisions.md",
+    "docs/transfer.md"
+  ],
+  "step11_protected_source_data_unchanged": 37,
+  "frozen_question_set_unchanged": true,
+  "historical_evidence_and_archives_unchanged": true,
+  "source_PDF_index_weights_not_in_archive": true,
+  "primary_local_resources_copied_only_to_excluded_tmp": true,
+  "new_downloads_or_reindex": false,
+  "new_cloud_or_API_payments": false,
+  "human_reviewed": false,
+  "model_server_stopped": true,
+  "known_C_top1_failure_preserved": true,
+  "quality_metrics": "Step12 results preserved; step13 checks are integration, not new benchmark tasks",
+  "next_prompt": "prompts/step14_report_and_slides.md",
+  "step14_executed": false
+}

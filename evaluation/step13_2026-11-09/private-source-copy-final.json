@@ -1,0 +1,16 @@
+{
+  "copied_at": "2026-11-09T02:29:01.436587+00:00",
+  "files": [
+    {
+      "relative_path": "tmp/pdfs/phosagro-2024-ru.pdf",
+      "sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "private_destination": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-final-v1\\tmp\\pdfs\\phosagro-2024-ru.pdf"
+    },
+    {
+      "relative_path": "tmp/retrieval/document.sqlite",
+      "sha256": "edb84988a3724827516b4cc034636206d8a080c46c322707528f33b0f7adbf20",
+      "private_destination": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-final-v1\\tmp\\retrieval\\document.sqlite"
+    }
+  ],
+  "not_part_of_delivered_archive": true
+}

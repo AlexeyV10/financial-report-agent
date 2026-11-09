@@ -1,0 +1,18 @@
+{
+  "captured_at": "2026-11-09T02:19:23.101111+00:00",
+  "started_by_this_step": true,
+  "owner": {
+    "started_at_ticks": 639297875330367966,
+    "executable": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\local-model\\ollama-0.40.15\\ollama.exe",
+    "pid": 664
+  },
+  "pinned_probe": {
+    "server_version": "0.40.15",
+    "model": "qwen3:4b",
+    "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7"
+  },
+  "loaded_before_chat": {
+    "models": []
+  },
+  "planned_chat_case": "One normal C/LLM integration check from restored candidate02, not new benchmark"
+}

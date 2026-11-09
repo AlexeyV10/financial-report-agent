@@ -1,0 +1,21 @@
+{
+  "ended_at": "2026-11-09T01:54:29.660195+00:00",
+  "raw_sha256": {
+    "QA03-B.json": "b31078f942d2449dbfc34ac861170d0a74ab79e017187cb5103483d9467ea065",
+    "QA03-C_LLM.json": "d613a9aad0311e9f1c87e3ad6ccb0ec559e5159f7cac8503e50a796288ed08b3",
+    "QA06-B.json": "ad32a86bf45f45df02f6655d68d857098130c6231793011633ac97b5b33ee85a",
+    "QA06-C_LLM.json": "a1b08474f4a2d84c56062e94d012373459e4485881d1cdcf1ba10597af0c9a77",
+    "QA07-B.json": "1c6fb2220e9fd00ef22c3c9033d3aa5e560047a358aafdb54513e011ce80a823",
+    "QA07-C_LLM.json": "75d080a5f83cd7953d1fd21e958ea6c8aba682298f433cf8df2d2c984d3c6964",
+    "QA09-finance_component.json": "6cb9030fcbf257925ece978cec7d4b6552dd35b94c09e945896065642db73c66",
+    "QA10-finance_component.json": "1301c4d57dac380dd51a46050695da5dff8ed3c3881adfbe2db954826d3040c4",
+    "R1.json": "8a9a04202287bf8b9d6892498193f9262e5c44edce56ec2ae28d97890496b51e",
+    "R5.json": "b129290e670f101bd9cd2e3ae4df68e2bbe9757ce32139e18da4b105e40a16cf",
+    "SAFE01.json": "330e848b567a48c2ac24f6dcbd85d8e5d156d02d603bdf34d98192a0ef5ea0d4",
+    "SC01-simulator.json": "d19928658e78650f6c07d2ddfa4b76ec77fa69deb5792a9a64e05dd61098920d",
+    "SC02-simulator.json": "7e0b5ece6cc78bf012bbd0f3be8e332627bca4b6d0b4542e47159c1b6d0f053d",
+    "UI01-B.json": "82c0ae2916b68138baebcec8a83dd35b10e861cdc57d8697e28a9ac2444fa16d",
+    "UI01-C_LLM.json": "552d144618f070093e42067a7a303d8762c5386f0bdc0a47c26da0d4d308ea2b"
+  },
+  "one_pass": true
+}

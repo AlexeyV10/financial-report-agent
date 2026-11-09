@@ -1,0 +1,13 @@
+{
+  "authenticated_owner": {
+    "login": "AlexeyV10",
+    "id": 320008904
+  },
+  "collaborator": {
+    "login": "kostyaNegoday",
+    "id": 346298573,
+    "type": "User"
+  },
+  "target_repo": "AlexeyV10/financial-report-agent",
+  "repo_exists": false
+}

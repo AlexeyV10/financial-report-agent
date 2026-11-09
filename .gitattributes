@@ -1,0 +1,3 @@
+# Frozen datasets and evaluation manifests contain byte hashes.
+# Preserve the original bytes on every platform; do not convert LF to CRLF.
+* -text

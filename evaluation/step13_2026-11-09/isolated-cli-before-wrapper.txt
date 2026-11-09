@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\scripts\agent_assistant.py", line 9, in <module>
+    from assistant import ArgumentIssue, Parser
+ModuleNotFoundError: No module named 'assistant'

@@ -1,0 +1,12 @@
+{
+  "engine": "PowerPoint",
+  "input": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\materials\\kp2_2026-11-09\\KP2_slides.pptx",
+  "output": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step14\\build\\slides-native-v1.pdf",
+  "pages": 5,
+  "source_sha256": "c0eed6e5b7e566745556733e6a01e2dbb07a768ff877ae32d1f3bd234788aab2",
+  "source_read_only": true,
+  "source_hash_unchanged_after_close": true,
+  "existing_user_presentations_closed": false,
+  "exported_at": "2026-11-09T10:35:42.935071+00:00",
+  "post_export_diagnostic": "SaveAs PDF completed, then Get-FileHash failed while PowerPoint held its read-only source lock. finally closed only the task presentation; after close source SHA matched finalizer. PDF pages and hashes verified separately."
+}

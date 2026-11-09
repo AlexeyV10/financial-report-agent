@@ -1,0 +1,100 @@
+{
+  "phase": "source",
+  "checked_at": "2026-11-09T02:29:03.260365+00:00",
+  "root": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-final-v1",
+  "python": "3.14.7 (main, Aug  8 2026, 21:15:19)  [MINGW GCC UCRT 16.2.0 64 bit (AMD64)]",
+  "interpreter": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\clean-venv\\bin\\python.exe",
+  "isolated_child_python": true,
+  "runs": [
+    {
+      "case": "B-search",
+      "command": [
+        "python",
+        "-I",
+        "scripts/run_local.py",
+        "fixed"
+      ],
+      "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-final-v1",
+      "interpreter": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\clean-venv\\bin\\python.exe",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.10885219999909168,
+      "stdout_file": "B-search.txt"
+    },
+    {
+      "case": "B-historical",
+      "command": [
+        "python",
+        "-I",
+        "scripts/run_local.py",
+        "fixed",
+        "--mode",
+        "historical",
+        "--as-of",
+        "2025-02-14T10:00:00+03:00"
+      ],
+      "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-final-v1",
+      "interpreter": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\clean-venv\\bin\\python.exe",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.10442009999860602,
+      "stdout_file": "B-historical.txt"
+    },
+    {
+      "case": "B-top1",
+      "command": [
+        "python",
+        "-I",
+        "scripts/run_local.py",
+        "fixed",
+        "--results",
+        "1"
+      ],
+      "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-final-v1",
+      "interpreter": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\clean-venv\\bin\\python.exe",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.10878090000005614,
+      "stdout_file": "B-top1.txt"
+    },
+    {
+      "case": "C-mock-search",
+      "command": [
+        "python",
+        "-I",
+        "scripts/run_local.py",
+        "agent",
+        "--adapter",
+        "mock",
+        "--trace",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-final-v1\\output\\step13-source\\C-mock-search.trace.json"
+      ],
+      "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-final-v1",
+      "interpreter": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\clean-venv\\bin\\python.exe",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.8485213000003569,
+      "stdout_file": "C-mock-search.txt",
+      "adapter": {
+        "kind": "deterministic_mock",
+        "adapter": "observed-mock-v1",
+        "model": null
+      },
+      "decision_attempts": 5,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "cost": null,
+        "cost_status": "не измерено"
+      },
+      "financial_status": "answered",
+      "stop_reason": "validated_financial_result"
+    }
+  ],
+  "passed": true,
+  "scope": "Integration launch, not new model quality benchmark"
+}

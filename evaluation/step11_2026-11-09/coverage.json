@@ -1,0 +1,38 @@
+{
+  "total": 13,
+  "by_suite": {
+    "financial_qa": 10,
+    "interface": 1,
+    "scenario": 2
+  },
+  "by_origin": {
+    "real": 9,
+    "self_created_synthetic": 4
+  },
+  "by_split": {
+    "dev_open": 9,
+    "evaluation_reserved": 4
+  },
+  "by_route": {
+    "requires_adapter": 5,
+    "user_query": 4,
+    "finance_tool": 2,
+    "synthetic_simulation": 2
+  },
+  "categories": {
+    "direct_fact": 2,
+    "calculation": 1,
+    "different_scale": 1,
+    "prepared_inventory_gap": 1,
+    "temporal_refusal": 1,
+    "retrieval_coverage": 1,
+    "false_premise": 1,
+    "prepared_value_missing": 1,
+    "unit_conflict": 1,
+    "request_clarification": 1,
+    "virtual_ledger": 2
+  },
+  "numeric_reference_cases": 7,
+  "prototype_answers_run": 0,
+  "model_calls": 0
+}

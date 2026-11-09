@@ -1,0 +1,37 @@
+[
+  {
+    "case": "manual_explicit",
+    "exit_code": 0,
+    "status": "indexed",
+    "reason_code": null,
+    "passed": true
+  },
+  {
+    "case": "manual_search",
+    "exit_code": 0,
+    "status": "found",
+    "reason_code": "ok",
+    "passed": true
+  },
+  {
+    "case": "private_output_only",
+    "exit_code": 2,
+    "status": "error",
+    "reason_code": "private_path_required",
+    "passed": true
+  },
+  {
+    "case": "missing_pdf",
+    "exit_code": 2,
+    "status": "error",
+    "reason_code": "source_missing",
+    "passed": true
+  },
+  {
+    "case": "worker_unavailable",
+    "exit_code": 2,
+    "status": "error",
+    "reason_code": "extractor_failed",
+    "passed": true
+  }
+]

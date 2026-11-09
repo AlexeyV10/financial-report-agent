@@ -1,0 +1,43 @@
+# Secrets and personal settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+.ssh/
+id_rsa
+id_ed25519
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.vscode/
+# Source documents and extracted pages: redistribution is not cleared.
+tmp/
+data/private/
+data/raw/
+*.pdf
+*.png
+*.jpg
+*.zip
+*.gguf
+*.safetensors
+*.sqlite
+*.sqlite3
+# Reproducible local output; the checked report lives in evaluation/.
+output/
+delivery/*
+# Exact exceptions: our own reports and already checked project archives.
+!materials/kp2_2026-11-09/KP2_report_v2.pdf
+!materials/kp2_2026-11-09/KP2_slides_v2.pdf
+!delivery/kp2-local-step13-v1-2026-11-09.zip
+!delivery/kp2-local-step13-v1-2026-11-09.receipt.json
+!delivery/kp2-materials-step14-v1-2026-11-09.zip
+!delivery/kp2-materials-step14-v1-2026-11-09.receipt.json
+!delivery/stage1-local-v2-2026-11-09.zip
+!delivery/stage1-local-v2-2026-11-09.receipt.json
+!delivery/stage1-review-2026-11-09.zip
+!delivery/stage1-review-2026-11-09.receipt.json

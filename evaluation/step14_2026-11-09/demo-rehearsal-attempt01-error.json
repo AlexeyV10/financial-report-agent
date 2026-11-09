@@ -1,0 +1,10 @@
+{
+  "kind": "artifact-checker assertion error, not a financial or simulator failure",
+  "failure": "Checker expected the English word blocked in the Russian CLI output",
+  "actual_output": "Допуск заблокирован: publication_unknown; no trades or return",
+  "fix": "Check the existing Russian marker and publication_unknown; production code and data unchanged",
+  "preserved_outputs": "demo-rehearsal-attempt01/",
+  "first_manual_command_passed": true,
+  "blocked_exit_code_not_captured_in_first_attempt": true,
+  "model_calls": 0
+}

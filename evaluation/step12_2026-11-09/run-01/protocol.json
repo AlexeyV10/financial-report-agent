@@ -1,0 +1,107 @@
+{
+  "version": "step12-structured-grader-v1",
+  "prepared_at": "2026-11-09T01:53:51.923888+00:00",
+  "scope": "One real PDF/two facts; dev templates, not blind or general QA",
+  "financial_ids": [
+    "QA03",
+    "QA06",
+    "QA07"
+  ],
+  "unsupported_financial_ids": [
+    "QA01",
+    "QA02",
+    "QA04",
+    "QA05",
+    "QA08"
+  ],
+  "repetitions": 1,
+  "numeric_denominator_per_B_C": 1,
+  "refusal_denominator_per_B_C": 2,
+  "reserved_financial_B_C": 0,
+  "maximum_chat_requests": 18,
+  "max_decisions_per_case": 6,
+  "timeout_s": 180,
+  "per_call_s": 90,
+  "num_predict": 256,
+  "num_ctx": 8192,
+  "temperature": 0,
+  "think": false,
+  "limits_defaults": {
+    "max_calls": 6,
+    "timeout_s": 180,
+    "per_call_s": 90,
+    "max_action_bytes": 4096,
+    "max_observation_bytes": 32768,
+    "max_tool_bytes": 8192,
+    "max_search_results": 5,
+    "max_output_tokens": 256
+  },
+  "per_case_max_search_results": "frozen reproduction.top_k",
+  "cold_load": "No chat warmup; first measured chat includes load; per-case end-to-end includes tools",
+  "time_boundaries": "B includes native validation/render; C includes native validation/render and spawned processes; simulator elapsed_s includes validation/render repeats, elapsed_to_result_s isolates simulate",
+  "grading": "Actual structured payload + narrow existing-renderer text grammar; no free-text LLM grader. Gold used only after raw saved.",
+  "claims": "4 numeric claims on answered growth; source facts + delta + displayed growth. Formula substitution is repetition; unexpected numeric lines fail.",
+  "refusal": "Expected financial status/reason, no numeric payload; agent must complete. call_limit/timeout/error fail.",
+  "empty_denominator": "not_measured, never 100%",
+  "tokens": "Actual /api/chat counters; missing responses/counters unknown, no estimates",
+  "cost": "No API payments; total monetary cost/electricity/hardware not measured",
+  "scenario_controls": {
+    "SC01": {
+      "entry_at": "2025-06-05T10:00:00+03:00",
+      "exit_at": "2025-06-09T18:00:00+03:00",
+      "final_quantity": 0,
+      "trades": [
+        {
+          "event": "buy",
+          "at": "2025-06-05T10:00:00+03:00",
+          "traded_quantity": 20,
+          "execution_price": "100",
+          "notional": "2000",
+          "fee": "1",
+          "cash": "7999",
+          "quantity": 20
+        },
+        {
+          "event": "sell",
+          "at": "2025-06-09T18:00:00+03:00",
+          "traded_quantity": 20,
+          "execution_price": "105",
+          "notional": "2100",
+          "fee": "1",
+          "cash": "10098",
+          "quantity": 0
+        }
+      ]
+    },
+    "SC02": {
+      "entry_at": "2025-06-05T10:00:00+03:00",
+      "exit_at": "2025-06-09T18:00:00+03:00",
+      "final_quantity": 0,
+      "trades": [
+        {
+          "event": "buy",
+          "at": "2025-06-05T10:00:00+03:00",
+          "traded_quantity": 20,
+          "execution_price": "100.5",
+          "notional": "2010",
+          "fee": "3",
+          "cash": "7987",
+          "quantity": 20
+        },
+        {
+          "event": "sell",
+          "at": "2025-06-09T18:00:00+03:00",
+          "traded_quantity": 20,
+          "execution_price": "104.475",
+          "notional": "2089.50",
+          "fee": "3",
+          "cash": "10073.50",
+          "quantity": 0
+        }
+      ]
+    }
+  },
+  "scenario_control_provenance": "Step11 independent-controls/reference-checks; literal frozen controls, not production output",
+  "known_prior_failure": "Step9 C top1 call_limit retained; not expected success",
+  "human_reviewed": false
+}

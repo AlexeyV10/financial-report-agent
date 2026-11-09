@@ -1,0 +1,119 @@
+{
+  "record_schema_version": "0.1",
+  "case_id": "QA07",
+  "variant": "B",
+  "suite": "financial_qa",
+  "split": "dev_open",
+  "origin": "real",
+  "input": {
+    "asset_path": "data/examples/reference_bundle.json",
+    "asset_sha256": "93e51d6dc834e4627dce6e6c75c43aec465cd2c9308bac35d443040b5a394c3a",
+    "reproduction": {
+      "entrypoint": "user_query",
+      "parameters": {
+        "company": "ФосАгро",
+        "scope": "группа",
+        "standard": "МСФО",
+        "metric": "выручка",
+        "year": "2024",
+        "compare": "2023",
+        "mode": "snapshot",
+        "as_of": null,
+        "source": "search"
+      },
+      "top_k": 1
+    },
+    "document": {
+      "entity_id": "phosagro_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+      "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+    }
+  },
+  "started_at": "2026-11-09T01:55:58.828171+00:00",
+  "availability": "executed",
+  "origin_notices": [],
+  "searches": [
+    {
+      "status": "found",
+      "reason_code": "ok",
+      "top_k": 1,
+      "hits": [
+        {
+          "rank": 1,
+          "fragment_id": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1:11:left_half_of_spread",
+          "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "pdf_page": 11,
+          "page_region": "left_half_of_spread",
+          "verification_status": "candidate",
+          "existing_manual_evidence_ids": []
+        }
+      ]
+    }
+  ],
+  "output": {
+    "user_path_schema_version": "0.1",
+    "query": {
+      "company": "ФосАгро",
+      "standard": "МСФО",
+      "metric": "выручка",
+      "year": "2024",
+      "compare": "2023",
+      "scope": "группа",
+      "mode": "snapshot",
+      "as_of": null,
+      "source": "search"
+    },
+    "status": "missing",
+    "reason_code": "verified_evidence_not_retrieved",
+    "text": "Учебный анализ отчётности — ограниченный сценарий\nВопрос: Как изменилась выручка (ФосАгро, группа, МСФО) за 2024 год по сравнению с 2023 годом?\nРежим: анализ выбранной версии отчётности; её доступность в прошлом не утверждается.\nИсточник данных: локальный поиск и прежний проверенный реестр фактов.\n\nНедостаточно подтверждённых данных.\nВ найденных фрагментах нет обоих нужных доказательств. Попробуйте --results 5 и проверьте источник. Прямой расчёт вместо поиска автоматически не включается.\nОтвет с числом не сформирован.\n\nОграничения:\n- Финансовые факты подготовлены вручную; автоматического подтверждения новых чисел нет.\n- Реестр подготовлен ассистентом; проверка пользователем не заявляется.\n- Право распространять копию отчёта и его страницы не подтверждено; используйте ссылки на сайт источника.\n- Аудиторское мнение с оговоркой: не раскрыта требуемая информация о сегментах. Здесь сравнивается только общая выручка.\n- Дата первой публикации именно этой PDF-версии неизвестна; историческая доступность не подтверждена.\n- Результат рассчитан по округлённым опубликованным суммам; дополнительные внутренние знаки не повышают точность отчёта.\n- Искусственный сценарий запускается отдельно; этот финансовый ответ не разрешает торговлю. Результат не является инвестиционной рекомендацией.\n",
+    "financial_result": {
+      "financial_tool_schema_version": "0.1",
+      "request": {
+        "operation_id": "annual_growth_v1",
+        "previous_fact_id": "phosagro-revenue-2023",
+        "current_fact_id": "phosagro-revenue-2024",
+        "mode": "document_snapshot",
+        "as_of": null
+      },
+      "status": "missing",
+      "reason_code": "verified_evidence_not_retrieved",
+      "message": "В выдаче нет ссылок на оба нужных доказательства из проверенного реестра.",
+      "basis": "preverified_manual_fact_registry",
+      "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+      "entity_name": "ПАО «ФосАгро» и дочерние общества",
+      "accounting_standard": "IFRS",
+      "metric_id": "revenue",
+      "requested_periods": {
+        "previous": {
+          "kind": "duration",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        "current": {
+          "kind": "duration",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      },
+      "answer": null,
+      "inputs": [],
+      "sources": [],
+      "warnings": [
+        "manual_annotation",
+        "source_checked_by_assistant",
+        "rights_for_public_copy_unconfirmed",
+        "auditor_qualified_opinion_segment_disclosure",
+        "snapshot_only_publication_unknown",
+        "source_rounding_limits_precision"
+      ],
+      "retrieval_resolution": null
+    }
+  },
+  "ended_at": "2026-11-09T01:55:58.831917+00:00",
+  "elapsed_s": 0.0037431000000651693
+}

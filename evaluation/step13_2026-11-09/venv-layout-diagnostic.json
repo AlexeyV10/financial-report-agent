@@ -1,0 +1,7 @@
+{
+  "initial_launch": "clean-venv/Scripts/python.exe",
+  "initial_result": "FileNotFoundError before any integration/unit/model execution",
+  "observed_interpreter": "CPython3.14.7 from MSYS2 UCRT64",
+  "observed_venv_python": "tmp/step13/clean-venv/bin/python.exe",
+  "correction": "Use observed bin/python.exe; document both MSYS2 bin and standard Windows Scripts layouts. No interpreter download or package install."
+}

@@ -1,0 +1,16 @@
+{
+  "version": {
+    "version": "0.40.15"
+  },
+  "tags": {
+    "models": []
+  },
+  "loaded": {
+    "models": []
+  },
+  "owner": {
+    "executable": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\local-model\\ollama-0.40.15\\ollama.exe",
+    "started_at_ticks": 639297860407513076,
+    "pid": 20768
+  }
+}

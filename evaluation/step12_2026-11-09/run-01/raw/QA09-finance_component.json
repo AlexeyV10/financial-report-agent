@@ -1,0 +1,107 @@
+{
+  "record_schema_version": "0.1",
+  "case_id": "QA09",
+  "variant": "finance_component",
+  "suite": "financial_qa",
+  "split": "dev_open",
+  "origin": "self_created_synthetic",
+  "input": {
+    "asset_path": "data/question_sets/kp2_v1/assets/missing-bundle.json",
+    "asset_sha256": "cf9a5e6e815d9eb7889fe6c659cb731e18a708081f44aacc4f60c920605794e8",
+    "reproduction": {
+      "entrypoint": "finance_tool",
+      "parameters": {
+        "operation_id": "annual_growth_v1",
+        "previous_fact_id": "synthetic-qa-missing-2023",
+        "current_fact_id": "synthetic-qa-missing-2024",
+        "mode": "document_snapshot",
+        "as_of": null
+      },
+      "top_k": null
+    },
+    "document": {
+      "entity_id": "synthetic-qa-missing-group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "document_id": "synthetic-qa-missing-v1",
+      "version_id": "sha256:efd90c46aee9bbe7d2c89049b1314ab6a99ece461325d3e9e5624aa723449fb5",
+      "sha256": "efd90c46aee9bbe7d2c89049b1314ab6a99ece461325d3e9e5624aa723449fb5"
+    }
+  },
+  "started_at": "2026-11-09T01:54:28.900982+00:00",
+  "availability": "executed",
+  "origin_notices": [
+    "synthetic_data_not_issuer_facts"
+  ],
+  "searches": [],
+  "output": {
+    "status": "missing",
+    "reason_code": "value_missing",
+    "financial_result": {
+      "financial_tool_schema_version": "0.1",
+      "request": {
+        "operation_id": "annual_growth_v1",
+        "previous_fact_id": "synthetic-qa-missing-2023",
+        "current_fact_id": "synthetic-qa-missing-2024",
+        "mode": "document_snapshot",
+        "as_of": null
+      },
+      "status": "missing",
+      "reason_code": "value_missing",
+      "message": "Отсутствует одно из двух необходимых значений выручки.",
+      "basis": "preverified_manual_fact_registry",
+      "document_id": "synthetic-qa-missing-v1",
+      "entity_name": "Вымышленная группа «missing»",
+      "accounting_standard": "IFRS",
+      "metric_id": "revenue",
+      "requested_periods": {
+        "previous": {
+          "kind": "duration",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        "current": {
+          "kind": "duration",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      },
+      "answer": {
+        "schema_version": "0.1",
+        "request_id": "synthetic-qa-missing-request",
+        "status": "missing",
+        "reason_code": "value_missing",
+        "message": "Отсутствует одно из двух необходимых значений выручки.",
+        "fact_ids": [],
+        "claims": [],
+        "calculation": null,
+        "warnings": [
+          "manual_annotation",
+          "source_checked_by_assistant"
+        ],
+        "analysis_mode": "document_snapshot",
+        "as_of": null,
+        "document_version": "sha256:efd90c46aee9bbe7d2c89049b1314ab6a99ece461325d3e9e5624aa723449fb5",
+        "availability_from": "2025-06-04T19:00:00+03:00",
+        "scenario_gate": {
+          "status": "blocked",
+          "reasons": [
+            "no_valid_calculation",
+            "calendar_and_prices_missing",
+            "simulation_not_implemented"
+          ]
+        }
+      },
+      "inputs": [],
+      "sources": [],
+      "warnings": [
+        "manual_annotation",
+        "source_checked_by_assistant"
+      ],
+      "retrieval_resolution": null
+    },
+    "text": "Искусственный реестр: не факты эмитента."
+  },
+  "ended_at": "2026-11-09T01:54:28.901609+00:00",
+  "elapsed_s": 0.000620699998762575
+}

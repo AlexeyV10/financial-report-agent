@@ -1,0 +1,11 @@
+{
+  "models": [
+    {
+      "name": "qwen3:4b",
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "size": 3877571133,
+      "size_vram": 3877571133,
+      "context_length": 8192
+    }
+  ]
+}

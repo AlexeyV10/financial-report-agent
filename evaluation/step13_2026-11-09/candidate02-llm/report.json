@@ -1,0 +1,52 @@
+{
+  "phase": "llm",
+  "checked_at": "2026-11-09T02:19:38.491949+00:00",
+  "root": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-candidate-02",
+  "python": "3.14.7 (main, Aug  8 2026, 21:15:19)  [MINGW GCC UCRT 16.2.0 64 bit (AMD64)]",
+  "interpreter": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\clean-venv\\bin\\python.exe",
+  "isolated_child_python": true,
+  "runs": [
+    {
+      "case": "C-LLM-normal",
+      "command": [
+        "python",
+        "-I",
+        "scripts/run_local.py",
+        "agent",
+        "--adapter",
+        "ollama",
+        "--trace",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-candidate-02\\output\\step13-llm\\C-LLM-normal.trace.json"
+      ],
+      "cwd": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\restored-candidate-02",
+      "interpreter": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\step13\\clean-venv\\bin\\python.exe",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "elapsed_s": 14.611095000000205,
+      "stdout_file": "C-LLM-normal.txt",
+      "adapter": {
+        "kind": "local_llm",
+        "adapter": "ollama-json-dialogue-v4-limits",
+        "model": "qwen3:4b",
+        "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+        "server_version": "0.40.15",
+        "endpoint": "http://127.0.0.1:11435",
+        "think": false,
+        "temperature": 0,
+        "num_ctx": 8192
+      },
+      "decision_attempts": 5,
+      "usage": {
+        "input_tokens": 19120,
+        "output_tokens": 268,
+        "cost": null,
+        "cost_status": "не измерено"
+      },
+      "financial_status": "answered",
+      "stop_reason": "validated_financial_result"
+    }
+  ],
+  "passed": true,
+  "scope": "Integration launch, not new model quality benchmark"
+}

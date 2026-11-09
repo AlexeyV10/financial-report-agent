@@ -1,0 +1,8 @@
+{
+  "production_answering_imports_forbidden": true,
+  "socket_creation_forbidden": true,
+  "replay_exit_code": 0,
+  "saved_metrics_match": true,
+  "blocked_import_attempts": [],
+  "model_calls": 0
+}

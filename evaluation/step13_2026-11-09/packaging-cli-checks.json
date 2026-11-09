@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "case": "verify_candidate",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    },
+    {
+      "case": "reject_build_existing",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true
+    },
+    {
+      "case": "reject_restore_existing",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true
+    },
+    {
+      "case": "reject_build_source_path",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true
+    },
+    {
+      "case": "reject_restore_outside_tmp",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true
+    },
+    {
+      "case": "reject_wrong_receipt",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true
+    },
+    {
+      "case": "reject_unknown_action",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true
+    },
+    {
+      "case": "reject_unknown_launcher_mode",
+      "exit_code": 2,
+      "passed": true
+    }
+  ],
+  "passed": 8,
+  "existing_candidate_sha256_unchanged": true,
+  "model_calls": 0
+}

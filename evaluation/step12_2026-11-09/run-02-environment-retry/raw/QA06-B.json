@@ -1,0 +1,133 @@
+{
+  "record_schema_version": "0.1",
+  "case_id": "QA06",
+  "variant": "B",
+  "suite": "financial_qa",
+  "split": "dev_open",
+  "origin": "real",
+  "input": {
+    "asset_path": "data/examples/reference_bundle.json",
+    "asset_sha256": "93e51d6dc834e4627dce6e6c75c43aec465cd2c9308bac35d443040b5a394c3a",
+    "reproduction": {
+      "entrypoint": "user_query",
+      "parameters": {
+        "company": "ФосАгро",
+        "scope": "группа",
+        "standard": "МСФО",
+        "metric": "выручка",
+        "year": "2024",
+        "compare": "2023",
+        "mode": "historical",
+        "as_of": "2025-02-14T10:00:00+03:00",
+        "source": "search"
+      },
+      "top_k": 5
+    },
+    "document": {
+      "entity_id": "phosagro_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+      "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+    }
+  },
+  "started_at": "2026-11-09T01:55:58.825241+00:00",
+  "availability": "executed",
+  "origin_notices": [],
+  "searches": [
+    {
+      "status": "missing",
+      "reason_code": "publication_unknown",
+      "top_k": 5,
+      "hits": []
+    }
+  ],
+  "output": {
+    "user_path_schema_version": "0.1",
+    "query": {
+      "company": "ФосАгро",
+      "standard": "МСФО",
+      "metric": "выручка",
+      "year": "2024",
+      "compare": "2023",
+      "scope": "группа",
+      "mode": "historical",
+      "as_of": "2025-02-14T10:00:00+03:00",
+      "source": "search"
+    },
+    "status": "missing",
+    "reason_code": "publication_unknown",
+    "text": "Учебный анализ отчётности — ограниченный сценарий\nВопрос: Как изменилась выручка (ФосАгро, группа, МСФО) за 2024 год по сравнению с 2023 годом?\nРежим: исторический анализ. Момент: 2025-02-14T10:00:00+03:00\nИсточник данных: локальный поиск и прежний проверенный реестр фактов.\n\nНедостаточно подтверждённых данных.\nНе подтверждено, когда именно эта версия PDF стала доступна. Исторический ответ с числом сформировать нельзя; дата подписи или получения файла не заменяет публикацию.\nОтвет с числом не сформирован.\n\nОграничения:\n- Финансовые факты подготовлены вручную; автоматического подтверждения новых чисел нет.\n- Реестр подготовлен ассистентом; проверка пользователем не заявляется.\n- Право распространять копию отчёта и его страницы не подтверждено; используйте ссылки на сайт источника.\n- Аудиторское мнение с оговоркой: не раскрыта требуемая информация о сегментах. Здесь сравнивается только общая выручка.\n- Искусственный сценарий запускается отдельно; этот финансовый ответ не разрешает торговлю. Результат не является инвестиционной рекомендацией.\n",
+    "financial_result": {
+      "financial_tool_schema_version": "0.1",
+      "request": {
+        "operation_id": "annual_growth_v1",
+        "previous_fact_id": "phosagro-revenue-2023",
+        "current_fact_id": "phosagro-revenue-2024",
+        "mode": "historical_as_of",
+        "as_of": "2025-02-14T10:00:00+03:00"
+      },
+      "status": "missing",
+      "reason_code": "publication_unknown",
+      "message": "Дата доступности этой версии не подтверждена; исторический ответ запрещён.",
+      "basis": "preverified_manual_fact_registry",
+      "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+      "entity_name": "ПАО «ФосАгро» и дочерние общества",
+      "accounting_standard": "IFRS",
+      "metric_id": "revenue",
+      "requested_periods": {
+        "previous": {
+          "kind": "duration",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        "current": {
+          "kind": "duration",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      },
+      "answer": {
+        "schema_version": "0.1",
+        "request_id": "first-revenue-growth",
+        "status": "missing",
+        "reason_code": "publication_unknown",
+        "message": "Дата доступности этой версии не подтверждена; исторический ответ запрещён.",
+        "fact_ids": [],
+        "claims": [],
+        "calculation": null,
+        "warnings": [
+          "manual_annotation",
+          "source_checked_by_assistant",
+          "rights_for_public_copy_unconfirmed",
+          "auditor_qualified_opinion_segment_disclosure"
+        ],
+        "analysis_mode": "historical_as_of",
+        "as_of": "2025-02-14T10:00:00+03:00",
+        "document_version": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+        "availability_from": null,
+        "scenario_gate": {
+          "status": "blocked",
+          "reasons": [
+            "publication_of_exact_version_unknown",
+            "no_valid_calculation",
+            "calendar_and_prices_missing",
+            "simulation_not_implemented"
+          ]
+        }
+      },
+      "inputs": [],
+      "sources": [],
+      "warnings": [
+        "manual_annotation",
+        "source_checked_by_assistant",
+        "rights_for_public_copy_unconfirmed",
+        "auditor_qualified_opinion_segment_disclosure"
+      ],
+      "retrieval_resolution": null
+    }
+  },
+  "ended_at": "2026-11-09T01:55:58.827597+00:00",
+  "elapsed_s": 0.00234930000078748
+}

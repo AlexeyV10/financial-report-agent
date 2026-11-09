@@ -1,0 +1,41 @@
+{
+  "checked_at": "2026-11-08T22:34:41.641389+00:00",
+  "archive": "stage1-local-v2-2026-11-09.zip",
+  "sha256": "aee9fd15053eee79a4e0ae6a540633cba5d3e2f158d74f1db047c5de64477b4d",
+  "bytes": 76874,
+  "payload_files": 28,
+  "zip_members": 29,
+  "exact_members_and_hashes_verified": true,
+  "source_documents_included": false,
+  "test_environment": "new directory, isolated Python, same computer and interpreter",
+  "workflow": "single_user_with_codex",
+  "fact_verification_provenance": "assistant_checked_not_a_claim_of_user_review",
+  "storage": "local_folder_and_archive_selected_by_user",
+  "runs": [
+    {
+      "command": [
+        "python",
+        "-I",
+        "scripts/check_stage1.py"
+      ],
+      "exit_code": 0,
+      "stdout": "4/4 contract examples passed\nnormal_snapshot: answered / ok; scenario=blocked\nmissing_value: missing / value_missing; scenario=blocked\nincompatible_periods: conflict / incompatible_periods; scenario=blocked\nunknown_publication_historical: missing / publication_unknown; scenario=blocked\nRevenue: 440304 -> 507689 million RUB; delta=67385; growth=15.30%\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "-I",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_answer_cannot_hide_assistant_verification_provenance (test_contracts.ContractsTest.test_answer_cannot_hide_assistant_verification_provenance) ... ok\ntest_answer_cannot_hide_unknown_publication_reason (test_contracts.ContractsTest.test_answer_cannot_hide_unknown_publication_reason) ... ok\ntest_answer_cannot_turn_answerable_request_into_a_refusal (test_contracts.ContractsTest.test_answer_cannot_turn_answerable_request_into_a_refusal) ... ok\ntest_answer_rejects_changed_numeric_results (test_contracts.ContractsTest.test_answer_rejects_changed_numeric_results) ... ok\ntest_answer_rejects_invented_availability (test_contracts.ContractsTest.test_answer_rejects_invented_availability) ... ok\ntest_answer_requires_both_evidence_references (test_contracts.ContractsTest.test_answer_requires_both_evidence_references) ... ok\ntest_changed_decimal_context_does_not_change_result (test_contracts.ContractsTest.test_changed_decimal_context_does_not_change_result) ... ok\ntest_company_group_and_standard_are_checked (test_contracts.ContractsTest.test_company_group_and_standard_are_checked) ... ok\ntest_currency_mismatch (test_contracts.ContractsTest.test_currency_mismatch) ... ok\ntest_decline (test_contracts.ContractsTest.test_decline) ... ok\ntest_duplicate_fact_is_conflict (test_contracts.ContractsTest.test_duplicate_fact_is_conflict) ... ok\ntest_duplicate_id_is_malformed (test_contracts.ContractsTest.test_duplicate_id_is_malformed) ... ok\ntest_equal_values (test_contracts.ContractsTest.test_equal_values) ... ok\ntest_float_nan_and_numeric_range_rejected (test_contracts.ContractsTest.test_float_nan_and_numeric_range_rejected) ... ok\ntest_four_saved_examples (test_contracts.ContractsTest.test_four_saved_examples) ... ok\ntest_future_revision_is_not_used (test_contracts.ContractsTest.test_future_revision_is_not_used) ... ok\ntest_known_date_no_same_day_signal (test_contracts.ContractsTest.test_known_date_no_same_day_signal) ... ok\ntest_leap_year_is_comparable (test_contracts.ContractsTest.test_leap_year_is_comparable) ... ok\ntest_missing_evidence_is_malformed (test_contracts.ContractsTest.test_missing_evidence_is_malformed) ... ok\ntest_missing_fact (test_contracts.ContractsTest.test_missing_fact) ... ok\ntest_naive_timestamp_rejected (test_contracts.ContractsTest.test_naive_timestamp_rejected) ... ok\ntest_negative_base (test_contracts.ContractsTest.test_negative_base) ... ok\ntest_nine_months_cannot_be_annual (test_contracts.ContractsTest.test_nine_months_cannot_be_annual) ... ok\ntest_nonconsecutive_years (test_contracts.ContractsTest.test_nonconsecutive_years) ... ok\ntest_real_result_against_independent_fraction (test_contracts.ContractsTest.test_real_result_against_independent_fraction) ... ok\ntest_refusal_cannot_smuggle_a_calculation (test_contracts.ContractsTest.test_refusal_cannot_smuggle_a_calculation) ... ok\ntest_report_instructions_are_only_data (test_contracts.ContractsTest.test_report_instructions_are_only_data) ... ok\ntest_round_half_up_boundary (test_contracts.ContractsTest.test_round_half_up_boundary) ... ok\ntest_scale_mismatch (test_contracts.ContractsTest.test_scale_mismatch) ... ok\ntest_source_grouping_and_parentheses (test_contracts.ContractsTest.test_source_grouping_and_parentheses) ... ok\ntest_timestamp_before_at_and_equivalent_offset (test_contracts.ContractsTest.test_timestamp_before_at_and_equivalent_offset) ... ok\ntest_unchecked_fact_evidence_and_document (test_contracts.ContractsTest.test_unchecked_fact_evidence_and_document) ... ok\ntest_unknown_fields_are_rejected (test_contracts.ContractsTest.test_unknown_fields_are_rejected) ... ok\ntest_unknown_publication_never_uses_approval_or_retrieval (test_contracts.ContractsTest.test_unknown_publication_never_uses_approval_or_retrieval) ... ok\ntest_unproven_version_binding_blocks_history (test_contracts.ContractsTest.test_unproven_version_binding_blocks_history) ... ok\ntest_unsupported_formula (test_contracts.ContractsTest.test_unsupported_formula) ... ok\ntest_weekend_date_does_not_invent_a_trading_session (test_contracts.ContractsTest.test_weekend_date_does_not_invent_a_trading_session) ... ok\ntest_wrong_hash_and_page_and_reference_are_malformed (test_contracts.ContractsTest.test_wrong_hash_and_page_and_reference_are_malformed) ... ok\ntest_wrong_sign_or_number_is_malformed (test_contracts.ContractsTest.test_wrong_sign_or_number_is_malformed) ... ok\ntest_zero_base (test_contracts.ContractsTest.test_zero_base) ... ok\ntest_zero_current_is_a_real_value (test_contracts.ContractsTest.test_zero_current_is_a_real_value) ... ok\n\n----------------------------------------------------------------------\nRan 41 tests in 0.018s\n\nOK\n"
+    }
+  ]
+}

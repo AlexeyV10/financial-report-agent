@@ -1,0 +1,189 @@
+{
+  "schema_version": "0.1",
+  "document": {
+    "document_id": "synthetic-qa-conflict-v1",
+    "entity_id": "synthetic-qa-conflict-group",
+    "entity_name": "Вымышленная группа «conflict»",
+    "consolidation": "group",
+    "accounting_standard": "IFRS",
+    "document_type": "synthetic_contract_fixture_not_a_pdf",
+    "report_period": {
+      "kind": "duration",
+      "start": "2024-01-01",
+      "end": "2024-12-31"
+    },
+    "source_page_url": "https://example.invalid/qa/conflict-v1",
+    "document_url": "https://example.invalid/qa/conflict-v1",
+    "version_id": "sha256:f0aa685d0df29240a76860b9a52723a6e60092e67d3ac1d8872d2ede252a23bd",
+    "sha256": "f0aa685d0df29240a76860b9a52723a6e60092e67d3ac1d8872d2ede252a23bd",
+    "byte_length": 105,
+    "pdf_pages": 1,
+    "fetched_at": "2026-11-09T01:07:38.117538+00:00",
+    "approval_date": "2025-06-04",
+    "publication": {
+      "precision": "timestamp",
+      "value": "2025-06-04T19:00:00+03:00",
+      "timezone": "Europe/Moscow",
+      "version_binding": "document_version",
+      "source_url": "https://example.invalid/qa/conflict-v1"
+    },
+    "related_release": {
+      "url": "https://example.invalid/qa/conflict-v1",
+      "displayed_date": "2025-06-04",
+      "binds_pdf_version": false
+    },
+    "rights": {
+      "status": "confirmed",
+      "public_copy_allowed": true,
+      "note": "Own synthetic text, not third-party reporting. Compatibility PDF/page fields denote a virtual table, not a downloaded PDF.",
+      "checked_on": "2026-11-09"
+    },
+    "audit": {
+      "opinion": "not_applicable_synthetic",
+      "limitation": "Fictional fixture, no auditor opinion."
+    },
+    "review": {
+      "status": "assistant_checked",
+      "method": "Self-created synthetic QA fixture; technical/semantic reference check, not a real PDF or human review.",
+      "human_reviewer": null
+    }
+  },
+  "evidence": [
+    {
+      "evidence_id": "synthetic-qa-conflict-e2023",
+      "document_id": "synthetic-qa-conflict-v1",
+      "version_id": "sha256:f0aa685d0df29240a76860b9a52723a6e60092e67d3ac1d8872d2ede252a23bd",
+      "document_sha256": "f0aa685d0df29240a76860b9a52723a6e60092e67d3ac1d8872d2ede252a23bd",
+      "pdf_page": 1,
+      "printed_page": "synthetic-table-1",
+      "statement_page": "virtual-1",
+      "page_region": "synthetic_table_not_pdf",
+      "table_title": "Вымышленная таблица для проверки кода",
+      "row_label": "Синтетическая выручка",
+      "column_label": "2023",
+      "period": {
+        "kind": "duration",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "currency": "USD",
+      "scale": 1000000,
+      "unit_header": "Условные млн RUB",
+      "raw_value": "100",
+      "numeric_encoding": "comma_thousands_integer",
+      "review": {
+        "status": "assistant_checked",
+        "method": "Self-created synthetic QA fixture; technical/semantic reference check, not a real PDF or human review.",
+        "human_reviewer": null
+      }
+    },
+    {
+      "evidence_id": "synthetic-qa-conflict-e2024",
+      "document_id": "synthetic-qa-conflict-v1",
+      "version_id": "sha256:f0aa685d0df29240a76860b9a52723a6e60092e67d3ac1d8872d2ede252a23bd",
+      "document_sha256": "f0aa685d0df29240a76860b9a52723a6e60092e67d3ac1d8872d2ede252a23bd",
+      "pdf_page": 1,
+      "printed_page": "synthetic-table-1",
+      "statement_page": "virtual-1",
+      "page_region": "synthetic_table_not_pdf",
+      "table_title": "Вымышленная таблица для проверки кода",
+      "row_label": "Синтетическая выручка",
+      "column_label": "2024",
+      "period": {
+        "kind": "duration",
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1000000,
+      "unit_header": "Условные млн RUB",
+      "raw_value": "120",
+      "numeric_encoding": "comma_thousands_integer",
+      "review": {
+        "status": "assistant_checked",
+        "method": "Self-created synthetic QA fixture; technical/semantic reference check, not a real PDF or human review.",
+        "human_reviewer": null
+      }
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "synthetic-qa-conflict-2023",
+      "evidence_id": "synthetic-qa-conflict-e2023",
+      "entity_id": "synthetic-qa-conflict-group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "metric_id": "revenue",
+      "original_label": "Синтетическая выручка",
+      "value": "100",
+      "currency": "USD",
+      "scale": 1000000,
+      "period": {
+        "kind": "duration",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "version_id": "sha256:f0aa685d0df29240a76860b9a52723a6e60092e67d3ac1d8872d2ede252a23bd",
+      "review": {
+        "status": "assistant_checked",
+        "method": "Self-created synthetic QA fixture; technical/semantic reference check, not a real PDF or human review.",
+        "human_reviewer": null
+      }
+    },
+    {
+      "fact_id": "synthetic-qa-conflict-2024",
+      "evidence_id": "synthetic-qa-conflict-e2024",
+      "entity_id": "synthetic-qa-conflict-group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "metric_id": "revenue",
+      "original_label": "Синтетическая выручка",
+      "value": "120",
+      "currency": "RUB",
+      "scale": 1000000,
+      "period": {
+        "kind": "duration",
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "version_id": "sha256:f0aa685d0df29240a76860b9a52723a6e60092e67d3ac1d8872d2ede252a23bd",
+      "review": {
+        "status": "assistant_checked",
+        "method": "Self-created synthetic QA fixture; technical/semantic reference check, not a real PDF or human review.",
+        "human_reviewer": null
+      }
+    }
+  ],
+  "request": {
+    "request_id": "synthetic-qa-conflict-request",
+    "question": "Проверка собственного искусственного реестра",
+    "entity_id": "synthetic-qa-conflict-group",
+    "consolidation": "group",
+    "accounting_standard": "IFRS",
+    "metric_id": "revenue",
+    "current_period": {
+      "kind": "duration",
+      "start": "2024-01-01",
+      "end": "2024-12-31"
+    },
+    "previous_period": {
+      "kind": "duration",
+      "start": "2023-01-01",
+      "end": "2023-12-31"
+    },
+    "mode": "document_snapshot",
+    "as_of": null,
+    "formula_id": "annual_growth_v1"
+  },
+  "scenario": {
+    "rule_id": "legacy-synthetic-placeholder",
+    "rule_version": "draft-1",
+    "condition": "growth_pct_gt",
+    "threshold_pct": "10",
+    "data_mode": "synthetic_only",
+    "signal_at": null,
+    "calendar_id": null,
+    "price_snapshot_id": null,
+    "execution_at": null
+  }
+}

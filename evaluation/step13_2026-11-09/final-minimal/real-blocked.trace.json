@@ -1,0 +1,40 @@
+{
+  "run_id": "7b9e35f0-00ca-427e-b03d-b1d9c2e99ae9",
+  "started_at": "2026-11-09T02:28:11.770351+00:00",
+  "ended_at": "2026-11-09T02:28:11.772882+00:00",
+  "elapsed_s": 0.0025386999986949377,
+  "case": "real-source",
+  "request_sha256": "caff3e36e661700cc37ca0ed46ad2eda47515208b28047c6c03c62478c3aeb7e",
+  "versions": {
+    "scenario_schema": "0.1",
+    "financial_contract": "0.1",
+    "growth_formula": "annual_growth_v1",
+    "code_sha256": {
+      "simulation.py": "0e7b69c6c69021648485c33f7cbb95bf27909078ec9e6e24e88d4c35c1a45801",
+      "simulation_view.py": "48cf83bce3d64909d2c321fbd196f45650fd7552ea1e32073742ff1142053065",
+      "contracts.py": "5894effc517efdbddb3b9a10d4bd7268f9d277bde283e2e476fe9ea0b8a55ac2",
+      "finance.py": "2f19dec687077097544c0e0149af1877981ecfcbbeabe7debe8936739608d6e4"
+    }
+  },
+  "model_calls": 0,
+  "result": {
+    "scenario_result_schema_version": "0.1",
+    "label": "ПРОВЕРКА НАСТОЯЩЕГО ИСТОЧНИКА — ТОРГОВЛИ НЕТ",
+    "status": "blocked",
+    "reason_code": "publication_unknown",
+    "document_id": "phosagro-group-ifrs-2024-annual-extract-ru",
+    "document_version": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+    "decision_at": "2025-06-04T19:30:00+03:00",
+    "ledger": [],
+    "return_pct": null,
+    "legacy_gate": {
+      "status": "blocked",
+      "reasons": [
+        "publication_of_exact_version_unknown",
+        "no_valid_calculation",
+        "calendar_and_prices_missing",
+        "simulation_not_implemented"
+      ]
+    }
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "stage": 12,
+  "completed_at": "2026-11-09T02:03:50.640125+00:00",
+  "status": "limited_first_measurements_complete",
+  "dataset_id": "kp2-question-set-v1",
+  "dataset_version": "1.0.0",
+  "current_financial_coverage": "3/10",
+  "financial_comparison_ids": [
+    "QA03",
+    "QA06",
+    "QA07"
+  ],
+  "reserved_financial_B_C_cases": 0,
+  "blind_independent_evaluation": false,
+  "runs": [
+    {
+      "id": "run-01",
+      "kind": "initial_declared_pass",
+      "chat_requests": 0,
+      "outcome": "B/components executed; C blocked at pin/probe because sandbox-started server had Access is denied reading model manifests",
+      "all_raw_failures_preserved": true
+    },
+    {
+      "id": "run-02-environment-retry",
+      "kind": "separate_declared_diagnostic_retry_after_environment_fix",
+      "chat_requests": 17,
+      "code_prompt_gold_limits_changed": false,
+      "source": "run-02-environment-retry/retry-context.json"
+    }
+  ],
+  "metrics_after_environment_fix": {
+    "B": {
+      "numeric_accuracy": {
+        "correct": 1,
+        "total": 1,
+        "fraction": "1/1",
+        "status": "measured"
+      },
+      "correct_refusals": {
+        "correct": 2,
+        "total": 2,
+        "fraction": "2/2",
+        "status": "measured"
+      },
+      "claim_confirmation": {
+        "correct": 4,
+        "total": 4,
+        "fraction": "4/4",
+        "status": "measured"
+      },
+      "reserved_financial": {
+        "correct": 0,
+        "total": 0,
+        "fraction": null,
+        "status": "not_measured"
+      },
+      "supported_financial_coverage": "3/10",
+      "failed_answerable_cases": []
+    },
+    "C/LLM": {
+      "numeric_accuracy": {
+        "correct": 1,
+        "total": 1,
+        "fraction": "1/1",
+        "status": "measured"
+      },
+      "correct_refusals": {
+        "correct": 1,
+        "total": 2,
+        "fraction": "1/2",
+        "status": "measured"
+      },
+      "claim_confirmation": {
+        "correct": 4,
+        "total": 4,
+        "fraction": "4/4",
+        "status": "measured"
+      },
+      "reserved_financial": {
+        "correct": 0,
+        "total": 0,
+        "fraction": null,
+        "status": "not_measured"
+      },
+      "supported_financial_coverage": "3/10",
+      "failed_answerable_cases": []
+    },
+    "B/interface": {
+      "correct": 1,
+      "total": 1,
+      "fraction": "1/1",
+      "status": "measured"
+    },
+    "C/LLM/interface": {
+      "correct": 1,
+      "total": 1,
+      "fraction": "1/1",
+      "status": "measured"
+    },
+    "finance_component/financial_qa": {
+      "correct": 2,
+      "total": 2,
+      "fraction": "2/2",
+      "status": "measured"
+    },
+    "simulator/scenario": {
+      "correct": 2,
+      "total": 2,
+      "fraction": "2/2",
+      "status": "measured"
+    }
+  },
+  "false_financial_refusals_on_answerable_QA03": {
+    "B": "0/1",
+    "C/LLM": "0/1"
+  },
+  "usage_after_environment_fix": {
+    "chat_requests_started": 17,
+    "chat_responses_received": 17,
+    "observed_input_tokens": 39000,
+    "observed_output_tokens": 849
+  },
+  "usage_complete": true,
+  "monetary_cost": null,
+  "cost_note": "No API payments; electricity/hardware/total monetary cost not measured",
+  "known_failure": "QA07 C: two repeat_call then missing calculation on sixth decision, no finish; limit_exceeded/error/call_limit, not correct refusal",
+  "unit_tests": {
+    "total": 255,
+    "previous": 231,
+    "new_grader": 24,
+    "passed": true,
+    "log": "unit-tests.txt"
+  },
+  "validation_cli": {
+    "total": 8,
+    "passed": true,
+    "proof": "cli-checks.json"
+  },
+  "offline_replay": {
+    "both_runs_match_saved": true,
+    "guarded_no_socket_no_production_answering_imports": true,
+    "proof": "run-02-environment-retry/offline-replay-proof.json"
+  },
+  "protected_existing_files": 37,
+  "protected_existing_files_unchanged": true,
+  "frozen_question_set_unchanged": true,
+  "all_run_input_and_raw_pins_match": true,
+  "server_stopped": true,
+  "full_source_pdf_index_models_remain_tmp": true,
+  "human_reviewed": false,
+  "step13_executed": false,
+  "limitations": [
+    "One real PDF/two facts; only 3/10 financial tasks supported",
+    "All financial B/C cases dev/open; no supported reserved financial cases",
+    "Single pass, one numeric question; no market quality/advantage claim",
+    "Separate interface/component/simulator denominators; structured renderer, not general free-text QA"
+  ],
+  "documentation": "docs/measurements.md",
+  "next_prompt": "prompts/step13_reproducible_launch.md"
+}
