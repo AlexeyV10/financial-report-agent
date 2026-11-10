@@ -1,0 +1,15 @@
+{
+  "manifest_version": "1.1",
+  "scope": "open_developer_preparation_not_eval_freeze",
+  "prompt": "one-shot-financial-selection-v1",
+  "runtime_reads_gold": false,
+  "file_sha256": {
+    "src/financial_assistant/one_shot_contracts.py": "c4408a05c74a78eb654202f0ad394ec6ff96b9a13ef0453b84713b8ec770ac7a",
+    "src/financial_assistant/one_shot_model.py": "663cfd0eb2c32bf69d105c5a6b6feee0d4b55d12c0b800112ade1f4114df67a4",
+    "src/financial_assistant/one_shot_a.py": "df1354bfc2886d1399ef025b0f47a38867a8adde28580676a20a9c460c132e05",
+    "scripts/execute_one_shot_a.py": "07243693ea9821e6732b85d327c65e9a3381f0b26030a6328ba70055ddce43e4",
+    "scripts/check_kp3_one_shot_a.py": "2d49986d2f7cf53065f3dc7361c18502f7127f169ab5015d78afdeb566f8029e",
+    "tests/test_one_shot_a.py": "286f37c815672c16dd7f2bf83b76d9a8ef5fd7164191ef09ecbe05dde57b9a96"
+  },
+  "note": "Diagnostics now retain inner worker phase on preparation failure; model prompt/selection/financial logic unchanged."
+}
