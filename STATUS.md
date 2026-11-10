@@ -1,3 +1,9 @@
+## КП3-10 завершён технически — 10.11.2026
+
+КП3-10,10.11.2026: настоящий локальный C через прежние Qwen3:4b/Ollama0.40.15, bounded tool protocol0.2/Answer0.2, финальный prompt v2. До поиска нет Fact IDs; после поиска модель выбирает найденные IDs и роли, программа проверяет источник/контекст/расчёт07/текущий receipt.546 unit (506 прежних+40 новых), checkers03–10/старые gold04/07/5legacy/9 новых C CLI прошли. Финальная real dev-матрица10/10:8 numeric +2 early missing,41 chat; все preliminary/CLI/probe попытки сохранены отдельно:37 real runs/148 chat,28 numeric references Fraction/integer+Decimal80. Это известные повторяющиеся dev-задачи, не benchmark/accuracy. QA07 старого C остаётся error/call_limit; публикации8 unknown, новых Fact/прав/human_reviewed нет. UI09 unchanged. A11 не начат, merge не поручен.
+
+Git-delivery: evaluation/kp3_10_2026-11-10/git-publication.json и финальная локальная квитанция. Пользователь поручил после09 применить10 без остановки; это выполнено. Перед11 остановиться: промт подготовлен,11 не запускался. Dirty-root01/02/старый UI/venv/КП1 сохранены.
+
 ## КП3-09 завершён технически — 10.11.2026
 
 КП3-09,10.11.2026: единый fixed B service/Answer0.1 и новый изолированный Streamlit UI. Обязательный поиск06 предшествует exact Evidence resolution/source checks/калькулятору07, skipped/error/clarification видимы.506 unit (467 прежних+39 новых),7 отдельных UI AppTest,37 новых CLI/checkers03–09/5legacy прошли;5 own+104 real known service-cases совпали с независимым reference07/Decimal80. Реальная CUA-проверка формы/ввода/уточнений/пяти операций/предпосылки/источника/сброса/historical/conflict/missing/technical error сохранена. Новых real Fact/модели нет, все8 publication unknown, historical закрыт. Не benchmark/freeze14. Только ветка09/зависимый PR в08, без merge.

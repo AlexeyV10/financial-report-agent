@@ -1,0 +1,15 @@
+{
+  "manifest_version": "1.1",
+  "scope": "open_developer_preparation_not_eval_freeze",
+  "prompt": "bounded-financial-tools-v2",
+  "runtime_reads_gold": false,
+  "file_sha256": {
+    "src/financial_assistant/agent_contracts_v2.py": "6fc8c398a133443c43bf2c9ee71b351a5d593c8ff365f9feb090223dc2c5b4c4",
+    "src/financial_assistant/agent_model_v2.py": "20935d6969b8398c45879986a2df27ff95aca6a2d5bca55090882e4a5e315781",
+    "src/financial_assistant/agent_c.py": "b23ba593fd4df0612bf6eb96b60cbf6d6177d881d22b262c194de69152efff3b",
+    "scripts/execute_agent_c.py": "0189d40f484b765846ec51e082ad818aba18792189139808db11ad6aad3cf99f",
+    "scripts/check_kp3_agent_c.py": "60c0360941cb0bbf269144c0bb4abf12c56bc302c3fa0c6be7f805c45d84ee03",
+    "tests/test_agent_c.py": "6885c5eccb456718668b19aeaefa28e963a3ae5d4562fea4ac2e21b5f2eae2ef"
+  },
+  "diagnostic_patch": "Input/catalog attempted-stage failures are recorded as error, not skipped; v2 prompt/selection/financial logic unchanged."
+}

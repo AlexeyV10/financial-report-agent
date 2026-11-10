@@ -1,0 +1,320 @@
+{
+  "schema_version": "kp3-answer-0.2",
+  "run_id": "c-a79cb29df5db4a13abb9680562ef224e",
+  "task_id": "c-a79cb29df5db4a13abb9680562ef224e",
+  "method": "C",
+  "execution_status": "error",
+  "request_status": "error",
+  "financial_status": null,
+  "reason_code": "index_missing",
+  "original_question": "Явный выбор учебного dev-контекста C.",
+  "normalized_input": {
+    "schema_version": "kp3-input-0.1",
+    "input_id": "c-a79cb29df5db4a13abb9680562ef224e",
+    "original_question": "Явный выбор учебного dev-контекста C.",
+    "input_kind": "form",
+    "raw_fields": {
+      "organization": "phosagro_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "operating_cash_flow"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "phosagro-2023",
+          "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+        }
+      ],
+      "mode": "snapshot"
+    },
+    "fields": {
+      "organization": "phosagro_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "operating_cash_flow"
+      ],
+      "definition_ids": [
+        "operating_cash_flow:nonfinancial_ifrs_net_v1"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "phosagro-2023",
+          "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+        }
+      ],
+      "version_policy": "explicit_versions",
+      "source_unit": {
+        "currency": "RUB",
+        "scale": 1000000
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1000000
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "comparability_id": null
+    },
+    "field_origins": {
+      "organization": "form",
+      "consolidation": "form",
+      "accounting_standard": "form",
+      "operation_id": "form",
+      "metric_ids": "form",
+      "definition_ids": "catalog_unique",
+      "periods": "form",
+      "documents": "form",
+      "version_policy": "catalog_unique",
+      "source_unit": "catalog_unique",
+      "result_unit": "catalog_unique",
+      "mode": "form",
+      "as_of": "unset",
+      "comparability_id": "unset"
+    },
+    "assumptions": [],
+    "assumption_origin": "none",
+    "hints": {
+      "years": [],
+      "as_of_text": null,
+      "document_report_year": null,
+      "organization_unmatched": null
+    },
+    "issues": [],
+    "unsupported_reasons": [],
+    "unfulfilled_requests": [],
+    "history": [],
+    "catalog_digest": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+    "language_version": "ru-input-v1"
+  },
+  "clarifications": [],
+  "financial_result": null,
+  "outcome": null,
+  "assumption_checks": [],
+  "unfulfilled_requests": [],
+  "retrieval": null,
+  "trace": [
+    {
+      "stage": "input",
+      "run_id": "c-a79cb29df5db4a13abb9680562ef224e",
+      "status": "completed",
+      "elapsed_ms": 7.1429,
+      "reason_code": "ok",
+      "details": {}
+    },
+    {
+      "stage": "catalog_filters",
+      "run_id": "c-a79cb29df5db4a13abb9680562ef224e",
+      "status": "completed",
+      "elapsed_ms": 6.3602,
+      "reason_code": "ok",
+      "details": {
+        "preliminary_only": true
+      }
+    },
+    {
+      "stage": "search",
+      "run_id": "c-a79cb29df5db4a13abb9680562ef224e",
+      "status": "error",
+      "elapsed_ms": 158.05,
+      "reason_code": "index_missing",
+      "details": {}
+    },
+    {
+      "stage": "fact_resolution",
+      "run_id": "c-a79cb29df5db4a13abb9680562ef224e",
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "reason_code": "not_reached",
+      "details": {}
+    },
+    {
+      "stage": "source_validation",
+      "run_id": "c-a79cb29df5db4a13abb9680562ef224e",
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "reason_code": "not_reached",
+      "details": {}
+    },
+    {
+      "stage": "calculation",
+      "run_id": "c-a79cb29df5db4a13abb9680562ef224e",
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "reason_code": "not_reached",
+      "details": {}
+    },
+    {
+      "stage": "result_validation",
+      "run_id": "c-a79cb29df5db4a13abb9680562ef224e",
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "reason_code": "not_reached",
+      "details": {}
+    },
+    {
+      "stage": "answer",
+      "run_id": "c-a79cb29df5db4a13abb9680562ef224e",
+      "status": "completed",
+      "elapsed_ms": 0,
+      "reason_code": "index_missing",
+      "details": {
+        "financial_result_present": false
+      }
+    }
+  ],
+  "context_digest": "df44f599da07279e4a1fa83fe47c64e263a690c10d83d01d7c299c2816b249b7",
+  "source_input_digest": "984e4d39634c21ee94988df5e28b0f23a9d0782aea584d504e02d39d03e8a03f",
+  "saved_run": {
+    "resource_id": "d70d7a4d2ba2dd4a950edd60baa8f832bba15ffa61c11d093648701e45e1da52.json",
+    "status": "written",
+    "private": true
+  },
+  "model_calls": 2,
+  "agent": {
+    "protocol": "kp3-agent-0.2",
+    "prompt": "bounded-financial-tools-v2",
+    "adapter": {
+      "kind": "local_llm",
+      "adapter": "ollama-financial-tools-v2",
+      "prompt": "bounded-financial-tools-v2",
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "server_version": "0.40.15",
+      "endpoint": "http://127.0.0.1:11435",
+      "think": false,
+      "temperature": 0,
+      "num_ctx": 8192
+    },
+    "limits": {
+      "max_calls": 8,
+      "timeout_s": 180,
+      "per_call_s": 60,
+      "max_search_results": 32,
+      "max_output_tokens": 384,
+      "max_action_bytes": 4096,
+      "max_observation_bytes": 32768,
+      "max_tool_bytes": 8192
+    },
+    "decisions": 2,
+    "model_attempts": 2,
+    "mock_decisions": 0,
+    "usage": {
+      "known_input_tokens": 1440,
+      "known_output_tokens": 75,
+      "unknown_usage": 0,
+      "known_chat_requests": 2,
+      "unknown_requests": 0
+    },
+    "events": [
+      {
+        "kind": "setup_probe",
+        "run_id": "c-a79cb29df5db4a13abb9680562ef224e",
+        "elapsed_ms": 189.655,
+        "result": {
+          "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+          "model": "qwen3:4b",
+          "server_version": "0.40.15"
+        }
+      },
+      {
+        "kind": "decision",
+        "run_id": "c-a79cb29df5db4a13abb9680562ef224e",
+        "number": 1,
+        "state": "ready",
+        "action": {
+          "arguments": {
+            "query": "CFO",
+            "top_k": 32
+          },
+          "tool": "search_evidence"
+        },
+        "error": null,
+        "usage": {
+          "input_tokens": 735,
+          "output_tokens": 27
+        },
+        "chat_requests": 1,
+        "elapsed_ms": 690.801
+      },
+      {
+        "kind": "tool",
+        "run_id": "c-a79cb29df5db4a13abb9680562ef224e",
+        "tool": "search_evidence",
+        "arguments": {
+          "query": "CFO",
+          "top_k": 32
+        },
+        "result": {
+          "error": "index_missing",
+          "error_type": "RetrievalError",
+          "ok": false
+        },
+        "elapsed_ms": 158.05
+      },
+      {
+        "kind": "receipt",
+        "run_id": "c-a79cb29df5db4a13abb9680562ef224e",
+        "receipt_id": "receipt-00ac5de1d7172036b36f053b",
+        "request_status": "error",
+        "reason_code": "index_missing",
+        "execution_status": "error"
+      },
+      {
+        "kind": "decision",
+        "run_id": "c-a79cb29df5db4a13abb9680562ef224e",
+        "number": 2,
+        "state": "terminal",
+        "action": {
+          "arguments": {
+            "receipt_id": "receipt-00ac5de1d7172036b36f053b"
+          },
+          "tool": "finish"
+        },
+        "error": null,
+        "usage": {
+          "input_tokens": 705,
+          "output_tokens": 48
+        },
+        "chat_requests": 1,
+        "elapsed_ms": 933.282
+      },
+      {
+        "kind": "tool",
+        "run_id": "c-a79cb29df5db4a13abb9680562ef224e",
+        "tool": "finish",
+        "arguments": {
+          "receipt_id": "receipt-00ac5de1d7172036b36f053b"
+        },
+        "result": {
+          "validated": true,
+          "receipt_id": "receipt-00ac5de1d7172036b36f053b"
+        },
+        "elapsed_ms": 0.001
+      }
+    ],
+    "stop_reason": "finished",
+    "finished": true,
+    "receipt_id": "receipt-00ac5de1d7172036b36f053b"
+  }
+}

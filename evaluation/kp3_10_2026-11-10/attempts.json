@@ -1,0 +1,19 @@
+{
+  "first_unit": "Invalid AgentLimits initially overwritten by final envelope validator; corrected empty-limit failure envelope, first log retained.",
+  "expanded_unit": [
+    "Adapter v1 kept a parsed action with an extra field alongside error; controller already rejected it; v1.1 clears it.",
+    "New premise test specified relative_change while its why-question normalized to absolute_change; corrected test to declared grammar."
+  ],
+  "temporary_helpers": [
+    "Windows spawn helper missed __main__ guard; fixed helper only before v2 chat.",
+    "CLI why/revenue text initially conflicted with explicit OP; no model called.",
+    "OP actually decreased, so first real supported premise was correct; evaluator incorrectly expected contradicted. Kept its5 real chat calls and reference. New false premise explicitly uses verified revenue growth.",
+    "Injected value correctly refused with input_fields_mismatch; helper initially expected a nonexistent invalid_fields code."
+  ],
+  "preliminary_limitation": "v1/v1.1 already selected Fact IDs measured protocol; all20 attempts/82calls retained separately. v2 gets IDs only after search and chooses role permutation.",
+  "final_diagnostic_patch": "Input/catalog attempts now marked error rather than skipped on exception; prompt, financial logic and successful v2 paths unchanged. Full546 unit +mock checker +real premise/CLI error probe rechecked after patch.",
+  "all_real_attempts_preserved": true,
+  "old_QA07_C_call_limit": "unchanged error",
+  "server": "Started existing owned pinned portable server; API/bytes verified, stopped only matching PID/path/start time after all C runs. No new model/packages/downloads.",
+  "ui": "09 UI unchanged on10; no new visual pass required."
+}
