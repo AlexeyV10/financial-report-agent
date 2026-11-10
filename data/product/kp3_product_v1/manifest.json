@@ -1,0 +1,17 @@
+{
+  "manifest_version": "1.1",
+  "scope": "open_dev_preparation_not_final_eval_freeze",
+  "runtime_reads_gold": false,
+  "file_sha256": {
+    "src/financial_assistant/product_history.py": "962ad43b2dc503e0b5f31eb826b1f53a1e87469c63300806a67a4e5ebb13c1c2",
+    "src/financial_assistant/product_service.py": "ea04b585d8fe8525c6911f2cdb513e067b96db18fe91133dad2ed17d50ffdd45",
+    "src/financial_assistant/product_downloads.py": "15c9d4dc815b0b0ce692de63e9b7ea89251b4edf333a0d834f40341264a1e3ec",
+    "scripts/check_kp3_product.py": "408cb4ba65eaaf2a42660cf95c9e31b20d03941e233edc23a4e29e9d17756b0c",
+    "app_kp3/product_app.py": "1b321e93316951e95cb220da25f1bd2627d1a25ec8d3741c1d55b8d1652e1021",
+    "tests/test_product13.py": "b3ed1d613cdc298540014d3f18a27f3179accafa76d03461c091c25c1fcd19d9",
+    "tests_ui_kp3/test_product_app.py": "e848fad51ac7f81947d0133984574b443dcb10a9619c05090aa242a3193471d7",
+    "docs/kp3/product_ui_v1.md": "d432cad8b6ba49b733a733434fda6442333e74a1896c163ff73a8a2a232a4430"
+  },
+  "revision": "Keep Markdown embedded JSON round-trippable; escape only untrusted string delimiters, not structural array brackets",
+  "previous_preparation_sha256": "ff99dc7230134e91fa41e990b53695d48bda9defd7c2ae0e7e8983fca7e5bf26"
+}
