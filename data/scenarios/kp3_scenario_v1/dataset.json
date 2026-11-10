@@ -1,0 +1,88 @@
+{
+  "schema_version": "kp3-scenario-dataset-0.1",
+  "dataset_id": "scenario12-own-series-v1",
+  "data_origin": "self_created_synthetic",
+  "label": "ИСКУССТВЕННЫЕ ДАННЫЕ / ВИРТУАЛЬНЫЙ СЦЕНАРИЙ",
+  "publication_semantics": "fictional_availability_only",
+  "financial_source": {
+    "document_id": "scenario12-own-statement",
+    "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+    "sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+    "byte_length": 254,
+    "resource": "own_financial_source.txt",
+    "publication_digest": "3bc796aad8ac2def8fe78c212205f0de7d28cc2a8db25364e6e8aacc89d12e9c"
+  },
+  "instrument": {
+    "instrument_id": "SYNTH12_ASSET",
+    "currency": "RUB",
+    "corporate_actions": "none_in_declared_fixture"
+  },
+  "calendar": {
+    "calendar_id": "SYNTH12_CALENDAR",
+    "timezone": "Europe/Moscow",
+    "synthetic": true,
+    "sessions": [
+      {
+        "session_id": "own-2025-06-04",
+        "open": "2025-06-04T10:00:00+03:00",
+        "close": "2025-06-04T18:00:00+03:00"
+      },
+      {
+        "session_id": "own-2025-06-05",
+        "open": "2025-06-05T10:00:00+03:00",
+        "close": "2025-06-05T18:00:00+03:00"
+      },
+      {
+        "session_id": "own-2025-06-06",
+        "open": "2025-06-06T10:00:00+03:00",
+        "close": "2025-06-06T18:00:00+03:00"
+      },
+      {
+        "session_id": "own-2025-06-09",
+        "open": "2025-06-09T10:00:00+03:00",
+        "close": "2025-06-09T18:00:00+03:00"
+      }
+    ]
+  },
+  "prices": {
+    "snapshot_id": "SYNTH12_PRICES",
+    "synthetic": true,
+    "currency": "RUB",
+    "instrument_id": "SYNTH12_ASSET",
+    "rights": "self_created",
+    "observations": [
+      {
+        "at": "2025-06-04T10:00:00+03:00",
+        "price": "99"
+      },
+      {
+        "at": "2025-06-04T18:00:00+03:00",
+        "price": "99"
+      },
+      {
+        "at": "2025-06-05T10:00:00+03:00",
+        "price": "100"
+      },
+      {
+        "at": "2025-06-05T18:00:00+03:00",
+        "price": "101"
+      },
+      {
+        "at": "2025-06-06T10:00:00+03:00",
+        "price": "102"
+      },
+      {
+        "at": "2025-06-06T18:00:00+03:00",
+        "price": "98"
+      },
+      {
+        "at": "2025-06-09T10:00:00+03:00",
+        "price": "103"
+      },
+      {
+        "at": "2025-06-09T18:00:00+03:00",
+        "price": "105"
+      }
+    ]
+  }
+}

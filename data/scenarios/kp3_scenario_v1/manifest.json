@@ -1,0 +1,24 @@
+{
+  "manifest_version": "1.0",
+  "scope": "open_dev_preparation_not_final_eval",
+  "runtime_reads_gold": false,
+  "file_sha256": {
+    "src/financial_assistant/scenario_contracts_v1.py": "0c7cd5ee0017b4f5f315036cf750deb10cc4a7c2859378d530c1cf14d68d745e",
+    "src/financial_assistant/scenario_ledger.py": "edb7ed3e4416627ef1f9db57c0c0b53571cc7fa425148508665212dbe5771599",
+    "src/financial_assistant/scenario_service.py": "5355f87d7cc2de3b5958837ea6aff0a03176646cfb2abecd45d21cfe90f13856",
+    "scripts/execute_scenario_v1.py": "47cfa2442d2d69deed23ee08b37e8b7c6aa7d3bb373aef8827ed88e19af19767",
+    "scripts/check_kp3_scenario.py": "85209223a3ecd0aedda592a08fe08161706a2b6462065bd16b7ced0aaf9ec5a6",
+    "app_kp3/scenario_app.py": "c9de69e742ad509abadaba0a00b2bef2e096223b4851eab7f2c42c3c69e739f0",
+    "tests/test_scenario_v1.py": "5ef31e3bddaf59586dfac511130bce6008c2af5a4bd01c102d01e2caac901b23",
+    "tests_ui_kp3/test_scenario_app.py": "5c755b9f349f77bfeaa7a7c08a5e5e7d458d8e968a64945fb50bbdca16ce4bb0",
+    "docs/kp3/conditional_scenario_v1.md": "6792443567c812de87d921e924a23afde08e5fc9c9342e83fe2010e768a96fd2",
+    "evaluation/reference/kp3_scenario_v1/oracle.py": "f6fe7520a79cabbe0bcc9385a8c78911744d3c73b2d70a5c038e5f5021084e16",
+    "data/scenarios/kp3_scenario_v1/admission.json": "de95d125e60cbf594d9d294e87d9411818c045c23b3e3fc1e1d5b6af2871b552",
+    "data/scenarios/kp3_scenario_v1/dataset.json": "170379401c0607c962612e4f979f3b7a6fadc4898f6dcd81e6fbf8fd6c5e2eea",
+    "data/scenarios/kp3_scenario_v1/financial_request.json": "b32f7cf73c8a20dc28632515c4f796531b20264f99406b758ce0e37ac03a6635",
+    "data/scenarios/kp3_scenario_v1/own_financial_source.txt": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+    "data/scenarios/kp3_scenario_v1/request_example.json": "e5e67bd6a67b8e1db59f9f7831f7044aa189dac68c989c9d0cc0bc19e33ed828",
+    "data/scenarios/kp3_scenario_v1/runtime_catalog.json": "82e14d11669642fc5009699bc422a76ee8feec0e13db2faa7af25f8933637f86",
+    "data/scenarios/kp3_scenario_v1/setup.json": "9d2251c0f446ee6b3fdda04319626334a584a659a2c1e74af48683dc571cea77"
+  }
+}

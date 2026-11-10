@@ -1,0 +1,199 @@
+{
+  "schema_version": "0.2",
+  "catalog_id": "scenario12-own-financial-v1",
+  "organizations": [
+    {
+      "organization_id": "scenario12_synthetic_group",
+      "name": "СОБСТВЕННАЯ ВЫМЫШЛЕННАЯ ГРУППА КП3-12",
+      "aliases": [
+        "учебная вымышленная группа12"
+      ],
+      "consolidation": "group",
+      "accounting_standards": [
+        "IFRS"
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "metric_id": "revenue",
+      "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+      "label": "Выручка",
+      "period_kinds": [
+        "duration"
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "document_id": "scenario12-own-statement",
+      "organization_id": "scenario12_synthetic_group",
+      "accounting_standard": "IFRS",
+      "document_type": "own_synthetic_table_not_pdf",
+      "report_period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+      "sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+      "byte_length": 254,
+      "pdf_pages": null,
+      "source_url": null,
+      "document_url": null,
+      "fetched_at": null,
+      "signed_on": null,
+      "approved_on": null,
+      "publication": {
+        "precision": "timestamp",
+        "value": "2025-06-04T19:00:00+03:00",
+        "timezone": "Europe/Moscow",
+        "binding": "document_version",
+        "record_id": "scenario12-fictional-availability",
+        "source_url": null,
+        "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+        "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2"
+      },
+      "availability": {
+        "local_resource_id": "scenario12-own-source",
+        "file_status": "available",
+        "extraction_status": "not_run"
+      },
+      "preparation_status": "checked",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own fictional table12, checked for internal consistency only; publication timestamps are fictional, not historical issuer publication.",
+        "human_reviewer": null
+      },
+      "rights": {
+        "status": "confirmed",
+        "public_copy_allowed": true,
+        "note": "Own newly authored fictional table, public copy allowed.",
+        "checked_on": "2026-11-10"
+      },
+      "audit": {
+        "opinion": "not_applicable",
+        "limitation": "Artificial data, no audit opinion."
+      },
+      "data_origin": "synthetic",
+      "related_release": null
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "scenario12-revenue-2023-evidence",
+      "document_id": "scenario12-own-statement",
+      "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+      "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+      "locator": {
+        "kind": "synthetic",
+        "record_id": "scenario12-revenue-2023",
+        "row_label": "Собственная синтетическая выручка",
+        "column_label": "2023",
+        "unit_header": "RUB x1"
+      },
+      "metric_id": "revenue",
+      "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1,
+      "raw_value": "100",
+      "numeric_encoding": "decimal_string",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      }
+    },
+    {
+      "evidence_id": "scenario12-revenue-2024-evidence",
+      "document_id": "scenario12-own-statement",
+      "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+      "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+      "locator": {
+        "kind": "synthetic",
+        "record_id": "scenario12-revenue-2024",
+        "row_label": "Собственная синтетическая выручка",
+        "column_label": "2024",
+        "unit_header": "RUB x1"
+      },
+      "metric_id": "revenue",
+      "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1,
+      "raw_value": "120",
+      "numeric_encoding": "decimal_string",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      }
+    }
+  ],
+  "facts": [
+    {
+      "fact_id": "scenario12-revenue-2023",
+      "organization_id": "scenario12_synthetic_group",
+      "document_id": "scenario12-own-statement",
+      "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+      "metric_id": "revenue",
+      "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+      "value": "100",
+      "original_label": "Собственная синтетическая выручка",
+      "currency": "RUB",
+      "scale": 1,
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "evidence_id": "scenario12-revenue-2023-evidence",
+      "evidence_digest": "f0c6e894fdcc0b55334a45d69bec3259f6e670ef429a688bb46d34a9184bc9b0",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      },
+      "origin_role": "comparative_period"
+    },
+    {
+      "fact_id": "scenario12-revenue-2024",
+      "organization_id": "scenario12_synthetic_group",
+      "document_id": "scenario12-own-statement",
+      "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+      "metric_id": "revenue",
+      "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+      "value": "120",
+      "original_label": "Собственная синтетическая выручка",
+      "currency": "RUB",
+      "scale": 1,
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "evidence_id": "scenario12-revenue-2024-evidence",
+      "evidence_digest": "679dcbafcab872c160aab37367b389cc6a553ef9db00b84bae1f5dc2e9fcb191",
+      "provenance": {
+        "status": "assistant_checked",
+        "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+        "human_reviewer": null
+      },
+      "origin_role": "reported_period"
+    }
+  ]
+}

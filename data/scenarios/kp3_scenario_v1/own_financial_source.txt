@@ -1,0 +1,4 @@
+OWN SYNTHETIC TABLE - NOT ISSUER REPORT / ВЫМЫШЛЕННЫЕ ДАННЫЕ
+record_id|start|end|metric|value|currency|scale
+scenario12-revenue-2023|2023-01-01|2023-12-31|revenue|100|RUB|1
+scenario12-revenue-2024|2024-01-01|2024-12-31|revenue|120|RUB|1
