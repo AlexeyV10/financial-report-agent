@@ -1,0 +1,387 @@
+{
+  "runs": [
+    {
+      "name": "contracts03",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_contracts.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.0866
+    },
+    {
+      "name": "method04",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_financial_method.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.1206
+    },
+    {
+      "name": "corpus05",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_corpus.py",
+        "--resource-map",
+        "tmp/local-resources.json"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.3348
+    },
+    {
+      "name": "retrieval06",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_retrieval.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.1235
+    },
+    {
+      "name": "calculator07",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_calculator.py",
+        "--resources",
+        "tmp/local-resources.json"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 3.32
+    },
+    {
+      "name": "input08",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_input.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.4804
+    },
+    {
+      "name": "service09",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--report",
+        "tmp/b-regression14.json"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 6.158
+    },
+    {
+      "name": "agent10",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_agent_c.py",
+        "--report",
+        "tmp/c-regression14.json"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 13.2716
+    },
+    {
+      "name": "one-shot11",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_one_shot_a.py",
+        "--report",
+        "tmp/a-regression14.json"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 5.1103
+    },
+    {
+      "name": "scenario12",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_scenario.py",
+        "--real-context",
+        "tmp/service-context.json",
+        "--report",
+        "tmp/scenario-dev-regression14.json"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 1.5885
+    },
+    {
+      "name": "fixed",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "fixed",
+        "--source",
+        "manual"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.1228
+    },
+    {
+      "name": "synthetic",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "scenario"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.1884
+    },
+    {
+      "name": "historical-legacy",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "scenario",
+        "--case",
+        "real-source"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.1859
+    },
+    {
+      "name": "questions",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "questions"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.2096
+    },
+    {
+      "name": "replay",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "replay",
+        "--run-dir",
+        "evaluation/step12_2026-11-09/run-02-environment-retry"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.1219
+    },
+    {
+      "name": "product13",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_product.py",
+        "--context",
+        "tmp/service-context.json",
+        "--report",
+        "tmp/product-regression14.json"
+      ],
+      "exit_code": 1,
+      "passed": false,
+      "elapsed_s": 0.3
+    },
+    {
+      "name": "product13-escalated",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_product.py",
+        "--context",
+        "tmp/service-context.json",
+        "--report",
+        "tmp/product-regression14.json"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": null,
+      "scope": "known regression/dev; no comparison methods/model calls"
+    },
+    {
+      "name": "evaluation14",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_evaluation.py",
+        "--report",
+        "tmp/evaluator-final-audit.json"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": null,
+      "scope": "known regression/dev; no comparison methods/model calls"
+    },
+    {
+      "name": "unit710-sealed",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 116.919,
+      "scope": "known regression/dev; no comparison methods/model calls"
+    },
+    {
+      "name": "evaluator53",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_kp3_evaluation.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.23,
+      "scope": "known regression/dev; no comparison methods/model calls"
+    },
+    {
+      "name": "replay-a",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/replay_kp3_evaluation.py",
+        "--freeze",
+        "evaluation/protocols/kp3_eval_v1/freeze-manifest.json",
+        "--raw-dir",
+        "tmp/replay-controls14",
+        "--raw-manifest",
+        "tmp/replay-controls14/raw-manifest.json",
+        "--output",
+        "tmp/replay-metrics14-a.json",
+        "--evaluator-controls"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "scope": "explicit evaluator fixtures, not real method observations"
+    },
+    {
+      "name": "replay-b",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/replay_kp3_evaluation.py",
+        "--freeze",
+        "evaluation/protocols/kp3_eval_v1/freeze-manifest.json",
+        "--raw-dir",
+        "tmp/replay-controls14",
+        "--raw-manifest",
+        "tmp/replay-controls14/raw-manifest.json",
+        "--output",
+        "tmp/replay-metrics14-b.json",
+        "--evaluator-controls"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "scope": "explicit evaluator fixtures, not real method observations"
+    },
+    {
+      "name": "reject-control-as-actual",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/replay_kp3_evaluation.py",
+        "--freeze",
+        "evaluation/protocols/kp3_eval_v1/freeze-manifest.json",
+        "--raw-dir",
+        "tmp/replay-controls14",
+        "--raw-manifest",
+        "tmp/replay-controls14/raw-manifest.json",
+        "--output",
+        "tmp/forbidden-actual-controls14.json"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "scope": "explicit evaluator fixtures, not real method observations"
+    }
+  ],
+  "first_failure_preserved": true,
+  "final_required_checks_passed": true
+}

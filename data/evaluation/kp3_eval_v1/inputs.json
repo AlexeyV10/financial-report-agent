@@ -1,0 +1,4599 @@
+{
+  "schema_version": "kp3-suite-0.1",
+  "suite_id": "kp3-known-corpus-v1",
+  "known_to_developer": true,
+  "reserved_unseen_real": 0,
+  "cases": [
+    {
+      "case_id": "dev-01",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "direct",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-01",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "direct_fact_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "fact",
+              "fact_id": "revenue-2023",
+              "document_id": "method-synthetic-2023",
+              "version_id": "own-2023-v1",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "amount",
+            "currency": "RUB",
+            "scale": 1
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-02",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "direct",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-02",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "direct_fact_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "fact",
+              "fact_id": "operating_profit-2023",
+              "document_id": "method-synthetic-2023",
+              "version_id": "own-2023-v1",
+              "metric_id": "operating_profit",
+              "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "amount",
+            "currency": "RUB",
+            "scale": 1
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-03",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "direct",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-03",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "direct_fact_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "fact",
+              "fact_id": "operating_cash_flow-2023",
+              "document_id": "method-synthetic-2023",
+              "version_id": "own-2023-v1",
+              "metric_id": "operating_cash_flow",
+              "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "amount",
+            "currency": "RUB",
+            "scale": 1
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-04",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "direct",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-04",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "direct_fact_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "fact",
+              "fact_id": "revenue-2024",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "amount",
+            "currency": "RUB",
+            "scale": 1
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-05",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "direct",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-05",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "direct_fact_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "fact",
+              "fact_id": "operating_profit-2024",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "operating_profit",
+              "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "amount",
+            "currency": "RUB",
+            "scale": 1
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-06",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "direct",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-06",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "direct_fact_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "fact",
+              "fact_id": "operating_cash_flow-2024",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "operating_cash_flow",
+              "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "amount",
+            "currency": "RUB",
+            "scale": 1
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-07",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "direct",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-07",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "direct_fact_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "fact",
+              "fact_id": "revenue-2023-comparative",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "amount",
+            "currency": "RUB",
+            "scale": 1
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-08",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "direct",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-08",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "direct_fact_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "fact",
+              "fact_id": "operating_profit-2023-comparative",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "operating_profit",
+              "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "amount",
+            "currency": "RUB",
+            "scale": 1
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-09",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "direct",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-09",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "direct_fact_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "fact",
+              "fact_id": "operating_cash_flow-2023-comparative",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "operating_cash_flow",
+              "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "amount",
+            "currency": "RUB",
+            "scale": 1
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-10",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "comparison",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-10",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "absolute_change_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "previous",
+              "fact_id": "revenue-2023-comparative",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            },
+            {
+              "role": "current",
+              "fact_id": "revenue-2024",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "amount",
+            "currency": "RUB",
+            "scale": 1
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-11",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "comparison",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-11",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "absolute_change_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "previous",
+              "fact_id": "operating_profit-2023-comparative",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "operating_profit",
+              "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            },
+            {
+              "role": "current",
+              "fact_id": "operating_profit-2024",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "operating_profit",
+              "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "amount",
+            "currency": "RUB",
+            "scale": 1
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-12",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "comparison",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-12",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "absolute_change_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "previous",
+              "fact_id": "operating_cash_flow-2023-comparative",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "operating_cash_flow",
+              "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            },
+            {
+              "role": "current",
+              "fact_id": "operating_cash_flow-2024",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "operating_cash_flow",
+              "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "amount",
+            "currency": "RUB",
+            "scale": 1
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-13",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "comparison",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-13",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "relative_change_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "previous",
+              "fact_id": "revenue-2023-comparative",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            },
+            {
+              "role": "current",
+              "fact_id": "revenue-2024",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "percent"
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-14",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "comparison",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-14",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "relative_change_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "previous",
+              "fact_id": "operating_profit-2023-comparative",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "operating_profit",
+              "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            },
+            {
+              "role": "current",
+              "fact_id": "operating_profit-2024",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "operating_profit",
+              "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "percent"
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-15",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "comparison",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-15",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "relative_change_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "previous",
+              "fact_id": "operating_cash_flow-2023-comparative",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "operating_cash_flow",
+              "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            },
+            {
+              "role": "current",
+              "fact_id": "operating_cash_flow-2024",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "operating_cash_flow",
+              "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "percent"
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-16",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "margin",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-16",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "operating_margin_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "profit",
+              "fact_id": "operating_profit-2023",
+              "document_id": "method-synthetic-2023",
+              "version_id": "own-2023-v1",
+              "metric_id": "operating_profit",
+              "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            },
+            {
+              "role": "revenue",
+              "fact_id": "revenue-2023",
+              "document_id": "method-synthetic-2023",
+              "version_id": "own-2023-v1",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "percent"
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-17",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "margin",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-17",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "operating_margin_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "profit",
+              "fact_id": "operating_profit-2024",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "operating_profit",
+              "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            },
+            {
+              "role": "revenue",
+              "fact_id": "revenue-2024",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "percent"
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-18",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "margin",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-18",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "operating_margin_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "profit",
+              "fact_id": "operating_profit-2023-comparative",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "operating_profit",
+              "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            },
+            {
+              "role": "revenue",
+              "fact_id": "revenue-2023-comparative",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "percent"
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-19",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "scale",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-19",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "scale_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "fact",
+              "fact_id": "revenue-2024",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "amount",
+            "currency": "RUB",
+            "scale": 1000
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "dev-20",
+      "suite": "financial",
+      "split": "dev_control",
+      "category": "scale",
+      "profile": "own07",
+      "target": "calculator_v03",
+      "data_origin": "synthetic",
+      "family": "own07-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "calculation",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "dev-20",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "operation_id": "scale_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "fact",
+              "fact_id": "operating_cash_flow-2024",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "operating_cash_flow",
+              "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "amount",
+            "currency": "RUB",
+            "scale": 1000
+          },
+          "mode": "snapshot",
+          "as_of": null
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-01",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "direct",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-01",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "definition_ids": [
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2022-01-01",
+                "end": "2022-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2023",
+                "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-02",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "direct",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-02",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "definition_ids": [
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2024",
+                "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-03",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "direct",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-03",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "operating_profit"
+            ],
+            "definition_ids": [
+              "operating_profit:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2025-01-01",
+                "end": "2025-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025",
+                "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-04",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "direct",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-04",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "operating_cash_flow"
+            ],
+            "definition_ids": [
+              "operating_cash_flow:nonfinancial_ifrs_net_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "quarter",
+                "start": "2025-01-01",
+                "end": "2025-03-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025-q1",
+                "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-05",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "direct",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-05",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "definition_ids": [
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "year_to_date",
+                "start": "2025-01-01",
+                "end": "2025-06-30"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025-h1",
+                "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-06",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "direct",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-06",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "operating_cash_flow"
+            ],
+            "definition_ids": [
+              "operating_cash_flow:nonfinancial_ifrs_net_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "year_to_date",
+                "start": "2025-01-01",
+                "end": "2025-09-30"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025-9m",
+                "version_id": "sha256:147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-07",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "direct",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-segezha_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-07",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "segezha_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "operating_profit"
+            ],
+            "definition_ids": [
+              "operating_profit:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2021-01-01",
+                "end": "2021-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "segezha-2021",
+                "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-08",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "direct",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-segezha_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-08",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "segezha_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "operating_cash_flow"
+            ],
+            "definition_ids": [
+              "operating_cash_flow:nonfinancial_ifrs_net_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2022-01-01",
+                "end": "2022-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "segezha-2022",
+                "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-09",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "direct",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-segezha_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-09",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "segezha_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "operating_cash_flow"
+            ],
+            "definition_ids": [
+              "operating_cash_flow:nonfinancial_ifrs_net_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2021-01-01",
+                "end": "2021-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "segezha-2021",
+                "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-10",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "direct",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-segezha_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-10",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "segezha_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "operating_cash_flow"
+            ],
+            "definition_ids": [
+              "operating_cash_flow:nonfinancial_ifrs_net_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2021-01-01",
+                "end": "2021-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "segezha-2022",
+                "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-11",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "comparison",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-11",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "absolute_change_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "definition_ids": [
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2022-01-01",
+                "end": "2022-12-31"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2023",
+                "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-12",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "comparison",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-12",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "absolute_change_v1",
+            "metric_ids": [
+              "operating_profit"
+            ],
+            "definition_ids": [
+              "operating_profit:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2024",
+                "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-13",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "comparison",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-13",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "relative_change_v1",
+            "metric_ids": [
+              "operating_cash_flow"
+            ],
+            "definition_ids": [
+              "operating_cash_flow:nonfinancial_ifrs_net_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2025-01-01",
+                "end": "2025-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025",
+                "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "percent"
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-14",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "comparison",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-14",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "relative_change_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "definition_ids": [
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "quarter",
+                "start": "2024-01-01",
+                "end": "2024-03-31"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "quarter",
+                "start": "2025-01-01",
+                "end": "2025-03-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025-q1",
+                "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "percent"
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-15",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "comparison",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-15",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "absolute_change_v1",
+            "metric_ids": [
+              "operating_profit"
+            ],
+            "definition_ids": [
+              "operating_profit:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "year_to_date",
+                "start": "2024-01-01",
+                "end": "2024-06-30"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "year_to_date",
+                "start": "2025-01-01",
+                "end": "2025-06-30"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025-h1",
+                "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-16",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "comparison",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-16",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "relative_change_v1",
+            "metric_ids": [
+              "operating_cash_flow"
+            ],
+            "definition_ids": [
+              "operating_cash_flow:nonfinancial_ifrs_net_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "year_to_date",
+                "start": "2024-01-01",
+                "end": "2024-09-30"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "year_to_date",
+                "start": "2025-01-01",
+                "end": "2025-09-30"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025-9m",
+                "version_id": "sha256:147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "percent"
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-17",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "comparison",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-segezha_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-17",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "segezha_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "relative_change_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "definition_ids": [
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2020-01-01",
+                "end": "2020-12-31"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2021-01-01",
+                "end": "2021-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "segezha-2021",
+                "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000
+            },
+            "result_unit": {
+              "kind": "percent"
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-18",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "comparison",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-segezha_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-18",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "segezha_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "absolute_change_v1",
+            "metric_ids": [
+              "operating_profit"
+            ],
+            "definition_ids": [
+              "operating_profit:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2021-01-01",
+                "end": "2021-12-31"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2022-01-01",
+                "end": "2022-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "segezha-2022",
+                "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-19",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "margin",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-19",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "operating_margin_v1",
+            "metric_ids": [
+              "operating_profit",
+              "revenue"
+            ],
+            "definition_ids": [
+              "operating_profit:nonfinancial_ifrs_reported_v1",
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2024",
+                "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "percent"
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-20",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "margin",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-20",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "operating_margin_v1",
+            "metric_ids": [
+              "operating_profit",
+              "revenue"
+            ],
+            "definition_ids": [
+              "operating_profit:nonfinancial_ifrs_reported_v1",
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2025-01-01",
+                "end": "2025-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025",
+                "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "percent"
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-21",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "margin",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-21",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "operating_margin_v1",
+            "metric_ids": [
+              "operating_profit",
+              "revenue"
+            ],
+            "definition_ids": [
+              "operating_profit:nonfinancial_ifrs_reported_v1",
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "quarter",
+                "start": "2025-01-01",
+                "end": "2025-03-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025-q1",
+                "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "percent"
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-22",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "margin",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-22",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "operating_margin_v1",
+            "metric_ids": [
+              "operating_profit",
+              "revenue"
+            ],
+            "definition_ids": [
+              "operating_profit:nonfinancial_ifrs_reported_v1",
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "year_to_date",
+                "start": "2025-01-01",
+                "end": "2025-06-30"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025-h1",
+                "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "percent"
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-23",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "margin",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-segezha_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-23",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "segezha_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "operating_margin_v1",
+            "metric_ids": [
+              "operating_profit",
+              "revenue"
+            ],
+            "definition_ids": [
+              "operating_profit:nonfinancial_ifrs_reported_v1",
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2021-01-01",
+                "end": "2021-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "segezha-2021",
+                "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000
+            },
+            "result_unit": {
+              "kind": "percent"
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-24",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "margin",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-segezha_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-24",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "segezha_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "operating_margin_v1",
+            "metric_ids": [
+              "operating_profit",
+              "revenue"
+            ],
+            "definition_ids": [
+              "operating_profit:nonfinancial_ifrs_reported_v1",
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2022-01-01",
+                "end": "2022-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "segezha-2022",
+                "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "percent"
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-25",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "scale",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-25",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "scale_v1",
+            "metric_ids": [
+              "operating_profit"
+            ],
+            "definition_ids": [
+              "operating_profit:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2023",
+                "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-26",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "scale",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-26",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "scale_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "definition_ids": [
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "year_to_date",
+                "start": "2025-01-01",
+                "end": "2025-06-30"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025-h1",
+                "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-27",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "scale",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-segezha_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-27",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "segezha_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "scale_v1",
+            "metric_ids": [
+              "operating_cash_flow"
+            ],
+            "definition_ids": [
+              "operating_cash_flow:nonfinancial_ifrs_net_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2021-01-01",
+                "end": "2021-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "segezha-2021",
+                "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-28",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "scale",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-segezha_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-28",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "segezha_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "scale_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "definition_ids": [
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2022-01-01",
+                "end": "2022-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "segezha-2022",
+                "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-29",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "false_premise",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-29",
+          "original_question": "Почему выручка снизилась? Рассчитай абсолютное изменение. Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "absolute_change_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "definition_ids": [
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2024",
+                "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": [
+            {
+              "kind": "direction",
+              "asserted_direction": "decrease",
+              "text_fragment": "снизилась",
+              "requires_check": true,
+              "why_requested": true
+            }
+          ]
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-30",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "false_premise",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-30",
+          "original_question": "Почему чистый операционный денежный поток выросла? Рассчитай относительное изменение. Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "relative_change_v1",
+            "metric_ids": [
+              "operating_cash_flow"
+            ],
+            "definition_ids": [
+              "operating_cash_flow:nonfinancial_ifrs_net_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2022-01-01",
+                "end": "2022-12-31"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2023",
+                "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "percent"
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": [
+            {
+              "kind": "direction",
+              "asserted_direction": "increase",
+              "text_fragment": "выросла",
+              "requires_check": true,
+              "why_requested": true
+            }
+          ]
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-31",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "false_premise",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-segezha_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-31",
+          "original_question": "Почему операционная прибыль выросла? Рассчитай относительное изменение. Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "segezha_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "relative_change_v1",
+            "metric_ids": [
+              "operating_profit"
+            ],
+            "definition_ids": [
+              "operating_profit:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2021-01-01",
+                "end": "2021-12-31"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2022-01-01",
+                "end": "2022-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "segezha-2022",
+                "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "percent"
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": [
+            {
+              "kind": "direction",
+              "asserted_direction": "increase",
+              "text_fragment": "выросла",
+              "requires_check": true,
+              "why_requested": true
+            }
+          ]
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-32",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "false_premise",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-32",
+          "original_question": "Почему чистый операционный денежный поток снизилась? Рассчитай абсолютное изменение. Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "absolute_change_v1",
+            "metric_ids": [
+              "operating_cash_flow"
+            ],
+            "definition_ids": [
+              "operating_cash_flow:nonfinancial_ifrs_net_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "quarter",
+                "start": "2024-01-01",
+                "end": "2024-03-31"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "quarter",
+                "start": "2025-01-01",
+                "end": "2025-03-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025-q1",
+                "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": [
+            {
+              "kind": "direction",
+              "asserted_direction": "decrease",
+              "text_fragment": "снизилась",
+              "requires_check": true,
+              "why_requested": true
+            }
+          ]
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-33",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "refusal",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-33",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "definition_ids": [
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2024",
+                "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "historical",
+            "as_of": "2026-11-10T12:00:00+03:00",
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-34",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "refusal",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-segezha_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-34",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "segezha_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "operating_cash_flow"
+            ],
+            "definition_ids": [
+              "operating_cash_flow:nonfinancial_ifrs_net_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2022-01-01",
+                "end": "2022-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "segezha-2022",
+                "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "historical",
+            "as_of": "2026-11-10T12:00:00+03:00",
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-35",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "refusal",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-segezha_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-35",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "segezha_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "operating_cash_flow"
+            ],
+            "definition_ids": [
+              "operating_cash_flow:nonfinancial_ifrs_net_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2021-01-01",
+                "end": "2021-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "segezha-2021",
+                "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+              },
+              {
+                "document_id": "segezha-2022",
+                "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": null,
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-36",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "refusal",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-36",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "definition_ids": [
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2026-01-01",
+                "end": "2026-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2024",
+                "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-37",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "refusal",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-37",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "definition_ids": [
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2024",
+                "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-38",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "refusal",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-38",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "scale_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "definition_ids": [
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2024",
+                "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "USD",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-39",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "refusal",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-39",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "relative_change_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "definition_ids": [
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2023",
+                "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+              },
+              {
+                "document_id": "phosagro-2024",
+                "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+              }
+            ],
+            "version_policy": "original_period_documents",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "percent"
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "cmp-40",
+      "suite": "financial",
+      "split": "comparison_known",
+      "category": "refusal",
+      "profile": "real05",
+      "target": "service",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "cmp-40",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "legal_entity",
+            "accounting_standard": "RAS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "definition_ids": [
+              "revenue:nonfinancial_ifrs_reported_v1"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2024",
+                "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "mode": "snapshot",
+            "as_of": null,
+            "comparability_id": null
+          },
+          "assumptions": []
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "input-01",
+      "suite": "interface",
+      "split": "interface_control",
+      "category": "russian_input",
+      "profile": "real05",
+      "target": "parser",
+      "data_origin": "real",
+      "family": "interface-known-1",
+      "known_to_developer": true,
+      "source": {
+        "kind": "text",
+        "input_id": "input-01",
+        "question": "Какая выручка группы ФосАгро по МСФО за 2024 год из отчёта за 2024 год? Снимок."
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "input-02",
+      "suite": "interface",
+      "split": "interface_control",
+      "category": "russian_input",
+      "profile": "real05",
+      "target": "parser",
+      "data_origin": "real",
+      "family": "interface-known-2",
+      "known_to_developer": true,
+      "source": {
+        "kind": "text",
+        "input_id": "input-02",
+        "question": "На сколько процентов изменилась выручка группы ФосАгро по МСФО за 2023 и 2024 годы из отчёта за 2024 год? Снимок."
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "input-03",
+      "suite": "interface",
+      "split": "interface_control",
+      "category": "russian_input",
+      "profile": "real05",
+      "target": "parser",
+      "data_origin": "real",
+      "family": "interface-known-3",
+      "known_to_developer": true,
+      "source": {
+        "kind": "text",
+        "input_id": "input-03",
+        "question": "Рассчитай операционную маржу группы ФосАгро по МСФО за 2024 год из отчёта за 2024 год. Снимок."
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "input-04",
+      "suite": "interface",
+      "split": "interface_control",
+      "category": "russian_input",
+      "profile": "real05",
+      "target": "parser",
+      "data_origin": "real",
+      "family": "interface-known-4",
+      "known_to_developer": true,
+      "source": {
+        "kind": "text",
+        "input_id": "input-04",
+        "question": "Покажи выручку группы ФосАгро по МСФО за 2024 год из отчёта за 2024 год в млрд рублей. Снимок."
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "input-05",
+      "suite": "interface",
+      "split": "interface_control",
+      "category": "russian_input",
+      "profile": "real05",
+      "target": "parser",
+      "data_origin": "real",
+      "family": "interface-known-5",
+      "known_to_developer": true,
+      "source": {
+        "kind": "text",
+        "input_id": "input-05",
+        "question": "Какая выручка по МСФО за 2024 год из отчёта за 2024 год? Снимок."
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "input-06",
+      "suite": "interface",
+      "split": "interface_control",
+      "category": "russian_input",
+      "profile": "real05",
+      "target": "parser",
+      "data_origin": "real",
+      "family": "interface-known-6",
+      "known_to_developer": true,
+      "source": {
+        "kind": "text",
+        "input_id": "input-06",
+        "question": "На сколько изменилась выручка группы ФосАгро по МСФО за 2023 и 2024 годы из отчёта за 2024 год? Снимок."
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "input-07",
+      "suite": "interface",
+      "split": "interface_control",
+      "category": "russian_input",
+      "profile": "real05",
+      "target": "parser",
+      "data_origin": "real",
+      "family": "interface-known-7",
+      "known_to_developer": true,
+      "source": {
+        "kind": "text",
+        "input_id": "input-07",
+        "question": "Какая выручка группы ФосАгро по МСФО за 2024 год из отчёта за 2024 год на 2026-11-09?"
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "input-08",
+      "suite": "interface",
+      "split": "interface_control",
+      "category": "russian_input",
+      "profile": "real05",
+      "target": "parser",
+      "data_origin": "real",
+      "family": "interface-known-8",
+      "known_to_developer": true,
+      "source": {
+        "kind": "text",
+        "input_id": "input-08",
+        "question": "Почему выручка группы ФосАгро по МСФО снизилась за 2023 и 2024 годы из отчёта за 2024 год? Снимок."
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "scenario-01",
+      "suite": "scenario",
+      "split": "scenario_control",
+      "category": "signal",
+      "profile": "own12",
+      "target": "scenario",
+      "data_origin": "synthetic",
+      "family": "own12-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "scenario",
+        "request": {
+          "schema_version": "kp3-scenario-request-0.1",
+          "financial_run_id": "scenario12-own-financial",
+          "data_mode": "own_synthetic",
+          "decision_at": "2025-06-04T19:30:00+03:00",
+          "parameters": {
+            "initial_cash": "10000",
+            "allocation": "0.20",
+            "threshold_pct": "10",
+            "fee_fixed": "1",
+            "slippage_bps": "0",
+            "lot_size": 1,
+            "window_start": "2025-06-04T10:00:00+03:00",
+            "window_end": "2025-06-09T18:00:00+03:00"
+          }
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "scenario-02",
+      "suite": "scenario",
+      "split": "scenario_control",
+      "category": "no_signal",
+      "profile": "own12",
+      "target": "scenario",
+      "data_origin": "synthetic",
+      "family": "own12-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "scenario",
+        "request": {
+          "schema_version": "kp3-scenario-request-0.1",
+          "financial_run_id": "scenario12-own-financial",
+          "data_mode": "own_synthetic",
+          "decision_at": "2025-06-04T19:30:00+03:00",
+          "parameters": {
+            "initial_cash": "10000",
+            "allocation": "0.20",
+            "threshold_pct": "20",
+            "fee_fixed": "1",
+            "slippage_bps": "0",
+            "lot_size": 1,
+            "window_start": "2025-06-04T10:00:00+03:00",
+            "window_end": "2025-06-09T18:00:00+03:00"
+          }
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "scenario-03",
+      "suite": "scenario",
+      "split": "scenario_control",
+      "category": "expenses",
+      "profile": "own12",
+      "target": "scenario",
+      "data_origin": "synthetic",
+      "family": "own12-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "scenario",
+        "request": {
+          "schema_version": "kp3-scenario-request-0.1",
+          "financial_run_id": "scenario12-own-financial",
+          "data_mode": "own_synthetic",
+          "decision_at": "2025-06-04T19:30:00+03:00",
+          "parameters": {
+            "initial_cash": "10000",
+            "allocation": "0.20",
+            "threshold_pct": "10",
+            "fee_fixed": "2.35",
+            "slippage_bps": "10",
+            "lot_size": 3,
+            "window_start": "2025-06-04T10:00:00+03:00",
+            "window_end": "2025-06-09T18:00:00+03:00"
+          }
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "scenario-04",
+      "suite": "scenario",
+      "split": "scenario_control",
+      "category": "weekend",
+      "profile": "own12",
+      "target": "scenario",
+      "data_origin": "synthetic",
+      "family": "own12-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "scenario",
+        "request": {
+          "schema_version": "kp3-scenario-request-0.1",
+          "financial_run_id": "scenario12-own-financial",
+          "data_mode": "own_synthetic",
+          "decision_at": "2025-06-07T12:00:00+03:00",
+          "parameters": {
+            "initial_cash": "10000",
+            "allocation": "0.20",
+            "threshold_pct": "10",
+            "fee_fixed": "1",
+            "slippage_bps": "0",
+            "lot_size": 1,
+            "window_start": "2025-06-04T10:00:00+03:00",
+            "window_end": "2025-06-09T18:00:00+03:00"
+          }
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "scenario-05",
+      "suite": "scenario",
+      "split": "scenario_control",
+      "category": "before_publication",
+      "profile": "own12",
+      "target": "scenario",
+      "data_origin": "synthetic",
+      "family": "own12-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "scenario",
+        "request": {
+          "schema_version": "kp3-scenario-request-0.1",
+          "financial_run_id": "scenario12-own-financial",
+          "data_mode": "own_synthetic",
+          "decision_at": "2025-06-04T18:30:00+03:00",
+          "parameters": {
+            "initial_cash": "10000",
+            "allocation": "0.20",
+            "threshold_pct": "10",
+            "fee_fixed": "1",
+            "slippage_bps": "0",
+            "lot_size": 1,
+            "window_start": "2025-06-04T10:00:00+03:00",
+            "window_end": "2025-06-09T18:00:00+03:00"
+          }
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "scenario-06",
+      "suite": "scenario",
+      "split": "scenario_control",
+      "category": "missing_price",
+      "profile": "own12",
+      "target": "scenario",
+      "data_origin": "synthetic",
+      "family": "own12-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "scenario",
+        "request": {
+          "schema_version": "kp3-scenario-request-0.1",
+          "financial_run_id": "scenario12-own-financial",
+          "data_mode": "own_synthetic",
+          "decision_at": "2025-06-04T19:30:00+03:00",
+          "parameters": {
+            "initial_cash": "10000",
+            "allocation": "0.20",
+            "threshold_pct": "10",
+            "fee_fixed": "1",
+            "slippage_bps": "0",
+            "lot_size": 1,
+            "window_start": "2025-06-04T10:00:00+03:00",
+            "window_end": "2025-06-09T18:00:00+03:00"
+          }
+        }
+      },
+      "answers": [],
+      "fault_id": "own_price_gap"
+    },
+    {
+      "case_id": "scenario-07",
+      "suite": "scenario",
+      "split": "scenario_control",
+      "category": "no_future_open",
+      "profile": "own12",
+      "target": "scenario",
+      "data_origin": "synthetic",
+      "family": "own12-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "scenario",
+        "request": {
+          "schema_version": "kp3-scenario-request-0.1",
+          "financial_run_id": "scenario12-own-financial",
+          "data_mode": "own_synthetic",
+          "decision_at": "2025-06-09T18:00:00+03:00",
+          "parameters": {
+            "initial_cash": "10000",
+            "allocation": "0.20",
+            "threshold_pct": "10",
+            "fee_fixed": "1",
+            "slippage_bps": "0",
+            "lot_size": 1,
+            "window_start": "2025-06-04T10:00:00+03:00",
+            "window_end": "2025-06-09T18:00:00+03:00"
+          }
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "scenario-08",
+      "suite": "scenario",
+      "split": "scenario_control",
+      "category": "invalid_capital",
+      "profile": "own12",
+      "target": "scenario",
+      "data_origin": "synthetic",
+      "family": "own12-lineage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "scenario",
+        "request": {
+          "schema_version": "kp3-scenario-request-0.1",
+          "financial_run_id": "scenario12-own-financial",
+          "data_mode": "own_synthetic",
+          "decision_at": "2025-06-04T19:30:00+03:00",
+          "parameters": {
+            "initial_cash": "-1",
+            "allocation": "0.20",
+            "threshold_pct": "10",
+            "fee_fixed": "1",
+            "slippage_bps": "0",
+            "lot_size": 1,
+            "window_start": "2025-06-04T10:00:00+03:00",
+            "window_end": "2025-06-09T18:00:00+03:00"
+          }
+        }
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "scenario-09",
+      "suite": "scenario",
+      "split": "scenario_control",
+      "category": "real_readiness",
+      "profile": "real05",
+      "target": "scenario",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "real_readiness",
+        "financial_source": {
+          "kind": "form",
+          "form": {
+            "schema_version": "kp3-form-0.1",
+            "input_id": "scenario-09",
+            "original_question": "Проверить готовность реального источника; без подстановки цен.",
+            "fields": {
+              "organization": "phosagro_group",
+              "operation_id": "relative_change_v1",
+              "metric_ids": [
+                "revenue"
+              ],
+              "periods": [
+                {
+                  "kind": "duration",
+                  "duration_type": "full_year",
+                  "start": "2023-01-01",
+                  "end": "2023-12-31"
+                },
+                {
+                  "kind": "duration",
+                  "duration_type": "full_year",
+                  "start": "2024-01-01",
+                  "end": "2024-12-31"
+                }
+              ],
+              "documents": [
+                {
+                  "document_id": "phosagro-2024",
+                  "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+                }
+              ],
+              "mode": "snapshot"
+            },
+            "assumptions": []
+          }
+        },
+        "decision_at": "2026-11-10T12:00:00+03:00"
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "scenario-10",
+      "suite": "scenario",
+      "split": "scenario_control",
+      "category": "real_readiness",
+      "profile": "real05",
+      "target": "scenario",
+      "data_origin": "real",
+      "family": "real-lineage-phosagro_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "real_readiness",
+        "financial_source": {
+          "kind": "form",
+          "form": {
+            "schema_version": "kp3-form-0.1",
+            "input_id": "scenario-10",
+            "original_question": "Проверить готовность реального источника; без подстановки цен.",
+            "fields": {
+              "organization": "phosagro_group",
+              "operation_id": "relative_change_v1",
+              "metric_ids": [
+                "revenue"
+              ],
+              "periods": [
+                {
+                  "kind": "duration",
+                  "duration_type": "year_to_date",
+                  "start": "2024-01-01",
+                  "end": "2024-06-30"
+                },
+                {
+                  "kind": "duration",
+                  "duration_type": "year_to_date",
+                  "start": "2025-01-01",
+                  "end": "2025-06-30"
+                }
+              ],
+              "documents": [
+                {
+                  "document_id": "phosagro-2025-h1",
+                  "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+                }
+              ],
+              "mode": "snapshot"
+            },
+            "assumptions": []
+          }
+        },
+        "decision_at": "2026-11-10T12:00:00+03:00"
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "scenario-11",
+      "suite": "scenario",
+      "split": "scenario_control",
+      "category": "real_readiness",
+      "profile": "real05",
+      "target": "scenario",
+      "data_origin": "real",
+      "family": "real-lineage-segezha_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "real_readiness",
+        "financial_source": {
+          "kind": "form",
+          "form": {
+            "schema_version": "kp3-form-0.1",
+            "input_id": "scenario-11",
+            "original_question": "Проверить готовность реального источника; без подстановки цен.",
+            "fields": {
+              "organization": "segezha_group",
+              "operation_id": "relative_change_v1",
+              "metric_ids": [
+                "revenue"
+              ],
+              "periods": [
+                {
+                  "kind": "duration",
+                  "duration_type": "full_year",
+                  "start": "2020-01-01",
+                  "end": "2020-12-31"
+                },
+                {
+                  "kind": "duration",
+                  "duration_type": "full_year",
+                  "start": "2021-01-01",
+                  "end": "2021-12-31"
+                }
+              ],
+              "documents": [
+                {
+                  "document_id": "segezha-2021",
+                  "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+                }
+              ],
+              "mode": "snapshot"
+            },
+            "assumptions": []
+          }
+        },
+        "decision_at": "2026-11-10T12:00:00+03:00"
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "scenario-12",
+      "suite": "scenario",
+      "split": "scenario_control",
+      "category": "real_readiness",
+      "profile": "real05",
+      "target": "scenario",
+      "data_origin": "real",
+      "family": "real-lineage-segezha_group",
+      "known_to_developer": true,
+      "source": {
+        "kind": "real_readiness",
+        "financial_source": {
+          "kind": "form",
+          "form": {
+            "schema_version": "kp3-form-0.1",
+            "input_id": "scenario-12",
+            "original_question": "Проверить готовность реального источника; без подстановки цен.",
+            "fields": {
+              "organization": "segezha_group",
+              "operation_id": "relative_change_v1",
+              "metric_ids": [
+                "revenue"
+              ],
+              "periods": [
+                {
+                  "kind": "duration",
+                  "duration_type": "full_year",
+                  "start": "2021-01-01",
+                  "end": "2021-12-31"
+                },
+                {
+                  "kind": "duration",
+                  "duration_type": "full_year",
+                  "start": "2022-01-01",
+                  "end": "2022-12-31"
+                }
+              ],
+              "documents": [
+                {
+                  "document_id": "segezha-2022",
+                  "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+                }
+              ],
+              "mode": "snapshot"
+            },
+            "assumptions": []
+          }
+        },
+        "decision_at": "2026-11-10T12:00:00+03:00"
+      },
+      "answers": [],
+      "fault_id": null
+    },
+    {
+      "case_id": "robust-01",
+      "suite": "robustness",
+      "split": "robustness_control",
+      "category": "unknown_id",
+      "profile": "isolated_own_fixture",
+      "target": "probe_plan",
+      "data_origin": "synthetic",
+      "family": "robustness-unknown_id",
+      "known_to_developer": true,
+      "source": {
+        "kind": "probe_plan",
+        "probe_id": "unknown_id"
+      },
+      "answers": [],
+      "fault_id": "unknown_id"
+    },
+    {
+      "case_id": "robust-02",
+      "suite": "robustness",
+      "split": "robustness_control",
+      "category": "duplicate_id",
+      "profile": "isolated_own_fixture",
+      "target": "probe_plan",
+      "data_origin": "synthetic",
+      "family": "robustness-duplicate_id",
+      "known_to_developer": true,
+      "source": {
+        "kind": "probe_plan",
+        "probe_id": "duplicate_id"
+      },
+      "answers": [],
+      "fault_id": "duplicate_id"
+    },
+    {
+      "case_id": "robust-03",
+      "suite": "robustness",
+      "split": "robustness_control",
+      "category": "swapped_roles",
+      "profile": "isolated_own_fixture",
+      "target": "probe_plan",
+      "data_origin": "synthetic",
+      "family": "robustness-swapped_roles",
+      "known_to_developer": true,
+      "source": {
+        "kind": "probe_plan",
+        "probe_id": "swapped_roles"
+      },
+      "answers": [],
+      "fault_id": "swapped_roles"
+    },
+    {
+      "case_id": "robust-04",
+      "suite": "robustness",
+      "split": "robustness_control",
+      "category": "other_cell",
+      "profile": "isolated_own_fixture",
+      "target": "probe_plan",
+      "data_origin": "synthetic",
+      "family": "robustness-other_cell",
+      "known_to_developer": true,
+      "source": {
+        "kind": "probe_plan",
+        "probe_id": "other_cell"
+      },
+      "answers": [],
+      "fault_id": "other_cell"
+    },
+    {
+      "case_id": "robust-05",
+      "suite": "robustness",
+      "split": "robustness_control",
+      "category": "wrong_sha_page",
+      "profile": "isolated_own_fixture",
+      "target": "probe_plan",
+      "data_origin": "synthetic",
+      "family": "robustness-wrong_sha_page",
+      "known_to_developer": true,
+      "source": {
+        "kind": "probe_plan",
+        "probe_id": "wrong_sha_page"
+      },
+      "answers": [],
+      "fault_id": "wrong_sha_page"
+    },
+    {
+      "case_id": "robust-06",
+      "suite": "robustness",
+      "split": "robustness_control",
+      "category": "lost_header",
+      "profile": "isolated_own_fixture",
+      "target": "probe_plan",
+      "data_origin": "synthetic",
+      "family": "robustness-lost_header",
+      "known_to_developer": true,
+      "source": {
+        "kind": "probe_plan",
+        "probe_id": "lost_header"
+      },
+      "answers": [],
+      "fault_id": "lost_header"
+    },
+    {
+      "case_id": "robust-07",
+      "suite": "robustness",
+      "split": "robustness_control",
+      "category": "extra_claim",
+      "profile": "isolated_own_fixture",
+      "target": "probe_plan",
+      "data_origin": "synthetic",
+      "family": "robustness-extra_claim",
+      "known_to_developer": true,
+      "source": {
+        "kind": "probe_plan",
+        "probe_id": "extra_claim"
+      },
+      "answers": [],
+      "fault_id": "extra_claim"
+    },
+    {
+      "case_id": "robust-08",
+      "suite": "robustness",
+      "split": "robustness_control",
+      "category": "lost_claim",
+      "profile": "isolated_own_fixture",
+      "target": "probe_plan",
+      "data_origin": "synthetic",
+      "family": "robustness-lost_claim",
+      "known_to_developer": true,
+      "source": {
+        "kind": "probe_plan",
+        "probe_id": "lost_claim"
+      },
+      "answers": [],
+      "fault_id": "lost_claim"
+    },
+    {
+      "case_id": "robust-09",
+      "suite": "robustness",
+      "split": "robustness_control",
+      "category": "automatic_candidate",
+      "profile": "isolated_own_fixture",
+      "target": "probe_plan",
+      "data_origin": "synthetic",
+      "family": "robustness-automatic_candidate",
+      "known_to_developer": true,
+      "source": {
+        "kind": "probe_plan",
+        "probe_id": "automatic_candidate"
+      },
+      "answers": [],
+      "fault_id": "automatic_candidate"
+    },
+    {
+      "case_id": "robust-10",
+      "suite": "robustness",
+      "split": "robustness_control",
+      "category": "changed_artifact",
+      "profile": "isolated_own_fixture",
+      "target": "probe_plan",
+      "data_origin": "synthetic",
+      "family": "robustness-changed_artifact",
+      "known_to_developer": true,
+      "source": {
+        "kind": "probe_plan",
+        "probe_id": "changed_artifact"
+      },
+      "answers": [],
+      "fault_id": "changed_artifact"
+    },
+    {
+      "case_id": "robust-11",
+      "suite": "robustness",
+      "split": "robustness_control",
+      "category": "untrusted_instruction",
+      "profile": "isolated_own_fixture",
+      "target": "probe_plan",
+      "data_origin": "synthetic",
+      "family": "robustness-untrusted_instruction",
+      "known_to_developer": true,
+      "source": {
+        "kind": "probe_plan",
+        "probe_id": "untrusted_instruction"
+      },
+      "answers": [],
+      "fault_id": "untrusted_instruction"
+    },
+    {
+      "case_id": "robust-12",
+      "suite": "robustness",
+      "split": "robustness_control",
+      "category": "unknown_usage",
+      "profile": "isolated_own_fixture",
+      "target": "probe_plan",
+      "data_origin": "synthetic",
+      "family": "robustness-unknown_usage",
+      "known_to_developer": true,
+      "source": {
+        "kind": "probe_plan",
+        "probe_id": "unknown_usage"
+      },
+      "answers": [],
+      "fault_id": "unknown_usage"
+    }
+  ]
+}

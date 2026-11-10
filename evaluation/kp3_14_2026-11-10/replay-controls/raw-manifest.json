@@ -1,0 +1,9 @@
+{
+  "schema_version": "kp3-raw-manifest-0.1",
+  "freeze_sha256": "072a1caf92423d2e41ae12625cc485d81f0bc3c321c3cce5cbb1db663bcf1fbe",
+  "scope": "evaluator_control",
+  "file_sha256": {
+    "positive.json": "456ad60fa1d5d3eb15c12a42dddee99ed1321ca6533381436d0c9e54e96e7249",
+    "technical-error.json": "eac7fc7be65b4001b4fe8a59c8bf9c1b9683f94e81af1a4800c9ddbfc18dc48e"
+  }
+}

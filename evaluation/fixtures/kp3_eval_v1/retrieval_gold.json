@@ -1,0 +1,2912 @@
+{
+  "schema_version": "kp3-search-gold-0.1",
+  "tasks_digest": "c992a01ef735b47c779a2f2b31cc6357ec4c3cd0bfeebbd726ad06aeb1e82883",
+  "queries": [
+    {
+      "query_id": "query-83d3ee8f666b603f5521",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2023",
+            "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2023-revenue-2022-ev",
+          "document_id": "phosagro-2023",
+          "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+          "document_sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 4,
+            "printed_page": "326",
+            "statement_page": "not_visible",
+            "page_region": "left_half_of_spread",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2023 год",
+            "row_label": "Выручка",
+            "column_label": "2022",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "569,527",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-b33f5dee2bd09e2e79d9",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2024",
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2024-revenue-2024-ev",
+          "document_id": "phosagro-2024",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 4,
+            "printed_page": "320",
+            "statement_page": "1",
+            "page_region": "left_half_of_spread",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2024 год",
+            "row_label": "Выручка",
+            "column_label": "2024",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "507,689",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-53c0416e97f75b4c50ef",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2025-01-01",
+            "end": "2025-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025",
+            "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2025-operating_profit-2025-ev",
+          "document_id": "phosagro-2025",
+          "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+          "document_sha256": "c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 8,
+            "printed_page": "1",
+            "statement_page": "1",
+            "page_region": "full_page",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2025 год",
+            "row_label": "Прибыль от операционной деятельности",
+            "column_label": "2025",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_profit",
+          "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2025-01-01",
+            "end": "2025-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "135,605",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-04eaa3b665f6e0106955",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2025-01-01",
+            "end": "2025-03-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-q1",
+            "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2025-q1-operating_cash_flow-2025-ev",
+          "document_id": "phosagro-2025-q1",
+          "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+          "document_sha256": "8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 7,
+            "printed_page": "3",
+            "statement_page": "3",
+            "page_region": "full_page",
+            "table_title": "Консолидированный промежуточный сокращенный отчет о движении денежных средств за три месяца, закончившихся 31 марта 2025 года",
+            "row_label": "Денежные средства от операционной деятельности",
+            "column_label": "Три месяца, закончившихся 31 марта / 2025",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_cash_flow",
+          "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2025-01-01",
+            "end": "2025-03-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "50,840",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-87955cd8796c2e8770e9",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-06-30"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-h1",
+            "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2025-h1-revenue-2025-ev",
+          "document_id": "phosagro-2025-h1",
+          "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+          "document_sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 5,
+            "printed_page": "1",
+            "statement_page": "1",
+            "page_region": "full_page",
+            "table_title": "Консолидированный промежуточный сокращенный отчет о прибыли или убытке и прочем совокупном доходе за три и шесть месяцев, закончившихся 30 июня 2025 года",
+            "row_label": "Выручка",
+            "column_label": "Шесть месяцев, закончившихся 30 июня / 2025",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-06-30"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "298,556",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-8f4fb839a8fb7fd1aa1e",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-09-30"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-9m",
+            "version_id": "sha256:147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2025-9m-operating_cash_flow-2025-ev",
+          "document_id": "phosagro-2025-9m",
+          "version_id": "sha256:147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+          "document_sha256": "147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 7,
+            "printed_page": "3",
+            "statement_page": "3",
+            "page_region": "full_page",
+            "table_title": "Консолидированный промежуточный сокращенный отчет о движении денежных средств за девять месяцев, закончившихся 30 сентября 2025 года",
+            "row_label": "Денежные средства от операционной деятельности",
+            "column_label": "Девять месяцев, закончившихся 30 сентября / 2025",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_cash_flow",
+          "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-09-30"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "108,981",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-75da5be10f1956ef2bd6",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2021",
+            "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "segezha-2021-operating_profit-2021-ev",
+          "document_id": "segezha-2021",
+          "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+          "document_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 11,
+            "printed_page": "9",
+            "statement_page": "9",
+            "page_region": "full_page",
+            "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ПРИБЫЛЯХ И УБЫТКАХ И ПРОЧЕМ СОВОКУПНОМ ДОХОДЕ ЗА 2021 ГОД",
+            "row_label": "Операционная прибыль",
+            "column_label": "2021",
+            "unit_header": "(в тысячах российских рублей)"
+          },
+          "metric_id": "operating_profit",
+          "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000,
+          "raw_value": "22 349 922",
+          "numeric_encoding": "space_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-db0c52abefcabcf482dc",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2022",
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "segezha-2022-operating_cash_flow-2022-ev",
+          "document_id": "segezha-2022",
+          "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+          "document_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 12,
+            "printed_page": "10",
+            "statement_page": "10",
+            "page_region": "full_page",
+            "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ДВИЖЕНИИ ДЕНЕЖНЫХ СРЕДСТВ ЗА 2022 ГОД",
+            "row_label": "Чистые денежные средства, полученные от операционной деятельности",
+            "column_label": "2022",
+            "unit_header": "(в миллионах российских рублей)"
+          },
+          "metric_id": "operating_cash_flow",
+          "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "2 259",
+          "numeric_encoding": "space_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-73ad37d301bd90b50a35",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2021",
+            "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "segezha-2021-operating_cash_flow-2021-ev",
+          "document_id": "segezha-2021",
+          "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+          "document_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 14,
+            "printed_page": "12",
+            "statement_page": "12",
+            "page_region": "full_page",
+            "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ДВИЖЕНИИ ДЕНЕЖНЫХ СРЕДСТВ ЗА 2021 ГОД",
+            "row_label": "Чистые денежные средства, полученные от операционной деятельности",
+            "column_label": "2021",
+            "unit_header": "(в тысячах российских рублей)"
+          },
+          "metric_id": "operating_cash_flow",
+          "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000,
+          "raw_value": "13 091 925",
+          "numeric_encoding": "space_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-1840ae5dc0ab614520a1",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2022",
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "segezha-2022-operating_cash_flow-2021-ev",
+          "document_id": "segezha-2022",
+          "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+          "document_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 12,
+            "printed_page": "10",
+            "statement_page": "10",
+            "page_region": "full_page",
+            "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ДВИЖЕНИИ ДЕНЕЖНЫХ СРЕДСТВ ЗА 2022 ГОД",
+            "row_label": "Чистые денежные средства, полученные от операционной деятельности",
+            "column_label": "2021",
+            "unit_header": "(в миллионах российских рублей)"
+          },
+          "metric_id": "operating_cash_flow",
+          "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "13 068",
+          "numeric_encoding": "space_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-b26c519211fbc072e028",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2023",
+            "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2023-revenue-2022-ev",
+          "document_id": "phosagro-2023",
+          "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+          "document_sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 4,
+            "printed_page": "326",
+            "statement_page": "not_visible",
+            "page_region": "left_half_of_spread",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2023 год",
+            "row_label": "Выручка",
+            "column_label": "2022",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "569,527",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "evidence_id": "phosagro-2023-revenue-2023-ev",
+          "document_id": "phosagro-2023",
+          "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+          "document_sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 4,
+            "printed_page": "326",
+            "statement_page": "not_visible",
+            "page_region": "left_half_of_spread",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2023 год",
+            "row_label": "Выручка",
+            "column_label": "2023",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "440,304",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-34094595efccfcbfa79b",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2024",
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2024-operating_profit-2023-ev",
+          "document_id": "phosagro-2024",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 4,
+            "printed_page": "320",
+            "statement_page": "1",
+            "page_region": "left_half_of_spread",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2024 год",
+            "row_label": "Прибыль от операционной деятельности",
+            "column_label": "2023",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_profit",
+          "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "150,756",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "evidence_id": "phosagro-2024-operating_profit-2024-ev",
+          "document_id": "phosagro-2024",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 4,
+            "printed_page": "320",
+            "statement_page": "1",
+            "page_region": "left_half_of_spread",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2024 год",
+            "row_label": "Прибыль от операционной деятельности",
+            "column_label": "2024",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_profit",
+          "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "140,459",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-cd0a312adf6361df4f30",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2025-01-01",
+            "end": "2025-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025",
+            "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2025-operating_cash_flow-2024-ev",
+          "document_id": "phosagro-2025",
+          "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+          "document_sha256": "c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 10,
+            "printed_page": "3",
+            "statement_page": "3",
+            "page_region": "full_page",
+            "table_title": "Консолидированный отчет о движении денежных средств за 2025 год",
+            "row_label": "Денежные средства от операционной деятельности",
+            "column_label": "2024",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_cash_flow",
+          "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "92,717",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "evidence_id": "phosagro-2025-operating_cash_flow-2025-ev",
+          "document_id": "phosagro-2025",
+          "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+          "document_sha256": "c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 10,
+            "printed_page": "3",
+            "statement_page": "3",
+            "page_region": "full_page",
+            "table_title": "Консолидированный отчет о движении денежных средств за 2025 год",
+            "row_label": "Денежные средства от операционной деятельности",
+            "column_label": "2025",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_cash_flow",
+          "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2025-01-01",
+            "end": "2025-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "93,114",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-1cc43f7a775d2d29d8c0",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2024-01-01",
+            "end": "2024-03-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2025-01-01",
+            "end": "2025-03-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-q1",
+            "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2025-q1-revenue-2024-ev",
+          "document_id": "phosagro-2025-q1",
+          "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+          "document_sha256": "8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 5,
+            "printed_page": "1",
+            "statement_page": "1",
+            "page_region": "full_page",
+            "table_title": "Консолидированный промежуточный сокращенный отчет о прибыли или убытке и прочем совокупном доходе за три месяца, закончившихся 31 марта 2025 года",
+            "row_label": "Выручка",
+            "column_label": "Три месяца, закончившихся 31 марта / 2024",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2024-01-01",
+            "end": "2024-03-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "119,272",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "evidence_id": "phosagro-2025-q1-revenue-2025-ev",
+          "document_id": "phosagro-2025-q1",
+          "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+          "document_sha256": "8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 5,
+            "printed_page": "1",
+            "statement_page": "1",
+            "page_region": "full_page",
+            "table_title": "Консолидированный промежуточный сокращенный отчет о прибыли или убытке и прочем совокупном доходе за три месяца, закончившихся 31 марта 2025 года",
+            "row_label": "Выручка",
+            "column_label": "Три месяца, закончившихся 31 марта / 2025",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2025-01-01",
+            "end": "2025-03-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "159,390",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-d47236cc348d269c7a44",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2024-01-01",
+            "end": "2024-06-30"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-06-30"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-h1",
+            "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2025-h1-operating_profit-2024-ev",
+          "document_id": "phosagro-2025-h1",
+          "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+          "document_sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 5,
+            "printed_page": "1",
+            "statement_page": "1",
+            "page_region": "full_page",
+            "table_title": "Консолидированный промежуточный сокращенный отчет о прибыли или убытке и прочем совокупном доходе за три и шесть месяцев, закончившихся 30 июня 2025 года",
+            "row_label": "Прибыль от операционной деятельности",
+            "column_label": "Шесть месяцев, закончившихся 30 июня / 2024",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_profit",
+          "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2024-01-01",
+            "end": "2024-06-30"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "56,035",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "evidence_id": "phosagro-2025-h1-operating_profit-2025-ev",
+          "document_id": "phosagro-2025-h1",
+          "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+          "document_sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 5,
+            "printed_page": "1",
+            "statement_page": "1",
+            "page_region": "full_page",
+            "table_title": "Консолидированный промежуточный сокращенный отчет о прибыли или убытке и прочем совокупном доходе за три и шесть месяцев, закончившихся 30 июня 2025 года",
+            "row_label": "Прибыль от операционной деятельности",
+            "column_label": "Шесть месяцев, закончившихся 30 июня / 2025",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_profit",
+          "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-06-30"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "74,846",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-f0b59fdb700b18251484",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2024-01-01",
+            "end": "2024-09-30"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-09-30"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-9m",
+            "version_id": "sha256:147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2025-9m-operating_cash_flow-2024-ev",
+          "document_id": "phosagro-2025-9m",
+          "version_id": "sha256:147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+          "document_sha256": "147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 7,
+            "printed_page": "3",
+            "statement_page": "3",
+            "page_region": "full_page",
+            "table_title": "Консолидированный промежуточный сокращенный отчет о движении денежных средств за девять месяцев, закончившихся 30 сентября 2025 года",
+            "row_label": "Денежные средства от операционной деятельности",
+            "column_label": "Девять месяцев, закончившихся 30 сентября / 2024",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_cash_flow",
+          "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2024-01-01",
+            "end": "2024-09-30"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "87,456",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "evidence_id": "phosagro-2025-9m-operating_cash_flow-2025-ev",
+          "document_id": "phosagro-2025-9m",
+          "version_id": "sha256:147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+          "document_sha256": "147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 7,
+            "printed_page": "3",
+            "statement_page": "3",
+            "page_region": "full_page",
+            "table_title": "Консолидированный промежуточный сокращенный отчет о движении денежных средств за девять месяцев, закончившихся 30 сентября 2025 года",
+            "row_label": "Денежные средства от операционной деятельности",
+            "column_label": "Девять месяцев, закончившихся 30 сентября / 2025",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_cash_flow",
+          "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-09-30"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "108,981",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-19b8d20515a6a6ab0cac",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2020-01-01",
+            "end": "2020-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2021",
+            "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "segezha-2021-revenue-2020-ev",
+          "document_id": "segezha-2021",
+          "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+          "document_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 11,
+            "printed_page": "9",
+            "statement_page": "9",
+            "page_region": "full_page",
+            "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ПРИБЫЛЯХ И УБЫТКАХ И ПРОЧЕМ СОВОКУПНОМ ДОХОДЕ ЗА 2021 ГОД",
+            "row_label": "Выручка",
+            "column_label": "2020",
+            "unit_header": "(в тысячах российских рублей)"
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2020-01-01",
+            "end": "2020-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000,
+          "raw_value": "68 986 649",
+          "numeric_encoding": "space_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "evidence_id": "segezha-2021-revenue-2021-ev",
+          "document_id": "segezha-2021",
+          "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+          "document_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 11,
+            "printed_page": "9",
+            "statement_page": "9",
+            "page_region": "full_page",
+            "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ПРИБЫЛЯХ И УБЫТКАХ И ПРОЧЕМ СОВОКУПНОМ ДОХОДЕ ЗА 2021 ГОД",
+            "row_label": "Выручка",
+            "column_label": "2021",
+            "unit_header": "(в тысячах российских рублей)"
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000,
+          "raw_value": "92 442 267",
+          "numeric_encoding": "space_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-9fd24090997ea9c33273",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2022",
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "segezha-2022-operating_profit-2021-ev",
+          "document_id": "segezha-2022",
+          "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+          "document_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 9,
+            "printed_page": "7",
+            "statement_page": "7",
+            "page_region": "full_page",
+            "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ПРИБЫЛЯХ И УБЫТКАХ И ПРОЧЕМ СОВОКУПНОМ ДОХОДЕ ЗА 2022 ГОД",
+            "row_label": "Операционная прибыль",
+            "column_label": "2021",
+            "unit_header": "(в миллионах российских рублей)"
+          },
+          "metric_id": "operating_profit",
+          "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "22 350",
+          "numeric_encoding": "space_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "evidence_id": "segezha-2022-operating_profit-2022-ev",
+          "document_id": "segezha-2022",
+          "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+          "document_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 9,
+            "printed_page": "7",
+            "statement_page": "7",
+            "page_region": "full_page",
+            "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ПРИБЫЛЯХ И УБЫТКАХ И ПРОЧЕМ СОВОКУПНОМ ДОХОДЕ ЗА 2022 ГОД",
+            "row_label": "Операционная прибыль",
+            "column_label": "2022",
+            "unit_header": "(в миллионах российских рублей)"
+          },
+          "metric_id": "operating_profit",
+          "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "10 111",
+          "numeric_encoding": "space_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-c5037c5ccd7e1a58ac05",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль и выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          },
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2024",
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2024-operating_profit-2024-ev",
+          "document_id": "phosagro-2024",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 4,
+            "printed_page": "320",
+            "statement_page": "1",
+            "page_region": "left_half_of_spread",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2024 год",
+            "row_label": "Прибыль от операционной деятельности",
+            "column_label": "2024",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_profit",
+          "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "140,459",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "evidence_id": "phosagro-2024-revenue-2024-ev",
+          "document_id": "phosagro-2024",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 4,
+            "printed_page": "320",
+            "statement_page": "1",
+            "page_region": "left_half_of_spread",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2024 год",
+            "row_label": "Выручка",
+            "column_label": "2024",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "507,689",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-1ccdffcd5eb690f9f8ef",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль и выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          },
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2025-01-01",
+            "end": "2025-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025",
+            "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2025-operating_profit-2025-ev",
+          "document_id": "phosagro-2025",
+          "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+          "document_sha256": "c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 8,
+            "printed_page": "1",
+            "statement_page": "1",
+            "page_region": "full_page",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2025 год",
+            "row_label": "Прибыль от операционной деятельности",
+            "column_label": "2025",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_profit",
+          "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2025-01-01",
+            "end": "2025-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "135,605",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "evidence_id": "phosagro-2025-revenue-2025-ev",
+          "document_id": "phosagro-2025",
+          "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+          "document_sha256": "c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 8,
+            "printed_page": "1",
+            "statement_page": "1",
+            "page_region": "full_page",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2025 год",
+            "row_label": "Выручка",
+            "column_label": "2025",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2025-01-01",
+            "end": "2025-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "573,628",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-bfc595486f259b32336f",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль и выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          },
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2025-01-01",
+            "end": "2025-03-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-q1",
+            "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2025-q1-operating_profit-2025-ev",
+          "document_id": "phosagro-2025-q1",
+          "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+          "document_sha256": "8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 5,
+            "printed_page": "1",
+            "statement_page": "1",
+            "page_region": "full_page",
+            "table_title": "Консолидированный промежуточный сокращенный отчет о прибыли или убытке и прочем совокупном доходе за три месяца, закончившихся 31 марта 2025 года",
+            "row_label": "Прибыль от операционной деятельности",
+            "column_label": "Три месяца, закончившихся 31 марта / 2025",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_profit",
+          "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2025-01-01",
+            "end": "2025-03-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "38,816",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "evidence_id": "phosagro-2025-q1-revenue-2025-ev",
+          "document_id": "phosagro-2025-q1",
+          "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+          "document_sha256": "8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 5,
+            "printed_page": "1",
+            "statement_page": "1",
+            "page_region": "full_page",
+            "table_title": "Консолидированный промежуточный сокращенный отчет о прибыли или убытке и прочем совокупном доходе за три месяца, закончившихся 31 марта 2025 года",
+            "row_label": "Выручка",
+            "column_label": "Три месяца, закончившихся 31 марта / 2025",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2025-01-01",
+            "end": "2025-03-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "159,390",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-a67ab61b37e62992f436",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль и выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          },
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-06-30"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-h1",
+            "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2025-h1-operating_profit-2025-ev",
+          "document_id": "phosagro-2025-h1",
+          "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+          "document_sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 5,
+            "printed_page": "1",
+            "statement_page": "1",
+            "page_region": "full_page",
+            "table_title": "Консолидированный промежуточный сокращенный отчет о прибыли или убытке и прочем совокупном доходе за три и шесть месяцев, закончившихся 30 июня 2025 года",
+            "row_label": "Прибыль от операционной деятельности",
+            "column_label": "Шесть месяцев, закончившихся 30 июня / 2025",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_profit",
+          "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-06-30"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "74,846",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "evidence_id": "phosagro-2025-h1-revenue-2025-ev",
+          "document_id": "phosagro-2025-h1",
+          "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+          "document_sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 5,
+            "printed_page": "1",
+            "statement_page": "1",
+            "page_region": "full_page",
+            "table_title": "Консолидированный промежуточный сокращенный отчет о прибыли или убытке и прочем совокупном доходе за три и шесть месяцев, закончившихся 30 июня 2025 года",
+            "row_label": "Выручка",
+            "column_label": "Шесть месяцев, закончившихся 30 июня / 2025",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-06-30"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "298,556",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-2f97d14997e86805f9af",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль и выручка",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          },
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2021",
+            "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "segezha-2021-operating_profit-2021-ev",
+          "document_id": "segezha-2021",
+          "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+          "document_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 11,
+            "printed_page": "9",
+            "statement_page": "9",
+            "page_region": "full_page",
+            "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ПРИБЫЛЯХ И УБЫТКАХ И ПРОЧЕМ СОВОКУПНОМ ДОХОДЕ ЗА 2021 ГОД",
+            "row_label": "Операционная прибыль",
+            "column_label": "2021",
+            "unit_header": "(в тысячах российских рублей)"
+          },
+          "metric_id": "operating_profit",
+          "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000,
+          "raw_value": "22 349 922",
+          "numeric_encoding": "space_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "evidence_id": "segezha-2021-revenue-2021-ev",
+          "document_id": "segezha-2021",
+          "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+          "document_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 11,
+            "printed_page": "9",
+            "statement_page": "9",
+            "page_region": "full_page",
+            "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ПРИБЫЛЯХ И УБЫТКАХ И ПРОЧЕМ СОВОКУПНОМ ДОХОДЕ ЗА 2021 ГОД",
+            "row_label": "Выручка",
+            "column_label": "2021",
+            "unit_header": "(в тысячах российских рублей)"
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000,
+          "raw_value": "92 442 267",
+          "numeric_encoding": "space_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-b0c97437363c0ef7c21d",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль и выручка",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          },
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2022",
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "segezha-2022-operating_profit-2022-ev",
+          "document_id": "segezha-2022",
+          "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+          "document_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 9,
+            "printed_page": "7",
+            "statement_page": "7",
+            "page_region": "full_page",
+            "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ПРИБЫЛЯХ И УБЫТКАХ И ПРОЧЕМ СОВОКУПНОМ ДОХОДЕ ЗА 2022 ГОД",
+            "row_label": "Операционная прибыль",
+            "column_label": "2022",
+            "unit_header": "(в миллионах российских рублей)"
+          },
+          "metric_id": "operating_profit",
+          "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "10 111",
+          "numeric_encoding": "space_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "evidence_id": "segezha-2022-revenue-2022-ev",
+          "document_id": "segezha-2022",
+          "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+          "document_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 9,
+            "printed_page": "7",
+            "statement_page": "7",
+            "page_region": "full_page",
+            "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ПРИБЫЛЯХ И УБЫТКАХ И ПРОЧЕМ СОВОКУПНОМ ДОХОДЕ ЗА 2022 ГОД",
+            "row_label": "Выручка",
+            "column_label": "2022",
+            "unit_header": "(в миллионах российских рублей)"
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "106 766",
+          "numeric_encoding": "space_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-b5ea59c606bf4e242eb3",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2023",
+            "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2023-operating_profit-2023-ev",
+          "document_id": "phosagro-2023",
+          "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+          "document_sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 4,
+            "printed_page": "326",
+            "statement_page": "not_visible",
+            "page_region": "left_half_of_spread",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2023 год",
+            "row_label": "Прибыль от операционной деятельности",
+            "column_label": "2023",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_profit",
+          "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "150,756",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-9c92b4145141ba875c9e",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2022",
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "segezha-2022-revenue-2022-ev",
+          "document_id": "segezha-2022",
+          "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+          "document_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 9,
+            "printed_page": "7",
+            "statement_page": "7",
+            "page_region": "full_page",
+            "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ПРИБЫЛЯХ И УБЫТКАХ И ПРОЧЕМ СОВОКУПНОМ ДОХОДЕ ЗА 2022 ГОД",
+            "row_label": "Выручка",
+            "column_label": "2022",
+            "unit_header": "(в миллионах российских рублей)"
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "106 766",
+          "numeric_encoding": "space_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-7d602830943b5bbdb411",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2024",
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2024-revenue-2023-ev",
+          "document_id": "phosagro-2024",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 4,
+            "printed_page": "320",
+            "statement_page": "1",
+            "page_region": "left_half_of_spread",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2024 год",
+            "row_label": "Выручка",
+            "column_label": "2023",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "440,304",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "evidence_id": "phosagro-2024-revenue-2024-ev",
+          "document_id": "phosagro-2024",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 4,
+            "printed_page": "320",
+            "statement_page": "1",
+            "page_region": "left_half_of_spread",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2024 год",
+            "row_label": "Выручка",
+            "column_label": "2024",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "507,689",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-33318296be37bb02d1f5",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2023",
+            "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2023-operating_cash_flow-2022-ev",
+          "document_id": "phosagro-2023",
+          "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+          "document_sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 5,
+            "printed_page": "328",
+            "statement_page": "3",
+            "page_region": "left_half_of_spread",
+            "table_title": "Консолидированный отчет о движении денежных средств за 2023 год",
+            "row_label": "Денежные средства от операционной деятельности",
+            "column_label": "2022",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_cash_flow",
+          "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "203,281",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "evidence_id": "phosagro-2023-operating_cash_flow-2023-ev",
+          "document_id": "phosagro-2023",
+          "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+          "document_sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 5,
+            "printed_page": "328",
+            "statement_page": "3",
+            "page_region": "left_half_of_spread",
+            "table_title": "Консолидированный отчет о движении денежных средств за 2023 год",
+            "row_label": "Денежные средства от операционной деятельности",
+            "column_label": "2023",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_cash_flow",
+          "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "134,286",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    },
+    {
+      "query_id": "query-839f8da87a7c25e26b31",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2024-01-01",
+            "end": "2024-03-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2025-01-01",
+            "end": "2025-03-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-q1",
+            "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      },
+      "required_evidence": [
+        {
+          "evidence_id": "phosagro-2025-q1-operating_cash_flow-2024-ev",
+          "document_id": "phosagro-2025-q1",
+          "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+          "document_sha256": "8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 7,
+            "printed_page": "3",
+            "statement_page": "3",
+            "page_region": "full_page",
+            "table_title": "Консолидированный промежуточный сокращенный отчет о движении денежных средств за три месяца, закончившихся 31 марта 2025 года",
+            "row_label": "Денежные средства от операционной деятельности",
+            "column_label": "Три месяца, закончившихся 31 марта / 2024",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_cash_flow",
+          "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2024-01-01",
+            "end": "2024-03-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "19,706",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        },
+        {
+          "evidence_id": "phosagro-2025-q1-operating_cash_flow-2025-ev",
+          "document_id": "phosagro-2025-q1",
+          "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+          "document_sha256": "8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+          "locator": {
+            "kind": "pdf",
+            "pdf_page": 7,
+            "printed_page": "3",
+            "statement_page": "3",
+            "page_region": "full_page",
+            "table_title": "Консолидированный промежуточный сокращенный отчет о движении денежных средств за три месяца, закончившихся 31 марта 2025 года",
+            "row_label": "Денежные средства от операционной деятельности",
+            "column_label": "Три месяца, закончившихся 31 марта / 2025",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "operating_cash_flow",
+          "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2025-01-01",
+            "end": "2025-03-31"
+          },
+          "currency": "RUB",
+          "scale": 1000000,
+          "raw_value": "50,840",
+          "numeric_encoding": "comma_thousands_integer",
+          "provenance": {
+            "status": "assistant_checked",
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "human_reviewer": null
+          }
+        }
+      ]
+    }
+  ],
+  "case_to_query": {
+    "cmp-01": "query-83d3ee8f666b603f5521",
+    "cmp-02": "query-b33f5dee2bd09e2e79d9",
+    "cmp-03": "query-53c0416e97f75b4c50ef",
+    "cmp-04": "query-04eaa3b665f6e0106955",
+    "cmp-05": "query-87955cd8796c2e8770e9",
+    "cmp-06": "query-8f4fb839a8fb7fd1aa1e",
+    "cmp-07": "query-75da5be10f1956ef2bd6",
+    "cmp-08": "query-db0c52abefcabcf482dc",
+    "cmp-09": "query-73ad37d301bd90b50a35",
+    "cmp-10": "query-1840ae5dc0ab614520a1",
+    "cmp-11": "query-b26c519211fbc072e028",
+    "cmp-12": "query-34094595efccfcbfa79b",
+    "cmp-13": "query-cd0a312adf6361df4f30",
+    "cmp-14": "query-1cc43f7a775d2d29d8c0",
+    "cmp-15": "query-d47236cc348d269c7a44",
+    "cmp-16": "query-f0b59fdb700b18251484",
+    "cmp-17": "query-19b8d20515a6a6ab0cac",
+    "cmp-18": "query-9fd24090997ea9c33273",
+    "cmp-19": "query-c5037c5ccd7e1a58ac05",
+    "cmp-20": "query-1ccdffcd5eb690f9f8ef",
+    "cmp-21": "query-bfc595486f259b32336f",
+    "cmp-22": "query-a67ab61b37e62992f436",
+    "cmp-23": "query-2f97d14997e86805f9af",
+    "cmp-24": "query-b0c97437363c0ef7c21d",
+    "cmp-25": "query-b5ea59c606bf4e242eb3",
+    "cmp-26": "query-87955cd8796c2e8770e9",
+    "cmp-27": "query-73ad37d301bd90b50a35",
+    "cmp-28": "query-9c92b4145141ba875c9e",
+    "cmp-29": "query-7d602830943b5bbdb411",
+    "cmp-30": "query-33318296be37bb02d1f5",
+    "cmp-31": "query-9fd24090997ea9c33273",
+    "cmp-32": "query-839f8da87a7c25e26b31"
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "schema_version": "kp3-observation-0.1",
+  "attempt_id": "primary-021",
+  "case_id": "cmp-01",
+  "method": "B",
+  "phase": "primary",
+  "source": "evaluator_control",
+  "answer": {
+    "assumption_checks": [],
+    "clarifications": [],
+    "context_digest": "c2858873b9015194fcd70ae8642e79b4f07799e2c9855aee047e7ed9c3825e54",
+    "execution_status": "error",
+    "financial_result": null,
+    "financial_status": null,
+    "method": "B",
+    "model_calls": 0,
+    "normalized_input": {
+      "assumption_origin": "none",
+      "assumptions": [],
+      "catalog_digest": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+      "field_origins": {
+        "accounting_standard": "catalog_unique",
+        "as_of": "unset",
+        "comparability_id": "unset",
+        "consolidation": "catalog_unique",
+        "definition_ids": "catalog_unique",
+        "documents": "form",
+        "metric_ids": "form",
+        "mode": "form",
+        "operation_id": "form",
+        "organization": "form",
+        "periods": "form",
+        "result_unit": "catalog_unique",
+        "source_unit": "catalog_unique",
+        "version_policy": "form"
+      },
+      "fields": {
+        "organization": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "operation_id": "direct_fact_v1",
+        "metric_ids": [
+          "revenue"
+        ],
+        "definition_ids": [
+          "revenue:nonfinancial_ifrs_reported_v1"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2023",
+            "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "mode": "snapshot",
+        "as_of": null,
+        "comparability_id": null
+      },
+      "hints": {
+        "as_of_text": null,
+        "document_report_year": null,
+        "organization_unmatched": null,
+        "years": []
+      },
+      "history": [],
+      "input_id": "control14-unit-technical-error",
+      "input_kind": "form",
+      "issues": [],
+      "language_version": "ru-input-v1",
+      "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+      "raw_fields": {
+        "organization": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "operation_id": "direct_fact_v1",
+        "metric_ids": [
+          "revenue"
+        ],
+        "definition_ids": [
+          "revenue:nonfinancial_ifrs_reported_v1"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2023",
+            "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "mode": "snapshot",
+        "as_of": null,
+        "comparability_id": null
+      },
+      "schema_version": "kp3-input-0.1",
+      "unfulfilled_requests": [],
+      "unsupported_reasons": []
+    },
+    "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+    "outcome": null,
+    "reason_code": "unit_injected_error",
+    "request_status": "error",
+    "retrieval": {
+      "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+      "reason_code": "ok",
+      "result_count": 1,
+      "run_id": "control14-unit-technical-error",
+      "source_kind": "prepared",
+      "spec": {
+        "accounting_standard": "IFRS",
+        "as_of": null,
+        "consolidation": "group",
+        "documents": [
+          {
+            "document_id": "phosagro-2024",
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          }
+        ],
+        "metrics": [
+          {
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "metric_id": "revenue"
+          }
+        ],
+        "mode": "snapshot",
+        "organization_id": "phosagro_group",
+        "periods": [
+          {
+            "duration_type": "full_year",
+            "end": "2024-12-31",
+            "kind": "duration",
+            "start": "2024-01-01"
+          }
+        ],
+        "query": "выручка",
+        "schema_version": "kp3-search-0.1",
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "top_k": 32,
+        "version_policy": "explicit_versions"
+      },
+      "status": "found"
+    },
+    "run_id": "control14-unit-technical-error",
+    "saved_run": {
+      "private": true,
+      "resource_id": "52427703647283835f48a3e5e8718e7328853cf688cef242794890eceab51599.json",
+      "status": "written"
+    },
+    "schema_version": "kp3-answer-0.1",
+    "source_input_digest": "da7d1c35dcd84da81cdb7f42a4cdfb4d35746abc01dda64589975750402b4202",
+    "task_id": "control14-unit-technical-error",
+    "trace": [
+      {
+        "details": {
+          "syntax_status": "parsed"
+        },
+        "elapsed_ms": 7.7521,
+        "reason_code": "ok",
+        "run_id": "control14-unit-technical-error",
+        "stage": "input",
+        "status": "completed"
+      },
+      {
+        "details": {
+          "binding_status": "resolved",
+          "preliminary_only": true,
+          "request_id": "control14-unit-technical-error"
+        },
+        "elapsed_ms": 6.7338,
+        "reason_code": "ok",
+        "run_id": "control14-unit-technical-error",
+        "stage": "catalog_filters",
+        "status": "completed"
+      },
+      {
+        "details": {
+          "results": 1,
+          "source_kind": "prepared"
+        },
+        "elapsed_ms": 5.8538,
+        "reason_code": "ok",
+        "run_id": "control14-unit-technical-error",
+        "stage": "search",
+        "status": "completed"
+      },
+      {
+        "details": {
+          "checked_values_from_catalog": true,
+          "evidence_ids": [
+            "phosagro-2024-revenue-2024-ev"
+          ]
+        },
+        "elapsed_ms": 2.3215,
+        "reason_code": "ok",
+        "run_id": "control14-unit-technical-error",
+        "stage": "fact_resolution",
+        "status": "completed"
+      },
+      {
+        "details": {
+          "primary_reannotation": false,
+          "selected_documents": [
+            "phosagro-2024"
+          ],
+          "source_bytes_checked": true
+        },
+        "elapsed_ms": 4.5937,
+        "reason_code": "ok",
+        "run_id": "control14-unit-technical-error",
+        "stage": "source_validation",
+        "status": "completed"
+      },
+      {
+        "details": {
+          "internal_live_retrieval_recheck": true,
+          "registered_operation_executed": true
+        },
+        "elapsed_ms": 10.9997,
+        "reason_code": "ok",
+        "run_id": "control14-unit-technical-error",
+        "stage": "calculation",
+        "status": "completed"
+      },
+      {
+        "details": {
+          "internal_live_retrieval_recheck": true,
+          "recomputation": true
+        },
+        "elapsed_ms": 10.7777,
+        "reason_code": "ok",
+        "run_id": "control14-unit-technical-error",
+        "stage": "result_validation",
+        "status": "completed"
+      },
+      {
+        "details": {
+          "financial_result_present": true
+        },
+        "elapsed_ms": 0.0026,
+        "reason_code": "ok",
+        "run_id": "control14-unit-technical-error",
+        "stage": "answer",
+        "status": "completed"
+      }
+    ],
+    "unfulfilled_requests": []
+  },
+  "measurement": {
+    "elapsed_ms": 2,
+    "cold_warm": "unknown"
+  }
+}

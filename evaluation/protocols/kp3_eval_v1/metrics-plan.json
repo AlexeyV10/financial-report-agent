@@ -1,0 +1,36 @@
+{
+  "schema_version": "kp3-metric-plan-0.1",
+  "denominators": {
+    "financial_primary_per_method": {
+      "attempts": 40,
+      "numeric": 32,
+      "refusal": 8
+    },
+    "warm_repeats_per_method": 6,
+    "parser": 8,
+    "scenario": {
+      "total": 12,
+      "own": 8,
+      "real_readiness": 4
+    },
+    "robustness": 12,
+    "retrieval_queries": 29,
+    "retrieval_required_evidence": 46,
+    "source_lineage_clusters": 2,
+    "reserved_unseen_real": 0
+  },
+  "metric_definitions": {
+    "numeric": "Fully correct typed source-linked numeric answer / all32 answerable primary questions per method; failures remain",
+    "refusal": "Correct completed request/financial refusal / all8 expected refusals; error/limit not correct",
+    "support": "Verified observed typed claims / all observed substantive claims, extras rejected",
+    "completeness": "All required claims and constraints / all32 answerable primary questions",
+    "parser": "Correct semantics/clarification /8 separate input controls",
+    "retrieval": "Required exact checked Evidence /46 targets across29 unique queries; complete query/29",
+    "scenario": "Independent scenario checks /12 declared cases; execution deferred",
+    "robustness": "Safety invariants /12 declared plans, variants recorded separately on15"
+  },
+  "missing_attempt": "Counts toward planned denominator; zero observed=>not_measured, not empirical0%accuracy",
+  "warm_repeat": "18 separate attempts, not additional unique questions",
+  "cost": "not_measured for full local hardware/electricity cost",
+  "uncertainty": "No independent binomial claim on two dependent real source lineages"
+}

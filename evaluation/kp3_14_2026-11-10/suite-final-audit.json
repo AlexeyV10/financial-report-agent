@@ -1,0 +1,671 @@
+{
+  "stage": "KP3-14",
+  "model_calls": 0,
+  "final_comparison_method_attempts": 0,
+  "known_to_developer": true,
+  "audit": {
+    "schema_version": "kp3-family-audit-0.1",
+    "suite_cases": 92,
+    "counts": {
+      "financial:dev_control": 20,
+      "financial:comparison_known": 40,
+      "interface:interface_control": 8,
+      "scenario:scenario_control": 12,
+      "robustness:robustness_control": 12
+    },
+    "comparison_categories": {
+      "direct": 10,
+      "comparison": 8,
+      "margin": 6,
+      "scale": 4,
+      "false_premise": 4,
+      "refusal": 8
+    },
+    "financial_numeric": {
+      "dev_control": 19,
+      "comparison_known": 32
+    },
+    "financial_refusals": {
+      "dev_control": 1,
+      "comparison_known": 8
+    },
+    "financial_lineage_clusters": {
+      "dev_control": [
+        "own07-lineage"
+      ],
+      "comparison_known": [
+        "real-lineage-phosagro_group",
+        "real-lineage-segezha_group"
+      ]
+    },
+    "document_versions": {
+      "dev_control": [
+        "method-synthetic-2023",
+        "method-synthetic-2024"
+      ],
+      "comparison_known": [
+        "phosagro-2023",
+        "phosagro-2024",
+        "phosagro-2025",
+        "phosagro-2025-9m",
+        "phosagro-2025-h1",
+        "phosagro-2025-q1",
+        "segezha-2021",
+        "segezha-2022"
+      ]
+    },
+    "economic_contexts": {
+      "dev_control": 6,
+      "comparison_known": 28
+    },
+    "new_assignment_cross_split_overlap": 0,
+    "historical_dev_overlap_comparison": [
+      "cmp-01",
+      "cmp-02",
+      "cmp-03",
+      "cmp-04",
+      "cmp-05",
+      "cmp-06",
+      "cmp-07",
+      "cmp-08",
+      "cmp-09",
+      "cmp-10",
+      "cmp-11",
+      "cmp-12",
+      "cmp-13",
+      "cmp-14",
+      "cmp-15",
+      "cmp-16",
+      "cmp-17",
+      "cmp-18",
+      "cmp-19",
+      "cmp-20",
+      "cmp-21",
+      "cmp-22",
+      "cmp-23",
+      "cmp-24",
+      "cmp-25",
+      "cmp-26",
+      "cmp-27",
+      "cmp-28",
+      "cmp-29",
+      "cmp-30",
+      "cmp-31",
+      "cmp-32",
+      "cmp-33",
+      "cmp-34",
+      "cmp-35",
+      "cmp-36",
+      "cmp-37",
+      "cmp-38",
+      "cmp-39",
+      "cmp-40"
+    ],
+    "true_document_holdout": 0,
+    "true_template_holdout": 0,
+    "reserved_unseen_real": 0,
+    "known_to_developer": true,
+    "interpretation": "Known-corpus engineering comparison only; family clustering does not erase03-13 exposure"
+  },
+  "isolation": {
+    "checked_files": [
+      "src/financial_assistant/__init__.py",
+      "src/financial_assistant/agent.py",
+      "src/financial_assistant/agent_c.py",
+      "src/financial_assistant/agent_contracts_v2.py",
+      "src/financial_assistant/agent_model_v2.py",
+      "src/financial_assistant/calculation_contracts.py",
+      "src/financial_assistant/catalog.py",
+      "src/financial_assistant/contracts.py",
+      "src/financial_assistant/contracts_v2.py",
+      "src/financial_assistant/document_extraction.py",
+      "src/financial_assistant/fact_admission.py",
+      "src/financial_assistant/finance.py",
+      "src/financial_assistant/financial_calculator.py",
+      "src/financial_assistant/input_binding.py",
+      "src/financial_assistant/input_contracts.py",
+      "src/financial_assistant/legacy_adapter.py",
+      "src/financial_assistant/local_model.py",
+      "src/financial_assistant/measurement.py",
+      "src/financial_assistant/measurement_collect.py",
+      "src/financial_assistant/one_shot_a.py",
+      "src/financial_assistant/one_shot_contracts.py",
+      "src/financial_assistant/one_shot_model.py",
+      "src/financial_assistant/product_downloads.py",
+      "src/financial_assistant/product_history.py",
+      "src/financial_assistant/product_service.py",
+      "src/financial_assistant/question_set.py",
+      "src/financial_assistant/retrieval.py",
+      "src/financial_assistant/retrieval_v2.py",
+      "src/financial_assistant/russian_input.py",
+      "src/financial_assistant/scenario_contracts_v1.py",
+      "src/financial_assistant/scenario_ledger.py",
+      "src/financial_assistant/scenario_service.py",
+      "src/financial_assistant/service_b.py",
+      "src/financial_assistant/service_contracts.py",
+      "src/financial_assistant/service_ui.py",
+      "src/financial_assistant/simulation.py",
+      "src/financial_assistant/simulation_view.py",
+      "src/financial_assistant/source_viewer.py",
+      "src/financial_assistant/tasks.py",
+      "src/financial_assistant/user_path.py",
+      "app_kp3/product_app.py",
+      "app_kp3/scenario_app.py",
+      "app_kp3/service_b_app.py"
+    ],
+    "new_gold_imports": 0,
+    "scope": "New14 evaluator isolated from existing answer paths; old legacy replay remains unchanged"
+  },
+  "binding_checks": [
+    {
+      "case_id": "cmp-01",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-02",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-03",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-04",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-05",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-06",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-07",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-08",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-09",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-10",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-11",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-12",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-13",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-14",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-15",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-16",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-17",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-18",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-19",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-20",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-21",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-22",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-23",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-24",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-25",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-26",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-27",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-28",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-29",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-30",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-31",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-32",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-33",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-34",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-35",
+      "binding_status": "conflict",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-36",
+      "binding_status": "missing",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-37",
+      "binding_status": "conflict",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-38",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-39",
+      "binding_status": "resolved",
+      "matched": true,
+      "financial_answer_computed": false
+    },
+    {
+      "case_id": "cmp-40",
+      "binding_status": "unsupported",
+      "matched": true,
+      "financial_answer_computed": false
+    }
+  ],
+  "parser_controls": [
+    {
+      "case_id": "input-01",
+      "matched": true,
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "quality_scope": "known separate parser control; not financial QA"
+    },
+    {
+      "case_id": "input-02",
+      "matched": true,
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "quality_scope": "known separate parser control; not financial QA"
+    },
+    {
+      "case_id": "input-03",
+      "matched": true,
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "quality_scope": "known separate parser control; not financial QA"
+    },
+    {
+      "case_id": "input-04",
+      "matched": true,
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "quality_scope": "known separate parser control; not financial QA"
+    },
+    {
+      "case_id": "input-05",
+      "matched": true,
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "quality_scope": "known separate parser control; not financial QA"
+    },
+    {
+      "case_id": "input-06",
+      "matched": true,
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "quality_scope": "known separate parser control; not financial QA"
+    },
+    {
+      "case_id": "input-07",
+      "matched": true,
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "quality_scope": "known separate parser control; not financial QA"
+    },
+    {
+      "case_id": "input-08",
+      "matched": true,
+      "checks": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "quality_scope": "known separate parser control; not financial QA"
+    }
+  ],
+  "prior_actual_controls": [
+    {
+      "origin": "prior_actual13_evaluator_control_not_new14_answer",
+      "run_id": "product13-cd83814d05b401f112cd3d0d1f8c9c35",
+      "method": "C",
+      "score": {
+        "case_id": "prior13-product13-cd83814d05b401f112cd3d0d1f8c9c35",
+        "method": "C",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 4,
+        "observed_claims": 4,
+        "required_claims": 4,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 5,
+          "unknown_requests": 0,
+          "usage": {
+            "known_chat_requests": 5,
+            "known_input_tokens": 6547,
+            "known_output_tokens": 255,
+            "unknown_requests": 0,
+            "unknown_usage": 0
+          },
+          "adapter": {
+            "adapter": "ollama-financial-tools-v2",
+            "endpoint": "http://127.0.0.1:11435",
+            "kind": "local_llm",
+            "model": "qwen3:4b",
+            "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+            "num_ctx": 8192,
+            "prompt": "bounded-financial-tools-v2",
+            "server_version": "0.40.15",
+            "temperature": 0,
+            "think": false
+          }
+        }
+      },
+      "new_model_calls": 0
+    },
+    {
+      "origin": "prior_actual13_evaluator_control_not_new14_answer",
+      "run_id": "product13-a7df9581e1eec8f031b4a972d8062832",
+      "method": "A",
+      "score": {
+        "case_id": "prior13-product13-a7df9581e1eec8f031b4a972d8062832",
+        "method": "A",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 4,
+        "observed_claims": 4,
+        "required_claims": 4,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 1,
+          "unknown_requests": 0,
+          "usage": {
+            "input_tokens": 1058,
+            "known_chat_requests": 1,
+            "output_tokens": 104,
+            "unknown_requests": 0
+          },
+          "adapter": {
+            "adapter": "ollama-one-shot-a-v1",
+            "endpoint": "http://127.0.0.1:11435",
+            "kind": "local_llm",
+            "model": "qwen3:4b",
+            "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+            "num_ctx": 8192,
+            "prompt": "one-shot-financial-selection-v1",
+            "server_version": "0.40.15",
+            "temperature": 0,
+            "think": false
+          }
+        }
+      },
+      "new_model_calls": 0
+    },
+    {
+      "origin": "prior_actual13_evaluator_control_not_new14_answer",
+      "run_id": "product13-7459584b70c294eb46bd5d006a329969",
+      "method": "B",
+      "score": {
+        "case_id": "prior13-product13-7459584b70c294eb46bd5d006a329969",
+        "method": "B",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 4,
+        "observed_claims": 4,
+        "required_claims": 4,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      "new_model_calls": 0
+    },
+    {
+      "origin": "prior_actual13_evaluator_control_not_new14_answer",
+      "run_id": "product13-8e51826d782aa5dea8e1cd8333e5d7a3",
+      "method": "B",
+      "score": {
+        "case_id": "prior13-product13-8e51826d782aa5dea8e1cd8333e5d7a3",
+        "method": "B",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 2,
+        "observed_claims": 2,
+        "required_claims": 2,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      "new_model_calls": 0
+    }
+  ],
+  "new_own_calculator_controls": []
+}

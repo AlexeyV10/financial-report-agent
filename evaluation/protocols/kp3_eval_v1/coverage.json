@@ -1,0 +1,35 @@
+{
+  "real_catalog_facts": 48,
+  "selected_real_exact_cells": 32,
+  "selected_real_economic_contexts": 28,
+  "source_versions": 8,
+  "lineage_clusters": 2,
+  "selected_metrics": [
+    "operating_cash_flow",
+    "operating_profit",
+    "revenue"
+  ],
+  "selected_duration_types": [
+    "full_year",
+    "quarter",
+    "year_to_date"
+  ],
+  "scenario_expected_statuses": {
+    "completed": 4,
+    "blocked": 7,
+    "error": 1
+  },
+  "gold_numeric_reference": 51,
+  "own_scenario_reference_paths": 12,
+  "real_publication_proven": 0,
+  "human_reviewed": 0,
+  "new_real_facts": 0,
+  "limitations": [
+    "All48 real cells known from05-13.",
+    "Scale is excluded from economic-family key; grouping does not prove original/comparative equivalence.",
+    "All48 original real metric values are positive; negative changes occur. Own07 CFO includes negative input.",
+    "Financial comparison40 uses explicit forms; Russian language measured separately on8 known controls.",
+    "Own07 dev20 targets calculator0.3 only, not a fabricated PDF/retrieval/B path.",
+    "Robustness12 and unexecuted scenario cases remain plans for15;53 evaluator tests are different observations."
+  ]
+}
