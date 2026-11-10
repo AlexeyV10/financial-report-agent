@@ -1,0 +1,1 @@
+{"schema_version": "1.0", "model_calls": 0, "final_eval_freeze": false, "reserved_unseen_real": 0, "reference_decimal80_matched": 199, "counts": {"real": 160, "synthetic": 45}, "real_source_bytes_checked": true}

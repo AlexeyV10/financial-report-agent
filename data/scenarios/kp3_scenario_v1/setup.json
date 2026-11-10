@@ -1,0 +1,9 @@
+{
+  "schema_version":"kp3-scenario-setup-0.1",
+  "catalog":"data/scenarios/kp3_scenario_v1/runtime_catalog.json",
+  "dictionary":"data/dictionaries/kp3_finance_v1/definitions.json",
+  "admission":"data/scenarios/kp3_scenario_v1/admission.json",
+  "dataset":"data/scenarios/kp3_scenario_v1/dataset.json",
+  "source":"data/scenarios/kp3_scenario_v1/own_financial_source.txt",
+  "financial_request":"data/scenarios/kp3_scenario_v1/financial_request.json"
+}

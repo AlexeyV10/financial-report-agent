@@ -1,0 +1,594 @@
+{
+  "runs": [
+    {
+      "name": "scenario-current-36",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_scenario_v1.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.6881,
+      "passed": true
+    },
+    {
+      "name": "contracts03",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_contracts.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.0661,
+      "passed": true
+    },
+    {
+      "name": "method04",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_financial_method.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.0949,
+      "passed": true
+    },
+    {
+      "name": "corpus05",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_corpus.py",
+        "--resource-map",
+        "tmp/local-resources.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.3058,
+      "passed": true
+    },
+    {
+      "name": "retrieval06",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_retrieval.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1005,
+      "passed": true
+    },
+    {
+      "name": "calculator07",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_calculator.py",
+        "--resources",
+        "tmp/local-resources.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 3.1144,
+      "passed": true
+    },
+    {
+      "name": "input08",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_input.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.4351,
+      "passed": true
+    },
+    {
+      "name": "service09",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--report",
+        "tmp/b-regression12.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 5.4659,
+      "passed": true
+    },
+    {
+      "name": "agent10",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_agent_c.py",
+        "--report",
+        "tmp/c-regression12.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 9.6507,
+      "passed": true
+    },
+    {
+      "name": "one-shot11",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_one_shot_a.py",
+        "--report",
+        "tmp/a-regression12.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 3.7382,
+      "passed": true
+    },
+    {
+      "name": "scenario12",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_scenario.py",
+        "--real-context",
+        "tmp/service-context.json",
+        "--report",
+        "tmp/scenario-dev-delivery.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 1.3146,
+      "passed": true
+    },
+    {
+      "name": "fixed",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "fixed",
+        "--source",
+        "manual"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.0912,
+      "passed": true
+    },
+    {
+      "name": "synthetic",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "scenario"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1468,
+      "passed": true
+    },
+    {
+      "name": "historical-legacy",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "scenario",
+        "--case",
+        "real-source"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1428,
+      "passed": true
+    },
+    {
+      "name": "questions",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "questions"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1565,
+      "passed": true
+    },
+    {
+      "name": "replay",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "replay",
+        "--run-dir",
+        "evaluation/step12_2026-11-09/run-02-environment-retry"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.0904,
+      "passed": true
+    },
+    {
+      "name": "own-default",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\own-default.request.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1358,
+      "passed": true
+    },
+    {
+      "name": "own-no-signal",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\own-no-signal.request.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1268,
+      "passed": true
+    },
+    {
+      "name": "own-fees",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\own-fees.request.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1365,
+      "passed": true
+    },
+    {
+      "name": "own-weekend",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\own-weekend.request.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1316,
+      "passed": true
+    },
+    {
+      "name": "own-before-publication",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\own-before-publication.request.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1272,
+      "passed": true
+    },
+    {
+      "name": "own-invalid-capital",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\own-invalid-capital.request.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "elapsed_s": 0.1181,
+      "passed": true
+    },
+    {
+      "name": "injected-expected",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\injected-expected.request.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "elapsed_s": 0.1248,
+      "passed": true
+    },
+    {
+      "name": "real-phosagro-2023",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\real-phosagro-2023.request.json",
+        "--financial",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\real-phosagro-2023.financial.json",
+        "--context",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\service-context.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2269,
+      "passed": true
+    },
+    {
+      "name": "real-phosagro-2024",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\real-phosagro-2024.request.json",
+        "--financial",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\real-phosagro-2024.financial.json",
+        "--context",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\service-context.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2254,
+      "passed": true
+    },
+    {
+      "name": "real-phosagro-2025",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\real-phosagro-2025.request.json",
+        "--financial",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\real-phosagro-2025.financial.json",
+        "--context",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\service-context.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2373,
+      "passed": true
+    },
+    {
+      "name": "real-phosagro-2025-q1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\real-phosagro-2025-q1.request.json",
+        "--financial",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\real-phosagro-2025-q1.financial.json",
+        "--context",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\service-context.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2404,
+      "passed": true
+    },
+    {
+      "name": "real-phosagro-2025-h1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\real-phosagro-2025-h1.request.json",
+        "--financial",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\real-phosagro-2025-h1.financial.json",
+        "--context",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\service-context.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.24,
+      "passed": true
+    },
+    {
+      "name": "real-phosagro-2025-9m",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\real-phosagro-2025-9m.request.json",
+        "--financial",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\real-phosagro-2025-9m.financial.json",
+        "--context",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\service-context.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2472,
+      "passed": true
+    },
+    {
+      "name": "real-segezha-2021",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\real-segezha-2021.request.json",
+        "--financial",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\real-segezha-2021.financial.json",
+        "--context",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\service-context.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2256,
+      "passed": true
+    },
+    {
+      "name": "real-segezha-2022",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\real-segezha-2022.request.json",
+        "--financial",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\real-segezha-2022.financial.json",
+        "--context",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\service-context.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2397,
+      "passed": true
+    },
+    {
+      "name": "portable-C",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\portable-C.request.json",
+        "--financial",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\portable-C.financial.json",
+        "--context",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\service-context.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2431,
+      "passed": true
+    },
+    {
+      "name": "portable-A",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\portable-A.request.json",
+        "--financial",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\portable-A.financial.json",
+        "--context",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\service-context.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2319,
+      "passed": true
+    },
+    {
+      "name": "tampered-financial",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_scenario_v1.py",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\tampered-financial.request.json",
+        "--financial",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\cli-checks-12\\tampered-financial.financial.json",
+        "--context",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-12-worktree\\tmp\\service-context.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "elapsed_s": 0.1895,
+      "passed": true
+    }
+  ]
+}

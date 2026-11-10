@@ -1,0 +1,44 @@
+{
+  "stage": "KP3-12",
+  "status": "technically_complete",
+  "unit_tests": {
+    "old": 584,
+    "new": 36,
+    "total": 620,
+    "passed": 620
+  },
+  "current_scenario_tests": 36,
+  "checkers": "03-12 passed; immutable old gold04/07/corpus05/manifests preserved",
+  "legacy_cli": 5,
+  "new_scenario_cli": 19,
+  "ui_apptest": 6,
+  "real_CUA_observations": 10,
+  "dev_matrix": {
+    "own_cases": 24,
+    "own_reference_paths": 72,
+    "real_versions_blocked": 8,
+    "old_actual_envelopes_revalidated": 2
+  },
+  "source_versions": 8,
+  "source_facts": 48,
+  "new_real_facts": 0,
+  "new_own_synthetic_facts": 2,
+  "new_own_synthetic_documents": 1,
+  "human_reviewed": 0,
+  "publication_proven": 0,
+  "model_calls": 0,
+  "new_models_or_installs": 0,
+  "known_to_developer": true,
+  "reserved_unseen_real": 0,
+  "final_eval_freeze": false,
+  "old_QA07_C_call_limit": "unchanged error",
+  "old_financial_3_of_10": "unchanged historical measurement",
+  "limits": [
+    "Only own synthetic can trade virtually; real has six readiness gaps.",
+    "Rule only relative percent>threshold, no new financial operation.",
+    "Prepared real facts reused, no primary reannotation.",
+    "No full history/export on12.",
+    "C/A bridge revalidation reuses prior actual envelopes, not new model answers."
+  ],
+  "next_instruction": "Apply standalone prompt13 immediately after12 delivery, stop before14."
+}

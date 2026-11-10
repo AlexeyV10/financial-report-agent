@@ -1,0 +1,73 @@
+{
+  "schema_version": "kp3-scenario-outcome-0.1",
+  "run_id": "scenario-546401dd0a7a47cba991a4de97bae1da",
+  "status": "error",
+  "reason_code": "invalid_capital",
+  "data_mode": "own_synthetic",
+  "label": "ИСКУССТВЕННЫЕ ДАННЫЕ / ВИРТУАЛЬНЫЙ СЦЕНАРИЙ",
+  "request": {
+    "schema_version": "kp3-scenario-request-0.1",
+    "financial_run_id": "scenario12-own-financial",
+    "data_mode": "own_synthetic",
+    "decision_at": "2025-06-04T19:30:00+03:00",
+    "parameters": {
+      "initial_cash": "-1",
+      "allocation": "0.20",
+      "threshold_pct": "10",
+      "fee_fixed": "1",
+      "slippage_bps": "0",
+      "lot_size": 1,
+      "window_start": "2025-06-04T10:00:00+03:00",
+      "window_end": "2025-06-09T18:00:00+03:00"
+    }
+  },
+  "context_digest": "ec40b5e66c0e934c9eee8b334583340b47384cd48291cf3482afc1568e2ffe44",
+  "financial": null,
+  "eligibility": null,
+  "signal": null,
+  "scenario": null,
+  "comparisons": null,
+  "trace": [
+    {
+      "run_id": "scenario-546401dd0a7a47cba991a4de97bae1da",
+      "stage": "financial_validation",
+      "status": "skipped",
+      "reason_code": "not_reached",
+      "elapsed_ms": 0
+    },
+    {
+      "run_id": "scenario-546401dd0a7a47cba991a4de97bae1da",
+      "stage": "eligibility",
+      "status": "skipped",
+      "reason_code": "not_reached",
+      "elapsed_ms": 0
+    },
+    {
+      "run_id": "scenario-546401dd0a7a47cba991a4de97bae1da",
+      "stage": "ledger",
+      "status": "skipped",
+      "reason_code": "not_reached",
+      "elapsed_ms": 0
+    },
+    {
+      "run_id": "scenario-546401dd0a7a47cba991a4de97bae1da",
+      "stage": "result_validation",
+      "status": "skipped",
+      "reason_code": "not_reached",
+      "elapsed_ms": 0
+    },
+    {
+      "run_id": "scenario-546401dd0a7a47cba991a4de97bae1da",
+      "stage": "persistence",
+      "status": "completed",
+      "reason_code": "written",
+      "elapsed_ms": 0
+    }
+  ],
+  "saved_run": {
+    "resource_id": "9d0a5801602b29058ac56a5910df21fd774e7521fc93d165ae2600fdb4f42d6a.json",
+    "private": true,
+    "status": "written"
+  },
+  "model_calls": 0
+}

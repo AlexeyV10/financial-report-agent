@@ -1,0 +1,64 @@
+{
+  "schema_version": "kp3-scenario-outcome-0.1",
+  "run_id": "scenario-4ad45d6bf1904fe78f8c98dfaa07f901",
+  "status": "error",
+  "reason_code": "calculation_binding_mismatch",
+  "data_mode": "real_source_readiness",
+  "label": "ПРОВЕРКА РЕАЛЬНОГО ИСТОЧНИКА / ТОРГОВЛИ НЕТ",
+  "request": {
+    "schema_version": "kp3-scenario-request-0.1",
+    "financial_run_id": "run-4ffe4d91d56b463786ca6e65fa86dabc",
+    "data_mode": "real_source_readiness",
+    "decision_at": "2026-11-10T23:59:59+03:00",
+    "parameters": null
+  },
+  "context_digest": "d609afc68a8f7773592fc59e0c2f1cf954be66952b4f5a93366e7edfb68f989a",
+  "financial": null,
+  "eligibility": null,
+  "signal": null,
+  "scenario": null,
+  "comparisons": null,
+  "trace": [
+    {
+      "run_id": "scenario-4ad45d6bf1904fe78f8c98dfaa07f901",
+      "stage": "financial_validation",
+      "status": "error",
+      "reason_code": "calculation_binding_mismatch",
+      "elapsed_ms": 40.7791
+    },
+    {
+      "run_id": "scenario-4ad45d6bf1904fe78f8c98dfaa07f901",
+      "stage": "eligibility",
+      "status": "skipped",
+      "reason_code": "not_reached",
+      "elapsed_ms": 0
+    },
+    {
+      "run_id": "scenario-4ad45d6bf1904fe78f8c98dfaa07f901",
+      "stage": "ledger",
+      "status": "skipped",
+      "reason_code": "not_reached",
+      "elapsed_ms": 0
+    },
+    {
+      "run_id": "scenario-4ad45d6bf1904fe78f8c98dfaa07f901",
+      "stage": "result_validation",
+      "status": "skipped",
+      "reason_code": "not_reached",
+      "elapsed_ms": 0
+    },
+    {
+      "run_id": "scenario-4ad45d6bf1904fe78f8c98dfaa07f901",
+      "stage": "persistence",
+      "status": "completed",
+      "reason_code": "written",
+      "elapsed_ms": 0
+    }
+  ],
+  "saved_run": {
+    "resource_id": "7b840087a611f3c82d46d5bfc01b6c208a8a1b492f666316899fc3a21dbbfcda.json",
+    "private": true,
+    "status": "written"
+  },
+  "model_calls": 0
+}

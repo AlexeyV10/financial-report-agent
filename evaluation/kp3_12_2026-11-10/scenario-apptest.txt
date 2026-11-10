@@ -1,0 +1,1 @@
+test_change_clears_result_and_false_signal (test_scenario_app.ScenarioAppTests.test_change_clears_result_and_false_signal) ... 2026-11-10 15:07:50.912 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.

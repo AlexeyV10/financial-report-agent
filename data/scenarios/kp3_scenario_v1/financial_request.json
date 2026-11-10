@@ -1,0 +1,54 @@
+{
+  "schema_version": "0.3",
+  "request_id": "scenario12-own-financial",
+  "original_question": "Как изменяется собственная вымышленная выручка: полный2024 к полному2023?",
+  "operation_id": "relative_change_v1",
+  "organization_id": "scenario12_synthetic_group",
+  "consolidation": "group",
+  "accounting_standard": "IFRS",
+  "inputs": [
+    {
+      "role": "previous",
+      "fact_id": "scenario12-revenue-2023",
+      "document_id": "scenario12-own-statement",
+      "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+      "metric_id": "revenue",
+      "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "source_unit": {
+        "currency": "RUB",
+        "scale": 1
+      }
+    },
+    {
+      "role": "current",
+      "fact_id": "scenario12-revenue-2024",
+      "document_id": "scenario12-own-statement",
+      "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+      "metric_id": "revenue",
+      "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2024-01-01",
+        "end": "2024-12-31"
+      },
+      "source_unit": {
+        "currency": "RUB",
+        "scale": 1
+      }
+    }
+  ],
+  "version_policy": "explicit_versions",
+  "comparability_id": null,
+  "result_unit": {
+    "kind": "percent"
+  },
+  "mode": "snapshot",
+  "as_of": null
+}

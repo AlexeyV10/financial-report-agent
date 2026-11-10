@@ -1,0 +1,14 @@
+{
+  "admission_version": "1.0",
+  "context_id": "scenario12-own-financial-v1",
+  "data_origin": "synthetic",
+  "catalog_id": "scenario12-own-financial-v1",
+  "component_digests": {
+    "catalog": "229084ab4b61863ca8d41e547306f5c1f6f8589fd6fe1d3507dfaca66ebe4314",
+    "dictionary": "4404a201044d982ff630175a71d08cadb7093e959b988a97533a43f021b6783a",
+    "bindings": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+    "checks": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+  },
+  "resource_policy": "required_for_real",
+  "comparability_records": []
+}

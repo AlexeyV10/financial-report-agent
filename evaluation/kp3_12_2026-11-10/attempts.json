@@ -1,0 +1,12 @@
+{
+  "first_unit29": "passed",
+  "expanded_unit": "Negative exit-cash test used1000capital/50fee, leaving50cash that could pay exit fee; expected blocked was incorrect. Corrected to1050capital/50fee to leave0cash. Original failed log preserved.",
+  "first_regression": "Old runtime guard rejected hardcoded dictionary directory. Loader now takes all permitted data paths from explicit trusted setup JSON; original tests/gold unmodified, full620 repeated successfully.",
+  "AppTest": "First sandbox test stalled; CIM inspection denied in sandbox. Same inspection actually escalated, exact own test PIDs/path/argv verified, only stalled test process pair stopped. Same tests outside sandbox6/6; current-version6/6 repeated. Real CUA independent.",
+  "metadata": "Source method/run_id/unknown usage/upstream execution and financial status retained, scenario itself makes0 new model calls.",
+  "new_user_instruction": "After12 delivery apply standalone13 immediately in separate branch, stop before14.",
+  "old_QA07_C_call_limit": "unchanged error",
+  "new_real_facts": 0,
+  "new_models": 0,
+  "installs": 0
+}
