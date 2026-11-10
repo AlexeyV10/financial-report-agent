@@ -1,0 +1,49 @@
+{
+  "stage": "KP3-UI",
+  "status": "passed",
+  "preparation_manifest_sha256": "f702a8e92c5ce0ec7a9dfb91887deabf7680c35a197e48c7eed946d57210ae05",
+  "checks": {
+    "stage": "KP3-UI",
+    "status": "approved_first_desktop_variant_implemented",
+    "scope": "Separate interface task;17/18 not started",
+    "base": "b6c622e002ef8ff6eb101c099442a8397c4e4456",
+    "unit_tests": {
+      "old": 760,
+      "new": 18,
+      "total": 778,
+      "passed": 778
+    },
+    "streamlit_integration_tests": {
+      "passed": 15,
+      "total": 15,
+      "source": "known AppTest cases on existing admitted data; not model benchmark"
+    },
+    "checkers": "03-14 all17 commands after real escalation;15/16 unchanged manifests/raw;oldgold04/07/corpus05/5legacy",
+    "real_browser_verified": true,
+    "new_real_facts": 0,
+    "publications_unknown": 8,
+    "human_reviewed": 0,
+    "new_native_model_calls": 0,
+    "new_model_benchmark_attempts": 0,
+    "freeze14_unchanged": true,
+    "old16_raw": 138,
+    "old16_replay_identical": true,
+    "parent_files_preserved": 1531,
+    "old_product_ui_unchanged": true,
+    "root_unpublished01_02_not_included": true,
+    "server_url": "http://127.0.0.1:8521/",
+    "server_left_running": true,
+    "model_server_not_started": true,
+    "known_to_developer": true,
+    "reserved_unseen_real": 0,
+    "limits": [
+      "Limited parser08 and existing catalog48Fact/8PDF/2groups, no new source/OCR/formula",
+      "Historical/realtrading blocked; all8publicationunknown;rightsunknown;assistant_checked not human_reviewed",
+      "Only B actually invoked in new browser QA; A/C buttons route unchanged real adapters, model offline; no implicit B fallback",
+      "No usability participants or generalized ease-of-use claim",
+      "Steps17/18 require a new explicit task; no merge authorized"
+    ]
+  },
+  "merge_authorized": false,
+  "primary_materials_in_git": false
+}

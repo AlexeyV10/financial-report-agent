@@ -1,0 +1,56 @@
+{
+  "tool": "computer-use/cua_repl, real Streamlit/browser, plus separate AppTest",
+  "url": "http://127.0.0.1:8521/",
+  "methods_invoked": [
+    "B"
+  ],
+  "native_model_calls": 0,
+  "checks": [
+    {
+      "action": "Explicit example then calculate",
+      "observed": "answered +33.64%; 119272/159390 millionRUB; Q1 2024 comparative/Q1 2025 same exact PDF",
+      "run_id": "product13-7dcdfb1a727bc2b72b8ba5588bda9289"
+    },
+    {
+      "action": "Source button then open page",
+      "observed": "Local exact phosagro-2025-q1 SHA8783a04... page5 printed1 rendered; row revenue and two year columns visible; primary screenshot not published"
+    },
+    {
+      "action": "Download JSON and Markdown",
+      "observed": "Actual browser-downloaded files equal own RunStore JSON/Markdown bytes",
+      "json_sha256": "167a49e0c63c874980a1de2a86d0d0c8fd76a2108aa0565e56879a7d1fabd2c3",
+      "markdown_sha256": "7adea8679fca2a18d29d918ddf54466e5aef3de010e67a11e73dd3513accbdbd",
+      "json_bytes": 42442
+    },
+    {
+      "action": "Repeat calculate",
+      "observed": "Saved result opened, no new calculation/model; RunStore tests verify one snapshot"
+    },
+    {
+      "action": "Change company to Segezha",
+      "observed": "Prior answer hidden, company selection changed, prior Phosagro text preserved to detect conflict"
+    },
+    {
+      "action": "Another question, question without company",
+      "observed": "awaiting_clarification, company options, no numeric answer"
+    },
+    {
+      "action": "Responsive360x800",
+      "observed": "viewport360/scrollWidth360, main stacked, expand/collapse menu and navigate Documents work"
+    },
+    {
+      "action": "Desktop1280x720",
+      "observed": "Question and result side by side; primary action below question; source and downloads next to answer"
+    }
+  ],
+  "screenshots": [
+    "desktop.png",
+    "mobile-documents.png"
+  ],
+  "viewport_override_reset": true,
+  "new_tab_kept_as_deliverable": true,
+  "primary_page_tab_closed": true,
+  "automation_limit": "Download-event wait timed out and reset CUA; files themselves downloaded correctly and were byte-verified; not counted as a successful automation event",
+  "usability_participants": 0,
+  "general_usability_claim": false
+}

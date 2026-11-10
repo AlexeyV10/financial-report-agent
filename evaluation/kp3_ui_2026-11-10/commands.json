@@ -1,0 +1,21 @@
+{
+  "core_python": "C:/msys64/ucrt64/bin/python.exe",
+  "core_version": "3.14.7",
+  "sqlite": "3.53.4",
+  "ui_python": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-ui-cpython312\\Scripts\\python.exe",
+  "ui_version": "3.12.14",
+  "streamlit": "1.67.0",
+  "pandas": "3.1.1",
+  "commands": [
+    "python3.14.7 -X utf8 -I -m unittest discover -s tests",
+    "existing UI python -X utf8 -m unittest discover -s tests_ui",
+    "python3.14.7 -X utf8 -I tmp/checks_ui.py",
+    "python3.14.7 -X utf8 -I scripts/check_kp3_product.py --context tmp/service-context.json --report tmp/product-regression-ui-escalated.json [actual escalation]",
+    "python3.14.7 -X utf8 -I scripts/check_kp3_evaluation.py --report tmp/evaluator-public-audit-ui-escalated.json",
+    "python3.14.7 -X utf8 -I scripts/replay_kp3_evaluation.py --freeze evaluation/protocols/kp3_eval_v1/freeze-manifest.json --raw-dir evaluation/kp3_16_2026-11-10/raw --raw-manifest evaluation/kp3_16_2026-11-10/raw-manifest.json --output tmp/ui-old16-replay.json",
+    "scripts/desktop_ui.ps1 start/status"
+  ],
+  "global_packages_changed": false,
+  "new_libraries": false,
+  "model_started": false
+}

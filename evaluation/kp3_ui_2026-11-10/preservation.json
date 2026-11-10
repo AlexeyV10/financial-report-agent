@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-11-10T19:55:01.957220+00:00",
+  "old_child_files": 1531,
+  "old_child_unchanged_before_document_prefixes": true,
+  "parent16_all_files_unchanged": true,
+  "root_old_files": 515,
+  "root_all_unchanged_before_document_prefixes": true,
+  "freeze_sha256": "072a1caf92423d2e41ae12625cc485d81f0bc3c321c3cce5cbb1db663bcf1fbe",
+  "frozen_files_unchanged": 134,
+  "physical_resources_unchanged": 28,
+  "old16_raw_verified": 138,
+  "old16_metrics_replay_byte_identical": true,
+  "old15_16_manifests_verified": true,
+  "primary_downloads": 0,
+  "new_real_facts": 0,
+  "publications_added": 0,
+  "human_reviewed_added": 0,
+  "new_native_model_calls": 0,
+  "later_allowed_old_file_changes": [
+    "README.md/STATUS.md/docs/decisions.md: new prefix, old bytes intact",
+    ".gitignore: append exactly two own UI screenshot exceptions; previous bytes intact"
+  ]
+}

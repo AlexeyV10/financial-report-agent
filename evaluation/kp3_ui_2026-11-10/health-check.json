@@ -1,0 +1,10 @@
+{
+  "body": "ok",
+  "http_status": 200,
+  "actual_escalation": true,
+  "model_started": false,
+  "first_sandbox_status_failed": true,
+  "own_ui_running": true,
+  "checked_at": "2026-11-10T19:59:00.0152819Z",
+  "url": "http://127.0.0.1:8521/"
+}

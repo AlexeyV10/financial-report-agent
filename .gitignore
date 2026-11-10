@@ -41,3 +41,6 @@ delivery/*
 !delivery/stage1-local-v2-2026-11-09.receipt.json
 !delivery/stage1-review-2026-11-09.zip
 !delivery/stage1-review-2026-11-09.receipt.json
+# Own UI verification only; primary PDF pages remain excluded.
+!evaluation/kp3_ui_2026-11-10/desktop.png
+!evaluation/kp3_ui_2026-11-10/mobile-documents.png

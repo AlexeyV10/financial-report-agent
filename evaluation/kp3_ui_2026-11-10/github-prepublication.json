@@ -1,0 +1,78 @@
+{
+  "checked_at": "2026-11-10T20:01:33.583229+00:00",
+  "main": "f349717c5ca2acc33decf3dd7ce12b2756ce6d8b",
+  "parents": {
+    "3": {
+      "state": "open",
+      "head": "ab47731d94ada6becff0becd8bd5120c7537f26b",
+      "base": "main"
+    },
+    "4": {
+      "state": "open",
+      "head": "22d12d36289bedb3dbca797f9a1c13cac9b4ded5",
+      "base": "codex/kp3-03-tasks-catalog-contracts"
+    },
+    "5": {
+      "state": "open",
+      "head": "61d4c8ba4e330e6420f77ebce113f5d4d26e8fcf",
+      "base": "codex/kp3-04-financial-method"
+    },
+    "6": {
+      "state": "open",
+      "head": "a1744a3b8dfdc91a16bb735020b16d3689148c73",
+      "base": "codex/kp3-05-verified-corpus"
+    },
+    "7": {
+      "state": "open",
+      "head": "9577fe195512e5dc8d438406c25f0d08f82c01d0",
+      "base": "codex/kp3-06-extraction-search"
+    },
+    "8": {
+      "state": "open",
+      "head": "51891c707e0c96a0ea6ba7f0de3d6f89ce99702e",
+      "base": "codex/kp3-07-financial-calculator"
+    },
+    "9": {
+      "state": "open",
+      "head": "9dd952901d6a5bcf584a8224a0853adde99b6627",
+      "base": "codex/kp3-08-russian-input"
+    },
+    "10": {
+      "state": "open",
+      "head": "9f7b51ca8d628086bf5af2b1dc4b56544af90acb",
+      "base": "codex/kp3-09-fixed-service-b"
+    },
+    "11": {
+      "state": "open",
+      "head": "eb0ca5db83886e70a30a9d00aad878e0402c95ac",
+      "base": "codex/kp3-10-real-agent-c"
+    },
+    "12": {
+      "state": "open",
+      "head": "af83f67a7e63e7c0e7f6a401f4d28d64fa870ca7",
+      "base": "codex/kp3-11-single-step-a"
+    },
+    "13": {
+      "state": "open",
+      "head": "053350a751a33c3ba4bbe11445444ef10efb4ce5",
+      "base": "codex/kp3-12-conditional-scenario"
+    },
+    "14": {
+      "state": "open",
+      "head": "726e3f8ae8a0d45c06d52eaa0b7a965ff75957a7",
+      "base": "codex/kp3-13-product-ui-history-export"
+    },
+    "15": {
+      "state": "open",
+      "head": "f22395940e958e89f0465fb087554dbe47aba167",
+      "base": "codex/kp3-14-evaluation-protocol"
+    },
+    "16": {
+      "state": "open",
+      "head": "b6c622e002ef8ff6eb101c099442a8397c4e4456",
+      "base": "codex/kp3-15-failure-boundaries"
+    }
+  },
+  "ruleset_active": true,
+  "bypass_actors": []
+}
