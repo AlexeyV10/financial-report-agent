@@ -1,0 +1,21 @@
+{
+  "stage": "KP3-10",
+  "pull_request": "https://github.com/AlexeyV10/financial-report-agent/pull/10",
+  "pr_number": 10,
+  "branch": "codex/kp3-10-real-agent-c",
+  "base_branch": "codex/kp3-09-fixed-service-b",
+  "base_sha": "9dd952901d6a5bcf584a8224a0853adde99b6627",
+  "code_commit": "64f135ae7fc29adb3edff2eb000264e229bde660",
+  "verified_stage_head": "9f62824af7d6dbd94b82bde639c0fefb2e4212ad",
+  "technical_tag": "kp3-10-agent-c-v2-2026-11-10",
+  "tag_object": "cdaacdbc6c60f2449266f61abc2393bae4d65176",
+  "tag_target": "9f62824af7d6dbd94b82bde639c0fefb2e4212ad",
+  "state": "open",
+  "merged": false,
+  "diff_files": 77,
+  "allowlist_matches": true,
+  "remote_tree_matches": true,
+  "remote_blobs": 759,
+  "receipt_followup": "Final head in final-local-receipt.json; tag targets tested stage",
+  "merge_authorized": false
+}
