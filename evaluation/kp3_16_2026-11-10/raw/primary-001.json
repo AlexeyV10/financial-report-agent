@@ -1,0 +1,840 @@
+{
+  "schema_version": "kp3-observation-0.1",
+  "attempt_id": "primary-001",
+  "case_id": "cmp-09",
+  "method": "A",
+  "phase": "primary",
+  "source": "actual",
+  "answer": {
+    "schema_version": "kp3-a-answer-0.1",
+    "run_id": "eval16-9fe1686fa127b5e7-primary-001",
+    "task_id": "eval16-9fe1686fa127b5e7-primary-001",
+    "method": "A",
+    "execution_status": "completed",
+    "request_status": "evaluated",
+    "financial_status": "answered",
+    "reason_code": "ok",
+    "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+    "normalized_input": {
+      "schema_version": "kp3-input-0.1",
+      "input_id": "eval16-9fe1686fa127b5e7-primary-001",
+      "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+      "input_kind": "form",
+      "raw_fields": {
+        "organization": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "operation_id": "direct_fact_v1",
+        "metric_ids": [
+          "operating_cash_flow"
+        ],
+        "definition_ids": [
+          "operating_cash_flow:nonfinancial_ifrs_net_v1"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2021",
+            "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1000
+        },
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1000
+        },
+        "mode": "snapshot",
+        "as_of": null,
+        "comparability_id": null
+      },
+      "fields": {
+        "organization": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "operation_id": "direct_fact_v1",
+        "metric_ids": [
+          "operating_cash_flow"
+        ],
+        "definition_ids": [
+          "operating_cash_flow:nonfinancial_ifrs_net_v1"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2021",
+            "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1000
+        },
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1000
+        },
+        "mode": "snapshot",
+        "as_of": null,
+        "comparability_id": null
+      },
+      "field_origins": {
+        "organization": "form",
+        "consolidation": "form",
+        "accounting_standard": "form",
+        "operation_id": "form",
+        "metric_ids": "form",
+        "definition_ids": "form",
+        "periods": "form",
+        "documents": "form",
+        "version_policy": "form",
+        "source_unit": "form",
+        "result_unit": "form",
+        "mode": "form",
+        "as_of": "unset",
+        "comparability_id": "unset"
+      },
+      "assumptions": [],
+      "assumption_origin": "none",
+      "hints": {
+        "years": [],
+        "as_of_text": null,
+        "document_report_year": null,
+        "organization_unmatched": null
+      },
+      "issues": [],
+      "unsupported_reasons": [],
+      "unfulfilled_requests": [],
+      "history": [],
+      "catalog_digest": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+      "language_version": "ru-input-v1"
+    },
+    "clarifications": [],
+    "financial_result": {
+      "admission_context": {
+        "admission_digest": "35152fb5dc4fa48efe5d2ce19e8b32424d5cea02a469609884852c08446bd6eb",
+        "catalog_id": "kp3-real-corpus-v1",
+        "component_digests": {
+          "bindings": "14f62b7b6c7ddc3a4629cc68d096d621bc6616c86df14650df76fe90ca48d0b7",
+          "catalog": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+          "checks": "335bcbdd8806dd230f55f000d433a19561d9507870c21c6f01496b2a3826dbed",
+          "dictionary": "4404a201044d982ff630175a71d08cadb7093e959b988a97533a43f021b6783a"
+        },
+        "context_id": "kp3-real-corpus-v1-calculator-v1"
+      },
+      "calculation_schema_version": "0.3",
+      "display_value": "13091925",
+      "exact_result": {
+        "denominator": "1",
+        "numerator": "13091925"
+      },
+      "formula": "selected reported value",
+      "formula_version": "1.0",
+      "inputs": [
+        {
+          "accounting_standard": "IFRS",
+          "consolidation": "group",
+          "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+          "document_id": "segezha-2021",
+          "document_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+          "evidence_digest": "728de6612fdf1ee8297aec01c0613663d9b3f5de9adc8df4a42ab4079acd7a0c",
+          "evidence_id": "segezha-2021-operating_cash_flow-2021-ev",
+          "fact_id": "segezha-2021-operating_cash_flow-2021",
+          "locator": {
+            "column_label": "2021",
+            "kind": "pdf",
+            "page_region": "full_page",
+            "pdf_page": 14,
+            "printed_page": "12",
+            "row_label": "Чистые денежные средства, полученные от операционной деятельности",
+            "statement_page": "12",
+            "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ДВИЖЕНИИ ДЕНЕЖНЫХ СРЕДСТВ ЗА 2021 ГОД",
+            "unit_header": "(в тысячах российских рублей)"
+          },
+          "metric_id": "operating_cash_flow",
+          "numeric_encoding": "space_thousands_integer",
+          "organization_id": "segezha_group",
+          "origin_role": "reported_period",
+          "period": {
+            "duration_type": "full_year",
+            "end": "2021-12-31",
+            "kind": "duration",
+            "start": "2021-01-01"
+          },
+          "provenance": {
+            "human_reviewer": null,
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "status": "assistant_checked"
+          },
+          "raw_value": "13 091 925",
+          "role": "fact",
+          "source_unit": {
+            "currency": "RUB",
+            "scale": 1000
+          },
+          "value": "13091925",
+          "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+        }
+      ],
+      "intermediates": {},
+      "operation_id": "direct_fact_v1",
+      "precision_note": "Exact arithmetic on the supplied rounded source values; no extra source precision is established.",
+      "request": {
+        "accounting_standard": "IFRS",
+        "as_of": null,
+        "comparability_id": null,
+        "consolidation": "group",
+        "inputs": [
+          {
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+            "document_id": "segezha-2021",
+            "fact_id": "segezha-2021-operating_cash_flow-2021",
+            "metric_id": "operating_cash_flow",
+            "period": {
+              "duration_type": "full_year",
+              "end": "2021-12-31",
+              "kind": "duration",
+              "start": "2021-01-01"
+            },
+            "role": "fact",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000
+            },
+            "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+          }
+        ],
+        "mode": "snapshot",
+        "operation_id": "direct_fact_v1",
+        "organization_id": "segezha_group",
+        "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+        "request_id": "eval16-9fe1686fa127b5e7-primary-001",
+        "result_unit": {
+          "currency": "RUB",
+          "kind": "amount",
+          "scale": 1000
+        },
+        "schema_version": "0.3",
+        "version_policy": "explicit_versions"
+      },
+      "result_unit": {
+        "currency": "RUB",
+        "kind": "amount",
+        "scale": 1000
+      },
+      "retrieval_resolution": {
+        "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+        "kind": "prepared",
+        "matched_evidence_ids": [
+          "segezha-2021-operating_cash_flow-2021-ev"
+        ],
+        "retrieved_records": 1,
+        "reverification_performed": false
+      },
+      "rounding": "exact_input_decimal",
+      "sources": [
+        {
+          "audit": {
+            "limitation": "Аудиторское мнение без оговорки: PDF p4. Это не проверка чисел пользователем.",
+            "opinion": "unmodified"
+          },
+          "data_origin": "real",
+          "document_id": "segezha-2021",
+          "document_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+          "evidence": {
+            "currency": "RUB",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+            "document_id": "segezha-2021",
+            "document_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+            "evidence_id": "segezha-2021-operating_cash_flow-2021-ev",
+            "locator": {
+              "column_label": "2021",
+              "kind": "pdf",
+              "page_region": "full_page",
+              "pdf_page": 14,
+              "printed_page": "12",
+              "row_label": "Чистые денежные средства, полученные от операционной деятельности",
+              "statement_page": "12",
+              "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ДВИЖЕНИИ ДЕНЕЖНЫХ СРЕДСТВ ЗА 2021 ГОД",
+              "unit_header": "(в тысячах российских рублей)"
+            },
+            "metric_id": "operating_cash_flow",
+            "numeric_encoding": "space_thousands_integer",
+            "period": {
+              "duration_type": "full_year",
+              "end": "2021-12-31",
+              "kind": "duration",
+              "start": "2021-01-01"
+            },
+            "provenance": {
+              "human_reviewer": null,
+              "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+              "status": "assistant_checked"
+            },
+            "raw_value": "13 091 925",
+            "scale": 1000,
+            "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+          },
+          "publication": {
+            "binding": "unproven",
+            "document_sha256": null,
+            "precision": "unknown",
+            "record_id": null,
+            "source_url": null,
+            "timezone": "Europe/Moscow",
+            "value": null,
+            "version_id": null
+          },
+          "rights": {
+            "checked_on": "2026-11-09",
+            "note": "Разрешение на распространение PDF, страниц и полного текста не установлено; только локальная исключённая tmp/ и минимальная собственная разметка.",
+            "public_copy_allowed": false,
+            "status": "unconfirmed"
+          },
+          "source_url": "https://segezha-group.com/upload/iblock/21a/an6vxpgppglbo6a4sya3zkwwuw3iko6v.pdf#page=14",
+          "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+        }
+      ],
+      "warnings": [
+        "exact_arithmetic_does_not_improve_source_precision",
+        "source_status_inherited_not_upgraded",
+        "publication_unknown_snapshot_only",
+        "primary_document_redistribution_rights_unconfirmed"
+      ]
+    },
+    "outcome": {
+      "clarification_fields": [],
+      "execution_status": "completed",
+      "financial_result": {
+        "admission_context": {
+          "admission_digest": "35152fb5dc4fa48efe5d2ce19e8b32424d5cea02a469609884852c08446bd6eb",
+          "catalog_id": "kp3-real-corpus-v1",
+          "component_digests": {
+            "bindings": "14f62b7b6c7ddc3a4629cc68d096d621bc6616c86df14650df76fe90ca48d0b7",
+            "catalog": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+            "checks": "335bcbdd8806dd230f55f000d433a19561d9507870c21c6f01496b2a3826dbed",
+            "dictionary": "4404a201044d982ff630175a71d08cadb7093e959b988a97533a43f021b6783a"
+          },
+          "context_id": "kp3-real-corpus-v1-calculator-v1"
+        },
+        "calculation_schema_version": "0.3",
+        "display_value": "13091925",
+        "exact_result": {
+          "denominator": "1",
+          "numerator": "13091925"
+        },
+        "formula": "selected reported value",
+        "formula_version": "1.0",
+        "inputs": [
+          {
+            "accounting_standard": "IFRS",
+            "consolidation": "group",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+            "document_id": "segezha-2021",
+            "document_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+            "evidence_digest": "728de6612fdf1ee8297aec01c0613663d9b3f5de9adc8df4a42ab4079acd7a0c",
+            "evidence_id": "segezha-2021-operating_cash_flow-2021-ev",
+            "fact_id": "segezha-2021-operating_cash_flow-2021",
+            "locator": {
+              "column_label": "2021",
+              "kind": "pdf",
+              "page_region": "full_page",
+              "pdf_page": 14,
+              "printed_page": "12",
+              "row_label": "Чистые денежные средства, полученные от операционной деятельности",
+              "statement_page": "12",
+              "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ДВИЖЕНИИ ДЕНЕЖНЫХ СРЕДСТВ ЗА 2021 ГОД",
+              "unit_header": "(в тысячах российских рублей)"
+            },
+            "metric_id": "operating_cash_flow",
+            "numeric_encoding": "space_thousands_integer",
+            "organization_id": "segezha_group",
+            "origin_role": "reported_period",
+            "period": {
+              "duration_type": "full_year",
+              "end": "2021-12-31",
+              "kind": "duration",
+              "start": "2021-01-01"
+            },
+            "provenance": {
+              "human_reviewer": null,
+              "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+              "status": "assistant_checked"
+            },
+            "raw_value": "13 091 925",
+            "role": "fact",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000
+            },
+            "value": "13091925",
+            "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+          }
+        ],
+        "intermediates": {},
+        "operation_id": "direct_fact_v1",
+        "precision_note": "Exact arithmetic on the supplied rounded source values; no extra source precision is established.",
+        "request": {
+          "accounting_standard": "IFRS",
+          "as_of": null,
+          "comparability_id": null,
+          "consolidation": "group",
+          "inputs": [
+            {
+              "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+              "document_id": "segezha-2021",
+              "fact_id": "segezha-2021-operating_cash_flow-2021",
+              "metric_id": "operating_cash_flow",
+              "period": {
+                "duration_type": "full_year",
+                "end": "2021-12-31",
+                "kind": "duration",
+                "start": "2021-01-01"
+              },
+              "role": "fact",
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1000
+              },
+              "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+            }
+          ],
+          "mode": "snapshot",
+          "operation_id": "direct_fact_v1",
+          "organization_id": "segezha_group",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "request_id": "eval16-9fe1686fa127b5e7-primary-001",
+          "result_unit": {
+            "currency": "RUB",
+            "kind": "amount",
+            "scale": 1000
+          },
+          "schema_version": "0.3",
+          "version_policy": "explicit_versions"
+        },
+        "result_unit": {
+          "currency": "RUB",
+          "kind": "amount",
+          "scale": 1000
+        },
+        "retrieval_resolution": {
+          "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+          "kind": "prepared",
+          "matched_evidence_ids": [
+            "segezha-2021-operating_cash_flow-2021-ev"
+          ],
+          "retrieved_records": 1,
+          "reverification_performed": false
+        },
+        "rounding": "exact_input_decimal",
+        "sources": [
+          {
+            "audit": {
+              "limitation": "Аудиторское мнение без оговорки: PDF p4. Это не проверка чисел пользователем.",
+              "opinion": "unmodified"
+            },
+            "data_origin": "real",
+            "document_id": "segezha-2021",
+            "document_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+            "evidence": {
+              "currency": "RUB",
+              "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+              "document_id": "segezha-2021",
+              "document_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+              "evidence_id": "segezha-2021-operating_cash_flow-2021-ev",
+              "locator": {
+                "column_label": "2021",
+                "kind": "pdf",
+                "page_region": "full_page",
+                "pdf_page": 14,
+                "printed_page": "12",
+                "row_label": "Чистые денежные средства, полученные от операционной деятельности",
+                "statement_page": "12",
+                "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ДВИЖЕНИИ ДЕНЕЖНЫХ СРЕДСТВ ЗА 2021 ГОД",
+                "unit_header": "(в тысячах российских рублей)"
+              },
+              "metric_id": "operating_cash_flow",
+              "numeric_encoding": "space_thousands_integer",
+              "period": {
+                "duration_type": "full_year",
+                "end": "2021-12-31",
+                "kind": "duration",
+                "start": "2021-01-01"
+              },
+              "provenance": {
+                "human_reviewer": null,
+                "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+                "status": "assistant_checked"
+              },
+              "raw_value": "13 091 925",
+              "scale": 1000,
+              "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+            },
+            "publication": {
+              "binding": "unproven",
+              "document_sha256": null,
+              "precision": "unknown",
+              "record_id": null,
+              "source_url": null,
+              "timezone": "Europe/Moscow",
+              "value": null,
+              "version_id": null
+            },
+            "rights": {
+              "checked_on": "2026-11-09",
+              "note": "Разрешение на распространение PDF, страниц и полного текста не установлено; только локальная исключённая tmp/ и минимальная собственная разметка.",
+              "public_copy_allowed": false,
+              "status": "unconfirmed"
+            },
+            "source_url": "https://segezha-group.com/upload/iblock/21a/an6vxpgppglbo6a4sya3zkwwuw3iko6v.pdf#page=14",
+            "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+          }
+        ],
+        "warnings": [
+          "exact_arithmetic_does_not_improve_source_precision",
+          "source_status_inherited_not_upgraded",
+          "publication_unknown_snapshot_only",
+          "primary_document_redistribution_rights_unconfirmed"
+        ]
+      },
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "request_id": "eval16-9fe1686fa127b5e7-primary-001",
+      "run_id": "eval16-9fe1686fa127b5e7-primary-001",
+      "schema_version": "0.3",
+      "technical_details": null
+    },
+    "assumption_checks": [],
+    "unfulfilled_requests": [],
+    "retrieval": {
+      "run_id": "eval16-9fe1686fa127b5e7-primary-001",
+      "status": "found",
+      "reason_code": "ok",
+      "source_kind": "prepared",
+      "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+      "result_count": 1,
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2021",
+            "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    "trace": [
+      {
+        "stage": "input",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-001",
+        "status": "completed",
+        "elapsed_ms": 7.1083,
+        "reason_code": "ok",
+        "details": {}
+      },
+      {
+        "stage": "catalog_filters",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-001",
+        "status": "completed",
+        "elapsed_ms": 5.8193,
+        "reason_code": "ok",
+        "details": {
+          "preliminary_only": true
+        }
+      },
+      {
+        "stage": "search",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-001",
+        "status": "completed",
+        "elapsed_ms": 188.0772,
+        "reason_code": "ok",
+        "details": {
+          "primary_search": true
+        }
+      },
+      {
+        "stage": "fact_resolution",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-001",
+        "status": "completed",
+        "elapsed_ms": 0.0011,
+        "reason_code": "ok",
+        "details": {
+          "evidence_ids": [
+            "segezha-2021-operating_cash_flow-2021-ev"
+          ],
+          "candidate_metadata": [
+            {
+              "currency": "RUB",
+              "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+              "document_id": "segezha-2021",
+              "evidence_id": "segezha-2021-operating_cash_flow-2021-ev",
+              "fact_id": "segezha-2021-operating_cash_flow-2021",
+              "metric_id": "operating_cash_flow",
+              "period": {
+                "duration_type": "full_year",
+                "end": "2021-12-31",
+                "kind": "duration",
+                "start": "2021-01-01"
+              },
+              "scale": 1000,
+              "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+            }
+          ],
+          "source": "found_prepared_only"
+        }
+      },
+      {
+        "stage": "source_validation",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-001",
+        "status": "completed",
+        "elapsed_ms": 0.0003,
+        "reason_code": "ok",
+        "details": {
+          "performed_in_primary_worker": true,
+          "primary_reannotation": false
+        }
+      },
+      {
+        "stage": "model_selection",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-001",
+        "status": "completed",
+        "elapsed_ms": 5736.2562,
+        "reason_code": "ok",
+        "details": {
+          "choice_valid": true,
+          "automatic_retries": 0
+        }
+      },
+      {
+        "stage": "calculation",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-001",
+        "status": "completed",
+        "elapsed_ms": 210.4491,
+        "reason_code": "ok",
+        "details": {
+          "registered_operation_executed": true
+        }
+      },
+      {
+        "stage": "result_validation",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-001",
+        "status": "completed",
+        "elapsed_ms": 0.0006,
+        "reason_code": "ok",
+        "details": {
+          "performed_in_calculation_worker": true,
+          "recomputation": true
+        }
+      },
+      {
+        "stage": "answer",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-001",
+        "status": "completed",
+        "elapsed_ms": 0.0005,
+        "reason_code": "ok",
+        "details": {
+          "financial_result_present": true
+        }
+      }
+    ],
+    "context_digest": "a9c7a4a7e882b54b2a8262674f249487940fba66844690d5b30ba8f93fc674e4",
+    "source_input_digest": "e6bf4125d4365eaec2226e23c8dda1ea32c8b3d6b615dbf63c40a1747e407a6c",
+    "saved_run": {
+      "resource_id": "1a8963fa00eb26c3c105f755fe5078f854fbd02a7f53c2048e9af3b976b01607.json",
+      "status": "written",
+      "private": true
+    },
+    "model_calls": 1,
+    "selection": {
+      "protocol": "kp3-one-shot-a-0.1",
+      "prompt": "one-shot-financial-selection-v1",
+      "adapter": {
+        "kind": "local_llm",
+        "adapter": "ollama-one-shot-a-v1",
+        "prompt": "one-shot-financial-selection-v1",
+        "model": "qwen3:4b",
+        "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+        "server_version": "0.40.15",
+        "endpoint": "http://127.0.0.1:11435",
+        "think": false,
+        "temperature": 0,
+        "num_ctx": 8192
+      },
+      "limits": {
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "top_k": 32,
+        "max_output_tokens": 384,
+        "max_choice_bytes": 4096,
+        "max_observation_bytes": 32768
+      },
+      "model_attempts": 1,
+      "mock_choices": 0,
+      "choice": {
+        "inputs": [
+          {
+            "fact_id": "segezha-2021-operating_cash_flow-2021",
+            "role": "fact"
+          }
+        ],
+        "operation_id": "direct_fact_v1",
+        "schema_version": "kp3-a-choice-0.1"
+      },
+      "choice_valid": true,
+      "usage": {
+        "input_tokens": 758,
+        "output_tokens": 72,
+        "known_chat_requests": 1,
+        "unknown_requests": 0
+      },
+      "events": [
+        {
+          "kind": "worker",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-001",
+          "purpose": "primary",
+          "status": "completed",
+          "phase": "source_validation",
+          "reason_code": "ok",
+          "elapsed_ms": 188.024,
+          "search_count": 1
+        },
+        {
+          "kind": "setup_probe",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-001",
+          "result": {
+            "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+            "model": "qwen3:4b",
+            "server_version": "0.40.15"
+          },
+          "elapsed_ms": 208.823
+        },
+        {
+          "kind": "choice",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-001",
+          "choice": {
+            "inputs": [
+              {
+                "fact_id": "segezha-2021-operating_cash_flow-2021",
+                "role": "fact"
+              }
+            ],
+            "operation_id": "direct_fact_v1",
+            "schema_version": "kp3-a-choice-0.1"
+          },
+          "usage": {
+            "input_tokens": 758,
+            "output_tokens": 72
+          },
+          "chat_requests": 1,
+          "error": null,
+          "diagnostic": {
+            "response_bytes": 188,
+            "response_sha256": "b2b03ec6f54ac5206f14e68ff3489d3a5dc43eee41b91a578d7c93aef8c7d0e5"
+          },
+          "elapsed_ms": 5527.27
+        },
+        {
+          "kind": "worker",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-001",
+          "purpose": "validation",
+          "status": "completed",
+          "phase": "result_validation",
+          "reason_code": "ok",
+          "elapsed_ms": 210.438,
+          "search_count": 2
+        }
+      ],
+      "search_audit": [
+        {
+          "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+          "purpose": "primary",
+          "reason_code": "ok",
+          "spec_digest": "73ad37d301bd90b50a35528cf8281607ecc72713aeec2dbb06643f021bec9244",
+          "status": "found"
+        },
+        {
+          "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+          "purpose": "validation",
+          "reason_code": "ok",
+          "spec_digest": "73ad37d301bd90b50a35528cf8281607ecc72713aeec2dbb06643f021bec9244",
+          "status": "found"
+        },
+        {
+          "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+          "purpose": "validation",
+          "reason_code": "ok",
+          "spec_digest": "73ad37d301bd90b50a35528cf8281607ecc72713aeec2dbb06643f021bec9244",
+          "status": "found"
+        }
+      ],
+      "primary_searches": 1,
+      "validation_searches": 2,
+      "unknown_search_steps": [],
+      "observation_digest": "6c188b334f06215db60ed93acc6b20fcf08897c1a144674658bb8e19f7f3ac0b",
+      "stop_reason": "completed"
+    }
+  },
+  "measurement": {
+    "run_manifest_sha256": "9fe1686fa127b5e70ff34d05f459296d03c1b81bdfbca14ec8dc229768e5d3fa",
+    "started_at": "2026-11-10T18:34:41.628858+00:00",
+    "finished_at": "2026-11-10T18:34:47.780281+00:00",
+    "elapsed_ms": 6149.5717,
+    "cold_warm": "cold",
+    "model_state_observation": {
+      "cold_warm": "cold",
+      "source": "actual_loopback_api_ps",
+      "loaded_model_names": []
+    },
+    "runner_status": "completed",
+    "runner_error": null,
+    "reexecuted": false
+  }
+}

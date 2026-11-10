@@ -1,0 +1,497 @@
+{
+  "schema_version": "kp3-observation-0.1",
+  "attempt_id": "primary-101",
+  "case_id": "cmp-39",
+  "method": "A",
+  "phase": "primary",
+  "source": "actual",
+  "answer": {
+    "schema_version": "kp3-a-answer-0.1",
+    "run_id": "eval16-9fe1686fa127b5e7-primary-101",
+    "task_id": "eval16-9fe1686fa127b5e7-primary-101",
+    "method": "A",
+    "execution_status": "completed",
+    "request_status": "evaluated",
+    "financial_status": "conflict",
+    "reason_code": "comparability_not_established",
+    "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+    "normalized_input": {
+      "schema_version": "kp3-input-0.1",
+      "input_id": "eval16-9fe1686fa127b5e7-primary-101",
+      "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+      "input_kind": "form",
+      "raw_fields": {
+        "organization": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "operation_id": "relative_change_v1",
+        "metric_ids": [
+          "revenue"
+        ],
+        "definition_ids": [
+          "revenue:nonfinancial_ifrs_reported_v1"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2023",
+            "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+          },
+          {
+            "document_id": "phosagro-2024",
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          }
+        ],
+        "version_policy": "original_period_documents",
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null,
+        "comparability_id": null
+      },
+      "fields": {
+        "organization": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "operation_id": "relative_change_v1",
+        "metric_ids": [
+          "revenue"
+        ],
+        "definition_ids": [
+          "revenue:nonfinancial_ifrs_reported_v1"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2023",
+            "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+          },
+          {
+            "document_id": "phosagro-2024",
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          }
+        ],
+        "version_policy": "original_period_documents",
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null,
+        "comparability_id": null
+      },
+      "field_origins": {
+        "organization": "form",
+        "consolidation": "form",
+        "accounting_standard": "form",
+        "operation_id": "form",
+        "metric_ids": "form",
+        "definition_ids": "form",
+        "periods": "form",
+        "documents": "form",
+        "version_policy": "form",
+        "source_unit": "form",
+        "result_unit": "form",
+        "mode": "form",
+        "as_of": "unset",
+        "comparability_id": "unset"
+      },
+      "assumptions": [],
+      "assumption_origin": "none",
+      "hints": {
+        "years": [],
+        "as_of_text": null,
+        "document_report_year": null,
+        "organization_unmatched": null
+      },
+      "issues": [],
+      "unsupported_reasons": [],
+      "unfulfilled_requests": [],
+      "history": [],
+      "catalog_digest": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+      "language_version": "ru-input-v1"
+    },
+    "clarifications": [],
+    "financial_result": null,
+    "outcome": {
+      "clarification_fields": [],
+      "execution_status": "completed",
+      "financial_result": null,
+      "financial_status": "conflict",
+      "reason_code": "comparability_not_established",
+      "request_id": "eval16-9fe1686fa127b5e7-primary-101",
+      "run_id": "eval16-9fe1686fa127b5e7-primary-101",
+      "schema_version": "0.3",
+      "technical_details": null
+    },
+    "assumption_checks": [],
+    "unfulfilled_requests": [],
+    "retrieval": {
+      "run_id": "eval16-9fe1686fa127b5e7-primary-101",
+      "status": "found",
+      "reason_code": "ok",
+      "source_kind": "prepared",
+      "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+      "result_count": 2,
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2023",
+            "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+          },
+          {
+            "document_id": "phosagro-2024",
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "original_period_documents",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    "trace": [
+      {
+        "stage": "input",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-101",
+        "status": "completed",
+        "elapsed_ms": 4.2784,
+        "reason_code": "ok",
+        "details": {}
+      },
+      {
+        "stage": "catalog_filters",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-101",
+        "status": "completed",
+        "elapsed_ms": 5.934,
+        "reason_code": "ok",
+        "details": {
+          "preliminary_only": true
+        }
+      },
+      {
+        "stage": "search",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-101",
+        "status": "completed",
+        "elapsed_ms": 178.3374,
+        "reason_code": "ok",
+        "details": {
+          "primary_search": true
+        }
+      },
+      {
+        "stage": "fact_resolution",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-101",
+        "status": "completed",
+        "elapsed_ms": 0.0011,
+        "reason_code": "ok",
+        "details": {
+          "evidence_ids": [
+            "phosagro-2023-revenue-2023-ev",
+            "phosagro-2024-revenue-2024-ev"
+          ],
+          "candidate_metadata": [
+            {
+              "currency": "RUB",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "document_id": "phosagro-2023",
+              "evidence_id": "phosagro-2023-revenue-2023-ev",
+              "fact_id": "phosagro-2023-revenue-2023",
+              "metric_id": "revenue",
+              "period": {
+                "duration_type": "full_year",
+                "end": "2023-12-31",
+                "kind": "duration",
+                "start": "2023-01-01"
+              },
+              "scale": 1000000,
+              "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+            },
+            {
+              "currency": "RUB",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "document_id": "phosagro-2024",
+              "evidence_id": "phosagro-2024-revenue-2024-ev",
+              "fact_id": "phosagro-2024-revenue-2024",
+              "metric_id": "revenue",
+              "period": {
+                "duration_type": "full_year",
+                "end": "2024-12-31",
+                "kind": "duration",
+                "start": "2024-01-01"
+              },
+              "scale": 1000000,
+              "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+            }
+          ],
+          "source": "found_prepared_only"
+        }
+      },
+      {
+        "stage": "source_validation",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-101",
+        "status": "completed",
+        "elapsed_ms": 0.0002,
+        "reason_code": "ok",
+        "details": {
+          "performed_in_primary_worker": true,
+          "primary_reannotation": false
+        }
+      },
+      {
+        "stage": "model_selection",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-101",
+        "status": "completed",
+        "elapsed_ms": 2066.9373,
+        "reason_code": "ok",
+        "details": {
+          "choice_valid": true,
+          "automatic_retries": 0
+        }
+      },
+      {
+        "stage": "calculation",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-101",
+        "status": "completed",
+        "elapsed_ms": 208.4123,
+        "reason_code": "comparability_not_established",
+        "details": {
+          "registered_operation_executed": false
+        }
+      },
+      {
+        "stage": "result_validation",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-101",
+        "status": "completed",
+        "elapsed_ms": 0.0004,
+        "reason_code": "ok",
+        "details": {
+          "performed_in_calculation_worker": true,
+          "recomputation": true
+        }
+      },
+      {
+        "stage": "answer",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-101",
+        "status": "completed",
+        "elapsed_ms": 0.0003,
+        "reason_code": "ok",
+        "details": {
+          "financial_result_present": false
+        }
+      }
+    ],
+    "context_digest": "bf7c8f93540358cdee0c609afa43684e292f5e31635e7ef144b93a59752d3648",
+    "source_input_digest": "54ecc5036cf8d6a9cfbd698d40feda01a1cd16e1609ac32fbe71356f0efbc46b",
+    "saved_run": {
+      "resource_id": "24f92776db4f5a4b8b152f80537f33cb4d9769667161ea8bb7c3a8299da3895d.json",
+      "status": "written",
+      "private": true
+    },
+    "model_calls": 1,
+    "selection": {
+      "protocol": "kp3-one-shot-a-0.1",
+      "prompt": "one-shot-financial-selection-v1",
+      "adapter": {
+        "kind": "local_llm",
+        "adapter": "ollama-one-shot-a-v1",
+        "prompt": "one-shot-financial-selection-v1",
+        "model": "qwen3:4b",
+        "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+        "server_version": "0.40.15",
+        "endpoint": "http://127.0.0.1:11435",
+        "think": false,
+        "temperature": 0,
+        "num_ctx": 8192
+      },
+      "limits": {
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "top_k": 32,
+        "max_output_tokens": 384,
+        "max_choice_bytes": 4096,
+        "max_observation_bytes": 32768
+      },
+      "model_attempts": 1,
+      "mock_choices": 0,
+      "choice": {
+        "inputs": [
+          {
+            "fact_id": "phosagro-2023-revenue-2023",
+            "role": "previous"
+          },
+          {
+            "fact_id": "phosagro-2024-revenue-2024",
+            "role": "current"
+          }
+        ],
+        "operation_id": "relative_change_v1",
+        "schema_version": "kp3-a-choice-0.1"
+      },
+      "choice_valid": true,
+      "usage": {
+        "input_tokens": 1122,
+        "output_tokens": 104,
+        "known_chat_requests": 1,
+        "unknown_requests": 0
+      },
+      "events": [
+        {
+          "kind": "worker",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-101",
+          "purpose": "primary",
+          "status": "completed",
+          "phase": "source_validation",
+          "reason_code": "ok",
+          "elapsed_ms": 178.281,
+          "search_count": 1
+        },
+        {
+          "kind": "setup_probe",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-101",
+          "result": {
+            "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+            "model": "qwen3:4b",
+            "server_version": "0.40.15"
+          },
+          "elapsed_ms": 202.172
+        },
+        {
+          "kind": "choice",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-101",
+          "choice": {
+            "inputs": [
+              {
+                "fact_id": "phosagro-2023-revenue-2023",
+                "role": "previous"
+              },
+              {
+                "fact_id": "phosagro-2024-revenue-2024",
+                "role": "current"
+              }
+            ],
+            "operation_id": "relative_change_v1",
+            "schema_version": "kp3-a-choice-0.1"
+          },
+          "usage": {
+            "input_tokens": 1122,
+            "output_tokens": 104
+          },
+          "chat_requests": 1,
+          "error": null,
+          "diagnostic": {
+            "response_bytes": 269,
+            "response_sha256": "14dfeddd3aace56ad3faef48187fa5be044879e234309e76578b9bb5e259f633"
+          },
+          "elapsed_ms": 1864.596
+        },
+        {
+          "kind": "worker",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-101",
+          "purpose": "validation",
+          "status": "completed",
+          "phase": "result_validation",
+          "reason_code": "ok",
+          "elapsed_ms": 208.401,
+          "search_count": 0
+        }
+      ],
+      "search_audit": [
+        {
+          "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+          "purpose": "primary",
+          "reason_code": "ok",
+          "spec_digest": "2fe2c4ffff5f400d2a45c82d9549dec0457cc0d17aa0f62ea5afef8525dee31b",
+          "status": "found"
+        }
+      ],
+      "primary_searches": 1,
+      "validation_searches": 0,
+      "unknown_search_steps": [],
+      "observation_digest": "3e67459a87da0d7745a9e9711a11a2bf9676628baeacac491b457608cee1cfca",
+      "stop_reason": "completed"
+    }
+  },
+  "measurement": {
+    "run_manifest_sha256": "9fe1686fa127b5e70ff34d05f459296d03c1b81bdfbca14ec8dc229768e5d3fa",
+    "started_at": "2026-11-10T18:38:53.713334+00:00",
+    "finished_at": "2026-11-10T18:38:56.180383+00:00",
+    "elapsed_ms": 2465.3847,
+    "cold_warm": "warm",
+    "model_state_observation": {
+      "cold_warm": "warm",
+      "source": "actual_loopback_api_ps",
+      "loaded_model_names": [
+        "qwen3:4b"
+      ]
+    },
+    "runner_status": "completed",
+    "runner_error": null,
+    "reexecuted": false
+  }
+}

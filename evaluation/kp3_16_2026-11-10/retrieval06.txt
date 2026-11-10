@@ -1,0 +1,1 @@
+{"status": "public_inputs_valid", "case_count": 56, "target_cells": 48, "worker_receives_targets": false, "source_bytes_checked": false, "general_pdf_extraction_executed": false}

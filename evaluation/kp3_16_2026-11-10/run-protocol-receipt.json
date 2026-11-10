@@ -1,0 +1,36 @@
+{
+  "run_manifest_sha256": "9fe1686fa127b5e70ff34d05f459296d03c1b81bdfbca14ec8dc229768e5d3fa",
+  "runner_sealed_before_first_answer": true,
+  "claims": 138,
+  "actual": 138,
+  "primary": 120,
+  "warm_repeat": 18,
+  "protocol_order_preserved": true,
+  "budget": {
+    "known_chat_requests": 227,
+    "unknown_requests": 0,
+    "reserved_chat_requests": 227,
+    "known_output_tokens": 12990,
+    "reserved_output_tokens": 12990,
+    "serial_wall_s": 353.2879894
+  },
+  "model_load_by_method": {
+    "B": {
+      "warm": 46
+    },
+    "A": {
+      "cold": 1,
+      "warm": 45
+    },
+    "C": {
+      "warm": 46
+    }
+  },
+  "model_load_semantics": "api_ps model-loaded state only; B makes no model calls",
+  "server_started": true,
+  "server_stopped": true,
+  "stop_guard": "Saved16 owner PID/path/starttime matched live owner receipt and helper checked process identity",
+  "cold_warm_unknown": 0,
+  "readiness_source": "No new source downloads/worker/models/packages",
+  "heavy_regression_during_benchmark": false
+}

@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-11-10T18:37:25.414829+00:00",
+  "unit_tests": {
+    "previous": 728,
+    "new": 32,
+    "total": 760,
+    "passed": 760,
+    "log": "unit-before-run.txt"
+  },
+  "hardware": {
+    "cpu": [
+      {
+        "Name": "Intel(R) Core(TM) i7-14700HX",
+        "NumberOfCores": 20,
+        "NumberOfLogicalProcessors": 28
+      }
+    ],
+    "memory": [
+      {
+        "TotalPhysicalMemory": 16873545728
+      }
+    ],
+    "gpu": [
+      {
+        "Name": "NVIDIA GeForce RTX 5060 Laptop GPU"
+      },
+      {
+        "Name": "Intel(R) UHD Graphics"
+      }
+    ]
+  },
+  "server_before": "offline",
+  "server_start": "Existing pinned helper, hidden/loopback/cloud_disabled; no installation/download; owner receipt retained privately",
+  "frozen_dependencies": "freeze-before.json 134files/28resources",
+  "runtime_changes": "Measurement-only additive package; no production/source/gold changes",
+  "cold_warm": "api_ps observed per slot",
+  "background_policy": "Full unit finished before138attempts; no heavy regression/model experiments in parallel; light file/report preparation during run",
+  "first_error": {
+    "kind": "CIM sandbox access denied",
+    "resolution": "Same read-only hardware command executed with real escalation before model start",
+    "comparison_attempts_affected": 0
+  }
+}

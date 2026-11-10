@@ -1,0 +1,276 @@
+{
+  "schema_version": "kp3-observation-0.1",
+  "attempt_id": "primary-098",
+  "case_id": "cmp-35",
+  "method": "C",
+  "phase": "primary",
+  "source": "actual",
+  "answer": {
+    "schema_version": "kp3-answer-0.2",
+    "run_id": "eval16-9fe1686fa127b5e7-primary-098",
+    "task_id": "eval16-9fe1686fa127b5e7-primary-098",
+    "method": "C",
+    "execution_status": "completed",
+    "request_status": "conflict",
+    "financial_status": null,
+    "reason_code": "duplicate_or_conflicting_facts",
+    "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+    "normalized_input": {
+      "schema_version": "kp3-input-0.1",
+      "input_id": "eval16-9fe1686fa127b5e7-primary-098",
+      "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+      "input_kind": "form",
+      "raw_fields": {
+        "organization": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "operation_id": "direct_fact_v1",
+        "metric_ids": [
+          "operating_cash_flow"
+        ],
+        "definition_ids": [
+          "operating_cash_flow:nonfinancial_ifrs_net_v1"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2021",
+            "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+          },
+          {
+            "document_id": "segezha-2022",
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "source_unit": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1000
+        },
+        "mode": "snapshot",
+        "as_of": null,
+        "comparability_id": null
+      },
+      "fields": {
+        "organization": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "operation_id": "direct_fact_v1",
+        "metric_ids": [
+          "operating_cash_flow"
+        ],
+        "definition_ids": [
+          "operating_cash_flow:nonfinancial_ifrs_net_v1"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2021",
+            "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+          },
+          {
+            "document_id": "segezha-2022",
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "source_unit": null,
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1000
+        },
+        "mode": "snapshot",
+        "as_of": null,
+        "comparability_id": null
+      },
+      "field_origins": {
+        "organization": "form",
+        "consolidation": "form",
+        "accounting_standard": "form",
+        "operation_id": "form",
+        "metric_ids": "form",
+        "definition_ids": "form",
+        "periods": "form",
+        "documents": "form",
+        "version_policy": "form",
+        "source_unit": "unset",
+        "result_unit": "form",
+        "mode": "form",
+        "as_of": "unset",
+        "comparability_id": "unset"
+      },
+      "assumptions": [],
+      "assumption_origin": "none",
+      "hints": {
+        "years": [],
+        "as_of_text": null,
+        "document_report_year": null,
+        "organization_unmatched": null
+      },
+      "issues": [],
+      "unsupported_reasons": [],
+      "unfulfilled_requests": [],
+      "history": [],
+      "catalog_digest": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+      "language_version": "ru-input-v1"
+    },
+    "clarifications": [],
+    "financial_result": null,
+    "outcome": null,
+    "assumption_checks": [],
+    "unfulfilled_requests": [],
+    "retrieval": null,
+    "trace": [
+      {
+        "stage": "input",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-098",
+        "status": "completed",
+        "elapsed_ms": 4.0683,
+        "reason_code": "ok",
+        "details": {}
+      },
+      {
+        "stage": "catalog_filters",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-098",
+        "status": "blocked",
+        "elapsed_ms": 5.7293,
+        "reason_code": "duplicate_or_conflicting_facts",
+        "details": {
+          "preliminary_only": true
+        }
+      },
+      {
+        "stage": "search",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-098",
+        "status": "skipped",
+        "elapsed_ms": 0,
+        "reason_code": "not_reached",
+        "details": {}
+      },
+      {
+        "stage": "fact_resolution",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-098",
+        "status": "skipped",
+        "elapsed_ms": 0,
+        "reason_code": "not_reached",
+        "details": {}
+      },
+      {
+        "stage": "source_validation",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-098",
+        "status": "skipped",
+        "elapsed_ms": 0,
+        "reason_code": "not_reached",
+        "details": {}
+      },
+      {
+        "stage": "calculation",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-098",
+        "status": "skipped",
+        "elapsed_ms": 0,
+        "reason_code": "not_reached",
+        "details": {}
+      },
+      {
+        "stage": "result_validation",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-098",
+        "status": "skipped",
+        "elapsed_ms": 0,
+        "reason_code": "not_reached",
+        "details": {}
+      },
+      {
+        "stage": "answer",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-098",
+        "status": "completed",
+        "elapsed_ms": 0,
+        "reason_code": "duplicate_or_conflicting_facts",
+        "details": {
+          "financial_result_present": false
+        }
+      }
+    ],
+    "context_digest": "ec417fc717cef5db5f5495031b327ae01d484593f98b6e774a76cd94286dba9c",
+    "source_input_digest": "634963417e900a1e3f22b6bdf215eb69e809c54de35d2f48f5f214a33165a0ec",
+    "saved_run": {
+      "resource_id": "d9d60d1f8affb17bebe53df6a020e62b5e552568768efb4220e3508e573245a4.json",
+      "status": "written",
+      "private": true
+    },
+    "model_calls": 0,
+    "agent": {
+      "protocol": "kp3-agent-0.2",
+      "prompt": "bounded-financial-tools-v2",
+      "adapter": {
+        "kind": "local_llm",
+        "adapter": "ollama-financial-tools-v2",
+        "prompt": "bounded-financial-tools-v2",
+        "model": "qwen3:4b",
+        "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+        "server_version": "0.40.15",
+        "endpoint": "http://127.0.0.1:11435",
+        "think": false,
+        "temperature": 0,
+        "num_ctx": 8192
+      },
+      "limits": {
+        "max_calls": 8,
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "max_search_results": 32,
+        "max_output_tokens": 384,
+        "max_action_bytes": 4096,
+        "max_observation_bytes": 32768,
+        "max_tool_bytes": 8192
+      },
+      "decisions": 0,
+      "model_attempts": 0,
+      "mock_decisions": 0,
+      "usage": {
+        "known_input_tokens": 0,
+        "known_output_tokens": 0,
+        "unknown_usage": 0,
+        "known_chat_requests": 0,
+        "unknown_requests": 0
+      },
+      "events": [],
+      "stop_reason": "input_not_resolved",
+      "finished": false,
+      "receipt_id": null
+    }
+  },
+  "measurement": {
+    "run_manifest_sha256": "9fe1686fa127b5e70ff34d05f459296d03c1b81bdfbca14ec8dc229768e5d3fa",
+    "started_at": "2026-11-10T18:38:46.540303+00:00",
+    "finished_at": "2026-11-10T18:38:46.552844+00:00",
+    "elapsed_ms": 11.005,
+    "cold_warm": "warm",
+    "model_state_observation": {
+      "cold_warm": "warm",
+      "source": "actual_loopback_api_ps",
+      "loaded_model_names": [
+        "qwen3:4b"
+      ]
+    },
+    "runner_status": "completed",
+    "runner_error": null,
+    "reexecuted": false
+  }
+}

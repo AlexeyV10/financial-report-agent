@@ -1,0 +1,327 @@
+{
+  "stage": "KP3-16",
+  "status": "passed",
+  "preparation_manifest_sha256": "349a6e8500b926175fdac66d92e0a2b1e814b4fe03abface3680e31ed88ee145",
+  "checks": {
+    "stage": "KP3-16",
+    "status": "technically_complete_known_corpus_comparison",
+    "unit_tests": {
+      "old": 728,
+      "new": 32,
+      "total": 760,
+      "passed": 760
+    },
+    "checkers": "03-14 actual17commands plus immutable15 manifest/campaign audit; oldgold04/07/corpus05/5legacy",
+    "actual_financial_attempts": 138,
+    "primary": 120,
+    "warm_repeat": 18,
+    "unique_financial_questions": 40,
+    "source_cells": 32,
+    "economic_contexts": 28,
+    "document_versions": 8,
+    "source_lineages": 2,
+    "known_to_developer": true,
+    "reserved_unseen_real": 0,
+    "methods": {
+      "B": {
+        "primary_numeric": {
+          "x": 32,
+          "n": 32,
+          "status": "measured"
+        },
+        "primary_refusal": {
+          "x": 8,
+          "n": 8,
+          "status": "measured"
+        },
+        "technical": {
+          "x": 40,
+          "n": 40,
+          "status": "measured"
+        },
+        "claims": {
+          "x": 86,
+          "n": 86,
+          "status": "measured"
+        },
+        "median_primary_ms": 206.76195,
+        "warm_numeric": {
+          "x": 6,
+          "n": 6,
+          "status": "measured"
+        },
+        "median_warm_ms": 210.07905,
+        "primary_chat": 0,
+        "warm_chat": 0,
+        "semantic_stability": {
+          "method": "B",
+          "x": 6,
+          "n": 6,
+          "pairs": [
+            {
+              "case_id": "cmp-02",
+              "stable": true,
+              "primary_attempt": "primary-033",
+              "warm_attempt": "warm-03",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            },
+            {
+              "case_id": "cmp-12",
+              "stable": true,
+              "primary_attempt": "primary-117",
+              "warm_attempt": "warm-06",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            },
+            {
+              "case_id": "cmp-13",
+              "stable": true,
+              "primary_attempt": "primary-081",
+              "warm_attempt": "warm-09",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            },
+            {
+              "case_id": "cmp-19",
+              "stable": true,
+              "primary_attempt": "primary-066",
+              "warm_attempt": "warm-12",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            },
+            {
+              "case_id": "cmp-26",
+              "stable": true,
+              "primary_attempt": "primary-093",
+              "warm_attempt": "warm-15",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            },
+            {
+              "case_id": "cmp-29",
+              "stable": true,
+              "primary_attempt": "primary-084",
+              "warm_attempt": "warm-18",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            }
+          ]
+        }
+      },
+      "A": {
+        "primary_numeric": {
+          "x": 32,
+          "n": 32,
+          "status": "measured"
+        },
+        "primary_refusal": {
+          "x": 8,
+          "n": 8,
+          "status": "measured"
+        },
+        "technical": {
+          "x": 40,
+          "n": 40,
+          "status": "measured"
+        },
+        "claims": {
+          "x": 86,
+          "n": 86,
+          "status": "measured"
+        },
+        "median_primary_ms": 2458.96105,
+        "warm_numeric": {
+          "x": 6,
+          "n": 6,
+          "status": "measured"
+        },
+        "median_warm_ms": 2483.4782,
+        "primary_chat": 34,
+        "warm_chat": 6,
+        "semantic_stability": {
+          "method": "A",
+          "x": 6,
+          "n": 6,
+          "pairs": [
+            {
+              "case_id": "cmp-02",
+              "stable": true,
+              "primary_attempt": "primary-031",
+              "warm_attempt": "warm-02",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            },
+            {
+              "case_id": "cmp-12",
+              "stable": true,
+              "primary_attempt": "primary-115",
+              "warm_attempt": "warm-05",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            },
+            {
+              "case_id": "cmp-13",
+              "stable": true,
+              "primary_attempt": "primary-079",
+              "warm_attempt": "warm-08",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            },
+            {
+              "case_id": "cmp-19",
+              "stable": true,
+              "primary_attempt": "primary-065",
+              "warm_attempt": "warm-11",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            },
+            {
+              "case_id": "cmp-26",
+              "stable": true,
+              "primary_attempt": "primary-091",
+              "warm_attempt": "warm-14",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            },
+            {
+              "case_id": "cmp-29",
+              "stable": true,
+              "primary_attempt": "primary-083",
+              "warm_attempt": "warm-17",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            }
+          ]
+        }
+      },
+      "C": {
+        "primary_numeric": {
+          "x": 32,
+          "n": 32,
+          "status": "measured"
+        },
+        "primary_refusal": {
+          "x": 8,
+          "n": 8,
+          "status": "measured"
+        },
+        "technical": {
+          "x": 40,
+          "n": 40,
+          "status": "measured"
+        },
+        "claims": {
+          "x": 86,
+          "n": 86,
+          "status": "measured"
+        },
+        "median_primary_ms": 5496.4491,
+        "warm_numeric": {
+          "x": 6,
+          "n": 6,
+          "status": "measured"
+        },
+        "median_warm_ms": 6642.3168000000005,
+        "primary_chat": 159,
+        "warm_chat": 28,
+        "semantic_stability": {
+          "method": "C",
+          "x": 6,
+          "n": 6,
+          "pairs": [
+            {
+              "case_id": "cmp-02",
+              "stable": true,
+              "primary_attempt": "primary-032",
+              "warm_attempt": "warm-01",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            },
+            {
+              "case_id": "cmp-12",
+              "stable": true,
+              "primary_attempt": "primary-116",
+              "warm_attempt": "warm-04",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            },
+            {
+              "case_id": "cmp-13",
+              "stable": true,
+              "primary_attempt": "primary-080",
+              "warm_attempt": "warm-07",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            },
+            {
+              "case_id": "cmp-19",
+              "stable": true,
+              "primary_attempt": "primary-064",
+              "warm_attempt": "warm-10",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            },
+            {
+              "case_id": "cmp-26",
+              "stable": true,
+              "primary_attempt": "primary-092",
+              "warm_attempt": "warm-13",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            },
+            {
+              "case_id": "cmp-29",
+              "stable": true,
+              "primary_attempt": "primary-082",
+              "warm_attempt": "warm-16",
+              "primary_execution": "completed",
+              "warm_execution": "completed"
+            }
+          ]
+        }
+      }
+    },
+    "actual_chat_requests": 227,
+    "unknown_requests": 0,
+    "known_input_tokens": 256934,
+    "known_output_tokens": 12990,
+    "serial_invocation_seconds": 353.2879894,
+    "comparison_errors": 0,
+    "post_eval_answering_fixes": 0,
+    "model_server": "Started pinned existing local server and stopped only own process after138; no-op resume offline",
+    "separate": {
+      "calculator_dev": "20/20:19numeric+1unsupported",
+      "parser": "8/8",
+      "prepared_queries": "29/29",
+      "prepared_required_evidence": "46/46",
+      "automatic_cells": "40/48",
+      "automatic_full_documents": "6/8",
+      "automatic_extra_quarters_not_facts": 8,
+      "worker_invocations": 0,
+      "scenario": "12/12:4completed own+7blocked+1expectederror",
+      "robustness": "Reused actual14315variants,20controller_mock separately labeled; no new robustness attacks16",
+      "ui": "Unchanged; no new CUA; prior13 actual UI remains prior"
+    },
+    "freeze_sha256": "072a1caf92423d2e41ae12625cc485d81f0bc3c321c3cce5cbb1db663bcf1fbe",
+    "run_manifest_sha256": "9fe1686fa127b5e70ff34d05f459296d03c1b81bdfbca14ec8dc229768e5d3fa",
+    "frozen_files_preserved": 134,
+    "physical_resources_preserved": 28,
+    "raw_sealed": true,
+    "replay_byte_identical": true,
+    "supplement_replay_identical": true,
+    "resume_noop": true,
+    "source_facts_unchanged": 48,
+    "new_real_fact_count": 0,
+    "human_reviewed": 0,
+    "new_publications": 0,
+    "rights": "unknown_unchanged",
+    "old_QA07": "C/call_limit=error;3/10financial;reserved0 unchanged",
+    "interpretation": "No strict accuracy advantage of A/C on this known bounded set; additional model steps increase latency; not unseen/market quality",
+    "merge_authorized": false,
+    "next_step_executed": false,
+    "next_prompt": "prompts/kp3_17_release_candidate.md"
+  },
+  "merge_authorized": false,
+  "primary_materials_in_git": false
+}

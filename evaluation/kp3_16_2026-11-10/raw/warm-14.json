@@ -1,0 +1,852 @@
+{
+  "schema_version": "kp3-observation-0.1",
+  "attempt_id": "warm-14",
+  "case_id": "cmp-26",
+  "method": "A",
+  "phase": "warm_repeat",
+  "source": "actual",
+  "answer": {
+    "schema_version": "kp3-a-answer-0.1",
+    "run_id": "eval16-9fe1686fa127b5e7-warm-14",
+    "task_id": "eval16-9fe1686fa127b5e7-warm-14",
+    "method": "A",
+    "execution_status": "completed",
+    "request_status": "evaluated",
+    "financial_status": "answered",
+    "reason_code": "ok",
+    "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+    "normalized_input": {
+      "schema_version": "kp3-input-0.1",
+      "input_id": "eval16-9fe1686fa127b5e7-warm-14",
+      "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+      "input_kind": "form",
+      "raw_fields": {
+        "organization": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "operation_id": "scale_v1",
+        "metric_ids": [
+          "revenue"
+        ],
+        "definition_ids": [
+          "revenue:nonfinancial_ifrs_reported_v1"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-06-30"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-h1",
+            "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null,
+        "comparability_id": null
+      },
+      "fields": {
+        "organization": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "operation_id": "scale_v1",
+        "metric_ids": [
+          "revenue"
+        ],
+        "definition_ids": [
+          "revenue:nonfinancial_ifrs_reported_v1"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-06-30"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-h1",
+            "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null,
+        "comparability_id": null
+      },
+      "field_origins": {
+        "organization": "form",
+        "consolidation": "form",
+        "accounting_standard": "form",
+        "operation_id": "form",
+        "metric_ids": "form",
+        "definition_ids": "form",
+        "periods": "form",
+        "documents": "form",
+        "version_policy": "form",
+        "source_unit": "form",
+        "result_unit": "form",
+        "mode": "form",
+        "as_of": "unset",
+        "comparability_id": "unset"
+      },
+      "assumptions": [],
+      "assumption_origin": "none",
+      "hints": {
+        "years": [],
+        "as_of_text": null,
+        "document_report_year": null,
+        "organization_unmatched": null
+      },
+      "issues": [],
+      "unsupported_reasons": [],
+      "unfulfilled_requests": [],
+      "history": [],
+      "catalog_digest": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+      "language_version": "ru-input-v1"
+    },
+    "clarifications": [],
+    "financial_result": {
+      "admission_context": {
+        "admission_digest": "35152fb5dc4fa48efe5d2ce19e8b32424d5cea02a469609884852c08446bd6eb",
+        "catalog_id": "kp3-real-corpus-v1",
+        "component_digests": {
+          "bindings": "14f62b7b6c7ddc3a4629cc68d096d621bc6616c86df14650df76fe90ca48d0b7",
+          "catalog": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+          "checks": "335bcbdd8806dd230f55f000d433a19561d9507870c21c6f01496b2a3826dbed",
+          "dictionary": "4404a201044d982ff630175a71d08cadb7093e959b988a97533a43f021b6783a"
+        },
+        "context_id": "kp3-real-corpus-v1-calculator-v1"
+      },
+      "calculation_schema_version": "0.3",
+      "display_value": "298556000000",
+      "exact_result": {
+        "denominator": "1",
+        "numerator": "298556000000"
+      },
+      "formula": "value * source_scale / target_scale",
+      "formula_version": "1.0",
+      "inputs": [
+        {
+          "accounting_standard": "IFRS",
+          "consolidation": "group",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "document_id": "phosagro-2025-h1",
+          "document_sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+          "evidence_digest": "2240853c7ae0bab177f3113718a23fcf102c21971079abf39abc2c59a13362db",
+          "evidence_id": "phosagro-2025-h1-revenue-2025-ev",
+          "fact_id": "phosagro-2025-h1-revenue-2025",
+          "locator": {
+            "column_label": "Шесть месяцев, закончившихся 30 июня / 2025",
+            "kind": "pdf",
+            "page_region": "full_page",
+            "pdf_page": 5,
+            "printed_page": "1",
+            "row_label": "Выручка",
+            "statement_page": "1",
+            "table_title": "Консолидированный промежуточный сокращенный отчет о прибыли или убытке и прочем совокупном доходе за три и шесть месяцев, закончившихся 30 июня 2025 года",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "numeric_encoding": "comma_thousands_integer",
+          "organization_id": "phosagro_group",
+          "origin_role": "reported_period",
+          "period": {
+            "duration_type": "year_to_date",
+            "end": "2025-06-30",
+            "kind": "duration",
+            "start": "2025-01-01"
+          },
+          "provenance": {
+            "human_reviewer": null,
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "status": "assistant_checked"
+          },
+          "raw_value": "298,556",
+          "role": "fact",
+          "source_unit": {
+            "currency": "RUB",
+            "scale": 1000000
+          },
+          "value": "298556",
+          "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+        }
+      ],
+      "intermediates": {
+        "scale_multiplier": {
+          "denominator": "1",
+          "numerator": "1000000"
+        }
+      },
+      "operation_id": "scale_v1",
+      "precision_note": "Exact arithmetic on the supplied rounded source values; no extra source precision is established.",
+      "request": {
+        "accounting_standard": "IFRS",
+        "as_of": null,
+        "comparability_id": null,
+        "consolidation": "group",
+        "inputs": [
+          {
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "document_id": "phosagro-2025-h1",
+            "fact_id": "phosagro-2025-h1-revenue-2025",
+            "metric_id": "revenue",
+            "period": {
+              "duration_type": "year_to_date",
+              "end": "2025-06-30",
+              "kind": "duration",
+              "start": "2025-01-01"
+            },
+            "role": "fact",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+          }
+        ],
+        "mode": "snapshot",
+        "operation_id": "scale_v1",
+        "organization_id": "phosagro_group",
+        "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+        "request_id": "eval16-9fe1686fa127b5e7-warm-14",
+        "result_unit": {
+          "currency": "RUB",
+          "kind": "amount",
+          "scale": 1
+        },
+        "schema_version": "0.3",
+        "version_policy": "explicit_versions"
+      },
+      "result_unit": {
+        "currency": "RUB",
+        "kind": "amount",
+        "scale": 1
+      },
+      "retrieval_resolution": {
+        "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+        "kind": "prepared",
+        "matched_evidence_ids": [
+          "phosagro-2025-h1-revenue-2025-ev"
+        ],
+        "retrieved_records": 1,
+        "reverification_performed": false
+      },
+      "rounding": "exact_finite_decimal",
+      "sources": [
+        {
+          "audit": {
+            "limitation": "Оговорка о нераскрытии сегментов: PDF p3; промежуточный документ содержит обзорную проверку, не аудиторское мнение.",
+            "opinion": "qualified_review_not_audit"
+          },
+          "data_origin": "real",
+          "document_id": "phosagro-2025-h1",
+          "document_sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+          "evidence": {
+            "currency": "RUB",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "document_id": "phosagro-2025-h1",
+            "document_sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+            "evidence_id": "phosagro-2025-h1-revenue-2025-ev",
+            "locator": {
+              "column_label": "Шесть месяцев, закончившихся 30 июня / 2025",
+              "kind": "pdf",
+              "page_region": "full_page",
+              "pdf_page": 5,
+              "printed_page": "1",
+              "row_label": "Выручка",
+              "statement_page": "1",
+              "table_title": "Консолидированный промежуточный сокращенный отчет о прибыли или убытке и прочем совокупном доходе за три и шесть месяцев, закончившихся 30 июня 2025 года",
+              "unit_header": "Млн руб."
+            },
+            "metric_id": "revenue",
+            "numeric_encoding": "comma_thousands_integer",
+            "period": {
+              "duration_type": "year_to_date",
+              "end": "2025-06-30",
+              "kind": "duration",
+              "start": "2025-01-01"
+            },
+            "provenance": {
+              "human_reviewer": null,
+              "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+              "status": "assistant_checked"
+            },
+            "raw_value": "298,556",
+            "scale": 1000000,
+            "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+          },
+          "publication": {
+            "binding": "unproven",
+            "document_sha256": null,
+            "precision": "unknown",
+            "record_id": null,
+            "source_url": null,
+            "timezone": "Europe/Moscow",
+            "value": null,
+            "version_id": null
+          },
+          "rights": {
+            "checked_on": "2026-11-09",
+            "note": "Разрешение на распространение PDF, страниц и полного текста не установлено; только локальная исключённая tmp/ и минимальная собственная разметка.",
+            "public_copy_allowed": false,
+            "status": "unconfirmed"
+          },
+          "source_url": "https://cdn.phosagro.ru/upload/iblock/c2c/fsrd93o32jfpw73r5r4817rju383q066.pdf#page=5",
+          "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+        }
+      ],
+      "warnings": [
+        "exact_arithmetic_does_not_improve_source_precision",
+        "source_status_inherited_not_upgraded",
+        "publication_unknown_snapshot_only",
+        "primary_document_redistribution_rights_unconfirmed"
+      ]
+    },
+    "outcome": {
+      "clarification_fields": [],
+      "execution_status": "completed",
+      "financial_result": {
+        "admission_context": {
+          "admission_digest": "35152fb5dc4fa48efe5d2ce19e8b32424d5cea02a469609884852c08446bd6eb",
+          "catalog_id": "kp3-real-corpus-v1",
+          "component_digests": {
+            "bindings": "14f62b7b6c7ddc3a4629cc68d096d621bc6616c86df14650df76fe90ca48d0b7",
+            "catalog": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+            "checks": "335bcbdd8806dd230f55f000d433a19561d9507870c21c6f01496b2a3826dbed",
+            "dictionary": "4404a201044d982ff630175a71d08cadb7093e959b988a97533a43f021b6783a"
+          },
+          "context_id": "kp3-real-corpus-v1-calculator-v1"
+        },
+        "calculation_schema_version": "0.3",
+        "display_value": "298556000000",
+        "exact_result": {
+          "denominator": "1",
+          "numerator": "298556000000"
+        },
+        "formula": "value * source_scale / target_scale",
+        "formula_version": "1.0",
+        "inputs": [
+          {
+            "accounting_standard": "IFRS",
+            "consolidation": "group",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "document_id": "phosagro-2025-h1",
+            "document_sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+            "evidence_digest": "2240853c7ae0bab177f3113718a23fcf102c21971079abf39abc2c59a13362db",
+            "evidence_id": "phosagro-2025-h1-revenue-2025-ev",
+            "fact_id": "phosagro-2025-h1-revenue-2025",
+            "locator": {
+              "column_label": "Шесть месяцев, закончившихся 30 июня / 2025",
+              "kind": "pdf",
+              "page_region": "full_page",
+              "pdf_page": 5,
+              "printed_page": "1",
+              "row_label": "Выручка",
+              "statement_page": "1",
+              "table_title": "Консолидированный промежуточный сокращенный отчет о прибыли или убытке и прочем совокупном доходе за три и шесть месяцев, закончившихся 30 июня 2025 года",
+              "unit_header": "Млн руб."
+            },
+            "metric_id": "revenue",
+            "numeric_encoding": "comma_thousands_integer",
+            "organization_id": "phosagro_group",
+            "origin_role": "reported_period",
+            "period": {
+              "duration_type": "year_to_date",
+              "end": "2025-06-30",
+              "kind": "duration",
+              "start": "2025-01-01"
+            },
+            "provenance": {
+              "human_reviewer": null,
+              "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+              "status": "assistant_checked"
+            },
+            "raw_value": "298,556",
+            "role": "fact",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "value": "298556",
+            "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+          }
+        ],
+        "intermediates": {
+          "scale_multiplier": {
+            "denominator": "1",
+            "numerator": "1000000"
+          }
+        },
+        "operation_id": "scale_v1",
+        "precision_note": "Exact arithmetic on the supplied rounded source values; no extra source precision is established.",
+        "request": {
+          "accounting_standard": "IFRS",
+          "as_of": null,
+          "comparability_id": null,
+          "consolidation": "group",
+          "inputs": [
+            {
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "document_id": "phosagro-2025-h1",
+              "fact_id": "phosagro-2025-h1-revenue-2025",
+              "metric_id": "revenue",
+              "period": {
+                "duration_type": "year_to_date",
+                "end": "2025-06-30",
+                "kind": "duration",
+                "start": "2025-01-01"
+              },
+              "role": "fact",
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1000000
+              },
+              "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+            }
+          ],
+          "mode": "snapshot",
+          "operation_id": "scale_v1",
+          "organization_id": "phosagro_group",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "request_id": "eval16-9fe1686fa127b5e7-warm-14",
+          "result_unit": {
+            "currency": "RUB",
+            "kind": "amount",
+            "scale": 1
+          },
+          "schema_version": "0.3",
+          "version_policy": "explicit_versions"
+        },
+        "result_unit": {
+          "currency": "RUB",
+          "kind": "amount",
+          "scale": 1
+        },
+        "retrieval_resolution": {
+          "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+          "kind": "prepared",
+          "matched_evidence_ids": [
+            "phosagro-2025-h1-revenue-2025-ev"
+          ],
+          "retrieved_records": 1,
+          "reverification_performed": false
+        },
+        "rounding": "exact_finite_decimal",
+        "sources": [
+          {
+            "audit": {
+              "limitation": "Оговорка о нераскрытии сегментов: PDF p3; промежуточный документ содержит обзорную проверку, не аудиторское мнение.",
+              "opinion": "qualified_review_not_audit"
+            },
+            "data_origin": "real",
+            "document_id": "phosagro-2025-h1",
+            "document_sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+            "evidence": {
+              "currency": "RUB",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "document_id": "phosagro-2025-h1",
+              "document_sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+              "evidence_id": "phosagro-2025-h1-revenue-2025-ev",
+              "locator": {
+                "column_label": "Шесть месяцев, закончившихся 30 июня / 2025",
+                "kind": "pdf",
+                "page_region": "full_page",
+                "pdf_page": 5,
+                "printed_page": "1",
+                "row_label": "Выручка",
+                "statement_page": "1",
+                "table_title": "Консолидированный промежуточный сокращенный отчет о прибыли или убытке и прочем совокупном доходе за три и шесть месяцев, закончившихся 30 июня 2025 года",
+                "unit_header": "Млн руб."
+              },
+              "metric_id": "revenue",
+              "numeric_encoding": "comma_thousands_integer",
+              "period": {
+                "duration_type": "year_to_date",
+                "end": "2025-06-30",
+                "kind": "duration",
+                "start": "2025-01-01"
+              },
+              "provenance": {
+                "human_reviewer": null,
+                "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+                "status": "assistant_checked"
+              },
+              "raw_value": "298,556",
+              "scale": 1000000,
+              "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+            },
+            "publication": {
+              "binding": "unproven",
+              "document_sha256": null,
+              "precision": "unknown",
+              "record_id": null,
+              "source_url": null,
+              "timezone": "Europe/Moscow",
+              "value": null,
+              "version_id": null
+            },
+            "rights": {
+              "checked_on": "2026-11-09",
+              "note": "Разрешение на распространение PDF, страниц и полного текста не установлено; только локальная исключённая tmp/ и минимальная собственная разметка.",
+              "public_copy_allowed": false,
+              "status": "unconfirmed"
+            },
+            "source_url": "https://cdn.phosagro.ru/upload/iblock/c2c/fsrd93o32jfpw73r5r4817rju383q066.pdf#page=5",
+            "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+          }
+        ],
+        "warnings": [
+          "exact_arithmetic_does_not_improve_source_precision",
+          "source_status_inherited_not_upgraded",
+          "publication_unknown_snapshot_only",
+          "primary_document_redistribution_rights_unconfirmed"
+        ]
+      },
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "request_id": "eval16-9fe1686fa127b5e7-warm-14",
+      "run_id": "eval16-9fe1686fa127b5e7-warm-14",
+      "schema_version": "0.3",
+      "technical_details": null
+    },
+    "assumption_checks": [],
+    "unfulfilled_requests": [],
+    "retrieval": {
+      "run_id": "eval16-9fe1686fa127b5e7-warm-14",
+      "status": "found",
+      "reason_code": "ok",
+      "source_kind": "prepared",
+      "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+      "result_count": 1,
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-06-30"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-h1",
+            "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    "trace": [
+      {
+        "stage": "input",
+        "run_id": "eval16-9fe1686fa127b5e7-warm-14",
+        "status": "completed",
+        "elapsed_ms": 4.5604,
+        "reason_code": "ok",
+        "details": {}
+      },
+      {
+        "stage": "catalog_filters",
+        "run_id": "eval16-9fe1686fa127b5e7-warm-14",
+        "status": "completed",
+        "elapsed_ms": 6.7522,
+        "reason_code": "ok",
+        "details": {
+          "preliminary_only": true
+        }
+      },
+      {
+        "stage": "search",
+        "run_id": "eval16-9fe1686fa127b5e7-warm-14",
+        "status": "completed",
+        "elapsed_ms": 198.7328,
+        "reason_code": "ok",
+        "details": {
+          "primary_search": true
+        }
+      },
+      {
+        "stage": "fact_resolution",
+        "run_id": "eval16-9fe1686fa127b5e7-warm-14",
+        "status": "completed",
+        "elapsed_ms": 0.0016,
+        "reason_code": "ok",
+        "details": {
+          "evidence_ids": [
+            "phosagro-2025-h1-revenue-2025-ev"
+          ],
+          "candidate_metadata": [
+            {
+              "currency": "RUB",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "document_id": "phosagro-2025-h1",
+              "evidence_id": "phosagro-2025-h1-revenue-2025-ev",
+              "fact_id": "phosagro-2025-h1-revenue-2025",
+              "metric_id": "revenue",
+              "period": {
+                "duration_type": "year_to_date",
+                "end": "2025-06-30",
+                "kind": "duration",
+                "start": "2025-01-01"
+              },
+              "scale": 1000000,
+              "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+            }
+          ],
+          "source": "found_prepared_only"
+        }
+      },
+      {
+        "stage": "source_validation",
+        "run_id": "eval16-9fe1686fa127b5e7-warm-14",
+        "status": "completed",
+        "elapsed_ms": 0.0003,
+        "reason_code": "ok",
+        "details": {
+          "performed_in_primary_worker": true,
+          "primary_reannotation": false
+        }
+      },
+      {
+        "stage": "model_selection",
+        "run_id": "eval16-9fe1686fa127b5e7-warm-14",
+        "status": "completed",
+        "elapsed_ms": 1508.0359,
+        "reason_code": "ok",
+        "details": {
+          "choice_valid": true,
+          "automatic_retries": 0
+        }
+      },
+      {
+        "stage": "calculation",
+        "run_id": "eval16-9fe1686fa127b5e7-warm-14",
+        "status": "completed",
+        "elapsed_ms": 216.6371,
+        "reason_code": "ok",
+        "details": {
+          "registered_operation_executed": true
+        }
+      },
+      {
+        "stage": "result_validation",
+        "run_id": "eval16-9fe1686fa127b5e7-warm-14",
+        "status": "completed",
+        "elapsed_ms": 0.0005,
+        "reason_code": "ok",
+        "details": {
+          "performed_in_calculation_worker": true,
+          "recomputation": true
+        }
+      },
+      {
+        "stage": "answer",
+        "run_id": "eval16-9fe1686fa127b5e7-warm-14",
+        "status": "completed",
+        "elapsed_ms": 0.0004,
+        "reason_code": "ok",
+        "details": {
+          "financial_result_present": true
+        }
+      }
+    ],
+    "context_digest": "17e684e871d426685e18bfb53063d0235ece076c2bd138f0887f7f942bba7680",
+    "source_input_digest": "d082cc99aa60958788defa3575031550263204b5f1fba9bd2bb28e71a7b115d5",
+    "saved_run": {
+      "resource_id": "f1d25d0b90d2c7e6c9db560996d309f50c240e6e1a7e4d95d388279d40933435.json",
+      "status": "written",
+      "private": true
+    },
+    "model_calls": 1,
+    "selection": {
+      "protocol": "kp3-one-shot-a-0.1",
+      "prompt": "one-shot-financial-selection-v1",
+      "adapter": {
+        "kind": "local_llm",
+        "adapter": "ollama-one-shot-a-v1",
+        "prompt": "one-shot-financial-selection-v1",
+        "model": "qwen3:4b",
+        "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+        "server_version": "0.40.15",
+        "endpoint": "http://127.0.0.1:11435",
+        "think": false,
+        "temperature": 0,
+        "num_ctx": 8192
+      },
+      "limits": {
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "top_k": 32,
+        "max_output_tokens": 384,
+        "max_choice_bytes": 4096,
+        "max_observation_bytes": 32768
+      },
+      "model_attempts": 1,
+      "mock_choices": 0,
+      "choice": {
+        "inputs": [
+          {
+            "fact_id": "phosagro-2025-h1-revenue-2025",
+            "role": "fact"
+          }
+        ],
+        "operation_id": "scale_v1",
+        "schema_version": "kp3-a-choice-0.1"
+      },
+      "choice_valid": true,
+      "usage": {
+        "input_tokens": 757,
+        "output_tokens": 71,
+        "known_chat_requests": 1,
+        "unknown_requests": 0
+      },
+      "events": [
+        {
+          "kind": "worker",
+          "run_id": "eval16-9fe1686fa127b5e7-warm-14",
+          "purpose": "primary",
+          "status": "completed",
+          "phase": "source_validation",
+          "reason_code": "ok",
+          "elapsed_ms": 198.666,
+          "search_count": 1
+        },
+        {
+          "kind": "setup_probe",
+          "run_id": "eval16-9fe1686fa127b5e7-warm-14",
+          "result": {
+            "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+            "model": "qwen3:4b",
+            "server_version": "0.40.15"
+          },
+          "elapsed_ms": 186.712
+        },
+        {
+          "kind": "choice",
+          "run_id": "eval16-9fe1686fa127b5e7-warm-14",
+          "choice": {
+            "inputs": [
+              {
+                "fact_id": "phosagro-2025-h1-revenue-2025",
+                "role": "fact"
+              }
+            ],
+            "operation_id": "scale_v1",
+            "schema_version": "kp3-a-choice-0.1"
+          },
+          "usage": {
+            "input_tokens": 757,
+            "output_tokens": 71
+          },
+          "chat_requests": 1,
+          "error": null,
+          "diagnostic": {
+            "response_bytes": 174,
+            "response_sha256": "570ab3fd70cf1d904ffab8aba57b8ba9daabdc2f9f042b4b6c7ad5701ce88d75"
+          },
+          "elapsed_ms": 1321.169
+        },
+        {
+          "kind": "worker",
+          "run_id": "eval16-9fe1686fa127b5e7-warm-14",
+          "purpose": "validation",
+          "status": "completed",
+          "phase": "result_validation",
+          "reason_code": "ok",
+          "elapsed_ms": 216.626,
+          "search_count": 2
+        }
+      ],
+      "search_audit": [
+        {
+          "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+          "purpose": "primary",
+          "reason_code": "ok",
+          "spec_digest": "87955cd8796c2e8770e9b28f1672841f3b477cfa68d6eed40a273dcc8c438267",
+          "status": "found"
+        },
+        {
+          "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+          "purpose": "validation",
+          "reason_code": "ok",
+          "spec_digest": "87955cd8796c2e8770e9b28f1672841f3b477cfa68d6eed40a273dcc8c438267",
+          "status": "found"
+        },
+        {
+          "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+          "purpose": "validation",
+          "reason_code": "ok",
+          "spec_digest": "87955cd8796c2e8770e9b28f1672841f3b477cfa68d6eed40a273dcc8c438267",
+          "status": "found"
+        }
+      ],
+      "primary_searches": 1,
+      "validation_searches": 2,
+      "unknown_search_steps": [],
+      "observation_digest": "db4cdf92591988d79251448a7db4a23a1bd6b9dbbdd2d8b3f7729cb85d07329c",
+      "stop_reason": "completed"
+    }
+  },
+  "measurement": {
+    "run_manifest_sha256": "9fe1686fa127b5e70ff34d05f459296d03c1b81bdfbca14ec8dc229768e5d3fa",
+    "started_at": "2026-11-10T18:40:27.468006+00:00",
+    "finished_at": "2026-11-10T18:40:29.405704+00:00",
+    "elapsed_ms": 1936.3582,
+    "cold_warm": "warm",
+    "model_state_observation": {
+      "cold_warm": "warm",
+      "source": "actual_loopback_api_ps",
+      "loaded_model_names": [
+        "qwen3:4b"
+      ]
+    },
+    "runner_status": "completed",
+    "runner_error": null,
+    "reexecuted": false
+  }
+}

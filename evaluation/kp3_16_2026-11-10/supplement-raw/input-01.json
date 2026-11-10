@@ -1,0 +1,130 @@
+{
+  "case_id": "input-01",
+  "observation": {
+    "schema_version": "kp3-binding-0.1",
+    "status": "resolved",
+    "reason_code": "ok",
+    "normalized_input": {
+      "schema_version": "kp3-input-0.1",
+      "input_id": "input-01",
+      "original_question": "Какая выручка группы ФосАгро по МСФО за 2024 год из отчёта за 2024 год? Снимок.",
+      "input_kind": "text",
+      "raw_fields": null,
+      "fields": {
+        "organization": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "operation_id": "direct_fact_v1",
+        "metric_ids": [
+          "revenue"
+        ],
+        "definition_ids": [
+          "revenue:nonfinancial_ifrs_reported_v1"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2024",
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "mode": "snapshot",
+        "as_of": null,
+        "comparability_id": null
+      },
+      "field_origins": {
+        "organization": "text",
+        "consolidation": "text",
+        "accounting_standard": "text",
+        "operation_id": "text",
+        "metric_ids": "text",
+        "definition_ids": "catalog_unique",
+        "periods": "text",
+        "documents": "catalog_unique",
+        "version_policy": "text",
+        "source_unit": "catalog_unique",
+        "result_unit": "catalog_unique",
+        "mode": "text",
+        "as_of": "unset",
+        "comparability_id": "unset"
+      },
+      "assumptions": [],
+      "assumption_origin": "none",
+      "hints": {
+        "years": [
+          2024
+        ],
+        "as_of_text": null,
+        "document_report_year": 2024,
+        "organization_unmatched": null
+      },
+      "issues": [],
+      "unsupported_reasons": [],
+      "unfulfilled_requests": [],
+      "history": [],
+      "catalog_digest": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+      "language_version": "ru-input-v1"
+    },
+    "clarifications": [],
+    "request": {
+      "schema_version": "0.3",
+      "request_id": "input-01",
+      "original_question": "Какая выручка группы ФосАгро по МСФО за 2024 год из отчёта за 2024 год? Снимок.",
+      "operation_id": "direct_fact_v1",
+      "organization_id": "phosagro_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "inputs": [
+        {
+          "role": "fact",
+          "fact_id": "phosagro-2024-revenue-2024",
+          "document_id": "phosagro-2024",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          },
+          "source_unit": {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        }
+      ],
+      "version_policy": "explicit_versions",
+      "comparability_id": null,
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1000000
+      },
+      "mode": "snapshot",
+      "as_of": null
+    },
+    "assumptions": [],
+    "calculations_performed": false,
+    "financial_status": null
+  },
+  "error": null,
+  "elapsed_ms": 7.9408
+}

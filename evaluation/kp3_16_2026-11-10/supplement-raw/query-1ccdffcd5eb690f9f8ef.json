@@ -1,0 +1,104 @@
+{
+  "query_id": "query-1ccdffcd5eb690f9f8ef",
+  "observation": {
+    "schema_version": "kp3-search-0.1",
+    "status": "found",
+    "reason_code": "ok",
+    "financial_status": null,
+    "source_kind": "prepared",
+    "results": [
+      {
+        "record_id": "phosagro-2025-revenue-2025-ev",
+        "document_id": "phosagro-2025",
+        "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+        "document_sha256": "c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metric_id": "revenue",
+        "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+        "period": {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "currency": "RUB",
+        "scale": 1000000,
+        "raw_value": "573,628",
+        "value": "573628",
+        "row_label": "Выручка",
+        "origin_role": "reported_period",
+        "locator": {
+          "kind": "pdf",
+          "pdf_page": 8,
+          "printed_page": "1",
+          "statement_page": "1",
+          "page_region": "full_page",
+          "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2025 год",
+          "row_label": "Выручка",
+          "column_label": "2025",
+          "unit_header": "Млн руб."
+        },
+        "evidence_id": "phosagro-2025-revenue-2025-ev",
+        "evidence_digest": "0c39bfc9d0e900584b81b0dc8c0d16967b5549d611d36cb91b910d3da6f07984",
+        "verification_status": "assistant_checked",
+        "source_kind": "prepared_evidence",
+        "reverification_performed": false
+      },
+      {
+        "record_id": "phosagro-2025-operating_profit-2025-ev",
+        "document_id": "phosagro-2025",
+        "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+        "document_sha256": "c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metric_id": "operating_profit",
+        "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1",
+        "period": {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2025-01-01",
+          "end": "2025-12-31"
+        },
+        "currency": "RUB",
+        "scale": 1000000,
+        "raw_value": "135,605",
+        "value": "135605",
+        "row_label": "Прибыль от операционной деятельности",
+        "origin_role": "reported_period",
+        "locator": {
+          "kind": "pdf",
+          "pdf_page": 8,
+          "printed_page": "1",
+          "statement_page": "1",
+          "page_region": "full_page",
+          "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2025 год",
+          "row_label": "Прибыль от операционной деятельности",
+          "column_label": "2025",
+          "unit_header": "Млн руб."
+        },
+        "evidence_id": "phosagro-2025-operating_profit-2025-ev",
+        "evidence_digest": "633a668b84e9df82ac014b82d24de14be3828a7b6bf4aece30fd06c4eadf58b0",
+        "verification_status": "assistant_checked",
+        "source_kind": "prepared_evidence",
+        "reverification_performed": false
+      }
+    ],
+    "reverification_performed": false,
+    "warnings": [
+      "source_text_untrusted",
+      "retrieval_is_not_financial_answer"
+    ],
+    "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+    "requested_context_coverage": {
+      "requested_metric_period_slots": 2,
+      "matched_slots": 2,
+      "missing_contexts": [],
+      "scope": "Metric/period coverage only; not financial approval or evidence gold."
+    }
+  },
+  "error": null,
+  "elapsed_ms": 6.6366
+}

@@ -1,0 +1,5926 @@
+{
+  "schema_version": "kp3-comparison-analysis-0.1",
+  "scope": "known_corpus_only",
+  "raw_manifest_sha256": "5b323cc574d1f2ae6ef594af979b63d26b7bed3bdc8580fa009b4247d9376ae8",
+  "raw_count": 138,
+  "strict_metrics": {
+    "schema_version": "kp3-metrics-0.1",
+    "scope": "known_corpus_comparison",
+    "method_metrics": {
+      "B:primary": {
+        "planned_attempts": 40,
+        "observed_attempts": 40,
+        "missing_attempts": 0,
+        "numeric_correct": {
+          "x": 32,
+          "n": 32,
+          "status": "measured"
+        },
+        "correct_refusal": {
+          "x": 8,
+          "n": 8,
+          "status": "measured"
+        },
+        "false_refusal": {
+          "x": 0,
+          "n": 32,
+          "status": "measured"
+        },
+        "technical_completion": {
+          "x": 40,
+          "n": 40,
+          "status": "measured"
+        },
+        "claim_support": {
+          "x": 86,
+          "n": 86,
+          "status": "measured"
+        },
+        "answer_completeness": {
+          "x": 32,
+          "n": 32,
+          "status": "measured"
+        },
+        "elapsed": {
+          "n": 40,
+          "minimum_ms": 162.1832,
+          "median_ms": 206.76195,
+          "maximum_ms": 250.3702
+        },
+        "model_usage": {
+          "known_chat_requests": 0,
+          "unknown_requests": 0,
+          "tokens": {
+            "input": 0,
+            "output": 0,
+            "unknown_records": 0
+          },
+          "total_cost": "not_measured"
+        },
+        "scores": [
+          {
+            "case_id": "cmp-09",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-38",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-14",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-40",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-10",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-17",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-01",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-22",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-36",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-30",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 4,
+            "observed_claims": 4,
+            "required_claims": 4,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-02",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-25",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-04",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-33",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-03",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-07",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-16",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-06",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-08",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-27",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-32",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 4,
+            "observed_claims": 4,
+            "required_claims": 4,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-19",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-23",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-34",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-05",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-28",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-13",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-29",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 4,
+            "observed_claims": 4,
+            "required_claims": 4,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-18",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-11",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-26",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-15",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-35",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-39",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-21",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-24",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-31",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 4,
+            "observed_claims": 4,
+            "required_claims": 4,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-37",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-12",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-20",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          }
+        ]
+      },
+      "B:warm_repeat": {
+        "planned_attempts": 6,
+        "observed_attempts": 6,
+        "missing_attempts": 0,
+        "numeric_correct": {
+          "x": 6,
+          "n": 6,
+          "status": "measured"
+        },
+        "correct_refusal": {
+          "x": 0,
+          "n": 0,
+          "status": "not_measured"
+        },
+        "false_refusal": {
+          "x": 0,
+          "n": 6,
+          "status": "measured"
+        },
+        "technical_completion": {
+          "x": 6,
+          "n": 6,
+          "status": "measured"
+        },
+        "claim_support": {
+          "x": 17,
+          "n": 17,
+          "status": "measured"
+        },
+        "answer_completeness": {
+          "x": 6,
+          "n": 6,
+          "status": "measured"
+        },
+        "elapsed": {
+          "n": 6,
+          "minimum_ms": 201.3341,
+          "median_ms": 210.07905,
+          "maximum_ms": 218.4627
+        },
+        "model_usage": {
+          "known_chat_requests": 0,
+          "unknown_requests": 0,
+          "tokens": {
+            "input": 0,
+            "output": 0,
+            "unknown_records": 0
+          },
+          "total_cost": "not_measured"
+        },
+        "scores": [
+          {
+            "case_id": "cmp-02",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-12",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-13",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-19",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-26",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          },
+          {
+            "case_id": "cmp-29",
+            "method": "B",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 4,
+            "observed_claims": 4,
+            "required_claims": 4,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": null,
+              "adapter": null
+            }
+          }
+        ]
+      },
+      "A:primary": {
+        "planned_attempts": 40,
+        "observed_attempts": 40,
+        "missing_attempts": 0,
+        "numeric_correct": {
+          "x": 32,
+          "n": 32,
+          "status": "measured"
+        },
+        "correct_refusal": {
+          "x": 8,
+          "n": 8,
+          "status": "measured"
+        },
+        "false_refusal": {
+          "x": 0,
+          "n": 32,
+          "status": "measured"
+        },
+        "technical_completion": {
+          "x": 40,
+          "n": 40,
+          "status": "measured"
+        },
+        "claim_support": {
+          "x": 86,
+          "n": 86,
+          "status": "measured"
+        },
+        "answer_completeness": {
+          "x": 32,
+          "n": 32,
+          "status": "measured"
+        },
+        "elapsed": {
+          "n": 40,
+          "minimum_ms": 10.9808,
+          "median_ms": 2458.96105,
+          "maximum_ms": 6149.5717
+        },
+        "model_usage": {
+          "known_chat_requests": 34,
+          "unknown_requests": 0,
+          "tokens": {
+            "input": 31740,
+            "output": 3113,
+            "unknown_records": 12
+          },
+          "total_cost": "not_measured"
+        },
+        "scores": [
+          {
+            "case_id": "cmp-09",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 758,
+                "output_tokens": 72,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-38",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 760,
+                "output_tokens": 69,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-14",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1048,
+                "output_tokens": 108,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-40",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": null,
+                "output_tokens": null,
+                "known_chat_requests": 0,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-10",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 771,
+                "output_tokens": 72,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-17",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1019,
+                "output_tokens": 104,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-01",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 763,
+                "output_tokens": 70,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-22",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1061,
+                "output_tokens": 111,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-36",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": null,
+                "output_tokens": null,
+                "known_chat_requests": 0,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-30",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 4,
+            "observed_claims": 4,
+            "required_claims": 4,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1067,
+                "output_tokens": 108,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-02",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 763,
+                "output_tokens": 70,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-25",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 771,
+                "output_tokens": 70,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-04",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 777,
+                "output_tokens": 74,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-33",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": null,
+                "output_tokens": null,
+                "known_chat_requests": 0,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-03",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 776,
+                "output_tokens": 71,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-07",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 753,
+                "output_tokens": 71,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-16",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1113,
+                "output_tokens": 114,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-06",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 802,
+                "output_tokens": 75,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-08",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 771,
+                "output_tokens": 72,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-27",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 762,
+                "output_tokens": 71,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-32",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 4,
+            "observed_claims": 4,
+            "required_claims": 4,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1087,
+                "output_tokens": 112,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-19",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1054,
+                "output_tokens": 107,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-23",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1030,
+                "output_tokens": 107,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-34",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": null,
+                "output_tokens": null,
+                "known_chat_requests": 0,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-05",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 765,
+                "output_tokens": 72,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-28",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 760,
+                "output_tokens": 69,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-13",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1076,
+                "output_tokens": 108,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-29",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 4,
+            "observed_claims": 4,
+            "required_claims": 4,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1058,
+                "output_tokens": 104,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-18",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1066,
+                "output_tokens": 106,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-11",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1058,
+                "output_tokens": 104,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-26",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 757,
+                "output_tokens": 71,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-15",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1079,
+                "output_tokens": 110,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-35",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": null,
+                "output_tokens": null,
+                "known_chat_requests": 0,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-39",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1122,
+                "output_tokens": 104,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-21",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1059,
+                "output_tokens": 111,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-24",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1048,
+                "output_tokens": 107,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-31",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 4,
+            "observed_claims": 4,
+            "required_claims": 4,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1051,
+                "output_tokens": 106,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-37",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": null,
+                "output_tokens": null,
+                "known_chat_requests": 0,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-12",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1072,
+                "output_tokens": 106,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-20",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1063,
+                "output_tokens": 107,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          }
+        ]
+      },
+      "A:warm_repeat": {
+        "planned_attempts": 6,
+        "observed_attempts": 6,
+        "missing_attempts": 0,
+        "numeric_correct": {
+          "x": 6,
+          "n": 6,
+          "status": "measured"
+        },
+        "correct_refusal": {
+          "x": 0,
+          "n": 0,
+          "status": "not_measured"
+        },
+        "false_refusal": {
+          "x": 0,
+          "n": 6,
+          "status": "measured"
+        },
+        "technical_completion": {
+          "x": 6,
+          "n": 6,
+          "status": "measured"
+        },
+        "claim_support": {
+          "x": 17,
+          "n": 17,
+          "status": "measured"
+        },
+        "answer_completeness": {
+          "x": 6,
+          "n": 6,
+          "status": "measured"
+        },
+        "elapsed": {
+          "n": 6,
+          "minimum_ms": 1917.8581,
+          "median_ms": 2483.4782,
+          "maximum_ms": 2761.8729
+        },
+        "model_usage": {
+          "known_chat_requests": 6,
+          "unknown_requests": 0,
+          "tokens": {
+            "input": 5780,
+            "output": 566,
+            "unknown_records": 0
+          },
+          "total_cost": "not_measured"
+        },
+        "scores": [
+          {
+            "case_id": "cmp-02",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 763,
+                "output_tokens": 70,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-12",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1072,
+                "output_tokens": 106,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-13",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1076,
+                "output_tokens": 108,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-19",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1054,
+                "output_tokens": 107,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-26",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 757,
+                "output_tokens": 71,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-29",
+            "method": "A",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 4,
+            "observed_claims": 4,
+            "required_claims": 4,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 1,
+              "unknown_requests": 0,
+              "usage": {
+                "input_tokens": 1058,
+                "output_tokens": 104,
+                "known_chat_requests": 1,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-one-shot-a-v1",
+                "prompt": "one-shot-financial-selection-v1",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          }
+        ]
+      },
+      "C:primary": {
+        "planned_attempts": 40,
+        "observed_attempts": 40,
+        "missing_attempts": 0,
+        "numeric_correct": {
+          "x": 32,
+          "n": 32,
+          "status": "measured"
+        },
+        "correct_refusal": {
+          "x": 8,
+          "n": 8,
+          "status": "measured"
+        },
+        "false_refusal": {
+          "x": 0,
+          "n": 32,
+          "status": "measured"
+        },
+        "technical_completion": {
+          "x": 40,
+          "n": 40,
+          "status": "measured"
+        },
+        "claim_support": {
+          "x": 86,
+          "n": 86,
+          "status": "measured"
+        },
+        "answer_completeness": {
+          "x": 32,
+          "n": 32,
+          "status": "measured"
+        },
+        "elapsed": {
+          "n": 40,
+          "minimum_ms": 11.005,
+          "median_ms": 5496.4491,
+          "maximum_ms": 7432.4266
+        },
+        "model_usage": {
+          "known_chat_requests": 159,
+          "unknown_requests": 0,
+          "tokens": {
+            "input": 185542,
+            "output": 7900,
+            "unknown_records": 0
+          },
+          "total_cost": "not_measured"
+        },
+        "scores": [
+          {
+            "case_id": "cmp-09",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 4,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 3820,
+                "known_output_tokens": 179,
+                "unknown_usage": 0,
+                "known_chat_requests": 4,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-38",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 4,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 3845,
+                "known_output_tokens": 179,
+                "unknown_usage": 0,
+                "known_chat_requests": 4,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-14",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6448,
+                "known_output_tokens": 259,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-40",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 0,
+                "known_output_tokens": 0,
+                "unknown_usage": 0,
+                "known_chat_requests": 0,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-10",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 4,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 3872,
+                "known_output_tokens": 178,
+                "unknown_usage": 0,
+                "known_chat_requests": 4,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-17",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6287,
+                "known_output_tokens": 254,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-01",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 4,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 3847,
+                "known_output_tokens": 188,
+                "unknown_usage": 0,
+                "known_chat_requests": 4,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-22",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6554,
+                "known_output_tokens": 270,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-36",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 0,
+                "known_output_tokens": 0,
+                "unknown_usage": 0,
+                "known_chat_requests": 0,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-30",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 4,
+            "observed_claims": 4,
+            "required_claims": 4,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6553,
+                "known_output_tokens": 261,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-02",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 4,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 3845,
+                "known_output_tokens": 187,
+                "unknown_usage": 0,
+                "known_chat_requests": 4,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-25",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 4,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 3897,
+                "known_output_tokens": 181,
+                "unknown_usage": 0,
+                "known_chat_requests": 4,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-04",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 4,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 3914,
+                "known_output_tokens": 188,
+                "unknown_usage": 0,
+                "known_chat_requests": 4,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-33",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 2,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 1510,
+                "known_output_tokens": 74,
+                "unknown_usage": 0,
+                "known_chat_requests": 2,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-03",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 4,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 3922,
+                "known_output_tokens": 193,
+                "unknown_usage": 0,
+                "known_chat_requests": 4,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-07",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 4,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 3822,
+                "known_output_tokens": 184,
+                "unknown_usage": 0,
+                "known_chat_requests": 4,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-16",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6822,
+                "known_output_tokens": 272,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-06",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 4,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 4023,
+                "known_output_tokens": 187,
+                "unknown_usage": 0,
+                "known_chat_requests": 4,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-08",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 4,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 3877,
+                "known_output_tokens": 181,
+                "unknown_usage": 0,
+                "known_chat_requests": 4,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-27",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 4,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 3842,
+                "known_output_tokens": 189,
+                "unknown_usage": 0,
+                "known_chat_requests": 4,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-32",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 4,
+            "observed_claims": 4,
+            "required_claims": 4,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6663,
+                "known_output_tokens": 269,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-19",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6510,
+                "known_output_tokens": 263,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-23",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6380,
+                "known_output_tokens": 263,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-34",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 2,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 1511,
+                "known_output_tokens": 83,
+                "unknown_usage": 0,
+                "known_chat_requests": 2,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-05",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 4,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 3855,
+                "known_output_tokens": 181,
+                "unknown_usage": 0,
+                "known_chat_requests": 4,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-28",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 4,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 3829,
+                "known_output_tokens": 175,
+                "unknown_usage": 0,
+                "known_chat_requests": 4,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-13",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6604,
+                "known_output_tokens": 254,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-29",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 4,
+            "observed_claims": 4,
+            "required_claims": 4,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6488,
+                "known_output_tokens": 252,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-18",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6554,
+                "known_output_tokens": 261,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-11",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6494,
+                "known_output_tokens": 255,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-26",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 4,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 3821,
+                "known_output_tokens": 187,
+                "unknown_usage": 0,
+                "known_chat_requests": 4,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-15",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6639,
+                "known_output_tokens": 271,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-35",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 0,
+                "known_output_tokens": 0,
+                "unknown_usage": 0,
+                "known_chat_requests": 0,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-39",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6827,
+                "known_output_tokens": 255,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-21",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6550,
+                "known_output_tokens": 273,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-24",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6473,
+                "known_output_tokens": 262,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-31",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 4,
+            "observed_claims": 4,
+            "required_claims": 4,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6485,
+                "known_output_tokens": 264,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-37",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": false,
+            "numeric_correct": false,
+            "refusal_expected": true,
+            "refusal_correct": true,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 0,
+            "observed_claims": 0,
+            "required_claims": 0,
+            "complete_claims": false,
+            "usage": {
+              "chat_requests": 0,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 0,
+                "known_output_tokens": 0,
+                "unknown_usage": 0,
+                "known_chat_requests": 0,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-12",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6590,
+                "known_output_tokens": 260,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-20",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6569,
+                "known_output_tokens": 268,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          }
+        ]
+      },
+      "C:warm_repeat": {
+        "planned_attempts": 6,
+        "observed_attempts": 6,
+        "missing_attempts": 0,
+        "numeric_correct": {
+          "x": 6,
+          "n": 6,
+          "status": "measured"
+        },
+        "correct_refusal": {
+          "x": 0,
+          "n": 0,
+          "status": "not_measured"
+        },
+        "false_refusal": {
+          "x": 0,
+          "n": 6,
+          "status": "measured"
+        },
+        "technical_completion": {
+          "x": 6,
+          "n": 6,
+          "status": "measured"
+        },
+        "claim_support": {
+          "x": 17,
+          "n": 17,
+          "status": "measured"
+        },
+        "answer_completeness": {
+          "x": 6,
+          "n": 6,
+          "status": "measured"
+        },
+        "elapsed": {
+          "n": 6,
+          "minimum_ms": 4935.8875,
+          "median_ms": 6642.3168000000005,
+          "maximum_ms": 7019.1702
+        },
+        "model_usage": {
+          "known_chat_requests": 28,
+          "unknown_requests": 0,
+          "tokens": {
+            "input": 33872,
+            "output": 1411,
+            "unknown_records": 0
+          },
+          "total_cost": "not_measured"
+        },
+        "scores": [
+          {
+            "case_id": "cmp-02",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 4,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 3843,
+                "known_output_tokens": 186,
+                "unknown_usage": 0,
+                "known_chat_requests": 4,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-12",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6594,
+                "known_output_tokens": 262,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-13",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6602,
+                "known_output_tokens": 262,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-19",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 3,
+            "observed_claims": 3,
+            "required_claims": 3,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6516,
+                "known_output_tokens": 267,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-26",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 2,
+            "observed_claims": 2,
+            "required_claims": 2,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 4,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 3825,
+                "known_output_tokens": 180,
+                "unknown_usage": 0,
+                "known_chat_requests": 4,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          },
+          {
+            "case_id": "cmp-29",
+            "method": "C",
+            "matched": true,
+            "errors": [],
+            "numeric_expected": true,
+            "numeric_correct": true,
+            "refusal_expected": false,
+            "refusal_correct": false,
+            "false_refusal": false,
+            "technical_completed": true,
+            "supported_claims": 4,
+            "observed_claims": 4,
+            "required_claims": 4,
+            "complete_claims": true,
+            "usage": {
+              "chat_requests": 5,
+              "unknown_requests": 0,
+              "usage": {
+                "known_input_tokens": 6492,
+                "known_output_tokens": 254,
+                "unknown_usage": 0,
+                "known_chat_requests": 5,
+                "unknown_requests": 0
+              },
+              "adapter": {
+                "kind": "local_llm",
+                "adapter": "ollama-financial-tools-v2",
+                "prompt": "bounded-financial-tools-v2",
+                "model": "qwen3:4b",
+                "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+                "server_version": "0.40.15",
+                "endpoint": "http://127.0.0.1:11435",
+                "think": false,
+                "temperature": 0,
+                "num_ctx": 8192
+              }
+            }
+          }
+        ]
+      }
+    },
+    "raw_count": 138,
+    "errors": [],
+    "reserved_unseen_real": 0
+  },
+  "errors": [],
+  "stability": [
+    {
+      "method": "B",
+      "x": 6,
+      "n": 6,
+      "pairs": [
+        {
+          "case_id": "cmp-02",
+          "stable": true,
+          "primary_attempt": "primary-033",
+          "warm_attempt": "warm-03",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        },
+        {
+          "case_id": "cmp-12",
+          "stable": true,
+          "primary_attempt": "primary-117",
+          "warm_attempt": "warm-06",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        },
+        {
+          "case_id": "cmp-13",
+          "stable": true,
+          "primary_attempt": "primary-081",
+          "warm_attempt": "warm-09",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        },
+        {
+          "case_id": "cmp-19",
+          "stable": true,
+          "primary_attempt": "primary-066",
+          "warm_attempt": "warm-12",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        },
+        {
+          "case_id": "cmp-26",
+          "stable": true,
+          "primary_attempt": "primary-093",
+          "warm_attempt": "warm-15",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        },
+        {
+          "case_id": "cmp-29",
+          "stable": true,
+          "primary_attempt": "primary-084",
+          "warm_attempt": "warm-18",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        }
+      ]
+    },
+    {
+      "method": "A",
+      "x": 6,
+      "n": 6,
+      "pairs": [
+        {
+          "case_id": "cmp-02",
+          "stable": true,
+          "primary_attempt": "primary-031",
+          "warm_attempt": "warm-02",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        },
+        {
+          "case_id": "cmp-12",
+          "stable": true,
+          "primary_attempt": "primary-115",
+          "warm_attempt": "warm-05",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        },
+        {
+          "case_id": "cmp-13",
+          "stable": true,
+          "primary_attempt": "primary-079",
+          "warm_attempt": "warm-08",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        },
+        {
+          "case_id": "cmp-19",
+          "stable": true,
+          "primary_attempt": "primary-065",
+          "warm_attempt": "warm-11",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        },
+        {
+          "case_id": "cmp-26",
+          "stable": true,
+          "primary_attempt": "primary-091",
+          "warm_attempt": "warm-14",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        },
+        {
+          "case_id": "cmp-29",
+          "stable": true,
+          "primary_attempt": "primary-083",
+          "warm_attempt": "warm-17",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        }
+      ]
+    },
+    {
+      "method": "C",
+      "x": 6,
+      "n": 6,
+      "pairs": [
+        {
+          "case_id": "cmp-02",
+          "stable": true,
+          "primary_attempt": "primary-032",
+          "warm_attempt": "warm-01",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        },
+        {
+          "case_id": "cmp-12",
+          "stable": true,
+          "primary_attempt": "primary-116",
+          "warm_attempt": "warm-04",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        },
+        {
+          "case_id": "cmp-13",
+          "stable": true,
+          "primary_attempt": "primary-080",
+          "warm_attempt": "warm-07",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        },
+        {
+          "case_id": "cmp-19",
+          "stable": true,
+          "primary_attempt": "primary-064",
+          "warm_attempt": "warm-10",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        },
+        {
+          "case_id": "cmp-26",
+          "stable": true,
+          "primary_attempt": "primary-092",
+          "warm_attempt": "warm-13",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        },
+        {
+          "case_id": "cmp-29",
+          "stable": true,
+          "primary_attempt": "primary-082",
+          "warm_attempt": "warm-16",
+          "primary_execution": "completed",
+          "warm_execution": "completed"
+        }
+      ]
+    }
+  ],
+  "model_load_states": {
+    "cold": 1,
+    "warm": 137
+  },
+  "stage_timings": {
+    "B": {
+      "input": {
+        "statuses": {
+          "completed": 46
+        },
+        "performed": 46,
+        "median_ms": 7.8392
+      },
+      "catalog_filters": {
+        "statuses": {
+          "completed": 42,
+          "blocked": 4
+        },
+        "performed": 46,
+        "median_ms": 6.3134
+      },
+      "search": {
+        "statuses": {
+          "completed": 40,
+          "skipped": 4,
+          "blocked": 2
+        },
+        "performed": 42,
+        "median_ms": 6.76435
+      },
+      "fact_resolution": {
+        "statuses": {
+          "completed": 40,
+          "skipped": 6
+        },
+        "performed": 40,
+        "median_ms": 2.26465
+      },
+      "source_validation": {
+        "statuses": {
+          "completed": 40,
+          "skipped": 6
+        },
+        "performed": 40,
+        "median_ms": 5.53885
+      },
+      "calculation": {
+        "statuses": {
+          "completed": 40,
+          "skipped": 6
+        },
+        "performed": 40,
+        "median_ms": 12.425699999999999
+      },
+      "result_validation": {
+        "statuses": {
+          "completed": 40,
+          "skipped": 6
+        },
+        "performed": 40,
+        "median_ms": 12.514800000000001
+      },
+      "answer": {
+        "statuses": {
+          "completed": 46
+        },
+        "performed": 46,
+        "median_ms": 0.0024
+      }
+    },
+    "A": {
+      "input": {
+        "statuses": {
+          "completed": 46
+        },
+        "performed": 46,
+        "median_ms": 4.3744
+      },
+      "catalog_filters": {
+        "statuses": {
+          "completed": 42,
+          "blocked": 4
+        },
+        "performed": 46,
+        "median_ms": 5.92905
+      },
+      "search": {
+        "statuses": {
+          "completed": 40,
+          "skipped": 4,
+          "blocked": 2
+        },
+        "performed": 42,
+        "median_ms": 178.17759999999998
+      },
+      "fact_resolution": {
+        "statuses": {
+          "completed": 40,
+          "skipped": 6
+        },
+        "performed": 40,
+        "median_ms": 0.00115
+      },
+      "source_validation": {
+        "statuses": {
+          "completed": 40,
+          "skipped": 6
+        },
+        "performed": 40,
+        "median_ms": 0.0003
+      },
+      "model_selection": {
+        "statuses": {
+          "completed": 40,
+          "skipped": 6
+        },
+        "performed": 40,
+        "median_ms": 2069.703
+      },
+      "calculation": {
+        "statuses": {
+          "completed": 40,
+          "skipped": 6
+        },
+        "performed": 40,
+        "median_ms": 215.1913
+      },
+      "result_validation": {
+        "statuses": {
+          "completed": 40,
+          "skipped": 6
+        },
+        "performed": 40,
+        "median_ms": 0.0005
+      },
+      "answer": {
+        "statuses": {
+          "completed": 46
+        },
+        "performed": 46,
+        "median_ms": 0.0004
+      }
+    },
+    "C": {
+      "input": {
+        "statuses": {
+          "completed": 46
+        },
+        "performed": 46,
+        "median_ms": 4.33675
+      },
+      "catalog_filters": {
+        "statuses": {
+          "completed": 42,
+          "blocked": 4
+        },
+        "performed": 46,
+        "median_ms": 5.96145
+      },
+      "search": {
+        "statuses": {
+          "completed": 40,
+          "skipped": 4,
+          "blocked": 2
+        },
+        "performed": 42,
+        "median_ms": 171.3163
+      },
+      "fact_resolution": {
+        "statuses": {
+          "completed": 40,
+          "skipped": 6
+        },
+        "performed": 40,
+        "median_ms": 324.15455
+      },
+      "source_validation": {
+        "statuses": {
+          "completed": 40,
+          "skipped": 6
+        },
+        "performed": 40,
+        "median_ms": 0.0
+      },
+      "calculation": {
+        "statuses": {
+          "completed": 40,
+          "skipped": 6
+        },
+        "performed": 40,
+        "median_ms": 193.45685
+      },
+      "result_validation": {
+        "statuses": {
+          "completed": 40,
+          "skipped": 6
+        },
+        "performed": 40,
+        "median_ms": 0.0
+      },
+      "answer": {
+        "statuses": {
+          "completed": 46
+        },
+        "performed": 46,
+        "median_ms": 0.0
+      }
+    }
+  },
+  "search_method_diagnostics": [
+    {
+      "method": "A",
+      "observations": [
+        {
+          "attempt_id": "primary-001",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-005",
+          "primary_searches": 1,
+          "validation_searches": 0,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-007",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-011",
+          "primary_searches": 0,
+          "validation_searches": 0,
+          "unknown_steps": [],
+          "choices": 0
+        },
+        {
+          "attempt_id": "primary-013",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-017",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-019",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-023",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-025",
+          "primary_searches": 0,
+          "validation_searches": 0,
+          "unknown_steps": [],
+          "choices": 0
+        },
+        {
+          "attempt_id": "primary-029",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-031",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-035",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-037",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-041",
+          "primary_searches": 1,
+          "validation_searches": 0,
+          "unknown_steps": [],
+          "choices": 0
+        },
+        {
+          "attempt_id": "primary-043",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-047",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-049",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-053",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-055",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-059",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-061",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-065",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-067",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-071",
+          "primary_searches": 1,
+          "validation_searches": 0,
+          "unknown_steps": [],
+          "choices": 0
+        },
+        {
+          "attempt_id": "primary-073",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-077",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-079",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-083",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-085",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-089",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-091",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-095",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-097",
+          "primary_searches": 0,
+          "validation_searches": 0,
+          "unknown_steps": [],
+          "choices": 0
+        },
+        {
+          "attempt_id": "primary-101",
+          "primary_searches": 1,
+          "validation_searches": 0,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-103",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-107",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-109",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-113",
+          "primary_searches": 0,
+          "validation_searches": 0,
+          "unknown_steps": [],
+          "choices": 0
+        },
+        {
+          "attempt_id": "primary-115",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "primary-119",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "warm-02",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "warm-05",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "warm-08",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "warm-11",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "warm-14",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        },
+        {
+          "attempt_id": "warm-17",
+          "primary_searches": 1,
+          "validation_searches": 2,
+          "unknown_steps": [],
+          "choices": 1
+        }
+      ]
+    },
+    {
+      "method": "C",
+      "observations": [
+        {
+          "attempt_id": "primary-002",
+          "search_tools": 1,
+          "decisions": 4,
+          "finished": true,
+          "receipt_id": "receipt-4c1871ea0b8af594baca38ec"
+        },
+        {
+          "attempt_id": "primary-004",
+          "search_tools": 1,
+          "decisions": 4,
+          "finished": true,
+          "receipt_id": "receipt-f204892190184e549639222b"
+        },
+        {
+          "attempt_id": "primary-008",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-7aea80be3ab1e38dd1f7b5de"
+        },
+        {
+          "attempt_id": "primary-010",
+          "search_tools": 0,
+          "decisions": 0,
+          "finished": false,
+          "receipt_id": null
+        },
+        {
+          "attempt_id": "primary-014",
+          "search_tools": 1,
+          "decisions": 4,
+          "finished": true,
+          "receipt_id": "receipt-bde3b56615b596bedcc426ef"
+        },
+        {
+          "attempt_id": "primary-016",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-9a2bb23ebb784a01e5716a9c"
+        },
+        {
+          "attempt_id": "primary-020",
+          "search_tools": 1,
+          "decisions": 4,
+          "finished": true,
+          "receipt_id": "receipt-c33e4354c35a1b32947c05ad"
+        },
+        {
+          "attempt_id": "primary-022",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-e6ce2c97afa00cd592d8bb99"
+        },
+        {
+          "attempt_id": "primary-026",
+          "search_tools": 0,
+          "decisions": 0,
+          "finished": false,
+          "receipt_id": null
+        },
+        {
+          "attempt_id": "primary-028",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-12f5c28c2c61800bbc20ee1f"
+        },
+        {
+          "attempt_id": "primary-032",
+          "search_tools": 1,
+          "decisions": 4,
+          "finished": true,
+          "receipt_id": "receipt-208c1c29ef6ad4270721d5bd"
+        },
+        {
+          "attempt_id": "primary-034",
+          "search_tools": 1,
+          "decisions": 4,
+          "finished": true,
+          "receipt_id": "receipt-1dee633c1cce40509875d1e1"
+        },
+        {
+          "attempt_id": "primary-038",
+          "search_tools": 1,
+          "decisions": 4,
+          "finished": true,
+          "receipt_id": "receipt-1802303a71d287c20c934c41"
+        },
+        {
+          "attempt_id": "primary-040",
+          "search_tools": 1,
+          "decisions": 2,
+          "finished": true,
+          "receipt_id": "receipt-c0dd0527a1a8a6774fd684dd"
+        },
+        {
+          "attempt_id": "primary-044",
+          "search_tools": 1,
+          "decisions": 4,
+          "finished": true,
+          "receipt_id": "receipt-4de6dc8d90111b4b179d9212"
+        },
+        {
+          "attempt_id": "primary-046",
+          "search_tools": 1,
+          "decisions": 4,
+          "finished": true,
+          "receipt_id": "receipt-0a6300d8da5d125b2ae12e1f"
+        },
+        {
+          "attempt_id": "primary-050",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-b40ab10ba12a95114d834cc9"
+        },
+        {
+          "attempt_id": "primary-052",
+          "search_tools": 1,
+          "decisions": 4,
+          "finished": true,
+          "receipt_id": "receipt-11b211feb0bf9e9549449106"
+        },
+        {
+          "attempt_id": "primary-056",
+          "search_tools": 1,
+          "decisions": 4,
+          "finished": true,
+          "receipt_id": "receipt-a40c7914f92220447c5b4bec"
+        },
+        {
+          "attempt_id": "primary-058",
+          "search_tools": 1,
+          "decisions": 4,
+          "finished": true,
+          "receipt_id": "receipt-d38b3485a50ce9a1318818ca"
+        },
+        {
+          "attempt_id": "primary-062",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-76305c7cdd5046fe9432ed0c"
+        },
+        {
+          "attempt_id": "primary-064",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-c65c1c74e7dafe62cbeb48b9"
+        },
+        {
+          "attempt_id": "primary-068",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-1e14fe6a6369abc9e669fad2"
+        },
+        {
+          "attempt_id": "primary-070",
+          "search_tools": 1,
+          "decisions": 2,
+          "finished": true,
+          "receipt_id": "receipt-4ff20e3a0c1b1eb860e778dc"
+        },
+        {
+          "attempt_id": "primary-074",
+          "search_tools": 1,
+          "decisions": 4,
+          "finished": true,
+          "receipt_id": "receipt-94a5dcfe8eddb75337c92a6b"
+        },
+        {
+          "attempt_id": "primary-076",
+          "search_tools": 1,
+          "decisions": 4,
+          "finished": true,
+          "receipt_id": "receipt-01ade1058d1ff54477657fcc"
+        },
+        {
+          "attempt_id": "primary-080",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-57f9c3803b621c9329136cdb"
+        },
+        {
+          "attempt_id": "primary-082",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-67feb3791bc8318cd4d759bb"
+        },
+        {
+          "attempt_id": "primary-086",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-1954f26241ee06fc6e1bb1da"
+        },
+        {
+          "attempt_id": "primary-088",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-5a8135b2da38d3e9c25d1ff6"
+        },
+        {
+          "attempt_id": "primary-092",
+          "search_tools": 1,
+          "decisions": 4,
+          "finished": true,
+          "receipt_id": "receipt-cde90af9efb9e815cdb08b04"
+        },
+        {
+          "attempt_id": "primary-094",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-5f6fdddf8e11217788d803e7"
+        },
+        {
+          "attempt_id": "primary-098",
+          "search_tools": 0,
+          "decisions": 0,
+          "finished": false,
+          "receipt_id": null
+        },
+        {
+          "attempt_id": "primary-100",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-f91962fb1d251748f94d2a7b"
+        },
+        {
+          "attempt_id": "primary-104",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-f35b0a2d08a06ba63116de51"
+        },
+        {
+          "attempt_id": "primary-106",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-eaaca38460c82b5ab1319bed"
+        },
+        {
+          "attempt_id": "primary-110",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-515a903764858577c3dc6268"
+        },
+        {
+          "attempt_id": "primary-112",
+          "search_tools": 0,
+          "decisions": 0,
+          "finished": false,
+          "receipt_id": null
+        },
+        {
+          "attempt_id": "primary-116",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-cfac3258ae62e393768c6756"
+        },
+        {
+          "attempt_id": "primary-118",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-63187b946791757ae5c91a7f"
+        },
+        {
+          "attempt_id": "warm-01",
+          "search_tools": 1,
+          "decisions": 4,
+          "finished": true,
+          "receipt_id": "receipt-da4f26de40a102cde350c1e8"
+        },
+        {
+          "attempt_id": "warm-04",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-8ef1a4801345178f1e384aa5"
+        },
+        {
+          "attempt_id": "warm-07",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-33c87edae0638c50206cf4e3"
+        },
+        {
+          "attempt_id": "warm-10",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-021100523e416bd4b1dd915f"
+        },
+        {
+          "attempt_id": "warm-13",
+          "search_tools": 1,
+          "decisions": 4,
+          "finished": true,
+          "receipt_id": "receipt-f18f761c6dde67cb58c74860"
+        },
+        {
+          "attempt_id": "warm-16",
+          "search_tools": 1,
+          "decisions": 5,
+          "finished": true,
+          "receipt_id": "receipt-182bde604bca72ec6b957360"
+        }
+      ]
+    }
+  ],
+  "independent_source_clusters": 2,
+  "reserved_unseen_real": 0,
+  "confidence_interval": "Not claimed: dependent facts/operations on2knownlineages",
+  "cost": "Hardware/electricity/full monetary cost not measured",
+  "old_QA07": "unchanged; new separate16 series",
+  "model_quality_limit": "A metadata vs C checked values; task operations bounded; prepared pool often unambiguous"
+}

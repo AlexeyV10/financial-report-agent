@@ -1,0 +1,19 @@
+{
+  "verified_at": "2026-11-10T18:42:04.247938+00:00",
+  "actual_scope": true,
+  "raw_count": 138,
+  "primary": 120,
+  "warm_repeat": 18,
+  "raw_manifest_sha256": "5b323cc574d1f2ae6ef594af979b63d26b7bed3bdc8580fa009b4247d9376ae8",
+  "metrics_sha256": "fcaa16cbdecc85ace236925f0b9d6a1cefe06230705d0b92e9dcf8b60aef0ed0",
+  "metrics_byte_identical": true,
+  "supplement_byte_identical": true,
+  "completed_resume_executions": 0,
+  "raw_unchanged_on_resume": true,
+  "progress_unchanged_on_resume": true,
+  "freeze_sha256": "072a1caf92423d2e41ae12625cc485d81f0bc3c321c3cce5cbb1db663bcf1fbe",
+  "frozen_files_unchanged": 134,
+  "physical_resources_unchanged": 28,
+  "measurement_manifest_unchanged": true,
+  "comparison_outputs_replaced": 0
+}
