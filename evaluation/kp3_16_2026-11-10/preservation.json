@@ -1,0 +1,14 @@
+{
+  "parent_files": 1255,
+  "old_unchanged": 1252,
+  "prefixed": [
+    "README.md",
+    "STATUS.md",
+    "docs/decisions.md"
+  ],
+  "old_document_bytes_preserved": true,
+  "freeze_files_preserved": 134,
+  "physical_resources_unchanged": 28,
+  "source_gold_old_runtime_ui_unchanged": true,
+  "parent_clean": true
+}

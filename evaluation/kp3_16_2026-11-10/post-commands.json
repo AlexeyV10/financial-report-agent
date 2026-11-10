@@ -1,0 +1,145 @@
+{
+  "runs": [
+    {
+      "name": "metrics",
+      "command": [
+        "python3.14.7",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/replay_kp3_evaluation.py",
+        "--freeze",
+        "evaluation\\protocols\\kp3_eval_v1\\freeze-manifest.json",
+        "--raw-dir",
+        "evaluation\\kp3_16_2026-11-10\\raw",
+        "--raw-manifest",
+        "evaluation\\kp3_16_2026-11-10\\raw-manifest.json",
+        "--output",
+        "evaluation\\kp3_16_2026-11-10\\metrics.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.3523
+    },
+    {
+      "name": "metrics-replay",
+      "command": [
+        "python3.14.7",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/replay_kp3_evaluation.py",
+        "--freeze",
+        "evaluation\\protocols\\kp3_eval_v1\\freeze-manifest.json",
+        "--raw-dir",
+        "evaluation\\kp3_16_2026-11-10\\raw",
+        "--raw-manifest",
+        "evaluation\\kp3_16_2026-11-10\\raw-manifest.json",
+        "--output",
+        "evaluation\\kp3_16_2026-11-10\\metrics-replay.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.3371
+    },
+    {
+      "name": "summary",
+      "command": [
+        "python3.14.7",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/summarize_kp3_comparison.py",
+        "--freeze",
+        "evaluation\\protocols\\kp3_eval_v1\\freeze-manifest.json",
+        "--raw-dir",
+        "evaluation\\kp3_16_2026-11-10\\raw",
+        "--raw-manifest",
+        "evaluation\\kp3_16_2026-11-10\\raw-manifest.json",
+        "--output",
+        "evaluation\\kp3_16_2026-11-10\\analysis.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.3398
+    },
+    {
+      "name": "resume-noop",
+      "command": [
+        "python3.14.7",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_kp3_comparison.py",
+        "run",
+        "--manifest",
+        "evaluation\\kp3_16_2026-11-10\\run-manifest.json",
+        "--raw",
+        "evaluation\\kp3_16_2026-11-10\\raw",
+        "--progress",
+        "tmp/comparison16-progress.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 2.1609
+    },
+    {
+      "name": "supplement-collect",
+      "command": [
+        "python3.14.7",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/collect_kp3_supplement.py",
+        "collect",
+        "--manifest",
+        "evaluation\\kp3_16_2026-11-10\\run-manifest.json",
+        "--output",
+        "evaluation\\kp3_16_2026-11-10\\supplement-raw"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 3.0393
+    },
+    {
+      "name": "supplement-metrics",
+      "command": [
+        "python3.14.7",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/collect_kp3_supplement.py",
+        "replay",
+        "--manifest",
+        "evaluation\\kp3_16_2026-11-10\\run-manifest.json",
+        "--observations",
+        "evaluation\\kp3_16_2026-11-10\\supplement-raw\\observations.json",
+        "--output",
+        "evaluation\\kp3_16_2026-11-10\\supplement-metrics.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 2.1195
+    },
+    {
+      "name": "supplement-replay",
+      "command": [
+        "python3.14.7",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/collect_kp3_supplement.py",
+        "replay",
+        "--manifest",
+        "evaluation\\kp3_16_2026-11-10\\run-manifest.json",
+        "--observations",
+        "evaluation\\kp3_16_2026-11-10\\supplement-raw\\observations.json",
+        "--output",
+        "evaluation\\kp3_16_2026-11-10\\supplement-replay.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 2.132
+    }
+  ]
+}

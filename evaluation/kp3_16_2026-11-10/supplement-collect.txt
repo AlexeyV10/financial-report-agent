@@ -1,0 +1,1 @@
+{"financial_dev": 20, "parser": 8, "scenario": 12, "retrieval": 29, "model_calls": 0}

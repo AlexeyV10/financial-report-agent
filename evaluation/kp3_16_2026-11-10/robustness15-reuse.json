@@ -1,0 +1,14 @@
+{
+  "scope": "Reused actual15 campaign, not new attacks16",
+  "executed_on16": false,
+  "manifest_sha256": "82a50c5012d57eebabc3e10e129f89b897a4b750bde46e52a1c9a4b72bc6d215",
+  "verified_original15_files": 205,
+  "known_dev_variants": {
+    "x": 143,
+    "n": 143
+  },
+  "explicit_controller_mock": 20,
+  "native_offline": 2,
+  "worker_boundaries": 2,
+  "original15_worktree_clean": true
+}

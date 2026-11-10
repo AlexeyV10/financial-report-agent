@@ -1,0 +1,65 @@
+{
+  "query_id": "query-8f4fb839a8fb7fd1aa1e",
+  "observation": {
+    "schema_version": "kp3-search-0.1",
+    "status": "found",
+    "reason_code": "ok",
+    "financial_status": null,
+    "source_kind": "prepared",
+    "results": [
+      {
+        "record_id": "phosagro-2025-9m-operating_cash_flow-2025-ev",
+        "document_id": "phosagro-2025-9m",
+        "version_id": "sha256:147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+        "document_sha256": "147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metric_id": "operating_cash_flow",
+        "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+        "period": {
+          "kind": "duration",
+          "duration_type": "year_to_date",
+          "start": "2025-01-01",
+          "end": "2025-09-30"
+        },
+        "currency": "RUB",
+        "scale": 1000000,
+        "raw_value": "108,981",
+        "value": "108981",
+        "row_label": "Денежные средства от операционной деятельности",
+        "origin_role": "reported_period",
+        "locator": {
+          "kind": "pdf",
+          "pdf_page": 7,
+          "printed_page": "3",
+          "statement_page": "3",
+          "page_region": "full_page",
+          "table_title": "Консолидированный промежуточный сокращенный отчет о движении денежных средств за девять месяцев, закончившихся 30 сентября 2025 года",
+          "row_label": "Денежные средства от операционной деятельности",
+          "column_label": "Девять месяцев, закончившихся 30 сентября / 2025",
+          "unit_header": "Млн руб."
+        },
+        "evidence_id": "phosagro-2025-9m-operating_cash_flow-2025-ev",
+        "evidence_digest": "189b47eaa6c1bc91ce46854223176babb72baf53cf77bd919c6994f7284399c5",
+        "verification_status": "assistant_checked",
+        "source_kind": "prepared_evidence",
+        "reverification_performed": false
+      }
+    ],
+    "reverification_performed": false,
+    "warnings": [
+      "source_text_untrusted",
+      "retrieval_is_not_financial_answer"
+    ],
+    "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+    "requested_context_coverage": {
+      "requested_metric_period_slots": 1,
+      "matched_slots": 1,
+      "missing_contexts": [],
+      "scope": "Metric/period coverage only; not financial approval or evidence gold."
+    }
+  },
+  "error": null,
+  "elapsed_ms": 5.2982
+}

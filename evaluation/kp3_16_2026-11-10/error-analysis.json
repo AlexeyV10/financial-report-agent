@@ -1,0 +1,22 @@
+{
+  "frozen_typed_answer_errors": [],
+  "technical_failures": 0,
+  "unexpected_refusals": 0,
+  "missing_attempts": 0,
+  "repair_attempts": 0,
+  "limits_or_overruns": 0,
+  "method_identification": "All A/C use frozen native local_llm metadata, no mock/replay/B substitution",
+  "source_limits": [
+    "Known40 forms on32 exactcells/28economiccontexts/8versions/2lineages from48knownFact; no holdout",
+    "Manual assistant_checked source preparation is shared; automatic40/48 candidates not admitted",
+    "All8publicationunknown/human_reviewed0/rightsunknown; historical/realtradingblocked"
+  ],
+  "metric_limits": [
+    "Observed claim support86/86 is separate from required completeness32/32",
+    "A primary unknown_records12 counts2null token fields in6no-chat early refusals; actual unknownrequests0; no imputation/change to frozen v1",
+    "Cold/warm only actual model load state; no OS/PDF cache claim; B no model",
+    "Local monetary/electricity cost not measured; no independent binomial confidence on2lineages"
+  ],
+  "runtime_fixes_after_eval": 0,
+  "interpretation": "Same strict accuracy; extra native model steps increase measured latency; no accuracy advantage demonstrated on this bounded known set"
+}

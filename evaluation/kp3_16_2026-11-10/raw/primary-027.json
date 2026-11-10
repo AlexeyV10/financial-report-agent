@@ -1,0 +1,237 @@
+{
+  "schema_version": "kp3-observation-0.1",
+  "attempt_id": "primary-027",
+  "case_id": "cmp-36",
+  "method": "B",
+  "phase": "primary",
+  "source": "actual",
+  "answer": {
+    "assumption_checks": [],
+    "clarifications": [],
+    "context_digest": "c676b461e4f7bdd62ae4082e2cb9fdd9b06da9e26e7ba402b00693a1d8532449",
+    "execution_status": "completed",
+    "financial_result": null,
+    "financial_status": null,
+    "method": "B",
+    "model_calls": 0,
+    "normalized_input": {
+      "assumption_origin": "none",
+      "assumptions": [],
+      "catalog_digest": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+      "field_origins": {
+        "accounting_standard": "form",
+        "as_of": "unset",
+        "comparability_id": "unset",
+        "consolidation": "form",
+        "definition_ids": "form",
+        "documents": "form",
+        "metric_ids": "form",
+        "mode": "form",
+        "operation_id": "form",
+        "organization": "form",
+        "periods": "form",
+        "result_unit": "form",
+        "source_unit": "form",
+        "version_policy": "form"
+      },
+      "fields": {
+        "accounting_standard": "IFRS",
+        "as_of": null,
+        "comparability_id": null,
+        "consolidation": "group",
+        "definition_ids": [
+          "revenue:nonfinancial_ifrs_reported_v1"
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2024",
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          }
+        ],
+        "metric_ids": [
+          "revenue"
+        ],
+        "mode": "snapshot",
+        "operation_id": "direct_fact_v1",
+        "organization": "phosagro_group",
+        "periods": [
+          {
+            "duration_type": "full_year",
+            "end": "2026-12-31",
+            "kind": "duration",
+            "start": "2026-01-01"
+          }
+        ],
+        "result_unit": {
+          "currency": "RUB",
+          "kind": "amount",
+          "scale": 1000000
+        },
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "version_policy": "explicit_versions"
+      },
+      "hints": {
+        "as_of_text": null,
+        "document_report_year": null,
+        "organization_unmatched": null,
+        "years": []
+      },
+      "history": [],
+      "input_id": "eval16-9fe1686fa127b5e7-primary-027",
+      "input_kind": "form",
+      "issues": [],
+      "language_version": "ru-input-v1",
+      "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+      "raw_fields": {
+        "accounting_standard": "IFRS",
+        "as_of": null,
+        "comparability_id": null,
+        "consolidation": "group",
+        "definition_ids": [
+          "revenue:nonfinancial_ifrs_reported_v1"
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2024",
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          }
+        ],
+        "metric_ids": [
+          "revenue"
+        ],
+        "mode": "snapshot",
+        "operation_id": "direct_fact_v1",
+        "organization": "phosagro_group",
+        "periods": [
+          {
+            "duration_type": "full_year",
+            "end": "2026-12-31",
+            "kind": "duration",
+            "start": "2026-01-01"
+          }
+        ],
+        "result_unit": {
+          "currency": "RUB",
+          "kind": "amount",
+          "scale": 1000000
+        },
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "version_policy": "explicit_versions"
+      },
+      "schema_version": "kp3-input-0.1",
+      "unfulfilled_requests": [],
+      "unsupported_reasons": []
+    },
+    "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+    "outcome": null,
+    "reason_code": "no_compatible_fact",
+    "request_status": "missing",
+    "retrieval": null,
+    "run_id": "eval16-9fe1686fa127b5e7-primary-027",
+    "saved_run": {
+      "private": true,
+      "resource_id": "83be9b399202a0347f88acf3b8f1b82eed2329d4de2af8d0e49c213cea3b2fe7.json",
+      "status": "written"
+    },
+    "schema_version": "kp3-answer-0.1",
+    "source_input_digest": "b4563d437a28ae9c481b9d996dc22760f6d8379b24d9407926a411df77c46995",
+    "task_id": "eval16-9fe1686fa127b5e7-primary-027",
+    "trace": [
+      {
+        "details": {
+          "syntax_status": "parsed"
+        },
+        "elapsed_ms": 7.5305,
+        "reason_code": "ok",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-027",
+        "stage": "input",
+        "status": "completed"
+      },
+      {
+        "details": {
+          "binding_status": "missing",
+          "preliminary_only": true
+        },
+        "elapsed_ms": 6.3557,
+        "reason_code": "no_compatible_fact",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-027",
+        "stage": "catalog_filters",
+        "status": "blocked"
+      },
+      {
+        "details": {},
+        "elapsed_ms": 0,
+        "reason_code": "not_reached",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-027",
+        "stage": "search",
+        "status": "skipped"
+      },
+      {
+        "details": {},
+        "elapsed_ms": 0,
+        "reason_code": "not_reached",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-027",
+        "stage": "fact_resolution",
+        "status": "skipped"
+      },
+      {
+        "details": {},
+        "elapsed_ms": 0,
+        "reason_code": "not_reached",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-027",
+        "stage": "source_validation",
+        "status": "skipped"
+      },
+      {
+        "details": {},
+        "elapsed_ms": 0,
+        "reason_code": "not_reached",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-027",
+        "stage": "calculation",
+        "status": "skipped"
+      },
+      {
+        "details": {},
+        "elapsed_ms": 0,
+        "reason_code": "not_reached",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-027",
+        "stage": "result_validation",
+        "status": "skipped"
+      },
+      {
+        "details": {
+          "financial_result_present": false
+        },
+        "elapsed_ms": 0.0027,
+        "reason_code": "no_compatible_fact",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-027",
+        "stage": "answer",
+        "status": "completed"
+      }
+    ],
+    "unfulfilled_requests": []
+  },
+  "measurement": {
+    "run_manifest_sha256": "9fe1686fa127b5e70ff34d05f459296d03c1b81bdfbca14ec8dc229768e5d3fa",
+    "started_at": "2026-11-10T18:35:42.722101+00:00",
+    "finished_at": "2026-11-10T18:35:42.887731+00:00",
+    "elapsed_ms": 164.1651,
+    "cold_warm": "warm",
+    "model_state_observation": {
+      "cold_warm": "warm",
+      "source": "actual_loopback_api_ps",
+      "loaded_model_names": [
+        "qwen3:4b"
+      ]
+    },
+    "runner_status": "completed",
+    "runner_error": null,
+    "reexecuted": false
+  }
+}

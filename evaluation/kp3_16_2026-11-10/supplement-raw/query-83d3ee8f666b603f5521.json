@@ -1,0 +1,65 @@
+{
+  "query_id": "query-83d3ee8f666b603f5521",
+  "observation": {
+    "schema_version": "kp3-search-0.1",
+    "status": "found",
+    "reason_code": "ok",
+    "financial_status": null,
+    "source_kind": "prepared",
+    "results": [
+      {
+        "record_id": "phosagro-2023-revenue-2022-ev",
+        "document_id": "phosagro-2023",
+        "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+        "document_sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metric_id": "revenue",
+        "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+        "period": {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2022-01-01",
+          "end": "2022-12-31"
+        },
+        "currency": "RUB",
+        "scale": 1000000,
+        "raw_value": "569,527",
+        "value": "569527",
+        "row_label": "Выручка",
+        "origin_role": "comparative_period",
+        "locator": {
+          "kind": "pdf",
+          "pdf_page": 4,
+          "printed_page": "326",
+          "statement_page": "not_visible",
+          "page_region": "left_half_of_spread",
+          "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2023 год",
+          "row_label": "Выручка",
+          "column_label": "2022",
+          "unit_header": "Млн руб."
+        },
+        "evidence_id": "phosagro-2023-revenue-2022-ev",
+        "evidence_digest": "81b9a71711ffef821a163d9bc06f62546dc32a488157aa4c5d2503e5b1e11869",
+        "verification_status": "assistant_checked",
+        "source_kind": "prepared_evidence",
+        "reverification_performed": false
+      }
+    ],
+    "reverification_performed": false,
+    "warnings": [
+      "source_text_untrusted",
+      "retrieval_is_not_financial_answer"
+    ],
+    "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+    "requested_context_coverage": {
+      "requested_metric_period_slots": 1,
+      "matched_slots": 1,
+      "missing_contexts": [],
+      "scope": "Metric/period coverage only; not financial approval or evidence gold."
+    }
+  },
+  "error": null,
+  "elapsed_ms": 5.2114
+}

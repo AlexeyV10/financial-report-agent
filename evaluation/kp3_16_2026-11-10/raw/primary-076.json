@@ -1,0 +1,935 @@
+{
+  "schema_version": "kp3-observation-0.1",
+  "attempt_id": "primary-076",
+  "case_id": "cmp-28",
+  "method": "C",
+  "phase": "primary",
+  "source": "actual",
+  "answer": {
+    "schema_version": "kp3-answer-0.2",
+    "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+    "task_id": "eval16-9fe1686fa127b5e7-primary-076",
+    "method": "C",
+    "execution_status": "completed",
+    "request_status": "evaluated",
+    "financial_status": "answered",
+    "reason_code": "ok",
+    "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+    "normalized_input": {
+      "schema_version": "kp3-input-0.1",
+      "input_id": "eval16-9fe1686fa127b5e7-primary-076",
+      "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+      "input_kind": "form",
+      "raw_fields": {
+        "organization": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "operation_id": "scale_v1",
+        "metric_ids": [
+          "revenue"
+        ],
+        "definition_ids": [
+          "revenue:nonfinancial_ifrs_reported_v1"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2022",
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1000000000
+        },
+        "mode": "snapshot",
+        "as_of": null,
+        "comparability_id": null
+      },
+      "fields": {
+        "organization": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "operation_id": "scale_v1",
+        "metric_ids": [
+          "revenue"
+        ],
+        "definition_ids": [
+          "revenue:nonfinancial_ifrs_reported_v1"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2022",
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1000000000
+        },
+        "mode": "snapshot",
+        "as_of": null,
+        "comparability_id": null
+      },
+      "field_origins": {
+        "organization": "form",
+        "consolidation": "form",
+        "accounting_standard": "form",
+        "operation_id": "form",
+        "metric_ids": "form",
+        "definition_ids": "form",
+        "periods": "form",
+        "documents": "form",
+        "version_policy": "form",
+        "source_unit": "form",
+        "result_unit": "form",
+        "mode": "form",
+        "as_of": "unset",
+        "comparability_id": "unset"
+      },
+      "assumptions": [],
+      "assumption_origin": "none",
+      "hints": {
+        "years": [],
+        "as_of_text": null,
+        "document_report_year": null,
+        "organization_unmatched": null
+      },
+      "issues": [],
+      "unsupported_reasons": [],
+      "unfulfilled_requests": [],
+      "history": [],
+      "catalog_digest": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+      "language_version": "ru-input-v1"
+    },
+    "clarifications": [],
+    "financial_result": {
+      "admission_context": {
+        "admission_digest": "35152fb5dc4fa48efe5d2ce19e8b32424d5cea02a469609884852c08446bd6eb",
+        "catalog_id": "kp3-real-corpus-v1",
+        "component_digests": {
+          "bindings": "14f62b7b6c7ddc3a4629cc68d096d621bc6616c86df14650df76fe90ca48d0b7",
+          "catalog": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+          "checks": "335bcbdd8806dd230f55f000d433a19561d9507870c21c6f01496b2a3826dbed",
+          "dictionary": "4404a201044d982ff630175a71d08cadb7093e959b988a97533a43f021b6783a"
+        },
+        "context_id": "kp3-real-corpus-v1-calculator-v1"
+      },
+      "calculation_schema_version": "0.3",
+      "display_value": "106.766",
+      "exact_result": {
+        "denominator": "500",
+        "numerator": "53383"
+      },
+      "formula": "value * source_scale / target_scale",
+      "formula_version": "1.0",
+      "inputs": [
+        {
+          "accounting_standard": "IFRS",
+          "consolidation": "group",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "document_id": "segezha-2022",
+          "document_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+          "evidence_digest": "1d84772f631afdf872e2597dffd30f2605bb15b86d6c229d5a328d6945483493",
+          "evidence_id": "segezha-2022-revenue-2022-ev",
+          "fact_id": "segezha-2022-revenue-2022",
+          "locator": {
+            "column_label": "2022",
+            "kind": "pdf",
+            "page_region": "full_page",
+            "pdf_page": 9,
+            "printed_page": "7",
+            "row_label": "Выручка",
+            "statement_page": "7",
+            "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ПРИБЫЛЯХ И УБЫТКАХ И ПРОЧЕМ СОВОКУПНОМ ДОХОДЕ ЗА 2022 ГОД",
+            "unit_header": "(в миллионах российских рублей)"
+          },
+          "metric_id": "revenue",
+          "numeric_encoding": "space_thousands_integer",
+          "organization_id": "segezha_group",
+          "origin_role": "reported_period",
+          "period": {
+            "duration_type": "full_year",
+            "end": "2022-12-31",
+            "kind": "duration",
+            "start": "2022-01-01"
+          },
+          "provenance": {
+            "human_reviewer": null,
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "status": "assistant_checked"
+          },
+          "raw_value": "106 766",
+          "role": "fact",
+          "source_unit": {
+            "currency": "RUB",
+            "scale": 1000000
+          },
+          "value": "106766",
+          "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+        }
+      ],
+      "intermediates": {
+        "scale_multiplier": {
+          "denominator": "1000",
+          "numerator": "1"
+        }
+      },
+      "operation_id": "scale_v1",
+      "precision_note": "Exact arithmetic on the supplied rounded source values; no extra source precision is established.",
+      "request": {
+        "accounting_standard": "IFRS",
+        "as_of": null,
+        "comparability_id": null,
+        "consolidation": "group",
+        "inputs": [
+          {
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "document_id": "segezha-2022",
+            "fact_id": "segezha-2022-revenue-2022",
+            "metric_id": "revenue",
+            "period": {
+              "duration_type": "full_year",
+              "end": "2022-12-31",
+              "kind": "duration",
+              "start": "2022-01-01"
+            },
+            "role": "fact",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "mode": "snapshot",
+        "operation_id": "scale_v1",
+        "organization_id": "segezha_group",
+        "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+        "request_id": "eval16-9fe1686fa127b5e7-primary-076",
+        "result_unit": {
+          "currency": "RUB",
+          "kind": "amount",
+          "scale": 1000000000
+        },
+        "schema_version": "0.3",
+        "version_policy": "explicit_versions"
+      },
+      "result_unit": {
+        "currency": "RUB",
+        "kind": "amount",
+        "scale": 1000000000
+      },
+      "retrieval_resolution": {
+        "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+        "kind": "prepared",
+        "matched_evidence_ids": [
+          "segezha-2022-revenue-2022-ev"
+        ],
+        "retrieved_records": 1,
+        "reverification_performed": false
+      },
+      "rounding": "exact_finite_decimal",
+      "sources": [
+        {
+          "audit": {
+            "limitation": "Аудиторское мнение без оговорки: PDF p4. Это не проверка чисел пользователем.",
+            "opinion": "unmodified"
+          },
+          "data_origin": "real",
+          "document_id": "segezha-2022",
+          "document_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+          "evidence": {
+            "currency": "RUB",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "document_id": "segezha-2022",
+            "document_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+            "evidence_id": "segezha-2022-revenue-2022-ev",
+            "locator": {
+              "column_label": "2022",
+              "kind": "pdf",
+              "page_region": "full_page",
+              "pdf_page": 9,
+              "printed_page": "7",
+              "row_label": "Выручка",
+              "statement_page": "7",
+              "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ПРИБЫЛЯХ И УБЫТКАХ И ПРОЧЕМ СОВОКУПНОМ ДОХОДЕ ЗА 2022 ГОД",
+              "unit_header": "(в миллионах российских рублей)"
+            },
+            "metric_id": "revenue",
+            "numeric_encoding": "space_thousands_integer",
+            "period": {
+              "duration_type": "full_year",
+              "end": "2022-12-31",
+              "kind": "duration",
+              "start": "2022-01-01"
+            },
+            "provenance": {
+              "human_reviewer": null,
+              "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+              "status": "assistant_checked"
+            },
+            "raw_value": "106 766",
+            "scale": 1000000,
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          },
+          "publication": {
+            "binding": "unproven",
+            "document_sha256": null,
+            "precision": "unknown",
+            "record_id": null,
+            "source_url": null,
+            "timezone": "Europe/Moscow",
+            "value": null,
+            "version_id": null
+          },
+          "rights": {
+            "checked_on": "2026-11-09",
+            "note": "Разрешение на распространение PDF, страниц и полного текста не установлено; только локальная исключённая tmp/ и минимальная собственная разметка.",
+            "public_copy_allowed": false,
+            "status": "unconfirmed"
+          },
+          "source_url": "https://segezha-group.com/upload/iblock/91d/0r3xa6k330atuj72rx7prs6hbixb65st.pdf#page=9",
+          "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+        }
+      ],
+      "warnings": [
+        "exact_arithmetic_does_not_improve_source_precision",
+        "source_status_inherited_not_upgraded",
+        "publication_unknown_snapshot_only",
+        "primary_document_redistribution_rights_unconfirmed"
+      ]
+    },
+    "outcome": {
+      "clarification_fields": [],
+      "execution_status": "completed",
+      "financial_result": {
+        "admission_context": {
+          "admission_digest": "35152fb5dc4fa48efe5d2ce19e8b32424d5cea02a469609884852c08446bd6eb",
+          "catalog_id": "kp3-real-corpus-v1",
+          "component_digests": {
+            "bindings": "14f62b7b6c7ddc3a4629cc68d096d621bc6616c86df14650df76fe90ca48d0b7",
+            "catalog": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+            "checks": "335bcbdd8806dd230f55f000d433a19561d9507870c21c6f01496b2a3826dbed",
+            "dictionary": "4404a201044d982ff630175a71d08cadb7093e959b988a97533a43f021b6783a"
+          },
+          "context_id": "kp3-real-corpus-v1-calculator-v1"
+        },
+        "calculation_schema_version": "0.3",
+        "display_value": "106.766",
+        "exact_result": {
+          "denominator": "500",
+          "numerator": "53383"
+        },
+        "formula": "value * source_scale / target_scale",
+        "formula_version": "1.0",
+        "inputs": [
+          {
+            "accounting_standard": "IFRS",
+            "consolidation": "group",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "document_id": "segezha-2022",
+            "document_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+            "evidence_digest": "1d84772f631afdf872e2597dffd30f2605bb15b86d6c229d5a328d6945483493",
+            "evidence_id": "segezha-2022-revenue-2022-ev",
+            "fact_id": "segezha-2022-revenue-2022",
+            "locator": {
+              "column_label": "2022",
+              "kind": "pdf",
+              "page_region": "full_page",
+              "pdf_page": 9,
+              "printed_page": "7",
+              "row_label": "Выручка",
+              "statement_page": "7",
+              "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ПРИБЫЛЯХ И УБЫТКАХ И ПРОЧЕМ СОВОКУПНОМ ДОХОДЕ ЗА 2022 ГОД",
+              "unit_header": "(в миллионах российских рублей)"
+            },
+            "metric_id": "revenue",
+            "numeric_encoding": "space_thousands_integer",
+            "organization_id": "segezha_group",
+            "origin_role": "reported_period",
+            "period": {
+              "duration_type": "full_year",
+              "end": "2022-12-31",
+              "kind": "duration",
+              "start": "2022-01-01"
+            },
+            "provenance": {
+              "human_reviewer": null,
+              "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+              "status": "assistant_checked"
+            },
+            "raw_value": "106 766",
+            "role": "fact",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "value": "106766",
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "intermediates": {
+          "scale_multiplier": {
+            "denominator": "1000",
+            "numerator": "1"
+          }
+        },
+        "operation_id": "scale_v1",
+        "precision_note": "Exact arithmetic on the supplied rounded source values; no extra source precision is established.",
+        "request": {
+          "accounting_standard": "IFRS",
+          "as_of": null,
+          "comparability_id": null,
+          "consolidation": "group",
+          "inputs": [
+            {
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "document_id": "segezha-2022",
+              "fact_id": "segezha-2022-revenue-2022",
+              "metric_id": "revenue",
+              "period": {
+                "duration_type": "full_year",
+                "end": "2022-12-31",
+                "kind": "duration",
+                "start": "2022-01-01"
+              },
+              "role": "fact",
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1000000
+              },
+              "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+            }
+          ],
+          "mode": "snapshot",
+          "operation_id": "scale_v1",
+          "organization_id": "segezha_group",
+          "original_question": "Параметры финансового вопроса явно заданы в структурированной форме.",
+          "request_id": "eval16-9fe1686fa127b5e7-primary-076",
+          "result_unit": {
+            "currency": "RUB",
+            "kind": "amount",
+            "scale": 1000000000
+          },
+          "schema_version": "0.3",
+          "version_policy": "explicit_versions"
+        },
+        "result_unit": {
+          "currency": "RUB",
+          "kind": "amount",
+          "scale": 1000000000
+        },
+        "retrieval_resolution": {
+          "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+          "kind": "prepared",
+          "matched_evidence_ids": [
+            "segezha-2022-revenue-2022-ev"
+          ],
+          "retrieved_records": 1,
+          "reverification_performed": false
+        },
+        "rounding": "exact_finite_decimal",
+        "sources": [
+          {
+            "audit": {
+              "limitation": "Аудиторское мнение без оговорки: PDF p4. Это не проверка чисел пользователем.",
+              "opinion": "unmodified"
+            },
+            "data_origin": "real",
+            "document_id": "segezha-2022",
+            "document_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+            "evidence": {
+              "currency": "RUB",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "document_id": "segezha-2022",
+              "document_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+              "evidence_id": "segezha-2022-revenue-2022-ev",
+              "locator": {
+                "column_label": "2022",
+                "kind": "pdf",
+                "page_region": "full_page",
+                "pdf_page": 9,
+                "printed_page": "7",
+                "row_label": "Выручка",
+                "statement_page": "7",
+                "table_title": "КОНСОЛИДИРОВАННЫЙ ОТЧЕТ О ПРИБЫЛЯХ И УБЫТКАХ И ПРОЧЕМ СОВОКУПНОМ ДОХОДЕ ЗА 2022 ГОД",
+                "unit_header": "(в миллионах российских рублей)"
+              },
+              "metric_id": "revenue",
+              "numeric_encoding": "space_thousands_integer",
+              "period": {
+                "duration_type": "full_year",
+                "end": "2022-12-31",
+                "kind": "duration",
+                "start": "2022-01-01"
+              },
+              "provenance": {
+                "human_reviewer": null,
+                "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+                "status": "assistant_checked"
+              },
+              "raw_value": "106 766",
+              "scale": 1000000,
+              "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+            },
+            "publication": {
+              "binding": "unproven",
+              "document_sha256": null,
+              "precision": "unknown",
+              "record_id": null,
+              "source_url": null,
+              "timezone": "Europe/Moscow",
+              "value": null,
+              "version_id": null
+            },
+            "rights": {
+              "checked_on": "2026-11-09",
+              "note": "Разрешение на распространение PDF, страниц и полного текста не установлено; только локальная исключённая tmp/ и минимальная собственная разметка.",
+              "public_copy_allowed": false,
+              "status": "unconfirmed"
+            },
+            "source_url": "https://segezha-group.com/upload/iblock/91d/0r3xa6k330atuj72rx7prs6hbixb65st.pdf#page=9",
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "warnings": [
+          "exact_arithmetic_does_not_improve_source_precision",
+          "source_status_inherited_not_upgraded",
+          "publication_unknown_snapshot_only",
+          "primary_document_redistribution_rights_unconfirmed"
+        ]
+      },
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "request_id": "eval16-9fe1686fa127b5e7-primary-076",
+      "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+      "schema_version": "0.3",
+      "technical_details": null
+    },
+    "assumption_checks": [],
+    "unfulfilled_requests": [],
+    "retrieval": {
+      "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+      "status": "found",
+      "reason_code": "ok",
+      "source_kind": "prepared",
+      "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+      "result_count": 1,
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2022",
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    "trace": [
+      {
+        "stage": "input",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+        "status": "completed",
+        "elapsed_ms": 4.1741,
+        "reason_code": "ok",
+        "details": {}
+      },
+      {
+        "stage": "catalog_filters",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+        "status": "completed",
+        "elapsed_ms": 5.8284,
+        "reason_code": "ok",
+        "details": {
+          "preliminary_only": true
+        }
+      },
+      {
+        "stage": "search",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+        "status": "completed",
+        "elapsed_ms": 164.2059,
+        "reason_code": "ok",
+        "details": {
+          "mandatory": true,
+          "source_kind": "prepared"
+        }
+      },
+      {
+        "stage": "fact_resolution",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+        "status": "completed",
+        "elapsed_ms": 183.368,
+        "reason_code": "ok",
+        "details": {
+          "evidence_required": true
+        }
+      },
+      {
+        "stage": "source_validation",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+        "status": "completed",
+        "elapsed_ms": 0,
+        "reason_code": "ok",
+        "details": {
+          "checked_before_values": true
+        }
+      },
+      {
+        "stage": "calculation",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+        "status": "completed",
+        "elapsed_ms": 175.7151,
+        "reason_code": "ok",
+        "details": {
+          "registered_operation_executed": true
+        }
+      },
+      {
+        "stage": "result_validation",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+        "status": "completed",
+        "elapsed_ms": 0,
+        "reason_code": "ok",
+        "details": {
+          "recomputation": true
+        }
+      },
+      {
+        "stage": "answer",
+        "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+        "status": "completed",
+        "elapsed_ms": 0,
+        "reason_code": "ok",
+        "details": {
+          "financial_result_present": true
+        }
+      }
+    ],
+    "context_digest": "a0fddcad9d21c424062b32cf013a203228fb36f703e960124c51793417e86044",
+    "source_input_digest": "d5c9e73593adb3e3ad63c0bb190af48bf70f0ebedba5c4988f870b648d6e76bc",
+    "saved_run": {
+      "resource_id": "bf288d95236cde9f977369821deed28cb52ba683a9238ea4dc106706fbb868bb.json",
+      "status": "written",
+      "private": true
+    },
+    "model_calls": 4,
+    "agent": {
+      "protocol": "kp3-agent-0.2",
+      "prompt": "bounded-financial-tools-v2",
+      "adapter": {
+        "kind": "local_llm",
+        "adapter": "ollama-financial-tools-v2",
+        "prompt": "bounded-financial-tools-v2",
+        "model": "qwen3:4b",
+        "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+        "server_version": "0.40.15",
+        "endpoint": "http://127.0.0.1:11435",
+        "think": false,
+        "temperature": 0,
+        "num_ctx": 8192
+      },
+      "limits": {
+        "max_calls": 8,
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "max_search_results": 32,
+        "max_output_tokens": 384,
+        "max_action_bytes": 4096,
+        "max_observation_bytes": 32768,
+        "max_tool_bytes": 8192
+      },
+      "decisions": 4,
+      "model_attempts": 4,
+      "mock_decisions": 0,
+      "usage": {
+        "known_input_tokens": 3829,
+        "known_output_tokens": 175,
+        "unknown_usage": 0,
+        "known_chat_requests": 4,
+        "unknown_requests": 0
+      },
+      "events": [
+        {
+          "kind": "setup_probe",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+          "elapsed_ms": 217.047,
+          "result": {
+            "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+            "model": "qwen3:4b",
+            "server_version": "0.40.15"
+          }
+        },
+        {
+          "kind": "decision",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+          "number": 1,
+          "state": "ready",
+          "action": {
+            "arguments": {
+              "query": "выручка",
+              "top_k": 32
+            },
+            "tool": "search_evidence"
+          },
+          "error": null,
+          "usage": {
+            "input_tokens": 730,
+            "output_tokens": 28
+          },
+          "chat_requests": 1,
+          "elapsed_ms": 718.384
+        },
+        {
+          "kind": "tool",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+          "tool": "search_evidence",
+          "arguments": {
+            "query": "выручка",
+            "top_k": 32
+          },
+          "result": {
+            "status": "found",
+            "reason_code": "ok",
+            "source_kind": "prepared",
+            "top_k": 32,
+            "evidence_ids": [
+              "segezha-2022-revenue-2022-ev"
+            ],
+            "candidate_metadata": [
+              {
+                "fact_id": "segezha-2022-revenue-2022",
+                "document_id": "segezha-2022",
+                "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+                "metric_id": "revenue",
+                "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+                "period": {
+                  "kind": "duration",
+                  "duration_type": "full_year",
+                  "start": "2022-01-01",
+                  "end": "2022-12-31"
+                },
+                "currency": "RUB",
+                "scale": 1000000,
+                "evidence_id": "segezha-2022-revenue-2022-ev"
+              }
+            ],
+            "fetched_invalidated": true
+          },
+          "elapsed_ms": 164.206
+        },
+        {
+          "kind": "decision",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+          "number": 2,
+          "state": "searched",
+          "action": {
+            "arguments": {
+              "fact_id": "segezha-2022-revenue-2022"
+            },
+            "tool": "get_verified_fact"
+          },
+          "error": null,
+          "usage": {
+            "input_tokens": 1087,
+            "output_tokens": 42
+          },
+          "chat_requests": 1,
+          "elapsed_ms": 1001.429
+        },
+        {
+          "kind": "tool",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+          "tool": "get_verified_fact",
+          "arguments": {
+            "fact_id": "segezha-2022-revenue-2022"
+          },
+          "result": {
+            "fact": {
+              "currency": "RUB",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "document_id": "segezha-2022",
+              "evidence_id": "segezha-2022-revenue-2022-ev",
+              "fact_id": "segezha-2022-revenue-2022",
+              "metric_id": "revenue",
+              "period": {
+                "duration_type": "full_year",
+                "end": "2022-12-31",
+                "kind": "duration",
+                "start": "2022-01-01"
+              },
+              "scale": 1000000,
+              "value": "106766",
+              "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+            },
+            "ok": true,
+            "source_checked": true
+          },
+          "elapsed_ms": 183.368
+        },
+        {
+          "kind": "decision",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+          "number": 3,
+          "state": "searched",
+          "action": {
+            "arguments": {
+              "inputs": [
+                {
+                  "fact_id": "segezha-2022-revenue-2022",
+                  "role": "fact"
+                }
+              ],
+              "operation_id": "scale_v1"
+            },
+            "tool": "calculate"
+          },
+          "error": null,
+          "usage": {
+            "input_tokens": 1093,
+            "output_tokens": 60
+          },
+          "chat_requests": 1,
+          "elapsed_ms": 1088.149
+        },
+        {
+          "kind": "receipt",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+          "receipt_id": "receipt-01ade1058d1ff54477657fcc",
+          "request_status": "evaluated",
+          "reason_code": "ok",
+          "execution_status": "completed"
+        },
+        {
+          "kind": "tool",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+          "tool": "calculate",
+          "arguments": {
+            "inputs": [
+              {
+                "fact_id": "segezha-2022-revenue-2022",
+                "role": "fact"
+              }
+            ],
+            "operation_id": "scale_v1"
+          },
+          "result": {
+            "status": "answered",
+            "reason_code": "ok",
+            "registered_operation": "scale_v1",
+            "validated": true
+          },
+          "elapsed_ms": 175.715
+        },
+        {
+          "kind": "decision",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+          "number": 4,
+          "state": "terminal",
+          "action": {
+            "arguments": {
+              "receipt_id": "receipt-01ade1058d1ff54477657fcc"
+            },
+            "tool": "finish"
+          },
+          "error": null,
+          "usage": {
+            "input_tokens": 919,
+            "output_tokens": 45
+          },
+          "chat_requests": 1,
+          "elapsed_ms": 1021.337
+        },
+        {
+          "kind": "tool",
+          "run_id": "eval16-9fe1686fa127b5e7-primary-076",
+          "tool": "finish",
+          "arguments": {
+            "receipt_id": "receipt-01ade1058d1ff54477657fcc"
+          },
+          "result": {
+            "validated": true,
+            "receipt_id": "receipt-01ade1058d1ff54477657fcc"
+          },
+          "elapsed_ms": 172.962
+        }
+      ],
+      "stop_reason": "finished",
+      "finished": true,
+      "receipt_id": "receipt-01ade1058d1ff54477657fcc"
+    }
+  },
+  "measurement": {
+    "run_manifest_sha256": "9fe1686fa127b5e70ff34d05f459296d03c1b81bdfbca14ec8dc229768e5d3fa",
+    "started_at": "2026-11-10T18:37:44.814572+00:00",
+    "finished_at": "2026-11-10T18:37:49.579296+00:00",
+    "elapsed_ms": 4763.132,
+    "cold_warm": "warm",
+    "model_state_observation": {
+      "cold_warm": "warm",
+      "source": "actual_loopback_api_ps",
+      "loaded_model_names": [
+        "qwen3:4b"
+      ]
+    },
+    "runner_status": "completed",
+    "runner_error": null,
+    "reexecuted": false
+  }
+}

@@ -1,0 +1,1205 @@
+{
+  "financial_dev": {
+    "x": 20,
+    "n": 20,
+    "scores": [
+      {
+        "case_id": "dev-01",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 2,
+        "observed_claims": 2,
+        "required_claims": 2,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-02",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 2,
+        "observed_claims": 2,
+        "required_claims": 2,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-03",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 2,
+        "observed_claims": 2,
+        "required_claims": 2,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-04",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 2,
+        "observed_claims": 2,
+        "required_claims": 2,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-05",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 2,
+        "observed_claims": 2,
+        "required_claims": 2,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-06",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 2,
+        "observed_claims": 2,
+        "required_claims": 2,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-07",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 2,
+        "observed_claims": 2,
+        "required_claims": 2,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-08",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 2,
+        "observed_claims": 2,
+        "required_claims": 2,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-09",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 2,
+        "observed_claims": 2,
+        "required_claims": 2,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-10",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 3,
+        "observed_claims": 3,
+        "required_claims": 3,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-11",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 3,
+        "observed_claims": 3,
+        "required_claims": 3,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-12",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 3,
+        "observed_claims": 3,
+        "required_claims": 3,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-13",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 3,
+        "observed_claims": 3,
+        "required_claims": 3,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-14",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 3,
+        "observed_claims": 3,
+        "required_claims": 3,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-15",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": false,
+        "numeric_correct": false,
+        "refusal_expected": true,
+        "refusal_correct": true,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 0,
+        "observed_claims": 0,
+        "required_claims": 0,
+        "complete_claims": false,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-16",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 3,
+        "observed_claims": 3,
+        "required_claims": 3,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-17",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 3,
+        "observed_claims": 3,
+        "required_claims": 3,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-18",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 3,
+        "observed_claims": 3,
+        "required_claims": 3,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-19",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 2,
+        "observed_claims": 2,
+        "required_claims": 2,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      },
+      {
+        "case_id": "dev-20",
+        "method": "calculation_v03",
+        "matched": true,
+        "errors": [],
+        "numeric_expected": true,
+        "numeric_correct": true,
+        "refusal_expected": false,
+        "refusal_correct": false,
+        "false_refusal": false,
+        "technical_completed": true,
+        "supported_claims": 2,
+        "observed_claims": 2,
+        "required_claims": 2,
+        "complete_claims": true,
+        "usage": {
+          "chat_requests": 0,
+          "unknown_requests": 0,
+          "usage": null,
+          "adapter": null
+        }
+      }
+    ]
+  },
+  "parser": {
+    "x": 8,
+    "n": 8,
+    "scores": [
+      {
+        "case_id": "input-01",
+        "matched": true,
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "quality_scope": "known separate parser control; not financial QA"
+      },
+      {
+        "case_id": "input-02",
+        "matched": true,
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "quality_scope": "known separate parser control; not financial QA"
+      },
+      {
+        "case_id": "input-03",
+        "matched": true,
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "quality_scope": "known separate parser control; not financial QA"
+      },
+      {
+        "case_id": "input-04",
+        "matched": true,
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "quality_scope": "known separate parser control; not financial QA"
+      },
+      {
+        "case_id": "input-05",
+        "matched": true,
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "quality_scope": "known separate parser control; not financial QA"
+      },
+      {
+        "case_id": "input-06",
+        "matched": true,
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "quality_scope": "known separate parser control; not financial QA"
+      },
+      {
+        "case_id": "input-07",
+        "matched": true,
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "quality_scope": "known separate parser control; not financial QA"
+      },
+      {
+        "case_id": "input-08",
+        "matched": true,
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "quality_scope": "known separate parser control; not financial QA"
+      }
+    ]
+  },
+  "scenario": {
+    "x": 12,
+    "n": 12,
+    "scores": [
+      {
+        "case_id": "scenario-01",
+        "matched": true,
+        "errors": []
+      },
+      {
+        "case_id": "scenario-02",
+        "matched": true,
+        "errors": []
+      },
+      {
+        "case_id": "scenario-03",
+        "matched": true,
+        "errors": []
+      },
+      {
+        "case_id": "scenario-04",
+        "matched": true,
+        "errors": []
+      },
+      {
+        "case_id": "scenario-05",
+        "matched": true,
+        "errors": []
+      },
+      {
+        "case_id": "scenario-06",
+        "matched": true,
+        "errors": []
+      },
+      {
+        "case_id": "scenario-07",
+        "matched": true,
+        "errors": []
+      },
+      {
+        "case_id": "scenario-08",
+        "matched": true,
+        "errors": []
+      },
+      {
+        "case_id": "scenario-09",
+        "matched": true,
+        "errors": []
+      },
+      {
+        "case_id": "scenario-10",
+        "matched": true,
+        "errors": []
+      },
+      {
+        "case_id": "scenario-11",
+        "matched": true,
+        "errors": []
+      },
+      {
+        "case_id": "scenario-12",
+        "matched": true,
+        "errors": []
+      }
+    ]
+  },
+  "retrieval": {
+    "unique_queries": 29,
+    "observed_queries": 29,
+    "evidence_at_k": {
+      "x": 46,
+      "n": 46,
+      "status": "measured"
+    },
+    "complete_retrieval_at_k": {
+      "x": 29,
+      "n": 29,
+      "status": "measured"
+    },
+    "rows": [
+      {
+        "query_id": "query-83d3ee8f666b603f5521",
+        "matched_evidence": 1,
+        "required_evidence": 1,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-b33f5dee2bd09e2e79d9",
+        "matched_evidence": 1,
+        "required_evidence": 1,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-53c0416e97f75b4c50ef",
+        "matched_evidence": 1,
+        "required_evidence": 1,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-04eaa3b665f6e0106955",
+        "matched_evidence": 1,
+        "required_evidence": 1,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-87955cd8796c2e8770e9",
+        "matched_evidence": 1,
+        "required_evidence": 1,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-8f4fb839a8fb7fd1aa1e",
+        "matched_evidence": 1,
+        "required_evidence": 1,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-75da5be10f1956ef2bd6",
+        "matched_evidence": 1,
+        "required_evidence": 1,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-db0c52abefcabcf482dc",
+        "matched_evidence": 1,
+        "required_evidence": 1,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-73ad37d301bd90b50a35",
+        "matched_evidence": 1,
+        "required_evidence": 1,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-1840ae5dc0ab614520a1",
+        "matched_evidence": 1,
+        "required_evidence": 1,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-b26c519211fbc072e028",
+        "matched_evidence": 2,
+        "required_evidence": 2,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-34094595efccfcbfa79b",
+        "matched_evidence": 2,
+        "required_evidence": 2,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-cd0a312adf6361df4f30",
+        "matched_evidence": 2,
+        "required_evidence": 2,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-1cc43f7a775d2d29d8c0",
+        "matched_evidence": 2,
+        "required_evidence": 2,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-d47236cc348d269c7a44",
+        "matched_evidence": 2,
+        "required_evidence": 2,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-f0b59fdb700b18251484",
+        "matched_evidence": 2,
+        "required_evidence": 2,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-19b8d20515a6a6ab0cac",
+        "matched_evidence": 2,
+        "required_evidence": 2,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-9fd24090997ea9c33273",
+        "matched_evidence": 2,
+        "required_evidence": 2,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-c5037c5ccd7e1a58ac05",
+        "matched_evidence": 2,
+        "required_evidence": 2,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-1ccdffcd5eb690f9f8ef",
+        "matched_evidence": 2,
+        "required_evidence": 2,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-bfc595486f259b32336f",
+        "matched_evidence": 2,
+        "required_evidence": 2,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-a67ab61b37e62992f436",
+        "matched_evidence": 2,
+        "required_evidence": 2,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-2f97d14997e86805f9af",
+        "matched_evidence": 2,
+        "required_evidence": 2,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-b0c97437363c0ef7c21d",
+        "matched_evidence": 2,
+        "required_evidence": 2,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-b5ea59c606bf4e242eb3",
+        "matched_evidence": 1,
+        "required_evidence": 1,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-9c92b4145141ba875c9e",
+        "matched_evidence": 1,
+        "required_evidence": 1,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-7d602830943b5bbdb411",
+        "matched_evidence": 2,
+        "required_evidence": 2,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-33318296be37bb02d1f5",
+        "matched_evidence": 2,
+        "required_evidence": 2,
+        "complete": true,
+        "technical_error": false
+      },
+      {
+        "query_id": "query-839f8da87a7c25e26b31",
+        "matched_evidence": 2,
+        "required_evidence": 2,
+        "complete": true,
+        "technical_error": false
+      }
+    ]
+  },
+  "extraction": {
+    "target_cells": 48,
+    "matched": 40,
+    "not_extracted": 8,
+    "candidate_cells": 48,
+    "out_of_catalog_subperiod_candidates": 8,
+    "other_wrong_target_context_candidates": 0,
+    "matrix": [
+      {
+        "document_id": "phosagro-2023",
+        "table_counts": {
+          "income": 0,
+          "cash_flow": 1
+        },
+        "candidate_cells": 2,
+        "pdf_sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+        "extractor_fingerprint": "a1fc937dbe3002e6fb582f3e273198e0316dc65b0bf79be5de88fa18d44be41f",
+        "export_sha256": "074c6a5923ca8fe03ef101515ff48679d2c2a31734958893c5eab6d7560ddfd5"
+      },
+      {
+        "document_id": "phosagro-2024",
+        "table_counts": {
+          "income": 1,
+          "cash_flow": 1
+        },
+        "candidate_cells": 6,
+        "pdf_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+        "extractor_fingerprint": "a1fc937dbe3002e6fb582f3e273198e0316dc65b0bf79be5de88fa18d44be41f",
+        "export_sha256": "7c32620eb2705a5e65a22af9d3a6efd26f60cd89a144865a0da1bdbd154ce405"
+      },
+      {
+        "document_id": "phosagro-2025",
+        "table_counts": {
+          "income": 1,
+          "cash_flow": 1
+        },
+        "candidate_cells": 6,
+        "pdf_sha256": "c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+        "extractor_fingerprint": "a1fc937dbe3002e6fb582f3e273198e0316dc65b0bf79be5de88fa18d44be41f",
+        "export_sha256": "b9b3e8b10a20266245a75eef0f3d63d076bdeb3ec742574a3af7c259ee249725"
+      },
+      {
+        "document_id": "phosagro-2025-q1",
+        "table_counts": {
+          "income": 0,
+          "cash_flow": 1
+        },
+        "candidate_cells": 2,
+        "pdf_sha256": "8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+        "extractor_fingerprint": "a1fc937dbe3002e6fb582f3e273198e0316dc65b0bf79be5de88fa18d44be41f",
+        "export_sha256": "3569f6e70f2a6cbfa85c0b75ef700e91f953612c9d009931018df6feedb03396"
+      },
+      {
+        "document_id": "phosagro-2025-h1",
+        "table_counts": {
+          "income": 1,
+          "cash_flow": 1
+        },
+        "candidate_cells": 10,
+        "pdf_sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+        "extractor_fingerprint": "a1fc937dbe3002e6fb582f3e273198e0316dc65b0bf79be5de88fa18d44be41f",
+        "export_sha256": "4e9cbf499f581efa6e163cff081b96141db6ef5e9269a68dd4947027e5c96a04"
+      },
+      {
+        "document_id": "phosagro-2025-9m",
+        "table_counts": {
+          "income": 1,
+          "cash_flow": 1
+        },
+        "candidate_cells": 10,
+        "pdf_sha256": "147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+        "extractor_fingerprint": "a1fc937dbe3002e6fb582f3e273198e0316dc65b0bf79be5de88fa18d44be41f",
+        "export_sha256": "8c3e910e0a46f4e98424f9f74adbc937e5bb9f83e19da832235d59f6c97ceecc"
+      },
+      {
+        "document_id": "segezha-2021",
+        "table_counts": {
+          "income": 1,
+          "cash_flow": 2
+        },
+        "candidate_cells": 6,
+        "pdf_sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+        "extractor_fingerprint": "a1fc937dbe3002e6fb582f3e273198e0316dc65b0bf79be5de88fa18d44be41f",
+        "export_sha256": "ecaaaac096bc4b63e05e4df1c9edb7bece414a5ec024a1772564c44708773ab6"
+      },
+      {
+        "document_id": "segezha-2022",
+        "table_counts": {
+          "income": 1,
+          "cash_flow": 2
+        },
+        "candidate_cells": 6,
+        "pdf_sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+        "extractor_fingerprint": "a1fc937dbe3002e6fb582f3e273198e0316dc65b0bf79be5de88fa18d44be41f",
+        "export_sha256": "1d37680ff9efe2a527039c6862e5d7a5770bda313b667ccc53e63e8d1362f721"
+      }
+    ],
+    "cell_coverage": [
+      {
+        "evidence_id": "phosagro-2023-revenue-2023-ev",
+        "exact_cell_matches": 0,
+        "matched": false
+      },
+      {
+        "evidence_id": "phosagro-2023-revenue-2022-ev",
+        "exact_cell_matches": 0,
+        "matched": false
+      },
+      {
+        "evidence_id": "phosagro-2023-operating_profit-2023-ev",
+        "exact_cell_matches": 0,
+        "matched": false
+      },
+      {
+        "evidence_id": "phosagro-2023-operating_profit-2022-ev",
+        "exact_cell_matches": 0,
+        "matched": false
+      },
+      {
+        "evidence_id": "phosagro-2023-operating_cash_flow-2023-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2023-operating_cash_flow-2022-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2024-revenue-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2024-revenue-2023-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2024-operating_profit-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2024-operating_profit-2023-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2024-operating_cash_flow-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2024-operating_cash_flow-2023-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-revenue-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-revenue-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-operating_profit-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-operating_profit-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-operating_cash_flow-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-operating_cash_flow-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-q1-revenue-2025-ev",
+        "exact_cell_matches": 0,
+        "matched": false
+      },
+      {
+        "evidence_id": "phosagro-2025-q1-revenue-2024-ev",
+        "exact_cell_matches": 0,
+        "matched": false
+      },
+      {
+        "evidence_id": "phosagro-2025-q1-operating_profit-2025-ev",
+        "exact_cell_matches": 0,
+        "matched": false
+      },
+      {
+        "evidence_id": "phosagro-2025-q1-operating_profit-2024-ev",
+        "exact_cell_matches": 0,
+        "matched": false
+      },
+      {
+        "evidence_id": "phosagro-2025-q1-operating_cash_flow-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-q1-operating_cash_flow-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-h1-revenue-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-h1-revenue-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-h1-operating_profit-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-h1-operating_profit-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-h1-operating_cash_flow-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-h1-operating_cash_flow-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-9m-revenue-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-9m-revenue-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-9m-operating_profit-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-9m-operating_profit-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-9m-operating_cash_flow-2025-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "phosagro-2025-9m-operating_cash_flow-2024-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2021-revenue-2021-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2021-revenue-2020-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2021-operating_profit-2021-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2021-operating_profit-2020-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2021-operating_cash_flow-2021-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2021-operating_cash_flow-2020-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2022-revenue-2022-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2022-revenue-2021-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2022-operating_profit-2022-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2022-operating_profit-2021-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2022-operating_cash_flow-2022-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      },
+      {
+        "evidence_id": "segezha-2022-operating_cash_flow-2021-ev",
+        "exact_cell_matches": 1,
+        "matched": true
+      }
+    ],
+    "annotation_reused_as_extraction": false,
+    "measurement": "Automatic geometry/lexicon re-run on8 unchanged pinned worker exports; not fresh worker execution, not reading prepared annotation as extraction",
+    "new_worker_invocations": 0,
+    "new_facts_admitted": 0
+  },
+  "model_calls": 0,
+  "scope": "Separate known controls, no addition to40 financial questions or138attempts"
+}

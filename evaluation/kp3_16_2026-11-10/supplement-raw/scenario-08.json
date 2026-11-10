@@ -1,0 +1,78 @@
+{
+  "case_id": "scenario-08",
+  "observation": {
+    "schema_version": "kp3-scenario-outcome-0.1",
+    "run_id": "eval16-scenario-08",
+    "status": "error",
+    "reason_code": "invalid_capital",
+    "data_mode": "own_synthetic",
+    "label": "ИСКУССТВЕННЫЕ ДАННЫЕ / ВИРТУАЛЬНЫЙ СЦЕНАРИЙ",
+    "request": {
+      "schema_version": "kp3-scenario-request-0.1",
+      "financial_run_id": "scenario12-own-financial",
+      "data_mode": "own_synthetic",
+      "decision_at": "2025-06-04T19:30:00+03:00",
+      "parameters": {
+        "initial_cash": "-1",
+        "allocation": "0.20",
+        "threshold_pct": "10",
+        "fee_fixed": "1",
+        "slippage_bps": "0",
+        "lot_size": 1,
+        "window_start": "2025-06-04T10:00:00+03:00",
+        "window_end": "2025-06-09T18:00:00+03:00"
+      }
+    },
+    "context_digest": "8250746030616dc8b39ab738f7b2a2b4de508923aaa1bf8184055f9aba14b889",
+    "financial": null,
+    "eligibility": null,
+    "signal": null,
+    "scenario": null,
+    "comparisons": null,
+    "trace": [
+      {
+        "run_id": "eval16-scenario-08",
+        "stage": "financial_validation",
+        "status": "skipped",
+        "reason_code": "not_reached",
+        "elapsed_ms": 0
+      },
+      {
+        "run_id": "eval16-scenario-08",
+        "stage": "eligibility",
+        "status": "skipped",
+        "reason_code": "not_reached",
+        "elapsed_ms": 0
+      },
+      {
+        "run_id": "eval16-scenario-08",
+        "stage": "ledger",
+        "status": "skipped",
+        "reason_code": "not_reached",
+        "elapsed_ms": 0
+      },
+      {
+        "run_id": "eval16-scenario-08",
+        "stage": "result_validation",
+        "status": "skipped",
+        "reason_code": "not_reached",
+        "elapsed_ms": 0
+      },
+      {
+        "run_id": "eval16-scenario-08",
+        "stage": "persistence",
+        "status": "completed",
+        "reason_code": "written",
+        "elapsed_ms": 0
+      }
+    ],
+    "saved_run": {
+      "resource_id": "be67b36365274fc61ed37584a6f2b8334edc208193e983f15e373775e29b54de.json",
+      "private": true,
+      "status": "written"
+    },
+    "model_calls": 0
+  },
+  "error": null,
+  "elapsed_ms": 8.3461
+}

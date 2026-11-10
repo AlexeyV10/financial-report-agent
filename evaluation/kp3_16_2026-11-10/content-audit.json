@@ -1,0 +1,11 @@
+{
+  "files": 261,
+  "primary_files": 0,
+  "primary_fulltext_exports": 0,
+  "weights": 0,
+  "secrets": 0,
+  "absolute_worktree_paths_in_new_reports": 0,
+  "raw_scope": "Minimal own annotation/Fact/Evidence/structured actions and traces only; native narrative absent",
+  "gold_runtime_policy": "No gold/expected/targets sent to methods; raw collected before independent replay",
+  "reporting_format_fix": "Only table whitespace/latency display rounding, exact JSON analysis byte-identical; original first Markdown kept privately"
+}

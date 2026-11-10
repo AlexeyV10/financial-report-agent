@@ -1,0 +1,5 @@
+{"case_id": "own-direct_fact_v1", "matched": true, "execution": "completed", "request": "evaluated", "financial": "answered", "reason": "ok", "model_calls": 0, "searches": [1, 2]}
+{"case_id": "own-absolute_change_v1", "matched": true, "execution": "completed", "request": "evaluated", "financial": "answered", "reason": "ok", "model_calls": 0, "searches": [1, 2]}
+{"case_id": "own-relative_change_v1", "matched": true, "execution": "completed", "request": "evaluated", "financial": "answered", "reason": "ok", "model_calls": 0, "searches": [1, 2]}
+{"case_id": "own-scale_v1", "matched": true, "execution": "completed", "request": "evaluated", "financial": "answered", "reason": "ok", "model_calls": 0, "searches": [1, 2]}
+{"case_id": "own-operating_margin_v1", "matched": true, "execution": "completed", "request": "evaluated", "financial": "answered", "reason": "ok", "model_calls": 0, "searches": [1, 2]}

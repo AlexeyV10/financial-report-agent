@@ -1,0 +1,1046 @@
+{
+  "schema_version": "kp3-run-manifest-0.1",
+  "run_name": "kp3-16-known-corpus-first-v1",
+  "created_at": "2026-11-10T18:34:02.624796+00:00",
+  "source_base_commit": "f22395940e958e89f0465fb087554dbe47aba167",
+  "freeze_path": "evaluation/protocols/kp3_eval_v1/freeze-manifest.json",
+  "freeze_sha256": "072a1caf92423d2e41ae12625cc485d81f0bc3c321c3cce5cbb1db663bcf1fbe",
+  "runner_file_sha256": {
+    "evaluation/kp3_run_v1/__init__.py": "30956ca5bc1e78c1f7a91b7df33c2cfb3ff8b2d2c12e928fd7c8979b97921aef",
+    "evaluation/kp3_run_v1/ledger.py": "c51153b40ea70d13d9afceb3ae74ec94ca7ad484b7b258dd3aadcccd83af3ba4",
+    "evaluation/kp3_run_v1/runtime.py": "5950cef2e9bfa781224f7cd96d62feff7ace790143e23dd67b862c235f9e5952",
+    "evaluation/kp3_run_v1/supplement.py": "6ff8a1059ca74acfce54cf1f25835413886e2ed6a497e84e614b8fef312f33f1",
+    "scripts/run_kp3_comparison.py": "a9bafada77b866f4126201d2f93e84cef14e168c54cd548a23b20b67de04b5c9",
+    "scripts/collect_kp3_supplement.py": "ad163e6da238cd5886569e09dfb8b9a080cac2a4c449971af8e5b0e41868ae34",
+    "tests/test_comparison_runner16.py": "1f808887d709ec27dd90287a886358462f7e7d82869fb4e52d421ff30dd7ecae"
+  },
+  "setup_file_sha256": {
+    "tmp\\service-context.json": "e2746b4d3194b60654839b8a3defd90b91f05da166bc843a2e1aa1f99622dca9",
+    "tmp\\freeze-resources16.json": "9d766c6861d39f8ca567d6002f01767ba21661fcd791f4cae290d250df6f3327",
+    "tmp\\local-resources.json": "82f5adc438ef05ef5b4721040fd8c3dcea2cf1ee77dbea977050f56d327f5677"
+  },
+  "logical_resources": {
+    "pdf:phosagro-2023": {
+      "kind": "exact_primary_pdf",
+      "sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+      "byte_length": 2020478
+    },
+    "export:phosagro-2023": {
+      "kind": "extraction_export",
+      "sha256": "074c6a5923ca8fe03ef101515ff48679d2c2a31734958893c5eab6d7560ddfd5",
+      "byte_length": 317360
+    },
+    "pdf:phosagro-2024": {
+      "kind": "exact_primary_pdf",
+      "sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "byte_length": 1521928
+    },
+    "export:phosagro-2024": {
+      "kind": "extraction_export",
+      "sha256": "7c32620eb2705a5e65a22af9d3a6efd26f60cd89a144865a0da1bdbd154ce405",
+      "byte_length": 382781
+    },
+    "pdf:phosagro-2025": {
+      "kind": "exact_primary_pdf",
+      "sha256": "c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+      "byte_length": 3574640
+    },
+    "export:phosagro-2025": {
+      "kind": "extraction_export",
+      "sha256": "b9b3e8b10a20266245a75eef0f3d63d076bdeb3ec742574a3af7c259ee249725",
+      "byte_length": 359506
+    },
+    "pdf:phosagro-2025-q1": {
+      "kind": "exact_primary_pdf",
+      "sha256": "8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+      "byte_length": 1839208
+    },
+    "export:phosagro-2025-q1": {
+      "kind": "extraction_export",
+      "sha256": "3569f6e70f2a6cbfa85c0b75ef700e91f953612c9d009931018df6feedb03396",
+      "byte_length": 172306
+    },
+    "pdf:phosagro-2025-h1": {
+      "kind": "exact_primary_pdf",
+      "sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+      "byte_length": 1705179
+    },
+    "export:phosagro-2025-h1": {
+      "kind": "extraction_export",
+      "sha256": "4e9cbf499f581efa6e163cff081b96141db6ef5e9269a68dd4947027e5c96a04",
+      "byte_length": 267387
+    },
+    "pdf:phosagro-2025-9m": {
+      "kind": "exact_primary_pdf",
+      "sha256": "147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+      "byte_length": 2158562
+    },
+    "export:phosagro-2025-9m": {
+      "kind": "extraction_export",
+      "sha256": "8c3e910e0a46f4e98424f9f74adbc937e5bb9f83e19da832235d59f6c97ceecc",
+      "byte_length": 267380
+    },
+    "pdf:segezha-2021": {
+      "kind": "exact_primary_pdf",
+      "sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+      "byte_length": 1856644
+    },
+    "export:segezha-2021": {
+      "kind": "extraction_export",
+      "sha256": "ecaaaac096bc4b63e05e4df1c9edb7bece414a5ec024a1772564c44708773ab6",
+      "byte_length": 510608
+    },
+    "pdf:segezha-2022": {
+      "kind": "exact_primary_pdf",
+      "sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+      "byte_length": 1819697
+    },
+    "export:segezha-2022": {
+      "kind": "extraction_export",
+      "sha256": "1d37680ff9efe2a527039c6862e5d7a5770bda313b667ccc53e63e8d1362f721",
+      "byte_length": 484578
+    },
+    "index:prepared": {
+      "kind": "retrieval_prepared",
+      "sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+      "byte_length": 139264
+    },
+    "index_manifest:prepared": {
+      "kind": "retrieval_manifest",
+      "sha256": "ebe5f4a987b92fe5d87c4a0f8949d57481dc2f45c7070118aef35fcb51f26d89",
+      "byte_length": 216
+    },
+    "index:automatic": {
+      "kind": "retrieval_automatic",
+      "sha256": "7d1dc62d3020272dec4695aefbbb8a523000c08c9ef208b21dcc11dd1da81943",
+      "byte_length": 147456
+    },
+    "index_manifest:automatic": {
+      "kind": "retrieval_manifest",
+      "sha256": "0ddcb2aed31acbe011f887299c074d135cb8afc5179c0e85e96345f43ef4f531",
+      "byte_length": 216
+    },
+    "model:server": {
+      "kind": "existing_ollama_executable",
+      "sha256": "544216ca2082b8bc19b4ba94b513f0098fa06774b232f3c140090e3449e322a5",
+      "byte_length": 41140104
+    },
+    "model:tag_manifest": {
+      "kind": "ollama_tag_manifest",
+      "sha256": "31d9857b5705086d352d4d6db04e86c5d0f6a2b5d59a4dc7ce5cdb271ccf9141",
+      "byte_length": 1022
+    },
+    "model:blob:e18a783aae5525fd2852fc94c985541a77e791e034abc2d3056474d59de336fc": {
+      "kind": "application/vnd.docker.container.image.v1+json",
+      "sha256": "e18a783aae5525fd2852fc94c985541a77e791e034abc2d3056474d59de336fc",
+      "byte_length": 487
+    },
+    "model:blob:3e4cb14174460404e7a233e531675303b2fbf7749c02f91864fe311ab6344e4f": {
+      "kind": "application/vnd.ollama.image.model",
+      "sha256": "3e4cb14174460404e7a233e531675303b2fbf7749c02f91864fe311ab6344e4f",
+      "byte_length": 2497280480
+    },
+    "model:blob:2d54db2b9bb29ce7db54fea63a891f5859603813c555b1f88b5e0994652897f9": {
+      "kind": "application/vnd.ollama.image.template",
+      "sha256": "2d54db2b9bb29ce7db54fea63a891f5859603813c555b1f88b5e0994652897f9",
+      "byte_length": 1506
+    },
+    "model:blob:d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12": {
+      "kind": "application/vnd.ollama.image.license",
+      "sha256": "d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12",
+      "byte_length": 11338
+    },
+    "model:blob:cff3f395ef3756ab63e58b0ad1b32bb6f802905cae1472e6a12034e4246fbbdb": {
+      "kind": "application/vnd.ollama.image.params",
+      "sha256": "cff3f395ef3756ab63e58b0ad1b32bb6f802905cae1472e6a12034e4246fbbdb",
+      "byte_length": 120
+    },
+    "model:blob:359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7": {
+      "kind": "application/vnd.docker.distribution.manifest.v2+json",
+      "sha256": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "byte_length": 859
+    }
+  },
+  "order": [
+    {
+      "attempt_id": "primary-001",
+      "case_id": "cmp-09",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-002",
+      "case_id": "cmp-09",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-003",
+      "case_id": "cmp-09",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-004",
+      "case_id": "cmp-38",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-005",
+      "case_id": "cmp-38",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-006",
+      "case_id": "cmp-38",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-007",
+      "case_id": "cmp-14",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-008",
+      "case_id": "cmp-14",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-009",
+      "case_id": "cmp-14",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-010",
+      "case_id": "cmp-40",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-011",
+      "case_id": "cmp-40",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-012",
+      "case_id": "cmp-40",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-013",
+      "case_id": "cmp-10",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-014",
+      "case_id": "cmp-10",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-015",
+      "case_id": "cmp-10",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-016",
+      "case_id": "cmp-17",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-017",
+      "case_id": "cmp-17",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-018",
+      "case_id": "cmp-17",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-019",
+      "case_id": "cmp-01",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-020",
+      "case_id": "cmp-01",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-021",
+      "case_id": "cmp-01",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-022",
+      "case_id": "cmp-22",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-023",
+      "case_id": "cmp-22",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-024",
+      "case_id": "cmp-22",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-025",
+      "case_id": "cmp-36",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-026",
+      "case_id": "cmp-36",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-027",
+      "case_id": "cmp-36",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-028",
+      "case_id": "cmp-30",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-029",
+      "case_id": "cmp-30",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-030",
+      "case_id": "cmp-30",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-031",
+      "case_id": "cmp-02",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-032",
+      "case_id": "cmp-02",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-033",
+      "case_id": "cmp-02",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-034",
+      "case_id": "cmp-25",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-035",
+      "case_id": "cmp-25",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-036",
+      "case_id": "cmp-25",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-037",
+      "case_id": "cmp-04",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-038",
+      "case_id": "cmp-04",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-039",
+      "case_id": "cmp-04",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-040",
+      "case_id": "cmp-33",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-041",
+      "case_id": "cmp-33",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-042",
+      "case_id": "cmp-33",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-043",
+      "case_id": "cmp-03",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-044",
+      "case_id": "cmp-03",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-045",
+      "case_id": "cmp-03",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-046",
+      "case_id": "cmp-07",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-047",
+      "case_id": "cmp-07",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-048",
+      "case_id": "cmp-07",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-049",
+      "case_id": "cmp-16",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-050",
+      "case_id": "cmp-16",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-051",
+      "case_id": "cmp-16",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-052",
+      "case_id": "cmp-06",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-053",
+      "case_id": "cmp-06",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-054",
+      "case_id": "cmp-06",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-055",
+      "case_id": "cmp-08",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-056",
+      "case_id": "cmp-08",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-057",
+      "case_id": "cmp-08",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-058",
+      "case_id": "cmp-27",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-059",
+      "case_id": "cmp-27",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-060",
+      "case_id": "cmp-27",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-061",
+      "case_id": "cmp-32",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-062",
+      "case_id": "cmp-32",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-063",
+      "case_id": "cmp-32",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-064",
+      "case_id": "cmp-19",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-065",
+      "case_id": "cmp-19",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-066",
+      "case_id": "cmp-19",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-067",
+      "case_id": "cmp-23",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-068",
+      "case_id": "cmp-23",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-069",
+      "case_id": "cmp-23",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-070",
+      "case_id": "cmp-34",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-071",
+      "case_id": "cmp-34",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-072",
+      "case_id": "cmp-34",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-073",
+      "case_id": "cmp-05",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-074",
+      "case_id": "cmp-05",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-075",
+      "case_id": "cmp-05",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-076",
+      "case_id": "cmp-28",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-077",
+      "case_id": "cmp-28",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-078",
+      "case_id": "cmp-28",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-079",
+      "case_id": "cmp-13",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-080",
+      "case_id": "cmp-13",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-081",
+      "case_id": "cmp-13",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-082",
+      "case_id": "cmp-29",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-083",
+      "case_id": "cmp-29",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-084",
+      "case_id": "cmp-29",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-085",
+      "case_id": "cmp-18",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-086",
+      "case_id": "cmp-18",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-087",
+      "case_id": "cmp-18",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-088",
+      "case_id": "cmp-11",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-089",
+      "case_id": "cmp-11",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-090",
+      "case_id": "cmp-11",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-091",
+      "case_id": "cmp-26",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-092",
+      "case_id": "cmp-26",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-093",
+      "case_id": "cmp-26",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-094",
+      "case_id": "cmp-15",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-095",
+      "case_id": "cmp-15",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-096",
+      "case_id": "cmp-15",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-097",
+      "case_id": "cmp-35",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-098",
+      "case_id": "cmp-35",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-099",
+      "case_id": "cmp-35",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-100",
+      "case_id": "cmp-39",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-101",
+      "case_id": "cmp-39",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-102",
+      "case_id": "cmp-39",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-103",
+      "case_id": "cmp-21",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-104",
+      "case_id": "cmp-21",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-105",
+      "case_id": "cmp-21",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-106",
+      "case_id": "cmp-24",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-107",
+      "case_id": "cmp-24",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-108",
+      "case_id": "cmp-24",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-109",
+      "case_id": "cmp-31",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-110",
+      "case_id": "cmp-31",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-111",
+      "case_id": "cmp-31",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-112",
+      "case_id": "cmp-37",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-113",
+      "case_id": "cmp-37",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-114",
+      "case_id": "cmp-37",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-115",
+      "case_id": "cmp-12",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-116",
+      "case_id": "cmp-12",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-117",
+      "case_id": "cmp-12",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-118",
+      "case_id": "cmp-20",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-119",
+      "case_id": "cmp-20",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-120",
+      "case_id": "cmp-20",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "warm-01",
+      "case_id": "cmp-02",
+      "method": "C",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-02",
+      "case_id": "cmp-02",
+      "method": "A",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-03",
+      "case_id": "cmp-02",
+      "method": "B",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-04",
+      "case_id": "cmp-12",
+      "method": "C",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-05",
+      "case_id": "cmp-12",
+      "method": "A",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-06",
+      "case_id": "cmp-12",
+      "method": "B",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-07",
+      "case_id": "cmp-13",
+      "method": "C",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-08",
+      "case_id": "cmp-13",
+      "method": "A",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-09",
+      "case_id": "cmp-13",
+      "method": "B",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-10",
+      "case_id": "cmp-19",
+      "method": "C",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-11",
+      "case_id": "cmp-19",
+      "method": "A",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-12",
+      "case_id": "cmp-19",
+      "method": "B",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-13",
+      "case_id": "cmp-26",
+      "method": "C",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-14",
+      "case_id": "cmp-26",
+      "method": "A",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-15",
+      "case_id": "cmp-26",
+      "method": "B",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-16",
+      "case_id": "cmp-29",
+      "method": "C",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-17",
+      "case_id": "cmp-29",
+      "method": "A",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-18",
+      "case_id": "cmp-29",
+      "method": "B",
+      "phase": "warm_repeat"
+    }
+  ],
+  "order_digest": "6cfa0abdbfbaae9c94362322a2f58e2586249eecd624bd5ac725df2944f70f0e",
+  "suite_digest": "af4f27946b8892043ab40ff6bdd5548471f227ae0d99147c6dbfeb14ffb2b814",
+  "budget": {
+    "max_A_requests": 46,
+    "max_C_requests": 368,
+    "max_chat_requests": 414,
+    "max_output_tokens": 158976,
+    "max_model_input_context_per_call": 8192,
+    "max_serial_wall_s": 24840,
+    "unknown_usage_policy": "keep_unknown_and_conservatively_reserve_remaining_per_method_cap",
+    "new_actual_calls_authorized_on14": false
+  },
+  "limits": {
+    "C": {
+      "max_calls": 8,
+      "timeout_s": 180,
+      "per_call_s": 60,
+      "max_search_results": 32,
+      "max_output_tokens": 384,
+      "max_action_bytes": 4096,
+      "max_observation_bytes": 32768,
+      "max_tool_bytes": 8192
+    },
+    "A": {
+      "timeout_s": 180,
+      "per_call_s": 60,
+      "top_k": 32,
+      "max_output_tokens": 384,
+      "max_choice_bytes": 4096,
+      "max_observation_bytes": 32768
+    },
+    "B": {
+      "outer_timeout_s": 180,
+      "model_calls": 0
+    }
+  },
+  "private_run_dir": "tmp/comparison16-first",
+  "context_path": "tmp/service-context.json",
+  "resources_path": "tmp/freeze-resources16.json",
+  "environment": {
+    "python": "3.14.7",
+    "sqlite": "3.53.4",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel"
+  },
+  "method_input_policy": "Only source/answers; registered native methods. No gold/target/profile/fault overrides.",
+  "resume_policy": "Exclusive claim before invocation; existing result recovered, otherwise interrupted unknown; never rerun a claimed slot",
+  "latency_policy": "perf_counter around full registered method invocation, excluding api_ps/claim/raw serialization; actual stage elapsed retained; setup resource hashing separately",
+  "cold_warm_policy": "Actual api_ps before each attempt, or unknown; phase label never used as evidence of model load",
+  "new_models": 0,
+  "new_packages": 0,
+  "reserved_unseen_real": 0
+}

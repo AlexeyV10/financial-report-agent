@@ -1,0 +1,19 @@
+{
+  "errors": [
+    {
+      "phase": "hardware_preflight_before_answers",
+      "error": "CIM sandbox access denied",
+      "resolution": "Same read-only request repeated with real escalation; CPU/RAM/GPU recorded",
+      "financial_attempts_affected": 0
+    },
+    {
+      "phase": "post_collection_presentation",
+      "error": "Blank lines separated Markdown table rows",
+      "resolution": "First Markdown preserved privately; new analysis-final table; initial/final analysisJSON byte-identical; no raw/gold/runtime changes",
+      "financial_attempts_affected": 0
+    }
+  ],
+  "first_model_failures": "none_observed_under_frozen_typed_criteria",
+  "old_resource_warning": "HTTPError404 ResourceWarning retained in unit log, not failure",
+  "auto_review_rejections": 0
+}

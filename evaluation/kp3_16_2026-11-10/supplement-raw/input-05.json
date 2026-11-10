@@ -1,0 +1,101 @@
+{
+  "case_id": "input-05",
+  "observation": {
+    "schema_version": "kp3-binding-0.1",
+    "status": "awaiting_clarification",
+    "reason_code": "missing_organization",
+    "normalized_input": {
+      "schema_version": "kp3-input-0.1",
+      "input_id": "input-05",
+      "original_question": "Какая выручка по МСФО за 2024 год из отчёта за 2024 год? Снимок.",
+      "input_kind": "text",
+      "raw_fields": null,
+      "fields": {
+        "organization": null,
+        "consolidation": null,
+        "accounting_standard": "IFRS",
+        "operation_id": "direct_fact_v1",
+        "metric_ids": [
+          "revenue"
+        ],
+        "definition_ids": null,
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": null,
+        "version_policy": "explicit_versions",
+        "source_unit": null,
+        "result_unit": null,
+        "mode": "snapshot",
+        "as_of": null,
+        "comparability_id": null
+      },
+      "field_origins": {
+        "organization": "unset",
+        "consolidation": "unset",
+        "accounting_standard": "text",
+        "operation_id": "text",
+        "metric_ids": "text",
+        "definition_ids": "unset",
+        "periods": "text",
+        "documents": "unset",
+        "version_policy": "text",
+        "source_unit": "unset",
+        "result_unit": "unset",
+        "mode": "text",
+        "as_of": "unset",
+        "comparability_id": "unset"
+      },
+      "assumptions": [],
+      "assumption_origin": "none",
+      "hints": {
+        "years": [
+          2024
+        ],
+        "as_of_text": null,
+        "document_report_year": 2024,
+        "organization_unmatched": null
+      },
+      "issues": [
+        {
+          "field": "organization",
+          "code": "missing_organization",
+          "message": "Имя не разрешено однозначно."
+        }
+      ],
+      "unsupported_reasons": [],
+      "unfulfilled_requests": [],
+      "history": [],
+      "catalog_digest": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+      "language_version": "ru-input-v1"
+    },
+    "clarifications": [
+      {
+        "field": "organization",
+        "code": "missing_organization",
+        "message": "Выберите одну организацию из подготовленного каталога.",
+        "options": [
+          {
+            "value": "phosagro_group",
+            "label": "ПАО «ФосАгро» и дочерние общества"
+          },
+          {
+            "value": "segezha_group",
+            "label": "ПАО «Сегежа Групп» и дочерние общества"
+          }
+        ]
+      }
+    ],
+    "request": null,
+    "assumptions": [],
+    "calculations_performed": false,
+    "financial_status": null
+  },
+  "error": null,
+  "elapsed_ms": 4.5832
+}

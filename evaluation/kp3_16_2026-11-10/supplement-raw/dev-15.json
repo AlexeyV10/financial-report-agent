@@ -1,0 +1,16 @@
+{
+  "case_id": "dev-15",
+  "observation": {
+    "schema_version": "0.3",
+    "run_id": "dev-15",
+    "request_id": "dev-15",
+    "execution_status": "completed",
+    "financial_status": "unsupported",
+    "reason_code": "nonpositive_base",
+    "clarification_fields": [],
+    "technical_details": null,
+    "financial_result": null
+  },
+  "error": null,
+  "elapsed_ms": 1.2458
+}
