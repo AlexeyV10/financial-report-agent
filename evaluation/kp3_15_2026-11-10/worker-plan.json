@@ -1,0 +1,15 @@
+{
+  "schema_version": "kp3-worker-probe-plan-0.1",
+  "variants": [
+    "responsive_control",
+    "entered_worker_terminated_before_late_write"
+  ],
+  "trusted_code": "evaluation/kp3_probes_v1/workers.py",
+  "operation": "existing_agent.bounded",
+  "delay_s": 1.5,
+  "deadline_s": 0.8,
+  "observe_after_return_s": 1.7,
+  "expected": "control completes; slow worker actually entered then timeout; no late file/result after wait",
+  "model_calls": 0,
+  "comparison16_attempts": 0
+}

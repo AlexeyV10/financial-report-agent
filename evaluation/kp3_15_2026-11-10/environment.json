@@ -1,0 +1,13 @@
+{
+  "python": "3.14.7 (main, Aug  8 2026, 21:15:19)  [MINGW GCC UCRT 16.2.0 64 bit (AMD64)]",
+  "executable_family": "MSYS2 UCRT64",
+  "sqlite": "3.53.4",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "machine": "AMD64",
+  "packages_installed": 0,
+  "model_server_started": false,
+  "pdf_downloads": 0,
+  "pdf_worker": "Unchanged separate CPython3.12.14/pdfplumber0.11.9/pdfminer20251230; existing exports reused with verified pinned identity",
+  "ui_changed": false,
+  "ui_visual_pass": "not_required_unchanged"
+}

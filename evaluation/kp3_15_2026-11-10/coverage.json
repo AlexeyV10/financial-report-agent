@@ -1,0 +1,1080 @@
+{
+  "scope": "Declared15variants and registry mapping, not independent model accuracy",
+  "by_family": {
+    "positive": {
+      "planned": 7,
+      "executed": 7,
+      "passed": 7
+    },
+    "artifacts": {
+      "planned": 13,
+      "executed": 13,
+      "passed": 13
+    },
+    "search": {
+      "planned": 2,
+      "executed": 2,
+      "passed": 2
+    },
+    "evidence": {
+      "planned": 9,
+      "executed": 9,
+      "passed": 9
+    },
+    "references": {
+      "planned": 15,
+      "executed": 15,
+      "passed": 15
+    },
+    "input": {
+      "planned": 20,
+      "executed": 20,
+      "passed": 20
+    },
+    "financial": {
+      "planned": 4,
+      "executed": 4,
+      "passed": 4
+    },
+    "publication": {
+      "planned": 5,
+      "executed": 5,
+      "passed": 5
+    },
+    "versions": {
+      "planned": 2,
+      "executed": 2,
+      "passed": 2
+    },
+    "premises": {
+      "planned": 5,
+      "executed": 5,
+      "passed": 5
+    },
+    "A_controller_fixture": {
+      "planned": 11,
+      "executed": 11,
+      "passed": 11
+    },
+    "C_controller_fixture": {
+      "planned": 9,
+      "executed": 9,
+      "passed": 9
+    },
+    "history": {
+      "planned": 17,
+      "executed": 17,
+      "passed": 17
+    },
+    "scenario": {
+      "planned": 17,
+      "executed": 17,
+      "passed": 17
+    },
+    "real_source": {
+      "planned": 7,
+      "executed": 7,
+      "passed": 7
+    }
+  },
+  "registry_variant_links": {
+    "unknown_id": [
+      "cell-unknown_evidence",
+      "cell-duplicate_evidence",
+      "cell-wrong_cell",
+      "cell-wrong_page",
+      "cell-wrong_sha",
+      "cell-lost_unit_header",
+      "cell-wrong_value",
+      "cell-candidate",
+      "cell-structure_checked",
+      "reference-unknown_fact",
+      "reference-duplicate_fact",
+      "reference-duplicate_role",
+      "reference-reversed_periods",
+      "reference-wrong_org",
+      "reference-legal_entity",
+      "reference-ras",
+      "reference-wrong_definition",
+      "reference-wrong_version",
+      "reference-wrong_currency",
+      "reference-wrong_scale",
+      "reference-wrong_period",
+      "reference-extra_value",
+      "reference-extra_formula",
+      "reference-extra_path",
+      "a_fixture-valid",
+      "a_fixture-unknown",
+      "a_fixture-duplicate_id",
+      "a_fixture-duplicate_role",
+      "a_fixture-wrong_roles",
+      "a_fixture-wrong_operation",
+      "a_fixture-value",
+      "a_fixture-malformed",
+      "a_fixture-large",
+      "a_fixture-bad_reply",
+      "a_fixture-timeout"
+    ],
+    "duplicate_id": [
+      "cell-unknown_evidence",
+      "cell-duplicate_evidence",
+      "cell-wrong_cell",
+      "cell-wrong_page",
+      "cell-wrong_sha",
+      "cell-lost_unit_header",
+      "cell-wrong_value",
+      "cell-candidate",
+      "cell-structure_checked",
+      "reference-unknown_fact",
+      "reference-duplicate_fact",
+      "reference-duplicate_role",
+      "reference-reversed_periods",
+      "reference-wrong_org",
+      "reference-legal_entity",
+      "reference-ras",
+      "reference-wrong_definition",
+      "reference-wrong_version",
+      "reference-wrong_currency",
+      "reference-wrong_scale",
+      "reference-wrong_period",
+      "reference-extra_value",
+      "reference-extra_formula",
+      "reference-extra_path",
+      "a_fixture-valid",
+      "a_fixture-unknown",
+      "a_fixture-duplicate_id",
+      "a_fixture-duplicate_role",
+      "a_fixture-wrong_roles",
+      "a_fixture-wrong_operation",
+      "a_fixture-value",
+      "a_fixture-malformed",
+      "a_fixture-large",
+      "a_fixture-bad_reply",
+      "a_fixture-timeout"
+    ],
+    "swapped_roles": [
+      "reference-unknown_fact",
+      "reference-duplicate_fact",
+      "reference-duplicate_role",
+      "reference-reversed_periods",
+      "reference-wrong_org",
+      "reference-legal_entity",
+      "reference-ras",
+      "reference-wrong_definition",
+      "reference-wrong_version",
+      "reference-wrong_currency",
+      "reference-wrong_scale",
+      "reference-wrong_period",
+      "reference-extra_value",
+      "reference-extra_formula",
+      "reference-extra_path",
+      "a_fixture-valid",
+      "a_fixture-unknown",
+      "a_fixture-duplicate_id",
+      "a_fixture-duplicate_role",
+      "a_fixture-wrong_roles",
+      "a_fixture-wrong_operation",
+      "a_fixture-value",
+      "a_fixture-malformed",
+      "a_fixture-large",
+      "a_fixture-bad_reply",
+      "a_fixture-timeout"
+    ],
+    "other_cell": [
+      "cell-unknown_evidence",
+      "cell-duplicate_evidence",
+      "cell-wrong_cell",
+      "cell-wrong_page",
+      "cell-wrong_sha",
+      "cell-lost_unit_header",
+      "cell-wrong_value",
+      "cell-candidate",
+      "cell-structure_checked",
+      "reference-unknown_fact",
+      "reference-duplicate_fact",
+      "reference-duplicate_role",
+      "reference-reversed_periods",
+      "reference-wrong_org",
+      "reference-legal_entity",
+      "reference-ras",
+      "reference-wrong_definition",
+      "reference-wrong_version",
+      "reference-wrong_currency",
+      "reference-wrong_scale",
+      "reference-wrong_period",
+      "reference-extra_value",
+      "reference-extra_formula",
+      "reference-extra_path"
+    ],
+    "wrong_sha_page": [
+      "cell-unknown_evidence",
+      "cell-duplicate_evidence",
+      "cell-wrong_cell",
+      "cell-wrong_page",
+      "cell-wrong_sha",
+      "cell-lost_unit_header",
+      "cell-wrong_value",
+      "cell-candidate",
+      "cell-structure_checked"
+    ],
+    "lost_header": [
+      "cell-unknown_evidence",
+      "cell-duplicate_evidence",
+      "cell-wrong_cell",
+      "cell-wrong_page",
+      "cell-wrong_sha",
+      "cell-lost_unit_header",
+      "cell-wrong_value",
+      "cell-candidate",
+      "cell-structure_checked"
+    ],
+    "extra_claim": [
+      "a_fixture-valid",
+      "a_fixture-unknown",
+      "a_fixture-duplicate_id",
+      "a_fixture-duplicate_role",
+      "a_fixture-wrong_roles",
+      "a_fixture-wrong_operation",
+      "a_fixture-value",
+      "a_fixture-malformed",
+      "a_fixture-large",
+      "a_fixture-bad_reply",
+      "a_fixture-timeout",
+      "c_fixture-valid",
+      "c_fixture-loop",
+      "c_fixture-timeout",
+      "c_fixture-bad_reply",
+      "c_fixture-wrong_finish",
+      "c_fixture-never_finish",
+      "c_fixture-forbidden_tool",
+      "c_fixture-extra_value",
+      "c_fixture-partial",
+      "scenario-default",
+      "scenario-false_signal",
+      "scenario-strict_nextopen",
+      "scenario-costs",
+      "scenario-lot",
+      "scenario-price_gap",
+      "scenario-exit_fee",
+      "scenario-before_publication",
+      "scenario-no_zone",
+      "scenario-wrong_run",
+      "scenario-value_tamper",
+      "scenario-real_mixing",
+      "scenario-negative_cash",
+      "scenario-nan_threshold",
+      "scenario-extra_prices",
+      "scenario-source_missing",
+      "scenario-source_changed"
+    ],
+    "lost_claim": [
+      "premise-increase",
+      "premise-decrease",
+      "premise-failure",
+      "premise-clarification",
+      "premise-preserve_history"
+    ],
+    "automatic_candidate": [
+      "cell-unknown_evidence",
+      "cell-duplicate_evidence",
+      "cell-wrong_cell",
+      "cell-wrong_page",
+      "cell-wrong_sha",
+      "cell-lost_unit_header",
+      "cell-wrong_value",
+      "cell-candidate",
+      "cell-structure_checked",
+      "real-all_publications",
+      "real-automatic",
+      "real-export_missing",
+      "real-export_changed",
+      "real-source_copy_missing",
+      "real-source_copy_changed",
+      "real-conflict_versions"
+    ],
+    "changed_artifact": [
+      "artifact-source_missing",
+      "artifact-source_changed",
+      "artifact-index_missing",
+      "artifact-index_changed",
+      "artifact-manifest_missing",
+      "artifact-manifest_changed",
+      "artifact-config_changed",
+      "artifact-catalog_changed",
+      "artifact-dictionary_changed",
+      "artifact-admission_changed",
+      "artifact-guarded_file",
+      "artifact-guarded_setup",
+      "artifact-code_signature",
+      "search-empty",
+      "search-partial",
+      "history-repeat",
+      "history-refresh",
+      "history-archive",
+      "history-export",
+      "history-context_change",
+      "history-units_change",
+      "history-new_nonce",
+      "history-duplicate_run",
+      "history-pending_claim",
+      "history-interrupted",
+      "history-atomic_existing",
+      "history-unsafe_id",
+      "history-duplicate_keys",
+      "history-nan",
+      "history-oversize",
+      "history-checksum",
+      "history-method_swap",
+      "real-all_publications",
+      "real-automatic",
+      "real-export_missing",
+      "real-export_changed",
+      "real-source_copy_missing",
+      "real-source_copy_changed",
+      "real-conflict_versions"
+    ],
+    "untrusted_instruction": [
+      "input-unknown_org",
+      "input-missing_org",
+      "input-unknown_document",
+      "input-duplicate_document",
+      "input-ytd",
+      "input-quarter",
+      "input-missing_period",
+      "input-ebitda",
+      "input-net_income",
+      "input-bank",
+      "input-ras",
+      "input-legal_entity",
+      "input-fx",
+      "input-percentage_points",
+      "input-form_extra",
+      "input-huge_question",
+      "input-instruction",
+      "input-code",
+      "input-url",
+      "input-path",
+      "c_fixture-valid",
+      "c_fixture-loop",
+      "c_fixture-timeout",
+      "c_fixture-bad_reply",
+      "c_fixture-wrong_finish",
+      "c_fixture-never_finish",
+      "c_fixture-forbidden_tool",
+      "c_fixture-extra_value",
+      "c_fixture-partial",
+      "history-repeat",
+      "history-refresh",
+      "history-archive",
+      "history-export",
+      "history-context_change",
+      "history-units_change",
+      "history-new_nonce",
+      "history-duplicate_run",
+      "history-pending_claim",
+      "history-interrupted",
+      "history-atomic_existing",
+      "history-unsafe_id",
+      "history-duplicate_keys",
+      "history-nan",
+      "history-oversize",
+      "history-checksum",
+      "history-method_swap"
+    ],
+    "unknown_usage": [
+      "a_fixture-valid",
+      "a_fixture-unknown",
+      "a_fixture-duplicate_id",
+      "a_fixture-duplicate_role",
+      "a_fixture-wrong_roles",
+      "a_fixture-wrong_operation",
+      "a_fixture-value",
+      "a_fixture-malformed",
+      "a_fixture-large",
+      "a_fixture-bad_reply",
+      "a_fixture-timeout",
+      "c_fixture-valid",
+      "c_fixture-loop",
+      "c_fixture-timeout",
+      "c_fixture-bad_reply",
+      "c_fixture-wrong_finish",
+      "c_fixture-never_finish",
+      "c_fixture-forbidden_tool",
+      "c_fixture-extra_value",
+      "c_fixture-partial",
+      "history-repeat",
+      "history-refresh",
+      "history-archive",
+      "history-export",
+      "history-context_change",
+      "history-units_change",
+      "history-new_nonce",
+      "history-duplicate_run",
+      "history-pending_claim",
+      "history-interrupted",
+      "history-atomic_existing",
+      "history-unsafe_id",
+      "history-duplicate_keys",
+      "history-nan",
+      "history-oversize",
+      "history-checksum",
+      "history-method_swap"
+    ],
+    "own_price_gap": [
+      "scenario-default",
+      "scenario-false_signal",
+      "scenario-strict_nextopen",
+      "scenario-costs",
+      "scenario-lot",
+      "scenario-price_gap",
+      "scenario-exit_fee",
+      "scenario-before_publication",
+      "scenario-no_zone",
+      "scenario-wrong_run",
+      "scenario-value_tamper",
+      "scenario-real_mixing",
+      "scenario-negative_cash",
+      "scenario-nan_threshold",
+      "scenario-extra_prices",
+      "scenario-source_missing",
+      "scenario-source_changed"
+    ]
+  },
+  "main_channels": {
+    "service_B": 67,
+    "calculator_only": 15,
+    "explicit_controller_mock": 20,
+    "history": 17,
+    "scenario_own": 17,
+    "real_source_variants": 7
+  },
+  "nested_real_publication_checks": 8,
+  "native_transport_cases": 2,
+  "actual_chat_requests": 0,
+  "worker_cases": 2,
+  "outcomes": [
+    {
+      "method": "A",
+      "execution": "completed",
+      "request": "evaluated",
+      "financial": "answered",
+      "reason": "ok",
+      "count": 1
+    },
+    {
+      "method": "A",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "fields_mismatch",
+      "count": 2
+    },
+    {
+      "method": "A",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "invalid_adapter_reply",
+      "count": 1
+    },
+    {
+      "method": "A",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "selection_context_mismatch",
+      "count": 1
+    },
+    {
+      "method": "A",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "selection_duplicate_id",
+      "count": 1
+    },
+    {
+      "method": "A",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "selection_duplicate_role",
+      "count": 1
+    },
+    {
+      "method": "A",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "selection_operation_mismatch",
+      "count": 1
+    },
+    {
+      "method": "A",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "selection_unknown_id",
+      "count": 1
+    },
+    {
+      "method": "A",
+      "execution": "limit",
+      "request": "error",
+      "financial": null,
+      "reason": "choice_too_large",
+      "count": 1
+    },
+    {
+      "method": "A",
+      "execution": "limit",
+      "request": "error",
+      "financial": null,
+      "reason": "timeout",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "awaiting_clarification",
+      "request": "awaiting_clarification",
+      "financial": null,
+      "reason": "fields_required",
+      "count": 4
+    },
+    {
+      "method": "B",
+      "execution": "awaiting_clarification",
+      "request": "awaiting_clarification",
+      "financial": null,
+      "reason": "missing_organization",
+      "count": 2
+    },
+    {
+      "method": "B",
+      "execution": "awaiting_clarification",
+      "request": "awaiting_clarification",
+      "financial": null,
+      "reason": "unknown_organization",
+      "count": 2
+    },
+    {
+      "method": "B",
+      "execution": "completed",
+      "request": "conflict",
+      "financial": null,
+      "reason": "duplicate_or_conflicting_facts",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "completed",
+      "request": "evaluated",
+      "financial": "answered",
+      "reason": "ok",
+      "count": 12
+    },
+    {
+      "method": "B",
+      "execution": "completed",
+      "request": "evaluated",
+      "financial": "conflict",
+      "reason": "comparability_not_established",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "completed",
+      "request": "evaluated",
+      "financial": "unsupported",
+      "reason": "currency_conversion_not_supported",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "completed",
+      "request": "evaluated",
+      "financial": "unsupported",
+      "reason": "negative_revenue_denominator",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "completed",
+      "request": "evaluated",
+      "financial": "unsupported",
+      "reason": "nonpositive_base",
+      "count": 2
+    },
+    {
+      "method": "B",
+      "execution": "completed",
+      "request": "evaluated",
+      "financial": "unsupported",
+      "reason": "zero_denominator",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "completed",
+      "request": "missing",
+      "financial": null,
+      "reason": "incomplete_evidence_context",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "completed",
+      "request": "missing",
+      "financial": null,
+      "reason": "no_compatible_fact",
+      "count": 2
+    },
+    {
+      "method": "B",
+      "execution": "completed",
+      "request": "missing",
+      "financial": null,
+      "reason": "no_matching_evidence_context",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "completed",
+      "request": "missing",
+      "financial": null,
+      "reason": "not_yet_available",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "completed",
+      "request": "missing",
+      "financial": null,
+      "reason": "publication_unknown",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "completed",
+      "request": "missing",
+      "financial": null,
+      "reason": "unverified_candidate",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "completed",
+      "request": "unsupported",
+      "financial": null,
+      "reason": "intent_not_recognized",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "completed",
+      "request": "unsupported",
+      "financial": null,
+      "reason": "scope_not_supported",
+      "count": 2
+    },
+    {
+      "method": "B",
+      "execution": "completed",
+      "request": "unsupported",
+      "financial": null,
+      "reason": "unsupported_metric",
+      "count": 2
+    },
+    {
+      "method": "B",
+      "execution": "completed",
+      "request": "unsupported",
+      "financial": null,
+      "reason": "untrusted_instruction",
+      "count": 3
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "context_artifact_changed",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "context_digest_mismatch",
+      "count": 2
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "extraction_hash_mismatch",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "extraction_missing",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "index_configuration_mismatch",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "index_hash_mismatch",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "index_manifest_invalid",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "index_manifest_missing",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "index_missing",
+      "count": 3
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "input_fields_mismatch",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "invalid_document_selection",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "invalid_publication",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "invalid_text",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "required_evidence_not_unique",
+      "count": 2
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "retrieved_cell_mismatch",
+      "count": 5
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "retrieved_evidence_mismatch",
+      "count": 2
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "run_id_exists",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "service_configuration_changed",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "service_context_changed",
+      "count": 2
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "source_missing",
+      "count": 2
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "source_version_mismatch",
+      "count": 2
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "timezone_required",
+      "count": 1
+    },
+    {
+      "method": "B",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "unknown_document_id",
+      "count": 1
+    },
+    {
+      "method": "C",
+      "execution": "completed",
+      "request": "evaluated",
+      "financial": "answered",
+      "reason": "ok",
+      "count": 2
+    },
+    {
+      "method": "C",
+      "execution": "completed",
+      "request": "missing",
+      "financial": null,
+      "reason": "incomplete_evidence_context",
+      "count": 1
+    },
+    {
+      "method": "C",
+      "execution": "error",
+      "request": "error",
+      "financial": null,
+      "reason": "invalid_adapter_reply",
+      "count": 1
+    },
+    {
+      "method": "C",
+      "execution": "limit",
+      "request": "error",
+      "financial": null,
+      "reason": "call_limit",
+      "count": 4
+    },
+    {
+      "method": "C",
+      "execution": "limit",
+      "request": "error",
+      "financial": null,
+      "reason": "timeout",
+      "count": 1
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "blocked",
+      "request": "-",
+      "financial": "-",
+      "reason": "insufficient_exit_cash",
+      "count": 1
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "blocked",
+      "request": "-",
+      "financial": "-",
+      "reason": "not_yet_available",
+      "count": 1
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "blocked",
+      "request": "-",
+      "financial": "-",
+      "reason": "price_missing",
+      "count": 1
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "completed",
+      "request": "-",
+      "financial": "-",
+      "reason": "signal_false",
+      "count": 1
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "completed",
+      "request": "-",
+      "financial": "-",
+      "reason": "signal_true",
+      "count": 4
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "completed",
+      "request": "-",
+      "financial": "conflict",
+      "reason": "duplicate_candidates",
+      "count": 1
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "completed",
+      "request": "-",
+      "financial": "conflict",
+      "reason": "entity_or_standard_mismatch",
+      "count": 2
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "completed",
+      "request": "-",
+      "financial": "conflict",
+      "reason": "incompatible_units",
+      "count": 2
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "completed",
+      "request": "-",
+      "financial": "conflict",
+      "reason": "incompatible_versions",
+      "count": 1
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "error",
+      "request": "-",
+      "financial": "-",
+      "reason": "calculation_binding_mismatch",
+      "count": 1
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "error",
+      "request": "-",
+      "financial": "-",
+      "reason": "fields_mismatch",
+      "count": 1
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "error",
+      "request": "-",
+      "financial": "-",
+      "reason": "financial_run_mismatch",
+      "count": 1
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "error",
+      "request": "-",
+      "financial": "-",
+      "reason": "invalid_capital",
+      "count": 1
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "error",
+      "request": "-",
+      "financial": "-",
+      "reason": "invalid_decimal",
+      "count": 1
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "error",
+      "request": "-",
+      "financial": "-",
+      "reason": "real_synthetic_mixing_forbidden",
+      "count": 1
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "error",
+      "request": "-",
+      "financial": "-",
+      "reason": "source_missing",
+      "count": 1
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "error",
+      "request": "-",
+      "financial": "-",
+      "reason": "source_version_mismatch",
+      "count": 1
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "error",
+      "request": "-",
+      "financial": "-",
+      "reason": "timezone_required",
+      "count": 1
+    },
+    {
+      "method": "scenario/calculation",
+      "execution": "error",
+      "request": "-",
+      "financial": null,
+      "reason": "input_invalid",
+      "count": 9
+    }
+  ],
+  "limitations": [
+    "A/C runtime tool protocol cases use explicit mocks; actual native probes only measured offline setup rejection",
+    "No LLM document-body/free narrative injection experiment; capabilities unchanged",
+    "Registry links indicate tested declared variants, not exhaustive security guarantee",
+    "Prepared own hash fixtures are not real issuer PDFs",
+    "All inputs/cases developer-known; comparison16_attempts=0"
+  ]
+}

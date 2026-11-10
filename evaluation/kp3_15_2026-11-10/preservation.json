@@ -1,0 +1,13 @@
+{
+  "parent_files": 1050,
+  "unchanged": 1047,
+  "prefixed": [
+    "README.md",
+    "STATUS.md",
+    "docs/decisions.md"
+  ],
+  "old_bytes_preserved": true,
+  "parent_worktree_clean": true,
+  "root_branch_unchanged": true,
+  "primary_resources_verified": 28
+}

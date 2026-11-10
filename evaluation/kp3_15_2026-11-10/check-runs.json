@@ -1,0 +1,258 @@
+{
+  "runs": [
+    {
+      "name": "contracts03",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_contracts.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.0652
+    },
+    {
+      "name": "method04",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_financial_method.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.0882
+    },
+    {
+      "name": "corpus05",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_corpus.py",
+        "--resource-map",
+        "tmp/local-resources.json"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.3163
+    },
+    {
+      "name": "retrieval06",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_retrieval.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.105
+    },
+    {
+      "name": "calculator07",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_calculator.py",
+        "--resources",
+        "tmp/local-resources.json"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 3.2379
+    },
+    {
+      "name": "input08",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_input.py"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.4586
+    },
+    {
+      "name": "service09",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--report",
+        "tmp/b-regression15.json"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 5.6422
+    },
+    {
+      "name": "agent10",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_agent_c.py",
+        "--report",
+        "tmp/c-regression15.json"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 9.6391
+    },
+    {
+      "name": "one-shot11",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_one_shot_a.py",
+        "--report",
+        "tmp/a-regression15.json"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 3.6755
+    },
+    {
+      "name": "scenario12",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_scenario.py",
+        "--real-context",
+        "tmp/service-context.json",
+        "--report",
+        "tmp/scenario-dev-regression15.json"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 1.3248
+    },
+    {
+      "name": "fixed",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "fixed",
+        "--source",
+        "manual"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.0947
+    },
+    {
+      "name": "synthetic",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "scenario"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.1584
+    },
+    {
+      "name": "historical-legacy",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "scenario",
+        "--case",
+        "real-source"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.1405
+    },
+    {
+      "name": "questions",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "questions"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.1647
+    },
+    {
+      "name": "replay",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "replay",
+        "--run-dir",
+        "evaluation/step12_2026-11-09/run-02-environment-retry"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.1064
+    },
+    {
+      "name": "product13",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_product.py",
+        "--context",
+        "tmp/service-context.json",
+        "--report",
+        "tmp/product-regression15.json"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 9.7502
+    },
+    {
+      "name": "evaluation14",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_evaluation.py",
+        "--report",
+        "tmp/evaluator-public-audit15.json"
+      ],
+      "exit_code": 0,
+      "passed": true,
+      "elapsed_s": 0.4951
+    }
+  ]
+}

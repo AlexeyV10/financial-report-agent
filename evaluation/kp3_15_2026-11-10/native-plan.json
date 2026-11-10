@@ -1,0 +1,32 @@
+{
+  "schema_version": "kp3-native-boundary-plan-0.1",
+  "stage": "KP3-15",
+  "source": "own07_hash_fixture_not_issuer_pdf",
+  "methods": [
+    "A",
+    "C"
+  ],
+  "server_start": false,
+  "automatic_retry": false,
+  "model_config": "data/config/local_model.json",
+  "question": "Явная собственная учебная форма.",
+  "operation": "direct_fact_v1",
+  "max_chat_requests": 5,
+  "max_output_tokens": 1920,
+  "limits": {
+    "A": {
+      "timeout_s": 20,
+      "per_call_s": 5
+    },
+    "C": {
+      "max_calls": 4,
+      "timeout_s": 20,
+      "per_call_s": 5
+    }
+  },
+  "expected": {
+    "offline": "technical error/limit; no financial result; zero chat after failed native setup probe",
+    "online": "actual pinned dev boundary; retain first outcome, never mock/replay, do not start comparison16"
+  },
+  "comparison16_attempts": 0
+}

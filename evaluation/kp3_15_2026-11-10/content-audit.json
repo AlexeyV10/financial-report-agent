@@ -1,0 +1,11 @@
+{
+  "files_checked": 190,
+  "primary_artifact_files": 0,
+  "source_body_exports": 0,
+  "model_weights": 0,
+  "secrets_added": 0,
+  "raw_scope": "Own minimal Fact/Evidence/structured traces and own injection strings only; prior successful intermediate raw retained privately",
+  "absolute_private_paths": "Redacted from first sandbox trace; unchanged earlier project snapshots carry only existing file names/hashes",
+  "huge_payload_case": "Own100000 x characters, not primary source text",
+  "review": "Additive evaluator modules never imported by answering src/app. No eval/exec or user-selected shell/URL execution."
+}

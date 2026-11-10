@@ -1,0 +1,106 @@
+{
+  "main": [
+    {
+      "name": "declare-main",
+      "command": [
+        "python3.14.7",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_boundaries.py",
+        "--declare",
+        "evaluation\\kp3_15_2026-11-10\\plan.json"
+      ]
+    },
+    {
+      "name": "campaign-initial",
+      "command": [
+        "python3.14.7",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_boundaries.py",
+        "--plan",
+        "evaluation\\kp3_15_2026-11-10\\plan.json",
+        "--report",
+        "evaluation\\kp3_15_2026-11-10\\campaign-initial\\report.json",
+        "--private",
+        "tmp/probes15-initial"
+      ]
+    },
+    {
+      "name": "campaign-corrected",
+      "command": [
+        "python3.14.7",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_boundaries.py",
+        "--plan",
+        "evaluation\\kp3_15_2026-11-10\\plan.json",
+        "--report",
+        "evaluation\\kp3_15_2026-11-10\\campaign-corrected\\report.json",
+        "--private",
+        "tmp/probes15-corrected"
+      ]
+    },
+    {
+      "name": "campaign-final-before-cleanup",
+      "command": [
+        "python3.14.7",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_boundaries.py",
+        "--plan",
+        "evaluation\\kp3_15_2026-11-10\\plan.json",
+        "--report",
+        "evaluation\\kp3_15_2026-11-10\\campaign-final\\report.json",
+        "--private",
+        "tmp/probes15-final"
+      ]
+    },
+    {
+      "name": "campaign-verified",
+      "command": [
+        "python3.14.7",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_boundaries.py",
+        "--plan",
+        "evaluation\\kp3_15_2026-11-10\\plan.json",
+        "--report",
+        "evaluation\\kp3_15_2026-11-10\\campaign-verified\\report.json",
+        "--private",
+        "tmp/probes15-verified"
+      ]
+    },
+    {
+      "name": "unit-final",
+      "command": [
+        "python3.14.7",
+        "-X",
+        "utf8",
+        "-I",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ]
+    }
+  ],
+  "old_checkers": "check-runs.json (17 actual commands)",
+  "native": "native-plan.json/native-report.json and scripts/check_kp3_transport_boundary.py",
+  "worker": "worker-plan.json/worker-report.json and scripts/check_kp3_worker_boundary.py",
+  "replay": "replay-verification.json",
+  "network": "fresh fetch/GitHub API before worktree; actual localhost native probes without server start",
+  "escalations": [
+    "Git fetch/bootstrap/worktree/delivery",
+    "Main campaign after genuine sandbox os.link WinError5, unchanged operation with real escalation",
+    "Full tests/checkers with atomic history",
+    "Actual localhost transport outside network sandbox"
+  ],
+  "no_auto_review_rejections": true
+}

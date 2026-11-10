@@ -1,0 +1,47 @@
+{
+  "stage": "KP3-15",
+  "errors": [
+    {
+      "attempt": "declaration_initial",
+      "type": "SyntaxError",
+      "location": "evaluation/kp3_probes_v1/campaign.py:nonce conditional",
+      "message": "expected else after if expression: missing whitespace before 0",
+      "runtime_probes_executed": 0,
+      "resolution": "Corrected evaluator harness whitespace before declaring plan; production unchanged"
+    },
+    {
+      "attempt": "campaign_initial",
+      "passed": 117,
+      "total": 143,
+      "sandbox_failures": 17,
+      "fixture_preparation_failures": 9,
+      "resolution": "Real escalation for os.link. Own CFO -5 belongs to comparative2023, synthetic locator lacks pdf_page, direction question implies absolute change, wrong_operation mock needed a different starting operation, early timeout may leave primary count unknown."
+    },
+    {
+      "attempt": "campaign_corrected",
+      "passed": 137,
+      "total": 143,
+      "fixture_preparation_failures": 6,
+      "resolution": "why_requested is inside assumptions; timeout moved to model invocation with .5s per_call/5s total, no production criteria changed."
+    },
+    {
+      "attempt": "unit_all_initial",
+      "total": 728,
+      "errors": 9,
+      "old_tests": 710,
+      "old_failures": 0,
+      "resolution": "Own probe SQLite connections were not closed by context-manager transaction; explicit closing+commit fixes Windows cleanup. Reproduced in new18 then all18 passed."
+    },
+    {
+      "attempt": "checker_setup_cwd",
+      "type": "FileNotFoundError",
+      "resolution": "Local orchestration first invoked from root; reran the same 17 checks from isolated15 worktree; all passed."
+    },
+    {
+      "attempt": "git_publication_diff_check",
+      "type": "log_line_ending_error",
+      "reason": "Three new replay logs had CRCRLF from decoded subprocess output and Windows text writing",
+      "resolution": "Original log bytes preserved in tmp; public logs normalized to LF, runtime/evidence statements unchanged; first code commit retained and evidence commit resumed without reset/amend"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "stage": "KP3-15",
+  "declared": 2,
+  "executed": 2,
+  "rows": [
+    {
+      "method": "A",
+      "adapter_kind": "native_pinned_local_llm_not_mock",
+      "execution_status": "error",
+      "reason_code": "adapter_unavailable",
+      "model_calls": 0,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "known_chat_requests": 0,
+        "unknown_requests": 0
+      },
+      "elapsed_ms": 2552.973,
+      "raw": "native-A.json"
+    },
+    {
+      "method": "C",
+      "adapter_kind": "native_pinned_local_llm_not_mock",
+      "execution_status": "error",
+      "reason_code": "adapter_unavailable",
+      "model_calls": 0,
+      "usage": {
+        "known_input_tokens": 0,
+        "known_output_tokens": 0,
+        "unknown_usage": 0,
+        "known_chat_requests": 0,
+        "unknown_requests": 0
+      },
+      "elapsed_ms": 2280.352,
+      "raw": "native-C.json"
+    }
+  ],
+  "known_chat_requests": 0,
+  "unknown_requests": 0,
+  "server_started": false,
+  "comparison16_attempts": 0,
+  "model_quality": "not_measured"
+}
