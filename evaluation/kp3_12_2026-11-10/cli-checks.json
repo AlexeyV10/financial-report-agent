@@ -1,0 +1,157 @@
+{
+  "total": 19,
+  "passed": 19,
+  "checks": [
+    {
+      "name": "own-default",
+      "run_id": "scenario-c0ec0a539cbe4180b626cebe8ed43dba",
+      "status": "completed",
+      "reason_code": "signal_true",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "own-no-signal",
+      "run_id": "scenario-61ca46cb53b24fe1bd538be5bd5f3e83",
+      "status": "completed",
+      "reason_code": "signal_false",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "own-fees",
+      "run_id": "scenario-f789f3ffb1d94847bf83b6470c279130",
+      "status": "completed",
+      "reason_code": "signal_true",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "own-weekend",
+      "run_id": "scenario-91f26a1917dc4f5e84a84ad03ba707ad",
+      "status": "completed",
+      "reason_code": "signal_true",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "own-before-publication",
+      "run_id": "scenario-b2ad542ac3eb4cc493affeeeca1a763c",
+      "status": "blocked",
+      "reason_code": "not_yet_available",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "own-invalid-capital",
+      "run_id": "scenario-546401dd0a7a47cba991a4de97bae1da",
+      "status": "error",
+      "reason_code": "invalid_capital",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "injected-expected",
+      "run_id": "scenario-f9a5264e45bd4f2689ad0d5c5087036a",
+      "status": "error",
+      "reason_code": "fields_mismatch",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "real-phosagro-2023",
+      "run_id": "scenario-d3f556920f90497aaf0a10d3f6a8f6a2",
+      "status": "blocked",
+      "reason_code": "publication_unknown",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "real-phosagro-2024",
+      "run_id": "scenario-8eea5a41b1a94fa99538261dea7616ce",
+      "status": "blocked",
+      "reason_code": "publication_unknown",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "real-phosagro-2025",
+      "run_id": "scenario-5fcc71ddc27345edb0d439cb806a89f1",
+      "status": "blocked",
+      "reason_code": "publication_unknown",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "real-phosagro-2025-q1",
+      "run_id": "scenario-ca2be8a132734834856755a11e827424",
+      "status": "blocked",
+      "reason_code": "publication_unknown",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "real-phosagro-2025-h1",
+      "run_id": "scenario-ed984a7a770b46a187f602e77262a63b",
+      "status": "blocked",
+      "reason_code": "publication_unknown",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "real-phosagro-2025-9m",
+      "run_id": "scenario-57e9e1dbb8b24d23a47a0c6b29968de4",
+      "status": "blocked",
+      "reason_code": "publication_unknown",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "real-segezha-2021",
+      "run_id": "scenario-f9571d04744d471ca2a18bfc33937960",
+      "status": "blocked",
+      "reason_code": "publication_unknown",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "real-segezha-2022",
+      "run_id": "scenario-5229799c991643719b3cec4bc6e20377",
+      "status": "blocked",
+      "reason_code": "publication_unknown",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "portable-C",
+      "run_id": "scenario-3b633ceaee7c422fab442296da7be4ad",
+      "status": "blocked",
+      "reason_code": "publication_unknown",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "portable-A",
+      "run_id": "scenario-bda13f2bc36e4bd1ad0846ca6e137a1a",
+      "status": "blocked",
+      "reason_code": "publication_unknown",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "tampered-financial",
+      "run_id": "scenario-4ad45d6bf1904fe78f8c98dfaa07f901",
+      "status": "error",
+      "reason_code": "calculation_binding_mismatch",
+      "model_calls": 0,
+      "passed": true
+    },
+    {
+      "name": "cli-mode-context-rejected",
+      "status": "error",
+      "reason_code": "real_synthetic_mixing_forbidden",
+      "model_calls": 0,
+      "passed": true
+    }
+  ]
+}

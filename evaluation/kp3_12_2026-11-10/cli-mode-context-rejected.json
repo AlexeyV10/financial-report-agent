@@ -1,0 +1,8 @@
+{
+  "schema_version": "kp3-scenario-setup-error-0.1",
+  "status": "error",
+  "reason_code": "real_synthetic_mixing_forbidden",
+  "scenario": null,
+  "comparisons": null,
+  "model_calls": 0
+}

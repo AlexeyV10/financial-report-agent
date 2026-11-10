@@ -1,0 +1,17 @@
+test_change_clears_result_and_false_signal (test_scenario_app.ScenarioAppTests.test_change_clears_result_and_false_signal) ... 2026-11-10 15:25:01.631 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_change_to_real_does_not_reuse_synthetic_result (test_scenario_app.ScenarioAppTests.test_change_to_real_does_not_reuse_synthetic_result) ... 2026-11-10 15:25:02.625 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_initial_requires_explicit_mode (test_scenario_app.ScenarioAppTests.test_initial_requires_explicit_mode) ... 2026-11-10 15:25:02.829 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_invalid_capital_is_error_without_ledger (test_scenario_app.ScenarioAppTests.test_invalid_capital_is_error_without_ledger) ... 2026-11-10 15:25:02.907 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_own_vertical_path (test_scenario_app.ScenarioAppTests.test_own_vertical_path) ... 2026-11-10 15:25:03.059 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_real_financial_answer_remains_scenario_blocked (test_scenario_app.ScenarioAppTests.test_real_financial_answer_remains_scenario_blocked) ... 2026-11-10 15:25:03.210 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.897s
+
+OK

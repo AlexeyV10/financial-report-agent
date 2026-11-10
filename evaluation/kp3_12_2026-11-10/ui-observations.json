@@ -1,0 +1,19 @@
+{
+  "real_CUA": true,
+  "ui_app": "app_kp3/scenario_app.py",
+  "url": "http://127.0.0.1:8512",
+  "checks": [
+    "Explicit empty mode disables execution.",
+    "Own synthetic provenance/parameters shown before run.",
+    "Positive own run:20.00% finance,10098.00 equity,98.00PnL,0.80%drawdown; chart/three comparisons/full buy-sell ledger observed.",
+    "Changing threshold clears old output.",
+    "Equal20 threshold: no signal,10000.00 cash,0.00drawdown,hold comparison retained.",
+    "Negative capital clears old output and gives technical invalid_capital without ledger.",
+    "Changing mode removes own parameters/result.",
+    "Exact official2024 version selected explicitly from8 registered versions.",
+    "Explicit zoned decision required before real readiness.",
+    "Real B15.30% snapshot followed by blocked publication_unknown plus5 other gaps, no trades; proof/trace expander observed."
+  ],
+  "screenshots": "Only local tmp/ui12-real-blocked.jpg; primary pages not in Git",
+  "completion_summary": "Проверил synthetic и blocked сценарии12"
+}

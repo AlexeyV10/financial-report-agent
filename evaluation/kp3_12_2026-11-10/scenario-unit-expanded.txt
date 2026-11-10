@@ -1,0 +1,53 @@
+test_after_close_and_weekend_use_next_declared_open (test_scenario_v1.ScenarioV1Tests.test_after_close_and_weekend_use_next_declared_open) ... ok
+test_context_mutation_no_reuse (test_scenario_v1.ScenarioV1Tests.test_context_mutation_no_reuse) ... ok
+test_context_source_missing_and_changed_bytes_are_technical (test_scenario_v1.ScenarioV1Tests.test_context_source_missing_and_changed_bytes_are_technical) ... ok
+test_date_precision_available_only_next_midnight (test_scenario_v1.ScenarioV1Tests.test_date_precision_available_only_next_midnight) ... ok
+test_different_financial_run_id_rejected (test_scenario_v1.ScenarioV1Tests.test_different_financial_run_id_rejected) ... ok
+test_duplicate_or_negative_price_rejected_in_setup (test_scenario_v1.ScenarioV1Tests.test_duplicate_or_negative_price_rejected_in_setup) ... ok
+test_exact_open_is_strictly_next_open (test_scenario_v1.ScenarioV1Tests.test_exact_open_is_strictly_next_open) ... ok
+test_extra_price_code_path_or_formula_fields_rejected (test_scenario_v1.ScenarioV1Tests.test_extra_price_code_path_or_formula_fields_rejected) ... ok
+test_financial_not_answered_never_creates_signal (test_scenario_v1.ScenarioV1Tests.test_financial_not_answered_never_creates_signal) ... ok
+test_fixed_exposure_costs_reduce_final_equity (test_scenario_v1.ScenarioV1Tests.test_fixed_exposure_costs_reduce_final_equity) ... ok
+test_fraction_lot_and_cost_reference (test_scenario_v1.ScenarioV1Tests.test_fraction_lot_and_cost_reference) ... ok
+test_full_own_vertical_result_and_source (test_scenario_v1.ScenarioV1Tests.test_full_own_vertical_result_and_source) ... ok
+test_higher_threshold_never_defaults_to_trade (test_scenario_v1.ScenarioV1Tests.test_higher_threshold_never_defaults_to_trade) ... ok
+test_independent_reference_entire_ledger_default (test_scenario_v1.ScenarioV1Tests.test_independent_reference_entire_ledger_default) ... ok
+test_insufficient_exit_cash_atomic_no_negative_positions (test_scenario_v1.ScenarioV1Tests.test_insufficient_exit_cash_atomic_no_negative_positions) ... FAIL
+test_invalid_capital_allocation_fee_lot_and_threshold (test_scenario_v1.ScenarioV1Tests.test_invalid_capital_allocation_fee_lot_and_threshold) ... ok
+test_invalid_run_id_is_technical (test_scenario_v1.ScenarioV1Tests.test_invalid_run_id_is_technical) ... ok
+test_legacy_finance_schema_not_silently_adapted (test_scenario_v1.ScenarioV1Tests.test_legacy_finance_schema_not_silently_adapted) ... ok
+test_missing_price_is_blocked_not_last_price_fill (test_scenario_v1.ScenarioV1Tests.test_missing_price_is_blocked_not_last_price_fill) ... ok
+test_missing_timezone_and_invalid_window_rejected (test_scenario_v1.ScenarioV1Tests.test_missing_timezone_and_invalid_window_rejected) ... ok
+test_new_parameters_and_run_ids_do_not_reuse_result (test_scenario_v1.ScenarioV1Tests.test_new_parameters_and_run_ids_do_not_reuse_result) ... ok
+test_no_affordable_lot_keeps_cash_no_fees (test_scenario_v1.ScenarioV1Tests.test_no_affordable_lot_keeps_cash_no_fees) ... ok
+test_no_future_open_blocked_no_partial_ledger (test_scenario_v1.ScenarioV1Tests.test_no_future_open_blocked_no_partial_ledger) ... ok
+test_non_session_price_and_resource_path_rejected (test_scenario_v1.ScenarioV1Tests.test_non_session_price_and_resource_path_rejected) ... ok
+test_own_to_real_mode_mixing_rejected (test_scenario_v1.ScenarioV1Tests.test_own_to_real_mode_mixing_rejected) ... ok
+test_publication_after_decision_blocks (test_scenario_v1.ScenarioV1Tests.test_publication_after_decision_blocks) ... ok
+test_publication_at_decision_permits_later_session (test_scenario_v1.ScenarioV1Tests.test_publication_at_decision_permits_later_session) ... ok
+test_result_tampering_and_wrong_request_rejected (test_scenario_v1.ScenarioV1Tests.test_result_tampering_and_wrong_request_rejected) ... ok
+test_run_id_exclusive_preserves_original_bytes (test_scenario_v1.ScenarioV1Tests.test_run_id_exclusive_preserves_original_bytes) ... ok
+test_signal_false_equal_threshold_and_cash_baseline (test_scenario_v1.ScenarioV1Tests.test_signal_false_equal_threshold_and_cash_baseline) ... ok
+test_tampered_financial_value_or_rounding_rejected (test_scenario_v1.ScenarioV1Tests.test_tampered_financial_value_or_rounding_rejected) ... ok
+test_unknown_publication_stays_blocked (test_scenario_v1.ScenarioV1Tests.test_unknown_publication_stays_blocked) ... ok
+test_utc_equivalent_decision_preserves_execution (test_scenario_v1.ScenarioV1Tests.test_utc_equivalent_decision_preserves_execution) ... ok
+test_valid_technical_financial_outcome_has_no_signal (test_scenario_v1.ScenarioV1Tests.test_valid_technical_financial_outcome_has_no_signal) ... ok
+test_window_between_sessions_not_silently_rounded (test_scenario_v1.ScenarioV1Tests.test_window_between_sessions_not_silently_rounded) ... ok
+test_wrong_financial_units_operation_not_a_percent_rule (test_scenario_v1.ScenarioV1Tests.test_wrong_financial_units_operation_not_a_percent_rule) ... ok
+
+======================================================================
+FAIL: test_insufficient_exit_cash_atomic_no_negative_positions (test_scenario_v1.ScenarioV1Tests.test_insufficient_exit_cash_atomic_no_negative_positions)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-12-worktree\tests\test_scenario_v1.py", line 115, in test_insufficient_exit_cash_atomic_no_negative_positions
+    data=deepcopy(self.ctx.dataset);data['prices']['observations'][-1]['price']='0.01';ctx=changed_context(self.ctx,self.dir,data);r=deepcopy(self.req);r['parameters'].update(allocation='1',initial_cash='1000',fee_fixed='50');out=self.run_s(r,ctx=ctx);self.assertEqual(out['status'],'blocked');self.assertEqual(out['reason_code'],'insufficient_exit_cash');self.no_trade(out)
+                                                                                                                                                                                                                                                            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'completed' != 'blocked'
+- completed
++ blocked
+
+
+----------------------------------------------------------------------
+Ran 36 tests in 0.715s
+
+FAILED (failures=1)
