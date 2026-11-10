@@ -1,0 +1,33 @@
+test_atomic_write_cannot_overwrite (test_product13.Product13Tests.test_atomic_write_cannot_overwrite) ... ok
+test_bad_export_type_rejected (test_product13.Product13Tests.test_bad_export_type_rejected) ... ok
+test_changed_index_cannot_revive_answer (test_product13.Product13Tests.test_changed_index_cannot_revive_answer) ... ok
+test_changed_operation_separates_runs (test_product13.Product13Tests.test_changed_operation_separates_runs) ... ok
+test_changed_unit_separates_runs (test_product13.Product13Tests.test_changed_unit_separates_runs) ... ok
+test_clarification_is_saved_without_calculation (test_product13.Product13Tests.test_clarification_is_saved_without_calculation) ... ok
+test_double_press_does_not_execute (test_product13.Product13Tests.test_double_press_does_not_execute) ... ok
+test_duplicate_json_keys_rejected (test_product13.Product13Tests.test_duplicate_json_keys_rejected) ... ok
+test_explicit_new_run_keeps_old (test_product13.Product13Tests.test_explicit_new_run_keeps_old) ... ok
+test_failed_producer_requires_explicit_new_attempt (test_product13.Product13Tests.test_failed_producer_requires_explicit_new_attempt) ... ok
+test_five_operations_keep_semantics (test_product13.Product13Tests.test_five_operations_keep_semantics) ... ok
+test_hash_damage_rejected (test_product13.Product13Tests.test_hash_damage_rejected) ... ok
+test_history_reopen_never_calls_controller (test_product13.Product13Tests.test_history_reopen_never_calls_controller) ... ok
+test_json_roundtrip_own_minimal_sources (test_product13.Product13Tests.test_json_roundtrip_own_minimal_sources) ... ok
+test_markdown_injection_is_inert (test_product13.Product13Tests.test_markdown_injection_is_inert) ... ok
+test_method_never_silently_falls_back (test_product13.Product13Tests.test_method_never_silently_falls_back) ... ok
+test_missing_pdf_cannot_revive_answer (test_product13.Product13Tests.test_missing_pdf_cannot_revive_answer) ... ok
+test_nonce_is_explicit_integer (test_product13.Product13Tests.test_nonce_is_explicit_integer) ... ok
+test_payload_allowlist_and_kind (test_product13.Product13Tests.test_payload_allowlist_and_kind) ... ok
+test_pending_claim_never_retries (test_product13.Product13Tests.test_pending_claim_never_retries) ... ok
+test_preflight_changed_index (test_product13.Product13Tests.test_preflight_changed_index) ... ok
+test_preflight_is_not_a_search (test_product13.Product13Tests.test_preflight_is_not_a_search) ... ok
+test_private_path_only (test_product13.Product13Tests.test_private_path_only) ... ok
+test_refresh_new_store_deduplicates (test_product13.Product13Tests.test_refresh_new_store_deduplicates) ... ok
+test_safe_ids (test_product13.Product13Tests.test_safe_ids) ... ok
+test_scenario_history_and_dedup (test_product13.Product13Tests.test_scenario_history_and_dedup) ... ok
+test_synthetic_label_exported (test_product13.Product13Tests.test_synthetic_label_exported) ... ok
+test_technical_error_has_no_number_and_is_saved (test_product13.Product13Tests.test_technical_error_has_no_number_and_is_saved) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 1.089s
+
+OK

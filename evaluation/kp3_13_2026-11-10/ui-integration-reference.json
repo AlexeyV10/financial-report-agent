@@ -1,0 +1,92 @@
+{
+  "known_to_developer": true,
+  "financial": [
+    {
+      "run_id": "product13-457c95cab528da78ced9214fb4b4eb86",
+      "method": "B",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "507689",
+          "denominator": "1"
+        },
+        "display_value": "507689"
+      },
+      "matched": true
+    },
+    {
+      "run_id": "product13-cd83814d05b401f112cd3d0d1f8c9c35",
+      "method": "C",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "67385",
+          "denominator": "1"
+        },
+        "display_value": "67385"
+      },
+      "matched": true
+    },
+    {
+      "run_id": "product13-a7df9581e1eec8f031b4a972d8062832",
+      "method": "A",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "67385",
+          "denominator": "1"
+        },
+        "display_value": "67385"
+      },
+      "matched": true
+    },
+    {
+      "run_id": "product13-7459584b70c294eb46bd5d006a329969",
+      "method": "B",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "67385",
+          "denominator": "1"
+        },
+        "display_value": "67385"
+      },
+      "matched": true
+    },
+    {
+      "run_id": "product13-8e51826d782aa5dea8e1cd8333e5d7a3",
+      "method": "B",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "507689",
+          "denominator": "1"
+        },
+        "display_value": "507689"
+      },
+      "matched": true
+    }
+  ],
+  "own_scenario": [
+    {
+      "run_id": "product13-74116687a0884f1fa2e08c1161e719b7",
+      "signal": false,
+      "reference_paths": 3,
+      "matched": true
+    },
+    {
+      "run_id": "product13-3557d3fe418211e8a5902f49493cb285",
+      "signal": true,
+      "reference_paths": 3,
+      "matched": true
+    }
+  ],
+  "financial_reference": "Independent07 Fraction/integer and Decimal80 on admitted catalog Fact values, not production answer as gold",
+  "scenario_reference": "Independent12 integer cents/Fraction on own dataset",
+  "real_source_readiness": "Blocked with upstream C five calls retained, new calls0"
+}

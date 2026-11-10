@@ -1,0 +1,1468 @@
+{
+  "stage": "KP3-13",
+  "known_to_developer": true,
+  "final_eval_freeze": false,
+  "new_real_facts": 0,
+  "model_calls": 0,
+  "cases": [
+    {
+      "case_id": "phosagro-2023-revenue-direct_fact_v1",
+      "run_id": "product13-45f8e0243fab07f369b210c1b929078c",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "440304",
+          "denominator": "1"
+        },
+        "display_value": "440304"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2023-operating_profit-direct_fact_v1",
+      "run_id": "product13-9f3bc3754d31c55945892b84cc5fc1b9",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "150756",
+          "denominator": "1"
+        },
+        "display_value": "150756"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2023-operating_cash_flow-direct_fact_v1",
+      "run_id": "product13-6a6e2353c33a1697ecca7f4416b34359",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "134286",
+          "denominator": "1"
+        },
+        "display_value": "134286"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2023-revenue-absolute_change_v1",
+      "run_id": "product13-ecbeafdb1f7eb12e0a992fc6324aed58",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-129223",
+          "denominator": "1"
+        },
+        "display_value": "-129223"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2023-operating_profit-absolute_change_v1",
+      "run_id": "product13-15c897423677ae6206df041e3c71d3f6",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-77584",
+          "denominator": "1"
+        },
+        "display_value": "-77584"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2023-operating_cash_flow-absolute_change_v1",
+      "run_id": "product13-af2b03df76098312804235886d36f7b7",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-68995",
+          "denominator": "1"
+        },
+        "display_value": "-68995"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2023-revenue-relative_change_v1",
+      "run_id": "product13-c7fdc48ffacf570d3dbd8f7fffa8b101",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-12922300",
+          "denominator": "569527"
+        },
+        "display_value": "-22.69"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2023-operating_profit-relative_change_v1",
+      "run_id": "product13-24f6fa5b847eaa1d10cff0277552e6db",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-387920",
+          "denominator": "11417"
+        },
+        "display_value": "-33.98"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2023-operating_cash_flow-relative_change_v1",
+      "run_id": "product13-ca193577346ff2d7462ff4351b4e27ed",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-6899500",
+          "denominator": "203281"
+        },
+        "display_value": "-33.94"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2023-revenue-scale_v1",
+      "run_id": "product13-72498471053fd8beecb2c8f646132044",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "55038",
+          "denominator": "125"
+        },
+        "display_value": "440.304"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2023-operating_profit-scale_v1",
+      "run_id": "product13-cd5fb85b98304bb5547e33efb1933f23",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "37689",
+          "denominator": "250"
+        },
+        "display_value": "150.756"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2023-operating_cash_flow-scale_v1",
+      "run_id": "product13-8146a30524261f2c15241a2366fda319",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "67143",
+          "denominator": "500"
+        },
+        "display_value": "134.286"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2023-operating_profit-operating_margin_v1",
+      "run_id": "product13-3123f7af510a38b8a3c2e56988cef383",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "314075",
+          "denominator": "9173"
+        },
+        "display_value": "34.24"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2024-revenue-direct_fact_v1",
+      "run_id": "product13-4876ef718b8de827faee53ccd07baf77",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "507689",
+          "denominator": "1"
+        },
+        "display_value": "507689"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2024-operating_profit-direct_fact_v1",
+      "run_id": "product13-89523e7b58f3bd695f87612e5058b3dd",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "140459",
+          "denominator": "1"
+        },
+        "display_value": "140459"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2024-operating_cash_flow-direct_fact_v1",
+      "run_id": "product13-d1365bd24501d22ce9567c7835271513",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "92717",
+          "denominator": "1"
+        },
+        "display_value": "92717"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2024-revenue-absolute_change_v1",
+      "run_id": "product13-d2f9d1f1f2b30dbb568d4b7b5f7d7948",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "67385",
+          "denominator": "1"
+        },
+        "display_value": "67385"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2024-operating_profit-absolute_change_v1",
+      "run_id": "product13-bddb2c100f31b07a4a0bf9d33635ccfa",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-10297",
+          "denominator": "1"
+        },
+        "display_value": "-10297"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2024-operating_cash_flow-absolute_change_v1",
+      "run_id": "product13-05810605ef201c0063486654e1f80a1e",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-41569",
+          "denominator": "1"
+        },
+        "display_value": "-41569"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2024-revenue-relative_change_v1",
+      "run_id": "product13-ebeeec6f9852b2615060851652078593",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "1684625",
+          "denominator": "110076"
+        },
+        "display_value": "15.30"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2024-operating_profit-relative_change_v1",
+      "run_id": "product13-65b339c4678f015b99967359e74ed39a",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-257425",
+          "denominator": "37689"
+        },
+        "display_value": "-6.83"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2024-operating_cash_flow-relative_change_v1",
+      "run_id": "product13-76978ae1d1f7ec4d1fabfe96843d97b6",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-2078450",
+          "denominator": "67143"
+        },
+        "display_value": "-30.96"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2024-revenue-scale_v1",
+      "run_id": "product13-e3f4dbd8f35c032bed2f05690e3f3179",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "507689",
+          "denominator": "1000"
+        },
+        "display_value": "507.689"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2024-operating_profit-scale_v1",
+      "run_id": "product13-5d8565f59e2a45b50eb9e86e14bbed23",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "140459",
+          "denominator": "1000"
+        },
+        "display_value": "140.459"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2024-operating_cash_flow-scale_v1",
+      "run_id": "product13-e711d90223e72a7120ac8d5b1b599a33",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "92717",
+          "denominator": "1000"
+        },
+        "display_value": "92.717"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2024-operating_profit-operating_margin_v1",
+      "run_id": "product13-22c43bab4b76d109610424f36facdedf",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "14045900",
+          "denominator": "507689"
+        },
+        "display_value": "27.67"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-revenue-direct_fact_v1",
+      "run_id": "product13-a6dd72cfa0e1daec3c8e4819fe97dfcd",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "573628",
+          "denominator": "1"
+        },
+        "display_value": "573628"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-operating_profit-direct_fact_v1",
+      "run_id": "product13-e777bb4aab34cc02b9b921cf36a2ca47",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "135605",
+          "denominator": "1"
+        },
+        "display_value": "135605"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-operating_cash_flow-direct_fact_v1",
+      "run_id": "product13-38b056d2d6740fee705086f6b55ea12d",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "93114",
+          "denominator": "1"
+        },
+        "display_value": "93114"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-revenue-absolute_change_v1",
+      "run_id": "product13-9c33024db932bb11f90f4e88dfb12bcd",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "65939",
+          "denominator": "1"
+        },
+        "display_value": "65939"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-operating_profit-absolute_change_v1",
+      "run_id": "product13-3e61fa1c2508bc36d35a2c450668ffd4",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-4854",
+          "denominator": "1"
+        },
+        "display_value": "-4854"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-operating_cash_flow-absolute_change_v1",
+      "run_id": "product13-41883fdf3555283e054cee2afae79e39",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "397",
+          "denominator": "1"
+        },
+        "display_value": "397"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-revenue-relative_change_v1",
+      "run_id": "product13-ee43bf07956d73a426d402f32bc1fe79",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "6593900",
+          "denominator": "507689"
+        },
+        "display_value": "12.99"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-operating_profit-relative_change_v1",
+      "run_id": "product13-6aa85780912a7bb0c0c9bb70bc4ba673",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-485400",
+          "denominator": "140459"
+        },
+        "display_value": "-3.46"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-operating_cash_flow-relative_change_v1",
+      "run_id": "product13-a7fe235ac3d70a1d7091cded8dd18364",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "39700",
+          "denominator": "92717"
+        },
+        "display_value": "0.43"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-revenue-scale_v1",
+      "run_id": "product13-7d29244bc693d72d20553824cbc58756",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "143407",
+          "denominator": "250"
+        },
+        "display_value": "573.628"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-operating_profit-scale_v1",
+      "run_id": "product13-fafe41de9c8da18a1d566f4cf88e4c44",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "27121",
+          "denominator": "200"
+        },
+        "display_value": "135.605"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-operating_cash_flow-scale_v1",
+      "run_id": "product13-528863059e517dc586b3b44be8619428",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "46557",
+          "denominator": "500"
+        },
+        "display_value": "93.114"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-operating_profit-operating_margin_v1",
+      "run_id": "product13-5d28068fea43d0e7909e3d50d59a1f24",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "3390125",
+          "denominator": "143407"
+        },
+        "display_value": "23.64"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-q1-revenue-direct_fact_v1",
+      "run_id": "product13-d93c39f748350d22f490f7ad8e23917e",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "159390",
+          "denominator": "1"
+        },
+        "display_value": "159390"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-q1-operating_profit-direct_fact_v1",
+      "run_id": "product13-084b5055f3dcd0d011b96e7358544982",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "38816",
+          "denominator": "1"
+        },
+        "display_value": "38816"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-q1-operating_cash_flow-direct_fact_v1",
+      "run_id": "product13-014ee6c40dde5b3a2625f58e15c96a5d",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "50840",
+          "denominator": "1"
+        },
+        "display_value": "50840"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-q1-revenue-absolute_change_v1",
+      "run_id": "product13-a8b64f88824e3fdc7b91c5b4c13c85bc",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "40118",
+          "denominator": "1"
+        },
+        "display_value": "40118"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-q1-operating_profit-absolute_change_v1",
+      "run_id": "product13-62b8f72521290c415df59205b9d5cc36",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "9011",
+          "denominator": "1"
+        },
+        "display_value": "9011"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-q1-operating_cash_flow-absolute_change_v1",
+      "run_id": "product13-95f507a2f03f6e00818f710c5b3c4a67",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "31134",
+          "denominator": "1"
+        },
+        "display_value": "31134"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-q1-revenue-relative_change_v1",
+      "run_id": "product13-704a6e162576059d305cc903045edd70",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "501475",
+          "denominator": "14909"
+        },
+        "display_value": "33.64"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-q1-operating_profit-relative_change_v1",
+      "run_id": "product13-892ca7fbbeeadd078a6bb0cfa8d5e014",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "180220",
+          "denominator": "5961"
+        },
+        "display_value": "30.23"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-q1-operating_cash_flow-relative_change_v1",
+      "run_id": "product13-3c553275daf50f31c981102b2101a572",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "1556700",
+          "denominator": "9853"
+        },
+        "display_value": "157.99"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-q1-revenue-scale_v1",
+      "run_id": "product13-08d029bc23a75286c95e5beb04f452e1",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "15939",
+          "denominator": "100"
+        },
+        "display_value": "159.39"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-q1-operating_profit-scale_v1",
+      "run_id": "product13-8224965bd5ba7fae14a8b44cf85587ba",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "4852",
+          "denominator": "125"
+        },
+        "display_value": "38.816"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-q1-operating_cash_flow-scale_v1",
+      "run_id": "product13-cda3bd754214a2efbf8fe7221129167c",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "1271",
+          "denominator": "25"
+        },
+        "display_value": "50.84"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-q1-operating_profit-operating_margin_v1",
+      "run_id": "product13-43f1741267b55e7783157185d4e74779",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "388160",
+          "denominator": "15939"
+        },
+        "display_value": "24.35"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-h1-revenue-direct_fact_v1",
+      "run_id": "product13-a7b68459e7c00e6ea2616d5ae59eef5c",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "298556",
+          "denominator": "1"
+        },
+        "display_value": "298556"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-h1-operating_profit-direct_fact_v1",
+      "run_id": "product13-e44c603f5712ce8739d37aa76b0f5550",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "74846",
+          "denominator": "1"
+        },
+        "display_value": "74846"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-h1-operating_cash_flow-direct_fact_v1",
+      "run_id": "product13-819bc0528e1436fbd296b7cc33846267",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "89489",
+          "denominator": "1"
+        },
+        "display_value": "89489"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-h1-revenue-absolute_change_v1",
+      "run_id": "product13-bed433961b28bedfa863f60e83a12322",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "56993",
+          "denominator": "1"
+        },
+        "display_value": "56993"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-h1-operating_profit-absolute_change_v1",
+      "run_id": "product13-ec34d0d5c801b0dae37066502e4a1758",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "18811",
+          "denominator": "1"
+        },
+        "display_value": "18811"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-h1-operating_cash_flow-absolute_change_v1",
+      "run_id": "product13-cc5513a0235c3bc7b5ca39b79c739c4f",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "25034",
+          "denominator": "1"
+        },
+        "display_value": "25034"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-h1-revenue-relative_change_v1",
+      "run_id": "product13-669e94ccd5c7b773123dfe1f1c26220e",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "5699300",
+          "denominator": "241563"
+        },
+        "display_value": "23.59"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-h1-operating_profit-relative_change_v1",
+      "run_id": "product13-481d9fa8c773fb73673ada154b1fe53f",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "376220",
+          "denominator": "11207"
+        },
+        "display_value": "33.57"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-h1-operating_cash_flow-relative_change_v1",
+      "run_id": "product13-be37acf7ceaf42441cb43844424248a8",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "500680",
+          "denominator": "12891"
+        },
+        "display_value": "38.84"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-h1-revenue-scale_v1",
+      "run_id": "product13-52f33362e24f2b0864d635c9712750ff",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "74639",
+          "denominator": "250"
+        },
+        "display_value": "298.556"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-h1-operating_profit-scale_v1",
+      "run_id": "product13-4355861a9cb61ca213f80cb8d7f2ec1e",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "37423",
+          "denominator": "500"
+        },
+        "display_value": "74.846"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-h1-operating_cash_flow-scale_v1",
+      "run_id": "product13-0c8fb10603130d53ffe13df026dd06fd",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "89489",
+          "denominator": "1000"
+        },
+        "display_value": "89.489"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-h1-operating_profit-operating_margin_v1",
+      "run_id": "product13-6c7882fb701393cabb4bfe0ae02a9b67",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "1871150",
+          "denominator": "74639"
+        },
+        "display_value": "25.07"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-9m-revenue-direct_fact_v1",
+      "run_id": "product13-4991c087ae5fba2a54451e0819c46422",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "441736",
+          "denominator": "1"
+        },
+        "display_value": "441736"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-9m-operating_profit-direct_fact_v1",
+      "run_id": "product13-14f141f52c1124e8a94507cc12e86762",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "115320",
+          "denominator": "1"
+        },
+        "display_value": "115320"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-9m-operating_cash_flow-direct_fact_v1",
+      "run_id": "product13-461a8e3d0ea79b3322813c9966eafc69",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "108981",
+          "denominator": "1"
+        },
+        "display_value": "108981"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-9m-revenue-absolute_change_v1",
+      "run_id": "product13-e573cb147bc6103163b2294a8718014a",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "70701",
+          "denominator": "1"
+        },
+        "display_value": "70701"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-9m-operating_profit-absolute_change_v1",
+      "run_id": "product13-e04f88556636a91d74c809ab254de28f",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "19720",
+          "denominator": "1"
+        },
+        "display_value": "19720"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-9m-operating_cash_flow-absolute_change_v1",
+      "run_id": "product13-45069a92512010b5efc64c6fc15c115a",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "21525",
+          "denominator": "1"
+        },
+        "display_value": "21525"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-9m-revenue-relative_change_v1",
+      "run_id": "product13-b89facdbd6d4147d80a536e6d8000b3f",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "1414020",
+          "denominator": "74207"
+        },
+        "display_value": "19.06"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-9m-operating_profit-relative_change_v1",
+      "run_id": "product13-4a211053d3e488f85753deb7cb6eec25",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "4930",
+          "denominator": "239"
+        },
+        "display_value": "20.63"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-9m-operating_cash_flow-relative_change_v1",
+      "run_id": "product13-27b55ab41f358113c34fb908200761f8",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "179375",
+          "denominator": "7288"
+        },
+        "display_value": "24.61"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-9m-revenue-scale_v1",
+      "run_id": "product13-3a5fabecdda6959aee7834a3bd139494",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "55217",
+          "denominator": "125"
+        },
+        "display_value": "441.736"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-9m-operating_profit-scale_v1",
+      "run_id": "product13-f2dde45f0a95792eb2c31755c2f201a7",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "2883",
+          "denominator": "25"
+        },
+        "display_value": "115.32"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-9m-operating_cash_flow-scale_v1",
+      "run_id": "product13-0a44b42d2b605c837d11069f5493ac7e",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "108981",
+          "denominator": "1000"
+        },
+        "display_value": "108.981"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "phosagro-2025-9m-operating_profit-operating_margin_v1",
+      "run_id": "product13-1cbbe74a6f656967cac2e43f0bec7f08",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "1441500",
+          "denominator": "55217"
+        },
+        "display_value": "26.11"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2021-revenue-direct_fact_v1",
+      "run_id": "product13-e1de5feed77d6238165a429d71993f3a",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "92442267",
+          "denominator": "1"
+        },
+        "display_value": "92442267"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2021-operating_profit-direct_fact_v1",
+      "run_id": "product13-57d5d1a4ac9001ed947a24ae94cfe29a",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "22349922",
+          "denominator": "1"
+        },
+        "display_value": "22349922"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2021-operating_cash_flow-direct_fact_v1",
+      "run_id": "product13-2dbbee4f225a40f0387c55293952c437",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "13091925",
+          "denominator": "1"
+        },
+        "display_value": "13091925"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2021-revenue-absolute_change_v1",
+      "run_id": "product13-390f49e7bc1d055369fc49308be78852",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "23455618",
+          "denominator": "1"
+        },
+        "display_value": "23455618"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2021-operating_profit-absolute_change_v1",
+      "run_id": "product13-66ebe81b36c2a78e98bb2665d0aaa5bc",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "11183495",
+          "denominator": "1"
+        },
+        "display_value": "11183495"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2021-operating_cash_flow-absolute_change_v1",
+      "run_id": "product13-9d77fa41690a450f611648aaf0ceaef2",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-1642533",
+          "denominator": "1"
+        },
+        "display_value": "-1642533"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2021-revenue-relative_change_v1",
+      "run_id": "product13-d4689643ba4f56dfb01c059b2494814e",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "2345561800",
+          "denominator": "68986649"
+        },
+        "display_value": "34.00"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2021-operating_profit-relative_change_v1",
+      "run_id": "product13-df67873e52a246f19b0ababa2b45b374",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "1118349500",
+          "denominator": "11166427"
+        },
+        "display_value": "100.15"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2021-operating_cash_flow-relative_change_v1",
+      "run_id": "product13-c6c9161c90ffb119af5e803d45a6ac2e",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-27375550",
+          "denominator": "2455743"
+        },
+        "display_value": "-11.15"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2021-revenue-scale_v1",
+      "run_id": "product13-496c22ca9312debbfa5e5b3facb743a3",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "92442267",
+          "denominator": "1000000"
+        },
+        "display_value": "92.442267"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2021-operating_profit-scale_v1",
+      "run_id": "product13-c87041e94a118cf1219db0fc2574be86",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "11174961",
+          "denominator": "500000"
+        },
+        "display_value": "22.349922"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2021-operating_cash_flow-scale_v1",
+      "run_id": "product13-d7e0afe649254b00ebcd279c53ff3402",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "523677",
+          "denominator": "40000"
+        },
+        "display_value": "13.091925"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2021-operating_profit-operating_margin_v1",
+      "run_id": "product13-e0bfe435c96b3a5cd25631fbf3044e62",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "744997400",
+          "denominator": "30814089"
+        },
+        "display_value": "24.18"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2022-revenue-direct_fact_v1",
+      "run_id": "product13-3d373af5db684ccc38c86b3e0105b7ec",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "106766",
+          "denominator": "1"
+        },
+        "display_value": "106766"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2022-operating_profit-direct_fact_v1",
+      "run_id": "product13-568f03c4ccce1de60e685fd8e640a9d9",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "10111",
+          "denominator": "1"
+        },
+        "display_value": "10111"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2022-operating_cash_flow-direct_fact_v1",
+      "run_id": "product13-87b97d5b495453ab4c43cb319cd3acd5",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "2259",
+          "denominator": "1"
+        },
+        "display_value": "2259"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2022-revenue-absolute_change_v1",
+      "run_id": "product13-370f6496c02b13db39330185747ac09b",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "14324",
+          "denominator": "1"
+        },
+        "display_value": "14324"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2022-operating_profit-absolute_change_v1",
+      "run_id": "product13-60b7c5bf126a03e5abeb5541d83a37e7",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-12239",
+          "denominator": "1"
+        },
+        "display_value": "-12239"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2022-operating_cash_flow-absolute_change_v1",
+      "run_id": "product13-bf54e11ff62196ca00d088842f05faa2",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-10809",
+          "denominator": "1"
+        },
+        "display_value": "-10809"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2022-revenue-relative_change_v1",
+      "run_id": "product13-187b3982965a130642cf06401e709c00",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "716200",
+          "denominator": "46221"
+        },
+        "display_value": "15.50"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2022-operating_profit-relative_change_v1",
+      "run_id": "product13-4f2ef25ed39b07901ab62ea4b32b121c",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-24478",
+          "denominator": "447"
+        },
+        "display_value": "-54.76"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2022-operating_cash_flow-relative_change_v1",
+      "run_id": "product13-98077e2b1365dd8ac01da9e8ab25b6c8",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "-30025",
+          "denominator": "363"
+        },
+        "display_value": "-82.71"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2022-revenue-scale_v1",
+      "run_id": "product13-92bf96deff00f0dfe16c81266e3d5a58",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "53383",
+          "denominator": "500"
+        },
+        "display_value": "106.766"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2022-operating_profit-scale_v1",
+      "run_id": "product13-4e4d3c459609962c0035162a2cf40c60",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "10111",
+          "denominator": "1000"
+        },
+        "display_value": "10.111"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2022-operating_cash_flow-scale_v1",
+      "run_id": "product13-c71c3932509488b810ae0985e35e0004",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "2259",
+          "denominator": "1000"
+        },
+        "display_value": "2.259"
+      },
+      "matched": true
+    },
+    {
+      "case_id": "segezha-2022-operating_profit-operating_margin_v1",
+      "run_id": "product13-04ed5c75e0a90bfdef75338ab47c8c07",
+      "reference": {
+        "status": "answered",
+        "reason": "ok",
+        "exact_result": {
+          "numerator": "505550",
+          "denominator": "53383"
+        },
+        "display_value": "9.47"
+      },
+      "matched": true
+    }
+  ],
+  "historical_blocked": 8,
+  "deduplicated": 104,
+  "real_numeric_cases": 104
+}

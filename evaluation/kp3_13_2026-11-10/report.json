@@ -1,0 +1,47 @@
+{
+  "stage": "KP3-13",
+  "status": "technically_complete",
+  "unit_tests": {
+    "old": 620,
+    "new": 37,
+    "total": 657,
+    "passed": 657
+  },
+  "ui_apptest": 14,
+  "previous_checkers": "03-12 passed",
+  "product_checker": {
+    "real_numeric": 104,
+    "independent_reference": "07 Fraction/integer+Decimal80",
+    "dedup_lookups": 104,
+    "historical_blocked": 8
+  },
+  "legacy_cli": 5,
+  "ui_records": 12,
+  "ui_financial_reference": 5,
+  "ui_own_scenario": 2,
+  "ui_own_reference_paths": 6,
+  "actual_ui_model_executions": 2,
+  "actual_ui_chat_requests": 6,
+  "model_families": 1,
+  "new_real_facts": 0,
+  "source_versions": 8,
+  "source_facts": 48,
+  "human_reviewed": 0,
+  "publication_proven": 0,
+  "new_models_or_installs": 0,
+  "known_to_developer": true,
+  "reserved_unseen_real": 0,
+  "final_eval_freeze": false,
+  "old_QA07_C_call_limit": "unchanged error",
+  "old_financial_3_of_10": "unchanged historical result",
+  "next_instruction": "Standalone14 prepared; stop before14",
+  "limits": [
+    "Restricted parser08 grammar remains; unsupported free phrasing is preserved.",
+    "All real publications unknown; real trading blocked.",
+    "History is local snapshot and checksum, not authenticated digital signature or cloud backup.",
+    "A/C UI checks are two executions of one known family, not method accuracy.",
+    "Existing48source facts and own12 data only; no new corpus/OCR or reannotation."
+  ],
+  "preparation_version": "1.1",
+  "final_markdown_roundtrip": true
+}

@@ -1,0 +1,12 @@
+{
+  "first_core": "Sandbox denied os.link; same28 tests actually escalated. Then found read_json str vs Path, SQLite handle not closed, inert JSON link assertion and wrong missing-source test fixture selection. Fixed production handle/path and escaped JSON; test deletes actually selected source. Initial logs preserved.",
+  "first_AppTest": "Separate histories produced same financial run ID. Added store namespace to run ID; regression test prevents cross-store collision.",
+  "cache_audit": "Found guarded catalog/setup bytes and mutated current catalog were not in cache key. Current identity plus live file guards/setup/model config now hashed. Three negative tests added;37 product tests passed.",
+  "download": "First unbounded browser download wait hung and kernel reset after reported5112.7126s. Explicit bounded API returned JSON; direct Streamlit button did not expose downloadable URL. Added loopback selected-snapshot attachment links; actual JSON/Markdown via documented downloadMedia succeeded, bytes matched. Tool download waits themselves sometimes exceeded advertised timeout; no fabricated successful download.",
+  "viewport": "Existing background IAB tabs were narrow and sidebar obscured controls. Opened visible final tab and measured actual1280x720/no horizontal overflow; saved proof. Temporary viewport override reset.",
+  "new_models": 0,
+  "installs": 0,
+  "old_QA07": "Unchanged error/call_limit,3/10financial,reserved0",
+  "scope": "13 only after12; prompt14 prepared but14 not executed",
+  "final_markdown_audit": "Initial escaping also escaped structural array brackets inside fenced JSON. Corrected to preserve valid JSON and string escapes; strengthened roundtrip test. First preparation manifest preserved; current preparation1.1. Same657 unit+14AppTest repeated, actual final Markdown downloaded and byte/JSON roundtrip checked. No new financial/model execution."
+}

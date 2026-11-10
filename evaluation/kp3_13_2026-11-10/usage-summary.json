@@ -1,0 +1,481 @@
+{
+  "actual_model_executions": 2,
+  "actual_chat_requests": 6,
+  "records": [
+    {
+      "run_id": "product13-a8ef992c18cee048fe76f59ae4eee388",
+      "method": "A",
+      "execution_status": "error",
+      "model_calls": 0,
+      "usage": {
+        "input_tokens": null,
+        "known_chat_requests": 0,
+        "output_tokens": null,
+        "unknown_requests": 0
+      },
+      "stage_timings": [
+        {
+          "stage": "input",
+          "elapsed_ms": 3.4085,
+          "status": "completed"
+        },
+        {
+          "stage": "catalog_filters",
+          "elapsed_ms": 8.1925,
+          "status": "completed"
+        },
+        {
+          "stage": "search",
+          "elapsed_ms": 1939.5446,
+          "status": "completed"
+        },
+        {
+          "stage": "fact_resolution",
+          "elapsed_ms": 0.0012,
+          "status": "completed"
+        },
+        {
+          "stage": "source_validation",
+          "elapsed_ms": 0.0003,
+          "status": "completed"
+        },
+        {
+          "stage": "model_selection",
+          "elapsed_ms": 3577.026,
+          "status": "error"
+        },
+        {
+          "stage": "calculation",
+          "elapsed_ms": 0,
+          "status": "skipped"
+        },
+        {
+          "stage": "result_validation",
+          "elapsed_ms": 0,
+          "status": "skipped"
+        },
+        {
+          "stage": "answer",
+          "elapsed_ms": 0.0008,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "run_id": "product13-457c95cab528da78ced9214fb4b4eb86",
+      "method": "B",
+      "execution_status": "completed",
+      "model_calls": 0,
+      "usage": null,
+      "stage_timings": [
+        {
+          "stage": "input",
+          "elapsed_ms": 2.7651,
+          "status": "completed"
+        },
+        {
+          "stage": "catalog_filters",
+          "elapsed_ms": 9.674,
+          "status": "completed"
+        },
+        {
+          "stage": "search",
+          "elapsed_ms": 5.2868,
+          "status": "completed"
+        },
+        {
+          "stage": "fact_resolution",
+          "elapsed_ms": 2.6445,
+          "status": "completed"
+        },
+        {
+          "stage": "source_validation",
+          "elapsed_ms": 4.6661,
+          "status": "completed"
+        },
+        {
+          "stage": "calculation",
+          "elapsed_ms": 12.5528,
+          "status": "completed"
+        },
+        {
+          "stage": "result_validation",
+          "elapsed_ms": 13.5809,
+          "status": "completed"
+        },
+        {
+          "stage": "answer",
+          "elapsed_ms": 0.0023,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "run_id": "product13-a82857dfd3b94f00555f7a360fe5ee8d",
+      "method": "B",
+      "execution_status": "awaiting_clarification",
+      "model_calls": 0,
+      "usage": null,
+      "stage_timings": [
+        {
+          "stage": "input",
+          "elapsed_ms": 2.815,
+          "status": "completed"
+        },
+        {
+          "stage": "catalog_filters",
+          "elapsed_ms": 7.1974,
+          "status": "awaiting_clarification"
+        },
+        {
+          "stage": "search",
+          "elapsed_ms": 0,
+          "status": "skipped"
+        },
+        {
+          "stage": "fact_resolution",
+          "elapsed_ms": 0,
+          "status": "skipped"
+        },
+        {
+          "stage": "source_validation",
+          "elapsed_ms": 0,
+          "status": "skipped"
+        },
+        {
+          "stage": "calculation",
+          "elapsed_ms": 0,
+          "status": "skipped"
+        },
+        {
+          "stage": "result_validation",
+          "elapsed_ms": 0,
+          "status": "skipped"
+        },
+        {
+          "stage": "answer",
+          "elapsed_ms": 0.0034,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "run_id": "product13-b6754545b0e2b4ab08f5f84624b87c07",
+      "method": "C",
+      "execution_status": "awaiting_clarification",
+      "model_calls": 0,
+      "usage": {
+        "known_chat_requests": 0,
+        "known_input_tokens": 0,
+        "known_output_tokens": 0,
+        "unknown_requests": 0,
+        "unknown_usage": 0
+      },
+      "stage_timings": [
+        {
+          "stage": "input",
+          "elapsed_ms": 2.8849,
+          "status": "completed"
+        },
+        {
+          "stage": "catalog_filters",
+          "elapsed_ms": 7.3513,
+          "status": "awaiting_clarification"
+        },
+        {
+          "stage": "search",
+          "elapsed_ms": 0,
+          "status": "skipped"
+        },
+        {
+          "stage": "fact_resolution",
+          "elapsed_ms": 0,
+          "status": "skipped"
+        },
+        {
+          "stage": "source_validation",
+          "elapsed_ms": 0,
+          "status": "skipped"
+        },
+        {
+          "stage": "calculation",
+          "elapsed_ms": 0,
+          "status": "skipped"
+        },
+        {
+          "stage": "result_validation",
+          "elapsed_ms": 0,
+          "status": "skipped"
+        },
+        {
+          "stage": "answer",
+          "elapsed_ms": 0,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "run_id": "product13-cd83814d05b401f112cd3d0d1f8c9c35",
+      "method": "C",
+      "execution_status": "completed",
+      "model_calls": 5,
+      "usage": {
+        "known_chat_requests": 5,
+        "known_input_tokens": 6547,
+        "known_output_tokens": 255,
+        "unknown_requests": 0,
+        "unknown_usage": 0
+      },
+      "stage_timings": [
+        {
+          "stage": "input",
+          "elapsed_ms": 2.5537,
+          "status": "completed"
+        },
+        {
+          "stage": "catalog_filters",
+          "elapsed_ms": 7.0025,
+          "status": "completed"
+        },
+        {
+          "stage": "search",
+          "elapsed_ms": 1332.7775,
+          "status": "completed"
+        },
+        {
+          "stage": "fact_resolution",
+          "elapsed_ms": 2879.3401,
+          "status": "completed"
+        },
+        {
+          "stage": "source_validation",
+          "elapsed_ms": 0,
+          "status": "completed"
+        },
+        {
+          "stage": "calculation",
+          "elapsed_ms": 1504.831,
+          "status": "completed"
+        },
+        {
+          "stage": "result_validation",
+          "elapsed_ms": 0,
+          "status": "completed"
+        },
+        {
+          "stage": "answer",
+          "elapsed_ms": 0,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "run_id": "product13-a7df9581e1eec8f031b4a972d8062832",
+      "method": "A",
+      "execution_status": "completed",
+      "model_calls": 1,
+      "usage": {
+        "input_tokens": 1058,
+        "known_chat_requests": 1,
+        "output_tokens": 104,
+        "unknown_requests": 0
+      },
+      "stage_timings": [
+        {
+          "stage": "input",
+          "elapsed_ms": 2.7544,
+          "status": "completed"
+        },
+        {
+          "stage": "catalog_filters",
+          "elapsed_ms": 7.8178,
+          "status": "completed"
+        },
+        {
+          "stage": "search",
+          "elapsed_ms": 1581.6055,
+          "status": "completed"
+        },
+        {
+          "stage": "fact_resolution",
+          "elapsed_ms": 0.0015,
+          "status": "completed"
+        },
+        {
+          "stage": "source_validation",
+          "elapsed_ms": 0.0005,
+          "status": "completed"
+        },
+        {
+          "stage": "model_selection",
+          "elapsed_ms": 9068.8463,
+          "status": "completed"
+        },
+        {
+          "stage": "calculation",
+          "elapsed_ms": 1453.5809,
+          "status": "completed"
+        },
+        {
+          "stage": "result_validation",
+          "elapsed_ms": 0.0005,
+          "status": "completed"
+        },
+        {
+          "stage": "answer",
+          "elapsed_ms": 0.0005,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "run_id": "product13-7459584b70c294eb46bd5d006a329969",
+      "method": "B",
+      "execution_status": "completed",
+      "model_calls": 0,
+      "usage": null,
+      "stage_timings": [
+        {
+          "stage": "input",
+          "elapsed_ms": 5.7362,
+          "status": "completed"
+        },
+        {
+          "stage": "catalog_filters",
+          "elapsed_ms": 6.7172,
+          "status": "completed"
+        },
+        {
+          "stage": "search",
+          "elapsed_ms": 5.9737,
+          "status": "completed"
+        },
+        {
+          "stage": "fact_resolution",
+          "elapsed_ms": 2.3518,
+          "status": "completed"
+        },
+        {
+          "stage": "source_validation",
+          "elapsed_ms": 6.0551,
+          "status": "completed"
+        },
+        {
+          "stage": "calculation",
+          "elapsed_ms": 13.9927,
+          "status": "completed"
+        },
+        {
+          "stage": "result_validation",
+          "elapsed_ms": 13.6787,
+          "status": "completed"
+        },
+        {
+          "stage": "answer",
+          "elapsed_ms": 0.0024,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "run_id": "product13-bb136fd146a49dbf53726e9c3730a470",
+      "method": "B",
+      "execution_status": "completed",
+      "model_calls": 0,
+      "usage": null,
+      "stage_timings": [
+        {
+          "stage": "input",
+          "elapsed_ms": 3.1804,
+          "status": "completed"
+        },
+        {
+          "stage": "catalog_filters",
+          "elapsed_ms": 7.0676,
+          "status": "blocked"
+        },
+        {
+          "stage": "search",
+          "elapsed_ms": 0,
+          "status": "skipped"
+        },
+        {
+          "stage": "fact_resolution",
+          "elapsed_ms": 0,
+          "status": "skipped"
+        },
+        {
+          "stage": "source_validation",
+          "elapsed_ms": 0,
+          "status": "skipped"
+        },
+        {
+          "stage": "calculation",
+          "elapsed_ms": 0,
+          "status": "skipped"
+        },
+        {
+          "stage": "result_validation",
+          "elapsed_ms": 0,
+          "status": "skipped"
+        },
+        {
+          "stage": "answer",
+          "elapsed_ms": 0.0035,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "run_id": "product13-8e51826d782aa5dea8e1cd8333e5d7a3",
+      "method": "B",
+      "execution_status": "completed",
+      "model_calls": 0,
+      "usage": null,
+      "stage_timings": [
+        {
+          "stage": "input",
+          "elapsed_ms": 7.7521,
+          "status": "completed"
+        },
+        {
+          "stage": "catalog_filters",
+          "elapsed_ms": 6.7338,
+          "status": "completed"
+        },
+        {
+          "stage": "search",
+          "elapsed_ms": 5.8538,
+          "status": "completed"
+        },
+        {
+          "stage": "fact_resolution",
+          "elapsed_ms": 2.3215,
+          "status": "completed"
+        },
+        {
+          "stage": "source_validation",
+          "elapsed_ms": 4.5937,
+          "status": "completed"
+        },
+        {
+          "stage": "calculation",
+          "elapsed_ms": 10.9997,
+          "status": "completed"
+        },
+        {
+          "stage": "result_validation",
+          "elapsed_ms": 10.7777,
+          "status": "completed"
+        },
+        {
+          "stage": "answer",
+          "elapsed_ms": 0.0026,
+          "status": "completed"
+        }
+      ]
+    }
+  ],
+  "latency_scope": "Actual service stage durations; browser/tool waiting and end-to-end user time are not measured as model latency. No benchmark14.",
+  "model_stopped": true
+}

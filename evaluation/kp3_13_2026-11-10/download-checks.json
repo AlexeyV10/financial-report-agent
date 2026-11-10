@@ -1,0 +1,41 @@
+{
+  "files": [
+    {
+      "file_name": "run-90e9b9e503fc.json",
+      "byte_length": 27974,
+      "sha256": "a7bbab791b9694afce61ddf056a17af5b4beeae514796c9a66689502b4182d13",
+      "exact_store_export_match": true,
+      "checked_phase": "initial13"
+    },
+    {
+      "file_name": "run-c960a530974e.json",
+      "byte_length": 40812,
+      "sha256": "32e8590c65c178d3b250d6dd47aaf0271472851d0c63944407fc7fd19ad09fda",
+      "exact_store_export_match": true,
+      "checked_phase": "initial13"
+    },
+    {
+      "file_name": "run-c960a530974e.md",
+      "byte_length": 45829,
+      "sha256": "6f1efe5c4d58e176edbbaf287c497a04f34f6c702e3084a36342c73b7055f07a",
+      "exact_store_export_match": true,
+      "checked_phase": "initial13"
+    },
+    {
+      "file_name": "run-e37986f8cbd5.json",
+      "byte_length": 51085,
+      "sha256": "fbd4c8bba55a4bf0cc94bb9fb036812eaafc89e872076cc1b10d044dcc242d36",
+      "exact_store_export_match": true,
+      "checked_phase": "initial13"
+    },
+    {
+      "file_name": "run-e37986f8cbd5.md",
+      "byte_length": 62026,
+      "sha256": "07562399c157a894b1397d1d99f3e5c47641030296350065047fd7aa281d81f1",
+      "checked_phase": "final13_preparation1.1",
+      "exact_store_export_match": true,
+      "embedded_json_roundtrip": true
+    }
+  ],
+  "primary_bytes_exported": false
+}

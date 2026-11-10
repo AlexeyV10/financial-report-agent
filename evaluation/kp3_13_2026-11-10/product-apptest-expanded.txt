@@ -1,0 +1,38 @@
+test_clarification_keeps_original_and_history (test_product_app.ProductAppTests.test_clarification_keeps_original_and_history) ... 2026-11-10 17:30:34.425 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_double_click_dedup_and_change_clears (test_product_app.ProductAppTests.test_double_click_dedup_and_change_clears) ... 2026-11-10 17:30:35.692 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_explicit_new_attempt_has_new_id (test_product_app.ProductAppTests.test_explicit_new_attempt_has_new_id) ... 2026-11-10 17:30:36.400 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_false_premise_is_visible (test_product_app.ProductAppTests.test_false_premise_is_visible) ... 2026-11-10 17:30:37.175 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_five_form_operations (test_product_app.ProductAppTests.test_five_form_operations) ... 2026-11-10 17:30:37.531 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-10 17:30:38.115 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-10 17:30:38.751 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-10 17:30:39.330 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-10 17:30:40.030 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_historical_is_financial_block_not_number (test_product_app.ProductAppTests.test_historical_is_financial_block_not_number) ... 2026-11-10 17:30:40.605 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_history_snapshot_open (test_product_app.ProductAppTests.test_history_snapshot_open) ... 2026-11-10 17:30:41.343 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_initial_overview (test_product_app.ProductAppTests.test_initial_overview) ... 2026-11-10 17:30:41.995 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_no_hidden_company_or_period (test_product_app.ProductAppTests.test_no_hidden_company_or_period) ... 2026-11-10 17:30:42.095 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_own_scenario_and_threshold_reset (test_product_app.ProductAppTests.test_own_scenario_and_threshold_reset) ... 2026-11-10 17:30:42.242 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_real_readiness_from_history_stays_blocked (test_product_app.ProductAppTests.test_real_readiness_from_history_stays_blocked) ... 2026-11-10 17:30:42.712 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_refresh_reopens_same_id (test_product_app.ProductAppTests.test_refresh_reopens_same_id) ... 2026-11-10 17:30:43.669 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-10 17:30:44.271 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_sources_preflight (test_product_app.ProductAppTests.test_sources_preflight) ... 2026-11-10 17:30:44.828 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_text_ambiguity (test_product_app.ProductAppTests.test_text_ambiguity) ... 2026-11-10 17:30:45.006 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 10.895s
+
+OK
