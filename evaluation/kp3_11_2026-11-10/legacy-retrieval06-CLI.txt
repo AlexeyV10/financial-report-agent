@@ -1,0 +1,60 @@
+{
+  "schema_version": "kp3-search-0.1",
+  "status": "found",
+  "reason_code": "ok",
+  "financial_status": null,
+  "source_kind": "prepared",
+  "results": [
+    {
+      "record_id": "phosagro-2023-operating_cash_flow-2023-ev",
+      "document_id": "phosagro-2023",
+      "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+      "document_sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+      "organization_id": "phosagro_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "metric_id": "operating_cash_flow",
+      "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+      "period": {
+        "kind": "duration",
+        "duration_type": "full_year",
+        "start": "2023-01-01",
+        "end": "2023-12-31"
+      },
+      "currency": "RUB",
+      "scale": 1000000,
+      "raw_value": "134,286",
+      "value": "134286",
+      "row_label": "Денежные средства от операционной деятельности",
+      "origin_role": "reported_period",
+      "locator": {
+        "kind": "pdf",
+        "pdf_page": 5,
+        "printed_page": "328",
+        "statement_page": "3",
+        "page_region": "left_half_of_spread",
+        "table_title": "Консолидированный отчет о движении денежных средств за 2023 год",
+        "row_label": "Денежные средства от операционной деятельности",
+        "column_label": "2023",
+        "unit_header": "Млн руб."
+      },
+      "evidence_id": "phosagro-2023-operating_cash_flow-2023-ev",
+      "evidence_digest": "3a0a2df32dd56f3e6e873ba3a82cf295039f51cab24d6e4529413f4015a9669f",
+      "verification_status": "assistant_checked",
+      "source_kind": "prepared_evidence",
+      "reverification_performed": false
+    }
+  ],
+  "reverification_performed": false,
+  "warnings": [
+    "source_text_untrusted",
+    "retrieval_is_not_financial_answer"
+  ],
+  "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+  "requested_context_coverage": {
+    "requested_metric_period_slots": 1,
+    "matched_slots": 1,
+    "missing_contexts": [],
+    "scope": "Metric/period coverage only; not financial approval or evidence gold."
+  }
+}

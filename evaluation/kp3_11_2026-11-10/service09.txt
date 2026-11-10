@@ -1,0 +1,1 @@
+{"stage": "KP3-09", "model_calls": 0, "new_real_facts": 0, "known_to_developer": true, "final_eval_freeze": false, "counts": {"own_synthetic": 5, "real_known_corpus05": 104}}

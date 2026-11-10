@@ -1,0 +1,7 @@
+test_answer_rejects_forged_second_choice_or_usage (test_one_shot_a.OneShotATests.test_answer_rejects_forged_second_choice_or_usage) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.735s
+
+OK
+A protocol and candidate/choice limits saved before first A chat.

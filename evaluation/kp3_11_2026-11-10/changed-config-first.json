@@ -1,0 +1,264 @@
+{
+  "schema_version": "kp3-a-answer-0.1",
+  "run_id": "a-4d23f34b8d63435ca3b430cfbdcd973c",
+  "task_id": "a-4d23f34b8d63435ca3b430cfbdcd973c",
+  "method": "A",
+  "execution_status": "error",
+  "request_status": "error",
+  "financial_status": null,
+  "reason_code": "index_configuration_mismatch",
+  "original_question": "Явный выбор учебного dev-контекста C.",
+  "normalized_input": {
+    "schema_version": "kp3-input-0.1",
+    "input_id": "a-4d23f34b8d63435ca3b430cfbdcd973c",
+    "original_question": "Явный выбор учебного dev-контекста C.",
+    "input_kind": "form",
+    "raw_fields": {
+      "organization": "phosagro_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "operating_cash_flow"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "phosagro-2023",
+          "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+        }
+      ],
+      "mode": "snapshot"
+    },
+    "fields": {
+      "organization": "phosagro_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "operating_cash_flow"
+      ],
+      "definition_ids": [
+        "operating_cash_flow:nonfinancial_ifrs_net_v1"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "phosagro-2023",
+          "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+        }
+      ],
+      "version_policy": "explicit_versions",
+      "source_unit": {
+        "currency": "RUB",
+        "scale": 1000000
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1000000
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "comparability_id": null
+    },
+    "field_origins": {
+      "organization": "form",
+      "consolidation": "form",
+      "accounting_standard": "form",
+      "operation_id": "form",
+      "metric_ids": "form",
+      "definition_ids": "catalog_unique",
+      "periods": "form",
+      "documents": "form",
+      "version_policy": "catalog_unique",
+      "source_unit": "catalog_unique",
+      "result_unit": "catalog_unique",
+      "mode": "form",
+      "as_of": "unset",
+      "comparability_id": "unset"
+    },
+    "assumptions": [],
+    "assumption_origin": "none",
+    "hints": {
+      "years": [],
+      "as_of_text": null,
+      "document_report_year": null,
+      "organization_unmatched": null
+    },
+    "issues": [],
+    "unsupported_reasons": [],
+    "unfulfilled_requests": [],
+    "history": [],
+    "catalog_digest": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+    "language_version": "ru-input-v1"
+  },
+  "clarifications": [],
+  "financial_result": null,
+  "outcome": null,
+  "assumption_checks": [],
+  "unfulfilled_requests": [],
+  "retrieval": null,
+  "trace": [
+    {
+      "stage": "input",
+      "run_id": "a-4d23f34b8d63435ca3b430cfbdcd973c",
+      "status": "completed",
+      "elapsed_ms": 6.6901,
+      "reason_code": "ok",
+      "details": {}
+    },
+    {
+      "stage": "catalog_filters",
+      "run_id": "a-4d23f34b8d63435ca3b430cfbdcd973c",
+      "status": "completed",
+      "elapsed_ms": 5.8855,
+      "reason_code": "ok",
+      "details": {
+        "preliminary_only": true
+      }
+    },
+    {
+      "stage": "search",
+      "run_id": "a-4d23f34b8d63435ca3b430cfbdcd973c",
+      "status": "error",
+      "elapsed_ms": 180.6241,
+      "reason_code": "index_configuration_mismatch",
+      "details": {
+        "error_type": "ContractError"
+      }
+    },
+    {
+      "stage": "fact_resolution",
+      "run_id": "a-4d23f34b8d63435ca3b430cfbdcd973c",
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "reason_code": "not_reached",
+      "details": {}
+    },
+    {
+      "stage": "source_validation",
+      "run_id": "a-4d23f34b8d63435ca3b430cfbdcd973c",
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "reason_code": "not_reached",
+      "details": {}
+    },
+    {
+      "stage": "model_selection",
+      "run_id": "a-4d23f34b8d63435ca3b430cfbdcd973c",
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "reason_code": "not_reached",
+      "details": {}
+    },
+    {
+      "stage": "calculation",
+      "run_id": "a-4d23f34b8d63435ca3b430cfbdcd973c",
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "reason_code": "not_reached",
+      "details": {}
+    },
+    {
+      "stage": "result_validation",
+      "run_id": "a-4d23f34b8d63435ca3b430cfbdcd973c",
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "reason_code": "not_reached",
+      "details": {}
+    },
+    {
+      "stage": "answer",
+      "run_id": "a-4d23f34b8d63435ca3b430cfbdcd973c",
+      "status": "completed",
+      "elapsed_ms": 0.0005,
+      "reason_code": "ok",
+      "details": {
+        "financial_result_present": false
+      }
+    }
+  ],
+  "context_digest": "510492643de66fd5ee51752283dbc6b0b47a35e0b74d93eb1d8ca153e3735285",
+  "source_input_digest": "984e4d39634c21ee94988df5e28b0f23a9d0782aea584d504e02d39d03e8a03f",
+  "saved_run": {
+    "resource_id": "f34875872ebcf1e0afd6488059cebe360d4bbb430184b7cd2f8efe02e1aa2b58.json",
+    "status": "written",
+    "private": true
+  },
+  "model_calls": 0,
+  "selection": {
+    "protocol": "kp3-one-shot-a-0.1",
+    "prompt": "one-shot-financial-selection-v1",
+    "adapter": {
+      "kind": "local_llm",
+      "adapter": "ollama-one-shot-a-v1",
+      "prompt": "one-shot-financial-selection-v1",
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "server_version": "0.40.15",
+      "endpoint": "http://127.0.0.1:11435",
+      "think": false,
+      "temperature": 0,
+      "num_ctx": 8192
+    },
+    "limits": {
+      "timeout_s": 180,
+      "per_call_s": 60,
+      "top_k": 32,
+      "max_output_tokens": 384,
+      "max_choice_bytes": 4096,
+      "max_observation_bytes": 32768
+    },
+    "model_attempts": 0,
+    "mock_choices": 0,
+    "choice": null,
+    "choice_valid": false,
+    "usage": {
+      "input_tokens": null,
+      "output_tokens": null,
+      "known_chat_requests": 0,
+      "unknown_requests": 0
+    },
+    "events": [
+      {
+        "kind": "worker",
+        "run_id": "a-4d23f34b8d63435ca3b430cfbdcd973c",
+        "purpose": "primary",
+        "status": "error",
+        "phase": "search",
+        "reason_code": "index_configuration_mismatch",
+        "elapsed_ms": 180.604,
+        "search_count": 1
+      }
+    ],
+    "search_audit": [
+      {
+        "index_sha256": null,
+        "purpose": "primary",
+        "reason_code": null,
+        "spec_digest": "7174fba2bc63d039a1e6c9e7cc1a2b87cc365c1ab6c879bf6b1f21ec4889b785",
+        "status": "raised"
+      }
+    ],
+    "primary_searches": 1,
+    "validation_searches": 0,
+    "unknown_search_steps": [],
+    "observation_digest": null,
+    "stop_reason": "index_configuration_mismatch"
+  }
+}

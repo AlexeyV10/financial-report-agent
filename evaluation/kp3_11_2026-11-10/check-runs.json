@@ -1,0 +1,862 @@
+{
+  "runs": [
+    {
+      "name": "unit-regression",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 105.8795,
+      "passed": true
+    },
+    {
+      "name": "contracts03",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_contracts.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.0877,
+      "passed": true
+    },
+    {
+      "name": "method04",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_financial_method.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.0996,
+      "passed": true
+    },
+    {
+      "name": "corpus05",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_corpus.py",
+        "--resource-map",
+        "tmp/local-resources.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.3651,
+      "passed": true
+    },
+    {
+      "name": "retrieval06",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_retrieval.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1569,
+      "passed": true
+    },
+    {
+      "name": "calculator07",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_calculator.py",
+        "--resources",
+        "tmp/local-resources.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 3.0055,
+      "passed": true
+    },
+    {
+      "name": "input08",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_input.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.4376,
+      "passed": true
+    },
+    {
+      "name": "service09",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--report",
+        "tmp/b-regression-11.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 5.3642,
+      "passed": true
+    },
+    {
+      "name": "agent10",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_agent_c.py",
+        "--report",
+        "tmp/c-regression-11.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 9.5674,
+      "passed": true
+    },
+    {
+      "name": "one-shot11",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_one_shot_a.py",
+        "--report",
+        "tmp/a-scripted-11.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 3.6187,
+      "passed": true
+    },
+    {
+      "name": "fixed",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "fixed",
+        "--source",
+        "manual"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1222,
+      "passed": true
+    },
+    {
+      "name": "synthetic",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "scenario"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1437,
+      "passed": true
+    },
+    {
+      "name": "historical-legacy",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "scenario",
+        "--case",
+        "real-source"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1447,
+      "passed": true
+    },
+    {
+      "name": "questions",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "questions"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1814,
+      "passed": true
+    },
+    {
+      "name": "replay",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "replay",
+        "--run-dir",
+        "evaluation/step12_2026-11-09/run-02-environment-retry"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.4271,
+      "passed": true
+    },
+    {
+      "name": "actual-A-direct_fact_v1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\actual-A-direct_fact_v1.input.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 5.9758,
+      "passed": true
+    },
+    {
+      "name": "actual-A-absolute_change_v1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\actual-A-absolute_change_v1.input.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 2.5286,
+      "passed": true
+    },
+    {
+      "name": "actual-A-relative_change_v1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\actual-A-relative_change_v1.input.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 2.4266,
+      "passed": true
+    },
+    {
+      "name": "actual-A-scale_v1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\actual-A-scale_v1.input.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 2.0856,
+      "passed": true
+    },
+    {
+      "name": "actual-A-operating_margin_v1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\actual-A-operating_margin_v1.input.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 2.5319,
+      "passed": true
+    },
+    {
+      "name": "actual-A-false-premise",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\actual-A-false-premise.input.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 2.5317,
+      "passed": true
+    },
+    {
+      "name": "clarification-no-model",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\clarification-no-model.input.json"
+      ],
+      "exit_code": 3,
+      "expected_exit_code": 3,
+      "elapsed_s": 0.1912,
+      "passed": true
+    },
+    {
+      "name": "actual-A-clarification-applied",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\actual-A-clarification-applied.input.json",
+        "--answers",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\actual-A-clarification-applied.answers.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 1.8899,
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2023",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\historical-phosagro-2023.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.3604,
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2023",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/automatic-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\automatic-phosagro-2023.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.4386,
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2024",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\historical-phosagro-2024.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.3753,
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2024",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/automatic-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\automatic-phosagro-2024.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.3943,
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2025",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\historical-phosagro-2025.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.385,
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2025",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/automatic-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\automatic-phosagro-2025.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.3908,
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2025-q1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\historical-phosagro-2025-q1.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.389,
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2025-q1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/automatic-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\automatic-phosagro-2025-q1.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.3795,
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2025-h1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\historical-phosagro-2025-h1.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.3781,
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2025-h1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/automatic-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\automatic-phosagro-2025-h1.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.3846,
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2025-9m",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\historical-phosagro-2025-9m.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.3684,
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2025-9m",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/automatic-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\automatic-phosagro-2025-9m.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.3898,
+      "passed": true
+    },
+    {
+      "name": "historical-segezha-2021",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\historical-segezha-2021.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.3554,
+      "passed": true
+    },
+    {
+      "name": "automatic-segezha-2021",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/automatic-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\automatic-segezha-2021.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.393,
+      "passed": true
+    },
+    {
+      "name": "historical-segezha-2022",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\historical-segezha-2022.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.3412,
+      "passed": true
+    },
+    {
+      "name": "automatic-segezha-2022",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/automatic-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\automatic-segezha-2022.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.3922,
+      "passed": true
+    },
+    {
+      "name": "input-injected-value",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\input-injected-value.input.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "elapsed_s": 0.1646,
+      "passed": true
+    },
+    {
+      "name": "missing-prepared-quarter",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\missing-prepared-quarter.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.1939,
+      "passed": true
+    },
+    {
+      "name": "reversed-periods",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\reversed-periods.input.json"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.193,
+      "passed": true
+    },
+    {
+      "name": "missing-index",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\missing-index.context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\missing-index.input.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "elapsed_s": 0.3889,
+      "passed": true
+    },
+    {
+      "name": "changed-config",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_one_shot_a.py",
+        "--context",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\changed-config.context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\changed-config.input.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "elapsed_s": 0.3725,
+      "passed": true
+    },
+    {
+      "name": "legacy-input08-CLI",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/parse_financial_input.py",
+        "--catalog",
+        "data/catalogs/kp3_corpus_v1/runtime_catalog.json",
+        "--dictionary",
+        "data/dictionaries/kp3_finance_v1/definitions.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\actual-A-direct_fact_v1.input.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1314,
+      "passed": true
+    },
+    {
+      "name": "legacy-calculator07-CLI",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/calculate_financial_v3.py",
+        "--catalog",
+        "data/catalogs/kp3_corpus_v1/runtime_catalog.json",
+        "--dictionary",
+        "data/dictionaries/kp3_finance_v1/definitions.json",
+        "--admission",
+        "data/calculation/kp3_calculator_v1/real_admission.json",
+        "--bindings",
+        "data/catalogs/kp3_corpus_v1/source_bindings.json",
+        "--source-checks",
+        "evaluation/kp3_05_2026-11-09/source-checks.json",
+        "--resources",
+        "tmp/local-resources.json",
+        "--request",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\request07.json",
+        "--index",
+        "tmp/retrieval-run-11/prepared.sqlite",
+        "--config",
+        "data/extraction/kp3_pdf_v1/config.json",
+        "--lexicon",
+        "data/extraction/kp3_pdf_v1/search_lexicon.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1986,
+      "passed": true
+    },
+    {
+      "name": "legacy-retrieval06-CLI",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/search_catalog.py",
+        "search",
+        "--catalog",
+        "data/catalogs/kp3_corpus_v1/runtime_catalog.json",
+        "--resources",
+        "tmp/local-resources.json",
+        "--db",
+        "tmp/retrieval-run-11/prepared.sqlite",
+        "--spec",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\search06.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1785,
+      "passed": true
+    },
+    {
+      "name": "fixed-B09-CLI",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-11-worktree\\tmp\\cli-checks-11\\actual-A-direct_fact_v1.input.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2314,
+      "passed": true
+    }
+  ],
+  "completed_at": "2026-11-10T11:31:12.638745+00:00"
+}

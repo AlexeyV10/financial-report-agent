@@ -1,0 +1,575 @@
+{
+  "recorded_at": "2026-11-10T11:21:52.320343+00:00",
+  "model": {
+    "kind": "local_llm",
+    "adapter": "ollama-one-shot-a-v1",
+    "prompt": "one-shot-financial-selection-v1",
+    "model": "qwen3:4b",
+    "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "server_version": "0.40.15",
+    "endpoint": "http://127.0.0.1:11435",
+    "think": false,
+    "temperature": 0,
+    "num_ctx": 8192
+  },
+  "limits": {
+    "timeout_s": 180,
+    "per_call_s": 60,
+    "top_k": 32,
+    "max_output_tokens": 384,
+    "max_choice_bytes": 4096,
+    "max_observation_bytes": 32768
+  },
+  "file_sha256": {
+    "src/financial_assistant/one_shot_contracts.py": "c4408a05c74a78eb654202f0ad394ec6ff96b9a13ef0453b84713b8ec770ac7a",
+    "src/financial_assistant/one_shot_model.py": "663cfd0eb2c32bf69d105c5a6b6feee0d4b55d12c0b800112ade1f4114df67a4",
+    "src/financial_assistant/one_shot_a.py": "3e2e18d5918b773f186c29c4fa35c784dfbf765c09f3c62bfe75c2541b1f7a23",
+    "scripts/execute_one_shot_a.py": "07243693ea9821e6732b85d327c65e9a3381f0b26030a6328ba70055ddce43e4",
+    "scripts/check_kp3_one_shot_a.py": "2d49986d2f7cf53065f3dc7361c18502f7127f169ab5015d78afdeb566f8029e",
+    "tests/test_one_shot_a.py": "599f4326e623897e670da8c21edbfc8e0ed241104060a52afbe18d34458e2598"
+  },
+  "real_source_cases": [
+    {
+      "case_id": "phosagro-2023-direct_fact_v1",
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "phosagro-2023-direct_fact_v1",
+          "original_question": "Явный выбор учебного dev-контекста C.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "operating_cash_flow"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2023",
+                "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+              }
+            ],
+            "mode": "snapshot"
+          },
+          "assumptions": []
+        }
+      },
+      "expected": "answered",
+      "limits": {
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "top_k": 32,
+        "max_output_tokens": 384,
+        "max_choice_bytes": 4096,
+        "max_observation_bytes": 32768
+      }
+    },
+    {
+      "case_id": "phosagro-2024-absolute_change_v1",
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "phosagro-2024-absolute_change_v1",
+          "original_question": "Явный выбор учебного dev-контекста C.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "absolute_change_v1",
+            "metric_ids": [
+              "operating_profit"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2024",
+                "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+              }
+            ],
+            "mode": "snapshot"
+          },
+          "assumptions": []
+        }
+      },
+      "expected": "answered",
+      "limits": {
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "top_k": 32,
+        "max_output_tokens": 384,
+        "max_choice_bytes": 4096,
+        "max_observation_bytes": 32768
+      }
+    },
+    {
+      "case_id": "phosagro-2025-relative_change_v1",
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "phosagro-2025-relative_change_v1",
+          "original_question": "Явный выбор учебного dev-контекста C.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "relative_change_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2025-01-01",
+                "end": "2025-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025",
+                "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6"
+              }
+            ],
+            "mode": "snapshot"
+          },
+          "assumptions": []
+        }
+      },
+      "expected": "answered",
+      "limits": {
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "top_k": 32,
+        "max_output_tokens": 384,
+        "max_choice_bytes": 4096,
+        "max_observation_bytes": 32768
+      }
+    },
+    {
+      "case_id": "phosagro-2025-q1-scale_v1",
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "phosagro-2025-q1-scale_v1",
+          "original_question": "Явный выбор учебного dev-контекста C.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "scale_v1",
+            "metric_ids": [
+              "operating_cash_flow"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "quarter",
+                "start": "2025-01-01",
+                "end": "2025-03-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025-q1",
+                "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc"
+              }
+            ],
+            "mode": "snapshot",
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1000000000
+            }
+          },
+          "assumptions": []
+        }
+      },
+      "expected": "answered",
+      "limits": {
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "top_k": 32,
+        "max_output_tokens": 384,
+        "max_choice_bytes": 4096,
+        "max_observation_bytes": 32768
+      }
+    },
+    {
+      "case_id": "phosagro-2025-h1-operating_margin_v1",
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "phosagro-2025-h1-operating_margin_v1",
+          "original_question": "Явный выбор учебного dev-контекста C.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "operating_margin_v1",
+            "metric_ids": [
+              "operating_profit",
+              "revenue"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "year_to_date",
+                "start": "2025-01-01",
+                "end": "2025-06-30"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025-h1",
+                "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+              }
+            ],
+            "mode": "snapshot"
+          },
+          "assumptions": []
+        }
+      },
+      "expected": "answered",
+      "limits": {
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "top_k": 32,
+        "max_output_tokens": 384,
+        "max_choice_bytes": 4096,
+        "max_observation_bytes": 32768
+      }
+    },
+    {
+      "case_id": "phosagro-2025-9m-direct_fact_v1",
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "phosagro-2025-9m-direct_fact_v1",
+          "original_question": "Явный выбор учебного dev-контекста C.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "operating_profit"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "year_to_date",
+                "start": "2025-01-01",
+                "end": "2025-09-30"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025-9m",
+                "version_id": "sha256:147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c"
+              }
+            ],
+            "mode": "snapshot"
+          },
+          "assumptions": []
+        }
+      },
+      "expected": "answered",
+      "limits": {
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "top_k": 32,
+        "max_output_tokens": 384,
+        "max_choice_bytes": 4096,
+        "max_observation_bytes": 32768
+      }
+    },
+    {
+      "case_id": "segezha-2021-absolute_change_v1",
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "segezha-2021-absolute_change_v1",
+          "original_question": "Явный выбор учебного dev-контекста C.",
+          "fields": {
+            "organization": "segezha_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "absolute_change_v1",
+            "metric_ids": [
+              "operating_cash_flow"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2020-01-01",
+                "end": "2020-12-31"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2021-01-01",
+                "end": "2021-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "segezha-2021",
+                "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+              }
+            ],
+            "mode": "snapshot"
+          },
+          "assumptions": []
+        }
+      },
+      "expected": "answered",
+      "limits": {
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "top_k": 32,
+        "max_output_tokens": 384,
+        "max_choice_bytes": 4096,
+        "max_observation_bytes": 32768
+      }
+    },
+    {
+      "case_id": "segezha-2022-operating_margin_v1",
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "segezha-2022-operating_margin_v1",
+          "original_question": "Явный выбор учебного dev-контекста C.",
+          "fields": {
+            "organization": "segezha_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "operating_margin_v1",
+            "metric_ids": [
+              "operating_profit",
+              "revenue"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2022-01-01",
+                "end": "2022-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "segezha-2022",
+                "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+              }
+            ],
+            "mode": "snapshot"
+          },
+          "assumptions": []
+        }
+      },
+      "expected": "answered",
+      "limits": {
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "top_k": 32,
+        "max_output_tokens": 384,
+        "max_choice_bytes": 4096,
+        "max_observation_bytes": 32768
+      }
+    },
+    {
+      "case_id": "historical-publication-unknown",
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "phosagro-2023-direct_fact_v1",
+          "original_question": "Явный выбор учебного dev-контекста C.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "direct_fact_v1",
+            "metric_ids": [
+              "operating_cash_flow"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2023",
+                "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+              }
+            ],
+            "mode": "historical",
+            "as_of": "2030-01-01T23:59:59+03:00"
+          },
+          "assumptions": []
+        }
+      },
+      "expected": "missing",
+      "limits": {
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "top_k": 32,
+        "max_output_tokens": 384,
+        "max_choice_bytes": 4096,
+        "max_observation_bytes": 32768
+      }
+    },
+    {
+      "case_id": "qa07-top1-partial-finish",
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "phosagro-2025-relative_change_v1",
+          "original_question": "Явный выбор учебного dev-контекста C.",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "relative_change_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2025-01-01",
+                "end": "2025-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2025",
+                "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6"
+              }
+            ],
+            "mode": "snapshot"
+          },
+          "assumptions": []
+        }
+      },
+      "expected": "missing",
+      "limits": {
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "top_k": 1,
+        "max_output_tokens": 384,
+        "max_choice_bytes": 4096,
+        "max_observation_bytes": 32768
+      }
+    },
+    {
+      "case_id": "false-premise-revenue-increase",
+      "source": {
+        "kind": "form",
+        "form": {
+          "schema_version": "kp3-form-0.1",
+          "input_id": "phosagro-2024-absolute_change_v1",
+          "original_question": "Почему выручка снизилась?",
+          "fields": {
+            "organization": "phosagro_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "operation_id": "absolute_change_v1",
+            "metric_ids": [
+              "revenue"
+            ],
+            "periods": [
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              }
+            ],
+            "documents": [
+              {
+                "document_id": "phosagro-2024",
+                "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+              }
+            ],
+            "mode": "snapshot"
+          },
+          "assumptions": []
+        }
+      },
+      "expected": "answered",
+      "limits": {
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "top_k": 32,
+        "max_output_tokens": 384,
+        "max_choice_bytes": 4096,
+        "max_observation_bytes": 32768
+      }
+    }
+  ],
+  "own_local_llm_case": {
+    "case_id": "own-zero-relative-base",
+    "data_origin": "own_synthetic_not_issuer",
+    "operation_id": "relative_change_v1",
+    "previous": "0",
+    "current": "120",
+    "expected": "unsupported/nonpositive_base"
+  },
+  "retry_policy": "One model choice per run; no repair. Any actual failed attempt remains separate. No unseen/final benchmark."
+}

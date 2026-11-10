@@ -1,0 +1,153 @@
+{
+  "schema_version": "kp3-input-cli-0.1",
+  "parse_status": "parsed",
+  "binding": {
+    "schema_version": "kp3-binding-0.1",
+    "status": "resolved",
+    "reason_code": "ok",
+    "normalized_input": {
+      "schema_version": "kp3-input-0.1",
+      "input_id": "phosagro-2023-direct_fact_v1",
+      "original_question": "Явный выбор учебного dev-контекста C.",
+      "input_kind": "form",
+      "raw_fields": {
+        "organization": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "operation_id": "direct_fact_v1",
+        "metric_ids": [
+          "operating_cash_flow"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2023",
+            "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+          }
+        ],
+        "mode": "snapshot"
+      },
+      "fields": {
+        "organization": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "operation_id": "direct_fact_v1",
+        "metric_ids": [
+          "operating_cash_flow"
+        ],
+        "definition_ids": [
+          "operating_cash_flow:nonfinancial_ifrs_net_v1"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2023",
+            "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "mode": "snapshot",
+        "as_of": null,
+        "comparability_id": null
+      },
+      "field_origins": {
+        "organization": "form",
+        "consolidation": "form",
+        "accounting_standard": "form",
+        "operation_id": "form",
+        "metric_ids": "form",
+        "definition_ids": "catalog_unique",
+        "periods": "form",
+        "documents": "form",
+        "version_policy": "catalog_unique",
+        "source_unit": "catalog_unique",
+        "result_unit": "catalog_unique",
+        "mode": "form",
+        "as_of": "unset",
+        "comparability_id": "unset"
+      },
+      "assumptions": [],
+      "assumption_origin": "none",
+      "hints": {
+        "years": [],
+        "as_of_text": null,
+        "document_report_year": null,
+        "organization_unmatched": null
+      },
+      "issues": [],
+      "unsupported_reasons": [],
+      "unfulfilled_requests": [],
+      "history": [],
+      "catalog_digest": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+      "language_version": "ru-input-v1"
+    },
+    "clarifications": [],
+    "request": {
+      "schema_version": "0.3",
+      "request_id": "phosagro-2023-direct_fact_v1",
+      "original_question": "Явный выбор учебного dev-контекста C.",
+      "operation_id": "direct_fact_v1",
+      "organization_id": "phosagro_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "inputs": [
+        {
+          "role": "fact",
+          "fact_id": "phosagro-2023-operating_cash_flow-2023",
+          "document_id": "phosagro-2023",
+          "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+          "metric_id": "operating_cash_flow",
+          "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1",
+          "period": {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          },
+          "source_unit": {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        }
+      ],
+      "version_policy": "explicit_versions",
+      "comparability_id": null,
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1000000
+      },
+      "mode": "snapshot",
+      "as_of": null
+    },
+    "assumptions": [],
+    "calculations_performed": false,
+    "financial_status": null
+  },
+  "probe": null,
+  "technical_details": null,
+  "model_calls": 0
+}

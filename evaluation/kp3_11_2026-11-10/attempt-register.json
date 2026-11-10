@@ -1,0 +1,450 @@
+{
+  "counts": {
+    "executions": 42,
+    "actual_chat_requests": 17,
+    "real_source_chat_runs": 16,
+    "own_synthetic_chat_runs": 1,
+    "numeric": 16,
+    "financial_unsupported": 1,
+    "request_missing": 19,
+    "clarification": 1,
+    "request_conflict": 1,
+    "technical_error": 4
+  },
+  "usage": {
+    "input_tokens": 16081,
+    "output_tokens": 1590,
+    "unknown_chat_requests": 0,
+    "sent_calls_unknown_tokens": 0
+  },
+  "actual_search_counts": {
+    "primary_searches": 38,
+    "validation_searches": 34
+  },
+  "model_elapsed_ms": 35186.191,
+  "attempts": [
+    {
+      "family": "known_real_source_matrix",
+      "case_id": "phosagro-2023-direct_fact_v1",
+      "run_id": "a-dcd7558b50604f419d36752c98888150",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "model_calls": 1
+    },
+    {
+      "family": "known_real_source_matrix",
+      "case_id": "phosagro-2024-absolute_change_v1",
+      "run_id": "a-59cc37ac6230473dbdc7f1c527178502",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "model_calls": 1
+    },
+    {
+      "family": "known_real_source_matrix",
+      "case_id": "phosagro-2025-relative_change_v1",
+      "run_id": "a-1b838533357b48c48adadf225d4b8a81",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "model_calls": 1
+    },
+    {
+      "family": "known_real_source_matrix",
+      "case_id": "phosagro-2025-q1-scale_v1",
+      "run_id": "a-8af1add3acb447dcbf38af96bcbb7ef7",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "model_calls": 1
+    },
+    {
+      "family": "known_real_source_matrix",
+      "case_id": "phosagro-2025-h1-operating_margin_v1",
+      "run_id": "a-5ac29e3b4df241aa8caef2cc7e440412",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "model_calls": 1
+    },
+    {
+      "family": "known_real_source_matrix",
+      "case_id": "phosagro-2025-9m-direct_fact_v1",
+      "run_id": "a-d1f3e8866907444b903517888c004978",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "model_calls": 1
+    },
+    {
+      "family": "known_real_source_matrix",
+      "case_id": "segezha-2021-absolute_change_v1",
+      "run_id": "a-e64eca93d14a475ca10617020d6fa76a",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "model_calls": 1
+    },
+    {
+      "family": "known_real_source_matrix",
+      "case_id": "segezha-2022-operating_margin_v1",
+      "run_id": "a-e301ae85d09e4c91870c733651ff0980",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "model_calls": 1
+    },
+    {
+      "family": "known_real_source_matrix",
+      "case_id": "historical-publication-unknown",
+      "run_id": "a-12fb24467aea456da114e382c5bdb386",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown",
+      "model_calls": 0
+    },
+    {
+      "family": "known_real_source_matrix",
+      "case_id": "qa07-top1-partial-finish",
+      "run_id": "a-a3474080c9cd45ec8d29932fee0c408e",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "incomplete_evidence_context",
+      "model_calls": 0
+    },
+    {
+      "family": "known_real_source_matrix",
+      "case_id": "false-premise-revenue-increase",
+      "run_id": "a-60386b66b9ba4c92bcc2052397e8baf1",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "model_calls": 1
+    },
+    {
+      "family": "own_synthetic_local_llm_not_issuer",
+      "case_id": "own-zero-relative-base",
+      "run_id": "a-687c73143ccc42caaeb6569864fca834",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "unsupported",
+      "reason_code": "nonpositive_base",
+      "model_calls": 1
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "actual-A-direct_fact_v1",
+      "run_id": "a-b69ddba0bd344f6ea6c468a52097f589",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "model_calls": 1
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "actual-A-absolute_change_v1",
+      "run_id": "a-cd74bedc4335468ca1199d2cc155cbf8",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "model_calls": 1
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "actual-A-relative_change_v1",
+      "run_id": "a-4914ad3901b94decb39b677f9b101cf4",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "model_calls": 1
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "actual-A-scale_v1",
+      "run_id": "a-7a87cc548ed84884994f6100e55c9356",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "model_calls": 1
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "actual-A-operating_margin_v1",
+      "run_id": "a-775b9d059c0e419e94422a2dc4cfada1",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "model_calls": 1
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "actual-A-false-premise",
+      "run_id": "a-5f4a8658d34b494a85e595c8f1cc5294",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "model_calls": 1
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "clarification-no-model",
+      "run_id": "a-b2d92b929e79436c95417200eed3e713",
+      "execution_status": "awaiting_clarification",
+      "request_status": "awaiting_clarification",
+      "financial_status": null,
+      "reason_code": "missing_organization",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "actual-A-clarification-applied",
+      "run_id": "a-d4098419efc4467d9f73735866309846",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "model_calls": 1
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "historical-phosagro-2023",
+      "run_id": "a-e2b9a0605e564ea694d0a76888c68d89",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "automatic-phosagro-2023",
+      "run_id": "a-2c5b50c8247e400bace191001f16322c",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "unverified_candidate",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "historical-phosagro-2024",
+      "run_id": "a-ffd99792a6914e1f84b65e39f3702623",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "automatic-phosagro-2024",
+      "run_id": "a-8533f6f8cb6b4550a8f036450e5e0053",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "unverified_candidate",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "historical-phosagro-2025",
+      "run_id": "a-f2338001f3c34b7a939af8c91283f3a9",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "automatic-phosagro-2025",
+      "run_id": "a-dcdc4f33ac4c4f62b7a3b848a52e353c",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "unverified_candidate",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "historical-phosagro-2025-q1",
+      "run_id": "a-1b2083b107f54e2f8c433f9703cd1b7d",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "automatic-phosagro-2025-q1",
+      "run_id": "a-5c5c3e06d324401fb5594ea3bae44eae",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "unverified_candidate",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "historical-phosagro-2025-h1",
+      "run_id": "a-1d2c3924cc614f14ba7f1e992207dcab",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "automatic-phosagro-2025-h1",
+      "run_id": "a-e9ab19e32d47445c8dac792e95334c10",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "unverified_candidate",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "historical-phosagro-2025-9m",
+      "run_id": "a-7cfa0c0f5186400fb9d7ae32c5b372e9",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "automatic-phosagro-2025-9m",
+      "run_id": "a-013352e15c5643f19ede3bd578a95b6b",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "unverified_candidate",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "historical-segezha-2021",
+      "run_id": "a-a1a6a992aa5740b691fb26f909b4b468",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "automatic-segezha-2021",
+      "run_id": "a-ed1d9b46bd724217a807bf61a42f06bf",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "unverified_candidate",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "historical-segezha-2022",
+      "run_id": "a-d7e0c356d180471099d0230f6c8b920f",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "automatic-segezha-2022",
+      "run_id": "a-686f662ebf1c4714829a67f8ef3bd072",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "unverified_candidate",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "input-injected-value",
+      "run_id": "a-1bc2ea0c645c4a7c97c3a78d852ac99b",
+      "execution_status": "error",
+      "request_status": "error",
+      "financial_status": null,
+      "reason_code": "input_fields_mismatch",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "missing-prepared-quarter",
+      "run_id": "a-5859a523dbbe415890cc798c26c77eee",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "no_compatible_fact",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "reversed-periods",
+      "run_id": "a-9759513b78fa4206b118bc3560815ca2",
+      "execution_status": "completed",
+      "request_status": "conflict",
+      "financial_status": null,
+      "reason_code": "incompatible_periods",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "missing-index",
+      "run_id": "a-d7a88bff966647ddbccff864f0b6426c",
+      "execution_status": "error",
+      "request_status": "error",
+      "financial_status": null,
+      "reason_code": "index_missing",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "changed-config",
+      "run_id": "a-4d23f34b8d63435ca3b430cfbdcd973c",
+      "execution_status": "error",
+      "request_status": "error",
+      "financial_status": null,
+      "reason_code": "index_configuration_mismatch",
+      "model_calls": 0
+    },
+    {
+      "family": "actual_CLI",
+      "case_id": "offline-no-fallback",
+      "run_id": "a-5255e5abb55642878cc39c26d50bab64",
+      "execution_status": "error",
+      "request_status": "error",
+      "financial_status": null,
+      "reason_code": "adapter_unavailable",
+      "model_calls": 0
+    }
+  ],
+  "known_to_developer": true,
+  "reserved_unseen_real": 0,
+  "independent_observations": false
+}

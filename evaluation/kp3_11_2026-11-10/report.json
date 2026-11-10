@@ -1,0 +1,79 @@
+{
+  "stage": "KP3-11",
+  "status": "technically_complete",
+  "unit_tests": {
+    "old": 546,
+    "new": 38,
+    "total": 584,
+    "passed": 584
+  },
+  "checkers": "03-11 passed; old gold04/07/corpus05/manifests unchanged",
+  "legacy_cli": 5,
+  "additional_old_cli": [
+    "06",
+    "07",
+    "08",
+    "B09"
+  ],
+  "new_A_cli": 30,
+  "real_known_source_matrix": {
+    "cases": 11,
+    "numeric": 9,
+    "early_without_model": 2,
+    "chat_requests": 9,
+    "matched": 11
+  },
+  "own_synthetic_local_llm": {
+    "cases": 1,
+    "chat_requests": 1,
+    "financial_status": "unsupported",
+    "reason": "nonpositive_base"
+  },
+  "all_actual_A_executions": {
+    "executions": 42,
+    "actual_chat_requests": 17,
+    "real_source_chat_runs": 16,
+    "own_synthetic_chat_runs": 1,
+    "numeric": 16,
+    "financial_unsupported": 1,
+    "request_missing": 19,
+    "clarification": 1,
+    "request_conflict": 1,
+    "technical_error": 4
+  },
+  "actual_usage": {
+    "input_tokens": 16081,
+    "output_tokens": 1590,
+    "unknown_chat_requests": 0,
+    "sent_calls_unknown_tokens": 0
+  },
+  "actual_search_counts": {
+    "primary_searches": 38,
+    "validation_searches": 34
+  },
+  "scripted_matrix": {
+    "cases": 5,
+    "actual_model_calls": 0,
+    "own_synthetic": true
+  },
+  "source_versions": 8,
+  "source_facts": 48,
+  "new_real_facts": 0,
+  "human_reviewed": 0,
+  "publication_proven": 0,
+  "new_models_or_installs": 0,
+  "known_to_developer": true,
+  "reserved_unseen_real": 0,
+  "final_eval_freeze": false,
+  "old_QA07_C_call_limit": "unchanged error",
+  "old_financial_3_of_10": "unchanged historical measurement",
+  "limits": [
+    "One metadata choice, not free A_raw RAG or general financial reasoning.",
+    "Operation/version scope resolved08; prepared pool small/often unique.",
+    "A sees metadata only; C can request checked values; no quality comparison claimed.",
+    "Validation retrieval/recomputation explicitly counted, not adaptive extra search.",
+    "Historical/trading blocked for all8 unknown publications; causal why unsupported.",
+    "UI unchanged; no stage12 scenario/history/export implemented."
+  ],
+  "next_instruction": "Standalone prompt12 saved; STOP after11,12 not authorized to auto-run."
+}
