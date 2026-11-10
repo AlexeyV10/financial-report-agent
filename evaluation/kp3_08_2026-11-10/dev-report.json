@@ -1,0 +1,542 @@
+{
+  "cases": [
+    {
+      "case_id": "ru-001",
+      "family": "direct",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-002",
+      "family": "direct",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-003",
+      "family": "direct",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-004",
+      "family": "direct",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-005",
+      "family": "direct",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-006",
+      "family": "operating-profit",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-007",
+      "family": "operating-profit",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-008",
+      "family": "operating-profit",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-009",
+      "family": "cfo",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-010",
+      "family": "cfo",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-011",
+      "family": "cfo",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-012",
+      "family": "change",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-013",
+      "family": "change",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-014",
+      "family": "change",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-015",
+      "family": "change",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-016",
+      "family": "change",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-017",
+      "family": "scale",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-018",
+      "family": "scale",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-019",
+      "family": "scale",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-020",
+      "family": "scale",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-021",
+      "family": "scale",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-022",
+      "family": "scale",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-023",
+      "family": "scale",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-024",
+      "family": "margin",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-025",
+      "family": "margin",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-026",
+      "family": "margin",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-027",
+      "family": "period",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-028",
+      "family": "period",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-029",
+      "family": "period",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-030",
+      "family": "premise",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-031",
+      "family": "premise",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-032",
+      "family": "premise",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-033",
+      "family": "premise",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-034",
+      "family": "premise",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-035",
+      "family": "premise",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-036",
+      "family": "relative-premise",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-037",
+      "family": "historical",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-038",
+      "family": "clarification",
+      "status": "awaiting_clarification",
+      "reason_code": "missing_organization",
+      "matched": true
+    },
+    {
+      "case_id": "ru-039",
+      "family": "clarification",
+      "status": "awaiting_clarification",
+      "reason_code": "unknown_organization",
+      "matched": true
+    },
+    {
+      "case_id": "ru-040",
+      "family": "clarification",
+      "status": "awaiting_clarification",
+      "reason_code": "ambiguous_organization",
+      "matched": true
+    },
+    {
+      "case_id": "ru-041",
+      "family": "clarification",
+      "status": "awaiting_clarification",
+      "reason_code": "fields_required",
+      "matched": true
+    },
+    {
+      "case_id": "ru-042",
+      "family": "clarification",
+      "status": "awaiting_clarification",
+      "reason_code": "fields_required",
+      "matched": true
+    },
+    {
+      "case_id": "ru-043",
+      "family": "clarification",
+      "status": "awaiting_clarification",
+      "reason_code": "fields_required",
+      "matched": true
+    },
+    {
+      "case_id": "ru-044",
+      "family": "clarification",
+      "status": "awaiting_clarification",
+      "reason_code": "fields_required",
+      "matched": true
+    },
+    {
+      "case_id": "ru-045",
+      "family": "clarification",
+      "status": "awaiting_clarification",
+      "reason_code": "version_ambiguous",
+      "matched": true
+    },
+    {
+      "case_id": "ru-046",
+      "family": "clarification",
+      "status": "awaiting_clarification",
+      "reason_code": "fields_required",
+      "matched": true
+    },
+    {
+      "case_id": "ru-047",
+      "family": "clarification",
+      "status": "awaiting_clarification",
+      "reason_code": "fields_required",
+      "matched": true
+    },
+    {
+      "case_id": "ru-048",
+      "family": "clarification",
+      "status": "awaiting_clarification",
+      "reason_code": "fields_required",
+      "matched": true
+    },
+    {
+      "case_id": "ru-049",
+      "family": "clarification",
+      "status": "awaiting_clarification",
+      "reason_code": "fields_required",
+      "matched": true
+    },
+    {
+      "case_id": "ru-050",
+      "family": "unsupported",
+      "status": "unsupported",
+      "reason_code": "unsupported_metric",
+      "matched": true
+    },
+    {
+      "case_id": "ru-051",
+      "family": "unsupported",
+      "status": "unsupported",
+      "reason_code": "unsupported_metric",
+      "matched": true
+    },
+    {
+      "case_id": "ru-052",
+      "family": "unsupported",
+      "status": "unsupported",
+      "reason_code": "unsupported_metric",
+      "matched": true
+    },
+    {
+      "case_id": "ru-053",
+      "family": "unsupported",
+      "status": "unsupported",
+      "reason_code": "unsupported_metric",
+      "matched": true
+    },
+    {
+      "case_id": "ru-054",
+      "family": "unsupported",
+      "status": "unsupported",
+      "reason_code": "financial_or_other_standard_not_supported",
+      "matched": true
+    },
+    {
+      "case_id": "ru-055",
+      "family": "unsupported",
+      "status": "unsupported",
+      "reason_code": "scope_not_supported",
+      "matched": true
+    },
+    {
+      "case_id": "ru-056",
+      "family": "unsupported",
+      "status": "unsupported",
+      "reason_code": "scope_not_supported",
+      "matched": true
+    },
+    {
+      "case_id": "ru-057",
+      "family": "unsupported",
+      "status": "unsupported",
+      "reason_code": "percentage_point_operation_not_registered",
+      "matched": true
+    },
+    {
+      "case_id": "ru-058",
+      "family": "unsupported",
+      "status": "unsupported",
+      "reason_code": "currency_conversion_not_supported",
+      "matched": true
+    },
+    {
+      "case_id": "ru-059",
+      "family": "unsupported",
+      "status": "unsupported",
+      "reason_code": "intent_not_recognized",
+      "matched": true
+    },
+    {
+      "case_id": "ru-060",
+      "family": "unsupported",
+      "status": "unsupported",
+      "reason_code": "untrusted_instruction",
+      "matched": true
+    },
+    {
+      "case_id": "ru-061",
+      "family": "unsupported",
+      "status": "unsupported",
+      "reason_code": "untrusted_instruction",
+      "matched": true
+    },
+    {
+      "case_id": "ru-062",
+      "family": "unsupported",
+      "status": "unsupported",
+      "reason_code": "untrusted_instruction",
+      "matched": true
+    },
+    {
+      "case_id": "ru-063",
+      "family": "unsupported",
+      "status": "unsupported",
+      "reason_code": "negated_direction_not_supported",
+      "matched": true
+    },
+    {
+      "case_id": "ru-064",
+      "family": "unsupported",
+      "status": "unsupported",
+      "reason_code": "percent_amount_unit_conflict",
+      "matched": true
+    },
+    {
+      "case_id": "ru-065",
+      "family": "reversed",
+      "status": "conflict",
+      "reason_code": "incompatible_periods",
+      "matched": true
+    },
+    {
+      "case_id": "ru-066",
+      "family": "unadmitted-quarter",
+      "status": "missing",
+      "reason_code": "no_compatible_fact",
+      "matched": true
+    },
+    {
+      "case_id": "ru-067",
+      "family": "form-five-operations",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-068",
+      "family": "form-five-operations",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-069",
+      "family": "form-five-operations",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-070",
+      "family": "form-five-operations",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-071",
+      "family": "form-five-operations",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-072",
+      "family": "form-premise",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-073",
+      "family": "form-clarification",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-074",
+      "family": "text-clarification",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-075",
+      "family": "exact-document",
+      "status": "resolved",
+      "reason_code": "ok",
+      "matched": true
+    },
+    {
+      "case_id": "ru-076",
+      "family": "multiple-exact-documents",
+      "status": "unsupported",
+      "reason_code": "multiple_document_mentions",
+      "matched": true
+    }
+  ],
+  "total": 76,
+  "matched": 76,
+  "known_to_developer": true,
+  "model_calls": 0,
+  "new_real_facts": 0,
+  "final_eval_freeze": false
+}

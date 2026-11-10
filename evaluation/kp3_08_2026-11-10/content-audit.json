@@ -1,0 +1,20 @@
+{
+  "child_baseline_files": 595,
+  "unchanged_child_files": 592,
+  "changed_child_baseline_files": [
+    "README.md",
+    "STATUS.md",
+    "docs/decisions.md"
+  ],
+  "root_baseline_files": 459,
+  "unchanged_root_files": 457,
+  "changed_root_files": [
+    "STATUS.md",
+    "docs/decisions.md"
+  ],
+  "old_document_bytes_preserved_as_suffix": true,
+  "root_head": "c18e3febfdbce731c542607a1041cccf190f5798",
+  "root_branch": "codex/kp3-01-02-scope-baseline",
+  "parent07_clean": true,
+  "old_sources_contracts_gold_manifests_tests_preserved": true
+}

@@ -1,0 +1,1178 @@
+{
+  "checks": [
+    {
+      "name": "parse-ru-001",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-002",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-003",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-004",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-005",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-006",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-007",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-008",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-009",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-010",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-011",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-012",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-013",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-014",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-015",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-016",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-017",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-018",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-019",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-020",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-021",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-022",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-023",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-024",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-025",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-026",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-027",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-028",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-029",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-030",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-031",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-032",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-033",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-034",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-035",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-036",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-037",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-038",
+      "exit_code": 3,
+      "binding_status": "awaiting_clarification",
+      "parse_status": "awaiting_clarification",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "missing_organization",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-039",
+      "exit_code": 3,
+      "binding_status": "awaiting_clarification",
+      "parse_status": "awaiting_clarification",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "unknown_organization",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-040",
+      "exit_code": 3,
+      "binding_status": "awaiting_clarification",
+      "parse_status": "awaiting_clarification",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ambiguous_organization",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-041",
+      "exit_code": 3,
+      "binding_status": "awaiting_clarification",
+      "parse_status": "awaiting_clarification",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "fields_required",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-042",
+      "exit_code": 3,
+      "binding_status": "awaiting_clarification",
+      "parse_status": "awaiting_clarification",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "fields_required",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-043",
+      "exit_code": 3,
+      "binding_status": "awaiting_clarification",
+      "parse_status": "awaiting_clarification",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "fields_required",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-044",
+      "exit_code": 3,
+      "binding_status": "awaiting_clarification",
+      "parse_status": "awaiting_clarification",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "fields_required",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-045",
+      "exit_code": 3,
+      "binding_status": "awaiting_clarification",
+      "parse_status": "awaiting_clarification",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "version_ambiguous",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-046",
+      "exit_code": 3,
+      "binding_status": "awaiting_clarification",
+      "parse_status": "awaiting_clarification",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "fields_required",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-047",
+      "exit_code": 3,
+      "binding_status": "awaiting_clarification",
+      "parse_status": "awaiting_clarification",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "fields_required",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-048",
+      "exit_code": 3,
+      "binding_status": "awaiting_clarification",
+      "parse_status": "awaiting_clarification",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "fields_required",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-049",
+      "exit_code": 3,
+      "binding_status": "awaiting_clarification",
+      "parse_status": "awaiting_clarification",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "fields_required",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-050",
+      "exit_code": 4,
+      "binding_status": "unsupported",
+      "parse_status": "unsupported",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "unsupported_metric",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-051",
+      "exit_code": 4,
+      "binding_status": "unsupported",
+      "parse_status": "unsupported",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "unsupported_metric",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-052",
+      "exit_code": 4,
+      "binding_status": "unsupported",
+      "parse_status": "unsupported",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "unsupported_metric",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-053",
+      "exit_code": 4,
+      "binding_status": "unsupported",
+      "parse_status": "unsupported",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "unsupported_metric",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-054",
+      "exit_code": 4,
+      "binding_status": "unsupported",
+      "parse_status": "unsupported",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "financial_or_other_standard_not_supported",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-055",
+      "exit_code": 4,
+      "binding_status": "unsupported",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "scope_not_supported",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-056",
+      "exit_code": 4,
+      "binding_status": "unsupported",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "scope_not_supported",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-057",
+      "exit_code": 4,
+      "binding_status": "unsupported",
+      "parse_status": "unsupported",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "percentage_point_operation_not_registered",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-058",
+      "exit_code": 4,
+      "binding_status": "unsupported",
+      "parse_status": "unsupported",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "currency_conversion_not_supported",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-059",
+      "exit_code": 4,
+      "binding_status": "unsupported",
+      "parse_status": "unsupported",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "intent_not_recognized",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-060",
+      "exit_code": 4,
+      "binding_status": "unsupported",
+      "parse_status": "unsupported",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "untrusted_instruction",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-061",
+      "exit_code": 4,
+      "binding_status": "unsupported",
+      "parse_status": "unsupported",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "untrusted_instruction",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-062",
+      "exit_code": 4,
+      "binding_status": "unsupported",
+      "parse_status": "unsupported",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "untrusted_instruction",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-063",
+      "exit_code": 4,
+      "binding_status": "unsupported",
+      "parse_status": "unsupported",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "negated_direction_not_supported",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-064",
+      "exit_code": 4,
+      "binding_status": "unsupported",
+      "parse_status": "unsupported",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "percent_amount_unit_conflict",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-065",
+      "exit_code": 4,
+      "binding_status": "conflict",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "incompatible_periods",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-066",
+      "exit_code": 4,
+      "binding_status": "missing",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "no_compatible_fact",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-067",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-068",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-069",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-070",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-071",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-072",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-073",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-074",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-075",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "parse-ru-076",
+      "exit_code": 4,
+      "binding_status": "unsupported",
+      "parse_status": "unsupported",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "multiple_document_mentions",
+      "passed": true
+    },
+    {
+      "name": "probe-direct_fact_v1",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "probe-absolute_change_v1",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "probe-relative_change_v1",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "probe-scale_v1",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "probe-operating_margin_v1",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2023",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2023",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2023",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2024",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2024",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2024",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2025",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2025",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2025",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2025-q1",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2025-q1",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2025-q1",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2025-h1",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2025-h1",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2025-h1",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2025-9m",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2025-9m",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2025-9m",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "passed": true
+    },
+    {
+      "name": "prepared-segezha-2021",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "historical-segezha-2021",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "passed": true
+    },
+    {
+      "name": "automatic-segezha-2021",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "passed": true
+    },
+    {
+      "name": "prepared-segezha-2022",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "historical-segezha-2022",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "missing",
+      "reason_code": "publication_unknown",
+      "passed": true
+    },
+    {
+      "name": "automatic-segezha-2022",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "missing",
+      "reason_code": "unverified_candidate",
+      "passed": true
+    },
+    {
+      "name": "false-premise-2024",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "false-premise-2023",
+      "exit_code": 0,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "missing-pdf",
+      "exit_code": 2,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": null,
+      "reason_code": "source_missing",
+      "passed": true
+    },
+    {
+      "name": "wrong-pdf",
+      "exit_code": 2,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": null,
+      "reason_code": "source_version_mismatch",
+      "passed": true
+    },
+    {
+      "name": "stale-index",
+      "exit_code": 2,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": null,
+      "reason_code": "artifact_integrity_error",
+      "passed": true
+    },
+    {
+      "name": "stale-config",
+      "exit_code": 2,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": null,
+      "reason_code": "artifact_integrity_error",
+      "passed": true
+    },
+    {
+      "name": "stale-export",
+      "exit_code": 2,
+      "binding_status": "resolved",
+      "parse_status": "parsed",
+      "probe": true,
+      "financial_status": null,
+      "reason_code": "artifact_integrity_error",
+      "passed": true
+    },
+    {
+      "name": "changed-catalog-admission",
+      "exit_code": 2,
+      "binding_status": null,
+      "parse_status": "error",
+      "probe": true,
+      "financial_status": null,
+      "reason_code": "context_digest_mismatch",
+      "passed": true
+    },
+    {
+      "name": "model-value-rejected",
+      "exit_code": 2,
+      "binding_status": null,
+      "parse_status": "error",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "input_fields_mismatch",
+      "passed": true
+    },
+    {
+      "name": "clarification-budget",
+      "exit_code": 2,
+      "binding_status": null,
+      "parse_status": "error",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "invalid_answers",
+      "passed": true
+    },
+    {
+      "name": "unknown-definition_ids",
+      "exit_code": 2,
+      "binding_status": "error",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "unknown_definition_id",
+      "passed": true
+    },
+    {
+      "name": "unknown-documents",
+      "exit_code": 2,
+      "binding_status": "error",
+      "parse_status": "parsed",
+      "probe": false,
+      "financial_status": null,
+      "reason_code": "unknown_document_id",
+      "passed": true
+    }
+  ],
+  "total": 117,
+  "passed": 117,
+  "runtime_expected_allowed": false,
+  "model_calls": 0
+}

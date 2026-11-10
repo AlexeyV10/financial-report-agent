@@ -1,0 +1,41 @@
+{
+  "stage": "KP3-08",
+  "status": "technically_complete",
+  "client_date": "2026-11-10",
+  "timezone": "Europe/Moscow",
+  "unit_tests": {
+    "old": 403,
+    "new": 64,
+    "total": 467,
+    "passed": 467
+  },
+  "input_dev_cases": 76,
+  "expected_origin": "hand specified separately; builder imports no production parser",
+  "new_cli": 117,
+  "legacy_cli": 5,
+  "checkers": "03-08 passed; old gold04/07 unchanged",
+  "numeric_real_adapter_probes": 15,
+  "financial_reference": "unchanged independent Fraction/integer reference07 + Decimal80/HALF_UP; no production answer for gold",
+  "model_calls": 0,
+  "new_real_facts": 0,
+  "source_versions": 8,
+  "source_facts": 48,
+  "human_reviewed": 0,
+  "proven_publications": 0,
+  "known_to_developer": true,
+  "reserved_unseen_real": 0,
+  "final_eval_freeze": false,
+  "limitations": [
+    "Limited declared Russian grammar, not arbitrary language understanding",
+    "One organization/operation per request; multiple requests require explicit selection",
+    "Causal why unsupported; direction verified separately",
+    "No UI/service B09/agent C10/new sources/OCR/trading",
+    "Historical blocked for all8 real sources",
+    "No new percent-point or other financial operations"
+  ],
+  "unchanged_old_metrics": [
+    "QA07 C/call_limit error",
+    "3/10financial",
+    "reserved financial n=0"
+  ]
+}

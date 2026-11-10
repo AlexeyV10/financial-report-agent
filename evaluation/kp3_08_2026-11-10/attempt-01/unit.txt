@@ -1,0 +1,71 @@
+test_66_hand_specified_open_cases (test_russian_input.RussianInputTests.test_66_hand_specified_open_cases) ... ok
+test_alias_ambiguity_no_first_match (test_russian_input.RussianInputTests.test_alias_ambiguity_no_first_match) ... ok
+test_ambiguous_change_and_both_operations_require_selection (test_russian_input.RussianInputTests.test_ambiguous_change_and_both_operations_require_selection) ... ok
+test_amount_percent_scale_intents_do_not_collapse_to_growth (test_russian_input.RussianInputTests.test_amount_percent_scale_intents_do_not_collapse_to_growth) ... ok
+test_as_of_date_separate_from_report_year (test_russian_input.RussianInputTests.test_as_of_date_separate_from_report_year) ... ok
+test_candidate_and_structure_checked_not_resolved (test_russian_input.RussianInputTests.test_candidate_and_structure_checked_not_resolved) ... ok
+test_catalog_changes_between_input_and_binding_technical (test_russian_input.RussianInputTests.test_catalog_changes_between_input_and_binding_technical) ... ok
+test_clarification_multi_step_keeps_original_and_explicit_fields (test_russian_input.RussianInputTests.test_clarification_multi_step_keeps_original_and_explicit_fields) ... ok
+test_clarification_unknown_fields_and_limit_technical (test_russian_input.RussianInputTests.test_clarification_unknown_fields_and_limit_technical) ... ok
+test_comparative_does_not_replace_original (test_russian_input.RussianInputTests.test_comparative_does_not_replace_original) ... ok
+test_conflicting_clarification_does_not_overwrite_choice (test_russian_input.RussianInputTests.test_conflicting_clarification_does_not_overwrite_choice) ... ok
+test_date_without_time_or_zone_requests_clarification (test_russian_input.RussianInputTests.test_date_without_time_or_zone_requests_clarification) ... ok
+test_definition_metric_mismatch_conflict (test_russian_input.RussianInputTests.test_definition_metric_mismatch_conflict) ... ok
+test_different_definitions_need_explicit_choice (test_russian_input.RussianInputTests.test_different_definitions_need_explicit_choice) ... ok
+test_duplicate_document_selection_invalid (test_russian_input.RussianInputTests.test_duplicate_document_selection_invalid) ... ok
+test_duplicate_registry_ids_technical_context (test_russian_input.RussianInputTests.test_duplicate_registry_ids_technical_context) ... ok
+test_foreign_document_not_financial_missing (test_russian_input.RussianInputTests.test_foreign_document_not_financial_missing) ... ok
+test_form_raw_fields_and_question_preserved (test_russian_input.RussianInputTests.test_form_raw_fields_and_question_preserved) ... ok
+test_instant_custom_and_reversed_windows_not_reinterpreted (test_russian_input.RussianInputTests.test_instant_custom_and_reversed_windows_not_reinterpreted) ... ok
+test_malformed_nested_form_ids_units_periods_are_errors (test_russian_input.RussianInputTests.test_malformed_nested_form_ids_units_periods_are_errors) ... ok
+test_missing_comparison_period_does_not_invent_previous_year (test_russian_input.RussianInputTests.test_missing_comparison_period_does_not_invent_previous_year) ... ok
+test_multiple_metrics_not_silently_discarded (test_russian_input.RussianInputTests.test_multiple_metrics_not_silently_discarded) ... ok
+test_no_hidden_company_or_year (test_russian_input.RussianInputTests.test_no_hidden_company_or_year) ... ok
+test_no_money_in_clarification_or_calculation_without_resolution (test_russian_input.RussianInputTests.test_no_money_in_clarification_or_calculation_without_resolution) ... ok
+test_no_registered_percentage_point_operation (test_russian_input.RussianInputTests.test_no_registered_percentage_point_operation) ... ok
+test_no_source_publication_premise_check_after_financial_refusal (test_russian_input.RussianInputTests.test_no_source_publication_premise_check_after_financial_refusal) ... ok
+test_original_words_premise_and_why_preserved (test_russian_input.RussianInputTests.test_original_words_premise_and_why_preserved) ... ok
+test_probe_false_premise_both_directions_with_own_sources (test_russian_input.RussianInputTests.test_probe_false_premise_both_directions_with_own_sources) ... ok
+test_probe_rejects_tampered_binding_request (test_russian_input.RussianInputTests.test_probe_rejects_tampered_binding_request) ... ok
+test_same_year_does_not_choose_full_year_over_ytd (test_russian_input.RussianInputTests.test_same_year_does_not_choose_full_year_over_ytd) ... ok
+test_scope_financial_entities_and_foreign_metric_not_mapped (test_russian_input.RussianInputTests.test_scope_financial_entities_and_foreign_metric_not_mapped) ... ok
+test_snapshot_with_as_of_form_is_conflict (test_russian_input.RussianInputTests.test_snapshot_with_as_of_form_is_conflict) ... ok
+test_source_unit_mismatch_not_metric_absence (test_russian_input.RussianInputTests.test_source_unit_mismatch_not_metric_absence) ... ok
+test_supported_declensions_and_case (test_russian_input.RussianInputTests.test_supported_declensions_and_case) ... ERROR
+test_syntax_success_does_not_claim_financial_answer (test_russian_input.RussianInputTests.test_syntax_success_does_not_claim_financial_answer) ... ok
+test_text_instruction_and_formula_never_executed (test_russian_input.RussianInputTests.test_text_instruction_and_formula_never_executed) ... ok
+test_two_companies_require_choice (test_russian_input.RussianInputTests.test_two_companies_require_choice) ... ok
+test_unique_catalog_context_is_visible_not_hardcoded (test_russian_input.RussianInputTests.test_unique_catalog_context_is_visible_not_hardcoded) ... ok
+test_unknown_form_fields_values_formulas_paths_expected_rejected (test_russian_input.RussianInputTests.test_unknown_form_fields_values_formulas_paths_expected_rejected) ... ok
+test_unknown_ids_versions_are_technical (test_russian_input.RussianInputTests.test_unknown_ids_versions_are_technical) ... ok
+test_unknown_organization_distinct_from_absent (test_russian_input.RussianInputTests.test_unknown_organization_distinct_from_absent) ... FAIL
+test_unknown_organization_explicit_correction_retains_original_form (test_russian_input.RussianInputTests.test_unknown_organization_explicit_correction_retains_original_form) ... ok
+test_unknown_publication_not_inferred_by_parser (test_russian_input.RussianInputTests.test_unknown_publication_not_inferred_by_parser) ... ok
+test_version_ambiguity_lists_context_without_values (test_russian_input.RussianInputTests.test_version_ambiguity_lists_context_without_values) ... ok
+test_ytd_and_separate_quarter_different (test_russian_input.RussianInputTests.test_ytd_and_separate_quarter_different) ... ok
+
+======================================================================
+ERROR: test_supported_declensions_and_case (test_russian_input.RussianInputTests.test_supported_declensions_and_case)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-08-worktree\tests\test_russian_input.py", line 63, in test_supported_declensions_and_case
+    out=self.bind('Какова выручка группы '+name+' за 2022 год из отчета за 2022 год? Снимок.');self.assertEqual(out['request']['organization_id'],'segezha_group')
+                                                                                                                ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+TypeError: 'NoneType' object is not subscriptable
+
+======================================================================
+FAIL: test_unknown_organization_distinct_from_absent (test_russian_input.RussianInputTests.test_unknown_organization_distinct_from_absent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-08-worktree\tests\test_russian_input.py", line 52, in test_unknown_organization_distinct_from_absent
+    self.assertEqual(a['reason_code'],'unknown_organization');self.assertEqual(b['reason_code'],'missing_organization')
+                                                              ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'unknown_organization' != 'missing_organization'
+- unknown_organization
++ missing_organization
+
+
+----------------------------------------------------------------------
+Ran 45 tests in 0.624s
+
+FAILED (failures=1, errors=1)
