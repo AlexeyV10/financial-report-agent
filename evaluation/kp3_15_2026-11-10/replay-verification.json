@@ -1,0 +1,65 @@
+{
+  "scope": "Same2explicit_evaluator_controls14_no_actual_comparison",
+  "byte_identical": true,
+  "sha256": "11d3f71bdc1f4d4cd74da5bfb9a1b7dc00506c05f321cf5f7b77a58427c1f0e8",
+  "default_controls_rejected": true,
+  "runs": [
+    {
+      "command": [
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/replay_kp3_evaluation.py",
+        "--freeze",
+        "evaluation\\protocols\\kp3_eval_v1\\freeze-manifest.json",
+        "--raw-dir",
+        "tmp/replay-controls14",
+        "--raw-manifest",
+        "tmp/replay-controls14/raw-manifest.json",
+        "--output",
+        "tmp/replay15-a.json",
+        "--evaluator-controls"
+      ],
+      "exit_code": 0,
+      "expected": 0
+    },
+    {
+      "command": [
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/replay_kp3_evaluation.py",
+        "--freeze",
+        "evaluation\\protocols\\kp3_eval_v1\\freeze-manifest.json",
+        "--raw-dir",
+        "tmp/replay-controls14",
+        "--raw-manifest",
+        "tmp/replay-controls14/raw-manifest.json",
+        "--output",
+        "tmp/replay15-b.json",
+        "--evaluator-controls"
+      ],
+      "exit_code": 0,
+      "expected": 0
+    },
+    {
+      "command": [
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/replay_kp3_evaluation.py",
+        "--freeze",
+        "evaluation\\protocols\\kp3_eval_v1\\freeze-manifest.json",
+        "--raw-dir",
+        "tmp/replay-controls14",
+        "--raw-manifest",
+        "tmp/replay-controls14/raw-manifest.json",
+        "--output",
+        "tmp/replay15-reject.json"
+      ],
+      "exit_code": 1,
+      "expected": 1
+    }
+  ],
+  "new_model_calls": 0
+}

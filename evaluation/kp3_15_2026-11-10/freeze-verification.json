@@ -1,0 +1,152 @@
+{
+  "verified_at": "2026-11-10T18:05:48.415156+00:00",
+  "freeze_sha256": "072a1caf92423d2e41ae12625cc485d81f0bc3c321c3cce5cbb1db663bcf1fbe",
+  "file_hashes_verified": 134,
+  "actual_resources_verified": 28,
+  "resources": {
+    "pdf:phosagro-2023": {
+      "kind": "exact_primary_pdf",
+      "sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+      "byte_length": 2020478
+    },
+    "export:phosagro-2023": {
+      "kind": "extraction_export",
+      "sha256": "074c6a5923ca8fe03ef101515ff48679d2c2a31734958893c5eab6d7560ddfd5",
+      "byte_length": 317360
+    },
+    "pdf:phosagro-2024": {
+      "kind": "exact_primary_pdf",
+      "sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "byte_length": 1521928
+    },
+    "export:phosagro-2024": {
+      "kind": "extraction_export",
+      "sha256": "7c32620eb2705a5e65a22af9d3a6efd26f60cd89a144865a0da1bdbd154ce405",
+      "byte_length": 382781
+    },
+    "pdf:phosagro-2025": {
+      "kind": "exact_primary_pdf",
+      "sha256": "c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+      "byte_length": 3574640
+    },
+    "export:phosagro-2025": {
+      "kind": "extraction_export",
+      "sha256": "b9b3e8b10a20266245a75eef0f3d63d076bdeb3ec742574a3af7c259ee249725",
+      "byte_length": 359506
+    },
+    "pdf:phosagro-2025-q1": {
+      "kind": "exact_primary_pdf",
+      "sha256": "8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+      "byte_length": 1839208
+    },
+    "export:phosagro-2025-q1": {
+      "kind": "extraction_export",
+      "sha256": "3569f6e70f2a6cbfa85c0b75ef700e91f953612c9d009931018df6feedb03396",
+      "byte_length": 172306
+    },
+    "pdf:phosagro-2025-h1": {
+      "kind": "exact_primary_pdf",
+      "sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+      "byte_length": 1705179
+    },
+    "export:phosagro-2025-h1": {
+      "kind": "extraction_export",
+      "sha256": "4e9cbf499f581efa6e163cff081b96141db6ef5e9269a68dd4947027e5c96a04",
+      "byte_length": 267387
+    },
+    "pdf:phosagro-2025-9m": {
+      "kind": "exact_primary_pdf",
+      "sha256": "147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+      "byte_length": 2158562
+    },
+    "export:phosagro-2025-9m": {
+      "kind": "extraction_export",
+      "sha256": "8c3e910e0a46f4e98424f9f74adbc937e5bb9f83e19da832235d59f6c97ceecc",
+      "byte_length": 267380
+    },
+    "pdf:segezha-2021": {
+      "kind": "exact_primary_pdf",
+      "sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+      "byte_length": 1856644
+    },
+    "export:segezha-2021": {
+      "kind": "extraction_export",
+      "sha256": "ecaaaac096bc4b63e05e4df1c9edb7bece414a5ec024a1772564c44708773ab6",
+      "byte_length": 510608
+    },
+    "pdf:segezha-2022": {
+      "kind": "exact_primary_pdf",
+      "sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+      "byte_length": 1819697
+    },
+    "export:segezha-2022": {
+      "kind": "extraction_export",
+      "sha256": "1d37680ff9efe2a527039c6862e5d7a5770bda313b667ccc53e63e8d1362f721",
+      "byte_length": 484578
+    },
+    "index:prepared": {
+      "kind": "retrieval_prepared",
+      "sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+      "byte_length": 139264
+    },
+    "index_manifest:prepared": {
+      "kind": "retrieval_manifest",
+      "sha256": "ebe5f4a987b92fe5d87c4a0f8949d57481dc2f45c7070118aef35fcb51f26d89",
+      "byte_length": 216
+    },
+    "index:automatic": {
+      "kind": "retrieval_automatic",
+      "sha256": "7d1dc62d3020272dec4695aefbbb8a523000c08c9ef208b21dcc11dd1da81943",
+      "byte_length": 147456
+    },
+    "index_manifest:automatic": {
+      "kind": "retrieval_manifest",
+      "sha256": "0ddcb2aed31acbe011f887299c074d135cb8afc5179c0e85e96345f43ef4f531",
+      "byte_length": 216
+    },
+    "model:server": {
+      "kind": "existing_ollama_executable",
+      "sha256": "544216ca2082b8bc19b4ba94b513f0098fa06774b232f3c140090e3449e322a5",
+      "byte_length": 41140104
+    },
+    "model:tag_manifest": {
+      "kind": "ollama_tag_manifest",
+      "sha256": "31d9857b5705086d352d4d6db04e86c5d0f6a2b5d59a4dc7ce5cdb271ccf9141",
+      "byte_length": 1022
+    },
+    "model:blob:e18a783aae5525fd2852fc94c985541a77e791e034abc2d3056474d59de336fc": {
+      "kind": "application/vnd.docker.container.image.v1+json",
+      "sha256": "e18a783aae5525fd2852fc94c985541a77e791e034abc2d3056474d59de336fc",
+      "byte_length": 487
+    },
+    "model:blob:3e4cb14174460404e7a233e531675303b2fbf7749c02f91864fe311ab6344e4f": {
+      "kind": "application/vnd.ollama.image.model",
+      "sha256": "3e4cb14174460404e7a233e531675303b2fbf7749c02f91864fe311ab6344e4f",
+      "byte_length": 2497280480
+    },
+    "model:blob:2d54db2b9bb29ce7db54fea63a891f5859603813c555b1f88b5e0994652897f9": {
+      "kind": "application/vnd.ollama.image.template",
+      "sha256": "2d54db2b9bb29ce7db54fea63a891f5859603813c555b1f88b5e0994652897f9",
+      "byte_length": 1506
+    },
+    "model:blob:d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12": {
+      "kind": "application/vnd.ollama.image.license",
+      "sha256": "d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12",
+      "byte_length": 11338
+    },
+    "model:blob:cff3f395ef3756ab63e58b0ad1b32bb6f802905cae1472e6a12034e4246fbbdb": {
+      "kind": "application/vnd.ollama.image.params",
+      "sha256": "cff3f395ef3756ab63e58b0ad1b32bb6f802905cae1472e6a12034e4246fbbdb",
+      "byte_length": 120
+    },
+    "model:blob:359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7": {
+      "kind": "application/vnd.docker.distribution.manifest.v2+json",
+      "sha256": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "byte_length": 859
+    }
+  },
+  "new_index_bytes_equal_frozen14": true,
+  "answering_dependencies_changed": false,
+  "new_version_required": false,
+  "reason": "Only additive evaluator probes/tests/scripts/docs; all134 frozen bytes and28 physical pins still match. No new answering path or financial gold."
+}

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<isolated-worktree>\scripts\replay_kp3_evaluation.py", line 14, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ~~~~^^
+  File "<isolated-worktree>\scripts\replay_kp3_evaluation.py", line 12, in main
+    m=verify_freeze(ROOT,a.freeze);inputs=read(ROOT/m['inputs_path']);gold=read(ROOT/m['gold_path']);protocol=read(ROOT/m['protocol_path']);validate_suite(inputs,gold,protocol);raw=read_raw(a.raw_dir,a.freeze,a.raw_manifest,a.evaluator_controls);metrics=summarize(inputs,gold,protocol,raw,a.evaluator_controls);write_new(a.output,metrics);print(json.dumps(dict(scope=metrics['scope'],raw_count=len(raw),model_calls_during_replay=0)));return 0
+                                                                                                                                                                                     ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<isolated-worktree>\evaluation\kp3_protocol_v1\freeze.py", line 41, in read_raw
+    receipt=read(receipt_path);exact(receipt,'schema_version freeze_sha256 scope file_sha256');require(receipt['schema_version']=='kp3-raw-manifest-0.1'and receipt['freeze_sha256']==file_sha(freeze_path),'raw_freeze_mismatch');require(receipt['scope']=='actual'or allow_controls and receipt['scope']=='evaluator_control','control_raw_not_actual');out=[]
+                                                                                                                                                                                                                                   ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<isolated-worktree>\evaluation\kp3_protocol_v1\common.py", line 7, in require
+    if not ok:raise ProtocolError(reason)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+kp3_protocol_v1.common.ProtocolError: control_raw_not_actual

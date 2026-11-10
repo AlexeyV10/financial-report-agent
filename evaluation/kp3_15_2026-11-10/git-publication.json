@@ -1,0 +1,21 @@
+{
+  "stage": "KP3-15",
+  "pull_request": "https://github.com/AlexeyV10/financial-report-agent/pull/15",
+  "pr_number": 15,
+  "branch": "codex/kp3-15-failure-boundaries",
+  "base_branch": "codex/kp3-14-evaluation-protocol",
+  "base_sha": "726e3f8ae8a0d45c06d52eaa0b7a965ff75957a7",
+  "code_commit": "966a7f12b65b33fe23eca9ef06a0d5b186ac824e",
+  "verified_stage_head": "6c9a3b377fe25a5414964aff8bd38fa4ccb8e269",
+  "technical_tag": "kp3-15-failure-boundaries-v1-2026-11-10",
+  "tag_object": "c7824ac24bfc27b399abdb78a19822d6cb1344ed",
+  "tag_target": "6c9a3b377fe25a5414964aff8bd38fa4ccb8e269",
+  "state": "open",
+  "merged": false,
+  "diff_files": 207,
+  "allowlist_matches": true,
+  "remote_tree_matches": true,
+  "remote_blobs": 1254,
+  "receipt_followup": "Final head in final-local-receipt.json; tag targets tested stage",
+  "merge_authorized": false
+}

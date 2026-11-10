@@ -1,0 +1,1523 @@
+{
+  "schema_version": "kp3-probe-report-0.1",
+  "stage": "KP3-15",
+  "plan_digest": "f00935505acf6e807a02dad0cc18a3d2ba924f312c06f9fff7cf435c74f23bf0",
+  "observations": [
+    {
+      "probe_id": "positive-direct",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "direct",
+      "expected": "answered",
+      "passed": true,
+      "raw": "raw/positive-direct.json",
+      "elapsed_ms": 41.307
+    },
+    {
+      "probe_id": "positive-delta",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "delta",
+      "expected": "answered",
+      "passed": true,
+      "raw": "raw/positive-delta.json",
+      "elapsed_ms": 31.753
+    },
+    {
+      "probe_id": "positive-relative",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "relative",
+      "expected": "answered",
+      "passed": true,
+      "raw": "raw/positive-relative.json",
+      "elapsed_ms": 36.452
+    },
+    {
+      "probe_id": "positive-scale",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "scale",
+      "expected": "answered",
+      "passed": true,
+      "raw": "raw/positive-scale.json",
+      "elapsed_ms": 29.591
+    },
+    {
+      "probe_id": "positive-margin",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "margin",
+      "expected": "answered",
+      "passed": true,
+      "raw": "raw/positive-margin.json",
+      "elapsed_ms": 31.019
+    },
+    {
+      "probe_id": "positive-negative_profit",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "negative_profit",
+      "expected": "answered",
+      "passed": true,
+      "raw": "raw/positive-negative_profit.json",
+      "elapsed_ms": 45.676
+    },
+    {
+      "probe_id": "positive-signed_cfo",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "signed_cfo",
+      "expected": "answered",
+      "passed": true,
+      "raw": "raw/positive-signed_cfo.json",
+      "elapsed_ms": 31.172
+    },
+    {
+      "probe_id": "artifact-source_missing",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "source_missing",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/artifact-source_missing.json",
+      "elapsed_ms": 33.745
+    },
+    {
+      "probe_id": "artifact-source_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "source_changed",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/artifact-source_changed.json",
+      "elapsed_ms": 34.863
+    },
+    {
+      "probe_id": "artifact-index_missing",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "index_missing",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/artifact-index_missing.json",
+      "elapsed_ms": 31.928
+    },
+    {
+      "probe_id": "artifact-index_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "index_changed",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/artifact-index_changed.json",
+      "elapsed_ms": 34.756
+    },
+    {
+      "probe_id": "artifact-manifest_missing",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "manifest_missing",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/artifact-manifest_missing.json",
+      "elapsed_ms": 34.435
+    },
+    {
+      "probe_id": "artifact-manifest_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "manifest_changed",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/artifact-manifest_changed.json",
+      "elapsed_ms": 41.603
+    },
+    {
+      "probe_id": "artifact-config_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "config_changed",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/artifact-config_changed.json",
+      "elapsed_ms": 34.388
+    },
+    {
+      "probe_id": "artifact-catalog_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "catalog_changed",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/artifact-catalog_changed.json",
+      "elapsed_ms": 34.932
+    },
+    {
+      "probe_id": "artifact-dictionary_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "dictionary_changed",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/artifact-dictionary_changed.json",
+      "elapsed_ms": 36.89
+    },
+    {
+      "probe_id": "artifact-admission_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "admission_changed",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/artifact-admission_changed.json",
+      "elapsed_ms": 34.604
+    },
+    {
+      "probe_id": "artifact-guarded_file",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "guarded_file",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/artifact-guarded_file.json",
+      "elapsed_ms": 38.03
+    },
+    {
+      "probe_id": "artifact-guarded_setup",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "guarded_setup",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/artifact-guarded_setup.json",
+      "elapsed_ms": 35.86
+    },
+    {
+      "probe_id": "artifact-code_signature",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "code_signature",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/artifact-code_signature.json",
+      "elapsed_ms": 42.236
+    },
+    {
+      "probe_id": "search-empty",
+      "family": "search",
+      "kind": "search",
+      "variant": "empty",
+      "expected": "missing",
+      "passed": true,
+      "raw": "raw/search-empty.json",
+      "elapsed_ms": 40.056
+    },
+    {
+      "probe_id": "search-partial",
+      "family": "search",
+      "kind": "search",
+      "variant": "partial",
+      "expected": "missing",
+      "passed": true,
+      "raw": "raw/search-partial.json",
+      "elapsed_ms": 41.81
+    },
+    {
+      "probe_id": "cell-unknown_evidence",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "unknown_evidence",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/cell-unknown_evidence.json",
+      "elapsed_ms": 39.15
+    },
+    {
+      "probe_id": "cell-duplicate_evidence",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "duplicate_evidence",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/cell-duplicate_evidence.json",
+      "elapsed_ms": 39.761
+    },
+    {
+      "probe_id": "cell-wrong_cell",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "wrong_cell",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/cell-wrong_cell.json",
+      "elapsed_ms": 41.894
+    },
+    {
+      "probe_id": "cell-wrong_page",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "wrong_page",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/cell-wrong_page.json",
+      "elapsed_ms": 42.41
+    },
+    {
+      "probe_id": "cell-wrong_sha",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "wrong_sha",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/cell-wrong_sha.json",
+      "elapsed_ms": 55.207
+    },
+    {
+      "probe_id": "cell-lost_unit_header",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "lost_unit_header",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/cell-lost_unit_header.json",
+      "elapsed_ms": 43.798
+    },
+    {
+      "probe_id": "cell-wrong_value",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "wrong_value",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/cell-wrong_value.json",
+      "elapsed_ms": 42.591
+    },
+    {
+      "probe_id": "cell-candidate",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "candidate",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/cell-candidate.json",
+      "elapsed_ms": 38.597
+    },
+    {
+      "probe_id": "cell-structure_checked",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "structure_checked",
+      "expected": "error",
+      "passed": true,
+      "raw": "raw/cell-structure_checked.json",
+      "elapsed_ms": 41.056
+    },
+    {
+      "probe_id": "reference-unknown_fact",
+      "family": "references",
+      "kind": "reference",
+      "variant": "unknown_fact",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/reference-unknown_fact.json",
+      "elapsed_ms": 32.229
+    },
+    {
+      "probe_id": "reference-duplicate_fact",
+      "family": "references",
+      "kind": "reference",
+      "variant": "duplicate_fact",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/reference-duplicate_fact.json",
+      "elapsed_ms": 32.919
+    },
+    {
+      "probe_id": "reference-duplicate_role",
+      "family": "references",
+      "kind": "reference",
+      "variant": "duplicate_role",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/reference-duplicate_role.json",
+      "elapsed_ms": 34.226
+    },
+    {
+      "probe_id": "reference-reversed_periods",
+      "family": "references",
+      "kind": "reference",
+      "variant": "reversed_periods",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/reference-reversed_periods.json",
+      "elapsed_ms": 34.072
+    },
+    {
+      "probe_id": "reference-wrong_org",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_org",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/reference-wrong_org.json",
+      "elapsed_ms": 35.517
+    },
+    {
+      "probe_id": "reference-legal_entity",
+      "family": "references",
+      "kind": "reference",
+      "variant": "legal_entity",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/reference-legal_entity.json",
+      "elapsed_ms": 32.185
+    },
+    {
+      "probe_id": "reference-ras",
+      "family": "references",
+      "kind": "reference",
+      "variant": "ras",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/reference-ras.json",
+      "elapsed_ms": 32.684
+    },
+    {
+      "probe_id": "reference-wrong_definition",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_definition",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/reference-wrong_definition.json",
+      "elapsed_ms": 30.565
+    },
+    {
+      "probe_id": "reference-wrong_version",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_version",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/reference-wrong_version.json",
+      "elapsed_ms": 30.994
+    },
+    {
+      "probe_id": "reference-wrong_currency",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_currency",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/reference-wrong_currency.json",
+      "elapsed_ms": 31.476
+    },
+    {
+      "probe_id": "reference-wrong_scale",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_scale",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/reference-wrong_scale.json",
+      "elapsed_ms": 32.746
+    },
+    {
+      "probe_id": "reference-wrong_period",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_period",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/reference-wrong_period.json",
+      "elapsed_ms": 33.265
+    },
+    {
+      "probe_id": "reference-extra_value",
+      "family": "references",
+      "kind": "reference",
+      "variant": "extra_value",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/reference-extra_value.json",
+      "elapsed_ms": 31.913
+    },
+    {
+      "probe_id": "reference-extra_formula",
+      "family": "references",
+      "kind": "reference",
+      "variant": "extra_formula",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/reference-extra_formula.json",
+      "elapsed_ms": 33.549
+    },
+    {
+      "probe_id": "reference-extra_path",
+      "family": "references",
+      "kind": "reference",
+      "variant": "extra_path",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/reference-extra_path.json",
+      "elapsed_ms": 33.458
+    },
+    {
+      "probe_id": "input-unknown_org",
+      "family": "input",
+      "kind": "input",
+      "variant": "unknown_org",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-unknown_org.json",
+      "elapsed_ms": 33.64
+    },
+    {
+      "probe_id": "input-missing_org",
+      "family": "input",
+      "kind": "input",
+      "variant": "missing_org",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-missing_org.json",
+      "elapsed_ms": 36.577
+    },
+    {
+      "probe_id": "input-unknown_document",
+      "family": "input",
+      "kind": "input",
+      "variant": "unknown_document",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-unknown_document.json",
+      "elapsed_ms": 31.824
+    },
+    {
+      "probe_id": "input-duplicate_document",
+      "family": "input",
+      "kind": "input",
+      "variant": "duplicate_document",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-duplicate_document.json",
+      "elapsed_ms": 33.793
+    },
+    {
+      "probe_id": "input-ytd",
+      "family": "input",
+      "kind": "input",
+      "variant": "ytd",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-ytd.json",
+      "elapsed_ms": 33.549
+    },
+    {
+      "probe_id": "input-quarter",
+      "family": "input",
+      "kind": "input",
+      "variant": "quarter",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-quarter.json",
+      "elapsed_ms": 34.828
+    },
+    {
+      "probe_id": "input-missing_period",
+      "family": "input",
+      "kind": "input",
+      "variant": "missing_period",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-missing_period.json",
+      "elapsed_ms": 33.135
+    },
+    {
+      "probe_id": "input-ebitda",
+      "family": "input",
+      "kind": "input",
+      "variant": "ebitda",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-ebitda.json",
+      "elapsed_ms": 33.842
+    },
+    {
+      "probe_id": "input-net_income",
+      "family": "input",
+      "kind": "input",
+      "variant": "net_income",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-net_income.json",
+      "elapsed_ms": 36.694
+    },
+    {
+      "probe_id": "input-bank",
+      "family": "input",
+      "kind": "input",
+      "variant": "bank",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-bank.json",
+      "elapsed_ms": 40.835
+    },
+    {
+      "probe_id": "input-ras",
+      "family": "input",
+      "kind": "input",
+      "variant": "ras",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-ras.json",
+      "elapsed_ms": 32.427
+    },
+    {
+      "probe_id": "input-legal_entity",
+      "family": "input",
+      "kind": "input",
+      "variant": "legal_entity",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-legal_entity.json",
+      "elapsed_ms": 36.409
+    },
+    {
+      "probe_id": "input-fx",
+      "family": "input",
+      "kind": "input",
+      "variant": "fx",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-fx.json",
+      "elapsed_ms": 36.487
+    },
+    {
+      "probe_id": "input-percentage_points",
+      "family": "input",
+      "kind": "input",
+      "variant": "percentage_points",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-percentage_points.json",
+      "elapsed_ms": 34.552
+    },
+    {
+      "probe_id": "input-form_extra",
+      "family": "input",
+      "kind": "input",
+      "variant": "form_extra",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-form_extra.json",
+      "elapsed_ms": 30.428
+    },
+    {
+      "probe_id": "input-huge_question",
+      "family": "input",
+      "kind": "input",
+      "variant": "huge_question",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-huge_question.json",
+      "elapsed_ms": 34.318
+    },
+    {
+      "probe_id": "input-instruction",
+      "family": "input",
+      "kind": "input",
+      "variant": "instruction",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-instruction.json",
+      "elapsed_ms": 31.505
+    },
+    {
+      "probe_id": "input-code",
+      "family": "input",
+      "kind": "input",
+      "variant": "code",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-code.json",
+      "elapsed_ms": 32.64
+    },
+    {
+      "probe_id": "input-url",
+      "family": "input",
+      "kind": "input",
+      "variant": "url",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-url.json",
+      "elapsed_ms": 32.319
+    },
+    {
+      "probe_id": "input-path",
+      "family": "input",
+      "kind": "input",
+      "variant": "path",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/input-path.json",
+      "elapsed_ms": 32.67
+    },
+    {
+      "probe_id": "finance-zero_base",
+      "family": "financial",
+      "kind": "finance",
+      "variant": "zero_base",
+      "expected": "unsupported",
+      "passed": true,
+      "raw": "raw/finance-zero_base.json",
+      "elapsed_ms": 62.492
+    },
+    {
+      "probe_id": "finance-negative_base",
+      "family": "financial",
+      "kind": "finance",
+      "variant": "negative_base",
+      "expected": "unsupported",
+      "passed": true,
+      "raw": "raw/finance-negative_base.json",
+      "elapsed_ms": 60.945
+    },
+    {
+      "probe_id": "finance-zero_revenue",
+      "family": "financial",
+      "kind": "finance",
+      "variant": "zero_revenue",
+      "expected": "unsupported",
+      "passed": true,
+      "raw": "raw/finance-zero_revenue.json",
+      "elapsed_ms": 63.746
+    },
+    {
+      "probe_id": "finance-negative_revenue",
+      "family": "financial",
+      "kind": "finance",
+      "variant": "negative_revenue",
+      "expected": "unsupported",
+      "passed": true,
+      "raw": "raw/finance-negative_revenue.json",
+      "elapsed_ms": 62.228
+    },
+    {
+      "probe_id": "publication-unknown",
+      "family": "publication",
+      "kind": "publication",
+      "variant": "unknown",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/publication-unknown.json",
+      "elapsed_ms": 35.238
+    },
+    {
+      "probe_id": "publication-before_publication",
+      "family": "publication",
+      "kind": "publication",
+      "variant": "before_publication",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/publication-before_publication.json",
+      "elapsed_ms": 54.031
+    },
+    {
+      "probe_id": "publication-missing_as_of",
+      "family": "publication",
+      "kind": "publication",
+      "variant": "missing_as_of",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/publication-missing_as_of.json",
+      "elapsed_ms": 33.499
+    },
+    {
+      "probe_id": "publication-no_zone",
+      "family": "publication",
+      "kind": "publication",
+      "variant": "no_zone",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/publication-no_zone.json",
+      "elapsed_ms": 33.579
+    },
+    {
+      "probe_id": "publication-invalid_precision",
+      "family": "publication",
+      "kind": "publication",
+      "variant": "invalid_precision",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/publication-invalid_precision.json",
+      "elapsed_ms": 33.041
+    },
+    {
+      "probe_id": "versions-cross_original",
+      "family": "versions",
+      "kind": "versions",
+      "variant": "cross_original",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/versions-cross_original.json",
+      "elapsed_ms": 32.271
+    },
+    {
+      "probe_id": "versions-original_only",
+      "family": "versions",
+      "kind": "versions",
+      "variant": "original_only",
+      "expected": "no_answer",
+      "passed": true,
+      "raw": "raw/versions-original_only.json",
+      "elapsed_ms": 40.103
+    },
+    {
+      "probe_id": "premise-increase",
+      "family": "premises",
+      "kind": "premise",
+      "variant": "increase",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/premise-increase.json",
+      "elapsed_ms": 43.279
+    },
+    {
+      "probe_id": "premise-decrease",
+      "family": "premises",
+      "kind": "premise",
+      "variant": "decrease",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/premise-decrease.json",
+      "elapsed_ms": 42.498
+    },
+    {
+      "probe_id": "premise-failure",
+      "family": "premises",
+      "kind": "premise",
+      "variant": "failure",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/premise-failure.json",
+      "elapsed_ms": 36.068
+    },
+    {
+      "probe_id": "premise-clarification",
+      "family": "premises",
+      "kind": "premise",
+      "variant": "clarification",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/premise-clarification.json",
+      "elapsed_ms": 34.397
+    },
+    {
+      "probe_id": "premise-preserve_history",
+      "family": "premises",
+      "kind": "premise",
+      "variant": "preserve_history",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/premise-preserve_history.json",
+      "elapsed_ms": 44.632
+    },
+    {
+      "probe_id": "a_fixture-valid",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "valid",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/a_fixture-valid.json",
+      "elapsed_ms": 744.154
+    },
+    {
+      "probe_id": "a_fixture-unknown",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "unknown",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/a_fixture-unknown.json",
+      "elapsed_ms": 496.912
+    },
+    {
+      "probe_id": "a_fixture-duplicate_id",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "duplicate_id",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/a_fixture-duplicate_id.json",
+      "elapsed_ms": 498.018
+    },
+    {
+      "probe_id": "a_fixture-duplicate_role",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "duplicate_role",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/a_fixture-duplicate_role.json",
+      "elapsed_ms": 482.147
+    },
+    {
+      "probe_id": "a_fixture-wrong_roles",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "wrong_roles",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/a_fixture-wrong_roles.json",
+      "elapsed_ms": 476.66
+    },
+    {
+      "probe_id": "a_fixture-wrong_operation",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "wrong_operation",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/a_fixture-wrong_operation.json",
+      "elapsed_ms": 493.25
+    },
+    {
+      "probe_id": "a_fixture-value",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "value",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/a_fixture-value.json",
+      "elapsed_ms": 466.647
+    },
+    {
+      "probe_id": "a_fixture-malformed",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "malformed",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/a_fixture-malformed.json",
+      "elapsed_ms": 496.968
+    },
+    {
+      "probe_id": "a_fixture-large",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "large",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/a_fixture-large.json",
+      "elapsed_ms": 503.227
+    },
+    {
+      "probe_id": "a_fixture-bad_reply",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "bad_reply",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/a_fixture-bad_reply.json",
+      "elapsed_ms": 515.863
+    },
+    {
+      "probe_id": "a_fixture-timeout",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "timeout",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/a_fixture-timeout.json",
+      "elapsed_ms": 874.232
+    },
+    {
+      "probe_id": "c_fixture-valid",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "valid",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/c_fixture-valid.json",
+      "elapsed_ms": 2416.539
+    },
+    {
+      "probe_id": "c_fixture-loop",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "loop",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/c_fixture-loop.json",
+      "elapsed_ms": 1177.814
+    },
+    {
+      "probe_id": "c_fixture-timeout",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "timeout",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/c_fixture-timeout.json",
+      "elapsed_ms": 643.051
+    },
+    {
+      "probe_id": "c_fixture-bad_reply",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "bad_reply",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/c_fixture-bad_reply.json",
+      "elapsed_ms": 259.178
+    },
+    {
+      "probe_id": "c_fixture-wrong_finish",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "wrong_finish",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/c_fixture-wrong_finish.json",
+      "elapsed_ms": 2404.18
+    },
+    {
+      "probe_id": "c_fixture-never_finish",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "never_finish",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/c_fixture-never_finish.json",
+      "elapsed_ms": 2789.079
+    },
+    {
+      "probe_id": "c_fixture-forbidden_tool",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "forbidden_tool",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/c_fixture-forbidden_tool.json",
+      "elapsed_ms": 979.119
+    },
+    {
+      "probe_id": "c_fixture-extra_value",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "extra_value",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/c_fixture-extra_value.json",
+      "elapsed_ms": 953.676
+    },
+    {
+      "probe_id": "c_fixture-partial",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "partial",
+      "expected": "fixture",
+      "passed": true,
+      "raw": "raw/c_fixture-partial.json",
+      "elapsed_ms": 728.44
+    },
+    {
+      "probe_id": "history-repeat",
+      "family": "history",
+      "kind": "history",
+      "variant": "repeat",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/history-repeat.json",
+      "elapsed_ms": 43.435
+    },
+    {
+      "probe_id": "history-refresh",
+      "family": "history",
+      "kind": "history",
+      "variant": "refresh",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/history-refresh.json",
+      "elapsed_ms": 43.801
+    },
+    {
+      "probe_id": "history-archive",
+      "family": "history",
+      "kind": "history",
+      "variant": "archive",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/history-archive.json",
+      "elapsed_ms": 39.214
+    },
+    {
+      "probe_id": "history-export",
+      "family": "history",
+      "kind": "history",
+      "variant": "export",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/history-export.json",
+      "elapsed_ms": 40.447
+    },
+    {
+      "probe_id": "history-context_change",
+      "family": "history",
+      "kind": "history",
+      "variant": "context_change",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/history-context_change.json",
+      "elapsed_ms": 39.184
+    },
+    {
+      "probe_id": "history-units_change",
+      "family": "history",
+      "kind": "history",
+      "variant": "units_change",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/history-units_change.json",
+      "elapsed_ms": 51.656
+    },
+    {
+      "probe_id": "history-new_nonce",
+      "family": "history",
+      "kind": "history",
+      "variant": "new_nonce",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/history-new_nonce.json",
+      "elapsed_ms": 50.179
+    },
+    {
+      "probe_id": "history-duplicate_run",
+      "family": "history",
+      "kind": "history",
+      "variant": "duplicate_run",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/history-duplicate_run.json",
+      "elapsed_ms": 39.898
+    },
+    {
+      "probe_id": "history-pending_claim",
+      "family": "history",
+      "kind": "history",
+      "variant": "pending_claim",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/history-pending_claim.json",
+      "elapsed_ms": 35.782
+    },
+    {
+      "probe_id": "history-interrupted",
+      "family": "history",
+      "kind": "history",
+      "variant": "interrupted",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/history-interrupted.json",
+      "elapsed_ms": 35.185
+    },
+    {
+      "probe_id": "history-atomic_existing",
+      "family": "history",
+      "kind": "history",
+      "variant": "atomic_existing",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/history-atomic_existing.json",
+      "elapsed_ms": 36.239
+    },
+    {
+      "probe_id": "history-unsafe_id",
+      "family": "history",
+      "kind": "history",
+      "variant": "unsafe_id",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/history-unsafe_id.json",
+      "elapsed_ms": 33.428
+    },
+    {
+      "probe_id": "history-duplicate_keys",
+      "family": "history",
+      "kind": "history",
+      "variant": "duplicate_keys",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/history-duplicate_keys.json",
+      "elapsed_ms": 34.568
+    },
+    {
+      "probe_id": "history-nan",
+      "family": "history",
+      "kind": "history",
+      "variant": "nan",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/history-nan.json",
+      "elapsed_ms": 36.457
+    },
+    {
+      "probe_id": "history-oversize",
+      "family": "history",
+      "kind": "history",
+      "variant": "oversize",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/history-oversize.json",
+      "elapsed_ms": 38.457
+    },
+    {
+      "probe_id": "history-checksum",
+      "family": "history",
+      "kind": "history",
+      "variant": "checksum",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/history-checksum.json",
+      "elapsed_ms": 41.625
+    },
+    {
+      "probe_id": "history-method_swap",
+      "family": "history",
+      "kind": "history",
+      "variant": "method_swap",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/history-method_swap.json",
+      "elapsed_ms": 34.19
+    },
+    {
+      "probe_id": "scenario-default",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "default",
+      "expected": "scenario",
+      "passed": true,
+      "raw": "raw/scenario-default.json",
+      "elapsed_ms": 42.158
+    },
+    {
+      "probe_id": "scenario-false_signal",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "false_signal",
+      "expected": "scenario",
+      "passed": true,
+      "raw": "raw/scenario-false_signal.json",
+      "elapsed_ms": 41.317
+    },
+    {
+      "probe_id": "scenario-strict_nextopen",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "strict_nextopen",
+      "expected": "scenario",
+      "passed": true,
+      "raw": "raw/scenario-strict_nextopen.json",
+      "elapsed_ms": 43.213
+    },
+    {
+      "probe_id": "scenario-costs",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "costs",
+      "expected": "scenario",
+      "passed": true,
+      "raw": "raw/scenario-costs.json",
+      "elapsed_ms": 42.326
+    },
+    {
+      "probe_id": "scenario-lot",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "lot",
+      "expected": "scenario",
+      "passed": true,
+      "raw": "raw/scenario-lot.json",
+      "elapsed_ms": 51.523
+    },
+    {
+      "probe_id": "scenario-price_gap",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "price_gap",
+      "expected": "scenario",
+      "passed": true,
+      "raw": "raw/scenario-price_gap.json",
+      "elapsed_ms": 44.995
+    },
+    {
+      "probe_id": "scenario-exit_fee",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "exit_fee",
+      "expected": "scenario",
+      "passed": true,
+      "raw": "raw/scenario-exit_fee.json",
+      "elapsed_ms": 40.902
+    },
+    {
+      "probe_id": "scenario-before_publication",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "before_publication",
+      "expected": "scenario",
+      "passed": true,
+      "raw": "raw/scenario-before_publication.json",
+      "elapsed_ms": 40.536
+    },
+    {
+      "probe_id": "scenario-no_zone",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "no_zone",
+      "expected": "scenario",
+      "passed": true,
+      "raw": "raw/scenario-no_zone.json",
+      "elapsed_ms": 32.105
+    },
+    {
+      "probe_id": "scenario-wrong_run",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "wrong_run",
+      "expected": "scenario",
+      "passed": true,
+      "raw": "raw/scenario-wrong_run.json",
+      "elapsed_ms": 36.145
+    },
+    {
+      "probe_id": "scenario-value_tamper",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "value_tamper",
+      "expected": "scenario",
+      "passed": true,
+      "raw": "raw/scenario-value_tamper.json",
+      "elapsed_ms": 37.193
+    },
+    {
+      "probe_id": "scenario-real_mixing",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "real_mixing",
+      "expected": "scenario",
+      "passed": true,
+      "raw": "raw/scenario-real_mixing.json",
+      "elapsed_ms": 36.294
+    },
+    {
+      "probe_id": "scenario-negative_cash",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "negative_cash",
+      "expected": "scenario",
+      "passed": true,
+      "raw": "raw/scenario-negative_cash.json",
+      "elapsed_ms": 34.392
+    },
+    {
+      "probe_id": "scenario-nan_threshold",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "nan_threshold",
+      "expected": "scenario",
+      "passed": true,
+      "raw": "raw/scenario-nan_threshold.json",
+      "elapsed_ms": 33.763
+    },
+    {
+      "probe_id": "scenario-extra_prices",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "extra_prices",
+      "expected": "scenario",
+      "passed": true,
+      "raw": "raw/scenario-extra_prices.json",
+      "elapsed_ms": 34.574
+    },
+    {
+      "probe_id": "scenario-source_missing",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "source_missing",
+      "expected": "scenario",
+      "passed": true,
+      "raw": "raw/scenario-source_missing.json",
+      "elapsed_ms": 37.554
+    },
+    {
+      "probe_id": "scenario-source_changed",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "source_changed",
+      "expected": "scenario",
+      "passed": true,
+      "raw": "raw/scenario-source_changed.json",
+      "elapsed_ms": 38.248
+    },
+    {
+      "probe_id": "real-all_publications",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "all_publications",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/real-all_publications.json",
+      "elapsed_ms": 210.01
+    },
+    {
+      "probe_id": "real-automatic",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "automatic",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/real-automatic.json",
+      "elapsed_ms": 100.257
+    },
+    {
+      "probe_id": "real-export_missing",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "export_missing",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/real-export_missing.json",
+      "elapsed_ms": 101.725
+    },
+    {
+      "probe_id": "real-export_changed",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "export_changed",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/real-export_changed.json",
+      "elapsed_ms": 117.387
+    },
+    {
+      "probe_id": "real-source_copy_missing",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "source_copy_missing",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/real-source_copy_missing.json",
+      "elapsed_ms": 115.7
+    },
+    {
+      "probe_id": "real-source_copy_changed",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "source_copy_changed",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/real-source_copy_changed.json",
+      "elapsed_ms": 119.812
+    },
+    {
+      "probe_id": "real-conflict_versions",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "conflict_versions",
+      "expected": "invariant",
+      "passed": true,
+      "raw": "raw/real-conflict_versions.json",
+      "elapsed_ms": 85.774
+    }
+  ],
+  "total": 143,
+  "passed": 143,
+  "by_family": {
+    "positive": {
+      "planned": 7,
+      "executed": 7,
+      "passed": 7
+    },
+    "artifacts": {
+      "planned": 13,
+      "executed": 13,
+      "passed": 13
+    },
+    "search": {
+      "planned": 2,
+      "executed": 2,
+      "passed": 2
+    },
+    "evidence": {
+      "planned": 9,
+      "executed": 9,
+      "passed": 9
+    },
+    "references": {
+      "planned": 15,
+      "executed": 15,
+      "passed": 15
+    },
+    "input": {
+      "planned": 20,
+      "executed": 20,
+      "passed": 20
+    },
+    "financial": {
+      "planned": 4,
+      "executed": 4,
+      "passed": 4
+    },
+    "publication": {
+      "planned": 5,
+      "executed": 5,
+      "passed": 5
+    },
+    "versions": {
+      "planned": 2,
+      "executed": 2,
+      "passed": 2
+    },
+    "premises": {
+      "planned": 5,
+      "executed": 5,
+      "passed": 5
+    },
+    "A_controller_fixture": {
+      "planned": 11,
+      "executed": 11,
+      "passed": 11
+    },
+    "C_controller_fixture": {
+      "planned": 9,
+      "executed": 9,
+      "passed": 9
+    },
+    "history": {
+      "planned": 17,
+      "executed": 17,
+      "passed": 17
+    },
+    "scenario": {
+      "planned": 17,
+      "executed": 17,
+      "passed": 17
+    },
+    "real_source": {
+      "planned": 7,
+      "executed": 7,
+      "passed": 7
+    }
+  },
+  "new_real_fact_count": 0,
+  "new_human_reviewed": 0,
+  "new_model_chat_requests": 0,
+  "actual_model_quality": "not_measured",
+  "controller_fixtures": "explicit_mock_not_actual",
+  "comparison16_attempts": 0,
+  "known_to_developer": true
+}

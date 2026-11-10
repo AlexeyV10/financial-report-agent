@@ -1,0 +1,1781 @@
+{
+  "schema_version": "kp3-probe-plan-0.1",
+  "stage": "KP3-15",
+  "scope": "developer_known_runtime_fault_campaign_not_comparison16",
+  "trusted_setup": "Isolated own07 hash fixtures (NOT issuer PDF); own12 source/ledger; immutable real catalog and private resource copies. SQLite payload faults are injected by trusted evaluator and rehashed, never by source/question/model.",
+  "model_policy": {
+    "start_server": false,
+    "real_chat_budget": 0,
+    "controller_fixtures": "explicit_mock_not_actual_model",
+    "actual_model_quality": "not_measured"
+  },
+  "registry_basis": "evaluation/protocols/kp3_eval_v1/protocol.json:fault_registry",
+  "rows": [
+    {
+      "probe_id": "positive-direct",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "direct",
+      "expected": "answered",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "positive-delta",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "delta",
+      "expected": "answered",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "positive-relative",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "relative",
+      "expected": "answered",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "positive-scale",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "scale",
+      "expected": "answered",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "positive-margin",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "margin",
+      "expected": "answered",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "positive-negative_profit",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "negative_profit",
+      "expected": "answered",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "positive-signed_cfo",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "signed_cfo",
+      "expected": "answered",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "artifact-source_missing",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "source_missing",
+      "expected": "error",
+      "registry_ids": [
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "artifact-source_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "source_changed",
+      "expected": "error",
+      "registry_ids": [
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "artifact-index_missing",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "index_missing",
+      "expected": "error",
+      "registry_ids": [
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "artifact-index_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "index_changed",
+      "expected": "error",
+      "registry_ids": [
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "artifact-manifest_missing",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "manifest_missing",
+      "expected": "error",
+      "registry_ids": [
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "artifact-manifest_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "manifest_changed",
+      "expected": "error",
+      "registry_ids": [
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "artifact-config_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "config_changed",
+      "expected": "error",
+      "registry_ids": [
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "artifact-catalog_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "catalog_changed",
+      "expected": "error",
+      "registry_ids": [
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "artifact-dictionary_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "dictionary_changed",
+      "expected": "error",
+      "registry_ids": [
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "artifact-admission_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "admission_changed",
+      "expected": "error",
+      "registry_ids": [
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "artifact-guarded_file",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "guarded_file",
+      "expected": "error",
+      "registry_ids": [
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "artifact-guarded_setup",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "guarded_setup",
+      "expected": "error",
+      "registry_ids": [
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "artifact-code_signature",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "code_signature",
+      "expected": "error",
+      "registry_ids": [
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "search-empty",
+      "family": "search",
+      "kind": "search",
+      "variant": "empty",
+      "expected": "missing",
+      "registry_ids": [
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "search-partial",
+      "family": "search",
+      "kind": "search",
+      "variant": "partial",
+      "expected": "missing",
+      "registry_ids": [
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "cell-unknown_evidence",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "unknown_evidence",
+      "expected": "error",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "other_cell",
+        "wrong_sha_page",
+        "lost_header",
+        "automatic_candidate"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "cell-duplicate_evidence",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "duplicate_evidence",
+      "expected": "error",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "other_cell",
+        "wrong_sha_page",
+        "lost_header",
+        "automatic_candidate"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "cell-wrong_cell",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "wrong_cell",
+      "expected": "error",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "other_cell",
+        "wrong_sha_page",
+        "lost_header",
+        "automatic_candidate"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "cell-wrong_page",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "wrong_page",
+      "expected": "error",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "other_cell",
+        "wrong_sha_page",
+        "lost_header",
+        "automatic_candidate"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "cell-wrong_sha",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "wrong_sha",
+      "expected": "error",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "other_cell",
+        "wrong_sha_page",
+        "lost_header",
+        "automatic_candidate"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "cell-lost_unit_header",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "lost_unit_header",
+      "expected": "error",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "other_cell",
+        "wrong_sha_page",
+        "lost_header",
+        "automatic_candidate"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "cell-wrong_value",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "wrong_value",
+      "expected": "error",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "other_cell",
+        "wrong_sha_page",
+        "lost_header",
+        "automatic_candidate"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "cell-candidate",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "candidate",
+      "expected": "error",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "other_cell",
+        "wrong_sha_page",
+        "lost_header",
+        "automatic_candidate"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "cell-structure_checked",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "structure_checked",
+      "expected": "error",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "other_cell",
+        "wrong_sha_page",
+        "lost_header",
+        "automatic_candidate"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "reference-unknown_fact",
+      "family": "references",
+      "kind": "reference",
+      "variant": "unknown_fact",
+      "expected": "no_answer",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "other_cell"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "reference-duplicate_fact",
+      "family": "references",
+      "kind": "reference",
+      "variant": "duplicate_fact",
+      "expected": "no_answer",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "other_cell"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "reference-duplicate_role",
+      "family": "references",
+      "kind": "reference",
+      "variant": "duplicate_role",
+      "expected": "no_answer",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "other_cell"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "reference-reversed_periods",
+      "family": "references",
+      "kind": "reference",
+      "variant": "reversed_periods",
+      "expected": "no_answer",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "other_cell"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "reference-wrong_org",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_org",
+      "expected": "no_answer",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "other_cell"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "reference-legal_entity",
+      "family": "references",
+      "kind": "reference",
+      "variant": "legal_entity",
+      "expected": "no_answer",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "other_cell"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "reference-ras",
+      "family": "references",
+      "kind": "reference",
+      "variant": "ras",
+      "expected": "no_answer",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "other_cell"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "reference-wrong_definition",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_definition",
+      "expected": "no_answer",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "other_cell"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "reference-wrong_version",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_version",
+      "expected": "no_answer",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "other_cell"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "reference-wrong_currency",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_currency",
+      "expected": "no_answer",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "other_cell"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "reference-wrong_scale",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_scale",
+      "expected": "no_answer",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "other_cell"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "reference-wrong_period",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_period",
+      "expected": "no_answer",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "other_cell"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "reference-extra_value",
+      "family": "references",
+      "kind": "reference",
+      "variant": "extra_value",
+      "expected": "no_answer",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "other_cell"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "reference-extra_formula",
+      "family": "references",
+      "kind": "reference",
+      "variant": "extra_formula",
+      "expected": "no_answer",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "other_cell"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "reference-extra_path",
+      "family": "references",
+      "kind": "reference",
+      "variant": "extra_path",
+      "expected": "no_answer",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "other_cell"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-unknown_org",
+      "family": "input",
+      "kind": "input",
+      "variant": "unknown_org",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-missing_org",
+      "family": "input",
+      "kind": "input",
+      "variant": "missing_org",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-unknown_document",
+      "family": "input",
+      "kind": "input",
+      "variant": "unknown_document",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-duplicate_document",
+      "family": "input",
+      "kind": "input",
+      "variant": "duplicate_document",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-ytd",
+      "family": "input",
+      "kind": "input",
+      "variant": "ytd",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-quarter",
+      "family": "input",
+      "kind": "input",
+      "variant": "quarter",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-missing_period",
+      "family": "input",
+      "kind": "input",
+      "variant": "missing_period",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-ebitda",
+      "family": "input",
+      "kind": "input",
+      "variant": "ebitda",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-net_income",
+      "family": "input",
+      "kind": "input",
+      "variant": "net_income",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-bank",
+      "family": "input",
+      "kind": "input",
+      "variant": "bank",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-ras",
+      "family": "input",
+      "kind": "input",
+      "variant": "ras",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-legal_entity",
+      "family": "input",
+      "kind": "input",
+      "variant": "legal_entity",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-fx",
+      "family": "input",
+      "kind": "input",
+      "variant": "fx",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-percentage_points",
+      "family": "input",
+      "kind": "input",
+      "variant": "percentage_points",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-form_extra",
+      "family": "input",
+      "kind": "input",
+      "variant": "form_extra",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-huge_question",
+      "family": "input",
+      "kind": "input",
+      "variant": "huge_question",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-instruction",
+      "family": "input",
+      "kind": "input",
+      "variant": "instruction",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-code",
+      "family": "input",
+      "kind": "input",
+      "variant": "code",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-url",
+      "family": "input",
+      "kind": "input",
+      "variant": "url",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "input-path",
+      "family": "input",
+      "kind": "input",
+      "variant": "path",
+      "expected": "no_answer",
+      "registry_ids": [
+        "untrusted_instruction"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "finance-zero_base",
+      "family": "financial",
+      "kind": "finance",
+      "variant": "zero_base",
+      "expected": "unsupported",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "finance-negative_base",
+      "family": "financial",
+      "kind": "finance",
+      "variant": "negative_base",
+      "expected": "unsupported",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "finance-zero_revenue",
+      "family": "financial",
+      "kind": "finance",
+      "variant": "zero_revenue",
+      "expected": "unsupported",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "finance-negative_revenue",
+      "family": "financial",
+      "kind": "finance",
+      "variant": "negative_revenue",
+      "expected": "unsupported",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "publication-unknown",
+      "family": "publication",
+      "kind": "publication",
+      "variant": "unknown",
+      "expected": "no_answer",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "publication-before_publication",
+      "family": "publication",
+      "kind": "publication",
+      "variant": "before_publication",
+      "expected": "no_answer",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "publication-missing_as_of",
+      "family": "publication",
+      "kind": "publication",
+      "variant": "missing_as_of",
+      "expected": "no_answer",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "publication-no_zone",
+      "family": "publication",
+      "kind": "publication",
+      "variant": "no_zone",
+      "expected": "no_answer",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "publication-invalid_precision",
+      "family": "publication",
+      "kind": "publication",
+      "variant": "invalid_precision",
+      "expected": "no_answer",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "versions-cross_original",
+      "family": "versions",
+      "kind": "versions",
+      "variant": "cross_original",
+      "expected": "no_answer",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "versions-original_only",
+      "family": "versions",
+      "kind": "versions",
+      "variant": "original_only",
+      "expected": "no_answer",
+      "registry_ids": [],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "premise-increase",
+      "family": "premises",
+      "kind": "premise",
+      "variant": "increase",
+      "expected": "invariant",
+      "registry_ids": [
+        "lost_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "premise-decrease",
+      "family": "premises",
+      "kind": "premise",
+      "variant": "decrease",
+      "expected": "invariant",
+      "registry_ids": [
+        "lost_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "premise-failure",
+      "family": "premises",
+      "kind": "premise",
+      "variant": "failure",
+      "expected": "invariant",
+      "registry_ids": [
+        "lost_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "premise-clarification",
+      "family": "premises",
+      "kind": "premise",
+      "variant": "clarification",
+      "expected": "invariant",
+      "registry_ids": [
+        "lost_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "premise-preserve_history",
+      "family": "premises",
+      "kind": "premise",
+      "variant": "preserve_history",
+      "expected": "invariant",
+      "registry_ids": [
+        "lost_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "a_fixture-valid",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "valid",
+      "expected": "fixture",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "a_fixture-unknown",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "unknown",
+      "expected": "fixture",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "a_fixture-duplicate_id",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "duplicate_id",
+      "expected": "fixture",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "a_fixture-duplicate_role",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "duplicate_role",
+      "expected": "fixture",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "a_fixture-wrong_roles",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "wrong_roles",
+      "expected": "fixture",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "a_fixture-wrong_operation",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "wrong_operation",
+      "expected": "fixture",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "a_fixture-value",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "value",
+      "expected": "fixture",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "a_fixture-malformed",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "malformed",
+      "expected": "fixture",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "a_fixture-large",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "large",
+      "expected": "fixture",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "a_fixture-bad_reply",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "bad_reply",
+      "expected": "fixture",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "a_fixture-timeout",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "timeout",
+      "expected": "fixture",
+      "registry_ids": [
+        "unknown_id",
+        "duplicate_id",
+        "swapped_roles",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "c_fixture-valid",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "valid",
+      "expected": "fixture",
+      "registry_ids": [
+        "untrusted_instruction",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "c_fixture-loop",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "loop",
+      "expected": "fixture",
+      "registry_ids": [
+        "untrusted_instruction",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "c_fixture-timeout",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "timeout",
+      "expected": "fixture",
+      "registry_ids": [
+        "untrusted_instruction",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "c_fixture-bad_reply",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "bad_reply",
+      "expected": "fixture",
+      "registry_ids": [
+        "untrusted_instruction",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "c_fixture-wrong_finish",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "wrong_finish",
+      "expected": "fixture",
+      "registry_ids": [
+        "untrusted_instruction",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "c_fixture-never_finish",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "never_finish",
+      "expected": "fixture",
+      "registry_ids": [
+        "untrusted_instruction",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "c_fixture-forbidden_tool",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "forbidden_tool",
+      "expected": "fixture",
+      "registry_ids": [
+        "untrusted_instruction",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "c_fixture-extra_value",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "extra_value",
+      "expected": "fixture",
+      "registry_ids": [
+        "untrusted_instruction",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "c_fixture-partial",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "partial",
+      "expected": "fixture",
+      "registry_ids": [
+        "untrusted_instruction",
+        "extra_claim",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "history-repeat",
+      "family": "history",
+      "kind": "history",
+      "variant": "repeat",
+      "expected": "invariant",
+      "registry_ids": [
+        "changed_artifact",
+        "untrusted_instruction",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "history-refresh",
+      "family": "history",
+      "kind": "history",
+      "variant": "refresh",
+      "expected": "invariant",
+      "registry_ids": [
+        "changed_artifact",
+        "untrusted_instruction",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "history-archive",
+      "family": "history",
+      "kind": "history",
+      "variant": "archive",
+      "expected": "invariant",
+      "registry_ids": [
+        "changed_artifact",
+        "untrusted_instruction",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "history-export",
+      "family": "history",
+      "kind": "history",
+      "variant": "export",
+      "expected": "invariant",
+      "registry_ids": [
+        "changed_artifact",
+        "untrusted_instruction",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "history-context_change",
+      "family": "history",
+      "kind": "history",
+      "variant": "context_change",
+      "expected": "invariant",
+      "registry_ids": [
+        "changed_artifact",
+        "untrusted_instruction",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "history-units_change",
+      "family": "history",
+      "kind": "history",
+      "variant": "units_change",
+      "expected": "invariant",
+      "registry_ids": [
+        "changed_artifact",
+        "untrusted_instruction",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "history-new_nonce",
+      "family": "history",
+      "kind": "history",
+      "variant": "new_nonce",
+      "expected": "invariant",
+      "registry_ids": [
+        "changed_artifact",
+        "untrusted_instruction",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "history-duplicate_run",
+      "family": "history",
+      "kind": "history",
+      "variant": "duplicate_run",
+      "expected": "invariant",
+      "registry_ids": [
+        "changed_artifact",
+        "untrusted_instruction",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "history-pending_claim",
+      "family": "history",
+      "kind": "history",
+      "variant": "pending_claim",
+      "expected": "invariant",
+      "registry_ids": [
+        "changed_artifact",
+        "untrusted_instruction",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "history-interrupted",
+      "family": "history",
+      "kind": "history",
+      "variant": "interrupted",
+      "expected": "invariant",
+      "registry_ids": [
+        "changed_artifact",
+        "untrusted_instruction",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "history-atomic_existing",
+      "family": "history",
+      "kind": "history",
+      "variant": "atomic_existing",
+      "expected": "invariant",
+      "registry_ids": [
+        "changed_artifact",
+        "untrusted_instruction",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "history-unsafe_id",
+      "family": "history",
+      "kind": "history",
+      "variant": "unsafe_id",
+      "expected": "invariant",
+      "registry_ids": [
+        "changed_artifact",
+        "untrusted_instruction",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "history-duplicate_keys",
+      "family": "history",
+      "kind": "history",
+      "variant": "duplicate_keys",
+      "expected": "invariant",
+      "registry_ids": [
+        "changed_artifact",
+        "untrusted_instruction",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "history-nan",
+      "family": "history",
+      "kind": "history",
+      "variant": "nan",
+      "expected": "invariant",
+      "registry_ids": [
+        "changed_artifact",
+        "untrusted_instruction",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "history-oversize",
+      "family": "history",
+      "kind": "history",
+      "variant": "oversize",
+      "expected": "invariant",
+      "registry_ids": [
+        "changed_artifact",
+        "untrusted_instruction",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "history-checksum",
+      "family": "history",
+      "kind": "history",
+      "variant": "checksum",
+      "expected": "invariant",
+      "registry_ids": [
+        "changed_artifact",
+        "untrusted_instruction",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "history-method_swap",
+      "family": "history",
+      "kind": "history",
+      "variant": "method_swap",
+      "expected": "invariant",
+      "registry_ids": [
+        "changed_artifact",
+        "untrusted_instruction",
+        "unknown_usage"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "scenario-default",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "default",
+      "expected": "scenario",
+      "registry_ids": [
+        "own_price_gap",
+        "extra_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "scenario-false_signal",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "false_signal",
+      "expected": "scenario",
+      "registry_ids": [
+        "own_price_gap",
+        "extra_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "scenario-strict_nextopen",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "strict_nextopen",
+      "expected": "scenario",
+      "registry_ids": [
+        "own_price_gap",
+        "extra_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "scenario-costs",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "costs",
+      "expected": "scenario",
+      "registry_ids": [
+        "own_price_gap",
+        "extra_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "scenario-lot",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "lot",
+      "expected": "scenario",
+      "registry_ids": [
+        "own_price_gap",
+        "extra_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "scenario-price_gap",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "price_gap",
+      "expected": "scenario",
+      "registry_ids": [
+        "own_price_gap",
+        "extra_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "scenario-exit_fee",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "exit_fee",
+      "expected": "scenario",
+      "registry_ids": [
+        "own_price_gap",
+        "extra_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "scenario-before_publication",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "before_publication",
+      "expected": "scenario",
+      "registry_ids": [
+        "own_price_gap",
+        "extra_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "scenario-no_zone",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "no_zone",
+      "expected": "scenario",
+      "registry_ids": [
+        "own_price_gap",
+        "extra_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "scenario-wrong_run",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "wrong_run",
+      "expected": "scenario",
+      "registry_ids": [
+        "own_price_gap",
+        "extra_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "scenario-value_tamper",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "value_tamper",
+      "expected": "scenario",
+      "registry_ids": [
+        "own_price_gap",
+        "extra_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "scenario-real_mixing",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "real_mixing",
+      "expected": "scenario",
+      "registry_ids": [
+        "own_price_gap",
+        "extra_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "scenario-negative_cash",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "negative_cash",
+      "expected": "scenario",
+      "registry_ids": [
+        "own_price_gap",
+        "extra_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "scenario-nan_threshold",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "nan_threshold",
+      "expected": "scenario",
+      "registry_ids": [
+        "own_price_gap",
+        "extra_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "scenario-extra_prices",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "extra_prices",
+      "expected": "scenario",
+      "registry_ids": [
+        "own_price_gap",
+        "extra_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "scenario-source_missing",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "source_missing",
+      "expected": "scenario",
+      "registry_ids": [
+        "own_price_gap",
+        "extra_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "scenario-source_changed",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "source_changed",
+      "expected": "scenario",
+      "registry_ids": [
+        "own_price_gap",
+        "extra_claim"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "real-all_publications",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "all_publications",
+      "expected": "invariant",
+      "registry_ids": [
+        "automatic_candidate",
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "real-automatic",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "automatic",
+      "expected": "invariant",
+      "registry_ids": [
+        "automatic_candidate",
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "real-export_missing",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "export_missing",
+      "expected": "invariant",
+      "registry_ids": [
+        "automatic_candidate",
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "real-export_changed",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "export_changed",
+      "expected": "invariant",
+      "registry_ids": [
+        "automatic_candidate",
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "real-source_copy_missing",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "source_copy_missing",
+      "expected": "invariant",
+      "registry_ids": [
+        "automatic_candidate",
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "real-source_copy_changed",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "source_copy_changed",
+      "expected": "invariant",
+      "registry_ids": [
+        "automatic_candidate",
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    },
+    {
+      "probe_id": "real-conflict_versions",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "conflict_versions",
+      "expected": "invariant",
+      "registry_ids": [
+        "automatic_candidate",
+        "changed_artifact"
+      ],
+      "known_to_developer": true
+    }
+  ],
+  "denominators": {
+    "positive": 7,
+    "artifacts": 13,
+    "search": 2,
+    "evidence": 9,
+    "references": 15,
+    "input": 20,
+    "financial": 4,
+    "publication": 5,
+    "versions": 2,
+    "premises": 5,
+    "A_controller_fixture": 11,
+    "C_controller_fixture": 9,
+    "history": 17,
+    "scenario": 17,
+    "real_source": 7
+  },
+  "final_comparison_attempts": 0,
+  "reserved_unseen_real": 0
+}

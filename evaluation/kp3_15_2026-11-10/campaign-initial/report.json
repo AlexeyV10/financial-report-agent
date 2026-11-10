@@ -1,0 +1,1603 @@
+{
+  "schema_version": "kp3-probe-report-0.1",
+  "stage": "KP3-15",
+  "plan_digest": "f00935505acf6e807a02dad0cc18a3d2ba924f312c06f9fff7cf435c74f23bf0",
+  "observations": [
+    {
+      "probe_id": "positive-direct",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "direct",
+      "expected": "answered",
+      "passed": true,
+      "elapsed_ms": 59.849,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "positive-delta",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "delta",
+      "expected": "answered",
+      "passed": true,
+      "elapsed_ms": 38.011,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "positive-relative",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "relative",
+      "expected": "answered",
+      "passed": true,
+      "elapsed_ms": 41.101,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "positive-scale",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "scale",
+      "expected": "answered",
+      "passed": true,
+      "elapsed_ms": 36.138,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "positive-margin",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "margin",
+      "expected": "answered",
+      "passed": true,
+      "elapsed_ms": 39.188,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "positive-negative_profit",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "negative_profit",
+      "expected": "answered",
+      "passed": true,
+      "elapsed_ms": 60.577,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "positive-signed_cfo",
+      "family": "positive",
+      "kind": "positive",
+      "variant": "signed_cfo",
+      "expected": "answered",
+      "passed": false,
+      "first_error": {
+        "type": "AssertionError",
+        "message": "('signed_cfo', {'schema_version': 'kp3-answer-0.1', 'run_id': 'run-0915104563944e49b499fb50e85019f6', 'task_id': 'run-0915104563944e49b499fb50e85019f6', 'method': 'B', 'execution_status': 'completed', 'request_status': 'evaluated', 'financial_status': 'answered', 'reason_code': 'ok', 'original_question': 'Явная собственная учебная форма.', 'normalized_input': {'schema_version': 'kp3-input-0.1', 'input_id': 'run-0915104563944e49b499fb50e85019f6', 'original_question': 'Явная собственная учебная форма.', 'input_kind': 'form', 'raw_fields': {'organization': 'method_synthetic_group', 'operation_id': 'direct_fact_v1', 'metric_ids': ['operating_cash_flow'], 'periods': [{'kind': 'duration', 'duration_type': 'full_year', 'start': '2024-01-01', 'end': '2024-12-31'}], 'documents': [{'document_id': 'method-synthetic-2024', 'version_id': 'own-2024-v1'}], 'mode': 'snapshot'}, 'fields': {'organization': 'method_synthetic_group', 'consolidation': 'group', 'accounting_standard': 'IFRS', 'operation_id': 'direct_fact_v1', 'metric_ids': ['operating_cash_flow'], 'definition_ids': ['operating_cash_flow:nonfinancial_ifrs_net_v1'], 'periods': [{'kind': 'duration', 'duration_type': 'full_year', 'start': '2"
+      },
+      "elapsed_ms": 38.157
+    },
+    {
+      "probe_id": "artifact-source_missing",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "source_missing",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 43.788,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "artifact-source_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "source_changed",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 44.362,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "artifact-index_missing",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "index_missing",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 41.882,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "artifact-index_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "index_changed",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 47.097,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "artifact-manifest_missing",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "manifest_missing",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 44.555,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "artifact-manifest_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "manifest_changed",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 43.171,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "artifact-config_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "config_changed",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 40.695,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "artifact-catalog_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "catalog_changed",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 38.409,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "artifact-dictionary_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "dictionary_changed",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 43.925,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "artifact-admission_changed",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "admission_changed",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 44.091,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "artifact-guarded_file",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "guarded_file",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 53.287,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "artifact-guarded_setup",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "guarded_setup",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 45.292,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "artifact-code_signature",
+      "family": "artifacts",
+      "kind": "artifact",
+      "variant": "code_signature",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 62.022,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "search-empty",
+      "family": "search",
+      "kind": "search",
+      "variant": "empty",
+      "expected": "missing",
+      "passed": true,
+      "elapsed_ms": 63.317,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "search-partial",
+      "family": "search",
+      "kind": "search",
+      "variant": "partial",
+      "expected": "missing",
+      "passed": true,
+      "elapsed_ms": 63.067,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "cell-unknown_evidence",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "unknown_evidence",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 61.674,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "cell-duplicate_evidence",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "duplicate_evidence",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 56.666,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "cell-wrong_cell",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "wrong_cell",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 59.395,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "cell-wrong_page",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "wrong_page",
+      "expected": "error",
+      "passed": false,
+      "first_error": {
+        "type": "KeyError",
+        "message": "'pdf_page'"
+      },
+      "elapsed_ms": 35.461
+    },
+    {
+      "probe_id": "cell-wrong_sha",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "wrong_sha",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 52.058,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "cell-lost_unit_header",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "lost_unit_header",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 57.238,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "cell-wrong_value",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "wrong_value",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 52.443,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "cell-candidate",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "candidate",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 52.559,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "cell-structure_checked",
+      "family": "evidence",
+      "kind": "cell",
+      "variant": "structure_checked",
+      "expected": "error",
+      "passed": true,
+      "elapsed_ms": 60.206,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "reference-unknown_fact",
+      "family": "references",
+      "kind": "reference",
+      "variant": "unknown_fact",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 38.101,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "reference-duplicate_fact",
+      "family": "references",
+      "kind": "reference",
+      "variant": "duplicate_fact",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 40.048,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "reference-duplicate_role",
+      "family": "references",
+      "kind": "reference",
+      "variant": "duplicate_role",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 38.711,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "reference-reversed_periods",
+      "family": "references",
+      "kind": "reference",
+      "variant": "reversed_periods",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 38.374,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "reference-wrong_org",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_org",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 40.603,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "reference-legal_entity",
+      "family": "references",
+      "kind": "reference",
+      "variant": "legal_entity",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 41.213,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "reference-ras",
+      "family": "references",
+      "kind": "reference",
+      "variant": "ras",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 39.286,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "reference-wrong_definition",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_definition",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 39.54,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "reference-wrong_version",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_version",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 37.464,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "reference-wrong_currency",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_currency",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 38.261,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "reference-wrong_scale",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_scale",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 40.138,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "reference-wrong_period",
+      "family": "references",
+      "kind": "reference",
+      "variant": "wrong_period",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 40.514,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "reference-extra_value",
+      "family": "references",
+      "kind": "reference",
+      "variant": "extra_value",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 37.854,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "reference-extra_formula",
+      "family": "references",
+      "kind": "reference",
+      "variant": "extra_formula",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 39.147,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "reference-extra_path",
+      "family": "references",
+      "kind": "reference",
+      "variant": "extra_path",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 37.842,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-unknown_org",
+      "family": "input",
+      "kind": "input",
+      "variant": "unknown_org",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 38.443,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-missing_org",
+      "family": "input",
+      "kind": "input",
+      "variant": "missing_org",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 39.788,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-unknown_document",
+      "family": "input",
+      "kind": "input",
+      "variant": "unknown_document",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 41.345,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-duplicate_document",
+      "family": "input",
+      "kind": "input",
+      "variant": "duplicate_document",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 37.268,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-ytd",
+      "family": "input",
+      "kind": "input",
+      "variant": "ytd",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 39.545,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-quarter",
+      "family": "input",
+      "kind": "input",
+      "variant": "quarter",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 39.73,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-missing_period",
+      "family": "input",
+      "kind": "input",
+      "variant": "missing_period",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 41.707,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-ebitda",
+      "family": "input",
+      "kind": "input",
+      "variant": "ebitda",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 40.134,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-net_income",
+      "family": "input",
+      "kind": "input",
+      "variant": "net_income",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 41.162,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-bank",
+      "family": "input",
+      "kind": "input",
+      "variant": "bank",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 40.147,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-ras",
+      "family": "input",
+      "kind": "input",
+      "variant": "ras",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 38.626,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-legal_entity",
+      "family": "input",
+      "kind": "input",
+      "variant": "legal_entity",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 45.29,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-fx",
+      "family": "input",
+      "kind": "input",
+      "variant": "fx",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 43.961,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-percentage_points",
+      "family": "input",
+      "kind": "input",
+      "variant": "percentage_points",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 37.595,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-form_extra",
+      "family": "input",
+      "kind": "input",
+      "variant": "form_extra",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 37.903,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-huge_question",
+      "family": "input",
+      "kind": "input",
+      "variant": "huge_question",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 43.464,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-instruction",
+      "family": "input",
+      "kind": "input",
+      "variant": "instruction",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 38.779,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-code",
+      "family": "input",
+      "kind": "input",
+      "variant": "code",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 39.58,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-url",
+      "family": "input",
+      "kind": "input",
+      "variant": "url",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 41.178,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "input-path",
+      "family": "input",
+      "kind": "input",
+      "variant": "path",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 38.176,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "finance-zero_base",
+      "family": "financial",
+      "kind": "finance",
+      "variant": "zero_base",
+      "expected": "unsupported",
+      "passed": true,
+      "elapsed_ms": 71.638,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "finance-negative_base",
+      "family": "financial",
+      "kind": "finance",
+      "variant": "negative_base",
+      "expected": "unsupported",
+      "passed": true,
+      "elapsed_ms": 81.074,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "finance-zero_revenue",
+      "family": "financial",
+      "kind": "finance",
+      "variant": "zero_revenue",
+      "expected": "unsupported",
+      "passed": true,
+      "elapsed_ms": 75.413,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "finance-negative_revenue",
+      "family": "financial",
+      "kind": "finance",
+      "variant": "negative_revenue",
+      "expected": "unsupported",
+      "passed": true,
+      "elapsed_ms": 75.52,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "publication-unknown",
+      "family": "publication",
+      "kind": "publication",
+      "variant": "unknown",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 43.967,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "publication-before_publication",
+      "family": "publication",
+      "kind": "publication",
+      "variant": "before_publication",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 60.911,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "publication-missing_as_of",
+      "family": "publication",
+      "kind": "publication",
+      "variant": "missing_as_of",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 38.847,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "publication-no_zone",
+      "family": "publication",
+      "kind": "publication",
+      "variant": "no_zone",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 38.951,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "publication-invalid_precision",
+      "family": "publication",
+      "kind": "publication",
+      "variant": "invalid_precision",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 39.996,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "versions-cross_original",
+      "family": "versions",
+      "kind": "versions",
+      "variant": "cross_original",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 40.948,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "versions-original_only",
+      "family": "versions",
+      "kind": "versions",
+      "variant": "original_only",
+      "expected": "no_answer",
+      "passed": true,
+      "elapsed_ms": 46.918,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "premise-increase",
+      "family": "premises",
+      "kind": "premise",
+      "variant": "increase",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "TypeError",
+        "message": "'NoneType' object is not subscriptable"
+      },
+      "elapsed_ms": 37.276
+    },
+    {
+      "probe_id": "premise-decrease",
+      "family": "premises",
+      "kind": "premise",
+      "variant": "decrease",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "TypeError",
+        "message": "'NoneType' object is not subscriptable"
+      },
+      "elapsed_ms": 39.736
+    },
+    {
+      "probe_id": "premise-failure",
+      "family": "premises",
+      "kind": "premise",
+      "variant": "failure",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "TypeError",
+        "message": "'NoneType' object is not subscriptable"
+      },
+      "elapsed_ms": 36.823
+    },
+    {
+      "probe_id": "premise-clarification",
+      "family": "premises",
+      "kind": "premise",
+      "variant": "clarification",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "TypeError",
+        "message": "'NoneType' object is not subscriptable"
+      },
+      "elapsed_ms": 37.499
+    },
+    {
+      "probe_id": "premise-preserve_history",
+      "family": "premises",
+      "kind": "premise",
+      "variant": "preserve_history",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "TypeError",
+        "message": "'NoneType' object is not subscriptable"
+      },
+      "elapsed_ms": 38.103
+    },
+    {
+      "probe_id": "a_fixture-valid",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "valid",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 1065.553,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "a_fixture-unknown",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "unknown",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 695.994,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "a_fixture-duplicate_id",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "duplicate_id",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 707.092,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "a_fixture-duplicate_role",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "duplicate_role",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 703.451,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "a_fixture-wrong_roles",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "wrong_roles",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 677.774,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "a_fixture-wrong_operation",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "wrong_operation",
+      "expected": "fixture",
+      "passed": false,
+      "first_error": {
+        "type": "AssertionError",
+        "message": "A fixture accepted hostile choice"
+      },
+      "elapsed_ms": 1039.985
+    },
+    {
+      "probe_id": "a_fixture-value",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "value",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 701.306,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "a_fixture-malformed",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "malformed",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 722.377,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "a_fixture-large",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "large",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 718.957,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "a_fixture-bad_reply",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "bad_reply",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 678.874,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "a_fixture-timeout",
+      "family": "A_controller_fixture",
+      "kind": "a_fixture",
+      "variant": "timeout",
+      "expected": "fixture",
+      "passed": false,
+      "first_error": {
+        "type": "AssertionError",
+        "message": "A repaired/researched"
+      },
+      "elapsed_ms": 197.126
+    },
+    {
+      "probe_id": "c_fixture-valid",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "valid",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 3301.278,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "c_fixture-loop",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "loop",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 1685.839,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "c_fixture-timeout",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "timeout",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 195.345,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "c_fixture-bad_reply",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "bad_reply",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 369.272,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "c_fixture-wrong_finish",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "wrong_finish",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 3316.679,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "c_fixture-never_finish",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "never_finish",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 3945.538,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "c_fixture-forbidden_tool",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "forbidden_tool",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 1360.54,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "c_fixture-extra_value",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "extra_value",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 1364.968,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "c_fixture-partial",
+      "family": "C_controller_fixture",
+      "kind": "c_fixture",
+      "variant": "partial",
+      "expected": "fixture",
+      "passed": true,
+      "elapsed_ms": 1057.807,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "history-repeat",
+      "family": "history",
+      "kind": "history",
+      "variant": "repeat",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "PermissionError",
+        "message": "Sandbox WinError5 on os.link; full trace preserved privately; same operation escalated successfully"
+      },
+      "elapsed_ms": 42.14
+    },
+    {
+      "probe_id": "history-refresh",
+      "family": "history",
+      "kind": "history",
+      "variant": "refresh",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "PermissionError",
+        "message": "Sandbox WinError5 on os.link; full trace preserved privately; same operation escalated successfully"
+      },
+      "elapsed_ms": 41.061
+    },
+    {
+      "probe_id": "history-archive",
+      "family": "history",
+      "kind": "history",
+      "variant": "archive",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "PermissionError",
+        "message": "Sandbox WinError5 on os.link; full trace preserved privately; same operation escalated successfully"
+      },
+      "elapsed_ms": 41.223
+    },
+    {
+      "probe_id": "history-export",
+      "family": "history",
+      "kind": "history",
+      "variant": "export",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "PermissionError",
+        "message": "Sandbox WinError5 on os.link; full trace preserved privately; same operation escalated successfully"
+      },
+      "elapsed_ms": 41.873
+    },
+    {
+      "probe_id": "history-context_change",
+      "family": "history",
+      "kind": "history",
+      "variant": "context_change",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "PermissionError",
+        "message": "Sandbox WinError5 on os.link; full trace preserved privately; same operation escalated successfully"
+      },
+      "elapsed_ms": 39.743
+    },
+    {
+      "probe_id": "history-units_change",
+      "family": "history",
+      "kind": "history",
+      "variant": "units_change",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "PermissionError",
+        "message": "Sandbox WinError5 on os.link; full trace preserved privately; same operation escalated successfully"
+      },
+      "elapsed_ms": 37.798
+    },
+    {
+      "probe_id": "history-new_nonce",
+      "family": "history",
+      "kind": "history",
+      "variant": "new_nonce",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "PermissionError",
+        "message": "Sandbox WinError5 on os.link; full trace preserved privately; same operation escalated successfully"
+      },
+      "elapsed_ms": 44.675
+    },
+    {
+      "probe_id": "history-duplicate_run",
+      "family": "history",
+      "kind": "history",
+      "variant": "duplicate_run",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "PermissionError",
+        "message": "Sandbox WinError5 on os.link; full trace preserved privately; same operation escalated successfully"
+      },
+      "elapsed_ms": 40.814
+    },
+    {
+      "probe_id": "history-pending_claim",
+      "family": "history",
+      "kind": "history",
+      "variant": "pending_claim",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "PermissionError",
+        "message": "Sandbox WinError5 on os.link; full trace preserved privately; same operation escalated successfully"
+      },
+      "elapsed_ms": 42.465
+    },
+    {
+      "probe_id": "history-interrupted",
+      "family": "history",
+      "kind": "history",
+      "variant": "interrupted",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "PermissionError",
+        "message": "Sandbox WinError5 on os.link; full trace preserved privately; same operation escalated successfully"
+      },
+      "elapsed_ms": 42.017
+    },
+    {
+      "probe_id": "history-atomic_existing",
+      "family": "history",
+      "kind": "history",
+      "variant": "atomic_existing",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "PermissionError",
+        "message": "Sandbox WinError5 on os.link; full trace preserved privately; same operation escalated successfully"
+      },
+      "elapsed_ms": 41.468
+    },
+    {
+      "probe_id": "history-unsafe_id",
+      "family": "history",
+      "kind": "history",
+      "variant": "unsafe_id",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "PermissionError",
+        "message": "Sandbox WinError5 on os.link; full trace preserved privately; same operation escalated successfully"
+      },
+      "elapsed_ms": 42.303
+    },
+    {
+      "probe_id": "history-duplicate_keys",
+      "family": "history",
+      "kind": "history",
+      "variant": "duplicate_keys",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "PermissionError",
+        "message": "Sandbox WinError5 on os.link; full trace preserved privately; same operation escalated successfully"
+      },
+      "elapsed_ms": 43.379
+    },
+    {
+      "probe_id": "history-nan",
+      "family": "history",
+      "kind": "history",
+      "variant": "nan",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "PermissionError",
+        "message": "Sandbox WinError5 on os.link; full trace preserved privately; same operation escalated successfully"
+      },
+      "elapsed_ms": 41.57
+    },
+    {
+      "probe_id": "history-oversize",
+      "family": "history",
+      "kind": "history",
+      "variant": "oversize",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "PermissionError",
+        "message": "Sandbox WinError5 on os.link; full trace preserved privately; same operation escalated successfully"
+      },
+      "elapsed_ms": 40.14
+    },
+    {
+      "probe_id": "history-checksum",
+      "family": "history",
+      "kind": "history",
+      "variant": "checksum",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "PermissionError",
+        "message": "Sandbox WinError5 on os.link; full trace preserved privately; same operation escalated successfully"
+      },
+      "elapsed_ms": 40.73
+    },
+    {
+      "probe_id": "history-method_swap",
+      "family": "history",
+      "kind": "history",
+      "variant": "method_swap",
+      "expected": "invariant",
+      "passed": false,
+      "first_error": {
+        "type": "PermissionError",
+        "message": "Sandbox WinError5 on os.link; full trace preserved privately; same operation escalated successfully"
+      },
+      "elapsed_ms": 40.671
+    },
+    {
+      "probe_id": "scenario-default",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "default",
+      "expected": "scenario",
+      "passed": true,
+      "elapsed_ms": 58.054,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "scenario-false_signal",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "false_signal",
+      "expected": "scenario",
+      "passed": true,
+      "elapsed_ms": 53.844,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "scenario-strict_nextopen",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "strict_nextopen",
+      "expected": "scenario",
+      "passed": true,
+      "elapsed_ms": 57.295,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "scenario-costs",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "costs",
+      "expected": "scenario",
+      "passed": true,
+      "elapsed_ms": 56.13,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "scenario-lot",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "lot",
+      "expected": "scenario",
+      "passed": true,
+      "elapsed_ms": 55.791,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "scenario-price_gap",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "price_gap",
+      "expected": "scenario",
+      "passed": true,
+      "elapsed_ms": 50.63,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "scenario-exit_fee",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "exit_fee",
+      "expected": "scenario",
+      "passed": true,
+      "elapsed_ms": 51.05,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "scenario-before_publication",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "before_publication",
+      "expected": "scenario",
+      "passed": true,
+      "elapsed_ms": 60.227,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "scenario-no_zone",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "no_zone",
+      "expected": "scenario",
+      "passed": true,
+      "elapsed_ms": 47.664,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "scenario-wrong_run",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "wrong_run",
+      "expected": "scenario",
+      "passed": true,
+      "elapsed_ms": 45.362,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "scenario-value_tamper",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "value_tamper",
+      "expected": "scenario",
+      "passed": true,
+      "elapsed_ms": 45.23,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "scenario-real_mixing",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "real_mixing",
+      "expected": "scenario",
+      "passed": true,
+      "elapsed_ms": 46.512,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "scenario-negative_cash",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "negative_cash",
+      "expected": "scenario",
+      "passed": true,
+      "elapsed_ms": 43.245,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "scenario-nan_threshold",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "nan_threshold",
+      "expected": "scenario",
+      "passed": true,
+      "elapsed_ms": 44.534,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "scenario-extra_prices",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "extra_prices",
+      "expected": "scenario",
+      "passed": true,
+      "elapsed_ms": 42.985,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "scenario-source_missing",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "source_missing",
+      "expected": "scenario",
+      "passed": true,
+      "elapsed_ms": 49.023,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "scenario-source_changed",
+      "family": "scenario",
+      "kind": "scenario",
+      "variant": "source_changed",
+      "expected": "scenario",
+      "passed": true,
+      "elapsed_ms": 68.616,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "real-all_publications",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "all_publications",
+      "expected": "invariant",
+      "passed": true,
+      "elapsed_ms": 244.07,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "real-automatic",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "automatic",
+      "expected": "invariant",
+      "passed": true,
+      "elapsed_ms": 131.914,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "real-export_missing",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "export_missing",
+      "expected": "invariant",
+      "passed": true,
+      "elapsed_ms": 114.402,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "real-export_changed",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "export_changed",
+      "expected": "invariant",
+      "passed": true,
+      "elapsed_ms": 134.183,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "real-source_copy_missing",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "source_copy_missing",
+      "expected": "invariant",
+      "passed": true,
+      "elapsed_ms": 123.329,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "real-source_copy_changed",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "source_copy_changed",
+      "expected": "invariant",
+      "passed": true,
+      "elapsed_ms": 133.272,
+      "raw_scope": "private_preserved_first_attempt"
+    },
+    {
+      "probe_id": "real-conflict_versions",
+      "family": "real_source",
+      "kind": "real",
+      "variant": "conflict_versions",
+      "expected": "invariant",
+      "passed": true,
+      "elapsed_ms": 100.696,
+      "raw_scope": "private_preserved_first_attempt"
+    }
+  ],
+  "total": 143,
+  "passed": 117,
+  "by_family": {
+    "positive": {
+      "planned": 7,
+      "executed": 7,
+      "passed": 6
+    },
+    "artifacts": {
+      "planned": 13,
+      "executed": 13,
+      "passed": 13
+    },
+    "search": {
+      "planned": 2,
+      "executed": 2,
+      "passed": 2
+    },
+    "evidence": {
+      "planned": 9,
+      "executed": 9,
+      "passed": 8
+    },
+    "references": {
+      "planned": 15,
+      "executed": 15,
+      "passed": 15
+    },
+    "input": {
+      "planned": 20,
+      "executed": 20,
+      "passed": 20
+    },
+    "financial": {
+      "planned": 4,
+      "executed": 4,
+      "passed": 4
+    },
+    "publication": {
+      "planned": 5,
+      "executed": 5,
+      "passed": 5
+    },
+    "versions": {
+      "planned": 2,
+      "executed": 2,
+      "passed": 2
+    },
+    "premises": {
+      "planned": 5,
+      "executed": 5,
+      "passed": 0
+    },
+    "A_controller_fixture": {
+      "planned": 11,
+      "executed": 11,
+      "passed": 9
+    },
+    "C_controller_fixture": {
+      "planned": 9,
+      "executed": 9,
+      "passed": 9
+    },
+    "history": {
+      "planned": 17,
+      "executed": 17,
+      "passed": 0
+    },
+    "scenario": {
+      "planned": 17,
+      "executed": 17,
+      "passed": 17
+    },
+    "real_source": {
+      "planned": 7,
+      "executed": 7,
+      "passed": 7
+    }
+  },
+  "new_real_fact_count": 0,
+  "new_human_reviewed": 0,
+  "new_model_chat_requests": 0,
+  "actual_model_quality": "not_measured",
+  "controller_fixtures": "explicit_mock_not_actual",
+  "comparison16_attempts": 0,
+  "known_to_developer": true,
+  "privacy_redaction": "Only local absolute paths redacted; unredacted original retained privately",
+  "unredacted_report_sha256": "6022ac6d6862137d03653050547d5a02b7162f3a1f308f44f5c0bc31e996532f"
+}

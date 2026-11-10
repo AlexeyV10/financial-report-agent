@@ -1,0 +1,648 @@
+{
+  "result": null,
+  "control": null,
+  "details": {
+    "first_record": "7a6e9dd5e0a88005d0aad64c31a3d6cc2548b698cfa7b9d79101dd84c1aaaaf3",
+    "first_run": "product13-930c9f17e41abd9966258e7ae04c53a9",
+    "rejection": {
+      "exception": "ValueError",
+      "reason_code": "run_in_progress_or_interrupted_choose_new_run"
+    },
+    "original_answer": {
+      "schema_version": "kp3-answer-0.1",
+      "run_id": "product13-930c9f17e41abd9966258e7ae04c53a9",
+      "task_id": "product13-930c9f17e41abd9966258e7ae04c53a9",
+      "method": "B",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "original_question": "Явная собственная учебная форма.",
+      "normalized_input": {
+        "schema_version": "kp3-input-0.1",
+        "input_id": "product13-930c9f17e41abd9966258e7ae04c53a9",
+        "original_question": "Явная собственная учебная форма.",
+        "input_kind": "form",
+        "raw_fields": {
+          "organization": "method_synthetic_group",
+          "operation_id": "direct_fact_v1",
+          "metric_ids": [
+            "revenue"
+          ],
+          "periods": [
+            {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            }
+          ],
+          "documents": [
+            {
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1"
+            }
+          ],
+          "mode": "snapshot"
+        },
+        "fields": {
+          "organization": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "operation_id": "direct_fact_v1",
+          "metric_ids": [
+            "revenue"
+          ],
+          "definition_ids": [
+            "revenue:nonfinancial_ifrs_reported_v1"
+          ],
+          "periods": [
+            {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            }
+          ],
+          "documents": [
+            {
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1"
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "source_unit": {
+            "currency": "RUB",
+            "scale": 1
+          },
+          "result_unit": {
+            "kind": "amount",
+            "currency": "RUB",
+            "scale": 1
+          },
+          "mode": "snapshot",
+          "as_of": null,
+          "comparability_id": null
+        },
+        "field_origins": {
+          "organization": "form",
+          "consolidation": "catalog_unique",
+          "accounting_standard": "catalog_unique",
+          "operation_id": "form",
+          "metric_ids": "form",
+          "definition_ids": "catalog_unique",
+          "periods": "form",
+          "documents": "form",
+          "version_policy": "catalog_unique",
+          "source_unit": "catalog_unique",
+          "result_unit": "catalog_unique",
+          "mode": "form",
+          "as_of": "unset",
+          "comparability_id": "unset"
+        },
+        "assumptions": [],
+        "assumption_origin": "none",
+        "hints": {
+          "years": [],
+          "as_of_text": null,
+          "document_report_year": null,
+          "organization_unmatched": null
+        },
+        "issues": [],
+        "unsupported_reasons": [],
+        "unfulfilled_requests": [],
+        "history": [],
+        "catalog_digest": "7e740e6abc3270c59f045f8e07365e63488c6b6ff76a4222deebeed6e6582df4",
+        "language_version": "ru-input-v1"
+      },
+      "clarifications": [],
+      "financial_result": {
+        "calculation_schema_version": "0.3",
+        "operation_id": "direct_fact_v1",
+        "formula": "selected reported value",
+        "formula_version": "1.0",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "product13-930c9f17e41abd9966258e7ae04c53a9",
+          "original_question": "Явная собственная учебная форма.",
+          "operation_id": "direct_fact_v1",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "fact",
+              "fact_id": "revenue-2024",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "amount",
+            "currency": "RUB",
+            "scale": 1
+          },
+          "mode": "snapshot",
+          "as_of": null
+        },
+        "admission_context": {
+          "context_id": "kp3_calculator_dev_v1-calculator-v1",
+          "catalog_id": "kp3_calculator_dev_v1",
+          "component_digests": {
+            "catalog": "7e740e6abc3270c59f045f8e07365e63488c6b6ff76a4222deebeed6e6582df4",
+            "dictionary": "4404a201044d982ff630175a71d08cadb7093e959b988a97533a43f021b6783a",
+            "bindings": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "checks": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+          },
+          "admission_digest": "70c1f157089e336af814e04c3885504d9a1feeac91a182f00361e7c55d32a0a7"
+        },
+        "inputs": [
+          {
+            "role": "fact",
+            "fact_id": "revenue-2024",
+            "organization_id": "method_synthetic_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "document_sha256": "520c97ba5b662dea830e5a72ff6e62922d9dc3af125da0c6957a3899eda52e87",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "value": "120",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            },
+            "origin_role": "reported_period",
+            "provenance": {
+              "status": "assistant_checked",
+              "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+              "human_reviewer": null
+            },
+            "evidence_id": "revenue-2024-ev",
+            "evidence_digest": "1c1aa7ffca920093d2ad23f750765d9401de06ee46bfeb37ea88e9a40bf8bf6b",
+            "raw_value": "120",
+            "numeric_encoding": "decimal_string",
+            "locator": {
+              "kind": "synthetic",
+              "record_id": "revenue-2024",
+              "row_label": "Выручка",
+              "column_label": "2024",
+              "unit_header": "RUB x1"
+            }
+          }
+        ],
+        "sources": [
+          {
+            "evidence": {
+              "evidence_id": "revenue-2024-ev",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "document_sha256": "520c97ba5b662dea830e5a72ff6e62922d9dc3af125da0c6957a3899eda52e87",
+              "locator": {
+                "kind": "synthetic",
+                "record_id": "revenue-2024",
+                "row_label": "Выручка",
+                "column_label": "2024",
+                "unit_header": "RUB x1"
+              },
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "currency": "RUB",
+              "scale": 1,
+              "raw_value": "120",
+              "numeric_encoding": "decimal_string",
+              "provenance": {
+                "status": "assistant_checked",
+                "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+                "human_reviewer": null
+              }
+            },
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1",
+            "document_sha256": "520c97ba5b662dea830e5a72ff6e62922d9dc3af125da0c6957a3899eda52e87",
+            "source_url": null,
+            "data_origin": "synthetic",
+            "audit": {
+              "opinion": "not_applicable",
+              "limitation": "Artificial data, no audit opinion."
+            },
+            "rights": {
+              "status": "confirmed",
+              "public_copy_allowed": true,
+              "note": "Own synthetic fixture, not financial reporting.",
+              "checked_on": "2026-11-09"
+            },
+            "publication": {
+              "precision": "unknown",
+              "value": null,
+              "timezone": "Europe/Moscow",
+              "binding": "unproven",
+              "record_id": null,
+              "source_url": null,
+              "version_id": null,
+              "document_sha256": null
+            }
+          }
+        ],
+        "intermediates": {},
+        "exact_result": {
+          "numerator": "120",
+          "denominator": "1"
+        },
+        "display_value": "120",
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "rounding": "exact_input_decimal",
+        "precision_note": "Exact arithmetic on the supplied rounded source values; no extra source precision is established.",
+        "warnings": [
+          "exact_arithmetic_does_not_improve_source_precision",
+          "source_status_inherited_not_upgraded",
+          "publication_unknown_snapshot_only",
+          "own_synthetic_not_issuer_data"
+        ],
+        "retrieval_resolution": {
+          "kind": "prepared",
+          "matched_evidence_ids": [
+            "revenue-2024-ev"
+          ],
+          "retrieved_records": 1,
+          "index_sha256": "06c06c79788e1352690914b10415de0b7efb4222c20aa28ad97ea667ab023d07",
+          "reverification_performed": false
+        }
+      },
+      "outcome": {
+        "schema_version": "0.3",
+        "run_id": "product13-930c9f17e41abd9966258e7ae04c53a9",
+        "request_id": "product13-930c9f17e41abd9966258e7ae04c53a9",
+        "execution_status": "completed",
+        "financial_status": "answered",
+        "reason_code": "ok",
+        "clarification_fields": [],
+        "technical_details": null,
+        "financial_result": {
+          "calculation_schema_version": "0.3",
+          "operation_id": "direct_fact_v1",
+          "formula": "selected reported value",
+          "formula_version": "1.0",
+          "request": {
+            "schema_version": "0.3",
+            "request_id": "product13-930c9f17e41abd9966258e7ae04c53a9",
+            "original_question": "Явная собственная учебная форма.",
+            "operation_id": "direct_fact_v1",
+            "organization_id": "method_synthetic_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "inputs": [
+              {
+                "role": "fact",
+                "fact_id": "revenue-2024",
+                "document_id": "method-synthetic-2024",
+                "version_id": "own-2024-v1",
+                "metric_id": "revenue",
+                "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+                "period": {
+                  "kind": "duration",
+                  "duration_type": "full_year",
+                  "start": "2024-01-01",
+                  "end": "2024-12-31"
+                },
+                "source_unit": {
+                  "currency": "RUB",
+                  "scale": 1
+                }
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "comparability_id": null,
+            "result_unit": {
+              "kind": "amount",
+              "currency": "RUB",
+              "scale": 1
+            },
+            "mode": "snapshot",
+            "as_of": null
+          },
+          "admission_context": {
+            "context_id": "kp3_calculator_dev_v1-calculator-v1",
+            "catalog_id": "kp3_calculator_dev_v1",
+            "component_digests": {
+              "catalog": "7e740e6abc3270c59f045f8e07365e63488c6b6ff76a4222deebeed6e6582df4",
+              "dictionary": "4404a201044d982ff630175a71d08cadb7093e959b988a97533a43f021b6783a",
+              "bindings": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+              "checks": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+            },
+            "admission_digest": "70c1f157089e336af814e04c3885504d9a1feeac91a182f00361e7c55d32a0a7"
+          },
+          "inputs": [
+            {
+              "role": "fact",
+              "fact_id": "revenue-2024",
+              "organization_id": "method_synthetic_group",
+              "consolidation": "group",
+              "accounting_standard": "IFRS",
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "document_sha256": "520c97ba5b662dea830e5a72ff6e62922d9dc3af125da0c6957a3899eda52e87",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "value": "120",
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              },
+              "origin_role": "reported_period",
+              "provenance": {
+                "status": "assistant_checked",
+                "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+                "human_reviewer": null
+              },
+              "evidence_id": "revenue-2024-ev",
+              "evidence_digest": "1c1aa7ffca920093d2ad23f750765d9401de06ee46bfeb37ea88e9a40bf8bf6b",
+              "raw_value": "120",
+              "numeric_encoding": "decimal_string",
+              "locator": {
+                "kind": "synthetic",
+                "record_id": "revenue-2024",
+                "row_label": "Выручка",
+                "column_label": "2024",
+                "unit_header": "RUB x1"
+              }
+            }
+          ],
+          "sources": [
+            {
+              "evidence": {
+                "evidence_id": "revenue-2024-ev",
+                "document_id": "method-synthetic-2024",
+                "version_id": "own-2024-v1",
+                "document_sha256": "520c97ba5b662dea830e5a72ff6e62922d9dc3af125da0c6957a3899eda52e87",
+                "locator": {
+                  "kind": "synthetic",
+                  "record_id": "revenue-2024",
+                  "row_label": "Выручка",
+                  "column_label": "2024",
+                  "unit_header": "RUB x1"
+                },
+                "metric_id": "revenue",
+                "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+                "period": {
+                  "kind": "duration",
+                  "duration_type": "full_year",
+                  "start": "2024-01-01",
+                  "end": "2024-12-31"
+                },
+                "currency": "RUB",
+                "scale": 1,
+                "raw_value": "120",
+                "numeric_encoding": "decimal_string",
+                "provenance": {
+                  "status": "assistant_checked",
+                  "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+                  "human_reviewer": null
+                }
+              },
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1",
+              "document_sha256": "520c97ba5b662dea830e5a72ff6e62922d9dc3af125da0c6957a3899eda52e87",
+              "source_url": null,
+              "data_origin": "synthetic",
+              "audit": {
+                "opinion": "not_applicable",
+                "limitation": "Artificial data, no audit opinion."
+              },
+              "rights": {
+                "status": "confirmed",
+                "public_copy_allowed": true,
+                "note": "Own synthetic fixture, not financial reporting.",
+                "checked_on": "2026-11-09"
+              },
+              "publication": {
+                "precision": "unknown",
+                "value": null,
+                "timezone": "Europe/Moscow",
+                "binding": "unproven",
+                "record_id": null,
+                "source_url": null,
+                "version_id": null,
+                "document_sha256": null
+              }
+            }
+          ],
+          "intermediates": {},
+          "exact_result": {
+            "numerator": "120",
+            "denominator": "1"
+          },
+          "display_value": "120",
+          "result_unit": {
+            "kind": "amount",
+            "currency": "RUB",
+            "scale": 1
+          },
+          "rounding": "exact_input_decimal",
+          "precision_note": "Exact arithmetic on the supplied rounded source values; no extra source precision is established.",
+          "warnings": [
+            "exact_arithmetic_does_not_improve_source_precision",
+            "source_status_inherited_not_upgraded",
+            "publication_unknown_snapshot_only",
+            "own_synthetic_not_issuer_data"
+          ],
+          "retrieval_resolution": {
+            "kind": "prepared",
+            "matched_evidence_ids": [
+              "revenue-2024-ev"
+            ],
+            "retrieved_records": 1,
+            "index_sha256": "06c06c79788e1352690914b10415de0b7efb4222c20aa28ad97ea667ab023d07",
+            "reverification_performed": false
+          }
+        }
+      },
+      "assumption_checks": [],
+      "unfulfilled_requests": [],
+      "retrieval": {
+        "run_id": "product13-930c9f17e41abd9966258e7ae04c53a9",
+        "status": "found",
+        "reason_code": "ok",
+        "source_kind": "prepared",
+        "index_sha256": "06c06c79788e1352690914b10415de0b7efb4222c20aa28ad97ea667ab023d07",
+        "result_count": 1,
+        "spec": {
+          "schema_version": "kp3-search-0.1",
+          "query": "выручка",
+          "organization_id": "method_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "metrics": [
+            {
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+            }
+          ],
+          "periods": [
+            {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            }
+          ],
+          "documents": [
+            {
+              "document_id": "method-synthetic-2024",
+              "version_id": "own-2024-v1"
+            }
+          ],
+          "source_units": [
+            {
+              "currency": "RUB",
+              "scale": 1
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "mode": "snapshot",
+          "as_of": null,
+          "top_k": 32
+        }
+      },
+      "trace": [
+        {
+          "stage": "input",
+          "run_id": "product13-930c9f17e41abd9966258e7ae04c53a9",
+          "status": "completed",
+          "elapsed_ms": 0.9927,
+          "reason_code": "ok",
+          "details": {
+            "syntax_status": "parsed"
+          }
+        },
+        {
+          "stage": "catalog_filters",
+          "run_id": "product13-930c9f17e41abd9966258e7ae04c53a9",
+          "status": "completed",
+          "elapsed_ms": 1.1509,
+          "reason_code": "ok",
+          "details": {
+            "binding_status": "resolved",
+            "preliminary_only": true,
+            "request_id": "product13-930c9f17e41abd9966258e7ae04c53a9"
+          }
+        },
+        {
+          "stage": "search",
+          "run_id": "product13-930c9f17e41abd9966258e7ae04c53a9",
+          "status": "completed",
+          "elapsed_ms": 2.041,
+          "reason_code": "ok",
+          "details": {
+            "results": 1,
+            "source_kind": "prepared"
+          }
+        },
+        {
+          "stage": "fact_resolution",
+          "run_id": "product13-930c9f17e41abd9966258e7ae04c53a9",
+          "status": "completed",
+          "elapsed_ms": 0.6032,
+          "reason_code": "ok",
+          "details": {
+            "evidence_ids": [
+              "revenue-2024-ev"
+            ],
+            "checked_values_from_catalog": true
+          }
+        },
+        {
+          "stage": "source_validation",
+          "run_id": "product13-930c9f17e41abd9966258e7ae04c53a9",
+          "status": "completed",
+          "elapsed_ms": 0.4455,
+          "reason_code": "ok",
+          "details": {
+            "primary_reannotation": false,
+            "selected_documents": [
+              "method-synthetic-2024"
+            ],
+            "source_bytes_checked": false
+          }
+        },
+        {
+          "stage": "calculation",
+          "run_id": "product13-930c9f17e41abd9966258e7ae04c53a9",
+          "status": "completed",
+          "elapsed_ms": 2.7596,
+          "reason_code": "ok",
+          "details": {
+            "registered_operation_executed": true,
+            "internal_live_retrieval_recheck": true
+          }
+        },
+        {
+          "stage": "result_validation",
+          "run_id": "product13-930c9f17e41abd9966258e7ae04c53a9",
+          "status": "completed",
+          "elapsed_ms": 2.7695,
+          "reason_code": "ok",
+          "details": {
+            "recomputation": true,
+            "internal_live_retrieval_recheck": true
+          }
+        },
+        {
+          "stage": "answer",
+          "run_id": "product13-930c9f17e41abd9966258e7ae04c53a9",
+          "status": "completed",
+          "elapsed_ms": 0.0015,
+          "reason_code": "ok",
+          "details": {
+            "financial_result_present": true
+          }
+        }
+      ],
+      "context_digest": "772aea0cc60c81cffbd96a24115fb87edd1ad25956125cada11d04b98da24596",
+      "source_input_digest": "34c9408751e3cfa6e132aaa650f7cb389ac79112c2785346a48ce879ba059d4f",
+      "saved_run": {
+        "resource_id": "d28b6dd8480900a188faa3d52cf5d0ee45276af9191e58d0588cbfcbcd270a06.json",
+        "status": "written",
+        "private": true
+      },
+      "model_calls": 0
+    }
+  }
+}

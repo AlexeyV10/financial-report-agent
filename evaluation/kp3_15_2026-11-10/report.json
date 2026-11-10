@@ -1,0 +1,134 @@
+{
+  "stage": "KP3-15",
+  "status": "technically_complete_failure_boundaries",
+  "unit_tests": {
+    "old": 710,
+    "new": 18,
+    "total": 728,
+    "passed": 728
+  },
+  "main_probes": {
+    "planned": 143,
+    "executed": 143,
+    "passed": 143,
+    "by_family": {
+      "positive": {
+        "planned": 7,
+        "executed": 7,
+        "passed": 7
+      },
+      "artifacts": {
+        "planned": 13,
+        "executed": 13,
+        "passed": 13
+      },
+      "search": {
+        "planned": 2,
+        "executed": 2,
+        "passed": 2
+      },
+      "evidence": {
+        "planned": 9,
+        "executed": 9,
+        "passed": 9
+      },
+      "references": {
+        "planned": 15,
+        "executed": 15,
+        "passed": 15
+      },
+      "input": {
+        "planned": 20,
+        "executed": 20,
+        "passed": 20
+      },
+      "financial": {
+        "planned": 4,
+        "executed": 4,
+        "passed": 4
+      },
+      "publication": {
+        "planned": 5,
+        "executed": 5,
+        "passed": 5
+      },
+      "versions": {
+        "planned": 2,
+        "executed": 2,
+        "passed": 2
+      },
+      "premises": {
+        "planned": 5,
+        "executed": 5,
+        "passed": 5
+      },
+      "A_controller_fixture": {
+        "planned": 11,
+        "executed": 11,
+        "passed": 11
+      },
+      "C_controller_fixture": {
+        "planned": 9,
+        "executed": 9,
+        "passed": 9
+      },
+      "history": {
+        "planned": 17,
+        "executed": 17,
+        "passed": 17
+      },
+      "scenario": {
+        "planned": 17,
+        "executed": 17,
+        "passed": 17
+      },
+      "real_source": {
+        "planned": 7,
+        "executed": 7,
+        "passed": 7
+      }
+    }
+  },
+  "main_expectations": "Predeclared hand plan plus hand-written production-boundary assertions; corrected fixture setup errors retained",
+  "native_transport": {
+    "planned": 2,
+    "executed": 2,
+    "statuses": [
+      "adapter_unavailable/error/no_money",
+      "adapter_unavailable/error/no_money"
+    ],
+    "chat_requests": 0,
+    "server_started": false
+  },
+  "worker": {
+    "planned": 2,
+    "passed": 2,
+    "entered_then_terminated": true,
+    "no_late_write": true
+  },
+  "checkers": "03-14 passed; old gold04/07/corpus05 unchanged;17commands including5legacy",
+  "current_ui": "unchanged_no_new_visual_pass",
+  "freeze_sha256": "072a1caf92423d2e41ae12625cc485d81f0bc3c321c3cce5cbb1db663bcf1fbe",
+  "frozen_files_verified": 134,
+  "actual_resources_verified": 28,
+  "answering_dependencies_changed": false,
+  "new_protocol_version_required": false,
+  "original_primary_sources_unchanged": true,
+  "new_real_facts": 0,
+  "human_reviewed": 0,
+  "new_publications": 0,
+  "rights": "unknown_unchanged",
+  "new_actual_chat_requests": 0,
+  "comparison16_attempts": 0,
+  "old_QA07_call_limit": "error_unchanged",
+  "old_financial": "3/10_unchanged",
+  "reserved_unseen_real": 0,
+  "model_quality": "not_measured",
+  "all_families_known_to_developer": true,
+  "limits": "Explicit mocks20 are not actual model responses; no LLM body attack or general safety proof",
+  "first_failures_retained": true,
+  "replay_identical": true,
+  "merge_authorized": false,
+  "next_prompt": "prompts/kp3_16_final_comparison.md",
+  "next_step_executed": false
+}

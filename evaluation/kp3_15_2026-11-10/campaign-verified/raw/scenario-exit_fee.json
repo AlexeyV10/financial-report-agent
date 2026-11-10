@@ -1,0 +1,1360 @@
+{
+  "result": {
+    "schema_version": "kp3-scenario-outcome-0.1",
+    "run_id": "scenario-ff16c5c51b6648b098cbf83696559938",
+    "status": "blocked",
+    "reason_code": "insufficient_exit_cash",
+    "data_mode": "own_synthetic",
+    "label": "ИСКУССТВЕННЫЕ ДАННЫЕ / ВИРТУАЛЬНЫЙ СЦЕНАРИЙ",
+    "request": {
+      "schema_version": "kp3-scenario-request-0.1",
+      "financial_run_id": "scenario12-own-financial",
+      "data_mode": "own_synthetic",
+      "decision_at": "2025-06-04T19:30:00+03:00",
+      "parameters": {
+        "initial_cash": "1050",
+        "allocation": "1",
+        "threshold_pct": "10",
+        "fee_fixed": "50",
+        "slippage_bps": "0",
+        "lot_size": 1,
+        "window_start": "2025-06-04T10:00:00+03:00",
+        "window_end": "2025-06-09T18:00:00+03:00"
+      }
+    },
+    "context_digest": "8ad4fb4c1c39cc888c39556158ed4b82ceb1b6651e14c30b3fe71e790ebc901b",
+    "financial": {
+      "method": "calculation_v03",
+      "run_id": "scenario12-own-financial",
+      "request_id": "scenario12-own-financial",
+      "status": "verified",
+      "original_question": "Как изменяется собственная вымышленная выручка: полный2024 к полному2023?",
+      "request": {
+        "schema_version": "0.3",
+        "request_id": "scenario12-own-financial",
+        "original_question": "Как изменяется собственная вымышленная выручка: полный2024 к полному2023?",
+        "operation_id": "relative_change_v1",
+        "organization_id": "scenario12_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "scenario12-revenue-2023",
+            "document_id": "scenario12-own-statement",
+            "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "scenario12-revenue-2024",
+            "document_id": "scenario12-own-statement",
+            "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            }
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "comparability_id": null,
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null
+      },
+      "outcome_digest": "5aa4636cd69d5fd00ecca42cd949bd821f1d0f75321489574e6986c898f703e7",
+      "declared_original_context_digest": null,
+      "source_usage": {
+        "model_calls": 0,
+        "details": null
+      },
+      "financial_result": {
+        "calculation_schema_version": "0.3",
+        "operation_id": "relative_change_v1",
+        "formula": "(current - previous) / previous * 100",
+        "formula_version": "1.0",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "scenario12-own-financial",
+          "original_question": "Как изменяется собственная вымышленная выручка: полный2024 к полному2023?",
+          "operation_id": "relative_change_v1",
+          "organization_id": "scenario12_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "previous",
+              "fact_id": "scenario12-revenue-2023",
+              "document_id": "scenario12-own-statement",
+              "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            },
+            {
+              "role": "current",
+              "fact_id": "scenario12-revenue-2024",
+              "document_id": "scenario12-own-statement",
+              "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "percent"
+          },
+          "mode": "snapshot",
+          "as_of": null
+        },
+        "admission_context": {
+          "context_id": "scenario12-own-financial-v1",
+          "catalog_id": "scenario12-own-financial-v1",
+          "component_digests": {
+            "catalog": "229084ab4b61863ca8d41e547306f5c1f6f8589fd6fe1d3507dfaca66ebe4314",
+            "dictionary": "4404a201044d982ff630175a71d08cadb7093e959b988a97533a43f021b6783a",
+            "bindings": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "checks": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+          },
+          "admission_digest": "b93624aa7671239e4646555c8199b1188f240cd5ee7d752907aa57f828c7a433"
+        },
+        "inputs": [
+          {
+            "role": "previous",
+            "fact_id": "scenario12-revenue-2023",
+            "organization_id": "scenario12_synthetic_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "document_id": "scenario12-own-statement",
+            "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+            "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2023-01-01",
+              "end": "2023-12-31"
+            },
+            "value": "100",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            },
+            "origin_role": "comparative_period",
+            "provenance": {
+              "status": "assistant_checked",
+              "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+              "human_reviewer": null
+            },
+            "evidence_id": "scenario12-revenue-2023-evidence",
+            "evidence_digest": "f0c6e894fdcc0b55334a45d69bec3259f6e670ef429a688bb46d34a9184bc9b0",
+            "raw_value": "100",
+            "numeric_encoding": "decimal_string",
+            "locator": {
+              "kind": "synthetic",
+              "record_id": "scenario12-revenue-2023",
+              "row_label": "Собственная синтетическая выручка",
+              "column_label": "2023",
+              "unit_header": "RUB x1"
+            }
+          },
+          {
+            "role": "current",
+            "fact_id": "scenario12-revenue-2024",
+            "organization_id": "scenario12_synthetic_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "document_id": "scenario12-own-statement",
+            "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+            "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "period": {
+              "kind": "duration",
+              "duration_type": "full_year",
+              "start": "2024-01-01",
+              "end": "2024-12-31"
+            },
+            "value": "120",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1
+            },
+            "origin_role": "reported_period",
+            "provenance": {
+              "status": "assistant_checked",
+              "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+              "human_reviewer": null
+            },
+            "evidence_id": "scenario12-revenue-2024-evidence",
+            "evidence_digest": "679dcbafcab872c160aab37367b389cc6a553ef9db00b84bae1f5dc2e9fcb191",
+            "raw_value": "120",
+            "numeric_encoding": "decimal_string",
+            "locator": {
+              "kind": "synthetic",
+              "record_id": "scenario12-revenue-2024",
+              "row_label": "Собственная синтетическая выручка",
+              "column_label": "2024",
+              "unit_header": "RUB x1"
+            }
+          }
+        ],
+        "sources": [
+          {
+            "evidence": {
+              "evidence_id": "scenario12-revenue-2023-evidence",
+              "document_id": "scenario12-own-statement",
+              "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "locator": {
+                "kind": "synthetic",
+                "record_id": "scenario12-revenue-2023",
+                "row_label": "Собственная синтетическая выручка",
+                "column_label": "2023",
+                "unit_header": "RUB x1"
+              },
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "currency": "RUB",
+              "scale": 1,
+              "raw_value": "100",
+              "numeric_encoding": "decimal_string",
+              "provenance": {
+                "status": "assistant_checked",
+                "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+                "human_reviewer": null
+              }
+            },
+            "document_id": "scenario12-own-statement",
+            "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+            "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+            "source_url": null,
+            "data_origin": "synthetic",
+            "audit": {
+              "opinion": "not_applicable",
+              "limitation": "Artificial data, no audit opinion."
+            },
+            "rights": {
+              "status": "confirmed",
+              "public_copy_allowed": true,
+              "note": "Own newly authored fictional table, public copy allowed.",
+              "checked_on": "2026-11-10"
+            },
+            "publication": {
+              "precision": "timestamp",
+              "value": "2025-06-04T19:00:00+03:00",
+              "timezone": "Europe/Moscow",
+              "binding": "document_version",
+              "record_id": "scenario12-fictional-availability",
+              "source_url": null,
+              "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2"
+            }
+          },
+          {
+            "evidence": {
+              "evidence_id": "scenario12-revenue-2024-evidence",
+              "document_id": "scenario12-own-statement",
+              "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "locator": {
+                "kind": "synthetic",
+                "record_id": "scenario12-revenue-2024",
+                "row_label": "Собственная синтетическая выручка",
+                "column_label": "2024",
+                "unit_header": "RUB x1"
+              },
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "currency": "RUB",
+              "scale": 1,
+              "raw_value": "120",
+              "numeric_encoding": "decimal_string",
+              "provenance": {
+                "status": "assistant_checked",
+                "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+                "human_reviewer": null
+              }
+            },
+            "document_id": "scenario12-own-statement",
+            "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+            "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+            "source_url": null,
+            "data_origin": "synthetic",
+            "audit": {
+              "opinion": "not_applicable",
+              "limitation": "Artificial data, no audit opinion."
+            },
+            "rights": {
+              "status": "confirmed",
+              "public_copy_allowed": true,
+              "note": "Own newly authored fictional table, public copy allowed.",
+              "checked_on": "2026-11-10"
+            },
+            "publication": {
+              "precision": "timestamp",
+              "value": "2025-06-04T19:00:00+03:00",
+              "timezone": "Europe/Moscow",
+              "binding": "document_version",
+              "record_id": "scenario12-fictional-availability",
+              "source_url": null,
+              "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2"
+            }
+          }
+        ],
+        "intermediates": {
+          "difference": {
+            "numerator": "20",
+            "denominator": "1"
+          },
+          "current_divided_by_previous": {
+            "numerator": "6",
+            "denominator": "5"
+          }
+        },
+        "exact_result": {
+          "numerator": "20",
+          "denominator": "1"
+        },
+        "display_value": "20.00",
+        "result_unit": {
+          "kind": "percent"
+        },
+        "rounding": "HALF_UP_2_integer_exact",
+        "precision_note": "Exact arithmetic on the supplied rounded source values; no extra source precision is established.",
+        "warnings": [
+          "exact_arithmetic_does_not_improve_source_precision",
+          "source_status_inherited_not_upgraded",
+          "own_synthetic_not_issuer_data"
+        ],
+        "retrieval_resolution": null
+      },
+      "assumption_checks": [],
+      "unfulfilled_requests": []
+    },
+    "eligibility": {
+      "schema_version": "kp3-scenario-eligibility-0.1",
+      "status": "eligible",
+      "reason_codes": [],
+      "decision_at": "2025-06-04T19:30:00+03:00",
+      "availability": [
+        {
+          "document_id": "scenario12-own-statement",
+          "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+          "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+          "publication": {
+            "precision": "timestamp",
+            "value": "2025-06-04T19:00:00+03:00",
+            "timezone": "Europe/Moscow",
+            "binding": "document_version",
+            "record_id": "scenario12-fictional-availability",
+            "source_url": null,
+            "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+            "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2"
+          },
+          "available_from": "2025-06-04T19:00:00+03:00",
+          "semantics": "fictional_own_availability"
+        }
+      ],
+      "execution_policy": "strict_next_declared_session_open_after_decision",
+      "next_entry_at": "2025-06-05T10:00:00+03:00",
+      "requirements": {
+        "verified_financial": "ready",
+        "prices": "own_synthetic",
+        "calendar": "own_synthetic_not_exchange_calendar",
+        "corporate_actions": "none_in_declared_fixture",
+        "price_rights": "self_created"
+      }
+    },
+    "signal": null,
+    "scenario": null,
+    "comparisons": null,
+    "trace": [
+      {
+        "run_id": "scenario-ff16c5c51b6648b098cbf83696559938",
+        "stage": "financial_validation",
+        "status": "completed",
+        "reason_code": "ok",
+        "elapsed_ms": 0.7074
+      },
+      {
+        "run_id": "scenario-ff16c5c51b6648b098cbf83696559938",
+        "stage": "eligibility",
+        "status": "completed",
+        "reason_code": "ok",
+        "elapsed_ms": 0.0593
+      },
+      {
+        "run_id": "scenario-ff16c5c51b6648b098cbf83696559938",
+        "stage": "ledger",
+        "status": "blocked",
+        "reason_code": "insufficient_exit_cash",
+        "elapsed_ms": 0.1128
+      },
+      {
+        "run_id": "scenario-ff16c5c51b6648b098cbf83696559938",
+        "stage": "result_validation",
+        "status": "completed",
+        "reason_code": "ok",
+        "elapsed_ms": 1.7294
+      },
+      {
+        "run_id": "scenario-ff16c5c51b6648b098cbf83696559938",
+        "stage": "persistence",
+        "status": "completed",
+        "reason_code": "written",
+        "elapsed_ms": 0
+      }
+    ],
+    "saved_run": {
+      "resource_id": "d384c79de48e9163369bfb240bfae1790ba52a236e778bbe8b90f88445c5c3a0.json",
+      "private": true,
+      "status": "written"
+    },
+    "model_calls": 0
+  },
+  "control": null,
+  "details": {
+    "control": {
+      "schema_version": "kp3-scenario-outcome-0.1",
+      "run_id": "scenario-d78e927d82904880803d0fc5dbf5b958",
+      "status": "completed",
+      "reason_code": "signal_true",
+      "data_mode": "own_synthetic",
+      "label": "ИСКУССТВЕННЫЕ ДАННЫЕ / ВИРТУАЛЬНЫЙ СЦЕНАРИЙ",
+      "request": {
+        "schema_version": "kp3-scenario-request-0.1",
+        "financial_run_id": "scenario12-own-financial",
+        "data_mode": "own_synthetic",
+        "decision_at": "2025-06-04T19:30:00+03:00",
+        "parameters": {
+          "initial_cash": "10000",
+          "allocation": "0.20",
+          "threshold_pct": "10",
+          "fee_fixed": "1",
+          "slippage_bps": "0",
+          "lot_size": 1,
+          "window_start": "2025-06-04T10:00:00+03:00",
+          "window_end": "2025-06-09T18:00:00+03:00"
+        }
+      },
+      "context_digest": "f3440d108c6b117f579dfec70e741f07f2d1a1fe6ede4725baaa8cfe27a053a2",
+      "financial": {
+        "method": "calculation_v03",
+        "run_id": "scenario12-own-financial",
+        "request_id": "scenario12-own-financial",
+        "status": "verified",
+        "original_question": "Как изменяется собственная вымышленная выручка: полный2024 к полному2023?",
+        "request": {
+          "schema_version": "0.3",
+          "request_id": "scenario12-own-financial",
+          "original_question": "Как изменяется собственная вымышленная выручка: полный2024 к полному2023?",
+          "operation_id": "relative_change_v1",
+          "organization_id": "scenario12_synthetic_group",
+          "consolidation": "group",
+          "accounting_standard": "IFRS",
+          "inputs": [
+            {
+              "role": "previous",
+              "fact_id": "scenario12-revenue-2023",
+              "document_id": "scenario12-own-statement",
+              "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            },
+            {
+              "role": "current",
+              "fact_id": "scenario12-revenue-2024",
+              "document_id": "scenario12-own-statement",
+              "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              }
+            }
+          ],
+          "version_policy": "explicit_versions",
+          "comparability_id": null,
+          "result_unit": {
+            "kind": "percent"
+          },
+          "mode": "snapshot",
+          "as_of": null
+        },
+        "outcome_digest": "5aa4636cd69d5fd00ecca42cd949bd821f1d0f75321489574e6986c898f703e7",
+        "declared_original_context_digest": null,
+        "source_usage": {
+          "model_calls": 0,
+          "details": null
+        },
+        "financial_result": {
+          "calculation_schema_version": "0.3",
+          "operation_id": "relative_change_v1",
+          "formula": "(current - previous) / previous * 100",
+          "formula_version": "1.0",
+          "request": {
+            "schema_version": "0.3",
+            "request_id": "scenario12-own-financial",
+            "original_question": "Как изменяется собственная вымышленная выручка: полный2024 к полному2023?",
+            "operation_id": "relative_change_v1",
+            "organization_id": "scenario12_synthetic_group",
+            "consolidation": "group",
+            "accounting_standard": "IFRS",
+            "inputs": [
+              {
+                "role": "previous",
+                "fact_id": "scenario12-revenue-2023",
+                "document_id": "scenario12-own-statement",
+                "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+                "metric_id": "revenue",
+                "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+                "period": {
+                  "kind": "duration",
+                  "duration_type": "full_year",
+                  "start": "2023-01-01",
+                  "end": "2023-12-31"
+                },
+                "source_unit": {
+                  "currency": "RUB",
+                  "scale": 1
+                }
+              },
+              {
+                "role": "current",
+                "fact_id": "scenario12-revenue-2024",
+                "document_id": "scenario12-own-statement",
+                "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+                "metric_id": "revenue",
+                "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+                "period": {
+                  "kind": "duration",
+                  "duration_type": "full_year",
+                  "start": "2024-01-01",
+                  "end": "2024-12-31"
+                },
+                "source_unit": {
+                  "currency": "RUB",
+                  "scale": 1
+                }
+              }
+            ],
+            "version_policy": "explicit_versions",
+            "comparability_id": null,
+            "result_unit": {
+              "kind": "percent"
+            },
+            "mode": "snapshot",
+            "as_of": null
+          },
+          "admission_context": {
+            "context_id": "scenario12-own-financial-v1",
+            "catalog_id": "scenario12-own-financial-v1",
+            "component_digests": {
+              "catalog": "229084ab4b61863ca8d41e547306f5c1f6f8589fd6fe1d3507dfaca66ebe4314",
+              "dictionary": "4404a201044d982ff630175a71d08cadb7093e959b988a97533a43f021b6783a",
+              "bindings": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+              "checks": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+            },
+            "admission_digest": "b93624aa7671239e4646555c8199b1188f240cd5ee7d752907aa57f828c7a433"
+          },
+          "inputs": [
+            {
+              "role": "previous",
+              "fact_id": "scenario12-revenue-2023",
+              "organization_id": "scenario12_synthetic_group",
+              "consolidation": "group",
+              "accounting_standard": "IFRS",
+              "document_id": "scenario12-own-statement",
+              "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "value": "100",
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              },
+              "origin_role": "comparative_period",
+              "provenance": {
+                "status": "assistant_checked",
+                "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+                "human_reviewer": null
+              },
+              "evidence_id": "scenario12-revenue-2023-evidence",
+              "evidence_digest": "f0c6e894fdcc0b55334a45d69bec3259f6e670ef429a688bb46d34a9184bc9b0",
+              "raw_value": "100",
+              "numeric_encoding": "decimal_string",
+              "locator": {
+                "kind": "synthetic",
+                "record_id": "scenario12-revenue-2023",
+                "row_label": "Собственная синтетическая выручка",
+                "column_label": "2023",
+                "unit_header": "RUB x1"
+              }
+            },
+            {
+              "role": "current",
+              "fact_id": "scenario12-revenue-2024",
+              "organization_id": "scenario12_synthetic_group",
+              "consolidation": "group",
+              "accounting_standard": "IFRS",
+              "document_id": "scenario12-own-statement",
+              "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "value": "120",
+              "source_unit": {
+                "currency": "RUB",
+                "scale": 1
+              },
+              "origin_role": "reported_period",
+              "provenance": {
+                "status": "assistant_checked",
+                "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+                "human_reviewer": null
+              },
+              "evidence_id": "scenario12-revenue-2024-evidence",
+              "evidence_digest": "679dcbafcab872c160aab37367b389cc6a553ef9db00b84bae1f5dc2e9fcb191",
+              "raw_value": "120",
+              "numeric_encoding": "decimal_string",
+              "locator": {
+                "kind": "synthetic",
+                "record_id": "scenario12-revenue-2024",
+                "row_label": "Собственная синтетическая выручка",
+                "column_label": "2024",
+                "unit_header": "RUB x1"
+              }
+            }
+          ],
+          "sources": [
+            {
+              "evidence": {
+                "evidence_id": "scenario12-revenue-2023-evidence",
+                "document_id": "scenario12-own-statement",
+                "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+                "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+                "locator": {
+                  "kind": "synthetic",
+                  "record_id": "scenario12-revenue-2023",
+                  "row_label": "Собственная синтетическая выручка",
+                  "column_label": "2023",
+                  "unit_header": "RUB x1"
+                },
+                "metric_id": "revenue",
+                "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+                "period": {
+                  "kind": "duration",
+                  "duration_type": "full_year",
+                  "start": "2023-01-01",
+                  "end": "2023-12-31"
+                },
+                "currency": "RUB",
+                "scale": 1,
+                "raw_value": "100",
+                "numeric_encoding": "decimal_string",
+                "provenance": {
+                  "status": "assistant_checked",
+                  "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+                  "human_reviewer": null
+                }
+              },
+              "document_id": "scenario12-own-statement",
+              "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "source_url": null,
+              "data_origin": "synthetic",
+              "audit": {
+                "opinion": "not_applicable",
+                "limitation": "Artificial data, no audit opinion."
+              },
+              "rights": {
+                "status": "confirmed",
+                "public_copy_allowed": true,
+                "note": "Own newly authored fictional table, public copy allowed.",
+                "checked_on": "2026-11-10"
+              },
+              "publication": {
+                "precision": "timestamp",
+                "value": "2025-06-04T19:00:00+03:00",
+                "timezone": "Europe/Moscow",
+                "binding": "document_version",
+                "record_id": "scenario12-fictional-availability",
+                "source_url": null,
+                "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+                "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2"
+              }
+            },
+            {
+              "evidence": {
+                "evidence_id": "scenario12-revenue-2024-evidence",
+                "document_id": "scenario12-own-statement",
+                "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+                "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+                "locator": {
+                  "kind": "synthetic",
+                  "record_id": "scenario12-revenue-2024",
+                  "row_label": "Собственная синтетическая выручка",
+                  "column_label": "2024",
+                  "unit_header": "RUB x1"
+                },
+                "metric_id": "revenue",
+                "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+                "period": {
+                  "kind": "duration",
+                  "duration_type": "full_year",
+                  "start": "2024-01-01",
+                  "end": "2024-12-31"
+                },
+                "currency": "RUB",
+                "scale": 1,
+                "raw_value": "120",
+                "numeric_encoding": "decimal_string",
+                "provenance": {
+                  "status": "assistant_checked",
+                  "method": "Own synthetic educational input, checked for internal consistency only; not an issuer statement.",
+                  "human_reviewer": null
+                }
+              },
+              "document_id": "scenario12-own-statement",
+              "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "source_url": null,
+              "data_origin": "synthetic",
+              "audit": {
+                "opinion": "not_applicable",
+                "limitation": "Artificial data, no audit opinion."
+              },
+              "rights": {
+                "status": "confirmed",
+                "public_copy_allowed": true,
+                "note": "Own newly authored fictional table, public copy allowed.",
+                "checked_on": "2026-11-10"
+              },
+              "publication": {
+                "precision": "timestamp",
+                "value": "2025-06-04T19:00:00+03:00",
+                "timezone": "Europe/Moscow",
+                "binding": "document_version",
+                "record_id": "scenario12-fictional-availability",
+                "source_url": null,
+                "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+                "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2"
+              }
+            }
+          ],
+          "intermediates": {
+            "difference": {
+              "numerator": "20",
+              "denominator": "1"
+            },
+            "current_divided_by_previous": {
+              "numerator": "6",
+              "denominator": "5"
+            }
+          },
+          "exact_result": {
+            "numerator": "20",
+            "denominator": "1"
+          },
+          "display_value": "20.00",
+          "result_unit": {
+            "kind": "percent"
+          },
+          "rounding": "HALF_UP_2_integer_exact",
+          "precision_note": "Exact arithmetic on the supplied rounded source values; no extra source precision is established.",
+          "warnings": [
+            "exact_arithmetic_does_not_improve_source_precision",
+            "source_status_inherited_not_upgraded",
+            "own_synthetic_not_issuer_data"
+          ],
+          "retrieval_resolution": null
+        },
+        "assumption_checks": [],
+        "unfulfilled_requests": []
+      },
+      "eligibility": {
+        "schema_version": "kp3-scenario-eligibility-0.1",
+        "status": "eligible",
+        "reason_codes": [],
+        "decision_at": "2025-06-04T19:30:00+03:00",
+        "availability": [
+          {
+            "document_id": "scenario12-own-statement",
+            "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+            "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+            "publication": {
+              "precision": "timestamp",
+              "value": "2025-06-04T19:00:00+03:00",
+              "timezone": "Europe/Moscow",
+              "binding": "document_version",
+              "record_id": "scenario12-fictional-availability",
+              "source_url": null,
+              "version_id": "sha256:3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+              "document_sha256": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2"
+            },
+            "available_from": "2025-06-04T19:00:00+03:00",
+            "semantics": "fictional_own_availability"
+          }
+        ],
+        "execution_policy": "strict_next_declared_session_open_after_decision",
+        "next_entry_at": "2025-06-05T10:00:00+03:00",
+        "requirements": {
+          "verified_financial": "ready",
+          "prices": "own_synthetic",
+          "calendar": "own_synthetic_not_exchange_calendar",
+          "corporate_actions": "none_in_declared_fixture",
+          "price_rights": "self_created"
+        }
+      },
+      "signal": true,
+      "scenario": {
+        "schema_version": "kp3-scenario-ledger-0.1",
+        "label": "ИСКУССТВЕННЫЕ ДАННЫЕ / ВИРТУАЛЬНЫЙ СЦЕНАРИЙ",
+        "entry_at": "2025-06-05T10:00:00+03:00",
+        "exit_at": "2025-06-09T18:00:00+03:00",
+        "entry_quantity": 20,
+        "no_trade_reason": null,
+        "ledger": [
+          {
+            "at": "2025-06-04T10:00:00+03:00",
+            "action": "mark",
+            "reason_code": "signal_false",
+            "raw_price": "99",
+            "effective_price": null,
+            "traded_quantity": 0,
+            "gross": "0",
+            "commission": "0",
+            "slippage_cost": "0",
+            "cash": "10000.00",
+            "quantity": 0,
+            "equity": "10000.00"
+          },
+          {
+            "at": "2025-06-04T18:00:00+03:00",
+            "action": "mark",
+            "reason_code": "signal_false",
+            "raw_price": "99",
+            "effective_price": null,
+            "traded_quantity": 0,
+            "gross": "0",
+            "commission": "0",
+            "slippage_cost": "0",
+            "cash": "10000.00",
+            "quantity": 0,
+            "equity": "10000.00"
+          },
+          {
+            "at": "2025-06-05T10:00:00+03:00",
+            "action": "buy",
+            "reason_code": "signal_entry",
+            "raw_price": "100",
+            "effective_price": "100",
+            "traded_quantity": 20,
+            "gross": "2000.00",
+            "commission": "1",
+            "slippage_cost": "0.00",
+            "cash": "7999.00",
+            "quantity": 20,
+            "equity": "9999.00"
+          },
+          {
+            "at": "2025-06-05T18:00:00+03:00",
+            "action": "mark",
+            "reason_code": "signal_false",
+            "raw_price": "101",
+            "effective_price": null,
+            "traded_quantity": 0,
+            "gross": "0",
+            "commission": "0",
+            "slippage_cost": "0",
+            "cash": "7999.00",
+            "quantity": 20,
+            "equity": "10019.00"
+          },
+          {
+            "at": "2025-06-06T10:00:00+03:00",
+            "action": "mark",
+            "reason_code": "signal_false",
+            "raw_price": "102",
+            "effective_price": null,
+            "traded_quantity": 0,
+            "gross": "0",
+            "commission": "0",
+            "slippage_cost": "0",
+            "cash": "7999.00",
+            "quantity": 20,
+            "equity": "10039.00"
+          },
+          {
+            "at": "2025-06-06T18:00:00+03:00",
+            "action": "mark",
+            "reason_code": "signal_false",
+            "raw_price": "98",
+            "effective_price": null,
+            "traded_quantity": 0,
+            "gross": "0",
+            "commission": "0",
+            "slippage_cost": "0",
+            "cash": "7999.00",
+            "quantity": 20,
+            "equity": "9959.00"
+          },
+          {
+            "at": "2025-06-09T10:00:00+03:00",
+            "action": "mark",
+            "reason_code": "signal_false",
+            "raw_price": "103",
+            "effective_price": null,
+            "traded_quantity": 0,
+            "gross": "0",
+            "commission": "0",
+            "slippage_cost": "0",
+            "cash": "7999.00",
+            "quantity": 20,
+            "equity": "10059.00"
+          },
+          {
+            "at": "2025-06-09T18:00:00+03:00",
+            "action": "sell",
+            "reason_code": "window_exit",
+            "raw_price": "105",
+            "effective_price": "105",
+            "traded_quantity": 20,
+            "gross": "2100.00",
+            "commission": "1",
+            "slippage_cost": "0.00",
+            "cash": "10098.00",
+            "quantity": 0,
+            "equity": "10098.00"
+          }
+        ],
+        "final_cash": "10098.00",
+        "final_quantity": 0,
+        "final_equity": "10098.00",
+        "pnl": "98.00",
+        "return_pct": "0.98",
+        "fees": "2.00",
+        "slippage_cost": "0.00",
+        "max_drawdown": {
+          "ratio": {
+            "numerator": "80",
+            "denominator": "10039"
+          },
+          "percent": "0.80",
+          "peak_at": "2025-06-06T10:00:00+03:00",
+          "trough_at": "2025-06-06T18:00:00+03:00",
+          "definition": "max((running_peak_equity - equity) / running_peak_equity), including initial capital"
+        }
+      },
+      "comparisons": {
+        "cash_no_interest": {
+          "schema_version": "kp3-scenario-ledger-0.1",
+          "label": "ИСКУССТВЕННЫЕ ДАННЫЕ / ВИРТУАЛЬНЫЙ СЦЕНАРИЙ",
+          "entry_at": "2025-06-05T10:00:00+03:00",
+          "exit_at": "2025-06-09T18:00:00+03:00",
+          "entry_quantity": 0,
+          "no_trade_reason": "cash_no_interest",
+          "ledger": [
+            {
+              "at": "2025-06-04T10:00:00+03:00",
+              "action": "mark",
+              "reason_code": "cash_no_interest",
+              "raw_price": "99",
+              "effective_price": null,
+              "traded_quantity": 0,
+              "gross": "0",
+              "commission": "0",
+              "slippage_cost": "0",
+              "cash": "10000.00",
+              "quantity": 0,
+              "equity": "10000.00"
+            },
+            {
+              "at": "2025-06-04T18:00:00+03:00",
+              "action": "mark",
+              "reason_code": "cash_no_interest",
+              "raw_price": "99",
+              "effective_price": null,
+              "traded_quantity": 0,
+              "gross": "0",
+              "commission": "0",
+              "slippage_cost": "0",
+              "cash": "10000.00",
+              "quantity": 0,
+              "equity": "10000.00"
+            },
+            {
+              "at": "2025-06-05T10:00:00+03:00",
+              "action": "mark",
+              "reason_code": "cash_no_interest",
+              "raw_price": "100",
+              "effective_price": null,
+              "traded_quantity": 0,
+              "gross": "0",
+              "commission": "0",
+              "slippage_cost": "0",
+              "cash": "10000.00",
+              "quantity": 0,
+              "equity": "10000.00"
+            },
+            {
+              "at": "2025-06-05T18:00:00+03:00",
+              "action": "mark",
+              "reason_code": "cash_no_interest",
+              "raw_price": "101",
+              "effective_price": null,
+              "traded_quantity": 0,
+              "gross": "0",
+              "commission": "0",
+              "slippage_cost": "0",
+              "cash": "10000.00",
+              "quantity": 0,
+              "equity": "10000.00"
+            },
+            {
+              "at": "2025-06-06T10:00:00+03:00",
+              "action": "mark",
+              "reason_code": "cash_no_interest",
+              "raw_price": "102",
+              "effective_price": null,
+              "traded_quantity": 0,
+              "gross": "0",
+              "commission": "0",
+              "slippage_cost": "0",
+              "cash": "10000.00",
+              "quantity": 0,
+              "equity": "10000.00"
+            },
+            {
+              "at": "2025-06-06T18:00:00+03:00",
+              "action": "mark",
+              "reason_code": "cash_no_interest",
+              "raw_price": "98",
+              "effective_price": null,
+              "traded_quantity": 0,
+              "gross": "0",
+              "commission": "0",
+              "slippage_cost": "0",
+              "cash": "10000.00",
+              "quantity": 0,
+              "equity": "10000.00"
+            },
+            {
+              "at": "2025-06-09T10:00:00+03:00",
+              "action": "mark",
+              "reason_code": "cash_no_interest",
+              "raw_price": "103",
+              "effective_price": null,
+              "traded_quantity": 0,
+              "gross": "0",
+              "commission": "0",
+              "slippage_cost": "0",
+              "cash": "10000.00",
+              "quantity": 0,
+              "equity": "10000.00"
+            },
+            {
+              "at": "2025-06-09T18:00:00+03:00",
+              "action": "mark",
+              "reason_code": "cash_no_interest",
+              "raw_price": "105",
+              "effective_price": null,
+              "traded_quantity": 0,
+              "gross": "0",
+              "commission": "0",
+              "slippage_cost": "0",
+              "cash": "10000.00",
+              "quantity": 0,
+              "equity": "10000.00"
+            }
+          ],
+          "final_cash": "10000.00",
+          "final_quantity": 0,
+          "final_equity": "10000.00",
+          "pnl": "0.00",
+          "return_pct": "0.00",
+          "fees": "0.00",
+          "slippage_cost": "0.00",
+          "max_drawdown": {
+            "ratio": {
+              "numerator": "0",
+              "denominator": "1"
+            },
+            "percent": "0.00",
+            "peak_at": null,
+            "trough_at": null,
+            "definition": "max((running_peak_equity - equity) / running_peak_equity), including initial capital"
+          }
+        },
+        "hold_same_allocation": {
+          "schema_version": "kp3-scenario-ledger-0.1",
+          "label": "ИСКУССТВЕННЫЕ ДАННЫЕ / ВИРТУАЛЬНЫЙ СЦЕНАРИЙ",
+          "entry_at": "2025-06-05T10:00:00+03:00",
+          "exit_at": "2025-06-09T18:00:00+03:00",
+          "entry_quantity": 20,
+          "no_trade_reason": null,
+          "ledger": [
+            {
+              "at": "2025-06-04T10:00:00+03:00",
+              "action": "mark",
+              "reason_code": "hold_same_allocation_same_eligible_entry",
+              "raw_price": "99",
+              "effective_price": null,
+              "traded_quantity": 0,
+              "gross": "0",
+              "commission": "0",
+              "slippage_cost": "0",
+              "cash": "10000.00",
+              "quantity": 0,
+              "equity": "10000.00"
+            },
+            {
+              "at": "2025-06-04T18:00:00+03:00",
+              "action": "mark",
+              "reason_code": "hold_same_allocation_same_eligible_entry",
+              "raw_price": "99",
+              "effective_price": null,
+              "traded_quantity": 0,
+              "gross": "0",
+              "commission": "0",
+              "slippage_cost": "0",
+              "cash": "10000.00",
+              "quantity": 0,
+              "equity": "10000.00"
+            },
+            {
+              "at": "2025-06-05T10:00:00+03:00",
+              "action": "buy",
+              "reason_code": "signal_entry",
+              "raw_price": "100",
+              "effective_price": "100",
+              "traded_quantity": 20,
+              "gross": "2000.00",
+              "commission": "1",
+              "slippage_cost": "0.00",
+              "cash": "7999.00",
+              "quantity": 20,
+              "equity": "9999.00"
+            },
+            {
+              "at": "2025-06-05T18:00:00+03:00",
+              "action": "mark",
+              "reason_code": "hold_same_allocation_same_eligible_entry",
+              "raw_price": "101",
+              "effective_price": null,
+              "traded_quantity": 0,
+              "gross": "0",
+              "commission": "0",
+              "slippage_cost": "0",
+              "cash": "7999.00",
+              "quantity": 20,
+              "equity": "10019.00"
+            },
+            {
+              "at": "2025-06-06T10:00:00+03:00",
+              "action": "mark",
+              "reason_code": "hold_same_allocation_same_eligible_entry",
+              "raw_price": "102",
+              "effective_price": null,
+              "traded_quantity": 0,
+              "gross": "0",
+              "commission": "0",
+              "slippage_cost": "0",
+              "cash": "7999.00",
+              "quantity": 20,
+              "equity": "10039.00"
+            },
+            {
+              "at": "2025-06-06T18:00:00+03:00",
+              "action": "mark",
+              "reason_code": "hold_same_allocation_same_eligible_entry",
+              "raw_price": "98",
+              "effective_price": null,
+              "traded_quantity": 0,
+              "gross": "0",
+              "commission": "0",
+              "slippage_cost": "0",
+              "cash": "7999.00",
+              "quantity": 20,
+              "equity": "9959.00"
+            },
+            {
+              "at": "2025-06-09T10:00:00+03:00",
+              "action": "mark",
+              "reason_code": "hold_same_allocation_same_eligible_entry",
+              "raw_price": "103",
+              "effective_price": null,
+              "traded_quantity": 0,
+              "gross": "0",
+              "commission": "0",
+              "slippage_cost": "0",
+              "cash": "7999.00",
+              "quantity": 20,
+              "equity": "10059.00"
+            },
+            {
+              "at": "2025-06-09T18:00:00+03:00",
+              "action": "sell",
+              "reason_code": "window_exit",
+              "raw_price": "105",
+              "effective_price": "105",
+              "traded_quantity": 20,
+              "gross": "2100.00",
+              "commission": "1",
+              "slippage_cost": "0.00",
+              "cash": "10098.00",
+              "quantity": 0,
+              "equity": "10098.00"
+            }
+          ],
+          "final_cash": "10098.00",
+          "final_quantity": 0,
+          "final_equity": "10098.00",
+          "pnl": "98.00",
+          "return_pct": "0.98",
+          "fees": "2.00",
+          "slippage_cost": "0.00",
+          "max_drawdown": {
+            "ratio": {
+              "numerator": "80",
+              "denominator": "10039"
+            },
+            "percent": "0.80",
+            "peak_at": "2025-06-06T10:00:00+03:00",
+            "trough_at": "2025-06-06T18:00:00+03:00",
+            "definition": "max((running_peak_equity - equity) / running_peak_equity), including initial capital"
+          }
+        }
+      },
+      "trace": [
+        {
+          "run_id": "scenario-d78e927d82904880803d0fc5dbf5b958",
+          "stage": "financial_validation",
+          "status": "completed",
+          "reason_code": "ok",
+          "elapsed_ms": 0.9126
+        },
+        {
+          "run_id": "scenario-d78e927d82904880803d0fc5dbf5b958",
+          "stage": "eligibility",
+          "status": "completed",
+          "reason_code": "ok",
+          "elapsed_ms": 0.0543
+        },
+        {
+          "run_id": "scenario-d78e927d82904880803d0fc5dbf5b958",
+          "stage": "ledger",
+          "status": "completed",
+          "reason_code": "ok",
+          "elapsed_ms": 0.2464
+        },
+        {
+          "run_id": "scenario-d78e927d82904880803d0fc5dbf5b958",
+          "stage": "result_validation",
+          "status": "completed",
+          "reason_code": "ok",
+          "elapsed_ms": 2.8029
+        },
+        {
+          "run_id": "scenario-d78e927d82904880803d0fc5dbf5b958",
+          "stage": "persistence",
+          "status": "completed",
+          "reason_code": "written",
+          "elapsed_ms": 0
+        }
+      ],
+      "saved_run": {
+        "resource_id": "36b6998cdb172b9decb34f25a36b507da36407f4c630c226ed4080807ce94cd7.json",
+        "private": true,
+        "status": "written"
+      },
+      "model_calls": 0
+    }
+  }
+}
