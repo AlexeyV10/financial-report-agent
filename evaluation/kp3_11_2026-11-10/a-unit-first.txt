@@ -1,0 +1,37 @@
+test_answer_rejects_forged_second_choice_or_usage (test_one_shot_a.OneShotATests.test_answer_rejects_forged_second_choice_or_usage) ... ok
+test_choice_envelope_unknown_and_missing_fields (test_one_shot_a.OneShotATests.test_choice_envelope_unknown_and_missing_fields) ... ok
+test_clarification_history_and_question_preserved (test_one_shot_a.OneShotATests.test_clarification_history_and_question_preserved) ... ok
+test_clarification_no_search_or_model (test_one_shot_a.OneShotATests.test_clarification_no_search_or_model) ... ok
+test_context_change_does_not_reuse_answer (test_one_shot_a.OneShotATests.test_context_change_does_not_reuse_answer) ... ok
+test_context_or_config_changed_no_model (test_one_shot_a.OneShotATests.test_context_or_config_changed_no_model) ... ok
+test_duplicate_id_and_duplicate_role (test_one_shot_a.OneShotATests.test_duplicate_id_and_duplicate_role) ... ok
+test_exactly_one_choice_primary_and_actual_two_rechecks (test_one_shot_a.OneShotATests.test_exactly_one_choice_primary_and_actual_two_rechecks) ... ok
+test_external_model_timeout_does_not_claim_zero_requests (test_one_shot_a.OneShotATests.test_external_model_timeout_does_not_claim_zero_requests) ... ok
+test_five_operations (test_one_shot_a.OneShotATests.test_five_operations) ... ok
+test_hard_timeout_stops_once (test_one_shot_a.OneShotATests.test_hard_timeout_stops_once) ... ok
+test_historical_unknown_no_model_no_financial_result (test_one_shot_a.OneShotATests.test_historical_unknown_no_model_no_financial_result) ... ok
+test_index_changed_after_model_is_technical (test_one_shot_a.OneShotATests.test_index_changed_after_model_is_technical) ... ok
+test_input_values_code_paths_rejected_before_model (test_one_shot_a.OneShotATests.test_input_values_code_paths_rejected_before_model) ... ok
+test_invalid_limits_and_id_have_valid_error_envelope (test_one_shot_a.OneShotATests.test_invalid_limits_and_id_have_valid_error_envelope) ... ok
+test_local_json_extra_fields_are_raw_but_never_executed (test_one_shot_a.OneShotATests.test_local_json_extra_fields_are_raw_but_never_executed) ... ok
+test_local_json_malformed_duplicates_nonfinite_usage_retained (test_one_shot_a.OneShotATests.test_local_json_malformed_duplicates_nonfinite_usage_retained) ... ok
+test_malformed_adapter_envelope_is_technical (test_one_shot_a.OneShotATests.test_malformed_adapter_envelope_is_technical) ... ok
+test_model_schema_does_not_supply_correct_combination (test_one_shot_a.OneShotATests.test_model_schema_does_not_supply_correct_combination) ... ok
+test_money_units_and_period_conflicts_no_model (test_one_shot_a.OneShotATests.test_money_units_and_period_conflicts_no_model) ... ok
+test_negative_profit_and_financial_refusals (test_one_shot_a.OneShotATests.test_negative_profit_and_financial_refusals) ... ok
+test_no_automatic_repair_for_bad_choices (test_one_shot_a.OneShotATests.test_no_automatic_repair_for_bad_choices) ... ok
+test_other_metrics_and_roles_not_literal_pair (test_one_shot_a.OneShotATests.test_other_metrics_and_roles_not_literal_pair) ... ok
+test_oversized_choice_not_executed (test_one_shot_a.OneShotATests.test_oversized_choice_not_executed) ... ok
+test_partial_at_top1_has_zero_model_choices (test_one_shot_a.OneShotATests.test_partial_at_top1_has_zero_model_choices) ... ok
+test_premise_only_checked_after_numeric_answer (test_one_shot_a.OneShotATests.test_premise_only_checked_after_numeric_answer) ... ok
+test_run_id_exclusive_and_private_saved_bytes (test_one_shot_a.OneShotATests.test_run_id_exclusive_and_private_saved_bytes) ... ok
+test_sent_model_transport_failure_counts_one (test_one_shot_a.OneShotATests.test_sent_model_transport_failure_counts_one) ... ok
+test_setup_catalog_mutation_blocks_without_model (test_one_shot_a.OneShotATests.test_setup_catalog_mutation_blocks_without_model) ... ok
+test_source_changed_after_model_never_uses_prepared_fallback (test_one_shot_a.OneShotATests.test_source_changed_after_model_never_uses_prepared_fallback) ... ok
+test_source_missing_or_changed_before_search (test_one_shot_a.OneShotATests.test_source_missing_or_changed_before_search) ... ok
+test_wrong_role_assignment_rejected_before_arithmetic (test_one_shot_a.OneShotATests.test_wrong_role_assignment_rejected_before_arithmetic) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 21.784s
+
+OK

@@ -1,0 +1,13 @@
+{
+  "first_unit32": "passed",
+  "expanded_unit": "New test additions misplaced the final usage-tamper assertion in another test, causing NameError. Test-only placement corrected, original expanded log retained; no runtime/model fix or repair chat.",
+  "temporary_cli_helper": "Changed config correctly blocked before chat with index_configuration_mismatch. Helper initially expected index_signature_mismatch. Same original result preserved and expectation corrected, no rerun.",
+  "diagnostic_revision": "Before CLI, primary worker began returning inner failure phase so bad Evidence/source failures are not marked skipped. Prompt/choice/financial logic unchanged. protocol-before-chat and protocol-before-cli preserve both preparation hashes. Full584 unit and all current-code CLI passed.",
+  "real_model_retries": 0,
+  "all_actual_attempts_preserved": true,
+  "offline": "Own pinned server stopped after all17 chat requests; subsequent real A probe failed adapter_unavailable before chat, no fallback.",
+  "old_QA07_C_call_limit": "unchanged error",
+  "ui": "09 UI unchanged, no new UI/visual pass",
+  "downloads": 0,
+  "installs": 0
+}
