@@ -1,0 +1,44 @@
+{
+  "stage": "KP3-09",
+  "status": "passed",
+  "preparation_manifest_sha256": "6a935b026909be68ea81c072d5e4cfc10ec0359c184857fa8d904cff4c753b37",
+  "checks": {
+    "stage": "KP3-09",
+    "status": "technically_complete",
+    "unit_tests": {
+      "old": 467,
+      "new": 39,
+      "total": 506,
+      "passed": 506
+    },
+    "ui_apptest": 7,
+    "new_cli": 37,
+    "legacy_cli": 5,
+    "service_matrix": {
+      "own_synthetic": 5,
+      "real_known": 104
+    },
+    "reference": "unchanged independent Fraction/integer07 + Decimal80",
+    "ui_observations": 13,
+    "model_calls": 0,
+    "new_real_facts": 0,
+    "source_versions": 8,
+    "source_facts": 48,
+    "publication_proven": 0,
+    "human_reviewed": 0,
+    "known_to_developer": true,
+    "reserved_unseen_real": 0,
+    "final_eval_freeze": false,
+    "old_QA07_C_call_limit": "unchanged error",
+    "next_instruction": "Apply saved prompt10 immediately after09 delivery; stop before11",
+    "limits": [
+      "one limited input task at a time",
+      "only fixed B on09; no C/model calls yet",
+      "causal why unsupported",
+      "historical blocked for8 unknown-publication sources",
+      "private run files are execution evidence, not full history/export"
+    ]
+  },
+  "merge_authorized": false,
+  "primary_materials_in_git": false
+}

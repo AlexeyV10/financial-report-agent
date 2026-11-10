@@ -1,3 +1,9 @@
+## КП3-09: общий fixed B без обхода поиска — 10.11.2026
+
+КП3-09,10.11.2026: единый fixed B service/Answer0.1 и новый изолированный Streamlit UI. Обязательный поиск06 предшествует exact Evidence resolution/source checks/калькулятору07, skipped/error/clarification видимы.506 unit (467 прежних+39 новых),7 отдельных UI AppTest,37 новых CLI/checkers03–09/5legacy прошли;5 own+104 real known service-cases совпали с независимым reference07/Decimal80. Реальная CUA-проверка формы/ввода/уточнений/пяти операций/предпосылки/источника/сброса/historical/conflict/missing/technical error сохранена. Новых real Fact/модели нет, все8 publication unknown, historical закрыт. Не benchmark/freeze14. Только ветка09/зависимый PR в08, без merge.
+
+Partial/automatic/error не вычисляются даже при подходящих Fact в каталоге. Source/opening только localhost/exact SHA; PNG-страницы только tmp, старые ссылки после смены ввода404. UI и CLI используют один execute; финансовых формул в UI нет. Runtime не читает gold. Причинный why не выдумывается. Последнее поручение пользователя10.11: после09 не останавливаться, составить и выполнить10; остановиться перед11. Merge по-прежнему не разрешён.
+
 ## КП3-08: ограниченный ввод отдельно от финансового ответа — 10.11.2026
 
 КП3-08,10.11.2026: ограниченный детерминированный русский ввод, структурированная форма/адаптер и явные уточнения; отдельные Input/Form/Binding0.1 и узкая проверка передачи в Request0.3.467 unit-тестов (403 прежних+64 новых), checkers03–08,5 legacy CLI и117 новых CLI прошли.76 собственных открытых input-cases с отдельно заданными expected;15 числовых real probes совпали с независимым reference07/Decimal80. Original_question/выбор/предпосылка/история сохранены; causal why не выдумывается. Все8 publication unknown/historical закрыты; новых real Fact/моделей/UI/сервиса нет. Только ветка08/зависимый PR в07, без merge, не benchmark/freeze14.
