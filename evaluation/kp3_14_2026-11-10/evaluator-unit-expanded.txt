@@ -1,0 +1,57 @@
+test_all_four_prior_controls (test_kp3_evaluation.Evaluation14Tests.test_all_four_prior_controls) ... ok
+test_automatic_calculation_receipt_rejected (test_kp3_evaluation.Evaluation14Tests.test_automatic_calculation_receipt_rejected) ... ok
+test_cached_B_cannot_count_as_C (test_kp3_evaluation.Evaluation14Tests.test_cached_B_cannot_count_as_C) ... ok
+test_changed_scenario_parameters_not_ignored (test_kp3_evaluation.Evaluation14Tests.test_changed_scenario_parameters_not_ignored) ... ok
+test_completed_answer_cannot_claim_skipped_search (test_kp3_evaluation.Evaluation14Tests.test_completed_answer_cannot_claim_skipped_search) ... ok
+test_control_not_accepted_as_actual (test_kp3_evaluation.Evaluation14Tests.test_control_not_accepted_as_actual) ... ok
+test_denominators_and_known_overlap (test_kp3_evaluation.Evaluation14Tests.test_denominators_and_known_overlap) ... ok
+test_duplicate_and_unknown_attempt_ids (test_kp3_evaluation.Evaluation14Tests.test_duplicate_and_unknown_attempt_ids) ... ok
+test_duplicate_case_id (test_kp3_evaluation.Evaluation14Tests.test_duplicate_case_id) ... ok
+test_empty_denominator_not_measured (test_kp3_evaluation.Evaluation14Tests.test_empty_denominator_not_measured) ... ok
+test_extra_narrative_999_is_not_ignored (test_kp3_evaluation.Evaluation14Tests.test_extra_narrative_999_is_not_ignored) ... ok
+test_failure_stays_in_numeric_denominator (test_kp3_evaluation.Evaluation14Tests.test_failure_stays_in_numeric_denominator) ... ok
+test_family_split_overlap_rejected (test_kp3_evaluation.Evaluation14Tests.test_family_split_overlap_rejected) ... ok
+test_forged_final_equity_not_ignored (test_kp3_evaluation.Evaluation14Tests.test_forged_final_equity_not_ignored) ... ok
+test_human_upgrade_rejected (test_kp3_evaluation.Evaluation14Tests.test_human_upgrade_rejected) ... ok
+test_isolation_no_production_gold_imports (test_kp3_evaluation.Evaluation14Tests.test_isolation_no_production_gold_imports) ... ok
+test_lost_header (test_kp3_evaluation.Evaluation14Tests.test_lost_header) ... ok
+test_missing_required_claim_is_failure (test_kp3_evaluation.Evaluation14Tests.test_missing_required_claim_is_failure) ... ok
+test_mock_cannot_be_actual_C (test_kp3_evaluation.Evaluation14Tests.test_mock_cannot_be_actual_C) ... ok
+test_no_attempts_keeps_planned_denominators (test_kp3_evaluation.Evaluation14Tests.test_no_attempts_keeps_planned_denominators) ... ok
+test_other_cell_evidence (test_kp3_evaluation.Evaluation14Tests.test_other_cell_evidence) ... ok
+test_partial_retrieval_has_all_cells_denominator (test_kp3_evaluation.Evaluation14Tests.test_partial_retrieval_has_all_cells_denominator) ... ok
+test_prior_own_scenario_reference (test_kp3_evaluation.Evaluation14Tests.test_prior_own_scenario_reference) ... ok
+test_queries_not_duplicated_by_operations (test_kp3_evaluation.Evaluation14Tests.test_queries_not_duplicated_by_operations) ... ok
+test_question_and_raw_fields_preserved (test_kp3_evaluation.Evaluation14Tests.test_question_and_raw_fields_preserved) ... ok
+test_real_origin_cannot_be_own_scenario (test_kp3_evaluation.Evaluation14Tests.test_real_origin_cannot_be_own_scenario) ... ok
+test_retrieval_wrong_header_or_automatic_not_matched (test_kp3_evaluation.Evaluation14Tests.test_retrieval_wrong_header_or_automatic_not_matched) ... ok
+test_swapped_role (test_kp3_evaluation.Evaluation14Tests.test_swapped_role) ... ok
+test_technical_error_not_correct_refusal (test_kp3_evaluation.Evaluation14Tests.test_technical_error_not_correct_refusal) ... ok
+test_technical_limit_never_numeric_success (test_kp3_evaluation.Evaluation14Tests.test_technical_limit_never_numeric_success) ... ok
+test_trace_cannot_skip_search (test_kp3_evaluation.Evaluation14Tests.test_trace_cannot_skip_search) ... ok
+test_unknown_gold_case_id (test_kp3_evaluation.Evaluation14Tests.test_unknown_gold_case_id) ... ok
+test_unknown_or_duplicate_fact_id_not_accepted (test_kp3_evaluation.Evaluation14Tests.test_unknown_or_duplicate_fact_id_not_accepted) ... ok
+test_unknown_usage_is_not_zero (test_kp3_evaluation.Evaluation14Tests.test_unknown_usage_is_not_zero) ... ok
+test_unverified_candidate_not_checked (test_kp3_evaluation.Evaluation14Tests.test_unverified_candidate_not_checked) ... ok
+test_why_and_asserted_direction_not_lost (test_kp3_evaluation.Evaluation14Tests.test_why_and_asserted_direction_not_lost) ... ok
+test_wrong_definition (test_kp3_evaluation.Evaluation14Tests.test_wrong_definition) ... ok
+test_wrong_display_unit (test_kp3_evaluation.Evaluation14Tests.test_wrong_display_unit) ... ok
+test_wrong_exact_numerator (test_kp3_evaluation.Evaluation14Tests.test_wrong_exact_numerator) ... ok
+test_wrong_full_period (test_kp3_evaluation.Evaluation14Tests.test_wrong_full_period) ... ok
+test_wrong_gold_number_rejected_before_grading (test_kp3_evaluation.Evaluation14Tests.test_wrong_gold_number_rejected_before_grading) ... ok
+test_wrong_model_digest (test_kp3_evaluation.Evaluation14Tests.test_wrong_model_digest) ... ok
+test_wrong_organization (test_kp3_evaluation.Evaluation14Tests.test_wrong_organization) ... ok
+test_wrong_sha_and_page (test_kp3_evaluation.Evaluation14Tests.test_wrong_sha_and_page) ... ok
+test_changed_frozen_gold_rejected (test_kp3_evaluation.Freeze14Tests.test_changed_frozen_gold_rejected) ... ok
+test_circular_or_outside_paths_rejected (test_kp3_evaluation.Freeze14Tests.test_circular_or_outside_paths_rejected) ... ok
+test_duplicate_json_and_size_limit (test_kp3_evaluation.Freeze14Tests.test_duplicate_json_and_size_limit) ... ok
+test_freeze_verifies_and_cannot_overwrite (test_kp3_evaluation.Freeze14Tests.test_freeze_verifies_and_cannot_overwrite) ... ok
+test_raw_hash_and_scope_guard (test_kp3_evaluation.Freeze14Tests.test_raw_hash_and_scope_guard) ... ok
+test_actual_prior_export_grammar (test_kp3_evaluation.Presentation14Tests.test_actual_prior_export_grammar) ... ok
+test_extra_999_in_human_text_rejected (test_kp3_evaluation.Presentation14Tests.test_extra_999_in_human_text_rejected) ... ok
+test_lost_limit_and_changed_json_rejected (test_kp3_evaluation.Presentation14Tests.test_lost_limit_and_changed_json_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 52 tests in 0.232s
+
+OK

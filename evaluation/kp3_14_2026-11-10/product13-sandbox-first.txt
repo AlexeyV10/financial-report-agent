@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-14-worktree\scripts\check_kp3_product.py", line 39, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-14-worktree\scripts\check_kp3_product.py", line 37, in main
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--context',type=Path,required=True);p.add_argument('--report',type=Path,required=True);a=p.parse_args();target=a.report.resolve();assert target.is_relative_to((ROOT/'tmp').resolve())and not target.exists();r=run(a.context);target.write_text(json.dumps(r,ensure_ascii=False,indent=2)+'\n',encoding='utf8');print(json.dumps({k:v for k,v in r.items()if k!='cases'}));return 0
+                                                                                                                                                                                                                                                                                   ~~~^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-14-worktree\scripts\check_kp3_product.py", line 27, in run
+    record,reused=financial(source,[],'B',ctx,store);assert not reused;a=record['payload']['result'];ref=oracle.evaluate(op,[f['value']for f in fs],fs[0]['scale'],1000000000 if op=='scale_v1'else fs[0]['scale']);assert a['financial_status']==ref['status']
+                  ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-14-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-14-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-14-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-14-worktree\\tmp\\tmpsh9xxq11\\history\\pending-040ab737d83f4ff78700dba98b648d54.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-14-worktree\\tmp\\tmpsh9xxq11\\history\\a990ca91c256f16f1f58ae80829bb724bed1a1defd7de63a8ec8b98763bd0d90.json'

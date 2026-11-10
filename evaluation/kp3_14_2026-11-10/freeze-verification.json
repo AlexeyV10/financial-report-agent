@@ -1,0 +1,12 @@
+{
+  "verified_at": "2026-11-10T17:32:56.543891+00:00",
+  "manifest_sha256": "072a1caf92423d2e41ae12625cc485d81f0bc3c321c3cce5cbb1db663bcf1fbe",
+  "files": 134,
+  "resources": 28,
+  "all_actual_resource_bytes_matched": true,
+  "source_base_commit": "053350a751a33c3ba4bbe11445444ef10efb4ce5",
+  "actual_final_method_attempts": 0,
+  "model_calls": 0,
+  "server_availability_on14": "not_probed",
+  "primary_blobs_in_git": false
+}

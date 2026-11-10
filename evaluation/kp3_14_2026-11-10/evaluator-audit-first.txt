@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-14-worktree\scripts\check_kp3_evaluation.py", line 48, in <module>
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--draft',type=Path);p.add_argument('--report',type=Path,required=True);p.add_argument('--dev-smoke',action='store_true');a=p.parse_args();r=run(a.draft,a.dev_smoke);write_new(a.report,r);print(json.dumps(dict(audit=r['audit'],binding_checks=len(r['binding_checks']),parser_controls=len(r['parser_controls']),prior_actual_controls=len(r['prior_actual_controls']),new_own_calculator_controls=len(r['new_own_calculator_controls']),model_calls=0,final_method_attempts=0),ensure_ascii=False))
+                                                                                                                                                                                                               ~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-14-worktree\scripts\check_kp3_evaluation.py", line 26, in run
+    binding=resolve_input(parse_form(case['source']['form'],cat),cat,dictionary)
+                          ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-14-worktree\src\financial_assistant\contracts_v2.py", line 32, in checked
+    return fn(*args, **kwargs)
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-14-worktree\src\financial_assistant\russian_input.py", line 167, in parse_form
+    if t['fields'][k]is not None and detected['fields'][k]is not None:need(t['fields'][k]==detected['fields'][k],'question_form_conflict')
+                                                                      ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-14-worktree\src\financial_assistant\contracts_v2.py", line 42, in need
+    raise ContractError(code)
+financial_assistant.contracts_v2.ContractError: question_form_conflict

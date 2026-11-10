@@ -1,0 +1,89 @@
+{
+  "stage": "KP3-14",
+  "status": "passed",
+  "preparation_manifest_sha256": "4ffe3b0fda5a3a4a255159e0886d77eaadf9099e08e5b4c9d0af1a8c9cacb127",
+  "checks": {
+    "stage": "KP3-14",
+    "status": "technically_complete_frozen_known_corpus_protocol",
+    "unit_tests": {
+      "old": 657,
+      "new": 53,
+      "total": 710,
+      "passed": 710
+    },
+    "current_evaluator_tests": 53,
+    "checkers": "03-14 passed; immutable old gold04/07/corpus05",
+    "legacy_cli": 5,
+    "suite_cases": 92,
+    "financial": {
+      "dev": 20,
+      "dev_numeric": 19,
+      "dev_refusal": 1,
+      "comparison_known": 40,
+      "numeric": 32,
+      "refusal": 8,
+      "selected_exact_cells": 32,
+      "economic_contexts": 28,
+      "lineage_clusters": 2,
+      "versions": 8
+    },
+    "parser_controls": 8,
+    "scenario_plans": 12,
+    "robustness_plans": 12,
+    "retrieval": {
+      "unique_queries": 29,
+      "required_evidence": 46
+    },
+    "gold": {
+      "financial_numeric": 51,
+      "own_scenario_reference_paths": 12,
+      "independent": "07 Fraction/integer+Decimal80 and12 integer/Fraction"
+    },
+    "preparation_checks": {
+      "binding_only": 40,
+      "parser": 8,
+      "new_own_calculator_controls": 2,
+      "prior_actual13_evaluator_controls": 4
+    },
+    "freeze": {
+      "path": "evaluation/protocols/kp3_eval_v1/freeze-manifest.json",
+      "sha256": "072a1caf92423d2e41ae12625cc485d81f0bc3c321c3cce5cbb1db663bcf1fbe",
+      "files": 134,
+      "actual_resources": 28,
+      "created_before_final_answers": true,
+      "scope": "controlled known corpus"
+    },
+    "replay": {
+      "evaluator_unit_fixtures": 2,
+      "identical_bytes": true,
+      "actual_comparison_observations": 0
+    },
+    "new_model_calls": 0,
+    "actual_final_method_attempts": 0,
+    "planned_primary_method_attempts": 120,
+    "planned_warm_attempts": 18,
+    "source_facts": 48,
+    "new_real_facts": 0,
+    "new_synthetic_facts": 0,
+    "publication_proven": 0,
+    "human_reviewed": 0,
+    "new_models_or_installs": 0,
+    "known_to_developer": true,
+    "reserved_unseen_real": 0,
+    "final_eval_freeze": true,
+    "old_QA07_C_call_limit": "unchanged error",
+    "old_financial_3_of_10": "unchanged historical result",
+    "UI": "unchanged, no new visual pass",
+    "next_step": "Standalone15 prepared;15/16 not started",
+    "limits": [
+      "All40 comparison cases historically known; not unseen/human-blind and only2 dependent real source lineages.",
+      "Primary40 uses explicit form semantics; Russian8 separate.",
+      "Own07 dev20 is calculator-only, not B/C/A synthetic PDF retrieval.",
+      "Scenario/robustness runtime campaign deferred15; grader tests are separate.",
+      "Replay unit fixture1/32 is not model performance.",
+      "All8real publications unknown; historical/trading stay blocked."
+    ]
+  },
+  "merge_authorized": false,
+  "primary_materials_in_git": false
+}

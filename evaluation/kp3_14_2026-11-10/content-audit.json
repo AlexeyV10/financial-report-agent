@@ -1,0 +1,18 @@
+{
+  "old_child_files": 957,
+  "old_child_unchanged": 954,
+  "changed_child": [
+    "README.md",
+    "STATUS.md",
+    "docs/decisions.md"
+  ],
+  "old_root_files": 495,
+  "old_root_unchanged": 493,
+  "changed_root": [
+    "STATUS.md",
+    "docs/decisions.md"
+  ],
+  "old_document_bytes_preserved": true,
+  "old_answering_src_scripts_data_gold_manifests_UI_unchanged": true,
+  "primary_blobs_in_git": false
+}

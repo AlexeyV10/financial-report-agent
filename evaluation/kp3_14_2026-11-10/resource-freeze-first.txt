@@ -1,0 +1,1 @@
+{"resources": 28, "environment": {"python": "3.14.7", "sqlite": "3.53.4", "worker": {"python": "3.12.14", "pdfplumber": "0.11.9", "pdfminer_six": "20251230"}}, "new_downloads": 0, "model_calls": 0}

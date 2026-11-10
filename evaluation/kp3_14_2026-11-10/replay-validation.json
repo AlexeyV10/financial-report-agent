@@ -1,0 +1,12 @@
+{
+  "scope": "evaluator_controls_only_not_actual14_responses",
+  "modified_unit_fixtures": 2,
+  "model_calls": 0,
+  "comparison_attempts": 0,
+  "byte_identical_replay": true,
+  "metrics_sha256": "11d3f71bdc1f4d4cd74da5bfb9a1b7dc00506c05f321cf5f7b77a58427c1f0e8",
+  "positive_fixture_scored": true,
+  "technical_fixture_not_correct_numeric": true,
+  "default_cli_rejects_controls": true,
+  "latency_numbers": "1ms/2ms are declared unit fixture values, not measured model or user performance"
+}

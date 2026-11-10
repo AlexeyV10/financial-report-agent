@@ -1,0 +1,1 @@
+{'cases': 92, 'gold': 92, 'draft': 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-14-worktree\\tmp\\eval-draft-14d', 'production_answers': 0, 'model_calls': 0}

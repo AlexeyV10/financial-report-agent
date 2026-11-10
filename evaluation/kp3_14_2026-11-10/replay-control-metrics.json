@@ -1,0 +1,369 @@
+{
+  "schema_version": "kp3-metrics-0.1",
+  "scope": "evaluator_controls_only",
+  "method_metrics": {
+    "B:primary": {
+      "planned_attempts": 40,
+      "observed_attempts": 2,
+      "missing_attempts": 38,
+      "numeric_correct": {
+        "x": 1,
+        "n": 32,
+        "status": "partial"
+      },
+      "correct_refusal": {
+        "x": 0,
+        "n": 8,
+        "status": "not_measured"
+      },
+      "false_refusal": {
+        "x": 0,
+        "n": 32,
+        "status": "partial"
+      },
+      "technical_completion": {
+        "x": 1,
+        "n": 40,
+        "status": "partial"
+      },
+      "claim_support": {
+        "x": 2,
+        "n": 2,
+        "status": "partial"
+      },
+      "answer_completeness": {
+        "x": 1,
+        "n": 32,
+        "status": "partial"
+      },
+      "elapsed": {
+        "n": 2,
+        "minimum_ms": 1,
+        "median_ms": 1.5,
+        "maximum_ms": 2
+      },
+      "model_usage": {
+        "known_chat_requests": 0,
+        "unknown_requests": 0,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "unknown_records": 0
+        },
+        "total_cost": "not_measured"
+      },
+      "scores": [
+        {
+          "case_id": "cmp-01",
+          "method": "B",
+          "matched": false,
+          "errors": [
+            "status_or_reason_mismatch",
+            "answer_missing_required_claims"
+          ],
+          "numeric_expected": true,
+          "numeric_correct": false,
+          "refusal_expected": false,
+          "refusal_correct": false,
+          "false_refusal": false,
+          "technical_completed": false,
+          "supported_claims": 0,
+          "observed_claims": 0,
+          "required_claims": 2,
+          "complete_claims": false,
+          "usage": {
+            "chat_requests": 0,
+            "unknown_requests": 0,
+            "usage": null,
+            "adapter": null
+          }
+        },
+        {
+          "case_id": "cmp-02",
+          "method": "B",
+          "matched": true,
+          "errors": [],
+          "numeric_expected": true,
+          "numeric_correct": true,
+          "refusal_expected": false,
+          "refusal_correct": false,
+          "false_refusal": false,
+          "technical_completed": true,
+          "supported_claims": 2,
+          "observed_claims": 2,
+          "required_claims": 2,
+          "complete_claims": true,
+          "usage": {
+            "chat_requests": 0,
+            "unknown_requests": 0,
+            "usage": null,
+            "adapter": null
+          }
+        }
+      ]
+    },
+    "B:warm_repeat": {
+      "planned_attempts": 6,
+      "observed_attempts": 0,
+      "missing_attempts": 6,
+      "numeric_correct": {
+        "x": 0,
+        "n": 6,
+        "status": "not_measured"
+      },
+      "correct_refusal": {
+        "x": 0,
+        "n": 0,
+        "status": "not_measured"
+      },
+      "false_refusal": {
+        "x": 0,
+        "n": 6,
+        "status": "not_measured"
+      },
+      "technical_completion": {
+        "x": 0,
+        "n": 6,
+        "status": "not_measured"
+      },
+      "claim_support": {
+        "x": 0,
+        "n": 0,
+        "status": "not_measured"
+      },
+      "answer_completeness": {
+        "x": 0,
+        "n": 6,
+        "status": "not_measured"
+      },
+      "elapsed": {
+        "n": 0,
+        "minimum_ms": null,
+        "median_ms": null,
+        "maximum_ms": null
+      },
+      "model_usage": {
+        "known_chat_requests": 0,
+        "unknown_requests": 0,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "unknown_records": 0
+        },
+        "total_cost": "not_measured"
+      },
+      "scores": []
+    },
+    "A:primary": {
+      "planned_attempts": 40,
+      "observed_attempts": 0,
+      "missing_attempts": 40,
+      "numeric_correct": {
+        "x": 0,
+        "n": 32,
+        "status": "not_measured"
+      },
+      "correct_refusal": {
+        "x": 0,
+        "n": 8,
+        "status": "not_measured"
+      },
+      "false_refusal": {
+        "x": 0,
+        "n": 32,
+        "status": "not_measured"
+      },
+      "technical_completion": {
+        "x": 0,
+        "n": 40,
+        "status": "not_measured"
+      },
+      "claim_support": {
+        "x": 0,
+        "n": 0,
+        "status": "not_measured"
+      },
+      "answer_completeness": {
+        "x": 0,
+        "n": 32,
+        "status": "not_measured"
+      },
+      "elapsed": {
+        "n": 0,
+        "minimum_ms": null,
+        "median_ms": null,
+        "maximum_ms": null
+      },
+      "model_usage": {
+        "known_chat_requests": 0,
+        "unknown_requests": 0,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "unknown_records": 0
+        },
+        "total_cost": "not_measured"
+      },
+      "scores": []
+    },
+    "A:warm_repeat": {
+      "planned_attempts": 6,
+      "observed_attempts": 0,
+      "missing_attempts": 6,
+      "numeric_correct": {
+        "x": 0,
+        "n": 6,
+        "status": "not_measured"
+      },
+      "correct_refusal": {
+        "x": 0,
+        "n": 0,
+        "status": "not_measured"
+      },
+      "false_refusal": {
+        "x": 0,
+        "n": 6,
+        "status": "not_measured"
+      },
+      "technical_completion": {
+        "x": 0,
+        "n": 6,
+        "status": "not_measured"
+      },
+      "claim_support": {
+        "x": 0,
+        "n": 0,
+        "status": "not_measured"
+      },
+      "answer_completeness": {
+        "x": 0,
+        "n": 6,
+        "status": "not_measured"
+      },
+      "elapsed": {
+        "n": 0,
+        "minimum_ms": null,
+        "median_ms": null,
+        "maximum_ms": null
+      },
+      "model_usage": {
+        "known_chat_requests": 0,
+        "unknown_requests": 0,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "unknown_records": 0
+        },
+        "total_cost": "not_measured"
+      },
+      "scores": []
+    },
+    "C:primary": {
+      "planned_attempts": 40,
+      "observed_attempts": 0,
+      "missing_attempts": 40,
+      "numeric_correct": {
+        "x": 0,
+        "n": 32,
+        "status": "not_measured"
+      },
+      "correct_refusal": {
+        "x": 0,
+        "n": 8,
+        "status": "not_measured"
+      },
+      "false_refusal": {
+        "x": 0,
+        "n": 32,
+        "status": "not_measured"
+      },
+      "technical_completion": {
+        "x": 0,
+        "n": 40,
+        "status": "not_measured"
+      },
+      "claim_support": {
+        "x": 0,
+        "n": 0,
+        "status": "not_measured"
+      },
+      "answer_completeness": {
+        "x": 0,
+        "n": 32,
+        "status": "not_measured"
+      },
+      "elapsed": {
+        "n": 0,
+        "minimum_ms": null,
+        "median_ms": null,
+        "maximum_ms": null
+      },
+      "model_usage": {
+        "known_chat_requests": 0,
+        "unknown_requests": 0,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "unknown_records": 0
+        },
+        "total_cost": "not_measured"
+      },
+      "scores": []
+    },
+    "C:warm_repeat": {
+      "planned_attempts": 6,
+      "observed_attempts": 0,
+      "missing_attempts": 6,
+      "numeric_correct": {
+        "x": 0,
+        "n": 6,
+        "status": "not_measured"
+      },
+      "correct_refusal": {
+        "x": 0,
+        "n": 0,
+        "status": "not_measured"
+      },
+      "false_refusal": {
+        "x": 0,
+        "n": 6,
+        "status": "not_measured"
+      },
+      "technical_completion": {
+        "x": 0,
+        "n": 6,
+        "status": "not_measured"
+      },
+      "claim_support": {
+        "x": 0,
+        "n": 0,
+        "status": "not_measured"
+      },
+      "answer_completeness": {
+        "x": 0,
+        "n": 6,
+        "status": "not_measured"
+      },
+      "elapsed": {
+        "n": 0,
+        "minimum_ms": null,
+        "median_ms": null,
+        "maximum_ms": null
+      },
+      "model_usage": {
+        "known_chat_requests": 0,
+        "unknown_requests": 0,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "unknown_records": 0
+        },
+        "total_cost": "not_measured"
+      },
+      "scores": []
+    }
+  },
+  "raw_count": 2,
+  "errors": [],
+  "reserved_unseen_real": 0
+}
