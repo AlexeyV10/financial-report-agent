@@ -1,0 +1,17 @@
+{
+  "manifest_version": "1.0",
+  "scope": "open_dev_preparation_not_final_eval",
+  "runtime_reads_gold": false,
+  "file_sha256": {
+    "src/financial_assistant/service_contracts.py": "b212c5621ccef7497dc3fc8c0833ebb564a6c4f9cebbbdbc7974652dc99766b7",
+    "src/financial_assistant/service_b.py": "d73ef129dcef8e1a25a4278bebd300e3d04e3db38876811a3dc7b806262d83cb",
+    "src/financial_assistant/service_ui.py": "8c742d7f53b539426ef6445d4358392dba66e910a44107e493a206c98ffb0306",
+    "src/financial_assistant/source_viewer.py": "8651a115876dbf7c03ba503570f8652b33747fc4ca3a92ab497ece32e4ec5639",
+    "app_kp3/service_b_app.py": "e840d57f75336221db3f8d6e06d9bd1ba6299ac327cd159d58910d253fd2bc7f",
+    "scripts/execute_service_b.py": "c3faae81ae684e58b43c241eadf273ce68685a3da7ef110506a6580b45a791cf",
+    "scripts/check_kp3_service_b.py": "a087acc89173e2a7785121f976526291bd2a6b9382763194f5aab6b73df1bcd8",
+    "tests/test_service_b.py": "17efb5a16925af13b3d33ad29ed150cc4f0d5deffaa5986d490e3840c7439a66",
+    "tests_ui_kp3/test_service_b_app.py": "6bb8a589bbd7989730f2c3eef025313df74755f8cd60b940ae9192983ee16be0",
+    "docs/kp3/fixed_service_b_v1.md": "37c88a6ce617901ef52a546c44b5c8bc310a51afc2619f5052331a3a92427b9b"
+  }
+}
