@@ -1,0 +1,21 @@
+{
+  "stage": "KP3-16",
+  "pull_request": "https://github.com/AlexeyV10/financial-report-agent/pull/16",
+  "pr_number": 16,
+  "branch": "codex/kp3-16-final-comparison",
+  "base_branch": "codex/kp3-15-failure-boundaries",
+  "base_sha": "f22395940e958e89f0465fb087554dbe47aba167",
+  "code_commit": "c2e53c9dd8c55242e7622c9954c1bb31d34aaf6c",
+  "verified_stage_head": "a1c746716987a1eb767bb1a570f0f591e1280ffb",
+  "technical_tag": "kp3-16-known-comparison-v1-2026-11-10",
+  "tag_object": "eebb8609078e4fc9ced8d284f54c950e1ce4058f",
+  "tag_target": "a1c746716987a1eb767bb1a570f0f591e1280ffb",
+  "state": "open",
+  "merged": false,
+  "diff_files": 278,
+  "allowlist_matches": true,
+  "remote_tree_matches": true,
+  "remote_blobs": 1530,
+  "receipt_followup": "Final head in final-local-receipt.json; tag targets tested stage",
+  "merge_authorized": false
+}
