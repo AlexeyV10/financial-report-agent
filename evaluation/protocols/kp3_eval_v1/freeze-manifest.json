@@ -1,0 +1,339 @@
+{
+  "schema_version": "kp3-freeze-0.1",
+  "freeze_id": "kp3-known-corpus-v1",
+  "created_at": "2026-11-10T17:22:38.411430+00:00",
+  "scope": "Controlled known-corpus comparison; not unseen; no final answers yet",
+  "source_base_commit": "053350a751a33c3ba4bbe11445444ef10efb4ce5",
+  "file_sha256": {
+    "app_kp3/product_app.py": "1b321e93316951e95cb220da25f1bd2627d1a25ec8d3741c1d55b8d1652e1021",
+    "app_kp3/scenario_app.py": "c9de69e742ad509abadaba0a00b2bef2e096223b4851eab7f2c42c3c69e739f0",
+    "app_kp3/service_b_app.py": "e840d57f75336221db3f8d6e06d9bd1ba6299ac327cd159d58910d253fd2bc7f",
+    "data/calculation/kp3_calculator_v1/manifest.json": "608374b3a30794c413fb90a75bb2dec6a2703c883707bbe62904b602d7204942",
+    "data/calculation/kp3_calculator_v1/real_admission.json": "de0e9e368b9a82586cbb1d6b3801535e3b3325d01a2f4b525a95a985549db447",
+    "data/calculation/kp3_calculator_v1/synthetic_admission.json": "f50480c425db3237ec0d414d5f439462949cf26df5ce7860a456a16501fc255b",
+    "data/catalogs/kp3_calculator_dev_v1/runtime_catalog.json": "037693cd6c56e6650843aabe4c401549992cea29d0a1ee06824291fcf8f4d312",
+    "data/catalogs/kp3_corpus_v1/manifest.json": "b3fbbb04ac2ce2e6d0433d4d9b75b8f0a12901a68d21b7fce0ffda1ceb86de3b",
+    "data/catalogs/kp3_corpus_v1/runtime_catalog.json": "2fc834375994a396023c058246a460eebd67181dc0234dd34dca5294978d8e58",
+    "data/catalogs/kp3_corpus_v1/source_bindings.json": "603b13fc4070cf95aacdc0f3392a310bccf80374ac7a51065d25fa3a14feef10",
+    "data/config/local_model.json": "75756087aeec76c1c20eca8649dea7d9afc42aa6adf37986419eb1219774d65f",
+    "data/dictionaries/kp3_finance_v1/definitions.json": "99a48df712795a3f7ba9ca2a177989b7fcbaeb944d49caec7bc81cfaf69d438c",
+    "data/dictionaries/kp3_finance_v1/legacy_definition_map.json": "277fe736822d0e336a04254e8c06ea74f524546b3ae830aa09c2d6439e285458",
+    "data/evaluation/kp3_eval_v1/inputs.json": "d3597a6dcd942120a96627ffb60dac2cd5a0396743a75d99fffc3ec32834127e",
+    "data/evaluation/kp3_eval_v1/search_tasks.json": "22b79dd67ef7144f71f1522dbb0d63e1395388c5f7196ca0c9198b1a3dc8478e",
+    "data/extraction/kp3_pdf_v1/config.json": "330608381bcfba5843d21e5565fde4f63f8d3de42f682dd52698ba66e439fb74",
+    "data/extraction/kp3_pdf_v1/search_lexicon.json": "27e6f93296efb30c3e16dd5c31fe02a21f072f33d78ab60acf09d179db7d5ac0",
+    "data/scenarios/kp3_scenario_v1/admission.json": "de95d125e60cbf594d9d294e87d9411818c045c23b3e3fc1e1d5b6af2871b552",
+    "data/scenarios/kp3_scenario_v1/dataset.json": "170379401c0607c962612e4f979f3b7a6fadc4898f6dcd81e6fbf8fd6c5e2eea",
+    "data/scenarios/kp3_scenario_v1/financial_request.json": "b32f7cf73c8a20dc28632515c4f796531b20264f99406b758ce0e37ac03a6635",
+    "data/scenarios/kp3_scenario_v1/manifest.json": "30bd61cd24323d711d6a5fc3f8d550b8a026eb21d0547f84031527b49c1149a3",
+    "data/scenarios/kp3_scenario_v1/own_financial_source.txt": "3e27a398d1552bd22773cc8f3af98a5d4f7a77e1a6f02a0458a619ca06d867f2",
+    "data/scenarios/kp3_scenario_v1/request_example.json": "e5e67bd6a67b8e1db59f9f7831f7044aa189dac68c989c9d0cc0bc19e33ed828",
+    "data/scenarios/kp3_scenario_v1/runtime_catalog.json": "82e14d11669642fc5009699bc422a76ee8feec0e13db2faa7af25f8933637f86",
+    "data/scenarios/kp3_scenario_v1/setup.json": "9d2251c0f446ee6b3fdda04319626334a584a659a2c1e74af48683dc571cea77",
+    "docs/kp3/evaluation_protocol_v1.md": "6c468a75e0796a6f4d291141b335f16aa8bde1799906969f8ddc13137537151e",
+    "evaluation/fixtures/kp3_eval_v1/gold.json": "d4ec66377ecfbaccf02d24af11b90e90e307f796e250ecab16f8d0da409d141d",
+    "evaluation/fixtures/kp3_eval_v1/retrieval_gold.json": "fd618bff13b305a9320c5023c2653cb5f000704d193d2dfb991439d6565a5d6f",
+    "evaluation/kp3_05_2026-11-09/source-checks.json": "89fbdf454c4a3606db3ec0502fe407001a939dcd0467e319b6fc62dba22a807f",
+    "evaluation/kp3_13_2026-11-10/ui-runs.json": "9b33072a2b88bac51fa32088238002b17bfdc5472a5975047f8aa349855fbd77",
+    "evaluation/kp3_14_2026-11-10/control-export13.md": "07562399c157a894b1397d1d99f3e5c47641030296350065047fd7aa281d81f1",
+    "evaluation/kp3_protocol_v1/__init__.py": "994dcc6e188b849cac37d7ecd5bac386bca408804b7c8078dd4412a07c1f8ee1",
+    "evaluation/kp3_protocol_v1/common.py": "e3bde88ca8bfde69baf1d2ba11a73cd7dbdaed428222697c96a948dff8d0a29e",
+    "evaluation/kp3_protocol_v1/controls.py": "725b05702f3bd6be5211f8a77b70b0896696648731dcda307605c185e11a3bc2",
+    "evaluation/kp3_protocol_v1/evaluator.py": "c21bfb9645d775a41f3ca7e7416de9b48a9b48f0a0e801abafcbef690e4f55a9",
+    "evaluation/kp3_protocol_v1/freeze.py": "3dce436353dfc1e461ae525912fd8df95646e0b4d842858b41a0c5c949778624",
+    "evaluation/kp3_protocol_v1/metrics.py": "8a803a949fba75c8128dac7272512c34beca8f51d2d1f15229249ebb5a91eb6e",
+    "evaluation/kp3_protocol_v1/presentation.py": "48914d35aff5c3760cb0d641ca3f83553db7ff930abe37880de4915ef80809cf",
+    "evaluation/kp3_protocol_v1/suite.py": "37bf3513451c84104ac41e1f9805fe65669b3d759bd72f95fecbba80266f7385",
+    "evaluation/protocols/kp3_eval_v1/coverage.json": "3e12cf25f8647f829ca65885358e8a101424c90329a6c3af07a0027cc4481295",
+    "evaluation/protocols/kp3_eval_v1/families.json": "9f91b63c207e145d8902a5ee4649ae0d90d0037b27220f037a1acf88f919f402",
+    "evaluation/protocols/kp3_eval_v1/metrics-plan.json": "d2204cf6193423a6eb5c20889076da1aca62c35db2c72398638bdcb08cfb1d78",
+    "evaluation/protocols/kp3_eval_v1/protocol.json": "4fc0c053509aee0f5dde5f6fd8dfb8c9fc88559d21a44c8136a5c65fa7b7ba3d",
+    "evaluation/reference/kp3_calculator_v1/oracle.py": "638c0fbc010a52e121f4a5b238a4e14e76b7f080eb15729746f666caf794b248",
+    "evaluation/reference/kp3_scenario_v1/oracle.py": "f6fe7520a79cabbe0bcc9385a8c78911744d3c73b2d70a5c038e5f5021084e16",
+    "scripts/agent_assistant.py": "13af35670ab1511be87063987a44945e34a0738e829e1c1d340a001c2a243f99",
+    "scripts/assistant.py": "f3840332a8fc3f7c23fa19571b8a7fbbfb150c4bb3148f51a6fea07309370970",
+    "scripts/build_kp3_calculator_dev.py": "d1230fd7312c5549febd5f3d62eae8942ca0dbfbc075f00e52c30ee4423d0abe",
+    "scripts/build_kp3_input_dev.py": "638800487e2a869876b64679b7f46f1e412e5858b2e0f1d1fa60d296604c412a",
+    "scripts/build_review_archive.py": "f9bfcfb16b66b59d2bef9a52a1749e55f1fe7f66bb73228126f818cf543b8650",
+    "scripts/calculate_financial.py": "d05c31bb646704492d28568df4e762c6bc7f5e92d8e0b23ff0ab503b54be9579",
+    "scripts/calculate_financial_v3.py": "d7c03e314ebc12c6d540fb61f5c2fb6fc651c8ade90483f1ebd80b9b8493df04",
+    "scripts/check_kp3_agent_c.py": "60c0360941cb0bbf269144c0bb4abf12c56bc302c3fa0c6be7f805c45d84ee03",
+    "scripts/check_kp3_calculator.py": "4b2faf2b454da1982e67524043272b93350ec6761859ce7fa1df8d0769de6762",
+    "scripts/check_kp3_contracts.py": "8bf81fcbb61fd7529baf6149882328dd23d9cf09319863038ef32b962d99608a",
+    "scripts/check_kp3_corpus.py": "1f98ff2ce0ac9c99335e87c302686b214cd1cdef93100a941c901ec2c50850fb",
+    "scripts/check_kp3_evaluation.py": "bcaba593ebbad43751dee400e0a16e71acd25bda462a65a117b4a534787dc874",
+    "scripts/check_kp3_financial_method.py": "0b63aba543e2a0d7d5d9fe5ef1130c51e18f6e3499e73f48cc94eb15bcd31d24",
+    "scripts/check_kp3_input.py": "e68b3f97129e9cdf9561a4922e89639adb35dd8c6c984ec6dd44df977f9acb09",
+    "scripts/check_kp3_one_shot_a.py": "2d49986d2f7cf53065f3dc7361c18502f7127f169ab5015d78afdeb566f8029e",
+    "scripts/check_kp3_product.py": "408cb4ba65eaaf2a42660cf95c9e31b20d03941e233edc23a4e29e9d17756b0c",
+    "scripts/check_kp3_retrieval.py": "b5dc3e03410c40b8ab9d3af7e00be5bca5252337bdbc03d755ad5c3361a4789e",
+    "scripts/check_kp3_scenario.py": "85209223a3ecd0aedda592a08fe08161706a2b6462065bd16b7ced0aaf9ec5a6",
+    "scripts/check_kp3_service_b.py": "a087acc89173e2a7785121f976526291bd2a6b9382763194f5aab6b73df1bcd8",
+    "scripts/check_local_demo.py": "52e7c7b67c885baa761f0b52a108b8521b3065266103c78cad9e6e381d732157",
+    "scripts/check_question_set.py": "1a7e54cb8eb1867abce192cce2e6ed9e3c170883e0e1aaa9738c063aa2c330b3",
+    "scripts/check_review.py": "81e881886dfc9dd7436335be1558d06179fae813ce4cb226d77a34b7ff7ef4cd",
+    "scripts/check_stage1.py": "1b2c6fa2af366f455d072a33ce46de3adf62410cf3018e34aff5134f70fa41dd",
+    "scripts/check_step10.py": "ba0b0fe3517ba2ad2a9212fdacbf5edfeb6abfb701a0d975b5ebc12e275bf4af",
+    "scripts/check_step11.py": "4f99613d31bd504f9edfc20e5382dd90d583cfe4e5f9246694788e12c04db3f1",
+    "scripts/check_step6.py": "65d320c0cd197f0196545889427b0880657a9309ff2b091f09871710dd0029b7",
+    "scripts/check_step7.py": "dde435a304a9970cb52bf053b42cbe30d11b46edba258ff876c2e4937c46db83",
+    "scripts/check_step8.py": "074f40c91487e5e195ee99fbdbc5fad4a6e75e8d6bca5321fe6429d5a40bafec",
+    "scripts/check_step9.py": "b9ea1f1a1d42153d4fdaf124530a8b1822b704801f9d7d1ab1a32afcdb148996",
+    "scripts/execute_agent_c.py": "0189d40f484b765846ec51e082ad818aba18792189139808db11ad6aad3cf99f",
+    "scripts/execute_one_shot_a.py": "07243693ea9821e6732b85d327c65e9a3381f0b26030a6328ba70055ddce43e4",
+    "scripts/execute_scenario_v1.py": "47cfa2442d2d69deed23ee08b37e8b7c6aa7d3bb373aef8827ed88e19af19767",
+    "scripts/execute_service_b.py": "c3faae81ae684e58b43c241eadf273ce68685a3da7ef110506a6580b45a791cf",
+    "scripts/extract_pdf.py": "cbab9270e0e1a6ba5a0c6d9384f28dcf4a8ce2c5e7db3f06aab0ca6cb81e5539",
+    "scripts/extract_pdf_v2.py": "01ebe7fe8a187182cd2d339c3d0edf36ade7aface990a721a0dc7ec6622fa4b4",
+    "scripts/freeze_kp3_evaluation.py": "bc999ab0966c5356a9e44937cb1d32c238070c9b51dfb41a22891098c2713d88",
+    "scripts/measure_step12.py": "9185e45914cdac3db5523dcf052a488f9bfe3c8a75f77655bec694b34f45e037",
+    "scripts/package_project.py": "b39ed9a2f263e57c9b0168edf0078d5525a14bd8a83a27d8da5299ed8e0e5f15",
+    "scripts/parse_financial_input.py": "5dcd2b5b2ca21acd5f5eebe81bd00f114e069485de0971b960201c87872911ab",
+    "scripts/prepare_kp3_evaluation.py": "d8f0e26eae3f7ebbb4b536b8a7935acb8236c32146afe73505e49479ca51f6ac",
+    "scripts/prepare_manual_fixture.py": "cfb10766d99b11c108929aacf108eb642af5da178c4750149127030c980848f0",
+    "scripts/prepare_question_set.py": "a5a8bff27a1dea7b4712bc30ebf4ba7a321c256b0e9831a0068af42b0919622a",
+    "scripts/prepare_synthetic_fixture.py": "fa994c4527f60efc65e3665d7129fd1c5c673f381cea21ece2115db9d2a107f0",
+    "scripts/replay_kp3_evaluation.py": "34fc79315edd09a0fdbe1088e08932bbf5114a2edef86188c79a8b30d48c1e29",
+    "scripts/run_local.py": "3f5229f248cb5f34623d8dd6e6319d320ce775b00e9400090dbd75c500491ba5",
+    "scripts/search_catalog.py": "2011a517f90b3f6d3b96ab1f030c74416eb60dde4601554778b92ed14e88540e",
+    "scripts/search_documents.py": "b1dde7b1eae1c1d15865e1e2539139876aa6057b5357e6c244202fd4552fd4fe",
+    "scripts/simulate_scenario.py": "1eea6282b8d40c99c743b451088334135cf50739e4f06c213d7e4a8eb38c80b2",
+    "src/financial_assistant/__init__.py": "eea0bfd15364208285f19580630c0e9312142e1bc876cf5fc23af7fc473834e7",
+    "src/financial_assistant/agent.py": "d851b643ba501a9a73e51076b936cd0f7907e68b9ee0bb55904eb2a8f0c40efb",
+    "src/financial_assistant/agent_c.py": "b23ba593fd4df0612bf6eb96b60cbf6d6177d881d22b262c194de69152efff3b",
+    "src/financial_assistant/agent_contracts_v2.py": "6fc8c398a133443c43bf2c9ee71b351a5d593c8ff365f9feb090223dc2c5b4c4",
+    "src/financial_assistant/agent_model_v2.py": "20935d6969b8398c45879986a2df27ff95aca6a2d5bca55090882e4a5e315781",
+    "src/financial_assistant/calculation_contracts.py": "0548b85afab5f44348a479f7b3ccaec2b8b47c51e5a80a8a8a2c0d50fb678a53",
+    "src/financial_assistant/catalog.py": "bd6f6f32d8c43db3f8d11a686a2fb63a16029c59e73b12996e6919a50805a8ae",
+    "src/financial_assistant/contracts.py": "5894effc517efdbddb3b9a10d4bd7268f9d277bde283e2e476fe9ea0b8a55ac2",
+    "src/financial_assistant/contracts_v2.py": "bc6162e7aabf4a4b69a55cd0454c5c8ae8955a306d2779dd12c2fffa0f4dfddc",
+    "src/financial_assistant/document_extraction.py": "93414d9bbfd21d7722ac9bca63b38d9e8f0aa321fee3f9c342f1f90307d944e8",
+    "src/financial_assistant/fact_admission.py": "701248c3fc769e409df75e59b7884c1f68785e7f50458ec7bfeba95912a2bad4",
+    "src/financial_assistant/finance.py": "2f19dec687077097544c0e0149af1877981ecfcbbeabe7debe8936739608d6e4",
+    "src/financial_assistant/financial_calculator.py": "2ad61a8a314f7c139037dfdaff8a67b73972c637094284db53adfd505fab6ec8",
+    "src/financial_assistant/input_binding.py": "80f3f55fe982953f42f69f5e23b7866b38509b80cae1fa4a9142effaf7d0808b",
+    "src/financial_assistant/input_contracts.py": "5102f0da9c4f11f4bac171be69a4960b81c0162b40ca13aea31072fab4d2055a",
+    "src/financial_assistant/legacy_adapter.py": "27ae33e8aa06db12dd17290f798945285d5a312b448ca4b9027bafd7f8c8d908",
+    "src/financial_assistant/local_model.py": "361c0fa61d5b9682c0946a61a8bdc69adaf611689782f095e21baecd9f3cc202",
+    "src/financial_assistant/measurement.py": "448ed93962e95a287a51e6dae2d3bf72934d060c1ec79e69ba003ec2929dc560",
+    "src/financial_assistant/measurement_collect.py": "2fb6e665064c6044fe2c3698a89f9ae71e1569e8032196b7c6bb894a7312f9c9",
+    "src/financial_assistant/one_shot_a.py": "df1354bfc2886d1399ef025b0f47a38867a8adde28580676a20a9c460c132e05",
+    "src/financial_assistant/one_shot_contracts.py": "c4408a05c74a78eb654202f0ad394ec6ff96b9a13ef0453b84713b8ec770ac7a",
+    "src/financial_assistant/one_shot_model.py": "663cfd0eb2c32bf69d105c5a6b6feee0d4b55d12c0b800112ade1f4114df67a4",
+    "src/financial_assistant/product_downloads.py": "15c9d4dc815b0b0ce692de63e9b7ea89251b4edf333a0d834f40341264a1e3ec",
+    "src/financial_assistant/product_history.py": "962ad43b2dc503e0b5f31eb826b1f53a1e87469c63300806a67a4e5ebb13c1c2",
+    "src/financial_assistant/product_service.py": "ea04b585d8fe8525c6911f2cdb513e067b96db18fe91133dad2ed17d50ffdd45",
+    "src/financial_assistant/question_set.py": "da3742fc718527859c67190af24a1c5459aa38951b6ca2c533739ca28e23f377",
+    "src/financial_assistant/retrieval.py": "1606742a9819c3a4e83f3a1538c1c13c958dfff0f263f77c5d2be469c53e7564",
+    "src/financial_assistant/retrieval_v2.py": "95671f2c32044792319bc30619cb75c93a3933f3b8a0b87b8488224dc877fab2",
+    "src/financial_assistant/russian_input.py": "d942cf7f09605d8015083fb97d935f46f69e2fac13e2f3af5b3a71399aec0e46",
+    "src/financial_assistant/scenario_contracts_v1.py": "0c7cd5ee0017b4f5f315036cf750deb10cc4a7c2859378d530c1cf14d68d745e",
+    "src/financial_assistant/scenario_ledger.py": "edb7ed3e4416627ef1f9db57c0c0b53571cc7fa425148508665212dbe5771599",
+    "src/financial_assistant/scenario_service.py": "5355f87d7cc2de3b5958837ea6aff0a03176646cfb2abecd45d21cfe90f13856",
+    "src/financial_assistant/service_b.py": "d73ef129dcef8e1a25a4278bebd300e3d04e3db38876811a3dc7b806262d83cb",
+    "src/financial_assistant/service_contracts.py": "b212c5621ccef7497dc3fc8c0833ebb564a6c4f9cebbbdbc7974652dc99766b7",
+    "src/financial_assistant/service_ui.py": "8c742d7f53b539426ef6445d4358392dba66e910a44107e493a206c98ffb0306",
+    "src/financial_assistant/simulation.py": "0e7b69c6c69021648485c33f7cbb95bf27909078ec9e6e24e88d4c35c1a45801",
+    "src/financial_assistant/simulation_view.py": "48cf83bce3d64909d2c321fbd196f45650fd7552ea1e32073742ff1142053065",
+    "src/financial_assistant/source_viewer.py": "8651a115876dbf7c03ba503570f8652b33747fc4ca3a92ab497ece32e4ec5639",
+    "src/financial_assistant/tasks.py": "77ef9e40805410457c8ff989569e0e48738fb520931b0b9371feebdd837b23d0",
+    "src/financial_assistant/user_path.py": "9ac7f5faa094846d4ed4e130834a23bfad7759e4a1e6863f7da010e18e53ee1f",
+    "tests/test_kp3_evaluation.py": "5867799a282c77d5355ab952d9c8107699f8f44b78e6cf623d91412b16c293d6"
+  },
+  "logical_resources": {
+    "pdf:phosagro-2023": {
+      "kind": "exact_primary_pdf",
+      "sha256": "6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90",
+      "byte_length": 2020478
+    },
+    "export:phosagro-2023": {
+      "kind": "extraction_export",
+      "sha256": "074c6a5923ca8fe03ef101515ff48679d2c2a31734958893c5eab6d7560ddfd5",
+      "byte_length": 317360
+    },
+    "pdf:phosagro-2024": {
+      "kind": "exact_primary_pdf",
+      "sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+      "byte_length": 1521928
+    },
+    "export:phosagro-2024": {
+      "kind": "extraction_export",
+      "sha256": "7c32620eb2705a5e65a22af9d3a6efd26f60cd89a144865a0da1bdbd154ce405",
+      "byte_length": 382781
+    },
+    "pdf:phosagro-2025": {
+      "kind": "exact_primary_pdf",
+      "sha256": "c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6",
+      "byte_length": 3574640
+    },
+    "export:phosagro-2025": {
+      "kind": "extraction_export",
+      "sha256": "b9b3e8b10a20266245a75eef0f3d63d076bdeb3ec742574a3af7c259ee249725",
+      "byte_length": 359506
+    },
+    "pdf:phosagro-2025-q1": {
+      "kind": "exact_primary_pdf",
+      "sha256": "8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc",
+      "byte_length": 1839208
+    },
+    "export:phosagro-2025-q1": {
+      "kind": "extraction_export",
+      "sha256": "3569f6e70f2a6cbfa85c0b75ef700e91f953612c9d009931018df6feedb03396",
+      "byte_length": 172306
+    },
+    "pdf:phosagro-2025-h1": {
+      "kind": "exact_primary_pdf",
+      "sha256": "38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd",
+      "byte_length": 1705179
+    },
+    "export:phosagro-2025-h1": {
+      "kind": "extraction_export",
+      "sha256": "4e9cbf499f581efa6e163cff081b96141db6ef5e9269a68dd4947027e5c96a04",
+      "byte_length": 267387
+    },
+    "pdf:phosagro-2025-9m": {
+      "kind": "exact_primary_pdf",
+      "sha256": "147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c",
+      "byte_length": 2158562
+    },
+    "export:phosagro-2025-9m": {
+      "kind": "extraction_export",
+      "sha256": "8c3e910e0a46f4e98424f9f74adbc937e5bb9f83e19da832235d59f6c97ceecc",
+      "byte_length": 267380
+    },
+    "pdf:segezha-2021": {
+      "kind": "exact_primary_pdf",
+      "sha256": "807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77",
+      "byte_length": 1856644
+    },
+    "export:segezha-2021": {
+      "kind": "extraction_export",
+      "sha256": "ecaaaac096bc4b63e05e4df1c9edb7bece414a5ec024a1772564c44708773ab6",
+      "byte_length": 510608
+    },
+    "pdf:segezha-2022": {
+      "kind": "exact_primary_pdf",
+      "sha256": "5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90",
+      "byte_length": 1819697
+    },
+    "export:segezha-2022": {
+      "kind": "extraction_export",
+      "sha256": "1d37680ff9efe2a527039c6862e5d7a5770bda313b667ccc53e63e8d1362f721",
+      "byte_length": 484578
+    },
+    "index:prepared": {
+      "kind": "retrieval_prepared",
+      "sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+      "byte_length": 139264
+    },
+    "index_manifest:prepared": {
+      "kind": "retrieval_manifest",
+      "sha256": "ebe5f4a987b92fe5d87c4a0f8949d57481dc2f45c7070118aef35fcb51f26d89",
+      "byte_length": 216
+    },
+    "index:automatic": {
+      "kind": "retrieval_automatic",
+      "sha256": "7d1dc62d3020272dec4695aefbbb8a523000c08c9ef208b21dcc11dd1da81943",
+      "byte_length": 147456
+    },
+    "index_manifest:automatic": {
+      "kind": "retrieval_manifest",
+      "sha256": "0ddcb2aed31acbe011f887299c074d135cb8afc5179c0e85e96345f43ef4f531",
+      "byte_length": 216
+    },
+    "model:server": {
+      "kind": "existing_ollama_executable",
+      "sha256": "544216ca2082b8bc19b4ba94b513f0098fa06774b232f3c140090e3449e322a5",
+      "byte_length": 41140104
+    },
+    "model:tag_manifest": {
+      "kind": "ollama_tag_manifest",
+      "sha256": "31d9857b5705086d352d4d6db04e86c5d0f6a2b5d59a4dc7ce5cdb271ccf9141",
+      "byte_length": 1022
+    },
+    "model:blob:e18a783aae5525fd2852fc94c985541a77e791e034abc2d3056474d59de336fc": {
+      "kind": "application/vnd.docker.container.image.v1+json",
+      "sha256": "e18a783aae5525fd2852fc94c985541a77e791e034abc2d3056474d59de336fc",
+      "byte_length": 487
+    },
+    "model:blob:3e4cb14174460404e7a233e531675303b2fbf7749c02f91864fe311ab6344e4f": {
+      "kind": "application/vnd.ollama.image.model",
+      "sha256": "3e4cb14174460404e7a233e531675303b2fbf7749c02f91864fe311ab6344e4f",
+      "byte_length": 2497280480
+    },
+    "model:blob:2d54db2b9bb29ce7db54fea63a891f5859603813c555b1f88b5e0994652897f9": {
+      "kind": "application/vnd.ollama.image.template",
+      "sha256": "2d54db2b9bb29ce7db54fea63a891f5859603813c555b1f88b5e0994652897f9",
+      "byte_length": 1506
+    },
+    "model:blob:d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12": {
+      "kind": "application/vnd.ollama.image.license",
+      "sha256": "d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12",
+      "byte_length": 11338
+    },
+    "model:blob:cff3f395ef3756ab63e58b0ad1b32bb6f802905cae1472e6a12034e4246fbbdb": {
+      "kind": "application/vnd.ollama.image.params",
+      "sha256": "cff3f395ef3756ab63e58b0ad1b32bb6f802905cae1472e6a12034e4246fbbdb",
+      "byte_length": 120
+    },
+    "model:blob:359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7": {
+      "kind": "application/vnd.docker.distribution.manifest.v2+json",
+      "sha256": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "byte_length": 859
+    }
+  },
+  "protocol_path": "evaluation/protocols/kp3_eval_v1/protocol.json",
+  "inputs_path": "data/evaluation/kp3_eval_v1/inputs.json",
+  "gold_path": "evaluation/fixtures/kp3_eval_v1/gold.json",
+  "runtime_isolation": {
+    "checked_files": [
+      "src/financial_assistant/__init__.py",
+      "src/financial_assistant/agent.py",
+      "src/financial_assistant/agent_c.py",
+      "src/financial_assistant/agent_contracts_v2.py",
+      "src/financial_assistant/agent_model_v2.py",
+      "src/financial_assistant/calculation_contracts.py",
+      "src/financial_assistant/catalog.py",
+      "src/financial_assistant/contracts.py",
+      "src/financial_assistant/contracts_v2.py",
+      "src/financial_assistant/document_extraction.py",
+      "src/financial_assistant/fact_admission.py",
+      "src/financial_assistant/finance.py",
+      "src/financial_assistant/financial_calculator.py",
+      "src/financial_assistant/input_binding.py",
+      "src/financial_assistant/input_contracts.py",
+      "src/financial_assistant/legacy_adapter.py",
+      "src/financial_assistant/local_model.py",
+      "src/financial_assistant/measurement.py",
+      "src/financial_assistant/measurement_collect.py",
+      "src/financial_assistant/one_shot_a.py",
+      "src/financial_assistant/one_shot_contracts.py",
+      "src/financial_assistant/one_shot_model.py",
+      "src/financial_assistant/product_downloads.py",
+      "src/financial_assistant/product_history.py",
+      "src/financial_assistant/product_service.py",
+      "src/financial_assistant/question_set.py",
+      "src/financial_assistant/retrieval.py",
+      "src/financial_assistant/retrieval_v2.py",
+      "src/financial_assistant/russian_input.py",
+      "src/financial_assistant/scenario_contracts_v1.py",
+      "src/financial_assistant/scenario_ledger.py",
+      "src/financial_assistant/scenario_service.py",
+      "src/financial_assistant/service_b.py",
+      "src/financial_assistant/service_contracts.py",
+      "src/financial_assistant/service_ui.py",
+      "src/financial_assistant/simulation.py",
+      "src/financial_assistant/simulation_view.py",
+      "src/financial_assistant/source_viewer.py",
+      "src/financial_assistant/tasks.py",
+      "src/financial_assistant/user_path.py",
+      "app_kp3/product_app.py",
+      "app_kp3/scenario_app.py",
+      "app_kp3/service_b_app.py"
+    ],
+    "new_gold_imports": 0,
+    "scope": "New14 evaluator isolated from existing answer paths; old legacy replay remains unchanged"
+  },
+  "actual_final_method_attempts": 0,
+  "reserved_unseen_real": 0
+}

@@ -1,0 +1,1255 @@
+{
+  "schema_version": "kp3-search-suite-0.1",
+  "queries": [
+    {
+      "query_id": "query-83d3ee8f666b603f5521",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2023",
+            "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-b33f5dee2bd09e2e79d9",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2024",
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-53c0416e97f75b4c50ef",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2025-01-01",
+            "end": "2025-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025",
+            "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-04eaa3b665f6e0106955",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2025-01-01",
+            "end": "2025-03-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-q1",
+            "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-87955cd8796c2e8770e9",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-06-30"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-h1",
+            "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-8f4fb839a8fb7fd1aa1e",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-09-30"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-9m",
+            "version_id": "sha256:147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-75da5be10f1956ef2bd6",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2021",
+            "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-db0c52abefcabcf482dc",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2022",
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-73ad37d301bd90b50a35",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2021",
+            "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-1840ae5dc0ab614520a1",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2022",
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-b26c519211fbc072e028",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2023",
+            "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-34094595efccfcbfa79b",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2024",
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-cd0a312adf6361df4f30",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2025-01-01",
+            "end": "2025-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025",
+            "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-1cc43f7a775d2d29d8c0",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2024-01-01",
+            "end": "2024-03-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2025-01-01",
+            "end": "2025-03-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-q1",
+            "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-d47236cc348d269c7a44",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2024-01-01",
+            "end": "2024-06-30"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-06-30"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-h1",
+            "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-f0b59fdb700b18251484",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2024-01-01",
+            "end": "2024-09-30"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-09-30"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-9m",
+            "version_id": "sha256:147434899b7c257f79785be33759577e113723b4d69e89e799f31c9bfbab0b1c"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-19b8d20515a6a6ab0cac",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2020-01-01",
+            "end": "2020-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2021",
+            "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-9fd24090997ea9c33273",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2022",
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-c5037c5ccd7e1a58ac05",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль и выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          },
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2024",
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-1ccdffcd5eb690f9f8ef",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль и выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          },
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2025-01-01",
+            "end": "2025-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025",
+            "version_id": "sha256:c5600649416af90606706c73d62b4f2741a68e42dbf7216f2b6ee501bfaa09e6"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-bfc595486f259b32336f",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль и выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          },
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2025-01-01",
+            "end": "2025-03-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-q1",
+            "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-a67ab61b37e62992f436",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль и выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          },
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "year_to_date",
+            "start": "2025-01-01",
+            "end": "2025-06-30"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-h1",
+            "version_id": "sha256:38b45c879ad4278771b1bad4fee742f2feea79de0aecd000d1bf7cf1053767cd"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-2f97d14997e86805f9af",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль и выручка",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          },
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2021-01-01",
+            "end": "2021-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2021",
+            "version_id": "sha256:807aebac1cdbb8e759314bd1873567ad714988eae1da8b72cd983dea84e0de77"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-b0c97437363c0ef7c21d",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль и выручка",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          },
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2022",
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-b5ea59c606bf4e242eb3",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "операционная прибыль",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_profit",
+            "definition_id": "operating_profit:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2023",
+            "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-9c92b4145141ba875c9e",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "segezha_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "segezha-2022",
+            "version_id": "sha256:5fdc407326433bea53855e1aeaaf6e569e483bfac65cf93903a5901e930dbf90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-7d602830943b5bbdb411",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2024",
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-33318296be37bb02d1f5",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2022-01-01",
+            "end": "2022-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2023",
+            "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    {
+      "query_id": "query-839f8da87a7c25e26b31",
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "CFO",
+        "organization_id": "phosagro_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "operating_cash_flow",
+            "definition_id": "operating_cash_flow:nonfinancial_ifrs_net_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2024-01-01",
+            "end": "2024-03-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "quarter",
+            "start": "2025-01-01",
+            "end": "2025-03-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "phosagro-2025-q1",
+            "version_id": "sha256:8783a04a48f33019e39e89a548a829632fcc2dffb4555d8dcfa95d7aea5dedcc"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1000000
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    }
+  ]
+}

@@ -1,0 +1,1009 @@
+{
+  "schema_version": "kp3-protocol-0.1",
+  "suite_digest": "af4f27946b8892043ab40ff6bdd5548471f227ae0d99147c6dbfeb14ffb2b814",
+  "design": "controlled_comparison_on_known_corpus",
+  "seed": 20261110,
+  "methods": [
+    "B",
+    "A",
+    "C"
+  ],
+  "order": [
+    {
+      "attempt_id": "primary-001",
+      "case_id": "cmp-09",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-002",
+      "case_id": "cmp-09",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-003",
+      "case_id": "cmp-09",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-004",
+      "case_id": "cmp-38",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-005",
+      "case_id": "cmp-38",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-006",
+      "case_id": "cmp-38",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-007",
+      "case_id": "cmp-14",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-008",
+      "case_id": "cmp-14",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-009",
+      "case_id": "cmp-14",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-010",
+      "case_id": "cmp-40",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-011",
+      "case_id": "cmp-40",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-012",
+      "case_id": "cmp-40",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-013",
+      "case_id": "cmp-10",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-014",
+      "case_id": "cmp-10",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-015",
+      "case_id": "cmp-10",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-016",
+      "case_id": "cmp-17",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-017",
+      "case_id": "cmp-17",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-018",
+      "case_id": "cmp-17",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-019",
+      "case_id": "cmp-01",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-020",
+      "case_id": "cmp-01",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-021",
+      "case_id": "cmp-01",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-022",
+      "case_id": "cmp-22",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-023",
+      "case_id": "cmp-22",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-024",
+      "case_id": "cmp-22",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-025",
+      "case_id": "cmp-36",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-026",
+      "case_id": "cmp-36",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-027",
+      "case_id": "cmp-36",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-028",
+      "case_id": "cmp-30",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-029",
+      "case_id": "cmp-30",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-030",
+      "case_id": "cmp-30",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-031",
+      "case_id": "cmp-02",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-032",
+      "case_id": "cmp-02",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-033",
+      "case_id": "cmp-02",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-034",
+      "case_id": "cmp-25",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-035",
+      "case_id": "cmp-25",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-036",
+      "case_id": "cmp-25",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-037",
+      "case_id": "cmp-04",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-038",
+      "case_id": "cmp-04",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-039",
+      "case_id": "cmp-04",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-040",
+      "case_id": "cmp-33",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-041",
+      "case_id": "cmp-33",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-042",
+      "case_id": "cmp-33",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-043",
+      "case_id": "cmp-03",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-044",
+      "case_id": "cmp-03",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-045",
+      "case_id": "cmp-03",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-046",
+      "case_id": "cmp-07",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-047",
+      "case_id": "cmp-07",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-048",
+      "case_id": "cmp-07",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-049",
+      "case_id": "cmp-16",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-050",
+      "case_id": "cmp-16",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-051",
+      "case_id": "cmp-16",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-052",
+      "case_id": "cmp-06",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-053",
+      "case_id": "cmp-06",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-054",
+      "case_id": "cmp-06",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-055",
+      "case_id": "cmp-08",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-056",
+      "case_id": "cmp-08",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-057",
+      "case_id": "cmp-08",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-058",
+      "case_id": "cmp-27",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-059",
+      "case_id": "cmp-27",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-060",
+      "case_id": "cmp-27",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-061",
+      "case_id": "cmp-32",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-062",
+      "case_id": "cmp-32",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-063",
+      "case_id": "cmp-32",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-064",
+      "case_id": "cmp-19",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-065",
+      "case_id": "cmp-19",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-066",
+      "case_id": "cmp-19",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-067",
+      "case_id": "cmp-23",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-068",
+      "case_id": "cmp-23",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-069",
+      "case_id": "cmp-23",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-070",
+      "case_id": "cmp-34",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-071",
+      "case_id": "cmp-34",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-072",
+      "case_id": "cmp-34",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-073",
+      "case_id": "cmp-05",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-074",
+      "case_id": "cmp-05",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-075",
+      "case_id": "cmp-05",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-076",
+      "case_id": "cmp-28",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-077",
+      "case_id": "cmp-28",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-078",
+      "case_id": "cmp-28",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-079",
+      "case_id": "cmp-13",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-080",
+      "case_id": "cmp-13",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-081",
+      "case_id": "cmp-13",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-082",
+      "case_id": "cmp-29",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-083",
+      "case_id": "cmp-29",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-084",
+      "case_id": "cmp-29",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-085",
+      "case_id": "cmp-18",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-086",
+      "case_id": "cmp-18",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-087",
+      "case_id": "cmp-18",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-088",
+      "case_id": "cmp-11",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-089",
+      "case_id": "cmp-11",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-090",
+      "case_id": "cmp-11",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-091",
+      "case_id": "cmp-26",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-092",
+      "case_id": "cmp-26",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-093",
+      "case_id": "cmp-26",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-094",
+      "case_id": "cmp-15",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-095",
+      "case_id": "cmp-15",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-096",
+      "case_id": "cmp-15",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-097",
+      "case_id": "cmp-35",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-098",
+      "case_id": "cmp-35",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-099",
+      "case_id": "cmp-35",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-100",
+      "case_id": "cmp-39",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-101",
+      "case_id": "cmp-39",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-102",
+      "case_id": "cmp-39",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-103",
+      "case_id": "cmp-21",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-104",
+      "case_id": "cmp-21",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-105",
+      "case_id": "cmp-21",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-106",
+      "case_id": "cmp-24",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-107",
+      "case_id": "cmp-24",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-108",
+      "case_id": "cmp-24",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-109",
+      "case_id": "cmp-31",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-110",
+      "case_id": "cmp-31",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-111",
+      "case_id": "cmp-31",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-112",
+      "case_id": "cmp-37",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-113",
+      "case_id": "cmp-37",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-114",
+      "case_id": "cmp-37",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-115",
+      "case_id": "cmp-12",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-116",
+      "case_id": "cmp-12",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-117",
+      "case_id": "cmp-12",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-118",
+      "case_id": "cmp-20",
+      "method": "C",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-119",
+      "case_id": "cmp-20",
+      "method": "A",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "primary-120",
+      "case_id": "cmp-20",
+      "method": "B",
+      "phase": "primary"
+    },
+    {
+      "attempt_id": "warm-01",
+      "case_id": "cmp-02",
+      "method": "C",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-02",
+      "case_id": "cmp-02",
+      "method": "A",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-03",
+      "case_id": "cmp-02",
+      "method": "B",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-04",
+      "case_id": "cmp-12",
+      "method": "C",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-05",
+      "case_id": "cmp-12",
+      "method": "A",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-06",
+      "case_id": "cmp-12",
+      "method": "B",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-07",
+      "case_id": "cmp-13",
+      "method": "C",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-08",
+      "case_id": "cmp-13",
+      "method": "A",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-09",
+      "case_id": "cmp-13",
+      "method": "B",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-10",
+      "case_id": "cmp-19",
+      "method": "C",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-11",
+      "case_id": "cmp-19",
+      "method": "A",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-12",
+      "case_id": "cmp-19",
+      "method": "B",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-13",
+      "case_id": "cmp-26",
+      "method": "C",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-14",
+      "case_id": "cmp-26",
+      "method": "A",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-15",
+      "case_id": "cmp-26",
+      "method": "B",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-16",
+      "case_id": "cmp-29",
+      "method": "C",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-17",
+      "case_id": "cmp-29",
+      "method": "A",
+      "phase": "warm_repeat"
+    },
+    {
+      "attempt_id": "warm-18",
+      "case_id": "cmp-29",
+      "method": "B",
+      "phase": "warm_repeat"
+    }
+  ],
+  "primary_attempts": 120,
+  "warm_attempts": 18,
+  "max_attempts": 138,
+  "max_model_requests": 414,
+  "top_k": 32,
+  "outer_timeout_s": 180,
+  "retry_policy": "no_automatic_retries_keep_first_outcome",
+  "cold_warm": "record_actual_setup_and_state_counterbalanced_A_C",
+  "answer_format": "typed_registered_Answer_not_A_raw",
+  "dev_target": "own07_calculator_v03_not_fabricated_B_search",
+  "reserved_unseen_real": 0,
+  "actual_method_runs_on14": 0,
+  "scope_gates": [
+    "nonfinancial_group_IFRS",
+    "same_exact_version_margin",
+    "no_unproven_cross_original_comparability",
+    "all8_real_publications_unknown",
+    "no_automatic_candidates",
+    "no_FX_or_pp_operation"
+  ],
+  "retrieval_unique_queries": 29,
+  "model": {
+    "model": "qwen3:4b",
+    "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "server_version": "0.40.15",
+    "endpoint": "http://127.0.0.1:11435",
+    "cloud_enabled": false,
+    "executable_sha256": "544216ca2082b8bc19b4ba94b513f0098fa06774b232f3c140090e3449e322a5"
+  },
+  "versions": {
+    "Catalog": "0.2",
+    "Calculation": "0.3",
+    "Input": "kp3-input-0.1",
+    "B": "kp3-answer-0.1",
+    "C": "kp3-answer-0.2",
+    "A": "kp3-a-answer-0.1",
+    "scenario": "kp3-scenario-outcome-0.1",
+    "history": "kp3-history-0.1",
+    "C_prompt": "bounded-financial-tools-v2",
+    "A_prompt": "one-shot-financial-selection-v1"
+  },
+  "limits": {
+    "C": {
+      "max_calls": 8,
+      "timeout_s": 180,
+      "per_call_s": 60,
+      "max_search_results": 32,
+      "max_output_tokens": 384,
+      "max_action_bytes": 4096,
+      "max_observation_bytes": 32768,
+      "max_tool_bytes": 8192
+    },
+    "A": {
+      "timeout_s": 180,
+      "per_call_s": 60,
+      "top_k": 32,
+      "max_output_tokens": 384,
+      "max_choice_bytes": 4096,
+      "max_observation_bytes": 32768
+    },
+    "B": {
+      "outer_timeout_s": 180,
+      "model_calls": 0
+    }
+  },
+  "budget": {
+    "max_A_requests": 46,
+    "max_C_requests": 368,
+    "max_chat_requests": 414,
+    "max_output_tokens": 158976,
+    "max_model_input_context_per_call": 8192,
+    "max_serial_wall_s": 24840,
+    "unknown_usage_policy": "keep_unknown_and_conservatively_reserve_remaining_per_method_cap",
+    "new_actual_calls_authorized_on14": false
+  },
+  "metric_denominators": {
+    "financial_primary_per_method": {
+      "attempts": 40,
+      "numeric": 32,
+      "refusal": 8
+    },
+    "warm_repeats_per_method": 6,
+    "parser": 8,
+    "scenario": {
+      "total": 12,
+      "own": 8,
+      "real_readiness": 4
+    },
+    "robustness": 12,
+    "retrieval_queries": 29,
+    "retrieval_required_evidence": 46,
+    "source_lineage_clusters": 2,
+    "reserved_unseen_real": 0
+  },
+  "fault_registry": {
+    "unknown_id": {
+      "profile": "isolated_own_fixture",
+      "invariant": "reject_unregistered_reference",
+      "execution_on14": false
+    },
+    "duplicate_id": {
+      "profile": "isolated_own_fixture",
+      "invariant": "reject_duplicate_reference",
+      "execution_on14": false
+    },
+    "swapped_roles": {
+      "profile": "isolated_own_fixture",
+      "invariant": "reject_order_change",
+      "execution_on14": false
+    },
+    "other_cell": {
+      "profile": "isolated_own_fixture",
+      "invariant": "reject_wrong_evidence",
+      "execution_on14": false
+    },
+    "wrong_sha_page": {
+      "profile": "isolated_own_fixture",
+      "invariant": "reject_wrong_version_or_page",
+      "execution_on14": false
+    },
+    "lost_header": {
+      "profile": "isolated_own_fixture",
+      "invariant": "reject_missing_unit_or_header",
+      "execution_on14": false
+    },
+    "extra_claim": {
+      "profile": "isolated_own_fixture",
+      "invariant": "reject_extra_numerical_narrative",
+      "execution_on14": false
+    },
+    "lost_claim": {
+      "profile": "isolated_own_fixture",
+      "invariant": "reject_incomplete_answer",
+      "execution_on14": false
+    },
+    "automatic_candidate": {
+      "profile": "isolated_own_fixture",
+      "invariant": "no_checked_admission",
+      "execution_on14": false
+    },
+    "changed_artifact": {
+      "profile": "isolated_own_fixture",
+      "invariant": "technical_not_financial_missing",
+      "execution_on14": false
+    },
+    "untrusted_instruction": {
+      "profile": "isolated_own_fixture",
+      "invariant": "no_execution_or_value_injection",
+      "execution_on14": false
+    },
+    "unknown_usage": {
+      "profile": "isolated_own_fixture",
+      "invariant": "preserve_unknown_not_zero",
+      "execution_on14": false
+    },
+    "own_price_gap": {
+      "profile": "own12_copy_only",
+      "invariant": "blocked_price_missing_no_partial_pnl",
+      "execution_on14": false
+    }
+  },
+  "input_policy": "Only case.source and case.answers enter registered methods; target/profile/fault setup is trusted; no evaluator gold/targets/expected/override sent to model",
+  "retrieval_profile": {
+    "primary_kind": "prepared",
+    "top_k": 32,
+    "automatic": "candidate_diagnostic_only_not_admitted",
+    "validation_rechecks": "count_actual07_rechecks_separately"
+  }
+}
