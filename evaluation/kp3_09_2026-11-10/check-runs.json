@@ -1,0 +1,949 @@
+{
+  "runs": [
+    {
+      "name": "unit-regression",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 38.3885,
+      "passed": true
+    },
+    {
+      "name": "contracts03",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_contracts.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.0956,
+      "passed": true
+    },
+    {
+      "name": "method04",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_financial_method.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1289,
+      "passed": true
+    },
+    {
+      "name": "corpus05",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_corpus.py",
+        "--resource-map",
+        "tmp/local-resources.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.3223,
+      "passed": true
+    },
+    {
+      "name": "retrieval06",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_retrieval.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1275,
+      "passed": true
+    },
+    {
+      "name": "calculator07",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_calculator.py",
+        "--resources",
+        "tmp/local-resources.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 3.3124,
+      "passed": true
+    },
+    {
+      "name": "input08",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_input.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.4598,
+      "passed": true
+    },
+    {
+      "name": "service09",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--report",
+        "tmp/service-final-report.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 6.0777,
+      "passed": true
+    },
+    {
+      "name": "fixed",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "fixed",
+        "--source",
+        "manual"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1224,
+      "passed": true
+    },
+    {
+      "name": "synthetic",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "scenario"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2164,
+      "passed": true
+    },
+    {
+      "name": "historical-legacy",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "scenario",
+        "--case",
+        "real-source"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2036,
+      "passed": true
+    },
+    {
+      "name": "questions",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "questions"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.224,
+      "passed": true
+    },
+    {
+      "name": "replay",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "replay",
+        "--run-dir",
+        "evaluation/step12_2026-11-09/run-02-environment-retry"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1329,
+      "passed": true
+    },
+    {
+      "name": "operation-direct_fact_v1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\operation-direct_fact_v1.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2594,
+      "passed": true
+    },
+    {
+      "name": "operation-absolute_change_v1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\operation-absolute_change_v1.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.254,
+      "passed": true
+    },
+    {
+      "name": "operation-relative_change_v1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\operation-relative_change_v1.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2727,
+      "passed": true
+    },
+    {
+      "name": "operation-scale_v1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\operation-scale_v1.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2578,
+      "passed": true
+    },
+    {
+      "name": "operation-operating_margin_v1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\operation-operating_margin_v1.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2442,
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2023",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\prepared-phosagro-2023.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2733,
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2023",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\historical-phosagro-2023.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.2255,
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2023",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/automatic-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\automatic-phosagro-2023.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.2218,
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2024",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\prepared-phosagro-2024.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2502,
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2024",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\historical-phosagro-2024.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.2248,
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2024",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/automatic-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\automatic-phosagro-2024.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.212,
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2025",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\prepared-phosagro-2025.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2728,
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2025",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\historical-phosagro-2025.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.2279,
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2025",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/automatic-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\automatic-phosagro-2025.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.212,
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2025-q1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\prepared-phosagro-2025-q1.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2642,
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2025-q1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\historical-phosagro-2025-q1.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.217,
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2025-q1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/automatic-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\automatic-phosagro-2025-q1.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.2107,
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2025-h1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\prepared-phosagro-2025-h1.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2623,
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2025-h1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\historical-phosagro-2025-h1.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.2201,
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2025-h1",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/automatic-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\automatic-phosagro-2025-h1.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.1976,
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2025-9m",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\prepared-phosagro-2025-9m.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.265,
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2025-9m",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\historical-phosagro-2025-9m.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.214,
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2025-9m",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/automatic-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\automatic-phosagro-2025-9m.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.1992,
+      "passed": true
+    },
+    {
+      "name": "prepared-segezha-2021",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\prepared-segezha-2021.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2559,
+      "passed": true
+    },
+    {
+      "name": "historical-segezha-2021",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\historical-segezha-2021.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.2284,
+      "passed": true
+    },
+    {
+      "name": "automatic-segezha-2021",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/automatic-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\automatic-segezha-2021.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.2068,
+      "passed": true
+    },
+    {
+      "name": "prepared-segezha-2022",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\prepared-segezha-2022.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2691,
+      "passed": true
+    },
+    {
+      "name": "historical-segezha-2022",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\historical-segezha-2022.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.2076,
+      "passed": true
+    },
+    {
+      "name": "automatic-segezha-2022",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/automatic-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\automatic-segezha-2022.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.2021,
+      "passed": true
+    },
+    {
+      "name": "clarification",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\clarification.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 3,
+      "expected_exit_code": 3,
+      "elapsed_s": 0.1861,
+      "passed": true
+    },
+    {
+      "name": "clarification-applied",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\clarification-applied.input.json",
+        "--method",
+        "B",
+        "--answers",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\clarification-applied.answers.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.2594,
+      "passed": true
+    },
+    {
+      "name": "period-conflict",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\period-conflict.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.1709,
+      "passed": true
+    },
+    {
+      "name": "missing-prepared-quarter",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\missing-prepared-quarter.input.json",
+        "--method",
+        "B"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.1753,
+      "passed": true
+    },
+    {
+      "name": "unsupported-A",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\unsupported-A.input.json",
+        "--method",
+        "A"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.1405,
+      "passed": true
+    },
+    {
+      "name": "unsupported-C",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\unsupported-C.input.json",
+        "--method",
+        "C"
+      ],
+      "exit_code": 4,
+      "expected_exit_code": 4,
+      "elapsed_s": 0.1508,
+      "passed": true
+    },
+    {
+      "name": "index-missing",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\index-missing.context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\operation-direct_fact_v1.input.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "elapsed_s": 0.1923,
+      "passed": true
+    },
+    {
+      "name": "changed-config",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_service_b.py",
+        "--context",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\changed-config.context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-09-worktree\\tmp\\cli-checks-09\\operation-direct_fact_v1.input.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "elapsed_s": 0.2267,
+      "passed": true
+    }
+  ],
+  "completed_at": "2026-11-10T06:55:14.705521+00:00"
+}

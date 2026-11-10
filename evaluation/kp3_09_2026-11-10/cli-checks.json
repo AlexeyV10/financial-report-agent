@@ -1,0 +1,335 @@
+{
+  "total": 37,
+  "passed": 37,
+  "checks": [
+    {
+      "name": "operation-direct_fact_v1",
+      "run_id": "run-ff8100b6abed44de96c1df431c9c3d70",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "operation-absolute_change_v1",
+      "run_id": "run-edc9c982f9164e73b3a5cc9c9c7f5d25",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "operation-relative_change_v1",
+      "run_id": "run-c667120a7519498bad1f7638a6bd079d",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "operation-scale_v1",
+      "run_id": "run-b7ec242b2000492080e2af5597793835",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "operation-operating_margin_v1",
+      "run_id": "run-45d36aee5c5c4140a07c6fd0d92227fa",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2023",
+      "run_id": "run-76532a3ca98b4c7e884445e3054b35aa",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2023",
+      "run_id": "run-fed3c45ddd354383b6c2dd66dff93af0",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown",
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2023",
+      "run_id": "run-34fd027e26024528be8617da2ad00f05",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "unverified_candidate",
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2024",
+      "run_id": "run-c4a0513d6fab47e1bf6f53b9e6c7f24d",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2024",
+      "run_id": "run-bbe5d6c856f7400e93b0fb79904768e2",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown",
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2024",
+      "run_id": "run-04b62b5b4afa4ac6ba430105e372b581",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "unverified_candidate",
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2025",
+      "run_id": "run-f6565b0d39244dafa7a313db1ec52aab",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2025",
+      "run_id": "run-5dee8a2ae1294fe8946a4983a3dbf1fc",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown",
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2025",
+      "run_id": "run-6a68c3c4115b4b19b2e2b43275d6c307",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "unverified_candidate",
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2025-q1",
+      "run_id": "run-bfcc5ef262b94f41af2ba9bbfad3a17a",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2025-q1",
+      "run_id": "run-3e90545067b648038189a9781a5046e3",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown",
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2025-q1",
+      "run_id": "run-43617f4958ce4c9ca96e6b3588dca48c",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "unverified_candidate",
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2025-h1",
+      "run_id": "run-33f7525307bf4129b64e9aceedd01ad5",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2025-h1",
+      "run_id": "run-002ad60322774d82bbb9e998c1068d70",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown",
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2025-h1",
+      "run_id": "run-7e0ff831ac1e4908bf98deaafa738873",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "unverified_candidate",
+      "passed": true
+    },
+    {
+      "name": "prepared-phosagro-2025-9m",
+      "run_id": "run-6b139e196584413cb2fa8580beff93d2",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "historical-phosagro-2025-9m",
+      "run_id": "run-f243c44b397d494d996e693a5784a2ca",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown",
+      "passed": true
+    },
+    {
+      "name": "automatic-phosagro-2025-9m",
+      "run_id": "run-5c6bdc6943874f8383690c66869d4eaf",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "unverified_candidate",
+      "passed": true
+    },
+    {
+      "name": "prepared-segezha-2021",
+      "run_id": "run-fdfb10f1a46e41609fbe22367668300a",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "historical-segezha-2021",
+      "run_id": "run-1341f8d618b9432fbddb2625a491a0d4",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown",
+      "passed": true
+    },
+    {
+      "name": "automatic-segezha-2021",
+      "run_id": "run-d29fb3ca01984282868f52fa55af44cb",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "unverified_candidate",
+      "passed": true
+    },
+    {
+      "name": "prepared-segezha-2022",
+      "run_id": "run-b1f604b1a947463b9de00c95352bf0e0",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "historical-segezha-2022",
+      "run_id": "run-181858919bca41ec921e6d39ed7588d9",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown",
+      "passed": true
+    },
+    {
+      "name": "automatic-segezha-2022",
+      "run_id": "run-869e492afb314207960931e4a55ee7bb",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "unverified_candidate",
+      "passed": true
+    },
+    {
+      "name": "clarification",
+      "run_id": "run-a52ad5a3bd8649ddac9ec2353f1faa9c",
+      "execution_status": "awaiting_clarification",
+      "request_status": "awaiting_clarification",
+      "financial_status": null,
+      "reason_code": "missing_organization",
+      "passed": true
+    },
+    {
+      "name": "clarification-applied",
+      "run_id": "run-44589ac2c1bf4c5eade822eab903278e",
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok",
+      "passed": true
+    },
+    {
+      "name": "period-conflict",
+      "run_id": "run-43408517a1d24ee989dd04e78a49bbd5",
+      "execution_status": "completed",
+      "request_status": "conflict",
+      "financial_status": null,
+      "reason_code": "incompatible_periods",
+      "passed": true
+    },
+    {
+      "name": "missing-prepared-quarter",
+      "run_id": "run-edf2cc95dd9243e3b4949a48539a27d0",
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "no_compatible_fact",
+      "passed": true
+    },
+    {
+      "name": "unsupported-A",
+      "run_id": "run-bbc19de5b4154342a457d1739478becf",
+      "execution_status": "completed",
+      "request_status": "unsupported",
+      "financial_status": null,
+      "reason_code": "method_not_supported",
+      "passed": true
+    },
+    {
+      "name": "unsupported-C",
+      "run_id": "run-6cdbc9e9a1f341628bc82a53cfac4ec6",
+      "execution_status": "completed",
+      "request_status": "unsupported",
+      "financial_status": null,
+      "reason_code": "method_not_supported",
+      "passed": true
+    },
+    {
+      "name": "index-missing",
+      "run_id": "run-b1e6e40e2dea421fab6abb4dd6610e3c",
+      "execution_status": "error",
+      "reason_code": "index_missing",
+      "passed": true
+    },
+    {
+      "name": "changed-config",
+      "run_id": "run-f6ef146d6da24c85b81dfe5cd7941669",
+      "execution_status": "error",
+      "reason_code": "index_configuration_mismatch",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "first_ui_issue": "Direct PDF route served exact bytes but IAB displayed blank; corrected to existing local Poppler page renderer, no new source/extractor.",
+  "interrupted_ui": "Local helper ended across user interruption; restarted only our recorded local process and continued actual UI checks.",
+  "test_failures": 0,
+  "ui_images": "Only local tmp JPEG proof; all primary renders remain tmp"
+}

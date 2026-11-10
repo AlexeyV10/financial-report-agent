@@ -1,0 +1,19 @@
+test_clarification (test_service_b_app.ServiceAppTests.test_clarification) ... 2026-11-10 03:31:15.952 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_direct (test_service_b_app.ServiceAppTests.test_direct) ... 2026-11-10 03:31:16.309 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_empty_form_no_hidden_defaults (test_service_b_app.ServiceAppTests.test_empty_form_no_hidden_defaults) ... 2026-11-10 03:31:16.555 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_historical (test_service_b_app.ServiceAppTests.test_historical) ... 2026-11-10 03:31:16.715 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_margin (test_service_b_app.ServiceAppTests.test_margin) ... 2026-11-10 03:31:16.910 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_premise (test_service_b_app.ServiceAppTests.test_premise) ... 2026-11-10 03:31:17.151 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_stale_answer_hidden_on_changed_input (test_service_b_app.ServiceAppTests.test_stale_answer_hidden_on_changed_input) ... 2026-11-10 03:31:17.396 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.699s
+
+OK

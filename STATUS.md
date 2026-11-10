@@ -1,3 +1,9 @@
+## КП3-09 завершён технически — 10.11.2026
+
+КП3-09,10.11.2026: единый fixed B service/Answer0.1 и новый изолированный Streamlit UI. Обязательный поиск06 предшествует exact Evidence resolution/source checks/калькулятору07, skipped/error/clarification видимы.506 unit (467 прежних+39 новых),7 отдельных UI AppTest,37 новых CLI/checkers03–09/5legacy прошли;5 own+104 real known service-cases совпали с независимым reference07/Decimal80. Реальная CUA-проверка формы/ввода/уточнений/пяти операций/предпосылки/источника/сброса/historical/conflict/missing/technical error сохранена. Новых real Fact/модели нет, все8 publication unknown, historical закрыт. Не benchmark/freeze14. Только ветка09/зависимый PR в08, без merge.
+
+Фактическая Git-доставка — evaluation/kp3_09_2026-11-10/git-publication.json и финальная локальная квитанция. Последнее поручение пользователя: после доставки09 сразу применить сохранённый промт10 в отдельной ветке; перед11 остановиться. На момент этой технической записи10 ещё не начат. Dirty-root/старый UI/venv/0.1/0.2/0.3/old gold сохранены.
+
 ## КП3-08 завершён технически — 10.11.2026
 
 КП3-08,10.11.2026: ограниченный детерминированный русский ввод, структурированная форма/адаптер и явные уточнения; отдельные Input/Form/Binding0.1 и узкая проверка передачи в Request0.3.467 unit-тестов (403 прежних+64 новых), checkers03–08,5 legacy CLI и117 новых CLI прошли.76 собственных открытых input-cases с отдельно заданными expected;15 числовых real probes совпали с независимым reference07/Decimal80. Original_question/выбор/предпосылка/история сохранены; causal why не выдумывается. Все8 publication unknown/historical закрыты; новых real Fact/моделей/UI/сервиса нет. Только ветка08/зависимый PR в07, без merge, не benchmark/freeze14.

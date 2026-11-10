@@ -1,0 +1,70 @@
+{
+  "checks": [
+    {
+      "name": "prior_structured_form",
+      "run_id": "run-f3ce2ef6589342eb80cf4541608e391a",
+      "observed": "507689 млн руб.; observed before user continuation"
+    },
+    {
+      "name": "prior_exact_source_page",
+      "observed": "PNG exact PDF p4 with printed320 displayed; stale source then404 after mode change; prior UI session"
+    },
+    {
+      "name": "false_premise",
+      "run_id": "run-4488e35a313d4e5e8b1da5f05e37febb",
+      "observed": "67385 млн руб.; указано, что был рост; причина не исследовалась"
+    },
+    {
+      "name": "clarification_no_money",
+      "run_id": "run-7b6a9b947e794d68b3f23fab25a8350a",
+      "observed": "Нужно уточнение организации; финансовое число отсутствует"
+    },
+    {
+      "name": "clarification_applied",
+      "run_id": "run-53020857d9fb479c9d449176704885cd",
+      "observed": "507689 млн руб.; исходный вопрос без компании сохранён"
+    },
+    {
+      "name": "scale",
+      "run_id": "run-2e3bd21aec114521adf4a0c1b7f784c6",
+      "observed": "507.689 млрд руб."
+    },
+    {
+      "name": "margin_other_group",
+      "run_id": "run-ab3543b2309844a39dcbad138bc7ea08",
+      "observed": "9.47 %"
+    },
+    {
+      "name": "relative",
+      "run_id": "run-8ca106223b124dacbf6ba2d53df0d795",
+      "observed": "15.30 %"
+    },
+    {
+      "name": "historical_blocked",
+      "run_id": "run-0b725e6a79614c29a05fb026351108b0",
+      "observed": "publication_unknown; финансовое число отсутствует"
+    },
+    {
+      "name": "period_conflict",
+      "run_id": "run-56c4bc0fa26a4a89baf7d114b36d4a5a",
+      "observed": "incompatible_periods; число не показано"
+    },
+    {
+      "name": "missing_prepared_fact",
+      "run_id": "run-983bb8fc2f2843978ef2bd61c2be84d3",
+      "observed": "no_compatible_fact; квартал не построен разностью YTD"
+    },
+    {
+      "name": "technical_search_failure",
+      "run_id": "run-d1b4c3043f0544bb8ab0fcdc59e811f8",
+      "observed": "index_missing; показана техническая ошибка без финансового результата; внедрён отсутствующий индекс в отдельном tmp-контексте"
+    },
+    {
+      "name": "restored_after_fault",
+      "run_id": "run-93acffa21a744b67b285ef6b1a2b54ce",
+      "observed": "15.30 % после восстановления exact контекста"
+    }
+  ],
+  "automatic_tests_separate": true,
+  "primary_page_images_public": false
+}

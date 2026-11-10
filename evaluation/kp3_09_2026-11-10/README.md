@@ -1,0 +1,11 @@
+# КП3-09 — fixed B service,10.11.2026
+
+506/506 unit (467 прежних+39 новых),7 отдельных Streamlit AppTest,37 новых CLI/checkers03–09/5legacy прошли.109 открытых service-cases:5 own synthetic+104 real cases по тем же48 Fact; expected IDs проверены отдельно, numeric reference — прежний независимый Fraction/integer07+Decimal80. Это не109 новых независимых наблюдений/ответов модели. Model calls0, новых real Fact0, все8 publication unknown, human_reviewed0, freeze14 не выполнялся.
+
+`check-runs.json`/логи, `cli-checks.json`, `dev-report.json` фиксируют выполненные команды и исходы. `ui-apptest.txt` — отдельный UI-интерпретатор3.12.14/Streamlit1.67.0, не основной MSYS2. `ui-observations.json` — реальные действия CUA, включая предыдущую сессию с указанными run_id и продолжение после поручения пользователя. Снимки собственного UI сохранены только в локальном tmp/ui09-*.jpg; primary PNG/PDF/текст/индексы/exports не публикуются. Native PDF в IAB был пустым; исправленный локальный exact-page PNG реально открыт и старая ссылка вернула404 после смены ввода. Никакой новой primary annotation.
+
+Private execution JSON имеют эксклюзивные run_id; финансовый результат отсутствует при clarification/error/limit/ранней блокировке поиска. Partial/automatic не обходятся даже при известных Fact. В trace явно показаны live rechecks и result recomputation; причинное why не объясняется. B — общий для CLI/UI, C/A не подменяются B.
+
+`content-audit.json` и before-снимки:642 исходных файла08,639 неизменны; README/STATUS/decisions только дополнены префиксом с сохранением всех прежних байтов. Root465 исходных файлов,463 неизменны; только STATUS/decisions дополнены сверху. Dirty-root/старый UI/venv/презентация/архивы не включены. Primary source checks05/old gold04/07/manifests и467 прежних тестов сохранены. `preparation-manifest.json`/`final-audit.json` — техническая open-dev подготовка, не eval freeze14.
+
+Порядок: отдельная ветка09 → commits/push/PR в08 → проверенные remote tree/tag/main/rules → квитанции. Слияние не поручено. По последнему указанию пользователя после доставки09 сохранённый самостоятельный промт10 сразу применяется в отдельной ветке, остановка перед11. Старые QA07 C/call_limit и3из10financial/reserved0 сохраняются как история.
