@@ -1,0 +1,21 @@
+{
+  "stage": "KP3-UI",
+  "pull_request": "https://github.com/AlexeyV10/financial-report-agent/pull/17",
+  "pr_number": 17,
+  "branch": "codex/kp3-ui-desktop-redesign",
+  "base_branch": "codex/kp3-16-final-comparison",
+  "base_sha": "b6c622e002ef8ff6eb101c099442a8397c4e4456",
+  "code_commit": "4da4e42ca1e4003ef85a8f68ef4a724cdab0da34",
+  "verified_stage_head": "350c9de16b62db0ca88f3fa7f2d52f6333067ba4",
+  "technical_tag": "kp3-ui-desktop-v1-2026-11-10",
+  "tag_object": "40437fe6ec363ff645f44988e14471d8ea6440fa",
+  "tag_target": "350c9de16b62db0ca88f3fa7f2d52f6333067ba4",
+  "state": "open",
+  "merged": false,
+  "diff_files": 53,
+  "allowlist_matches": true,
+  "remote_tree_matches": true,
+  "remote_blobs": 1580,
+  "receipt_followup": "Final head in final-local-receipt.json; tag targets tested stage",
+  "merge_authorized": false
+}

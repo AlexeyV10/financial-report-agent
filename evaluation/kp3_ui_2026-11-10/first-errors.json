@@ -1,0 +1,38 @@
+{
+  "errors": [
+    {
+      "phase": "regression_product13",
+      "error": "Sandbox WinError5 os.link in existing RunStore",
+      "resolution": "Actual require_escalated rerun passed104numeric/8historical; no fallback or runtime change",
+      "first_log": "product13.txt"
+    },
+    {
+      "phase": "additional_UI_tests",
+      "error": "Wrong test label and wording did not explicitly select percent operation",
+      "resolution": "First15 log kept. Test uses actual field label and explicitly supported relative wording; parser/core unchanged; corrected15 passed",
+      "first_log": "ui-tests-first15-errors.txt"
+    },
+    {
+      "phase": "browser_download_event",
+      "error": "CUA waitForEvent download timed out338s; runtime reset",
+      "resolution": "Actual JSON existed in Downloads, byte-identical to saved own record; Markdown click succeeded and bytes verified; event success not claimed"
+    },
+    {
+      "phase": "responsive_visual_review",
+      "error": "Primary action low on laptop; native expand control hidden by toolbar style",
+      "resolution": "Button placed immediately after question; native menu control made visible;360px actual open/close/navigation verified"
+    },
+    {
+      "phase": "preservation_audit_script",
+      "error": "First local audit compared15document manifest against16tree, whose allowed document prefixes differ",
+      "resolution": "Verified15manifest in original15worktree and16manifest in original16worktree; all1531baseline child/parent files matched before new document prefixes; frozen134/28 and138raw verified unchanged"
+    },
+    {
+      "phase": "git_evidence_staging",
+      "error": "Existing global *.png ignore rejected two own UI screenshots after the code commit",
+      "resolution": "No force-add/reset/amend. Added two exact .gitignore exceptions only for own UI screenshots; primary pages remain excluded; resumed explicit evidence commit after manifest refresh"
+    }
+  ],
+  "old_resource_warning": "HTTPError404 ResourceWarning retained in778unit log; suite passed",
+  "auto_review_rejections": 0
+}

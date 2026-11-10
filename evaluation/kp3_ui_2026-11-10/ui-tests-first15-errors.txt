@@ -1,0 +1,44 @@
+2026-11-10 22:46:20.871 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+.2026-11-10 22:46:22.259 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+.2026-11-10 22:46:23.384 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+.2026-11-10 22:46:24.514 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+.2026-11-10 22:46:25.644 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+.2026-11-10 22:46:26.780 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+F2026-11-10 22:46:27.928 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+E2026-11-10 22:46:29.080 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+.2026-11-10 22:46:30.230 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+.2026-11-10 22:46:31.358 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+.2026-11-10 22:46:32.479 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+.2026-11-10 22:46:33.600 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+.2026-11-10 22:46:34.716 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+.2026-11-10 22:46:35.848 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+.2026-11-10 22:46:36.980 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+.
+======================================================================
+ERROR: test_form_absolute_does_not_become_relative (test_desktop_app.DesktopAppTests.test_form_absolute_does_not_become_relative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-ui-worktree\tests_ui\test_desktop_app.py", line 52, in test_form_absolute_does_not_become_relative
+    self.sample();self.app.radio[0].set_value('Заполнить поля').run(timeout=40);self.select('Что сделать').set_value('absolute_change_v1').run(timeout=40);self.calculate();r=self.record()['payload']['result'];self.assertEqual(r['financial_result']['operation_id'],'absolute_change_v1');self.assertEqual(r['financial_result']['display_value'],'40118');self.assertFalse(self.app.exception)
+                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-ui-worktree\tests_ui\test_desktop_app.py", line 18, in select
+    def select(self,label):return next(b for b in self.app.selectbox if b.label==label)
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+
+======================================================================
+FAIL: test_false_premise_is_visible_and_question_unchanged (test_desktop_app.DesktopAppTests.test_false_premise_is_visible_and_question_unchanged)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-ui-worktree\tests_ui\test_desktop_app.py", line 46, in test_false_premise_is_visible_and_question_unchanged
+    next(t for t in self.app.text_area if t.label=='Ваш вопрос').set_value(q).run(timeout=40);self.calculate();r=self.record()['payload']['result'];self.assertEqual(r['original_question'],q);self.assertEqual(r['assumption_checks'][0]['status'],'contradicted');self.assertTrue(r['unfulfilled_requests']);self.assertTrue(any('Предпосылка не подтвердилась' in w.value for w in self.app.warning));self.assertFalse(self.app.exception)
+                                                                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 'not_checked' != 'contradicted'
+- not_checked
++ contradicted
+
+
+----------------------------------------------------------------------
+Ran 15 tests in 17.223s
+
+FAILED (failures=1, errors=1)
