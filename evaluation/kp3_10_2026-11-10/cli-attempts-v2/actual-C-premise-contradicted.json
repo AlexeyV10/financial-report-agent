@@ -1,0 +1,1260 @@
+{
+  "schema_version": "kp3-answer-0.2",
+  "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+  "task_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+  "method": "C",
+  "execution_status": "completed",
+  "request_status": "evaluated",
+  "financial_status": "answered",
+  "reason_code": "ok",
+  "original_question": "Почему выручка снизилась?",
+  "normalized_input": {
+    "schema_version": "kp3-input-0.1",
+    "input_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+    "original_question": "Почему выручка снизилась?",
+    "input_kind": "form",
+    "raw_fields": {
+      "organization": "phosagro_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "operation_id": "absolute_change_v1",
+      "metric_ids": [
+        "revenue"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "phosagro-2024",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+        }
+      ],
+      "mode": "snapshot"
+    },
+    "fields": {
+      "organization": "phosagro_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "operation_id": "absolute_change_v1",
+      "metric_ids": [
+        "revenue"
+      ],
+      "definition_ids": [
+        "revenue:nonfinancial_ifrs_reported_v1"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "phosagro-2024",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+        }
+      ],
+      "version_policy": "explicit_versions",
+      "source_unit": {
+        "currency": "RUB",
+        "scale": 1000000
+      },
+      "result_unit": {
+        "kind": "amount",
+        "currency": "RUB",
+        "scale": 1000000
+      },
+      "mode": "snapshot",
+      "as_of": null,
+      "comparability_id": null
+    },
+    "field_origins": {
+      "organization": "form",
+      "consolidation": "form",
+      "accounting_standard": "form",
+      "operation_id": "form",
+      "metric_ids": "form",
+      "definition_ids": "catalog_unique",
+      "periods": "form",
+      "documents": "form",
+      "version_policy": "catalog_unique",
+      "source_unit": "catalog_unique",
+      "result_unit": "catalog_unique",
+      "mode": "form",
+      "as_of": "unset",
+      "comparability_id": "unset"
+    },
+    "assumptions": [
+      {
+        "kind": "direction",
+        "asserted_direction": "decrease",
+        "text_fragment": "Почему выручка снизилась?",
+        "requires_check": true,
+        "why_requested": true
+      }
+    ],
+    "assumption_origin": "text",
+    "hints": {
+      "years": [],
+      "as_of_text": null,
+      "document_report_year": null,
+      "organization_unmatched": null
+    },
+    "issues": [],
+    "unsupported_reasons": [],
+    "unfulfilled_requests": [
+      "causal_explanation_not_supported"
+    ],
+    "history": [],
+    "catalog_digest": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+    "language_version": "ru-input-v1"
+  },
+  "clarifications": [],
+  "financial_result": {
+    "admission_context": {
+      "admission_digest": "35152fb5dc4fa48efe5d2ce19e8b32424d5cea02a469609884852c08446bd6eb",
+      "catalog_id": "kp3-real-corpus-v1",
+      "component_digests": {
+        "bindings": "14f62b7b6c7ddc3a4629cc68d096d621bc6616c86df14650df76fe90ca48d0b7",
+        "catalog": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+        "checks": "335bcbdd8806dd230f55f000d433a19561d9507870c21c6f01496b2a3826dbed",
+        "dictionary": "4404a201044d982ff630175a71d08cadb7093e959b988a97533a43f021b6783a"
+      },
+      "context_id": "kp3-real-corpus-v1-calculator-v1"
+    },
+    "calculation_schema_version": "0.3",
+    "display_value": "67385",
+    "exact_result": {
+      "denominator": "1",
+      "numerator": "67385"
+    },
+    "formula": "current - previous",
+    "formula_version": "1.0",
+    "inputs": [
+      {
+        "accounting_standard": "IFRS",
+        "consolidation": "group",
+        "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+        "document_id": "phosagro-2024",
+        "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+        "evidence_digest": "b64b81d185546bca595d03b26f59992f6197302eaee997bda0cf89909c6d8923",
+        "evidence_id": "phosagro-2024-revenue-2023-ev",
+        "fact_id": "phosagro-2024-revenue-2023",
+        "locator": {
+          "column_label": "2023",
+          "kind": "pdf",
+          "page_region": "left_half_of_spread",
+          "pdf_page": 4,
+          "printed_page": "320",
+          "row_label": "Выручка",
+          "statement_page": "1",
+          "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2024 год",
+          "unit_header": "Млн руб."
+        },
+        "metric_id": "revenue",
+        "numeric_encoding": "comma_thousands_integer",
+        "organization_id": "phosagro_group",
+        "origin_role": "comparative_period",
+        "period": {
+          "duration_type": "full_year",
+          "end": "2023-12-31",
+          "kind": "duration",
+          "start": "2023-01-01"
+        },
+        "provenance": {
+          "human_reviewer": null,
+          "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+          "status": "assistant_checked"
+        },
+        "raw_value": "440,304",
+        "role": "previous",
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "value": "440304",
+        "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+      },
+      {
+        "accounting_standard": "IFRS",
+        "consolidation": "group",
+        "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+        "document_id": "phosagro-2024",
+        "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+        "evidence_digest": "b7d34b3a61799963daf5d010d7558dcf8f4a1abdb02eb642b4e56c5529efd54c",
+        "evidence_id": "phosagro-2024-revenue-2024-ev",
+        "fact_id": "phosagro-2024-revenue-2024",
+        "locator": {
+          "column_label": "2024",
+          "kind": "pdf",
+          "page_region": "left_half_of_spread",
+          "pdf_page": 4,
+          "printed_page": "320",
+          "row_label": "Выручка",
+          "statement_page": "1",
+          "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2024 год",
+          "unit_header": "Млн руб."
+        },
+        "metric_id": "revenue",
+        "numeric_encoding": "comma_thousands_integer",
+        "organization_id": "phosagro_group",
+        "origin_role": "reported_period",
+        "period": {
+          "duration_type": "full_year",
+          "end": "2024-12-31",
+          "kind": "duration",
+          "start": "2024-01-01"
+        },
+        "provenance": {
+          "human_reviewer": null,
+          "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+          "status": "assistant_checked"
+        },
+        "raw_value": "507,689",
+        "role": "current",
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1000000
+        },
+        "value": "507689",
+        "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+      }
+    ],
+    "intermediates": {
+      "difference": {
+        "denominator": "1",
+        "numerator": "67385"
+      }
+    },
+    "operation_id": "absolute_change_v1",
+    "precision_note": "Exact arithmetic on the supplied rounded source values; no extra source precision is established.",
+    "request": {
+      "accounting_standard": "IFRS",
+      "as_of": null,
+      "comparability_id": null,
+      "consolidation": "group",
+      "inputs": [
+        {
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "document_id": "phosagro-2024",
+          "fact_id": "phosagro-2024-revenue-2023",
+          "metric_id": "revenue",
+          "period": {
+            "duration_type": "full_year",
+            "end": "2023-12-31",
+            "kind": "duration",
+            "start": "2023-01-01"
+          },
+          "role": "previous",
+          "source_unit": {
+            "currency": "RUB",
+            "scale": 1000000
+          },
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+        },
+        {
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "document_id": "phosagro-2024",
+          "fact_id": "phosagro-2024-revenue-2024",
+          "metric_id": "revenue",
+          "period": {
+            "duration_type": "full_year",
+            "end": "2024-12-31",
+            "kind": "duration",
+            "start": "2024-01-01"
+          },
+          "role": "current",
+          "source_unit": {
+            "currency": "RUB",
+            "scale": 1000000
+          },
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+        }
+      ],
+      "mode": "snapshot",
+      "operation_id": "absolute_change_v1",
+      "organization_id": "phosagro_group",
+      "original_question": "Почему выручка снизилась?",
+      "request_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+      "result_unit": {
+        "currency": "RUB",
+        "kind": "amount",
+        "scale": 1000000
+      },
+      "schema_version": "0.3",
+      "version_policy": "explicit_versions"
+    },
+    "result_unit": {
+      "currency": "RUB",
+      "kind": "amount",
+      "scale": 1000000
+    },
+    "retrieval_resolution": {
+      "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+      "kind": "prepared",
+      "matched_evidence_ids": [
+        "phosagro-2024-revenue-2023-ev",
+        "phosagro-2024-revenue-2024-ev"
+      ],
+      "retrieved_records": 2,
+      "reverification_performed": false
+    },
+    "rounding": "exact_finite_decimal",
+    "sources": [
+      {
+        "audit": {
+          "limitation": "Оговорка о нераскрытии сегментов IFRS8; PDF p1.",
+          "opinion": "qualified"
+        },
+        "data_origin": "real",
+        "document_id": "phosagro-2024",
+        "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+        "evidence": {
+          "currency": "RUB",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "document_id": "phosagro-2024",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "evidence_id": "phosagro-2024-revenue-2023-ev",
+          "locator": {
+            "column_label": "2023",
+            "kind": "pdf",
+            "page_region": "left_half_of_spread",
+            "pdf_page": 4,
+            "printed_page": "320",
+            "row_label": "Выручка",
+            "statement_page": "1",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2024 год",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "numeric_encoding": "comma_thousands_integer",
+          "period": {
+            "duration_type": "full_year",
+            "end": "2023-12-31",
+            "kind": "duration",
+            "start": "2023-01-01"
+          },
+          "provenance": {
+            "human_reviewer": null,
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "status": "assistant_checked"
+          },
+          "raw_value": "440,304",
+          "scale": 1000000,
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+        },
+        "publication": {
+          "binding": "unproven",
+          "document_sha256": null,
+          "precision": "unknown",
+          "record_id": null,
+          "source_url": null,
+          "timezone": "Europe/Moscow",
+          "value": null,
+          "version_id": null
+        },
+        "rights": {
+          "checked_on": "2026-11-09",
+          "note": "Разрешение на распространение PDF, страниц и полного текста не установлено; только локальная исключённая tmp/ и минимальная собственная разметка.",
+          "public_copy_allowed": false,
+          "status": "unconfirmed"
+        },
+        "source_url": "https://ar2024.phosagro.ru/pdf/ar/ru/additional-information_financial-statements.pdf#page=4",
+        "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+      },
+      {
+        "audit": {
+          "limitation": "Оговорка о нераскрытии сегментов IFRS8; PDF p1.",
+          "opinion": "qualified"
+        },
+        "data_origin": "real",
+        "document_id": "phosagro-2024",
+        "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+        "evidence": {
+          "currency": "RUB",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "document_id": "phosagro-2024",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "evidence_id": "phosagro-2024-revenue-2024-ev",
+          "locator": {
+            "column_label": "2024",
+            "kind": "pdf",
+            "page_region": "left_half_of_spread",
+            "pdf_page": 4,
+            "printed_page": "320",
+            "row_label": "Выручка",
+            "statement_page": "1",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2024 год",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "numeric_encoding": "comma_thousands_integer",
+          "period": {
+            "duration_type": "full_year",
+            "end": "2024-12-31",
+            "kind": "duration",
+            "start": "2024-01-01"
+          },
+          "provenance": {
+            "human_reviewer": null,
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "status": "assistant_checked"
+          },
+          "raw_value": "507,689",
+          "scale": 1000000,
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+        },
+        "publication": {
+          "binding": "unproven",
+          "document_sha256": null,
+          "precision": "unknown",
+          "record_id": null,
+          "source_url": null,
+          "timezone": "Europe/Moscow",
+          "value": null,
+          "version_id": null
+        },
+        "rights": {
+          "checked_on": "2026-11-09",
+          "note": "Разрешение на распространение PDF, страниц и полного текста не установлено; только локальная исключённая tmp/ и минимальная собственная разметка.",
+          "public_copy_allowed": false,
+          "status": "unconfirmed"
+        },
+        "source_url": "https://ar2024.phosagro.ru/pdf/ar/ru/additional-information_financial-statements.pdf#page=4",
+        "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+      }
+    ],
+    "warnings": [
+      "exact_arithmetic_does_not_improve_source_precision",
+      "source_status_inherited_not_upgraded",
+      "publication_unknown_snapshot_only",
+      "primary_document_redistribution_rights_unconfirmed"
+    ]
+  },
+  "outcome": {
+    "clarification_fields": [],
+    "execution_status": "completed",
+    "financial_result": {
+      "admission_context": {
+        "admission_digest": "35152fb5dc4fa48efe5d2ce19e8b32424d5cea02a469609884852c08446bd6eb",
+        "catalog_id": "kp3-real-corpus-v1",
+        "component_digests": {
+          "bindings": "14f62b7b6c7ddc3a4629cc68d096d621bc6616c86df14650df76fe90ca48d0b7",
+          "catalog": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+          "checks": "335bcbdd8806dd230f55f000d433a19561d9507870c21c6f01496b2a3826dbed",
+          "dictionary": "4404a201044d982ff630175a71d08cadb7093e959b988a97533a43f021b6783a"
+        },
+        "context_id": "kp3-real-corpus-v1-calculator-v1"
+      },
+      "calculation_schema_version": "0.3",
+      "display_value": "67385",
+      "exact_result": {
+        "denominator": "1",
+        "numerator": "67385"
+      },
+      "formula": "current - previous",
+      "formula_version": "1.0",
+      "inputs": [
+        {
+          "accounting_standard": "IFRS",
+          "consolidation": "group",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "document_id": "phosagro-2024",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "evidence_digest": "b64b81d185546bca595d03b26f59992f6197302eaee997bda0cf89909c6d8923",
+          "evidence_id": "phosagro-2024-revenue-2023-ev",
+          "fact_id": "phosagro-2024-revenue-2023",
+          "locator": {
+            "column_label": "2023",
+            "kind": "pdf",
+            "page_region": "left_half_of_spread",
+            "pdf_page": 4,
+            "printed_page": "320",
+            "row_label": "Выручка",
+            "statement_page": "1",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2024 год",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "numeric_encoding": "comma_thousands_integer",
+          "organization_id": "phosagro_group",
+          "origin_role": "comparative_period",
+          "period": {
+            "duration_type": "full_year",
+            "end": "2023-12-31",
+            "kind": "duration",
+            "start": "2023-01-01"
+          },
+          "provenance": {
+            "human_reviewer": null,
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "status": "assistant_checked"
+          },
+          "raw_value": "440,304",
+          "role": "previous",
+          "source_unit": {
+            "currency": "RUB",
+            "scale": 1000000
+          },
+          "value": "440304",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+        },
+        {
+          "accounting_standard": "IFRS",
+          "consolidation": "group",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+          "document_id": "phosagro-2024",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "evidence_digest": "b7d34b3a61799963daf5d010d7558dcf8f4a1abdb02eb642b4e56c5529efd54c",
+          "evidence_id": "phosagro-2024-revenue-2024-ev",
+          "fact_id": "phosagro-2024-revenue-2024",
+          "locator": {
+            "column_label": "2024",
+            "kind": "pdf",
+            "page_region": "left_half_of_spread",
+            "pdf_page": 4,
+            "printed_page": "320",
+            "row_label": "Выручка",
+            "statement_page": "1",
+            "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2024 год",
+            "unit_header": "Млн руб."
+          },
+          "metric_id": "revenue",
+          "numeric_encoding": "comma_thousands_integer",
+          "organization_id": "phosagro_group",
+          "origin_role": "reported_period",
+          "period": {
+            "duration_type": "full_year",
+            "end": "2024-12-31",
+            "kind": "duration",
+            "start": "2024-01-01"
+          },
+          "provenance": {
+            "human_reviewer": null,
+            "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+            "status": "assistant_checked"
+          },
+          "raw_value": "507,689",
+          "role": "current",
+          "source_unit": {
+            "currency": "RUB",
+            "scale": 1000000
+          },
+          "value": "507689",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+        }
+      ],
+      "intermediates": {
+        "difference": {
+          "denominator": "1",
+          "numerator": "67385"
+        }
+      },
+      "operation_id": "absolute_change_v1",
+      "precision_note": "Exact arithmetic on the supplied rounded source values; no extra source precision is established.",
+      "request": {
+        "accounting_standard": "IFRS",
+        "as_of": null,
+        "comparability_id": null,
+        "consolidation": "group",
+        "inputs": [
+          {
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "document_id": "phosagro-2024",
+            "fact_id": "phosagro-2024-revenue-2023",
+            "metric_id": "revenue",
+            "period": {
+              "duration_type": "full_year",
+              "end": "2023-12-31",
+              "kind": "duration",
+              "start": "2023-01-01"
+            },
+            "role": "previous",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          },
+          {
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "document_id": "phosagro-2024",
+            "fact_id": "phosagro-2024-revenue-2024",
+            "metric_id": "revenue",
+            "period": {
+              "duration_type": "full_year",
+              "end": "2024-12-31",
+              "kind": "duration",
+              "start": "2024-01-01"
+            },
+            "role": "current",
+            "source_unit": {
+              "currency": "RUB",
+              "scale": 1000000
+            },
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          }
+        ],
+        "mode": "snapshot",
+        "operation_id": "absolute_change_v1",
+        "organization_id": "phosagro_group",
+        "original_question": "Почему выручка снизилась?",
+        "request_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+        "result_unit": {
+          "currency": "RUB",
+          "kind": "amount",
+          "scale": 1000000
+        },
+        "schema_version": "0.3",
+        "version_policy": "explicit_versions"
+      },
+      "result_unit": {
+        "currency": "RUB",
+        "kind": "amount",
+        "scale": 1000000
+      },
+      "retrieval_resolution": {
+        "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+        "kind": "prepared",
+        "matched_evidence_ids": [
+          "phosagro-2024-revenue-2023-ev",
+          "phosagro-2024-revenue-2024-ev"
+        ],
+        "retrieved_records": 2,
+        "reverification_performed": false
+      },
+      "rounding": "exact_finite_decimal",
+      "sources": [
+        {
+          "audit": {
+            "limitation": "Оговорка о нераскрытии сегментов IFRS8; PDF p1.",
+            "opinion": "qualified"
+          },
+          "data_origin": "real",
+          "document_id": "phosagro-2024",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "evidence": {
+            "currency": "RUB",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "document_id": "phosagro-2024",
+            "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+            "evidence_id": "phosagro-2024-revenue-2023-ev",
+            "locator": {
+              "column_label": "2023",
+              "kind": "pdf",
+              "page_region": "left_half_of_spread",
+              "pdf_page": 4,
+              "printed_page": "320",
+              "row_label": "Выручка",
+              "statement_page": "1",
+              "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2024 год",
+              "unit_header": "Млн руб."
+            },
+            "metric_id": "revenue",
+            "numeric_encoding": "comma_thousands_integer",
+            "period": {
+              "duration_type": "full_year",
+              "end": "2023-12-31",
+              "kind": "duration",
+              "start": "2023-01-01"
+            },
+            "provenance": {
+              "human_reviewer": null,
+              "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+              "status": "assistant_checked"
+            },
+            "raw_value": "440,304",
+            "scale": 1000000,
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          },
+          "publication": {
+            "binding": "unproven",
+            "document_sha256": null,
+            "precision": "unknown",
+            "record_id": null,
+            "source_url": null,
+            "timezone": "Europe/Moscow",
+            "value": null,
+            "version_id": null
+          },
+          "rights": {
+            "checked_on": "2026-11-09",
+            "note": "Разрешение на распространение PDF, страниц и полного текста не установлено; только локальная исключённая tmp/ и минимальная собственная разметка.",
+            "public_copy_allowed": false,
+            "status": "unconfirmed"
+          },
+          "source_url": "https://ar2024.phosagro.ru/pdf/ar/ru/additional-information_financial-statements.pdf#page=4",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+        },
+        {
+          "audit": {
+            "limitation": "Оговорка о нераскрытии сегментов IFRS8; PDF p1.",
+            "opinion": "qualified"
+          },
+          "data_origin": "real",
+          "document_id": "phosagro-2024",
+          "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+          "evidence": {
+            "currency": "RUB",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "document_id": "phosagro-2024",
+            "document_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+            "evidence_id": "phosagro-2024-revenue-2024-ev",
+            "locator": {
+              "column_label": "2024",
+              "kind": "pdf",
+              "page_region": "left_half_of_spread",
+              "pdf_page": 4,
+              "printed_page": "320",
+              "row_label": "Выручка",
+              "statement_page": "1",
+              "table_title": "Консолидированный отчет о прибыли или убытке и прочем совокупном доходе за 2024 год",
+              "unit_header": "Млн руб."
+            },
+            "metric_id": "revenue",
+            "numeric_encoding": "comma_thousands_integer",
+            "period": {
+              "duration_type": "full_year",
+              "end": "2024-12-31",
+              "kind": "duration",
+              "start": "2024-01-01"
+            },
+            "provenance": {
+              "human_reviewer": null,
+              "method": "Codex: визуальная сверка первичного PDF, строки, колонок, периода, масштаба и знака; ручная разметка, не результат общего extractor.",
+              "status": "assistant_checked"
+            },
+            "raw_value": "507,689",
+            "scale": 1000000,
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          },
+          "publication": {
+            "binding": "unproven",
+            "document_sha256": null,
+            "precision": "unknown",
+            "record_id": null,
+            "source_url": null,
+            "timezone": "Europe/Moscow",
+            "value": null,
+            "version_id": null
+          },
+          "rights": {
+            "checked_on": "2026-11-09",
+            "note": "Разрешение на распространение PDF, страниц и полного текста не установлено; только локальная исключённая tmp/ и минимальная собственная разметка.",
+            "public_copy_allowed": false,
+            "status": "unconfirmed"
+          },
+          "source_url": "https://ar2024.phosagro.ru/pdf/ar/ru/additional-information_financial-statements.pdf#page=4",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+        }
+      ],
+      "warnings": [
+        "exact_arithmetic_does_not_improve_source_precision",
+        "source_status_inherited_not_upgraded",
+        "publication_unknown_snapshot_only",
+        "primary_document_redistribution_rights_unconfirmed"
+      ]
+    },
+    "financial_status": "answered",
+    "reason_code": "ok",
+    "request_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+    "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+    "schema_version": "0.3",
+    "technical_details": null
+  },
+  "assumption_checks": [
+    {
+      "assumption": {
+        "kind": "direction",
+        "asserted_direction": "decrease",
+        "text_fragment": "Почему выручка снизилась?",
+        "requires_check": true,
+        "why_requested": true
+      },
+      "status": "contradicted",
+      "observed_direction": "increase",
+      "explanation_status": "not_supported"
+    }
+  ],
+  "unfulfilled_requests": [
+    "causal_explanation_not_supported"
+  ],
+  "retrieval": {
+    "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+    "status": "found",
+    "reason_code": "ok",
+    "source_kind": "prepared",
+    "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+    "result_count": 2,
+    "spec": {
+      "schema_version": "kp3-search-0.1",
+      "query": "выручка",
+      "organization_id": "phosagro_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "metrics": [
+        {
+          "metric_id": "revenue",
+          "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+        }
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "phosagro-2024",
+          "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+        }
+      ],
+      "source_units": [
+        {
+          "currency": "RUB",
+          "scale": 1000000
+        }
+      ],
+      "version_policy": "explicit_versions",
+      "mode": "snapshot",
+      "as_of": null,
+      "top_k": 32
+    }
+  },
+  "trace": [
+    {
+      "stage": "input",
+      "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+      "status": "completed",
+      "elapsed_ms": 7.2068,
+      "reason_code": "ok",
+      "details": {}
+    },
+    {
+      "stage": "catalog_filters",
+      "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+      "status": "completed",
+      "elapsed_ms": 6.0643,
+      "reason_code": "ok",
+      "details": {
+        "preliminary_only": true
+      }
+    },
+    {
+      "stage": "search",
+      "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+      "status": "completed",
+      "elapsed_ms": 149.3425,
+      "reason_code": "ok",
+      "details": {
+        "mandatory": true,
+        "source_kind": "prepared"
+      }
+    },
+    {
+      "stage": "fact_resolution",
+      "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+      "status": "completed",
+      "elapsed_ms": 320.7615,
+      "reason_code": "ok",
+      "details": {
+        "evidence_required": true
+      }
+    },
+    {
+      "stage": "source_validation",
+      "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+      "status": "completed",
+      "elapsed_ms": 0,
+      "reason_code": "ok",
+      "details": {
+        "checked_before_values": true
+      }
+    },
+    {
+      "stage": "calculation",
+      "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+      "status": "completed",
+      "elapsed_ms": 178.2778,
+      "reason_code": "ok",
+      "details": {
+        "registered_operation_executed": true
+      }
+    },
+    {
+      "stage": "result_validation",
+      "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+      "status": "completed",
+      "elapsed_ms": 0,
+      "reason_code": "ok",
+      "details": {
+        "recomputation": true
+      }
+    },
+    {
+      "stage": "answer",
+      "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+      "status": "completed",
+      "elapsed_ms": 0,
+      "reason_code": "ok",
+      "details": {
+        "financial_result_present": true
+      }
+    }
+  ],
+  "context_digest": "0bf293d17787d40229b74be7afdec9ada46f2e9612b76e45a25d127fb5b2923f",
+  "source_input_digest": "127501f647968540f2fab5db32e176c536e3cd6605822137ee63b2862b6222a3",
+  "saved_run": {
+    "resource_id": "9e12e907c47c794fdb7d35ddd7007ea4ab59d7cfad68f378a7ab228c1746b2ef.json",
+    "status": "written",
+    "private": true
+  },
+  "model_calls": 5,
+  "agent": {
+    "protocol": "kp3-agent-0.2",
+    "prompt": "bounded-financial-tools-v2",
+    "adapter": {
+      "kind": "local_llm",
+      "adapter": "ollama-financial-tools-v2",
+      "prompt": "bounded-financial-tools-v2",
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "server_version": "0.40.15",
+      "endpoint": "http://127.0.0.1:11435",
+      "think": false,
+      "temperature": 0,
+      "num_ctx": 8192
+    },
+    "limits": {
+      "max_calls": 8,
+      "timeout_s": 180,
+      "per_call_s": 60,
+      "max_search_results": 32,
+      "max_output_tokens": 384,
+      "max_action_bytes": 4096,
+      "max_observation_bytes": 32768,
+      "max_tool_bytes": 8192
+    },
+    "decisions": 5,
+    "model_attempts": 5,
+    "mock_decisions": 0,
+    "usage": {
+      "known_input_tokens": 6512,
+      "known_output_tokens": 254,
+      "unknown_usage": 0,
+      "known_chat_requests": 5,
+      "unknown_requests": 0
+    },
+    "events": [
+      {
+        "kind": "setup_probe",
+        "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+        "elapsed_ms": 217.79,
+        "result": {
+          "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+          "model": "qwen3:4b",
+          "server_version": "0.40.15"
+        }
+      },
+      {
+        "kind": "decision",
+        "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+        "number": 1,
+        "state": "ready",
+        "action": {
+          "arguments": {
+            "query": "выручка",
+            "top_k": 32
+          },
+          "tool": "search_evidence"
+        },
+        "error": null,
+        "usage": {
+          "input_tokens": 816,
+          "output_tokens": 37
+        },
+        "chat_requests": 1,
+        "elapsed_ms": 1788.831
+      },
+      {
+        "kind": "tool",
+        "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+        "tool": "search_evidence",
+        "arguments": {
+          "query": "выручка",
+          "top_k": 32
+        },
+        "result": {
+          "status": "found",
+          "reason_code": "ok",
+          "source_kind": "prepared",
+          "top_k": 32,
+          "evidence_ids": [
+            "phosagro-2024-revenue-2023-ev",
+            "phosagro-2024-revenue-2024-ev"
+          ],
+          "candidate_metadata": [
+            {
+              "fact_id": "phosagro-2024-revenue-2023",
+              "document_id": "phosagro-2024",
+              "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2023-01-01",
+                "end": "2023-12-31"
+              },
+              "currency": "RUB",
+              "scale": 1000000,
+              "evidence_id": "phosagro-2024-revenue-2023-ev"
+            },
+            {
+              "fact_id": "phosagro-2024-revenue-2024",
+              "document_id": "phosagro-2024",
+              "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+              "metric_id": "revenue",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "period": {
+                "kind": "duration",
+                "duration_type": "full_year",
+                "start": "2024-01-01",
+                "end": "2024-12-31"
+              },
+              "currency": "RUB",
+              "scale": 1000000,
+              "evidence_id": "phosagro-2024-revenue-2024-ev"
+            }
+          ],
+          "fetched_invalidated": true
+        },
+        "elapsed_ms": 149.343
+      },
+      {
+        "kind": "decision",
+        "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+        "number": 2,
+        "state": "searched",
+        "action": {
+          "arguments": {
+            "fact_id": "phosagro-2024-revenue-2023"
+          },
+          "tool": "get_verified_fact"
+        },
+        "error": null,
+        "usage": {
+          "input_tokens": 1650,
+          "output_tokens": 42
+        },
+        "chat_requests": 1,
+        "elapsed_ms": 1337.336
+      },
+      {
+        "kind": "tool",
+        "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+        "tool": "get_verified_fact",
+        "arguments": {
+          "fact_id": "phosagro-2024-revenue-2023"
+        },
+        "result": {
+          "fact": {
+            "currency": "RUB",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "document_id": "phosagro-2024",
+            "evidence_id": "phosagro-2024-revenue-2023-ev",
+            "fact_id": "phosagro-2024-revenue-2023",
+            "metric_id": "revenue",
+            "period": {
+              "duration_type": "full_year",
+              "end": "2023-12-31",
+              "kind": "duration",
+              "start": "2023-01-01"
+            },
+            "scale": 1000000,
+            "value": "440304",
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          },
+          "ok": true,
+          "source_checked": true
+        },
+        "elapsed_ms": 169.525
+      },
+      {
+        "kind": "decision",
+        "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+        "number": 3,
+        "state": "searched",
+        "action": {
+          "arguments": {
+            "fact_id": "phosagro-2024-revenue-2024"
+          },
+          "tool": "get_verified_fact"
+        },
+        "error": null,
+        "usage": {
+          "input_tokens": 1354,
+          "output_tokens": 42
+        },
+        "chat_requests": 1,
+        "elapsed_ms": 900.127
+      },
+      {
+        "kind": "tool",
+        "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+        "tool": "get_verified_fact",
+        "arguments": {
+          "fact_id": "phosagro-2024-revenue-2024"
+        },
+        "result": {
+          "fact": {
+            "currency": "RUB",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+            "document_id": "phosagro-2024",
+            "evidence_id": "phosagro-2024-revenue-2024-ev",
+            "fact_id": "phosagro-2024-revenue-2024",
+            "metric_id": "revenue",
+            "period": {
+              "duration_type": "full_year",
+              "end": "2024-12-31",
+              "kind": "duration",
+              "start": "2024-01-01"
+            },
+            "scale": 1000000,
+            "value": "507689",
+            "version_id": "sha256:824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1"
+          },
+          "ok": true,
+          "source_checked": true
+        },
+        "elapsed_ms": 151.237
+      },
+      {
+        "kind": "decision",
+        "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+        "number": 4,
+        "state": "searched",
+        "action": {
+          "arguments": {
+            "inputs": [
+              {
+                "fact_id": "phosagro-2024-revenue-2023",
+                "role": "previous"
+              },
+              {
+                "fact_id": "phosagro-2024-revenue-2024",
+                "role": "current"
+              }
+            ],
+            "operation_id": "absolute_change_v1"
+          },
+          "tool": "calculate"
+        },
+        "error": null,
+        "usage": {
+          "input_tokens": 1469,
+          "output_tokens": 86
+        },
+        "chat_requests": 1,
+        "elapsed_ms": 1372.081
+      },
+      {
+        "kind": "receipt",
+        "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+        "receipt_id": "receipt-24f05eb6bc1b95c5855294bb",
+        "request_status": "evaluated",
+        "reason_code": "ok",
+        "execution_status": "completed"
+      },
+      {
+        "kind": "tool",
+        "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+        "tool": "calculate",
+        "arguments": {
+          "inputs": [
+            {
+              "fact_id": "phosagro-2024-revenue-2023",
+              "role": "previous"
+            },
+            {
+              "fact_id": "phosagro-2024-revenue-2024",
+              "role": "current"
+            }
+          ],
+          "operation_id": "absolute_change_v1"
+        },
+        "result": {
+          "status": "answered",
+          "reason_code": "ok",
+          "registered_operation": "absolute_change_v1",
+          "validated": true
+        },
+        "elapsed_ms": 178.278
+      },
+      {
+        "kind": "decision",
+        "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+        "number": 5,
+        "state": "terminal",
+        "action": {
+          "arguments": {
+            "receipt_id": "receipt-24f05eb6bc1b95c5855294bb"
+          },
+          "tool": "finish"
+        },
+        "error": null,
+        "usage": {
+          "input_tokens": 1223,
+          "output_tokens": 47
+        },
+        "chat_requests": 1,
+        "elapsed_ms": 1063.521
+      },
+      {
+        "kind": "tool",
+        "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+        "tool": "finish",
+        "arguments": {
+          "receipt_id": "receipt-24f05eb6bc1b95c5855294bb"
+        },
+        "result": {
+          "validated": true,
+          "receipt_id": "receipt-24f05eb6bc1b95c5855294bb"
+        },
+        "elapsed_ms": 174.914
+      }
+    ],
+    "stop_reason": "finished",
+    "finished": true,
+    "receipt_id": "receipt-24f05eb6bc1b95c5855294bb"
+  }
+}

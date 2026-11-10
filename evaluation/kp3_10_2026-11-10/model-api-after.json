@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-11-10T07:41:19.292237+00:00",
+  "probe": {
+    "server_version": "0.40.15",
+    "model": "qwen3:4b",
+    "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7"
+  },
+  "owner": {
+    "executable": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\local-model\\ollama-0.40.15\\ollama.exe",
+    "pid": 19888,
+    "started_at_ticks": 639298918028277396
+  },
+  "endpoint": "http://127.0.0.1:11435",
+  "start_helper_sha256": "dd6e1f1aad77a2faaeff2db7929a752aec18b0941f772d39aeb86a3ac90b311d",
+  "cloud_disabled_in_owned_start_helper": true,
+  "loaded_models": [
+    {
+      "name": "qwen3:4b",
+      "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "size": 3877571133,
+      "size_vram": 3877571133,
+      "context_length": 8192
+    }
+  ],
+  "environment": {
+    "python": "3.14.7",
+    "executable": "C:\\msys64\\ucrt64\\bin\\python.exe",
+    "sqlite": "3.53.4"
+  },
+  "installations": 0,
+  "downloads": 0
+}

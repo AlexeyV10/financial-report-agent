@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-11-10T07:44:22.487547+00:00",
+  "main": "f349717c5ca2acc33decf3dd7ce12b2756ce6d8b",
+  "parents": {
+    "3": {
+      "state": "open",
+      "head": "ab47731d94ada6becff0becd8bd5120c7537f26b",
+      "base": "main"
+    },
+    "4": {
+      "state": "open",
+      "head": "22d12d36289bedb3dbca797f9a1c13cac9b4ded5",
+      "base": "codex/kp3-03-tasks-catalog-contracts"
+    },
+    "5": {
+      "state": "open",
+      "head": "61d4c8ba4e330e6420f77ebce113f5d4d26e8fcf",
+      "base": "codex/kp3-04-financial-method"
+    },
+    "6": {
+      "state": "open",
+      "head": "a1744a3b8dfdc91a16bb735020b16d3689148c73",
+      "base": "codex/kp3-05-verified-corpus"
+    },
+    "7": {
+      "state": "open",
+      "head": "9577fe195512e5dc8d438406c25f0d08f82c01d0",
+      "base": "codex/kp3-06-extraction-search"
+    },
+    "8": {
+      "state": "open",
+      "head": "51891c707e0c96a0ea6ba7f0de3d6f89ce99702e",
+      "base": "codex/kp3-07-financial-calculator"
+    },
+    "9": {
+      "state": "open",
+      "head": "9dd952901d6a5bcf584a8224a0853adde99b6627",
+      "base": "codex/kp3-08-russian-input"
+    }
+  },
+  "ruleset_active": true,
+  "bypass_actors": []
+}

@@ -1,0 +1,28 @@
+test_bad_adapter_shape_is_technical_error (test_agent_c.AgentCTests.test_bad_adapter_shape_is_technical_error) ... ok
+test_changed_catalog_and_config_cannot_rebind (test_agent_c.AgentCTests.test_changed_catalog_and_config_cannot_rebind) ... ok
+test_changed_pdf_and_index_are_technical (test_agent_c.AgentCTests.test_changed_pdf_and_index_are_technical) ... ok
+test_clarification_no_model_search_or_finance (test_agent_c.AgentCTests.test_clarification_no_model_search_or_finance) ... ok
+test_clarification_preserves_original_history (test_agent_c.AgentCTests.test_clarification_preserves_original_history) ... ok
+test_five_operations_roles_and_values (test_agent_c.AgentCTests.test_five_operations_roles_and_values) ... ok
+test_hard_timeout_unknown_usage_no_late_result (test_agent_c.AgentCTests.test_hard_timeout_unknown_usage_no_late_result) ... ok
+test_historical_unknown_finishes_block_without_calculation (test_agent_c.AgentCTests.test_historical_unknown_finishes_block_without_calculation) ... ok
+test_invalid_limits_and_run_id (test_agent_c.AgentCTests.test_invalid_limits_and_run_id) ... ok
+test_json_duplicate_keys_and_endpoint_pins (test_agent_c.AgentCTests.test_json_duplicate_keys_and_endpoint_pins) ... ok
+test_malformed_then_recover (test_agent_c.AgentCTests.test_malformed_then_recover) ... ok
+test_new_context_and_input_no_stale_answers (test_agent_c.AgentCTests.test_new_context_and_input_no_stale_answers) ... ok
+test_no_search_fallback_when_fact_known (test_agent_c.AgentCTests.test_no_search_fallback_when_fact_known) ... ok
+test_other_metrics_not_literal_two_revenues (test_agent_c.AgentCTests.test_other_metrics_not_literal_two_revenues) ... ok
+test_partial_increase_invalidates_old_state (test_agent_c.AgentCTests.test_partial_increase_invalidates_old_state) ... ok
+test_persisted_run_and_duplicate_no_overwrite (test_agent_c.AgentCTests.test_persisted_run_and_duplicate_no_overwrite) ... ok
+test_refresh_after_fetch_forces_refetch (test_agent_c.AgentCTests.test_refresh_after_fetch_forces_refetch) ... ok
+test_repeats_consume_budget_without_financial_result (test_agent_c.AgentCTests.test_repeats_consume_budget_without_financial_result) ... ok
+test_reserved_finish_publishes_limit_receipt_not_calculation (test_agent_c.AgentCTests.test_reserved_finish_publishes_limit_receipt_not_calculation) ... ok
+test_top1_partial_finish_new_qa07_mechanic (test_agent_c.AgentCTests.test_top1_partial_finish_new_qa07_mechanic) ... ok
+test_unknown_id_and_extra_value_rejected (test_agent_c.AgentCTests.test_unknown_id_and_extra_value_rejected) ... ok
+test_wrong_finish_then_correct_current_receipt (test_agent_c.AgentCTests.test_wrong_finish_then_correct_current_receipt) ... ok
+test_wrong_money_operation_roles_are_rejected (test_agent_c.AgentCTests.test_wrong_money_operation_roles_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 44.961s
+
+OK

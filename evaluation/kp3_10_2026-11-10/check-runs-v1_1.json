@@ -1,0 +1,245 @@
+{
+  "runs": [
+    {
+      "name": "unit-regression",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 83.3629,
+      "passed": true
+    },
+    {
+      "name": "contracts03",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_contracts.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.0708,
+      "passed": true
+    },
+    {
+      "name": "method04",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_financial_method.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.098,
+      "passed": true
+    },
+    {
+      "name": "corpus05",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_corpus.py",
+        "--resource-map",
+        "tmp/local-resources.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.3136,
+      "passed": true
+    },
+    {
+      "name": "retrieval06",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_retrieval.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1049,
+      "passed": true
+    },
+    {
+      "name": "calculator07",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_calculator.py",
+        "--resources",
+        "tmp/local-resources.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 3.1084,
+      "passed": true
+    },
+    {
+      "name": "input08",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_input.py"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.4385,
+      "passed": true
+    },
+    {
+      "name": "service09",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_service_b.py",
+        "--context",
+        "tmp/service-context.json",
+        "--report",
+        "tmp/service-regression-10.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 5.2673,
+      "passed": true
+    },
+    {
+      "name": "agent10-mock",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_agent_c.py",
+        "--report",
+        "tmp/mock-matrix-10.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 9.8351,
+      "passed": true
+    },
+    {
+      "name": "fixed",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "fixed",
+        "--source",
+        "manual"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.094,
+      "passed": true
+    },
+    {
+      "name": "synthetic",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "scenario"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1522,
+      "passed": true
+    },
+    {
+      "name": "historical-legacy",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "scenario",
+        "--case",
+        "real-source"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.142,
+      "passed": true
+    },
+    {
+      "name": "questions",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "questions"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1892,
+      "passed": true
+    },
+    {
+      "name": "replay",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/run_local.py",
+        "replay",
+        "--run-dir",
+        "evaluation/step12_2026-11-09/run-02-environment-retry"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1056,
+      "passed": true
+    },
+    {
+      "name": "actual-C-premise-contradicted",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/execute_agent_c.py",
+        "--context",
+        "tmp/service-context.json",
+        "--input",
+        "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-10-worktree\\tmp\\cli-checks-10\\actual-C-premise-contradicted.input.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 0,
+      "elapsed_s": 0.1773,
+      "passed": false
+    }
+  ],
+  "completed_at": "2026-11-10T07:27:28.316726+00:00"
+}

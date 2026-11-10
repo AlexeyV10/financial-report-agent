@@ -1,0 +1,227 @@
+{
+  "schema_version": "kp3-answer-0.2",
+  "run_id": "c-f0a62b70704a40b49f968367b9f022da",
+  "task_id": "c-f0a62b70704a40b49f968367b9f022da",
+  "method": "C",
+  "execution_status": "completed",
+  "request_status": "missing",
+  "financial_status": null,
+  "reason_code": "no_compatible_fact",
+  "original_question": "Явный выбор учебного dev-контекста C.",
+  "normalized_input": {
+    "schema_version": "kp3-input-0.1",
+    "input_id": "c-f0a62b70704a40b49f968367b9f022da",
+    "original_question": "Явный выбор учебного dev-контекста C.",
+    "input_kind": "form",
+    "raw_fields": {
+      "organization": "phosagro_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "operating_cash_flow"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "quarter",
+          "start": "2025-04-01",
+          "end": "2025-06-30"
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "phosagro-2023",
+          "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+        }
+      ],
+      "mode": "snapshot"
+    },
+    "fields": {
+      "organization": "phosagro_group",
+      "consolidation": "group",
+      "accounting_standard": "IFRS",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "operating_cash_flow"
+      ],
+      "definition_ids": [
+        "operating_cash_flow:nonfinancial_ifrs_net_v1"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "quarter",
+          "start": "2025-04-01",
+          "end": "2025-06-30"
+        }
+      ],
+      "documents": [
+        {
+          "document_id": "phosagro-2023",
+          "version_id": "sha256:6286502494a00096b03db892ad90d932841b2629db3fee6987dd9ba07510bc90"
+        }
+      ],
+      "version_policy": "explicit_versions",
+      "source_unit": null,
+      "result_unit": null,
+      "mode": "snapshot",
+      "as_of": null,
+      "comparability_id": null
+    },
+    "field_origins": {
+      "organization": "form",
+      "consolidation": "form",
+      "accounting_standard": "form",
+      "operation_id": "form",
+      "metric_ids": "form",
+      "definition_ids": "catalog_unique",
+      "periods": "form",
+      "documents": "form",
+      "version_policy": "catalog_unique",
+      "source_unit": "unset",
+      "result_unit": "unset",
+      "mode": "form",
+      "as_of": "unset",
+      "comparability_id": "unset"
+    },
+    "assumptions": [],
+    "assumption_origin": "none",
+    "hints": {
+      "years": [],
+      "as_of_text": null,
+      "document_report_year": null,
+      "organization_unmatched": null
+    },
+    "issues": [],
+    "unsupported_reasons": [],
+    "unfulfilled_requests": [],
+    "history": [],
+    "catalog_digest": "d728c2696eb31bde7c710435a1eec35055d29fd18b9b393e88715f7e105e2fa0",
+    "language_version": "ru-input-v1"
+  },
+  "clarifications": [],
+  "financial_result": null,
+  "outcome": null,
+  "assumption_checks": [],
+  "unfulfilled_requests": [],
+  "retrieval": null,
+  "trace": [
+    {
+      "stage": "input",
+      "run_id": "c-f0a62b70704a40b49f968367b9f022da",
+      "status": "completed",
+      "elapsed_ms": 7.029,
+      "reason_code": "ok",
+      "details": {}
+    },
+    {
+      "stage": "catalog_filters",
+      "run_id": "c-f0a62b70704a40b49f968367b9f022da",
+      "status": "blocked",
+      "elapsed_ms": 6.8877,
+      "reason_code": "no_compatible_fact",
+      "details": {
+        "preliminary_only": true
+      }
+    },
+    {
+      "stage": "search",
+      "run_id": "c-f0a62b70704a40b49f968367b9f022da",
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "reason_code": "not_reached",
+      "details": {}
+    },
+    {
+      "stage": "fact_resolution",
+      "run_id": "c-f0a62b70704a40b49f968367b9f022da",
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "reason_code": "not_reached",
+      "details": {}
+    },
+    {
+      "stage": "source_validation",
+      "run_id": "c-f0a62b70704a40b49f968367b9f022da",
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "reason_code": "not_reached",
+      "details": {}
+    },
+    {
+      "stage": "calculation",
+      "run_id": "c-f0a62b70704a40b49f968367b9f022da",
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "reason_code": "not_reached",
+      "details": {}
+    },
+    {
+      "stage": "result_validation",
+      "run_id": "c-f0a62b70704a40b49f968367b9f022da",
+      "status": "skipped",
+      "elapsed_ms": 0,
+      "reason_code": "not_reached",
+      "details": {}
+    },
+    {
+      "stage": "answer",
+      "run_id": "c-f0a62b70704a40b49f968367b9f022da",
+      "status": "completed",
+      "elapsed_ms": 0,
+      "reason_code": "no_compatible_fact",
+      "details": {
+        "financial_result_present": false
+      }
+    }
+  ],
+  "context_digest": "0bf293d17787d40229b74be7afdec9ada46f2e9612b76e45a25d127fb5b2923f",
+  "source_input_digest": "5ceb7b2d44f380dfa6ba87049e135a13ee1327c7b172222fa4d2a0bd7ac92825",
+  "saved_run": {
+    "resource_id": "cf81468d601dffdb2fab6184708ccf4fe43dbd3a1ac6e88542893c04c8e81858.json",
+    "status": "written",
+    "private": true
+  },
+  "model_calls": 0,
+  "agent": {
+    "protocol": "kp3-agent-0.2",
+    "prompt": "bounded-financial-tools-v2",
+    "adapter": {
+      "kind": "local_llm",
+      "adapter": "ollama-financial-tools-v2",
+      "prompt": "bounded-financial-tools-v2",
+      "model": "qwen3:4b",
+      "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "server_version": "0.40.15",
+      "endpoint": "http://127.0.0.1:11435",
+      "think": false,
+      "temperature": 0,
+      "num_ctx": 8192
+    },
+    "limits": {
+      "max_calls": 8,
+      "timeout_s": 180,
+      "per_call_s": 60,
+      "max_search_results": 32,
+      "max_output_tokens": 384,
+      "max_action_bytes": 4096,
+      "max_observation_bytes": 32768,
+      "max_tool_bytes": 8192
+    },
+    "decisions": 0,
+    "model_attempts": 0,
+    "mock_decisions": 0,
+    "usage": {
+      "known_input_tokens": 0,
+      "known_output_tokens": 0,
+      "unknown_usage": 0,
+      "known_chat_requests": 0,
+      "unknown_requests": 0
+    },
+    "events": [],
+    "stop_reason": "input_not_resolved",
+    "finished": false,
+    "receipt_id": null
+  }
+}

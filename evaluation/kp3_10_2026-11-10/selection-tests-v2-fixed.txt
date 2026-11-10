@@ -1,0 +1,9 @@
+test_fact_ids_only_appear_after_search_without_values (test_agent_c.AgentCTests.test_fact_ids_only_appear_after_search_without_values) ... ok
+test_wrong_role_assignment_consumes_call_then_recovers (test_agent_c.AgentCTests.test_wrong_role_assignment_consumes_call_then_recovers) ... ok
+test_calculate_schema_leaves_id_permutation_to_model (test_agent_c.AgentCTests.test_calculate_schema_leaves_id_permutation_to_model) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 4.859s
+
+OK
+Selection tests and v2 pre-chat preparation saved.

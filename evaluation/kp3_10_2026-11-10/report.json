@@ -1,0 +1,73 @@
+{
+  "stage": "KP3-10",
+  "status": "technically_complete",
+  "unit_tests": {
+    "old": 506,
+    "new": 40,
+    "total": 546,
+    "passed": 546
+  },
+  "checkers": "03-10 passed; immutable old gold04/07/corpus05/manifests preserved",
+  "legacy_cli": 5,
+  "new_C_cli": 9,
+  "final_code_extra_probes": 2,
+  "final_real_matrix": {
+    "cases": 10,
+    "numeric": 8,
+    "early_missing": 2,
+    "chat_requests": 41,
+    "matched": 10,
+    "prompt": "bounded-financial-tools-v2",
+    "before_chat_preparation": "protocol-v2-before-chat.json"
+  },
+  "preliminary_real_matrices": {
+    "versions": [
+      "v1",
+      "v1.1"
+    ],
+    "cases": 20,
+    "chat_requests": 82,
+    "limitation": "Already selected role/Fact IDs; protocol checks only"
+  },
+  "all_real_attempts": {
+    "llm_runs": 37,
+    "chat_requests": 148,
+    "numeric": 28,
+    "request_missing": 7,
+    "technical_error": 1,
+    "technical_limit": 1
+  },
+  "all_actual_usage": {
+    "known_input_tokens": 150808,
+    "known_output_tokens": 7062,
+    "unknown_usage": 0,
+    "known_chat_requests": 148,
+    "unknown_requests": 0
+  },
+  "mock_matrix": {
+    "v2_cases": 5,
+    "final_repeat_cases": 5,
+    "model_calls": 0,
+    "origin": "own_synthetic_and_scripted_protocol"
+  },
+  "source_versions": 8,
+  "source_facts": 48,
+  "new_real_facts": 0,
+  "human_reviewed": 0,
+  "publication_proven": 0,
+  "new_models_or_installs": 0,
+  "known_to_developer": true,
+  "reserved_unseen_real": 0,
+  "final_eval_freeze": false,
+  "old_QA07_C_call_limit": "unchanged error",
+  "old_financial_3_of_10": "unchanged historical measurement",
+  "limits": [
+    "Prepared candidate pool small/often context unique; no general agent superiority claimed.",
+    "Operation and version ambiguity resolved08 before C; C chooses tools/retrievedIDs/role assignment within immutable scope.",
+    "C separate CLI, B09 UI and dispatcher unchanged; no A yet.",
+    "Causal why unsupported, assumptions preserved and checked only after finished numeric answer.",
+    "All8 publication unknown; real historical/trading blocked.",
+    "Same known48 facts reused, no unseen evaluation/final freeze."
+  ],
+  "next_instruction": "Standalone prompt11 saved; STOP before KP3-11, per latest user request."
+}

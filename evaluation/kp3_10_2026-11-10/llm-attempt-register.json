@@ -1,0 +1,393 @@
+{
+  "counts": {
+    "llm_runs": 37,
+    "chat_requests": 148,
+    "numeric": 28,
+    "request_missing": 7,
+    "technical_error": 1,
+    "technical_limit": 1
+  },
+  "usage": {
+    "known_input_tokens": 150808,
+    "known_output_tokens": 7062,
+    "unknown_usage": 0,
+    "known_chat_requests": 148,
+    "unknown_requests": 0
+  },
+  "model_elapsed_ms": 178631.198,
+  "attempts": [
+    {
+      "family": "matrix-v1",
+      "case_id": "phosagro-2023-direct_fact_v1",
+      "run_id": "c-722b1436d8af433d8891bd6849706d96",
+      "model_calls": 4,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v1",
+      "case_id": "phosagro-2024-absolute_change_v1",
+      "run_id": "c-912dd5c4169d40e49044d0e125c2c761",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v1",
+      "case_id": "phosagro-2025-relative_change_v1",
+      "run_id": "c-80fbb49e0c8d4e9ea3fc2f466806f18e",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v1",
+      "case_id": "phosagro-2025-q1-scale_v1",
+      "run_id": "c-62c9f91cda6e40a19cad57fab43516d3",
+      "model_calls": 4,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v1",
+      "case_id": "phosagro-2025-h1-operating_margin_v1",
+      "run_id": "c-a03772ec42f34bb5bcd473034551191b",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v1",
+      "case_id": "phosagro-2025-9m-direct_fact_v1",
+      "run_id": "c-e5adfe4d13eb4f999fde709f2ea84530",
+      "model_calls": 4,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v1",
+      "case_id": "segezha-2021-absolute_change_v1",
+      "run_id": "c-10f00e7c69634da2bdc222ca5539bdf0",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v1",
+      "case_id": "segezha-2022-operating_margin_v1",
+      "run_id": "c-6039b5e9d6fb495288f89498740ea9a8",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v1",
+      "case_id": "historical-publication-unknown",
+      "run_id": "c-2f2048c04f2147ebb666330e25db70b9",
+      "model_calls": 2,
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown"
+    },
+    {
+      "family": "matrix-v1",
+      "case_id": "qa07-top1-partial-finish",
+      "run_id": "c-36fadb13fed74250a590d5de828ddf34",
+      "model_calls": 2,
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "incomplete_evidence_context"
+    },
+    {
+      "family": "matrix-v1_1",
+      "case_id": "phosagro-2023-direct_fact_v1",
+      "run_id": "c-f902fca34b7e4d9196c01329910283cd",
+      "model_calls": 4,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v1_1",
+      "case_id": "phosagro-2024-absolute_change_v1",
+      "run_id": "c-65f0004c8b1a44d98aefacd1388ceb27",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v1_1",
+      "case_id": "phosagro-2025-relative_change_v1",
+      "run_id": "c-0857ae3a3d29408b93887d95b0f48edd",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v1_1",
+      "case_id": "phosagro-2025-q1-scale_v1",
+      "run_id": "c-968cff596dd7411b82990136e80e8a34",
+      "model_calls": 4,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v1_1",
+      "case_id": "phosagro-2025-h1-operating_margin_v1",
+      "run_id": "c-d7918af27d6b4c888f76adccae2428c6",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v1_1",
+      "case_id": "phosagro-2025-9m-direct_fact_v1",
+      "run_id": "c-998c4dc4ebf2471786e491b06f53ce6c",
+      "model_calls": 4,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v1_1",
+      "case_id": "segezha-2021-absolute_change_v1",
+      "run_id": "c-90bb8ac47a0b41e3be864f2310e3ed21",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v1_1",
+      "case_id": "segezha-2022-operating_margin_v1",
+      "run_id": "c-2c183bac16e24f1592eb4a05332f50b9",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v1_1",
+      "case_id": "historical-publication-unknown",
+      "run_id": "c-6ea45bd0b84a43f9a114987af709533e",
+      "model_calls": 2,
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown"
+    },
+    {
+      "family": "matrix-v1_1",
+      "case_id": "qa07-top1-partial-finish",
+      "run_id": "c-a771994744044733b20a9183bd406e8a",
+      "model_calls": 2,
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "incomplete_evidence_context"
+    },
+    {
+      "family": "matrix-v2",
+      "case_id": "phosagro-2023-direct_fact_v1",
+      "run_id": "c-86f893f477464044839279db1d855e02",
+      "model_calls": 4,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v2",
+      "case_id": "phosagro-2024-absolute_change_v1",
+      "run_id": "c-fa828576f2af4740b301c7247fe5ddf9",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v2",
+      "case_id": "phosagro-2025-relative_change_v1",
+      "run_id": "c-893d73d6f41e436b924a48c3f4c04364",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v2",
+      "case_id": "phosagro-2025-q1-scale_v1",
+      "run_id": "c-8d7fdbbca1a24d4ebea3505f96838fb8",
+      "model_calls": 4,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v2",
+      "case_id": "phosagro-2025-h1-operating_margin_v1",
+      "run_id": "c-00e7e1a2e29142a2b1786cd623b8999b",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v2",
+      "case_id": "phosagro-2025-9m-direct_fact_v1",
+      "run_id": "c-c40b77d9eec34418a01f470ee792df4b",
+      "model_calls": 4,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v2",
+      "case_id": "segezha-2021-absolute_change_v1",
+      "run_id": "c-9450c9ac2e5947bcb6259f35737502a3",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v2",
+      "case_id": "segezha-2022-operating_margin_v1",
+      "run_id": "c-0f11ddd0d73a43d5b912829a967f1646",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "matrix-v2",
+      "case_id": "historical-publication-unknown",
+      "run_id": "c-047a1b74b2cd4be4b4631ff948f2ab46",
+      "model_calls": 2,
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "publication_unknown"
+    },
+    {
+      "family": "matrix-v2",
+      "case_id": "qa07-top1-partial-finish",
+      "run_id": "c-77b04aa17cae4acc8080f9b6206325cd",
+      "model_calls": 2,
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "incomplete_evidence_context"
+    },
+    {
+      "family": "cli-first-semantic-expectation",
+      "case_id": "OP-actually-decreased",
+      "run_id": "c-8a783bc32dfe46bd8f57965256a7ebbc",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "final-cli-v2",
+      "case_id": "actual-C-automatic-candidate",
+      "run_id": "c-d5e9ea278e07465e872a74c5b4df983d",
+      "model_calls": 2,
+      "execution_status": "completed",
+      "request_status": "missing",
+      "financial_status": null,
+      "reason_code": "unverified_candidate"
+    },
+    {
+      "family": "final-cli-v2",
+      "case_id": "actual-C-clarification-answer",
+      "run_id": "c-0058b9d3860a44f98b51169821a6f547",
+      "model_calls": 4,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "final-cli-v2",
+      "case_id": "actual-C-index-missing",
+      "run_id": "c-a79cb29df5db4a13abb9680562ef224e",
+      "model_calls": 2,
+      "execution_status": "error",
+      "request_status": "error",
+      "financial_status": null,
+      "reason_code": "index_missing"
+    },
+    {
+      "family": "final-cli-v2",
+      "case_id": "actual-C-premise-contradicted",
+      "run_id": "c-5ef5eec3fd3e41fb85c45eeb3e7fa46f",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    },
+    {
+      "family": "final-cli-v2",
+      "case_id": "actual-C-reserved-limit-finish",
+      "run_id": "c-754cd65e1e4047fc9659b4b4e28b1c72",
+      "model_calls": 2,
+      "execution_status": "limit",
+      "request_status": "error",
+      "financial_status": null,
+      "reason_code": "call_limit"
+    },
+    {
+      "family": "final-trace-patch-probe",
+      "case_id": "revenue-premise-corrected",
+      "run_id": "c-612163ae10da4a3fbc2f002381a6cfab",
+      "model_calls": 5,
+      "execution_status": "completed",
+      "request_status": "evaluated",
+      "financial_status": "answered",
+      "reason_code": "ok"
+    }
+  ],
+  "known_to_developer": true,
+  "reserved_unseen_real": 0,
+  "independent_observations": false
+}

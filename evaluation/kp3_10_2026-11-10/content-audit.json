@@ -1,0 +1,19 @@
+{
+  "child_baseline": 685,
+  "child_unchanged": 682,
+  "changed_child": [
+    "README.md",
+    "STATUS.md",
+    "docs/decisions.md"
+  ],
+  "root_baseline": 471,
+  "root_unchanged": 469,
+  "changed_root": [
+    "STATUS.md",
+    "docs/decisions.md"
+  ],
+  "old_document_bytes_preserved": true,
+  "old_code_gold_data_tests_manifests_unchanged": true,
+  "ui09_unchanged": true,
+  "primary_materials_in_git": false
+}
