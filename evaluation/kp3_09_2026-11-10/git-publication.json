@@ -1,0 +1,21 @@
+{
+  "stage": "KP3-09",
+  "pull_request": "https://github.com/AlexeyV10/financial-report-agent/pull/9",
+  "pr_number": 9,
+  "branch": "codex/kp3-09-fixed-service-b",
+  "base_branch": "codex/kp3-08-russian-input",
+  "base_sha": "51891c707e0c96a0ea6ba7f0de3d6f89ce99702e",
+  "code_commit": "c3cf37fde5768d525b2bb77a8be2a8df21b9f92c",
+  "verified_stage_head": "3e0e7fbb652e4de3b63ecd309e7cb04e847d61ac",
+  "technical_tag": "kp3-09-service-b-v1-2026-11-10",
+  "tag_object": "c0a9f4bbd924af23268b87b1076b358f6d5636e4",
+  "tag_target": "3e0e7fbb652e4de3b63ecd309e7cb04e847d61ac",
+  "state": "open",
+  "merged": false,
+  "diff_files": 45,
+  "allowlist_matches": true,
+  "remote_tree_matches": true,
+  "remote_blobs": 684,
+  "receipt_followup": "Final head in final-local-receipt.json; tag targets tested stage",
+  "merge_authorized": false
+}
