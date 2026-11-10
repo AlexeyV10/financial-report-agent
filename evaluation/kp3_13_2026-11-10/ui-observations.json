@@ -1,0 +1,103 @@
+{
+  "real_CUA": true,
+  "completion_summary": "Проверил интерфейс, историю и экспорт13",
+  "machine_checks": [
+    {
+      "name": "own_no_signal",
+      "checks": [
+        {
+          "phrase": "Сигнала нет: рост не выше порога",
+          "visible": true
+        },
+        {
+          "phrase": "10000.00",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "real_readiness_blocked",
+      "checks": [
+        {
+          "phrase": "Сценарий заблокирован",
+          "visible": true
+        },
+        {
+          "phrase": "нет допустимых реальных цен",
+          "visible": true
+        },
+        {
+          "phrase": "не подтверждены права на цены",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "history_C_snapshot",
+      "checks": [
+        {
+          "phrase": "Сохранённый снимок",
+          "visible": true
+        },
+        {
+          "phrase": "модель не вызывается",
+          "visible": true
+        },
+        {
+          "phrase": "метод C · вызовы модели: 5",
+          "visible": true
+        },
+        {
+          "phrase": "67385 млн руб.",
+          "visible": true
+        }
+      ]
+    },
+    {
+      "name": "registered_exact_upload",
+      "checks": [
+        {
+          "phrase": "Совпадающий файл уже есть: повторная копия не создавалась.",
+          "visible": true
+        },
+        {
+          "phrase": "Automatic: 40/48",
+          "visible": true
+        }
+      ]
+    }
+  ],
+  "observed": [
+    "Initial overview/no hidden company or period.",
+    "B form explicit group/metric/full2024/exact2024version/policy/snapshot →507689millionRUB; repeat same run0calls.",
+    "Exact phosagro2024 PDFpage4 rendered through SourceViewer, row/column/SHA checked locally; not a new primary annotation.",
+    "Compound free wording with v2024 compared2023 gave incompatible_periods; preserved as bounded parser08 limitation.",
+    "Known false premise wording →67385millionRUB difference, decrease contradicted by increase, why unfulfilled.",
+    "Actual pinned A:1chat; actual C:5chat; both same known family/reference, no mock/replay/B fallback.",
+    "Repeat C retained same run and five recorded upstream calls, no new calls.",
+    "Clarification organization → explicit catalog choice → answered; original question/history retained.",
+    "Model stopped by exact owner script; A on new complete input →technical adapter_unavailable0calls/no number.",
+    "Own positive scenario10098.00/98.00/0.80curve,3comparisons; parameter change clears old output; threshold20 →no signal10000.00.",
+    "Real readiness from saved C revalidated and blocked six reasons, upstream C usage5/newcalls0.",
+    "History C reopened with model off, snapshot warning, no controller execution; own JSON downloaded.",
+    "Actual JSON and Markdown downloaded and byte-compared to store exports.",
+    "Registered exact phosagro2024 PDF uploaded locally, matching file already exists, no duplicate/copy/Fact upgrade.",
+    "Browser refresh returns overview, no automatic calculation/model start."
+  ],
+  "viewport": {
+    "observed_laptop": [
+      1280,
+      720
+    ],
+    "scroll_width": 1280,
+    "no_horizontal_overflow": true,
+    "narrow_views_also_seen": true,
+    "temporary_override_reset": true
+  },
+  "proofs_only_private_tmp": [
+    "ui13-final-proof.jpg",
+    "ui13-scenario-proof.jpg",
+    "ui13-agent-proof.png"
+  ],
+  "primary_screenshots_in_git": false
+}

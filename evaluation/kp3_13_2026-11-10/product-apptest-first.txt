@@ -1,0 +1,40 @@
+test_double_click_dedup_and_change_clears (test_product_app.ProductAppTests.test_double_click_dedup_and_change_clears) ... 2026-11-10 15:41:40.166 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_explicit_new_attempt_has_new_id (test_product_app.ProductAppTests.test_explicit_new_attempt_has_new_id) ... 2026-11-10 15:41:41.698 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_five_form_operations (test_product_app.ProductAppTests.test_five_form_operations) ... 2026-11-10 15:41:42.426 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+
+  test_five_form_operations (test_product_app.ProductAppTests.test_five_form_operations) (op='direct_fact_v1') ... FAIL
+2026-11-10 15:41:42.928 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-10 15:41:43.464 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-10 15:41:44.106 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-10 15:41:44.760 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+test_history_snapshot_open (test_product_app.ProductAppTests.test_history_snapshot_open) ... 2026-11-10 15:41:45.351 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_initial_overview (test_product_app.ProductAppTests.test_initial_overview) ... 2026-11-10 15:41:45.951 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_no_hidden_company_or_period (test_product_app.ProductAppTests.test_no_hidden_company_or_period) ... 2026-11-10 15:41:46.049 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_own_scenario_and_threshold_reset (test_product_app.ProductAppTests.test_own_scenario_and_threshold_reset) ... 2026-11-10 15:41:46.200 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_refresh_reopens_same_id (test_product_app.ProductAppTests.test_refresh_reopens_same_id) ... 2026-11-10 15:41:46.659 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-10 15:41:47.167 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_sources_preflight (test_product_app.ProductAppTests.test_sources_preflight) ... 2026-11-10 15:41:47.705 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_text_ambiguity (test_product_app.ProductAppTests.test_text_ambiguity) ... 2026-11-10 15:41:47.853 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+
+======================================================================
+FAIL: test_five_form_operations (test_product_app.ProductAppTests.test_five_form_operations) (op='direct_fact_v1')
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-13-worktree\tests_ui_kp3\test_product_app.py", line 31, in test_five_form_operations
+    a=self.form(op);self.press(a,'Получить ответ');self.assertFalse(a.exception);r=a.session_state['active_record']['payload']['result'];self.assertEqual(r['financial_status'],'answered',r['reason_code']);self.assertEqual(r['financial_result']['operation_id'],op)
+                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: None != 'answered' : run_id_exists
+
+----------------------------------------------------------------------
+Ran 10 tests in 8.001s
+
+FAILED (failures=1)

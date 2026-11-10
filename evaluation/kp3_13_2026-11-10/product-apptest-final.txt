@@ -1,0 +1,30 @@
+test_double_click_dedup_and_change_clears (test_product_app.ProductAppTests.test_double_click_dedup_and_change_clears) ... 2026-11-10 15:42:03.668 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_explicit_new_attempt_has_new_id (test_product_app.ProductAppTests.test_explicit_new_attempt_has_new_id) ... 2026-11-10 15:42:05.255 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_five_form_operations (test_product_app.ProductAppTests.test_five_form_operations) ... 2026-11-10 15:42:05.970 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-10 15:42:06.509 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-10 15:42:07.085 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-10 15:42:07.675 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-10 15:42:08.276 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_history_snapshot_open (test_product_app.ProductAppTests.test_history_snapshot_open) ... 2026-11-10 15:42:08.823 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_initial_overview (test_product_app.ProductAppTests.test_initial_overview) ... 2026-11-10 15:42:09.462 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_no_hidden_company_or_period (test_product_app.ProductAppTests.test_no_hidden_company_or_period) ... 2026-11-10 15:42:09.573 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_own_scenario_and_threshold_reset (test_product_app.ProductAppTests.test_own_scenario_and_threshold_reset) ... 2026-11-10 15:42:09.714 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_refresh_reopens_same_id (test_product_app.ProductAppTests.test_refresh_reopens_same_id) ... 2026-11-10 15:42:10.138 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-10 15:42:10.700 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_sources_preflight (test_product_app.ProductAppTests.test_sources_preflight) ... 2026-11-10 15:42:11.226 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+test_text_ambiguity (test_product_app.ProductAppTests.test_text_ambiguity) ... 2026-11-10 15:42:11.375 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 8.061s
+
+OK
