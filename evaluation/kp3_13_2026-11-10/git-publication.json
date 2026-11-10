@@ -1,0 +1,21 @@
+{
+  "stage": "KP3-13",
+  "pull_request": "https://github.com/AlexeyV10/financial-report-agent/pull/13",
+  "pr_number": 13,
+  "branch": "codex/kp3-13-product-ui-history-export",
+  "base_branch": "codex/kp3-12-conditional-scenario",
+  "base_sha": "af83f67a7e63e7c0e7f6a401f4d28d64fa870ca7",
+  "code_commit": "a01b007809159f6fd746155f5ac4e493f26ea210",
+  "verified_stage_head": "60abb7a0474f2201b2058fdb5df24cd4859ac646",
+  "technical_tag": "kp3-13-product-ui-v1-2026-11-10",
+  "tag_object": "09337647b5ea4e9503ab9ae91e14af43cf95fe7b",
+  "tag_target": "60abb7a0474f2201b2058fdb5df24cd4859ac646",
+  "state": "open",
+  "merged": false,
+  "diff_files": 65,
+  "allowlist_matches": true,
+  "remote_tree_matches": true,
+  "remote_blobs": 956,
+  "receipt_followup": "Final head in final-local-receipt.json; tag targets tested stage",
+  "merge_authorized": false
+}
