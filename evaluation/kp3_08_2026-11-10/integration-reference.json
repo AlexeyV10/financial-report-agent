@@ -1,0 +1,233 @@
+{
+  "reference": "Unchanged independent Fraction/integer reference07 with separate Decimal80/HALF_UP",
+  "production_calls_for_gold": 0,
+  "cases": [
+    {
+      "name": "probe-direct_fact_v1",
+      "request_operation": "direct_fact_v1",
+      "input_fact_ids": [
+        "phosagro-2024-revenue-2024"
+      ],
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "507689",
+        "denominator": "1"
+      },
+      "display_value": "507689"
+    },
+    {
+      "name": "probe-absolute_change_v1",
+      "request_operation": "absolute_change_v1",
+      "input_fact_ids": [
+        "phosagro-2024-revenue-2023",
+        "phosagro-2024-revenue-2024"
+      ],
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "67385",
+        "denominator": "1"
+      },
+      "display_value": "67385"
+    },
+    {
+      "name": "probe-relative_change_v1",
+      "request_operation": "relative_change_v1",
+      "input_fact_ids": [
+        "phosagro-2024-revenue-2023",
+        "phosagro-2024-revenue-2024"
+      ],
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "1684625",
+        "denominator": "110076"
+      },
+      "display_value": "15.30"
+    },
+    {
+      "name": "probe-scale_v1",
+      "request_operation": "scale_v1",
+      "input_fact_ids": [
+        "phosagro-2024-revenue-2024"
+      ],
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "507689",
+        "denominator": "1000"
+      },
+      "display_value": "507.689"
+    },
+    {
+      "name": "probe-operating_margin_v1",
+      "request_operation": "operating_margin_v1",
+      "input_fact_ids": [
+        "segezha-2022-operating_profit-2022",
+        "segezha-2022-revenue-2022"
+      ],
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "505550",
+        "denominator": "53383"
+      },
+      "display_value": "9.47"
+    },
+    {
+      "name": "prepared-phosagro-2023",
+      "request_operation": "operating_margin_v1",
+      "input_fact_ids": [
+        "phosagro-2023-operating_profit-2023",
+        "phosagro-2023-revenue-2023"
+      ],
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "314075",
+        "denominator": "9173"
+      },
+      "display_value": "34.24"
+    },
+    {
+      "name": "prepared-phosagro-2024",
+      "request_operation": "operating_margin_v1",
+      "input_fact_ids": [
+        "phosagro-2024-operating_profit-2024",
+        "phosagro-2024-revenue-2024"
+      ],
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "14045900",
+        "denominator": "507689"
+      },
+      "display_value": "27.67"
+    },
+    {
+      "name": "prepared-phosagro-2025",
+      "request_operation": "operating_margin_v1",
+      "input_fact_ids": [
+        "phosagro-2025-operating_profit-2025",
+        "phosagro-2025-revenue-2025"
+      ],
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "3390125",
+        "denominator": "143407"
+      },
+      "display_value": "23.64"
+    },
+    {
+      "name": "prepared-phosagro-2025-q1",
+      "request_operation": "operating_margin_v1",
+      "input_fact_ids": [
+        "phosagro-2025-q1-operating_profit-2025",
+        "phosagro-2025-q1-revenue-2025"
+      ],
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "388160",
+        "denominator": "15939"
+      },
+      "display_value": "24.35"
+    },
+    {
+      "name": "prepared-phosagro-2025-h1",
+      "request_operation": "operating_margin_v1",
+      "input_fact_ids": [
+        "phosagro-2025-h1-operating_profit-2025",
+        "phosagro-2025-h1-revenue-2025"
+      ],
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "1871150",
+        "denominator": "74639"
+      },
+      "display_value": "25.07"
+    },
+    {
+      "name": "prepared-phosagro-2025-9m",
+      "request_operation": "operating_margin_v1",
+      "input_fact_ids": [
+        "phosagro-2025-9m-operating_profit-2025",
+        "phosagro-2025-9m-revenue-2025"
+      ],
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "1441500",
+        "denominator": "55217"
+      },
+      "display_value": "26.11"
+    },
+    {
+      "name": "prepared-segezha-2021",
+      "request_operation": "operating_margin_v1",
+      "input_fact_ids": [
+        "segezha-2021-operating_profit-2021",
+        "segezha-2021-revenue-2021"
+      ],
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "744997400",
+        "denominator": "30814089"
+      },
+      "display_value": "24.18"
+    },
+    {
+      "name": "prepared-segezha-2022",
+      "request_operation": "operating_margin_v1",
+      "input_fact_ids": [
+        "segezha-2022-operating_profit-2022",
+        "segezha-2022-revenue-2022"
+      ],
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "505550",
+        "denominator": "53383"
+      },
+      "display_value": "9.47"
+    },
+    {
+      "name": "false-premise-2024",
+      "request_operation": "absolute_change_v1",
+      "input_fact_ids": [
+        "phosagro-2024-revenue-2023",
+        "phosagro-2024-revenue-2024"
+      ],
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "67385",
+        "denominator": "1"
+      },
+      "display_value": "67385"
+    },
+    {
+      "name": "false-premise-2023",
+      "request_operation": "absolute_change_v1",
+      "input_fact_ids": [
+        "phosagro-2023-revenue-2022",
+        "phosagro-2023-revenue-2023"
+      ],
+      "status": "answered",
+      "reason": "ok",
+      "exact_result": {
+        "numerator": "-129223",
+        "denominator": "1"
+      },
+      "display_value": "-129223"
+    }
+  ],
+  "numeric_cases": 15,
+  "source_facts": "same assistant_checked corpus05; no new real facts",
+  "known_to_developer": true,
+  "final_eval_freeze": false
+}

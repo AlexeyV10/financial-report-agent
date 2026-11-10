@@ -1,0 +1,669 @@
+{
+  "expected_version": "1.0",
+  "origin": "hand specified intent/field/clarification expectations; builder imports no production parser",
+  "runtime_allowed": false,
+  "cases": [
+    {
+      "case_id": "ru-001",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "revenue"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "organization": "phosagro_group"
+    },
+    {
+      "case_id": "ru-002",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "revenue"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "organization": "phosagro_group"
+    },
+    {
+      "case_id": "ru-003",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "revenue"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "organization": "phosagro_group"
+    },
+    {
+      "case_id": "ru-004",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "revenue"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "organization": "phosagro_group"
+    },
+    {
+      "case_id": "ru-005",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "revenue"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "organization": "phosagro_group"
+    },
+    {
+      "case_id": "ru-006",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "operating_profit"
+      ]
+    },
+    {
+      "case_id": "ru-007",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "operating_profit"
+      ]
+    },
+    {
+      "case_id": "ru-008",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "operating_profit"
+      ]
+    },
+    {
+      "case_id": "ru-009",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "operating_cash_flow"
+      ]
+    },
+    {
+      "case_id": "ru-010",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "operating_cash_flow"
+      ]
+    },
+    {
+      "case_id": "ru-011",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "operating_cash_flow"
+      ]
+    },
+    {
+      "case_id": "ru-012",
+      "status": "resolved",
+      "operation_id": "absolute_change_v1",
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ]
+    },
+    {
+      "case_id": "ru-013",
+      "status": "resolved",
+      "operation_id": "absolute_change_v1",
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ]
+    },
+    {
+      "case_id": "ru-014",
+      "status": "resolved",
+      "operation_id": "relative_change_v1",
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ]
+    },
+    {
+      "case_id": "ru-015",
+      "status": "resolved",
+      "operation_id": "relative_change_v1",
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ]
+    },
+    {
+      "case_id": "ru-016",
+      "status": "resolved",
+      "operation_id": "relative_change_v1",
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ]
+    },
+    {
+      "case_id": "ru-017",
+      "status": "resolved",
+      "operation_id": "scale_v1"
+    },
+    {
+      "case_id": "ru-018",
+      "status": "resolved",
+      "operation_id": "scale_v1"
+    },
+    {
+      "case_id": "ru-019",
+      "status": "resolved",
+      "operation_id": "scale_v1"
+    },
+    {
+      "case_id": "ru-020",
+      "status": "resolved",
+      "operation_id": "scale_v1"
+    },
+    {
+      "case_id": "ru-021",
+      "status": "resolved",
+      "operation_id": "scale_v1"
+    },
+    {
+      "case_id": "ru-022",
+      "status": "resolved",
+      "operation_id": "scale_v1"
+    },
+    {
+      "case_id": "ru-023",
+      "status": "resolved",
+      "operation_id": "scale_v1"
+    },
+    {
+      "case_id": "ru-024",
+      "status": "resolved",
+      "operation_id": "operating_margin_v1",
+      "metric_ids": [
+        "operating_profit",
+        "revenue"
+      ],
+      "organization": "segezha_group"
+    },
+    {
+      "case_id": "ru-025",
+      "status": "resolved",
+      "operation_id": "operating_margin_v1",
+      "metric_ids": [
+        "operating_profit",
+        "revenue"
+      ],
+      "organization": "segezha_group"
+    },
+    {
+      "case_id": "ru-026",
+      "status": "resolved",
+      "operation_id": "operating_margin_v1",
+      "metric_ids": [
+        "operating_profit",
+        "revenue"
+      ],
+      "organization": "segezha_group"
+    },
+    {
+      "case_id": "ru-027",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "quarter",
+          "start": "2025-01-01",
+          "end": "2025-03-31"
+        }
+      ]
+    },
+    {
+      "case_id": "ru-028",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "year_to_date",
+          "start": "2025-01-01",
+          "end": "2025-06-30"
+        }
+      ]
+    },
+    {
+      "case_id": "ru-029",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "year_to_date",
+          "start": "2025-01-01",
+          "end": "2025-09-30"
+        }
+      ]
+    },
+    {
+      "case_id": "ru-030",
+      "status": "resolved",
+      "operation_id": "absolute_change_v1",
+      "assumption_direction": "decrease"
+    },
+    {
+      "case_id": "ru-031",
+      "status": "resolved",
+      "operation_id": "absolute_change_v1",
+      "assumption_direction": "decrease"
+    },
+    {
+      "case_id": "ru-032",
+      "status": "resolved",
+      "operation_id": "absolute_change_v1",
+      "assumption_direction": "increase"
+    },
+    {
+      "case_id": "ru-033",
+      "status": "resolved",
+      "operation_id": "absolute_change_v1",
+      "assumption_direction": "increase"
+    },
+    {
+      "case_id": "ru-034",
+      "status": "resolved",
+      "operation_id": "absolute_change_v1",
+      "assumption_direction": "unchanged"
+    },
+    {
+      "case_id": "ru-035",
+      "status": "resolved",
+      "operation_id": "absolute_change_v1",
+      "assumption_direction": "unchanged"
+    },
+    {
+      "case_id": "ru-036",
+      "status": "resolved",
+      "operation_id": "relative_change_v1",
+      "assumption_direction": "decrease"
+    },
+    {
+      "case_id": "ru-037",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ],
+      "as_of": "2026-11-10T01:00:00+03:00"
+    },
+    {
+      "case_id": "ru-038",
+      "status": "awaiting_clarification",
+      "clarification_field": "organization"
+    },
+    {
+      "case_id": "ru-039",
+      "status": "awaiting_clarification",
+      "clarification_field": "organization"
+    },
+    {
+      "case_id": "ru-040",
+      "status": "awaiting_clarification",
+      "clarification_field": "organization"
+    },
+    {
+      "case_id": "ru-041",
+      "status": "awaiting_clarification",
+      "clarification_field": "periods"
+    },
+    {
+      "case_id": "ru-042",
+      "status": "awaiting_clarification",
+      "clarification_field": "periods"
+    },
+    {
+      "case_id": "ru-043",
+      "status": "awaiting_clarification",
+      "clarification_field": "mode"
+    },
+    {
+      "case_id": "ru-044",
+      "status": "awaiting_clarification",
+      "clarification_field": "version_policy"
+    },
+    {
+      "case_id": "ru-045",
+      "status": "awaiting_clarification",
+      "clarification_field": "documents"
+    },
+    {
+      "case_id": "ru-046",
+      "status": "awaiting_clarification",
+      "clarification_field": "operation_id"
+    },
+    {
+      "case_id": "ru-047",
+      "status": "awaiting_clarification",
+      "clarification_field": "operation_id"
+    },
+    {
+      "case_id": "ru-048",
+      "status": "awaiting_clarification",
+      "clarification_field": "as_of"
+    },
+    {
+      "case_id": "ru-049",
+      "status": "awaiting_clarification",
+      "clarification_field": "as_of"
+    },
+    {
+      "case_id": "ru-050",
+      "status": "unsupported",
+      "reason_code": "unsupported_metric"
+    },
+    {
+      "case_id": "ru-051",
+      "status": "unsupported",
+      "reason_code": "unsupported_metric"
+    },
+    {
+      "case_id": "ru-052",
+      "status": "unsupported",
+      "reason_code": "unsupported_metric"
+    },
+    {
+      "case_id": "ru-053",
+      "status": "unsupported",
+      "reason_code": "unsupported_metric"
+    },
+    {
+      "case_id": "ru-054",
+      "status": "unsupported",
+      "reason_code": "financial_or_other_standard_not_supported"
+    },
+    {
+      "case_id": "ru-055",
+      "status": "unsupported",
+      "reason_code": "scope_not_supported"
+    },
+    {
+      "case_id": "ru-056",
+      "status": "unsupported",
+      "reason_code": "scope_not_supported"
+    },
+    {
+      "case_id": "ru-057",
+      "status": "unsupported",
+      "reason_code": "percentage_point_operation_not_registered"
+    },
+    {
+      "case_id": "ru-058",
+      "status": "unsupported",
+      "reason_code": "currency_conversion_not_supported"
+    },
+    {
+      "case_id": "ru-059",
+      "status": "unsupported",
+      "reason_code": "intent_not_recognized"
+    },
+    {
+      "case_id": "ru-060",
+      "status": "unsupported",
+      "reason_code": "untrusted_instruction"
+    },
+    {
+      "case_id": "ru-061",
+      "status": "unsupported",
+      "reason_code": "untrusted_instruction"
+    },
+    {
+      "case_id": "ru-062",
+      "status": "unsupported",
+      "reason_code": "untrusted_instruction"
+    },
+    {
+      "case_id": "ru-063",
+      "status": "unsupported",
+      "reason_code": "negated_direction_not_supported"
+    },
+    {
+      "case_id": "ru-064",
+      "status": "unsupported",
+      "reason_code": "percent_amount_unit_conflict"
+    },
+    {
+      "case_id": "ru-065",
+      "status": "conflict",
+      "reason_code": "incompatible_periods"
+    },
+    {
+      "case_id": "ru-066",
+      "status": "missing",
+      "reason_code": "no_compatible_fact"
+    },
+    {
+      "case_id": "ru-067",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "metric_ids": [
+        "revenue"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ]
+    },
+    {
+      "case_id": "ru-068",
+      "status": "resolved",
+      "operation_id": "absolute_change_v1",
+      "metric_ids": [
+        "revenue"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ]
+    },
+    {
+      "case_id": "ru-069",
+      "status": "resolved",
+      "operation_id": "relative_change_v1",
+      "metric_ids": [
+        "revenue"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2023-01-01",
+          "end": "2023-12-31"
+        },
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ]
+    },
+    {
+      "case_id": "ru-070",
+      "status": "resolved",
+      "operation_id": "scale_v1",
+      "metric_ids": [
+        "revenue"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ]
+    },
+    {
+      "case_id": "ru-071",
+      "status": "resolved",
+      "operation_id": "operating_margin_v1",
+      "metric_ids": [
+        "operating_profit",
+        "revenue"
+      ],
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ]
+    },
+    {
+      "case_id": "ru-072",
+      "status": "resolved",
+      "operation_id": "absolute_change_v1",
+      "assumption_direction": "decrease"
+    },
+    {
+      "case_id": "ru-073",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "organization": "phosagro_group"
+    },
+    {
+      "case_id": "ru-074",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1",
+      "organization": "phosagro_group",
+      "periods": [
+        {
+          "kind": "duration",
+          "duration_type": "full_year",
+          "start": "2024-01-01",
+          "end": "2024-12-31"
+        }
+      ]
+    },
+    {
+      "case_id": "ru-075",
+      "status": "resolved",
+      "operation_id": "direct_fact_v1"
+    },
+    {
+      "case_id": "ru-076",
+      "status": "unsupported",
+      "reason_code": "multiple_document_mentions"
+    }
+  ]
+}

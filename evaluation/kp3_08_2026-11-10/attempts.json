@@ -1,0 +1,25 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "issues": [
+        "Unknown-organization regex matched the suffix у inside выручку; added word boundary.",
+        "Bare Segezha was not a declared catalog alias; added controlled expansion only when canonical Segezha Group exists."
+      ],
+      "resolved": true
+    },
+    {
+      "attempt": 2,
+      "issues": [
+        "Test expansion inserted new methods before two trailing lines of the prior test: IndentationError. Moved lines back into their test."
+      ],
+      "resolved": true
+    }
+  ],
+  "later_semantic_review": [
+    "Unavailable explicit source report never falls back to a different year.",
+    "Mixed windows, contradictory mode/policy and multiple source IDs/scales are not reduced to the first match.",
+    "Form preserves source-worded premise and rejects contradictory understood wording."
+  ],
+  "final_unit_tests": 467
+}

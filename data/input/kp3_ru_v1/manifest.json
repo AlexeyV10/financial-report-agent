@@ -1,0 +1,18 @@
+{
+  "manifest_version": "1.0",
+  "language_version": "ru-input-v1",
+  "scope": "open_dev_preparation_not_final_eval",
+  "runtime_reads_expected": false,
+  "file_sha256": {
+    "src/financial_assistant/input_contracts.py": "5102f0da9c4f11f4bac171be69a4960b81c0162b40ca13aea31072fab4d2055a",
+    "src/financial_assistant/russian_input.py": "d942cf7f09605d8015083fb97d935f46f69e2fac13e2f3af5b3a71399aec0e46",
+    "src/financial_assistant/input_binding.py": "80f3f55fe982953f42f69f5e23b7866b38509b80cae1fa4a9142effaf7d0808b",
+    "scripts/parse_financial_input.py": "5dcd2b5b2ca21acd5f5eebe81bd00f114e069485de0971b960201c87872911ab",
+    "scripts/build_kp3_input_dev.py": "638800487e2a869876b64679b7f46f1e412e5858b2e0f1d1fa60d296604c412a",
+    "scripts/check_kp3_input.py": "e68b3f97129e9cdf9561a4922e89639adb35dd8c6c984ec6dd44df977f9acb09",
+    "tests/test_russian_input.py": "a4744f4fd72e31920875d5cc0d58ab688856a3e4065ef6c9a1e77525a46a4d72",
+    "docs/kp3/russian_input_v1.md": "61fd8a4c3414a01a69091034926db9fe1d208af6d6b2554816bbefeaf640c8bf",
+    "data/dev_cases/kp3_input_v1/cases.json": "3575cd572d9cbe963da46c6b683e014609a4f0dbbe6bc46cb0fd48a6a8e92657",
+    "evaluation/fixtures/kp3_input_v1/expected.json": "61f39cefb204c4a701d9020f9f420403910219206759df601c4a2876829da329"
+  }
+}

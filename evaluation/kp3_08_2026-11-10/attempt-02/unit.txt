@@ -1,0 +1,21 @@
+test_russian_input (unittest.loader._FailedTest.test_russian_input) ... ERROR
+
+======================================================================
+ERROR: test_russian_input (unittest.loader._FailedTest.test_russian_input)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_russian_input
+Traceback (most recent call last):
+  File "C:\msys64\ucrt64\lib\python3.14\unittest\loader.py", line 433, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "C:\msys64\ucrt64\lib\python3.14\unittest\loader.py", line 374, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-08-worktree\tests\test_russian_input.py", line 255
+    task=self.bind()['normalized_input'];task['history']=[dict(answers=dict(value='999'),replaced_unresolved={})]
+IndentationError: unexpected indent
+
+
+----------------------------------------------------------------------
+Ran 1 test in 0.000s
+
+FAILED (errors=1)
