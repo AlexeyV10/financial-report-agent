@@ -33,6 +33,7 @@ delivery/*
 # Exact exceptions: our own reports and already checked project archives.
 !materials/kp2_2026-11-09/KP2_report_v2.pdf
 !materials/kp2_2026-11-09/KP2_slides_v2.pdf
+!materials/kp2_speech_2026-11-11/KP2_speech_3_minutes_ru.pdf
 !delivery/kp2-local-step13-v1-2026-11-09.zip
 !delivery/kp2-local-step13-v1-2026-11-09.receipt.json
 !delivery/kp2-materials-step14-v1-2026-11-09.zip

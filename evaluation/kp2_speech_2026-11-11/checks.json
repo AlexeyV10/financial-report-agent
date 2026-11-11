@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-11",
+  "scope": "Three-minute speech for nine slides of the provided KP2 deck; later KP3/Windows results are outside scope",
+  "source_deck_sha256": "260f563e4f2672464a1ba677ad619c227197196f5d1adc229667ef28026c16c7",
+  "pdf_sha256": "cda067d45dc18a3eac61780005bd45c72ba22e9bb007583485b2a7a021c60938",
+  "pdf_bytes": 94595,
+  "pages": 2,
+  "spoken_words_whitespace": 317,
+  "timing": "Estimated about 3 minutes including reading numbers and brief transitions; no recorded rehearsal",
+  "all_slide_texts_preserved": true,
+  "speaker_order_verified": true,
+  "cyrillic_font_subsets_embedded": [
+    "/AAAAAA+Arial-BoldMT",
+    "/AAAAAA+ArialMT"
+  ],
+  "replacement_or_square_characters": false,
+  "arithmetic": {
+    "source_previous_million_RUB": "440304",
+    "source_current_million_RUB": "507689",
+    "difference_million_RUB": "67385",
+    "growth_percent": "15.30",
+    "synthetic_start_RUB": "10000",
+    "synthetic_end_RUB": "10098",
+    "synthetic_change_percent": "0.98"
+  },
+  "source_check": {
+    "primary_pdf_sha256": "824f100d14396c26faacf80a03cca6b20d458c9b5d835201bc80068decb3d6e1",
+    "page": 4,
+    "region": "left",
+    "printed_page": 320,
+    "row": "Выручка",
+    "note": 6,
+    "column_order": [
+      "2024",
+      "2023"
+    ],
+    "unit": "Млн руб.",
+    "sign": "positive",
+    "render_visually_reviewed": true,
+    "scope_standard_reference": "docs/source_verification.md",
+    "publication": "unknown/unproven",
+    "human_reviewed": false
+  },
+  "historical_metrics_sources": [
+    "docs/measurements.md",
+    "evaluation/step12_2026-11-09/run-02-environment-retry/results.json",
+    "evaluation/github_2026-11-09/clone-check.json"
+  ],
+  "metrics": {
+    "numeric_task_B": "1/1",
+    "numeric_task_C": "1/1",
+    "numeric_claims_B": "4/4",
+    "numeric_claims_C": "4/4",
+    "correct_refusals_B": "2/2",
+    "correct_refusals_C": "1/2",
+    "supported_templates_B_C": "3/10",
+    "historical_local_unit_tests": 267
+  },
+  "claim_corrections": [
+    "No CI/CD claim: tests are historical local restored-copy checks",
+    "No automatic extraction of all financial table values",
+    "No general accuracy or agent superiority claim",
+    "Names are speaking assignments; no personal development attribution"
+  ],
+  "code_tests_rerun": false,
+  "new_model_calls": 0,
+  "new_source_extraction_experiment": false,
+  "rendered_pages": 2,
+  "visual_review": "Both rendered pages inspected together: no clipping, overlap, missing Cyrillic glyphs or split speaker blocks",
+  "source_deck_unchanged": true
+}
