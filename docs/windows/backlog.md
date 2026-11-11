@@ -4,7 +4,7 @@
 
 При каждом этапе: свежий fetch/main/PR; отдельная codex/ветка и worktree; сохранить исходные байты; allowlist commits/push/PR/technical tag; merge только по поручению. Новые факты/метрики/модели требуют собственной версии/проверок. Неприкосновенность старых gold/manifests и права на данные сохраняются.
 
-[Основной план](../../ПЛАН_РАЗВИТИЯ_WINDOWS.md) · [JSON](roadmap.json) · [Следующий самостоятельный промт WIN-02B](../../prompts/windows_02b_clean_vm_acceptance.md)
+[Основной план](../../ПЛАН_РАЗВИТИЯ_WINDOWS.md) · [JSON](roadmap.json) · [Возобновить WIN-02B после готовности guest](../../prompts/windows_02b_resume_when_guest_ready.md)
 
 ## WIN-00. Зафиксировать исследование и продуктовые границы
 
@@ -33,6 +33,8 @@
 **Готовность и отрицательные проверки:** Windows11 x64 без Python/Ollama/admin, Unicode путь, offline запуск собственного примера, uninstall; без PATH/global installs. Это feasibility, не подписанный публичный релиз.
 
 **Фактически11.11:** per-user installer22434104байт, private CPython/PDFium/WPF, install/shortcut/source15,00%/cancel/crash/uninstall на хосте проверены;10 package checks прошли. Clean VM отсутствует, OS200/contrast/Narrator speech не приняты;25 legacy cross-root path guards сохранены. Полная приёмка02 не закрыта. [Результат](installer_spike_02.md), [evidence](../../evaluation/windows_02_2026-11-11/README.md), [WIN-02B](../../prompts/windows_02b_clean_vm_acceptance.md).
+
+**WIN-02B,11.11:** resource_blocked_kit_prepared. Пользователь подтвердил отсутствие чистой среды; kit с неизменным installer/collector/runbook готов, guest acceptance не выполнена. [Результат](clean_vm_acceptance_02b.md). Не повторять подготовку до появления ресурса; WIN-02 не complete.
 
 ## WIN-03. Выбрать stock CPython и зафиксировать зависимости
 

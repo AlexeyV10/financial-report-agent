@@ -1,0 +1,17 @@
+{
+  "status": "resource_blocked_kit_prepared",
+  "user_confirmed": "Пока нет",
+  "meaning": "No ready clean VM or separate clean PC with usable control/transfer available.",
+  "inventory": "environment.json",
+  "needed": [
+    "Concrete clean Windows11x64 guest or clean separate machine",
+    "Authorized OS image and known clean-state provenance",
+    "Standard account without Administrators membership",
+    "Permitted artifact transfer and controllable desktop/CLI surface"
+  ],
+  "settings_changed": false,
+  "new_hypervisor_installed": false,
+  "guest_attempted": false,
+  "host_installer_rerun": false,
+  "not_a_formal_team_approval_blocker": true
+}

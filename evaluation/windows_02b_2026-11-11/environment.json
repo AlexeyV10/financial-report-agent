@@ -1,0 +1,38 @@
+{
+  "ObservedOn": "2026-11-11",
+  "UserResourceAnswer": "Пока нет",
+  "CleanGuestAvailable": false,
+  "SandboxExe": false,
+  "VMMS": false,
+  "VMCompute": false,
+  "HyperVModule": 0,
+  "HypervisorPresent": true,
+  "FirmwareVirtualization": false,
+  "AdminToken": false,
+  "KnownCommands": [
+    {
+      "Name": "VBoxManage",
+      "Found": false
+    },
+    {
+      "Name": "vmrun",
+      "Found": false
+    },
+    {
+      "Name": "qemu-system-x86_64",
+      "Found": false
+    },
+    {
+      "Name": "Get-VM",
+      "Found": false
+    },
+    {
+      "Name": "WindowsSandbox",
+      "Found": false
+    }
+  ],
+  "KnownVMApps": [],
+  "KnownVMExecutablePathsFound": [],
+  "HostSettingsChanged": false,
+  "QwenProbed": false
+}

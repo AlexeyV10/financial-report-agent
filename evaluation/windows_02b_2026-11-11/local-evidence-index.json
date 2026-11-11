@@ -1,0 +1,76 @@
+{
+  "files": [
+    {
+      "path": "tmp/kit-v1/kit-receipt.json",
+      "bytes": 1677,
+      "sha256": "8f271b2fa139cc69a34f7991995136bfc9e3838373e8531030fd095c36ca9d07"
+    },
+    {
+      "path": "tmp/kit-v2/kit-receipt.json",
+      "bytes": 1677,
+      "sha256": "a1c79e8c7ffeb9940b57b7485e673e4ce33e0f6cb981d626a45b619e2daf9320"
+    },
+    {
+      "path": "tmp/kit-v1/verification.json",
+      "bytes": 424,
+      "sha256": "d3a1e0bc41890ee54cbaabf393e81e726e673b91e8a3738d961dedb747168b21"
+    },
+    {
+      "path": "tmp/kit-v2/verification.json",
+      "bytes": 424,
+      "sha256": "d3a1e0bc41890ee54cbaabf393e81e726e673b91e8a3738d961dedb747168b21"
+    },
+    {
+      "path": "tmp/kit-v1/synthetic-controls.json",
+      "bytes": 71,
+      "sha256": "ebfbe447d44d992f0167d4adcecdc4a75c58cccf7536d048d29c66dedce97947"
+    },
+    {
+      "path": "tmp/kit-v2/synthetic-controls.json",
+      "bytes": 71,
+      "sha256": "ebfbe447d44d992f0167d4adcecdc4a75c58cccf7536d048d29c66dedce97947"
+    },
+    {
+      "path": "tmp/kit-v1/actual-host-refusal.json",
+      "bytes": 163,
+      "sha256": "cce35f3f59b4ac8890426a07803c5c3401e7badb5325c94556b1098a2d512f1f"
+    },
+    {
+      "path": "tmp/kit-v2/actual-host-refusal.json",
+      "bytes": 163,
+      "sha256": "cce35f3f59b4ac8890426a07803c5c3401e7badb5325c94556b1098a2d512f1f"
+    },
+    {
+      "path": "tmp/kit-v1/CollectorTests.exe.compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tmp/kit-v1/GuestEvidence.exe.compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tmp/kit-v2/CollectorTests.exe.compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tmp/kit-v2/GuestEvidence.exe.compile.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tmp/kit-v1/wrong-installer-refusal.txt",
+      "bytes": 689,
+      "sha256": "22c1b82da4e0a8b1374d11ac54bdf2546246726a1431af2a9ac8e92d1f98c942"
+    },
+    {
+      "path": "tmp/kit-v2/wrong-installer-refusal.txt",
+      "bytes": 689,
+      "sha256": "22c1b82da4e0a8b1374d11ac54bdf2546246726a1431af2a9ac8e92d1f98c942"
+    }
+  ],
+  "private_guard_not_indexed_or_published": true,
+  "binaries_only_in_ignored_tmp": true
+}

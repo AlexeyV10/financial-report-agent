@@ -1,3 +1,26 @@
+WIN-02B,11.11.2026: resource_blocked_kit_prepared. Пользователь подтвердил:
+готовой чистой VM/отдельного ПК пока нет. Свежая инвентаризация доступной чистой
+Windows-среды не выявила. Приёмка guest не исполнялась; WIN-02 остаётся
+host_validated_clean_vm_pending. Installer не пересобирался и не запускался заново.
+Подготовлен локальный переносимый kit22366270байт, SHA
+c99bd95e771a5f8e92c442459fe6d45f96cd7f44ead59cf5ed655cc4599a0fbb,
+с неизменным v4 installer (SHA f69523d44f474eacb0905d66e4f90294a3124a3d348c44222e6fe8e9ec3e56cf),
+своим evidence collector, неподтверждённым provenance template и полным runbook.
+17 синтетических boundary controls, actual host refusal exit21, unknown-command/
+modified-installer refusals и ZIP/hash checks прошли. Это preparation proof,
+не guest tests; collector никогда не объявляет acceptance автоматически.
+Host comparison config и binaries только tmp; raw machine ID не сохраняется.
+Документы: docs/windows/clean_vm_acceptance_02b.md; spikes/windows_02b/RUNBOOK_RU.md;
+evidence: evaluation/windows_02b_2026-11-11/. Для продолжения нужны конкретная
+чистая Windows11x64 guest/ПК, разрешённый образ, standard account и способ передачи/
+управления. Сценарий уже готов: prompts/windows_02b_resume_when_guest_ready.md.
+До ресурса повторно делать такой же kit/опрос/подготовительный PR не нужно.
+Qwen/глобальные среды/настройки/старое ядро/данные/frozen/КП1 сохранены.
+WIN-03/04/54 и академические18/19/20 не начаты/не закрыты. Merge не поручен.
+Git: codex/windows-02b-clean-vm-acceptance, base656424de; точные PR/head/
+preparation-only tag — git-publication.json и финальная локальная квитанция.
+Исторические разделы ниже сохранены побайтовым суффиксом.
+
 WIN-02,11.11.2026: host_validated_clean_vm_pending. Собран полный локальный
 per-user installer WPF + private official CPython3.12.10 + PDFium/Pillow;
 22434104байт, SHA f69523d44f474eacb0905d66e4f90294a3124a3d348c44222e6fe8e9ec3e56cf.
