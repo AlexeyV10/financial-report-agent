@@ -1,0 +1,23 @@
+{
+  "stage": "VM official media download",
+  "branch": "codex/windows-02b-vm-download",
+  "base_branch": "codex/windows-02b-clean-vm-acceptance",
+  "base_sha": "3d6a2eccb83c30b1b477a5da0129266e51b8ef37",
+  "pull_request": "https://github.com/AlexeyV10/financial-report-agent/pull/24",
+  "pr_number": 24,
+  "verified_stage_head": "5e516d7dba213a3af7f7396ae0fe1b3cbc06258e",
+  "technical_tag": "windows-vm-media-v1-2026-11-11",
+  "tag_object": "293af3c756ac07eab3a486b5c3af6793bd8edf84",
+  "tag_target": "5e516d7dba213a3af7f7396ae0fe1b3cbc06258e",
+  "main": "f349717c5ca2acc33decf3dd7ce12b2756ce6d8b",
+  "main_conflicts": false,
+  "allowlist_matches": true,
+  "remote_tree_matches": true,
+  "remote_blobs": 1958,
+  "files": 16,
+  "merged": false,
+  "guest_created": false,
+  "guest_acceptance": false,
+  "merge_authorized": false,
+  "final_head_in": "root tmp/windows-vm-download-final-local-receipt.json; receipt commit follows tested tag"
+}
