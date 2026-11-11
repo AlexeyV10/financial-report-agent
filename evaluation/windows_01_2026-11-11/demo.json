@@ -1,0 +1,54 @@
+{
+  "origin": "own original generated fictional fixture v1",
+  "rights": "permission for this own demo only; no project code license selected",
+  "reportlab": "4.4.9",
+  "pypdf_authoring_inspection": "6.21.4",
+  "pdf_bytes": 2327,
+  "pdf_sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+  "manifest": {
+    "schema": "windows01-demo-1",
+    "document_id": "windows01-own",
+    "version_id": "windows01-own-v1",
+    "sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+    "page": 1,
+    "page_size": [
+      420,
+      360
+    ],
+    "pdf_file": "own-demo-v1.pdf",
+    "origin": "own_original_generated_synthetic",
+    "redistribution": "permitted_for_this_demo_only",
+    "generator_version": "1",
+    "cells": {
+      "revenue-own": [
+        300,
+        174,
+        340,
+        198
+      ],
+      "operating_profit-own": [
+        300,
+        150,
+        340,
+        174
+      ]
+    }
+  },
+  "financial_context": {
+    "organization": "fictional synthetic group",
+    "accounting_standard": "IFRS",
+    "consolidation": "group",
+    "period": "2025 full year",
+    "currency": "RUB",
+    "scale": 1000000,
+    "revenue": "120",
+    "operating_profit": "18",
+    "sign": "both positive",
+    "publication_date": null,
+    "human_reviewer": null
+  },
+  "calculator": "unchanged operating_margin_v1 through original load_context/admission",
+  "expected": "15.00 percent",
+  "locator_limit": "Original07 evidence kind=synthetic record_id; explicit adapter adds own PDF SHA/page/rect checks. Not a real issuer PDF admission and not a universal import.",
+  "pdf_visual_QA": "Own page rendered locally with Poppler and inspected; both values/headers and exact green profit outline also observed in real WPF window."
+}

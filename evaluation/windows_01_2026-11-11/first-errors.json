@@ -1,0 +1,74 @@
+{
+  "errors": [
+    {
+      "stage": "bootstrap",
+      "result": "First setup created branch/worktree before snapshots finished; interruption cause unproven.",
+      "resolution": "Continuation finished fresh snapshots and verified branch/base; no reset/clean/stash."
+    },
+    {
+      "stage": "environment inventory",
+      "result": "Initial CIM query denied in restricted execution.",
+      "resolution": "Actual later unrestricted query succeeded; exact hardware recorded."
+    },
+    {
+      "stage": "isolated ensurepip",
+      "result": "Initial restricted temporary-file access failed.",
+      "resolution": "At that time a real escalated retry succeeded; only new tmp environment changed."
+    },
+    {
+      "stage": "isolated wheel download",
+      "result": "Initial restricted DNS/network request failed.",
+      "resolution": "At that time actual escalated download succeeded; offline installation used the downloaded wheels. No alternate security bypass."
+    },
+    {
+      "stage": "first Qt live render",
+      "result": "Worker stdout used Windows default encoding and Russian progress failed.",
+      "resolution": "Worker UTF-8 stdio fixed explicitly; actual IPC and GUI tests passed."
+    },
+    {
+      "stage": "first Qt component tests",
+      "result": "Cancelled old QProcess callback accessed an already deleted object.",
+      "resolution": "Added identity guard and shiboken validity check; attempt2 and final 3 tests passed."
+    },
+    {
+      "stage": "table and DPI layout",
+      "result": "Initial proxy sort and single-row buttons were unsuitable for 10000 rows/high DPI.",
+      "resolution": "Sorted model order and grid buttons; numeric table tests pass. Large-font compact layout still limited."
+    },
+    {
+      "stage": "WPF rebuild",
+      "result": "Own experimental EXE was locked while running.",
+      "resolution": "Verified and stopped only own experiment, then rebuilt and exercised updated EXE."
+    },
+    {
+      "stage": "CUA",
+      "result": "Initial target activation auto-review rejected when screenshot showed an unrelated occluder; later target timeouts/user-input guards also occurred.",
+      "resolution": "Refreshed known own windows and target evidence before accepted retries. No unrelated app was controlled; raw screenshots remain local only."
+    },
+    {
+      "stage": "keyboard file picker",
+      "result": "Early focus/typing attempts did not select filename correctly.",
+      "resolution": "Own file was selected through native dialog; final WPF keyboard filename+Return worked. No claim of exhaustive keyboard coverage."
+    },
+    {
+      "stage": "Narrator",
+      "result": "launch_app initially reported no targetable window; later Narrator process and empty panel were observed.",
+      "resolution": "Narrator was started, focus moved in WPF, read command sent and own Narrator exited with Insert+Escape. Speech was not observable, auditory acceptance NOT passed."
+    },
+    {
+      "stage": "Qt packaged frontend v3",
+      "result": "PyInstaller onedir built successfully but launch failed importing PySide6.QtCore: DLL load failed / procedure could not be found.",
+      "resolution": "UNRESOLVED. Actual source Qt works; built Qt is not claimed usable. Concrete reason for WPF fallback; not repaired by modifying global DLLs."
+    },
+    {
+      "stage": "Qt responsiveness",
+      "result": "Final sequential source runs still showed max event-loop gaps 695-760ms; some gaps occurred idle, others during worker jobs. Manual UIA inspection showed longer pauses.",
+      "resolution": "UNRESOLVED. Direct table sort now 22-29ms, which does not prove other pauses fixed. Library/UIA/root cause not isolated."
+    },
+    {
+      "stage": "measurement receipt read",
+      "result": "First attempt to read packaged Qt ui.json failed because startup had produced no UI receipt.",
+      "resolution": "Read real stderr and recorded DLL failure; no fabricated build-success result."
+    }
+  ]
+}

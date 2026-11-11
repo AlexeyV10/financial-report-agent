@@ -1,0 +1,439 @@
+{
+  "origin": "PyPI wheels downloaded for this isolated spike, no wheel binaries committed",
+  "files": [
+    {
+      "file": "altgraph-0.17.5-py2.py3-none-any.whl",
+      "bytes": 21228,
+      "sha256": "f3a22400bce1b0c701683820ac4f3b159cd301acab067c51c653e06961600597",
+      "license_notice_files": [
+        {
+          "path": "altgraph-0.17.5.dist-info/LICENSE",
+          "sha256": "6c194d6db0c64d45535d10c95142b9b0cda7b7dcc7f1ddee302b3d536f3dbe46",
+          "bytes": 1002
+        }
+      ]
+    },
+    {
+      "file": "packaging-26.3-py3-none-any.whl",
+      "bytes": 129956,
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "license_notice_files": [
+        {
+          "path": "packaging/licenses/__init__.py",
+          "sha256": "590d12eee73ddbec53b4e9ee5bfc64d9cb3aacb4940e8ebcba260757ce56740b",
+          "bytes": 7859
+        },
+        {
+          "path": "packaging/licenses/_spdx.py",
+          "sha256": "596ec35e2ca0ebcba9fd8343ff0a51625af548786257815f24b41f7e08613314",
+          "bytes": 51122
+        },
+        {
+          "path": "packaging-26.3.dist-info/licenses/LICENSE",
+          "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+          "bytes": 197
+        },
+        {
+          "path": "packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+          "bytes": 10174
+        },
+        {
+          "path": "packaging-26.3.dist-info/licenses/LICENSE.BSD",
+          "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+          "bytes": 1344
+        }
+      ]
+    },
+    {
+      "file": "pefile-2024.8.26-py3-none-any.whl",
+      "bytes": 74766,
+      "sha256": "76f8b485dcd3b1bb8166f1128d395fa3d87af26360c2358fb75b80019b957c6f",
+      "license_notice_files": [
+        {
+          "path": "pefile-2024.8.26.dist-info/LICENSE",
+          "sha256": "b44409c067c6da52bfb54bb6624fb11a7b52157c3a13ae1400232f8196e86ad3",
+          "bytes": 1083
+        }
+      ]
+    },
+    {
+      "file": "pillow-13.0.0-cp312-cp312-win_amd64.whl",
+      "bytes": 7272166,
+      "sha256": "ff3fe9eb621fbb9db4c4be33ab946f6bac5f98ab50ca8d3260503653656c961b",
+      "license_notice_files": [
+        {
+          "path": "pillow-13.0.0.dist-info/licenses/LICENSE",
+          "sha256": "988ffe8ab3480b0f4e9a0ab2702bffd73d9fb6b47198043fb3ba101a62fac236",
+          "bytes": 78481
+        }
+      ]
+    },
+    {
+      "file": "psutil-7.2.2-cp37-abi3-win_amd64.whl",
+      "bytes": 137737,
+      "sha256": "eb7e81434c8d223ec4a219b5fc1c47d0417b12be7ea866e24fb5ad6e84b3d988",
+      "license_notice_files": [
+        {
+          "path": "psutil-7.2.2.dist-info/LICENSE",
+          "sha256": "c7adc4d5d1337a548b967421f1fbe258b93033a0417708fd6f4e38f8ecbceb80",
+          "bytes": 1577
+        }
+      ]
+    },
+    {
+      "file": "pyinstaller-6.22.3-py3-none-win_amd64.whl",
+      "bytes": 1454907,
+      "sha256": "500bd58c7bf7e584a8435adccbd763a0b918d5c12b08d74ff50fd79b2915458b",
+      "license_notice_files": [
+        {
+          "path": "pyinstaller-6.22.3.dist-info/licenses/COPYING.txt",
+          "sha256": "0598064c7d2718e38d7914a7d08343b2fa008e3bea9ebba2aa7a6ffa5900dd64",
+          "bytes": 32604
+        }
+      ]
+    },
+    {
+      "file": "pyinstaller_hooks_contrib-2026.10-py3-none-any.whl",
+      "bytes": 463652,
+      "sha256": "dfc3cde20a7ce6c92e803016e66eed4b7050467e2c5f886a3745d89b258c6d6d",
+      "license_notice_files": [
+        {
+          "path": "pyinstaller_hooks_contrib-2026.10.dist-info/licenses/LICENSE",
+          "sha256": "91d0baaff00773038e72c0a1fc9d5d2d38706b7a2b9c04f34296608f931b9cd0",
+          "bytes": 27666
+        }
+      ]
+    },
+    {
+      "file": "pypdfium2-5.15.2-py3-none-win_amd64.whl",
+      "bytes": 4187589,
+      "sha256": "74d1bace34fb01c660d0b64344d5a4b7d276942b7c6623c88ab59ea21c5acfbd",
+      "license_notice_files": [
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/abseil.txt",
+          "sha256": "2b6958687fd4b5127aaa0398910ea51a33ec501e99b1043884ae2422b48f5120",
+          "bytes": 34
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/agg23.txt",
+          "sha256": "000aa4a787d3f3e5e02ebb02e55560bb1f04fa383a4ea262eed60c7e2bcc1d11",
+          "bytes": 739
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/dragonbox-Apache2-LLVM.txt",
+          "sha256": "2be7ca5745e68fd3534f124b44970fbb5d506053f0a2e81fb490d6e0d360e62f",
+          "bytes": 933
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/dragonbox-Boost.txt",
+          "sha256": "beb8e42e9d6b4284e03304d05a81a0755200a965fc8d0a5e0aea1e84cf805d6e",
+          "bytes": 1361
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/fast_float.txt",
+          "sha256": "bf1b57355feca8fce77ee95f48002f8d4789fb71b30ec7599c06cda4901fbb2b",
+          "bytes": 1106
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/freetype.txt",
+          "sha256": "93db264e083fa85b7494b3dd47a214a4043b37170d7079cd4b16eb05842f5eac",
+          "bytes": 6910
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/harfbuzz.txt",
+          "sha256": "bd836c0ddca8ea0bab54a03cd32b6ff7256cbb3840fca2edc1249a4ed92c5b02",
+          "bytes": 2013
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/highway.txt",
+          "sha256": "a4e3fb11044d78e2a9464e6dd9357834fe35a6ded21157f73a8c370207629630",
+          "bytes": 32
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/icu.txt",
+          "sha256": "fcd7d69d457ebec8024269777c5d9cf3afc554592484d3dc7d9e619872f89c9c",
+          "bytes": 25697
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/lcms.txt",
+          "sha256": "295009507fa4dae3cf8e30b4487a5b16d69714a8e4176eef6c42a9143f490751",
+          "bytes": 1381
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/libjpeg_turbo.ijg",
+          "sha256": "db16a04128171879c60708d171b88d97345a2dd20f9bfc173680a4497c73f704",
+          "bytes": 13059
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/libjpeg_turbo.md",
+          "sha256": "be2b2b5ab168bce87bc3e31f2a5c5adba4b7f6e9e51d618e958d1d46972ebd95",
+          "bytes": 5755
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/libopenjpeg.txt",
+          "sha256": "f24f5b3d732a99ae41f2307626289ceffdf4f8a28e4d0cd4c07d58d7a8005d4a",
+          "bytes": 1826
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/libpng.txt",
+          "sha256": "0ad3bfee8be10e5519949e7af492e36bc349376b75fbeb412229a5967e3e9434",
+          "bytes": 5479
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/libtiff.txt",
+          "sha256": "8eeab3915f97f6f7b62a8008bf77e7ac3bfbb034b04d93cd63aafa10b2dd6614",
+          "bytes": 1160
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/pdfium-binaries.txt",
+          "sha256": "ae10144a9b76a631144bb743737e63ef4c9521572affbad4f26cb5cb98b03ff7",
+          "bytes": 1186
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/pdfium.txt",
+          "sha256": "d8a7290709944ec857b508f663d983cc051464e48cec11040240bcc14c566765",
+          "bytes": 1596
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/simdutf.txt",
+          "sha256": "c172a0ba936ff31230febb5dad869e25cb7c1a07480c7a381be8cf011bb52719",
+          "bytes": 1077
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/zlib.txt",
+          "sha256": "254398acc7ecebe67b2cab0582f82dac00557b959f75cdff19c00885758fc141",
+          "bytes": 1357
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/SHARED/Apache-2.0.txt",
+          "sha256": "e8de1a7393457e9c88768b78e6ba790622fbefb040ce48194c2cb0f1b6d4e9ff",
+          "bytes": 11562
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/all_except_musl/llvm-libc.txt",
+          "sha256": "6016472d2a5cada75c572758af89b2d0acbb8ca50f54471ede2304e2150e9911",
+          "bytes": 3872
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/android/catapult.txt",
+          "sha256": "eb09f5a3f8ad0e302f5a9212f77b2360bce8b56ad7539294fd38ad16d6ff4101",
+          "bytes": 1510
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/android/cpu_features.txt",
+          "sha256": "7d14bd360e234545369b9cf0df2043642dfacf22f29913e54d3c1c53aee259d8",
+          "bytes": 1581
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/android/libunwind.txt",
+          "sha256": "6f26e5314b2437de6860ef81700271ee4d58acc560ef940206f5b65bc20a216b",
+          "bytes": 5471
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/cibw_musl/libgcc_and_libstdc++.txt",
+          "sha256": "46a0436acebcd76e074f6a4a518ece8262ec1e23a4f986ccc97f07ebe727955b",
+          "bytes": 36563
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/pbin_and_sbuild/brotli.txt",
+          "sha256": "60ae0f13e76cc2eaaa108677eefa4ce16b647f6bbe8cf0a1ac9429d82eca7248",
+          "bytes": 1103
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/pbin_and_sbuild/libyuv.txt",
+          "sha256": "91b2be0a4696a7f98e38ec95d53fb3c1e8a476ce7246f54390276f94d9508ec2",
+          "bytes": 1535
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/pbin_musl/musl.txt",
+          "sha256": "78b7299d4ca6d7cb8927e957b83e4bc85fd3a86f2c2c97f8b802a34ac512d775",
+          "bytes": 6389
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/bigint.txt",
+          "sha256": "e6c59961fac76abbcdfba5868e85f7fe7eb4f710de816bae63302e4315951121",
+          "bytes": 3438
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/fdlibm.txt",
+          "sha256": "9117ecd79d00160524d0c923aa41c10cd3cab3753bc985e3069eaa9f1481cc17",
+          "bytes": 256
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/fp16.txt",
+          "sha256": "379a933d79d62910b33cc9f17f63a3430c16a8ee216a82e824e9e0169c0e1702",
+          "bytes": 1170
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/inspector_protocol.txt",
+          "sha256": "947e007730399c016f392ecbfcfa9e2c1bfa227924fd2823e74ec1e10964e47d",
+          "bytes": 1564
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/strongtalk.txt",
+          "sha256": "45d1dff3ad3ed6aec8947f7ce6a4781c535f1d73450b703c594d8bc6285c7736",
+          "bytes": 1511
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/v8.txt",
+          "sha256": "befd10530f302b2108022be94d74eed4943880fc0626ab762ca7b53521813eeb",
+          "bytes": 1553
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/LICENSES/Apache-2.0.txt",
+          "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+          "bytes": 11560
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/LICENSES/BSD-3-Clause.txt",
+          "sha256": "ad9a9e823df025f42389c1812eae28019f657d1ed7b3a4ebfd5010b0736a0da4",
+          "bytes": 1485
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/LICENSES/CC-BY-4.0.txt",
+          "sha256": "f1b1748301cd4274f46733c218d510929661b4990855de5fc645dacd69c4371c",
+          "bytes": 14844
+        }
+      ]
+    },
+    {
+      "file": "pyside6_essentials-6.11.3-cp310-abi3-win_amd64.whl",
+      "bytes": 77104971,
+      "sha256": "ea61687d2c27f8cc7a851c259481be1001dbffa3bebacea4491d9905e7a5d0cf",
+      "license_notice_files": [
+        {
+          "path": "pyside6_essentials-6.11.3.dist-info/licenses/LicenseRef-Qt-Commercial.txt",
+          "sha256": "4f54763ac0fe2abd8f7f8d8fe370a94a08ebf84786aa0b91045bd6628deb08a3",
+          "bytes": 470
+        }
+      ]
+    },
+    {
+      "file": "pywin32_ctypes-0.2.3-py3-none-any.whl",
+      "bytes": 30756,
+      "sha256": "8a1513379d709975552d202d942d9837758905c8d01eb82b8bcc30918929e7b8",
+      "license_notice_files": [
+        {
+          "path": "pywin32_ctypes-0.2.3.dist-info/LICENSE.txt",
+          "sha256": "dfa83b3e2709adfcdb838d9ad55823ca674abb780e60563d9dd9544ccbf785e9",
+          "bytes": 1644
+        }
+      ]
+    },
+    {
+      "file": "setuptools-84.2.1-py3-none-any.whl",
+      "bytes": 876263,
+      "sha256": "ca140b45d5325a9478f880e351484f62fef15f336462e449ca0c03c873d589c2",
+      "license_notice_files": [
+        {
+          "path": "setuptools/_vendor/importlib_metadata-8.7.1.dist-info/licenses/LICENSE",
+          "sha256": "458502e12d97bbf64438606a20044aa85eb05fb0a8a807bb35dbec253fd1fc04",
+          "bytes": 10278
+        },
+        {
+          "path": "setuptools/_vendor/jaraco_context-6.1.0.dist-info/licenses/LICENSE",
+          "sha256": "9755a18519666e5f0f4cae3daad3d7012bcae48a600b31237d75e9fe134e6683",
+          "bytes": 1076
+        },
+        {
+          "path": "setuptools/_vendor/jaraco_functools-4.4.0.dist-info/licenses/LICENSE",
+          "sha256": "5a57cb4db85e2a2dd88c290628908add57e3451449e0a9a71fdfb38776fd759d",
+          "bytes": 1076
+        },
+        {
+          "path": "setuptools/_vendor/more_itertools-10.8.0.dist-info/licenses/LICENSE",
+          "sha256": "09f1c8c9e941af3e584d59641ea9b87d83c0cb0fd007eb5ef391a7e2643c1a46",
+          "bytes": 1053
+        },
+        {
+          "path": "setuptools/_vendor/packaging/licenses/__init__.py",
+          "sha256": "590d12eee73ddbec53b4e9ee5bfc64d9cb3aacb4940e8ebcba260757ce56740b",
+          "bytes": 7859
+        },
+        {
+          "path": "setuptools/_vendor/packaging/licenses/_spdx.py",
+          "sha256": "596ec35e2ca0ebcba9fd8343ff0a51625af548786257815f24b41f7e08613314",
+          "bytes": 51122
+        },
+        {
+          "path": "setuptools/_vendor/packaging-26.3.dist-info/licenses/LICENSE",
+          "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+          "bytes": 197
+        },
+        {
+          "path": "setuptools/_vendor/packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+          "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+          "bytes": 10174
+        },
+        {
+          "path": "setuptools/_vendor/packaging-26.3.dist-info/licenses/LICENSE.BSD",
+          "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+          "bytes": 1344
+        },
+        {
+          "path": "setuptools/_vendor/platformdirs-4.4.0.dist-info/licenses/LICENSE",
+          "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6",
+          "bytes": 1089
+        },
+        {
+          "path": "setuptools/_vendor/tomli-2.4.0.dist-info/licenses/LICENSE",
+          "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe",
+          "bytes": 1072
+        },
+        {
+          "path": "setuptools/_vendor/wheel-0.46.3.dist-info/licenses/LICENSE.txt",
+          "sha256": "30c23618679108f3e8ea1d2a658c7ca417bdfc891c98ef1a89fa4ff0c9828654",
+          "bytes": 1107
+        },
+        {
+          "path": "setuptools/_vendor/zipp-3.23.0.dist-info/licenses/LICENSE",
+          "sha256": "5a57cb4db85e2a2dd88c290628908add57e3451449e0a9a71fdfb38776fd759d",
+          "bytes": 1076
+        },
+        {
+          "path": "setuptools/config/NOTICE",
+          "sha256": "2dddf08818297a3b89d43d95ff659d8da85741108c9136dfa3a4d856c0623bd8",
+          "bytes": 493
+        },
+        {
+          "path": "setuptools/config/_validate_pyproject/NOTICE",
+          "sha256": "09c9bcea95ca086f8bc5bed174e40bc835b297d40fb5f86bbbb570fe0a5581a7",
+          "bytes": 18737
+        },
+        {
+          "path": "setuptools-84.2.1.dist-info/licenses/LICENSE",
+          "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+          "bytes": 1023
+        },
+        {
+          "path": "setuptools/_vendor/autocommand-2.2.2.dist-info/LICENSE",
+          "sha256": "ade78d04982d69972d444a8e14a94f87a2334dd3855cc80348ea8e240aa0df2d",
+          "bytes": 7634
+        },
+        {
+          "path": "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/LICENSE",
+          "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+          "bytes": 1023
+        },
+        {
+          "path": "setuptools/_vendor/jaraco.text-4.0.0.dist-info/LICENSE",
+          "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+          "bytes": 1023
+        }
+      ]
+    },
+    {
+      "file": "shiboken6-6.11.3-cp310-abi3-win_amd64.whl",
+      "bytes": 1226691,
+      "sha256": "1d38919492d08417b7579ad077bc81110d05183d21eb21d66316bc556140a8a3",
+      "license_notice_files": [
+        {
+          "path": "shiboken6-6.11.3.dist-info/licenses/LicenseRef-Qt-Commercial.txt",
+          "sha256": "4f54763ac0fe2abd8f7f8d8fe370a94a08ebf84786aa0b91045bd6628deb08a3",
+          "bytes": 470
+        }
+      ]
+    }
+  ]
+}

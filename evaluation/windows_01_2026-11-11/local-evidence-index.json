@@ -1,0 +1,205 @@
+{
+  "note": "Hashes of local-only evidence; screenshots, binaries and PDFs are not Git artifacts.",
+  "files": [
+    {
+      "local_tmp_path": "tmp/runs/final2-qt-1/ui.json",
+      "bytes": 6862,
+      "sha256": "fd01e379e905a325ff8170ab3fd024a1ed4704b91360ad89e6e6da66a7d22886"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-qt-150/ui.json",
+      "bytes": 6858,
+      "sha256": "9b732b97970a2c247baa0319dfe8a7585716d2e0660416b6e7f00bfb52f526d9"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-qt-2/ui.json",
+      "bytes": 6861,
+      "sha256": "e8be9aab3ed1f30830bce50c712308619ca7c2e8b60b5711f414462bccb48aea"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-qt-200/ui.json",
+      "bytes": 6855,
+      "sha256": "ee19a8048aa3b0e03c16cfd16c9538b4ac10d69a746c7b2a896a2f14f93b3cb8"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-qt-3/ui.json",
+      "bytes": 6862,
+      "sha256": "4f6756f7ba519e35d7cb521dfd3a726e0b634afa401a146854fa7b9551eb5c58"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-wpf-1/ui.json",
+      "bytes": 3183,
+      "sha256": "8e03f8b330425cb05a148478f595b17a0698ca6ff91493f1343649c3e9b53dc9"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-wpf-2/ui.json",
+      "bytes": 3088,
+      "sha256": "9e793062a8e5f25c1955008b70136a4c4cb00f263b9a427a935afedb614f584b"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-wpf-3/ui.json",
+      "bytes": 3130,
+      "sha256": "0195566b2233a2e566f55eb1e96e13baa2def0cede7c4000bd517e0d242cbae7"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-qt-1/samples.json",
+      "bytes": 41008,
+      "sha256": "d18c221b87a4a4396368ce93b60df3845598a62c256f29d04a70f7da00ad158d"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-qt-150/samples.json",
+      "bytes": 39252,
+      "sha256": "7088aaf2c3e75c21e73db0e5caef06ed15e924336d4d457b7d1b2d1516f30769"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-qt-2/samples.json",
+      "bytes": 40131,
+      "sha256": "1619b4ad5890c7cc6e0596877f4b2fb9350d7194b31ccf97553a619076854a2c"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-qt-200/samples.json",
+      "bytes": 39766,
+      "sha256": "aed3e5f45bb2305e3074e13b6cf5f017a418230da48d5620950540e1d57b58b7"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-qt-3/samples.json",
+      "bytes": 41464,
+      "sha256": "d7215aece02119dbb0138bd7787f14b4c440e018804c8e191342fb491e352c86"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-wpf-1/samples.json",
+      "bytes": 27160,
+      "sha256": "75856335d2c63d93659d9b8cce64a9c06a9a89d23a97554b1fc56f384d8b9dcd"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-wpf-2/samples.json",
+      "bytes": 26471,
+      "sha256": "075e660b19747492f29cac04135b2e0effdddd50118a1396f8f49711673ff052"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-wpf-3/samples.json",
+      "bytes": 26657,
+      "sha256": "95d94c333c3e733f8b182651c2b84cfc4cfd4d8d2c2e962401abbe647e4fd66b"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-qt-1/own-window.png",
+      "bytes": 141341,
+      "sha256": "cd0b3998d6830cbca9044faf854871081d52dfedada0651d98b39c4e0ab7dc6d"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-qt-150/own-window.png",
+      "bytes": 132958,
+      "sha256": "527f1c761fe6b98105a08e45bb7cd6058f94c1ed7ef3c690b2f4d524eba74905"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-qt-2/own-window.png",
+      "bytes": 141341,
+      "sha256": "cd0b3998d6830cbca9044faf854871081d52dfedada0651d98b39c4e0ab7dc6d"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-qt-200/own-window.png",
+      "bytes": 84504,
+      "sha256": "f55702ac901b7ae446934c9ac7bd8416e69e388abc882ee9dcc33df1f253f963"
+    },
+    {
+      "local_tmp_path": "tmp/runs/final2-qt-3/own-window.png",
+      "bytes": 141341,
+      "sha256": "cd0b3998d6830cbca9044faf854871081d52dfedada0651d98b39c4e0ab7dc6d"
+    },
+    {
+      "local_tmp_path": "tmp/runs/qt-manual-2/uia-result.json",
+      "bytes": 5318,
+      "sha256": "ecc0e5edbf0b88cfaa4335ed04b90ab1dcf59598d75df5bcbe410c31a2e04b01"
+    },
+    {
+      "local_tmp_path": "tmp/runs/qt-manual-final/uia-result.json",
+      "bytes": 5749,
+      "sha256": "a4eda51aa7dcccdd11097518ecfe1c66c5e1eaf6ead556fea6a588a2da3c5cff"
+    },
+    {
+      "local_tmp_path": "tmp/runs/wpf-manual-2/uia-initial.json",
+      "bytes": 16288,
+      "sha256": "b9c613711548805deffb175884408bad0f10db5c2f5cfed640e8cfc756f96490"
+    },
+    {
+      "local_tmp_path": "tmp/runs/wpf-manual-2/uia-result.json",
+      "bytes": 16579,
+      "sha256": "f7959aaf0a75da813c828884e597cfaabcbea6d8e8b114c5b13725becb0e5e76"
+    },
+    {
+      "local_tmp_path": "tmp/runs/wpf-manual-final/uia-result.json",
+      "bytes": 16678,
+      "sha256": "b8f728f977e9492f3bad3c57484793a906684f82a6e5578c3f72df7333024e1a"
+    },
+    {
+      "local_tmp_path": "tmp/runs/qt-manual-2/ui.json",
+      "bytes": 2438,
+      "sha256": "5b8db408acc0648d38cc4f2e5242a1cffac2d58a0e9382a41be51589073ded06"
+    },
+    {
+      "local_tmp_path": "tmp/runs/qt-manual-final/ui.json",
+      "bytes": 11552,
+      "sha256": "d2468ce5afea27837c19c5bc1b27c3940fc3d2752f93212d69a6db3d1b24e0d5"
+    },
+    {
+      "local_tmp_path": "tmp/runs/wpf-manual-1/ui.json",
+      "bytes": 125,
+      "sha256": "1fb369526ba8bb2ad9ad485df355baa5ff022bd6d95e1551c91333e10a9fc938"
+    },
+    {
+      "local_tmp_path": "tmp/runs/wpf-manual-2/ui.json",
+      "bytes": 1181,
+      "sha256": "cd36f2a1f14f780dee6a1db4c24e3ae94d7a06bae760a9ac3779385a2dd8e69a"
+    },
+    {
+      "local_tmp_path": "tmp/runs/wpf-manual-final/ui.json",
+      "bytes": 1703,
+      "sha256": "dde54b90e7b29e5deb684b153038ffe10caf92bf7f0cc7ad7347823fa1e75880"
+    },
+    {
+      "local_tmp_path": "tmp/slice-tests-attempt1.txt",
+      "bytes": 1490,
+      "sha256": "aa254893c30dcfbc8a90fceade1a318d229a75f17b4d0f39fcc6c6c66c2ebfda"
+    },
+    {
+      "local_tmp_path": "tmp/slice-tests-final.txt",
+      "bytes": 1490,
+      "sha256": "702a914c3f36ce619f62ac0b8fdb5cc32ce2997825e3811550ce2cb193ce9d63"
+    },
+    {
+      "local_tmp_path": "tmp/qt-tests-attempt1.txt",
+      "bytes": 2415,
+      "sha256": "2e907afc0d94338bb89853e62c0c0c12043f7a84bd34ccf3331e5724173874c9"
+    },
+    {
+      "local_tmp_path": "tmp/qt-tests-attempt2.txt",
+      "bytes": 468,
+      "sha256": "354cd4d9da7c0934a89fa71832c391e3f921c418e577f3789b565ac163b8445a"
+    },
+    {
+      "local_tmp_path": "tmp/qt-tests-final.txt",
+      "bytes": 468,
+      "sha256": "7f00269c48fbd8f362d55533bc6b4571a843b6eaf887f5ca1b7447d2a4db53fa"
+    },
+    {
+      "local_tmp_path": "tmp/qt-build-log.txt",
+      "bytes": 9604,
+      "sha256": "a5c7bf3dd5c3369f41e8ffd6cf46145507626501aa2340bf282297dcd3bea2a9"
+    },
+    {
+      "local_tmp_path": "tmp/qt-build-v2-log.txt",
+      "bytes": 9528,
+      "sha256": "e8efd38b4d94ab11abda30f49bf767cd397bb46510363f7e566284cd4bd18f29"
+    },
+    {
+      "local_tmp_path": "tmp/qt-build-v3-log.txt",
+      "bytes": 8070,
+      "sha256": "65466bc4251dc7611fcd46142f223bdda2c61d7f9b635f1da533bf2d21b3137d"
+    },
+    {
+      "local_tmp_path": "tmp/runs/qt-build-v3-probe/stderr.txt",
+      "bytes": 163,
+      "sha256": "556d92272155ce8049f2608f82aca3f86559988f1a07dcee0a5190b1e367beda"
+    }
+  ]
+}

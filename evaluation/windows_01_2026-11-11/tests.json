@@ -1,0 +1,19 @@
+{
+  "new_slice_tests": {
+    "passed": 12,
+    "seconds": 2.405
+  },
+  "new_qt_tests": {
+    "passed": 3,
+    "seconds": 3.34
+  },
+  "component_runs": {
+    "passed": 8,
+    "details": "component-runs.json; two calculations/five render states/cancel/crash/recovery per run"
+  },
+  "green_pixel_coordinate_combinations": 64,
+  "old_799_unit_and_18_AppTest": "historical baseline, not rerun and not native UI evidence; old code/data preserved separately",
+  "model_calls": 0,
+  "clean_vm": false,
+  "full_installer": false
+}

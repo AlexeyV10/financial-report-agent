@@ -1,0 +1,28 @@
+{
+  "stage": "WIN-01",
+  "status": "feasibility_complete_with_limits",
+  "selected_primary_ui": "WPF with shared Python worker",
+  "decision": "docs/windows/adr_001_native_ui.md",
+  "reason": [
+    "Qt source event-loop gaps persist",
+    "Qt PyInstaller frontend actual launch failed importing QtCore DLL"
+  ],
+  "tests": "tests.json",
+  "measurements": "measurements.json",
+  "own_demo": "demo.json",
+  "preservation": "preservation.json",
+  "limitations": [
+    "Full Narrator speech not verified",
+    "System high contrast not tested",
+    "WPF OS200 DPI not tested",
+    "True OS cold startup unmeasured",
+    "Qt packaged launch blocked",
+    "No private runtime/installer/clean VM/signing yet",
+    "No arbitrary financial-document import"
+  ],
+  "WIN_02": "not_started",
+  "academic_KP3_18_19_20": "not_started",
+  "new_model_calls": 0,
+  "existing_Qwen_probe": false,
+  "merge_requested": false
+}

@@ -1,0 +1,24 @@
+{
+  "variables": {
+    "ROOT": "isolated windows-01-worktree",
+    "ENV": "new tmp/windows-01-env outside worktree",
+    "WHEELS": "new tmp/windows-01-wheels outside worktree",
+    "DOC_PY": "bundled stock CPython document-authoring environment"
+  },
+  "sequence": [
+    "git fetch origin; verify research PR19/head and main by GitHub API; git worktree add -b codex/windows-01-native-spike tmp/windows-01-worktree e62bd64ebb0a79037ae3ac56750490efdefff062",
+    "bundled stock CPython -m venv --without-pip ENV; ENV/python -m ensurepip",
+    "ENV/python -m pip download --only-binary=:all: --dest WHEELS PySide6-Essentials==6.11.3 pypdfium2==5.15.2 Pillow==13.0.0 psutil==7.2.2 PyInstaller==6.22.3",
+    "ENV/python -m pip install --no-index --find-links WHEELS PySide6-Essentials==6.11.3 pypdfium2==5.15.2 Pillow==13.0.0 psutil==7.2.2 PyInstaller==6.22.3",
+    "PDF skill operation marker; DOC_PY spikes/windows_01/generate_demo.py tmp/demo; bundled pdftoppm own-demo-v1.pdf -> tmp/demo/preview.png",
+    "powershell -NoProfile -File spikes/windows_01/build_wpf.ps1 (exact compiler flags are in tracked script)",
+    "ENV/python spikes/windows_01/launch.py qt|wpf --label unique-run; real Windows keyboard/file-open/cancel/crash/UIA/contrast/large text checks",
+    "ENV/python -m PyInstaller --noconfirm --clean --onedir --windowed --name QtSpike --distpath tmp/qt-dist-v3 --workpath tmp/qt-build-v3 --specpath tmp/qt-spec-v3 spikes/windows_01/qt_app.py",
+    "ENV/python spikes/windows_01/test_slice.py; ENV/python spikes/windows_01/test_qt.py",
+    "ENV/python spikes/windows_01/measure.py --prefix final2",
+    "ENV/python spikes/windows_01/verify_runs.py final2-qt-1 final2-wpf-1 final2-qt-2 final2-wpf-2 final2-qt-3 final2-wpf-3 final2-qt-150 final2-qt-200",
+    "ENV/python spikes/windows_01/launch.py qt-build --label qt-build-v3-probe --probe (actual DLL failure, no UI receipt)",
+    "SHA256 inventory of wheels/build/local evidence; byte preservation checks; allowlisted commits/push/dependent PR/tag; no merge"
+  ],
+  "not_a_shell_script": true
+}

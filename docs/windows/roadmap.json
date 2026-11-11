@@ -1,7 +1,7 @@
 {
   "schema": "windows-roadmap-1.0",
   "created_on": "2026-11-11",
-  "kind": "proposed_product_plan_not_runtime",
+  "kind": "product_plan_with_completed_feasibility_spike",
   "preferences": {
     "document_scope": "maximally_universal_financial_documents",
     "ai": "local_Qwen_initially_cloud_not_required",
@@ -30,10 +30,18 @@
         "WIN-00"
       ],
       "release": "D0",
-      "status": "proposed_not_implemented",
+      "status": "feasibility_complete_with_limits",
       "deliverable": "Одинаковый короткий slice: собственный PDF, таблица10000строк, одна старая операция, источник, background job/cancel; основной кандидат Qt.",
       "acceptance": "Сопоставимые записи startup/RAM/DPI/UIA/keyboard, лицензии фактически выбранных модулей, no UI HTTP; timebox и ADR. Не две полные реализации и не screenshot-only решение.",
-      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction",
+      "result": "Both source native UIs run; WPF selected for WIN-02 because Qt event-loop gaps and packaged QtCore DLL failure. 15 new tests and 8 component runs passed.",
+      "remaining_gates": [
+        "WPF OS200 DPI",
+        "Full spoken Narrator acceptance",
+        "OS high contrast",
+        "True OS cold startup",
+        "Private runtime/full installer/clean VM/signing in subsequent scoped stages"
+      ]
     },
     {
       "id": "WIN-02",
@@ -846,5 +854,11 @@
       "acceptance": "Не ломать user vault/старые receipts; каждое расширение version+tests+PR. Future cloud seam выключен до отдельного задания; никакого автоматического scraping/trading.",
       "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
     }
-  ]
+  ],
+  "updated_on": "2026-11-11",
+  "completed_feasibility_tasks": [
+    "WIN-01"
+  ],
+  "selected_native_ui": "WPF_with_shared_Python_worker",
+  "selection_adr": "docs/windows/adr_001_native_ui.md"
 }

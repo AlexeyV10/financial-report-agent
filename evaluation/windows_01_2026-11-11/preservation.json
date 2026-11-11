@@ -1,0 +1,48 @@
+{
+  "worktree": {
+    "old_files": 1843,
+    "unchanged": 1837,
+    "allowed_changed": [
+      "README.md",
+      "STATUS.md",
+      "docs/decisions.md",
+      "docs/windows/backlog.md",
+      "docs/windows/roadmap.json",
+      "ПЛАН_РАЗВИТИЯ_WINDOWS.md"
+    ],
+    "old_branch": "codex/windows-01-native-spike",
+    "old_head": "e62bd64ebb0a79037ae3ac56750490efdefff062",
+    "checked_branch": "codex/windows-01-native-spike",
+    "checked_head": "e62bd64ebb0a79037ae3ac56750490efdefff062"
+  },
+  "RC329pins_unchanged": true,
+  "old_manifest_sha_unchanged": true,
+  "parent": {
+    "old_files": 1843,
+    "unchanged": 1843,
+    "allowed_changed": [],
+    "old_branch": "codex/windows-app-research-plan",
+    "old_head": "e62bd64ebb0a79037ae3ac56750490efdefff062",
+    "checked_branch": "codex/windows-app-research-plan",
+    "checked_head": "e62bd64ebb0a79037ae3ac56750490efdefff062"
+  },
+  "dirty_root": {
+    "old_files": 551,
+    "unchanged": 545,
+    "allowed_changed": [
+      "README.md",
+      "STATUS.md",
+      "docs/decisions.md",
+      "docs/windows/backlog.md",
+      "docs/windows/roadmap.json",
+      "ПЛАН_РАЗВИТИЯ_WINDOWS.md"
+    ],
+    "old_branch": "codex/kp3-01-02-scope-baseline",
+    "old_head": "c18e3febfdbce731c542607a1041cccf190f5798",
+    "checked_branch": "codex/kp3-01-02-scope-baseline",
+    "checked_head": "c18e3febfdbce731c542607a1041cccf190f5798"
+  },
+  "root_historical_suffixes_preserved": true,
+  "old_ignored_venv": "No package/config changes targeted it; no pre-spike full ignored-venv byte inventory, so full before/after venv identity not asserted.",
+  "status": "passed"
+}
