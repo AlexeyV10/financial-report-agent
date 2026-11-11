@@ -1,0 +1,40 @@
+{
+  "stage": "KP3-17",
+  "phase": "before_release_changes",
+  "candidate": "kp3-rc1",
+  "base": "d0d46a576345d21c5d79b4250b453ea0d32cd2c0",
+  "evaluated_financial_version": "Frozen14/actual16, unchanged; UI approved separately afterwards",
+  "full_original_P0_claim": false,
+  "scope_decision": "Bounded local release candidate using prepared sources; unfulfilled broader promises explicitly retained as limits, no new sources/formulas/models",
+  "matrix": [
+    {"id":"P01","promise":"Catalog/group/standard/version/period","actual":"supported for two nonfinancial consolidated IFRS groups, eight exact versions; no hidden company/year defaults","evidence":["data/catalogs/kp3_corpus_v1/runtime_catalog.json","app_kp3/desktop_app.py","tests/test_desktop_presentation.py"]},
+    {"id":"P02","promise":"Add arbitrary local PDF through preparation","actual":"limited: bounded preparation CLI06 and exact-version restoration13; general new-PDF intake/check/admission UI not shipped","release":"not promised as general upload/automatic admission","evidence":["scripts/extract_pdf_v2.py","src/financial_assistant/document_extraction.py","src/financial_assistant/product_service.py"]},
+    {"id":"P03","promise":"Russian question and clarification","actual":"limited deterministic grammar08; explicit form/clarifications; causal why unsupported and retained","evidence":["docs/kp3/russian_input_v1.md","src/financial_assistant/desktop_presentation.py","tests_ui/test_desktop_app.py"]},
+    {"id":"P04","promise":"Direct fact","actual":"supported only checked Fact/Evidence, no default growth","evidence":["src/financial_assistant/financial_calculator.py","evaluation/kp3_07_2026-11-10/report.json"]},
+    {"id":"P05","promise":"Absolute/relative change","actual":"supported, ordered full periods; relative positive base; no extra formulas","evidence":["docs/kp3/calculator_v03.md","evaluation/kp3_16_2026-11-10/metrics.json"]},
+    {"id":"P06","promise":"Scale","actual":"supported amount scaling within same currency; FX unsupported","evidence":["docs/kp3/financial_method_v1.md","data/calculation/kp3_calculator_v1/manifest.json"]},
+    {"id":"P07","promise":"Operating margin","actual":"supported same exact context; zero/negative revenue refusal; negative OP allowed","evidence":["src/financial_assistant/fact_admission.py","docs/kp3/calculator_v03.md"]},
+    {"id":"P08","promise":"Evidence/values/periods/units/version/page","actual":"supported own minimal annotations; trusted exact local page; not a new source check","evidence":["evaluation/kp3_05_2026-11-09/source-checks.json","src/financial_assistant/source_viewer.py","evaluation/kp3_ui_2026-11-10/ui-checks.json"]},
+    {"id":"P09","promise":"Snapshot/historical","actual":"snapshot supported; all eight historical/real trading blocked by publication_unknown; dates not substituted","evidence":["data/catalogs/kp3_corpus_v1/runtime_catalog.json","evaluation/kp3_ui_2026-11-10/ui-tests-final15.txt"]},
+    {"id":"P10","promise":"Clarification/conflict/missing/error/limit","actual":"separate typed outcomes; no money on error/limit/clarification; candidate not admitted","evidence":["docs/kp3/fixed_service_b_v1.md","docs/kp3/failure_boundaries_v1.md"]},
+    {"id":"P11","promise":"B and genuine C","actual":"implemented, core evaluated16 unchanged; default B signed; C actual native227 aggregate A+C calls16, not newly called17","evidence":["src/financial_assistant/agent_c.py","evaluation/kp3_16_2026-11-10/raw-manifest.json"]},
+    {"id":"P12","promise":"One-step A","actual":"implemented metadata choice with shared calculator, not free A_raw; evaluated16 unchanged","evidence":["docs/kp3/one_shot_a_v1.md","evaluation/kp3_16_2026-11-10/analysis-final.md"]},
+    {"id":"P13","promise":"History/export","actual":"own bounded snapshots/JSON/MD; durable dedup, no refresh model call; context clears stale answer","evidence":["src/financial_assistant/product_history.py","src/financial_assistant/product_downloads.py","evaluation/kp3_ui_2026-11-10/ui-checks.json"]},
+    {"id":"P14","promise":"Conditional scenario","actual":"own synthetic supported; real readiness blocked, no real prices/calendar; upstream usage retained","evidence":["docs/kp3/conditional_scenario_v1.md","evaluation/kp3_12_2026-11-10/report.json"]},
+    {"id":"P15","promise":"UI/launch/readiness","actual":"approved desktop UI tested separately; core3.14/UI3.12 separate; model/assets not installed in clone","release_work":"versioned manifest, readiness CLI and guarded launcher; no financial/UI redesign","evidence":["docs/kp3/desktop_ui_v1.md","evaluation/kp3_ui_2026-11-10/ui-tests-final15.txt"]},
+    {"id":"P16","promise":"Evaluation/replay","actual":"known corpus only,40forms/32cells/28contexts/8versions/2lineages; 138actual raw, replay; unseen0; no overall market/model quality","evidence":["evaluation/protocols/kp3_eval_v1/freeze-manifest.json","evaluation/kp3_16_2026-11-10/replay-verification.json"]},
+    {"id":"P17","promise":"Package/restore/materials","actual":"partial: code/resources instructions candidate17; complete ZIP19 and report/slides18 not yet produced","release_work":"check new directory with own manifest files and explicit local-resource rebinding, without package19","evidence":["prompts/kp3_17_release_candidate.md"]}
+  ],
+  "known_issue_review": [
+    {"origin":"15","finding":"143 known probes incl20explicit mocks;2offline and2worker controls separate; first harness failures fixed before release","action":"verify original artifacts and regressions; do not manufacture a frozen runtime fix"},
+    {"origin":"16","finding":"No typed errors on known comparison; this does not prove unseen quality; A unknown_records12 are null token fields, actual unknown requests0","action":"preserve original metric names/bytes and document caveat; no usage schema change needed"},
+    {"origin":"UI","finding":"778unit/15AppTest and real browser passed; UI changes are an explicit layer after financial eval","action":"retain approved UI and test release bridge without new visual redesign"}
+  ],
+  "planned_changes": ["Evaluator-only versioned release manifest/checker and known release-path smoke", "Guarded release launcher and actual resource/environment diagnosis", "Qualified release instructions, immutable evidence and prompt18"],
+  "financial_runtime_fix_planned": false,
+  "new_final_comparison_planned": false,
+  "new_model_calls_planned": false,
+  "new_primary_annotations_planned": false,
+  "human_reviewed_added": 0,
+  "next_step18_authorized": false
+}

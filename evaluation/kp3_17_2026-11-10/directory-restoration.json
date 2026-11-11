@@ -1,0 +1,62 @@
+{
+  "scope": "Own manifest-files copied into new directory on SAME machine; explicitly rebound existing exact PDFs, copied prepared index bytes; not ZIP19 or clean OS/venv install",
+  "own_files": 329,
+  "manifest_sha256": "1aadafb7640f27758bb2b7f04a2d6310b668da5b8746cb8dcf8b0d10cce5765c",
+  "copied_primary_pdfs": 0,
+  "downloads": 0,
+  "model_files_copied": 0,
+  "required_B_resources": 10,
+  "B_model_resources_required": false,
+  "code_and_smoke_passed": true,
+  "counts": {
+    "financial_known": 14,
+    "clarification": 1,
+    "technical_faults": 2,
+    "scenario_known": 2,
+    "unique_financial_numeric": 7,
+    "new_model_chat": 0
+  },
+  "all_copied_files_unchanged_after_smoke": true,
+  "commands": [
+    {
+      "name": "code",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_release.py",
+        "--profile",
+        "code",
+        "--report",
+        "tmp/code.json"
+      ],
+      "exit_code": 0,
+      "report": "tmp/code.json"
+    },
+    {
+      "name": "B-smoke",
+      "command": [
+        "C:\\msys64\\ucrt64\\bin\\python.exe",
+        "-X",
+        "utf8",
+        "-I",
+        "scripts/check_kp3_release.py",
+        "--profile",
+        "B",
+        "--context",
+        "tmp/service-context.json",
+        "--resources",
+        "tmp/resources.json",
+        "--smoke",
+        "--work-dir",
+        "tmp/restored-known-smoke",
+        "--report",
+        "tmp/B-smoke.json"
+      ],
+      "exit_code": 0,
+      "report": "tmp/B-smoke.json"
+    }
+  ],
+  "new_model_chat": 0
+}

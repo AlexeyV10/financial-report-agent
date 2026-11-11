@@ -1,0 +1,7 @@
+{"schema_version": "kp3-release-check-0.1", "release_id": "kp3-rc1-2026-11-10", "profile": "B", "execution_status": "completed", "reason_code": "ready", "runtime_ready": true, "model_chat_requests": 0}
+{"schema_version": "kp3-release-check-0.1", "release_id": "kp3-rc1-2026-11-10", "profile": "UI", "execution_status": "completed", "reason_code": "ready", "runtime_ready": true, "model_chat_requests": 0}
+Exception: C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\scripts\release_ui.ps1:45
+Line |
+  45 |  : nifestHash){throw 'Состояние порта и кандидата не совпадает с собстве :
+     |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Состояние порта и кандидата не совпадает с собственной квитанцией.

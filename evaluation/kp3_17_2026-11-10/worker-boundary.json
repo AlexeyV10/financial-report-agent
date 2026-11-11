@@ -1,0 +1,30 @@
+{
+  "stage": "KP3-15",
+  "planned": 2,
+  "executed": 2,
+  "passed": 2,
+  "rows": [
+    {
+      "variant": "responsive_control",
+      "passed": true,
+      "worker_entered": true,
+      "timeout": false,
+      "returned_result": {
+        "completed": true
+      },
+      "late_file_present": true,
+      "elapsed_ms": 248.678
+    },
+    {
+      "variant": "entered_worker_terminated_before_late_write",
+      "passed": true,
+      "worker_entered": true,
+      "timeout": true,
+      "returned_result": null,
+      "late_file_present": false,
+      "elapsed_ms": 881.298
+    }
+  ],
+  "model_calls": 0,
+  "scope": "Actual trusted subprocess boundary; not actual model quality or comparison16"
+}

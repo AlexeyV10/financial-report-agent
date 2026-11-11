@@ -1,0 +1,33 @@
+{
+  "core_python": "C:/msys64/ucrt64/bin/python.exe",
+  "core": {
+    "python": "3.14.7",
+    "sqlite": "3.53.4"
+  },
+  "UI_python": "C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-ui-cpython312\\Scripts\\python.exe",
+  "UI": {
+    "python": "3.12.14",
+    "sqlite": "3.53.1",
+    "streamlit": "1.67.0",
+    "pandas": "3.1.1"
+  },
+  "worker": "Existing3.12.14/pdfplumber0.11.9/pdfminer20251230; no worker/OCR on17",
+  "commands": [
+    "python3.14.7 -X utf8 -I tmp/checks17.py",
+    "python3.14.7 -X utf8 -I -m unittest discover -s tests [firstsandbox and actualescalation retained]",
+    "existing UIpython -X utf8 -m unittest discover -s tests_ui",
+    "python3.14.7 -X utf8 -I scripts/prepare_kp3_release.py --output tmp/rc1-manifest-first.json --base-commit d0d46a576345d21c5d79b4250b453ea0d32cd2c0",
+    "scripts/check_kp3_release.py:code/B/A/C/UI profiles, explicitBsmoke; exact reports preserved",
+    "scripts/check_kp3_boundaries.py --plan evaluation/kp3_15_2026-11-10/plan.json --report evaluation/kp3_17_2026-11-10/probes15-regression.json --private tmp/probes15-regression17",
+    "scripts/check_kp3_worker_boundary.py newplan/private/report17",
+    "scripts/replay_kp3_evaluation.py oldfreeze/raw/rawmanifest -> metrics16-replay.json",
+    "scripts/release_ui.ps1 start/status/repeatstart/foreignport/stop/status-stopped [actualpowershellcommands launcher-checks.json]",
+    "tmp/restore_probe17.py:329ownfiles/10Bresources rebinding, code+19sameknowncontrols innewdirectory",
+    "tmp/negative_release17.py:7technicalCLIcontrols"
+  ],
+  "new_packages": 0,
+  "new_models": 0,
+  "model_server_started": false,
+  "new_model_chat": 0,
+  "Git_merge_authorized": false
+}

@@ -1,0 +1,589 @@
+......................................................................................................E.E.........E.............................................................................................................................................................................................................................................................................................................................................EEEEEEEEEE.E.EEEEE.EE.E....E..E.EEEE...........................................................................................................................................................................................................................................................................................................................
+======================================================================
+ERROR: test_exclusive_atomic_publish (test_comparison_runner16.Runner16Tests.test_exclusive_atomic_publish)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_comparison_runner16.py", line 22, in test_exclusive_atomic_publish
+    p=self.d/'raw.json';atomic_new(p,dict(first=True));b=p.read_bytes()
+                        ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\evaluation\kp3_run_v1\ledger.py", line 12, in atomic_new
+    os.link(tmp,p)
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpue4p6z48\\.pending-b80432dd6cbe4fdd86b1a6614b6adf97' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpue4p6z48\\raw.json'
+
+======================================================================
+ERROR: test_foreign_file_is_not_a_completed_attempt (test_comparison_runner16.Runner16Tests.test_foreign_file_is_not_a_completed_attempt)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_comparison_runner16.py", line 88, in test_foreign_file_is_not_a_completed_attempt
+    atomic_new(self.d/'unknown.json',observation())
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\evaluation\kp3_run_v1\ledger.py", line 12, in atomic_new
+    os.link(tmp,p)
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpxr497ks8\\.pending-0781b2e2d8ab4370b3bb67f0013f7b01' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpxr497ks8\\unknown.json'
+
+======================================================================
+ERROR: test_rows_ignore_no_missing_slot (test_comparison_runner16.Runner16Tests.test_rows_ignore_no_missing_slot)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_comparison_runner16.py", line 86, in test_rows_ignore_no_missing_slot
+    atomic_new(self.d/'primary-1.json',observation());self.assertEqual(rows_from(self.d,[slot()],'a'*64),[observation()])
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\evaluation\kp3_run_v1\ledger.py", line 12, in atomic_new
+    os.link(tmp,p)
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpudul88hp\\.pending-c2a47bd3aff9453fb628b36f8444caeb' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpudul88hp\\primary-1.json'
+
+======================================================================
+ERROR: test_attachment_bytes_and_revoke (test_product13.Product13Tests.test_attachment_bytes_and_revoke)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 100, in test_attachment_bytes_and_revoke
+    a,_=self.run_b();server=HistoryDownloads(self.store).start();self.addCleanup(server.close)
+        ~~~~~~~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmp04o7xnbf\\history\\pending-c1c9fc2024314fafbcb8b6209593ffbd.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmp04o7xnbf\\history\\4022604604664937665d7eeb69a18223e78872a993bcad5103a74292eebe9378.json'
+
+======================================================================
+ERROR: test_attachment_path_injection_rejected (test_product13.Product13Tests.test_attachment_path_injection_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\msys64\ucrt64\lib\python3.14\urllib\request.py", line 1320, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+              encode_chunked=req.has_header('Transfer-encoding'))
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\http\client.py", line 1386, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\http\client.py", line 1432, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\http\client.py", line 1381, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\http\client.py", line 1141, in _send_output
+    self.send(msg)
+    ~~~~~~~~~^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\http\client.py", line 1085, in send
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\msys64\ucrt64\lib\python3.14\http\client.py", line 1051, in connect
+    self.sock = self._create_connection(
+                ~~~~~~~~~~~~~~~~~~~~~~~^
+        (self.host,self.port), self.timeout, self.source_address)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\socket.py", line 874, in create_connection
+    raise exceptions[0]
+  File "C:\msys64\ucrt64\lib\python3.14\socket.py", line 859, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+PermissionError: [WinError 10013] Сделана попытка доступа к сокету методом, запрещенным правами доступа
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 109, in test_attachment_path_injection_rejected
+    with self.assertRaises(HTTPError):urlopen('http://127.0.0.1:'+str(server.server.server_port)+path,timeout=3)
+                                      ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\urllib\request.py", line 187, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\urllib\request.py", line 487, in open
+    response = self._open(req, data)
+  File "C:\msys64\ucrt64\lib\python3.14\urllib\request.py", line 504, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+                              '_open', req)
+  File "C:\msys64\ucrt64\lib\python3.14\urllib\request.py", line 464, in _call_chain
+    result = func(*args)
+  File "C:\msys64\ucrt64\lib\python3.14\urllib\request.py", line 1349, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\msys64\ucrt64\lib\python3.14\urllib\request.py", line 1323, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [WinError 10013] Сделана попытка доступа к сокету методом, запрещенным правами доступа>
+
+======================================================================
+ERROR: test_bad_export_type_rejected (test_product13.Product13Tests.test_bad_export_type_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 94, in test_bad_export_type_rejected
+    a,_=self.run_b()
+        ~~~~~~~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmps_pbgkrl\\history\\pending-290fd700b6d2468bb57d9097fdeae310.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmps_pbgkrl\\history\\4a8ff20563b9eeb67fee9aa24a1c751debcb2e0158af45f4edf78deb8b1ae1d3.json'
+
+======================================================================
+ERROR: test_changed_guarded_file_does_not_revive_history (test_product13.Product13Tests.test_changed_guarded_file_does_not_revive_history)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 126, in test_changed_guarded_file_does_not_revive_history
+    p=self.dir/'own-guard.json';p.write_bytes(b'own guard');self.ctx.calculation.file_guards[str(p)]=hashlib.sha256(p.read_bytes()).hexdigest();self.ctx.identity=self.ctx.current_identity();a,_=self.run_b();p.write_bytes(b'changed');b,reused=self.run_b();self.assertFalse(reused);self.assertIsNone(b['payload']['result']['financial_result']);self.assertNotEqual(a['record_id'],b['record_id'])
+                                                                                                                                                                                                  ~~~~~~~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpm3fmx917\\history\\pending-0166a0d13cf34808966cd9c91b451cf6.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpm3fmx917\\history\\631327c378313761bf2e0232861576949510e0e0a73c7ab27e608d558ce9a085.json'
+
+======================================================================
+ERROR: test_changed_index_cannot_revive_answer (test_product13.Product13Tests.test_changed_index_cannot_revive_answer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 42, in test_changed_index_cannot_revive_answer
+    a,_=self.run_b();self.ctx.retrieval['db_path'].write_bytes(b'changed');b,reused=self.run_b();self.assertFalse(reused);self.assertEqual(b['payload']['result']['execution_status'],'error')
+        ~~~~~~~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpw0kf1h3o\\history\\pending-e48631c74ed14cc98fbefd97907150a4.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpw0kf1h3o\\history\\7a134b138d385ee812891499ac358aa17f34bf01d6815578e74e2ac7b69ae836.json'
+
+======================================================================
+ERROR: test_changed_operation_separates_runs (test_product13.Product13Tests.test_changed_operation_separates_runs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 36, in test_changed_operation_separates_runs
+    a,_=self.run_b();b,_=self.run_b(source(self.ctx,'relative_change_v1'));self.assertNotEqual(a['record_id'],b['record_id'])
+        ~~~~~~~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpiris0zzw\\history\\pending-3854d90b377b497e924257b7a047d89a.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpiris0zzw\\history\\1ffaa26710e7594cebcad423a3702464a887573c1f35a1098769bcec17fdb227.json'
+
+======================================================================
+ERROR: test_changed_service_setup_does_not_revive_history (test_product13.Product13Tests.test_changed_service_setup_does_not_revive_history)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 128, in test_changed_service_setup_does_not_revive_history
+    p=self.dir/'own-service-setup.json';p.write_bytes(b'own setup');self.ctx.config_guard=(str(p),hashlib.sha256(p.read_bytes()).hexdigest());self.ctx.identity=self.ctx.current_identity();a,_=self.run_b();p.unlink();b,reused=self.run_b();self.assertFalse(reused);self.assertIsNone(b['payload']['result']['financial_result'])
+                                                                                                                                                                                                ~~~~~~~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpwu4urkjm\\history\\pending-3a6979836f284a3f96957571fd0ede1f.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpwu4urkjm\\history\\1ef75889fbf41a72591a6310ed71a8aeacb5bc4b08a4fa6e74313d0d4d48f0ca.json'
+
+======================================================================
+ERROR: test_changed_unit_separates_runs (test_product13.Product13Tests.test_changed_unit_separates_runs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 38, in test_changed_unit_separates_runs
+    src=source(self.ctx,'scale_v1');a,_=self.run_b(src);src['form']['fields']['result_unit']['scale']=1000000;b,_=self.run_b(src);self.assertNotEqual(a['record_id'],b['record_id'])
+                                        ~~~~~~~~~~^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpmmvnrnn_\\history\\pending-dca685a2fd0b44e0947f0cfa250df40c.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpmmvnrnn_\\history\\72670ec2c57a3fdf80852333c96dde8b6d3ca6388103410ece8d816888125d8e.json'
+
+======================================================================
+ERROR: test_clarification_is_saved_without_calculation (test_product13.Product13Tests.test_clarification_is_saved_without_calculation)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 86, in test_clarification_is_saved_without_calculation
+    src=dict(kind='text',input_id='p13',question='Какая выручка за 2024 год?');a,_=self.run_b(src);r=a['payload']['result'];self.assertEqual(r['execution_status'],'awaiting_clarification');self.assertIsNone(r['financial_result']);self.assertEqual(r['original_question'],src['question'])
+                                                                                   ~~~~~~~~~~^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpieyt6h6s\\history\\pending-a5366ca8fa51409488383ce9e000dc55.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpieyt6h6s\\history\\f54ecfdd23c3b63c26e2c7df147f884c5d4d639a5c97fdd148fa428d2eb4a5cf.json'
+
+======================================================================
+ERROR: test_double_press_does_not_execute (test_product13.Product13Tests.test_double_press_does_not_execute)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 25, in test_double_press_does_not_execute
+    first,_=self.run_b()
+            ~~~~~~~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpo_vc3e4x\\history\\pending-63b4cc7c4c8c4f458b2bae8991a9615b.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpo_vc3e4x\\history\\8f669520f384af0eff5dca91eafff66a9a51d83a464cd400d204191622ac282a.json'
+
+======================================================================
+ERROR: test_explicit_new_run_keeps_old (test_product13.Product13Tests.test_explicit_new_run_keeps_old)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 34, in test_explicit_new_run_keeps_old
+    a,_=self.run_b();b,_=self.run_b(nonce=1);self.assertNotEqual(a['payload']['result']['run_id'],b['payload']['result']['run_id']);self.assertEqual(len(self.store.listing()),2)
+        ~~~~~~~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpls_9p7z3\\history\\pending-ea88588bfbb848dba77cd3b1c0e104a9.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpls_9p7z3\\history\\6b9c18668f8b31fff7bc09de1c89153e4e3e8831f353373b3c5e91c05f5c6d1d.json'
+
+======================================================================
+ERROR: test_five_operations_keep_semantics (test_product13.Product13Tests.test_five_operations_keep_semantics)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 23, in test_five_operations_keep_semantics
+    r,_=self.run_b(source(self.ctx,op));self.assertEqual(r['payload']['result']['financial_result']['display_value'],val)
+        ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpn11lidnw\\history\\pending-24aa8369bbe341c08a10c47076515fd0.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpn11lidnw\\history\\86352227196c31bef40ae00f642dcefcee9686cc9c77aea01faf68fc862b166b.json'
+
+======================================================================
+ERROR: test_hash_damage_rejected (test_product13.Product13Tests.test_hash_damage_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 57, in test_hash_damage_rejected
+    a,_=self.run_b();p=self.store.path/(a['record_id']+'.json');data=json.loads(p.read_text());data['payload']['result']['reason_code']='forged';p.write_text(json.dumps(data))
+        ~~~~~~~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpa2_1jm9m\\history\\pending-c3eb72e5f2d34110be35c914eb47c419.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpa2_1jm9m\\history\\e6f70ff8fcdd66720d0f44cb2f73b2ba959178462b1c2acecc76494758155f5a.json'
+
+======================================================================
+ERROR: test_history_reopen_never_calls_controller (test_product13.Product13Tests.test_history_reopen_never_calls_controller)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 49, in test_history_reopen_never_calls_controller
+    a,_=self.run_b()
+        ~~~~~~~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmp53d7vzwb\\history\\pending-408e18df829846f19e3e82a40b392d26.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmp53d7vzwb\\history\\5f5f88e07068395399a47d8936f45449cfc9f3a2b3be594650a2178da8cd0a88.json'
+
+======================================================================
+ERROR: test_json_roundtrip_own_minimal_sources (test_product13.Product13Tests.test_json_roundtrip_own_minimal_sources)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 53, in test_json_roundtrip_own_minimal_sources
+    a,_=self.run_b();b=json.loads(self.store.export(a['record_id'],'json'));self.assertEqual(a,b);self.assertEqual(b['schema_version'],VERSION);self.assertNotIn('pdf_bytes',str(b))
+        ~~~~~~~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpvgq62vzd\\history\\pending-93907b99a0264d49a269e5fd61efad9b.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpvgq62vzd\\history\\764e16786506f73028124d52040c45b0834d3ef4ff5defc28d8436d3dc5cb7c8.json'
+
+======================================================================
+ERROR: test_markdown_injection_is_inert (test_product13.Product13Tests.test_markdown_injection_is_inert)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 55, in test_markdown_injection_is_inert
+    s=deepcopy(self.src);s['form']['original_question']='```\n<script>alert(1)</script> [click](https://evil.invalid)';a,_=self.run_b(s);md=self.store.export(a['record_id'],'markdown').decode();self.assertNotIn('<script>',md);self.assertNotIn('[click](https',md.split('```json')[0]);self.assertEqual(md.count('```'),2);self.assertIn('\\u0060',md);self.assertEqual(json.loads(md.split('```json')[1].rsplit('```',1)[0]),a['payload'])
+                                                                                                                           ~~~~~~~~~~^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpg1qw3s1o\\history\\pending-f4f61cdf22d144a4b65036ef7033acef.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpg1qw3s1o\\history\\c8a8cad5f036e94455854e3c59e8324b9730a95909b2312abab6d604fb1e1d0f.json'
+
+======================================================================
+ERROR: test_missing_pdf_cannot_revive_answer (test_product13.Product13Tests.test_missing_pdf_cannot_revive_answer)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 40, in test_missing_pdf_cannot_revive_answer
+    a,_=self.run_b();did=a['payload']['result']['financial_result']['inputs'][0]['document_id'];d=next(d for d in self.ctx.calculation.catalog['documents']if d['document_id']==did);p=Path(self.ctx.calculation.resources[d['availability']['local_resource_id']]);p.unlink();b,reused=self.run_b();self.assertFalse(reused);self.assertIsNone(b['payload']['result']['financial_result']);self.assertNotEqual(a['record_id'],b['record_id'])
+        ~~~~~~~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpssk4r72t\\history\\pending-5e0a599b4c72447c861736ca31758ddb.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpssk4r72t\\history\\b124036f1c531bfc7592a806383d6519eeb086389afc7c5b2d756855defb1708.json'
+
+======================================================================
+ERROR: test_mutated_catalog_does_not_revive_history (test_product13.Product13Tests.test_mutated_catalog_does_not_revive_history)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 124, in test_mutated_catalog_does_not_revive_history
+    a,_=self.run_b();self.ctx.calculation.catalog['facts'][0]['value']='999';b,reused=self.run_b();self.assertFalse(reused);self.assertNotEqual(a['record_id'],b['record_id']);self.assertEqual(b['payload']['result']['execution_status'],'error');self.assertIsNone(b['payload']['result']['financial_result'])
+        ~~~~~~~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpub56h0vj\\history\\pending-703f0cbc82af42bcb9a9860c3485c3b1.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpub56h0vj\\history\\5d09c208330f9b842f296f847bd239b74054a00b8f799b5583f68a522f8b10a8.json'
+
+======================================================================
+ERROR: test_payload_allowlist_and_kind (test_product13.Product13Tests.test_payload_allowlist_and_kind)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 68, in test_payload_allowlist_and_kind
+    a,_=self.run_b();p=deepcopy(a['payload']);p['expected']=999
+        ~~~~~~~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpxl9xbaux\\history\\pending-ed91f06667bc4d8288f4d82721de9665.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpxl9xbaux\\history\\5149b67818721a3b72215474ddc3da7b3d65ea789d6bbbcefa0f251246bbec13.json'
+
+======================================================================
+ERROR: test_refresh_new_store_deduplicates (test_product13.Product13Tests.test_refresh_new_store_deduplicates)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 30, in test_refresh_new_store_deduplicates
+    first,_=self.run_b();other=RunStore(self.store.path)
+            ~~~~~~~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmp8le3fj0a\\history\\pending-99e79453672342a2835791907e7b3760.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmp8le3fj0a\\history\\0a3679015c88143dc20aa5cd21a85104e0533313e90a5a3a36f639a1ca6b0cd0.json'
+
+======================================================================
+ERROR: test_restore_missing_exact_version (test_product13.Product13Tests.test_restore_missing_exact_version)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 116, in test_restore_missing_exact_version
+    d=self.ctx.calculation.catalog['documents'][0];p=Path(self.ctx.calculation.resources[d['availability']['local_resource_id']]);data=p.read_bytes();p.unlink();self.assertEqual(restore_registered(self.ctx,d['document_id'],data),'restored_exact_version');self.assertEqual(p.read_bytes(),data)
+                                                                                                                                                                                  ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 52, in restore_registered
+    os.link(temp,target)
+    ~~~~~~~^^^^^^^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmppgimg3og\\restore13-7e7692bdba9b457098e54edfbce5aed9.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmppgimg3og\\method-synthetic-2023.own-hash-fixture'
+
+======================================================================
+ERROR: test_scenario_history_and_dedup (test_product13.Product13Tests.test_scenario_history_and_dedup)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 88, in test_scenario_history_and_dedup
+    ctx=load_own_context(self.dir/'scenario');req=json.loads((ROOT/'data/scenarios/kp3_scenario_v1/request_example.json').read_text());src=dict(request=req,financial=None);a,reused=scenario(src,ctx,self.store);self.assertFalse(reused);self.assertEqual(a['payload']['result']['scenario']['final_equity'],'10098.00');b,reused=scenario(src,ctx,self.store);self.assertTrue(reused);self.assertEqual(a,b)
+                                                                                                                                                                                     ~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 85, in scenario
+    return store.run(dict(kind='scenario',source=source),identity,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpcdupyw5a\\history\\pending-b942133131054666b5cb4cd32b2fddfe.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpcdupyw5a\\history\\3f1b54206bade3b591359fa591c51f625e47a510f83d209b9a70af1d05f43074.json'
+
+======================================================================
+ERROR: test_synthetic_label_exported (test_product13.Product13Tests.test_synthetic_label_exported)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 90, in test_synthetic_label_exported
+    ctx=load_own_context(self.dir/'scenario');req=json.loads((ROOT/'data/scenarios/kp3_scenario_v1/request_example.json').read_text());a,_=scenario(dict(request=req,financial=None),ctx,self.store);md=self.store.export(a['record_id'],'markdown').decode();self.assertIn('ИСКУССТВЕННЫЕ ДАННЫЕ',md)
+                                                                                                                                           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 85, in scenario
+    return store.run(dict(kind='scenario',source=source),identity,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmp8w075jja\\history\\pending-694f3728521543369fa884ac5dac1d06.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmp8w075jja\\history\\8a1bbd970c9db9a585a0b04008dadf39b93f3dcf4aead4d31ccbae7930862f8a.json'
+
+======================================================================
+ERROR: test_technical_error_has_no_number_and_is_saved (test_product13.Product13Tests.test_technical_error_has_no_number_and_is_saved)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 84, in test_technical_error_has_no_number_and_is_saved
+    self.ctx.retrieval['db_path'].unlink();a,_=self.run_b();r=a['payload']['result'];self.assertEqual(r['execution_status'],'error');self.assertIsNone(r['financial_result']);self.assertEqual(self.store.load(a['record_id']),a)
+                                               ~~~~~~~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpbixqgte1\\history\\pending-4b863abe28dc4162bb94aaa66764871d.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpbixqgte1\\history\\00ff171bf89743ce0a7727b43d6374b9410af6617f44acbefdca21b42a2696c6.json'
+
+======================================================================
+ERROR: test_two_stores_do_not_collide_financial_run_ids (test_product13.Product13Tests.test_two_stores_do_not_collide_financial_run_ids)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 111, in test_two_stores_do_not_collide_financial_run_ids
+    a,_=self.run_b();b,_=financial(self.src,[],'B',self.ctx,RunStore(self.dir/'second'))
+        ~~~~~~~~~~^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\tests\test_product13.py", line 19, in run_b
+    def run_b(self,src=None,nonce=0):return financial(src or self.src,[],'B',self.ctx,self.store,nonce)
+                                            ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_service.py", line 76, in financial
+    return store.run(intent,fingerprint,produce,nonce)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 95, in run
+    self._atomic(self._path(key,'.json'),r);return r,False
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Value\OneDrive\Документы\ChatGPT\Проектная практика\tmp\kp3-17-worktree\src\financial_assistant\product_history.py", line 75, in _atomic
+    os.link(tmp,p) # atomic, exclusive link: a prior snapshot is never replaced
+    ~~~~~~~^^^^^^^
+PermissionError: [WinError 5] Отказано в доступе: 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpfyrul9be\\history\\pending-23b624d4ee5842e890e9a5c8a4abb725.tmp' -> 'C:\\Users\\Value\\OneDrive\\Документы\\ChatGPT\\Проектная практика\\tmp\\kp3-17-worktree\\tmp\\tmpfyrul9be\\history\\744bf85a7a736d42416beb8331ac2870f2501d275ceb9cfe1d4016caf2bad5dc.json'
+
+----------------------------------------------------------------------
+Ran 799 tests in 178.528s
+
+FAILED (errors=28)

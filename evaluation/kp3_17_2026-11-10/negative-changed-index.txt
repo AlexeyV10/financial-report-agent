@@ -1,0 +1,1 @@
+{"schema_version": "kp3-release-check-0.1", "release_id": "kp3-rc1-2026-11-10", "profile": "B", "execution_status": "error", "reason_code": "release_resources_unavailable", "runtime_ready": false, "model_chat_requests": 0}

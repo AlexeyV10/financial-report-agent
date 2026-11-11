@@ -1,0 +1,31 @@
+{
+  "evaluated_v1": {
+    "freeze_sha256": "072a1caf92423d2e41ae12625cc485d81f0bc3c321c3cce5cbb1db663bcf1fbe",
+    "raw16": 138,
+    "unchanged": true,
+    "model_generations_repeated": false
+  },
+  "approved_UI": {
+    "base": "d0d46a576345d21c5d79b4250b453ea0d32cd2c0",
+    "entry": "app_kp3/desktop_app.py",
+    "unchanged_on17": true,
+    "AppTest": 18,
+    "real_CUA_reused": "evaluation/kp3_ui_2026-11-10/ui-checks.json",
+    "new_CUA17": false,
+    "new_test_only": 3,
+    "all_five_UI_paths": true
+  },
+  "release17": {
+    "release_id": "kp3-rc1-2026-11-10",
+    "manifest_sha256": "1aadafb7640f27758bb2b7f04a2d6310b668da5b8746cb8dcf8b0d10cce5765c",
+    "file_pins": 329,
+    "new_modules": [
+      "evaluation/kp3_release_v1",
+      "scripts/check_kp3_release.py",
+      "scripts/prepare_kp3_release.py",
+      "scripts/release_ui.ps1"
+    ],
+    "effect": "Identity/readiness/known smoke/guarded launcher only; no answering or financial methodology changes"
+  },
+  "repeat_interpretation": "Same known19release controls in original/new directory, not38 independent observations or new final comparison;7numeric+7refusal forms reused; one nested real-scenario financial run per directory is support, not added denominator"
+}

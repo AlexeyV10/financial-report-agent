@@ -1,0 +1,35 @@
+{
+  "original_bytes_preserved": true,
+  "decoded": [
+    {
+      "original": "launcher-foreign-port.txt",
+      "original_sha256": "4e9a9968ae2daf2f99b3268cb4369b23664f5f1723b4b370d2129bb660bb0cb7",
+      "encoding": "cp866",
+      "utf8_copy": "launcher-foreign-port.decoded.txt"
+    },
+    {
+      "original": "launcher-repeat-start.txt",
+      "original_sha256": "d7cb34a8906bdaee6e83f05474f08bb09fea16decf2cf9fe78d87af9a1bd8177",
+      "encoding": "cp866",
+      "utf8_copy": "launcher-repeat-start.decoded.txt"
+    },
+    {
+      "original": "launcher-status-stopped.txt",
+      "original_sha256": "ee1aa7ca626591ccdd3e63fea456f3563dc350ea09dcdc5762bad0eea208fe52",
+      "encoding": "cp866",
+      "utf8_copy": "launcher-status-stopped.decoded.txt"
+    },
+    {
+      "original": "launcher-status.txt",
+      "original_sha256": "d7cb34a8906bdaee6e83f05474f08bb09fea16decf2cf9fe78d87af9a1bd8177",
+      "encoding": "cp866",
+      "utf8_copy": "launcher-status.decoded.txt"
+    },
+    {
+      "original": "launcher-stop.txt",
+      "original_sha256": "016c2f6fd58a836b0cde951ec667fe46c650f1ee586d997f93f610c9c9d346d8",
+      "encoding": "cp866",
+      "utf8_copy": "launcher-stop.decoded.txt"
+    }
+  ]
+}

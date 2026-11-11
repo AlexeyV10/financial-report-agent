@@ -1,0 +1,38 @@
+{
+  "release_id": "kp3-rc1-2026-11-10",
+  "decision": "accepted_as_qualified_local_candidate_only",
+  "complete_original_P0": false,
+  "known_blocking_defects_in_declared_scope": [],
+  "deferred_promises": [
+    "P02generalnewPDFintake/admissionUI",
+    "P17fullpackage19/newmachineinstallation",
+    "report/slides18/submission20"
+  ],
+  "correct_blocks": [
+    "historicalpublicationunknown",
+    "real-source scenario gaps",
+    "offlineA/Ctechnicalerror",
+    "unsupportedfinancialscope/FX/comparability/candidates"
+  ],
+  "evidence": [
+    "candidate-audit-before.json",
+    "preservation.json",
+    "version-diff.json",
+    "report.json",
+    "release-smoke.json",
+    "directory-restoration.json",
+    "release-negative-checks.json",
+    "launcher-checks.json",
+    "check-runs.json",
+    "unit-all-escalated.txt",
+    "ui-tests.txt",
+    "probes15-regression.json",
+    "worker-boundary.json",
+    "metrics16-replay.json",
+    "ui-all18.txt",
+    "ui-operation-reference.json"
+  ],
+  "financial_runtime_fixes": 0,
+  "substantial_user_decision_needed": false,
+  "interpretation": "Limitations disclosed by explicit17scope; no fullP0/quality/trading claim and no bypass of a financialgate"
+}

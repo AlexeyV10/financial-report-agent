@@ -1,0 +1,31 @@
+{
+  "errors": [
+    {
+      "phase": "unit_regression_initial_sandbox",
+      "observed": "799 tests:28errors, including27WinError5 hardlink denials and oneWinError10013 socket denial",
+      "log": "unit-all-first.txt",
+      "resolution": "Same799tests with actual require_escalated:799pass, no code/criteria/guard workaround"
+    },
+    {
+      "phase": "directory_restoration_harness",
+      "observed": "First copy329files lacked parent directory for separately copied canonical manifest; FileNotFoundError before running restored CLI",
+      "resolution": "Original directory/script preserved in tmp; created parent in new v2-directory; code and19controls passed; RC329pins unchanged",
+      "first_script_private": "tmp/restore_probe17-first.py.before"
+    },
+    {
+      "phase": "subprocess_log_encoding",
+      "observed": "PowerShell negative launcher output captured in actualcp866 bytes; UTF8 viewer rendered mojibake",
+      "resolution": "Original bytes/SHA retained; separate UTF8 decoded text, no runtime/source change"
+    },
+    {
+      "phase": "Git_delivery_approval_review",
+      "observed": "10Nov automatic approval review could not complete because of usage limit; no command in delivery block executed, not a safety rejection",
+      "resolution": "11Nov user resumed after stated reset; same regular review accepted fetch/readiness retry; no bypass; original799unit/18UI results retained because candidate329pins unchanged"
+    }
+  ],
+  "unexpected_financial_answer_failures": 0,
+  "native_chat_failures": "No new generation attempted; A/C readiness offline is expected technical limitation",
+  "auto_review_rejections": 0,
+  "old_warning": "HTTPError404 ResourceWarning retained in passing799unit log",
+  "auto_review_failures": 1
+}

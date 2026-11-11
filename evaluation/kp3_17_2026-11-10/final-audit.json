@@ -1,0 +1,90 @@
+{
+  "stage": "KP3-17",
+  "status": "passed",
+  "preparation_manifest_sha256": "ba30ca0b853aeb0bd364177e2c0c3dd53e535bcfddac82d66758db9a31abddbb",
+  "checks": {
+    "stage": "KP3-17",
+    "status": "qualified_release_candidate_prepared",
+    "release_id": "kp3-rc1-2026-11-10",
+    "release_manifest": "data/releases/kp3_rc1/manifest.json",
+    "release_manifest_sha256": "1aadafb7640f27758bb2b7f04a2d6310b668da5b8746cb8dcf8b0d10cce5765c",
+    "candidate_file_pins": 329,
+    "base_UI": "d0d46a576345d21c5d79b4250b453ea0d32cd2c0",
+    "full_original_P0": false,
+    "unit_tests": {
+      "old": 778,
+      "new": 21,
+      "total": 799,
+      "passed": 799
+    },
+    "UI_AppTest": {
+      "old": 15,
+      "new": 3,
+      "passed": 18,
+      "total": 18,
+      "unchanged_UI": true,
+      "new_CUA": false,
+      "all_five_operation_paths": true
+    },
+    "checkers03_14": 17,
+    "known_robustness15": {
+      "passed": 143,
+      "total": 143,
+      "explicit_mock": 20,
+      "native_model_chat": 0
+    },
+    "actual_worker_controls": 2,
+    "old16_raw": 138,
+    "old16_replay_identical": true,
+    "release_smoke": {
+      "passed": 19,
+      "total": 19,
+      "counts": {
+        "financial_known": 14,
+        "clarification": 1,
+        "technical_faults": 2,
+        "scenario_known": 2,
+        "unique_financial_numeric": 7,
+        "new_model_chat": 0
+      },
+      "second_directory_same19": true,
+      "independent_new_observations": false
+    },
+    "release_negative_CLI": {
+      "passed": 7,
+      "total": 7
+    },
+    "launcher_controls": 5,
+    "B_ready": true,
+    "UI_ready": true,
+    "A_ready": true,
+    "C_ready": true,
+    "A_C_reason": "11Nov readonly pinned endpoint probe ready; initial10Nov adapter_unavailable retained; no fresh A/C financial generation",
+    "model_chat": 0,
+    "new_final_benchmark": false,
+    "new_gold": false,
+    "new_real_fact": 0,
+    "human_reviewed": 0,
+    "publication_unknown": 8,
+    "freeze14_files": 134,
+    "freeze14_resources": 28,
+    "old_files_preserved_before_document_prefixes": 1581,
+    "limits": [
+      "Qualified prepared-source RC; arbitrary newPDF intake/admission UI not shipped",
+      "All8 publicationunknown, realhistorical/tradingblocked;rightsunknown;assistant_checked not human_reviewed",
+      "Limited Russian grammar, causalwhyunfulfilled, automatic40/48targetcells6/8docs candidates not calculatorinputs",
+      "No unseen/market/model quality;143devprobes include20explicitmock, separate worker2; oldnative15 proof reused",
+      "Same-machine newdirectory smoke,10rebound Bresources/noPDF/models copied; fullZIP19/newmachineinstall not claimed",
+      "Core14/16 unchanged; approvedUIlater layer and release17checks only; no new native comparison required",
+      "Report/slides18 and package19/submission20 not started"
+    ],
+    "own_release_UI_stopped": true,
+    "old_UI8521_kept_running": true,
+    "next_step18_authorized": false,
+    "resumed_delivery_date": "2026-11-11",
+    "original_preparation_date": "2026-11-10",
+    "new_code_on_resume": false
+  },
+  "merge_authorized": false,
+  "primary_materials_in_git": false
+}

@@ -1,0 +1,1 @@
+{"own_cases": 24, "own_reference_paths": 72, "real_versions_blocked": 8, "old_actual_envelopes_revalidated": 2}

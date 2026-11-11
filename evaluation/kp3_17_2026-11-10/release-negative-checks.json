@@ -1,0 +1,59 @@
+{
+  "scope": "Known release/readiness CLI technical controls; not extra financial/model benchmark",
+  "passed": 7,
+  "total": 7,
+  "rows": [
+    {
+      "name": "missing-pdf",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "reason_code": "release_resources_unavailable",
+      "passed": true
+    },
+    {
+      "name": "changed-index",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "reason_code": "release_resources_unavailable",
+      "passed": true
+    },
+    {
+      "name": "unknown-resource",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "reason_code": "unknown_resource_binding",
+      "passed": true
+    },
+    {
+      "name": "context-mismatch",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "reason_code": "release_context_input_mismatch",
+      "passed": true
+    },
+    {
+      "name": "UI-main-python",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "reason_code": "ui_dependency_version_mismatch",
+      "passed": true
+    },
+    {
+      "name": "existing-report",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "reason_code": null,
+      "passed": true
+    },
+    {
+      "name": "existing-smoke-directory",
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "reason_code": "new_private_smoke_dir_required",
+      "passed": true
+    }
+  ],
+  "old_report_unchanged": true,
+  "old_history_unchanged": true,
+  "unexpected_model_chat": 0
+}
