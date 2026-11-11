@@ -1,0 +1,29 @@
+{
+  "integrity_passed": true,
+  "files": [
+    {
+      "name": "VirtualBox-7.2.22-175245-Win.exe",
+      "bytes": 178101352,
+      "sha256": "afd0ff1656cbe04ed88ce619594ae021419d97cce89fa9bdc443e9a963f1713f",
+      "official_sha256_matches": true
+    },
+    {
+      "name": "Windows11_Enterprise_Eval_26H2_x64_en-us.iso",
+      "bytes": 8225329152,
+      "sha256": "bc3f24086ebadc94489066b5ad78089e2cf5c3491e90e790bb81a2b199c10e38",
+      "official_sha256_matches": true
+    }
+  ],
+  "oracle_authenticode": {
+    "Status": "Valid",
+    "StatusMessage": "Signature verified.",
+    "SignerSubject": "CN=\"Oracle America, Inc.\", O=\"Oracle America, Inc.\", L=Redwood City, S=California, C=US",
+    "SignerIssuer": "CN=DigiCert Trusted G4 Code Signing RSA4096 SHA384 2021 CA1, O=\"DigiCert, Inc.\", C=US",
+    "SignerThumbprint": "2B1BD188256EB612578949A943DE0DDC52D1DF79",
+    "TimestampSubject": "CN=DigiCert SHA256 RSA4096 Timestamp Responder 2026 1, O=\"DigiCert, Inc.\", C=US"
+  },
+  "installer_executed": false,
+  "iso_mounted": false,
+  "guest_started": false,
+  "guest_acceptance": false
+}

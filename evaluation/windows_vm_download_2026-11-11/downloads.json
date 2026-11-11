@@ -1,0 +1,62 @@
+{
+  "completed_at": "2026-11-11T14:44:17.502604+00:00",
+  "files": [
+    {
+      "item": "virtualbox",
+      "requested_url": "https://download.virtualbox.org/virtualbox/7.2.22/VirtualBox-7.2.22-175245-Win.exe",
+      "started": "2026-11-11T14:29:38.421971+00:00",
+      "downloaded": true,
+      "executed": false,
+      "final_url": "https://download.virtualbox.org/virtualbox/7.2.22/VirtualBox-7.2.22-175245-Win.exe",
+      "expected_bytes": 178101352,
+      "content_type": "application/octet-stream",
+      "last_modified": "Tue, 20 Oct 2026 06:34:05 GMT",
+      "bytes": 178101352,
+      "sha256": "afd0ff1656cbe04ed88ce619594ae021419d97cce89fa9bdc443e9a963f1713f",
+      "official_sha256": "afd0ff1656cbe04ed88ce619594ae021419d97cce89fa9bdc443e9a963f1713f",
+      "official_sha256_compared": true,
+      "local_file": "VirtualBox-7.2.22-175245-Win.exe",
+      "elapsed_seconds": 27.52,
+      "finished": "2026-11-11T14:30:05.932893+00:00",
+      "source": {
+        "product": "Oracle VirtualBox 7.2.22 Windows x64",
+        "page": "https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html",
+        "checksum_source": "https://download.virtualbox.org/virtualbox/7.2.22/SHA256SUMS"
+      },
+      "official_checksum_after_download": "afd0ff1656cbe04ed88ce619594ae021419d97cce89fa9bdc443e9a963f1713f",
+      "official_checksum_verified": true
+    },
+    {
+      "item": "windows",
+      "requested_url": "https://go.microsoft.com/fwlink/?LinkId=2382600&clcid=0x409&country=us&culture=en-us",
+      "started": "2026-11-11T14:29:38.421971+00:00",
+      "downloaded": true,
+      "executed": false,
+      "final_url": "https://software-static.download.prss.microsoft.com/dbazure/26300.9457.260913-1737.26h2_ge_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso",
+      "expected_bytes": 8225329152,
+      "content_type": "application/octet-stream",
+      "last_modified": "Thu, 17 Sep 2026 19:32:20 GMT",
+      "bytes": 8225329152,
+      "sha256": "bc3f24086ebadc94489066b5ad78089e2cf5c3491e90e790bb81a2b199c10e38",
+      "official_sha256": "bc3f24086ebadc94489066b5ad78089e2cf5c3491e90e790bb81a2b199c10e38",
+      "official_sha256_compared": true,
+      "local_file": "Windows11_Enterprise_Eval_26H2_x64_en-us.iso",
+      "elapsed_seconds": 864.75,
+      "finished": "2026-11-11T14:44:03.169462+00:00",
+      "source": {
+        "product": "Windows 11 Enterprise Evaluation 26H2 x64 en-US",
+        "page": "https://www.microsoft.com/en-us/evalcenter/download-windows-11-enterprise",
+        "checksum_source": "https://support.microsoft.com/en-us/servicing/os/windows/docs/2026/09/verify-the-authenticity-of-a-windows-11-enterprise-evaluation-iso-file",
+        "checksum_label": "Enterprise Eval x64 Eval EN-US DVD9 (SHA256)",
+        "evaluation_days": 90,
+        "registration_submitted": false,
+        "account_signin": false,
+        "activation": false
+      },
+      "official_checksum_after_download": "bc3f24086ebadc94489066b5ad78089e2cf5c3491e90e790bb81a2b199c10e38",
+      "official_checksum_verified": true
+    }
+  ],
+  "stored_in": "tmp/windows-vm-download-worktree/tmp/downloads relative to project root",
+  "binaries_published": false
+}

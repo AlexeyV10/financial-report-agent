@@ -1,0 +1,14 @@
+{
+  "actions": [
+    "Read project workflow/current WIN-02B status and current GitHub state; created isolated branch/worktree before preparation",
+    "Read official Oracle/Microsoft sources; downloaded official EXE and ISO by HTTPS without executing",
+    "Compared both full-file SHA256 values to vendor-published values; checked Oracle Authenticode and PE/ISO headers",
+    "Inventoried OS/CPU/RAM/free space and token using read-only Windows queries",
+    "Checked original files/branches and previous installer/kit; saved minimal own evidence",
+    "Allowlisted Git delivery; no merge"
+  ],
+  "global_installations": 0,
+  "host_settings_mutations": 0,
+  "guest_runs": 0,
+  "model_calls": 0
+}
