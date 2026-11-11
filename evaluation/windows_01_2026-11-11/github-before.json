@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-11-11T01:05:52.768869+00:00",
+  "main": "f349717c5ca2acc33decf3dd7ce12b2756ce6d8b",
+  "parent_pr": {
+    "number": 19,
+    "state": "open",
+    "head": "e62bd64ebb0a79037ae3ac56750490efdefff062",
+    "branch": "codex/windows-app-research-plan",
+    "base": "codex/kp3-17-release-candidate"
+  },
+  "ruleset_active": true,
+  "bypass_actors": []
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "label": "final2-qt-1",
+    "passed": true,
+    "calculations": 2,
+    "render_states": 5,
+    "crash_exit": 23,
+    "cancelled_worker_gone_at_300ms": true
+  },
+  {
+    "label": "final2-wpf-1",
+    "passed": true,
+    "calculations": 2,
+    "render_states": 5,
+    "crash_exit": 23,
+    "cancelled_worker_gone_at_300ms": true
+  },
+  {
+    "label": "final2-qt-2",
+    "passed": true,
+    "calculations": 2,
+    "render_states": 5,
+    "crash_exit": 23,
+    "cancelled_worker_gone_at_300ms": true
+  },
+  {
+    "label": "final2-wpf-2",
+    "passed": true,
+    "calculations": 2,
+    "render_states": 5,
+    "crash_exit": 23,
+    "cancelled_worker_gone_at_300ms": true
+  },
+  {
+    "label": "final2-qt-3",
+    "passed": true,
+    "calculations": 2,
+    "render_states": 5,
+    "crash_exit": 23,
+    "cancelled_worker_gone_at_300ms": true
+  },
+  {
+    "label": "final2-wpf-3",
+    "passed": true,
+    "calculations": 2,
+    "render_states": 5,
+    "crash_exit": 23,
+    "cancelled_worker_gone_at_300ms": true
+  },
+  {
+    "label": "final2-qt-150",
+    "passed": true,
+    "calculations": 2,
+    "render_states": 5,
+    "crash_exit": 23,
+    "cancelled_worker_gone_at_300ms": true
+  },
+  {
+    "label": "final2-qt-200",
+    "passed": true,
+    "calculations": 2,
+    "render_states": 5,
+    "crash_exit": 23,
+    "cancelled_worker_gone_at_300ms": true
+  }
+]

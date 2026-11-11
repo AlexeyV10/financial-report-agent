@@ -1,0 +1,255 @@
+{
+  "protocol": "same machine, no OS cache purge, external ready file polling <=30ms, tree RSS double counts shared pages, no model",
+  "runs": [
+    {
+      "candidate": "qt",
+      "label": "final2-qt-1",
+      "external_ready_s": 0.5142605304718018,
+      "internal_ready_s": 0.41774220000297646,
+      "effective_dpi_scale": 1.25,
+      "peak_tree_rss_bytes": 275685376,
+      "peak_tree_private_bytes": 211542016,
+      "idle_tree_rss_bytes": 93521920.0,
+      "idle_sample_count": 2,
+      "table_s": 0.02509950000239769,
+      "table_rows": 10000,
+      "selected_value": 1,
+      "cancel_signal_ms": 1.224199997523101,
+      "cancel_process_gone_at_300ms": true,
+      "max_heartbeat_gap_ms": 709.4636000001628,
+      "probe_completed": true,
+      "sample_count": 212
+    },
+    {
+      "candidate": "wpf",
+      "label": "final2-wpf-1",
+      "external_ready_s": 0.3149237632751465,
+      "internal_ready_s": 0.23905649999999998,
+      "effective_dpi_scale": 1.25,
+      "peak_tree_rss_bytes": 277020672,
+      "peak_tree_private_bytes": 237924352,
+      "idle_tree_rss_bytes": 136318976.0,
+      "idle_sample_count": 2,
+      "table_s": 0.07699199999999999,
+      "table_rows": 10000,
+      "selected_value": 1,
+      "cancel_signal_ms": 0.7862,
+      "cancel_process_gone_at_300ms": true,
+      "max_heartbeat_gap_ms": 152.5448,
+      "probe_completed": true,
+      "sample_count": 154
+    },
+    {
+      "candidate": "qt",
+      "label": "final2-qt-2",
+      "external_ready_s": 0.5013101100921631,
+      "internal_ready_s": 0.4131353000011586,
+      "effective_dpi_scale": 1.25,
+      "peak_tree_rss_bytes": 273534976,
+      "peak_tree_private_bytes": 209096704,
+      "idle_tree_rss_bytes": 93360128.0,
+      "idle_sample_count": 2,
+      "table_s": 0.022325599999021506,
+      "table_rows": 10000,
+      "selected_value": 1,
+      "cancel_signal_ms": 0.9479000000283122,
+      "cancel_process_gone_at_300ms": true,
+      "max_heartbeat_gap_ms": 695.146999998542,
+      "probe_completed": true,
+      "sample_count": 208
+    },
+    {
+      "candidate": "wpf",
+      "label": "final2-wpf-2",
+      "external_ready_s": 0.2745985984802246,
+      "internal_ready_s": 0.1896512,
+      "effective_dpi_scale": 1.25,
+      "peak_tree_rss_bytes": 267677696,
+      "peak_tree_private_bytes": 225546240,
+      "idle_tree_rss_bytes": 137641984,
+      "idle_sample_count": 3,
+      "table_s": 0.060076,
+      "table_rows": 10000,
+      "selected_value": 1,
+      "cancel_signal_ms": 0.7947000000000001,
+      "cancel_process_gone_at_300ms": true,
+      "max_heartbeat_gap_ms": 108.0133,
+      "probe_completed": true,
+      "sample_count": 151
+    },
+    {
+      "candidate": "qt",
+      "label": "final2-qt-3",
+      "external_ready_s": 0.518791675567627,
+      "internal_ready_s": 0.4536539999971865,
+      "effective_dpi_scale": 1.25,
+      "peak_tree_rss_bytes": 273952768,
+      "peak_tree_private_bytes": 210644992,
+      "idle_tree_rss_bytes": 89665536.0,
+      "idle_sample_count": 2,
+      "table_s": 0.028560300001117866,
+      "table_rows": 10000,
+      "selected_value": 1,
+      "cancel_signal_ms": 0.9889000029943418,
+      "cancel_process_gone_at_300ms": true,
+      "max_heartbeat_gap_ms": 760.0453999984893,
+      "probe_completed": true,
+      "sample_count": 216
+    },
+    {
+      "candidate": "wpf",
+      "label": "final2-wpf-3",
+      "external_ready_s": 0.27373600006103516,
+      "internal_ready_s": 0.19330709999999998,
+      "effective_dpi_scale": 1.25,
+      "peak_tree_rss_bytes": 269881344,
+      "peak_tree_private_bytes": 229568512,
+      "idle_tree_rss_bytes": 136519680.0,
+      "idle_sample_count": 2,
+      "table_s": 0.0510198,
+      "table_rows": 10000,
+      "selected_value": 1,
+      "cancel_signal_ms": 0.7675000000000001,
+      "cancel_process_gone_at_300ms": true,
+      "max_heartbeat_gap_ms": 118.38369999999999,
+      "probe_completed": true,
+      "sample_count": 151
+    },
+    {
+      "candidate": "qt",
+      "label": "final2-qt-150",
+      "external_ready_s": 0.5138108730316162,
+      "internal_ready_s": 0.4215896999994584,
+      "effective_dpi_scale": 1.5,
+      "peak_tree_rss_bytes": 273584128,
+      "peak_tree_private_bytes": 209469440,
+      "idle_tree_rss_bytes": 94595072.0,
+      "idle_sample_count": 2,
+      "table_s": 0.0275169000015012,
+      "table_rows": 10000,
+      "selected_value": 1,
+      "cancel_signal_ms": 1.1362999975972343,
+      "cancel_process_gone_at_300ms": true,
+      "max_heartbeat_gap_ms": 712.7241999987746,
+      "probe_completed": true,
+      "sample_count": 202
+    },
+    {
+      "candidate": "qt",
+      "label": "final2-qt-200",
+      "external_ready_s": 0.5068683624267578,
+      "internal_ready_s": 0.41041630000108853,
+      "effective_dpi_scale": 2.0,
+      "peak_tree_rss_bytes": 277008384,
+      "peak_tree_private_bytes": 212561920,
+      "idle_tree_rss_bytes": 95475712.0,
+      "idle_sample_count": 2,
+      "table_s": 0.024557499997172272,
+      "table_rows": 10000,
+      "selected_value": 1,
+      "cancel_signal_ms": 1.0658999999577645,
+      "cancel_process_gone_at_300ms": true,
+      "max_heartbeat_gap_ms": 696.5780000027735,
+      "probe_completed": true,
+      "sample_count": 205
+    }
+  ],
+  "limitations": [
+    "Three sequential alternating same-machine source runs per candidate; no cache purge or reboot, so true OS-cold startup unmeasured.",
+    "Ready polling <=30ms plus launcher/poll scheduling; idle sample window only 80ms, 2-3 samples.",
+    "Tree RSS double-counts shared pages; private bytes and raw samples also recorded.",
+    "Background Windows activity and UIA client may affect timing; no attribution of Qt pause to one library.",
+    "Qt 150/200 are effective Qt scaling overrides over system125; WPF system200 not tested.",
+    "These are own tiny document and technical table measurements, not an application or model benchmark."
+  ],
+  "summary": {
+    "qt": {
+      "external_ready_s": {
+        "median": 0.5142605304718018,
+        "minimum": 0.5013101100921631,
+        "maximum": 0.518791675567627
+      },
+      "internal_ready_s": {
+        "median": 0.41774220000297646,
+        "minimum": 0.4131353000011586,
+        "maximum": 0.4536539999971865
+      },
+      "idle_tree_rss_bytes": {
+        "median": 93360128.0,
+        "minimum": 89665536.0,
+        "maximum": 93521920.0
+      },
+      "peak_tree_rss_bytes": {
+        "median": 273952768,
+        "minimum": 273534976,
+        "maximum": 275685376
+      },
+      "peak_tree_private_bytes": {
+        "median": 210644992,
+        "minimum": 209096704,
+        "maximum": 211542016
+      },
+      "table_s": {
+        "median": 0.02509950000239769,
+        "minimum": 0.022325599999021506,
+        "maximum": 0.028560300001117866
+      },
+      "cancel_signal_ms": {
+        "median": 0.9889000029943418,
+        "minimum": 0.9479000000283122,
+        "maximum": 1.224199997523101
+      },
+      "max_heartbeat_gap_ms": {
+        "median": 709.4636000001628,
+        "minimum": 695.146999998542,
+        "maximum": 760.0453999984893
+      },
+      "first_process_ready_s": 0.5142605304718018,
+      "warm_process_ready_s_median": 0.510050892829895
+    },
+    "wpf": {
+      "external_ready_s": {
+        "median": 0.2745985984802246,
+        "minimum": 0.27373600006103516,
+        "maximum": 0.3149237632751465
+      },
+      "internal_ready_s": {
+        "median": 0.19330709999999998,
+        "minimum": 0.1896512,
+        "maximum": 0.23905649999999998
+      },
+      "idle_tree_rss_bytes": {
+        "median": 136519680.0,
+        "minimum": 136318976.0,
+        "maximum": 137641984
+      },
+      "peak_tree_rss_bytes": {
+        "median": 269881344,
+        "minimum": 267677696,
+        "maximum": 277020672
+      },
+      "peak_tree_private_bytes": {
+        "median": 229568512,
+        "minimum": 225546240,
+        "maximum": 237924352
+      },
+      "table_s": {
+        "median": 0.060076,
+        "minimum": 0.0510198,
+        "maximum": 0.07699199999999999
+      },
+      "cancel_signal_ms": {
+        "median": 0.7862,
+        "minimum": 0.7675000000000001,
+        "maximum": 0.7947000000000001
+      },
+      "max_heartbeat_gap_ms": {
+        "median": 118.38369999999999,
+        "minimum": 108.0133,
+        "maximum": 152.5448
+      },
+      "first_process_ready_s": 0.3149237632751465,
+      "warm_process_ready_s_median": 0.2741672992706299
+    }
+  }
+}

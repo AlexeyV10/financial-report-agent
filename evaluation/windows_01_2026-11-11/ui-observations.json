@@ -1,0 +1,43 @@
+{
+  "observed_on": "2026-11-11",
+  "method": "Real Windows actions using sky; component probes reported separately.",
+  "qt": {
+    "native": true,
+    "no_http_UI": true,
+    "system_scale": 1.25,
+    "effective_scale": 2.0,
+    "keyboard": [
+      "Tab/Space opened demo and ran calculation",
+      "Tab/Space started background job; Escape cancelled at observed 15% and cleared answer"
+    ],
+    "UIA": "Button IDs, status, source and result document text exposed; table tree truncated with 10010 omitted children; a cached Value still showed previous source text while document_text showed current 15.00%.",
+    "contrast": "Own black/white palette and yellow focus observed, not OS high contrast.",
+    "large_font": "19px at effective200: controls/source wrap, table text truncated and document viewport too shallow; not a passed compact-layout gate.",
+    "source": "Own PDF source and exact outline observed earlier at system125; effective200 viewport needs scroll."
+  },
+  "wpf": {
+    "native": true,
+    "no_http_UI": true,
+    "system_scale": 1.25,
+    "keyboard": [
+      "Native file picker filename+Return opened own PDF",
+      "Tab/Space ran calculate/background and Escape cancelled with empty result",
+      "Ctrl+End navigated to final technical table row/cell"
+    ],
+    "manual_actions": [
+      "Exact green outline around Operating profit18 observed on own PDF",
+      "Crash produced error with no answer; next calculation recovered to15.00%",
+      "Large text19 observed, result/source remained readable",
+      "System palette button followed current OS colors, actual_high_contrast=false"
+    ],
+    "UIA": "Explicit action IDs, source/page/status, realized table rows and full result Value/document_text verified.",
+    "narrator": "Started on this machine and focus/read command attempted; audible speech not verified. Not full acceptance.",
+    "system200": "NOT TESTED; no system DPI setting changed."
+  },
+  "completion": "CUA completion_summary recorded after observed manual outcomes; remaining own experimental processes stopped by verified launcher ownership.",
+  "limitations": [
+    "No claim of complete keyboard-only workflow, successful spoken Narrator reading, OS high contrast or WPF200 pass.",
+    "No new user/third-party usability test.",
+    "Screenshots and full UIA snapshots remain excluded tmp/."
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "observed_on": "2026-11-11",
+  "windows": {
+    "caption": "Windows 11 Pro",
+    "version": "10.0.26200",
+    "build": "26200"
+  },
+  "cpu": {
+    "name": "Intel Core i7-14700HX",
+    "cores": 20,
+    "logical_processors": 28
+  },
+  "ram_bytes": 16873545728,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "python_runtime_origin": "bundled stock CPython 3.12.14; new isolated tmp/windows-01-env",
+  "old_global_python": "MSYS2 UCRT64 Python 3.14.7, unchanged",
+  "dotnet": {
+    "product": "preinstalled .NET Framework 4.8.1",
+    "registry_version": "4.8.09221",
+    "release": 533509,
+    "clr": "4.0.30319.42000",
+    "compiler": "Framework64/v4.0.30319/csc.exe",
+    "modern_dotnet_sdk_on_PATH": false
+  },
+  "qt": "6.11.3",
+  "pypdfium2": "5.15.2",
+  "pdfium": "159.0.8149.0@sourcebuild-toolchained",
+  "monitor_system_dpi_scale": 1.25,
+  "qt_effective_dpi_scales": [
+    1.25,
+    1.5,
+    2.0
+  ],
+  "wpf_actual_system_dpi_scales": [
+    1.25
+  ],
+  "packages": [
+    {
+      "name": "altgraph",
+      "version": "0.17.5",
+      "license_expression": null,
+      "license_field": "MIT"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "license_expression": "Apache-2.0 OR BSD-2-Clause",
+      "license_field": null
+    },
+    {
+      "name": "pefile",
+      "version": "2024.8.26",
+      "license_expression": null,
+      "license_field": "MIT"
+    },
+    {
+      "name": "pillow",
+      "version": "13.0.0",
+      "license_expression": "MIT-CMU",
+      "license_field": null
+    },
+    {
+      "name": "pip",
+      "version": "25.0.1",
+      "license_expression": null,
+      "license_field": "MIT"
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2",
+      "license_expression": null,
+      "license_field": "BSD-3-Clause"
+    },
+    {
+      "name": "pyinstaller",
+      "version": "6.22.3",
+      "license_expression": null,
+      "license_field": "GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (including commercial ones)"
+    },
+    {
+      "name": "pyinstaller-hooks-contrib",
+      "version": "2026.10",
+      "license_expression": null,
+      "license_field": null
+    },
+    {
+      "name": "pypdfium2",
+      "version": "5.15.2",
+      "license_expression": null,
+      "license_field": "BSD-3-Clause, Apache-2.0, dependency licenses"
+    },
+    {
+      "name": "PySide6_Essentials",
+      "version": "6.11.3",
+      "license_expression": null,
+      "license_field": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"
+    },
+    {
+      "name": "pywin32-ctypes",
+      "version": "0.2.3",
+      "license_expression": null,
+      "license_field": "BSD-3-Clause"
+    },
+    {
+      "name": "setuptools",
+      "version": "84.2.1",
+      "license_expression": "MIT",
+      "license_field": null
+    },
+    {
+      "name": "shiboken6",
+      "version": "6.11.3",
+      "license_expression": null,
+      "license_field": "LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only"
+    }
+  ],
+  "new_model_calls": 0,
+  "existing_qwen_probed": false
+}
