@@ -1,0 +1,367 @@
+{
+  "result": {
+    "schema_version": "kp3-a-answer-0.1",
+    "run_id": "a-c197001594364fe099c046a4c1c8a3b2",
+    "task_id": "a-c197001594364fe099c046a4c1c8a3b2",
+    "method": "A",
+    "execution_status": "error",
+    "request_status": "error",
+    "financial_status": null,
+    "reason_code": "selection_operation_mismatch",
+    "original_question": "Явная собственная учебная форма.",
+    "normalized_input": {
+      "schema_version": "kp3-input-0.1",
+      "input_id": "a-c197001594364fe099c046a4c1c8a3b2",
+      "original_question": "Явная собственная учебная форма.",
+      "input_kind": "form",
+      "raw_fields": {
+        "organization": "method_synthetic_group",
+        "operation_id": "direct_fact_v1",
+        "metric_ids": [
+          "revenue"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1"
+          }
+        ],
+        "mode": "snapshot"
+      },
+      "fields": {
+        "organization": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "operation_id": "direct_fact_v1",
+        "metric_ids": [
+          "revenue"
+        ],
+        "definition_ids": [
+          "revenue:nonfinancial_ifrs_reported_v1"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1"
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1
+        },
+        "result_unit": {
+          "kind": "amount",
+          "currency": "RUB",
+          "scale": 1
+        },
+        "mode": "snapshot",
+        "as_of": null,
+        "comparability_id": null
+      },
+      "field_origins": {
+        "organization": "form",
+        "consolidation": "catalog_unique",
+        "accounting_standard": "catalog_unique",
+        "operation_id": "form",
+        "metric_ids": "form",
+        "definition_ids": "catalog_unique",
+        "periods": "form",
+        "documents": "form",
+        "version_policy": "catalog_unique",
+        "source_unit": "catalog_unique",
+        "result_unit": "catalog_unique",
+        "mode": "form",
+        "as_of": "unset",
+        "comparability_id": "unset"
+      },
+      "assumptions": [],
+      "assumption_origin": "none",
+      "hints": {
+        "years": [],
+        "as_of_text": null,
+        "document_report_year": null,
+        "organization_unmatched": null
+      },
+      "issues": [],
+      "unsupported_reasons": [],
+      "unfulfilled_requests": [],
+      "history": [],
+      "catalog_digest": "7e740e6abc3270c59f045f8e07365e63488c6b6ff76a4222deebeed6e6582df4",
+      "language_version": "ru-input-v1"
+    },
+    "clarifications": [],
+    "financial_result": null,
+    "outcome": null,
+    "assumption_checks": [],
+    "unfulfilled_requests": [],
+    "retrieval": {
+      "run_id": "a-c197001594364fe099c046a4c1c8a3b2",
+      "status": "found",
+      "reason_code": "ok",
+      "source_kind": "prepared",
+      "index_sha256": "06c06c79788e1352690914b10415de0b7efb4222c20aa28ad97ea667ab023d07",
+      "result_count": 1,
+      "spec": {
+        "schema_version": "kp3-search-0.1",
+        "query": "выручка",
+        "organization_id": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "metrics": [
+          {
+            "metric_id": "revenue",
+            "definition_id": "revenue:nonfinancial_ifrs_reported_v1"
+          }
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1"
+          }
+        ],
+        "source_units": [
+          {
+            "currency": "RUB",
+            "scale": 1
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "mode": "snapshot",
+        "as_of": null,
+        "top_k": 32
+      }
+    },
+    "trace": [
+      {
+        "stage": "input",
+        "run_id": "a-c197001594364fe099c046a4c1c8a3b2",
+        "status": "completed",
+        "elapsed_ms": 2.0214,
+        "reason_code": "ok",
+        "details": {}
+      },
+      {
+        "stage": "catalog_filters",
+        "run_id": "a-c197001594364fe099c046a4c1c8a3b2",
+        "status": "completed",
+        "elapsed_ms": 2.2467,
+        "reason_code": "ok",
+        "details": {
+          "preliminary_only": true
+        }
+      },
+      {
+        "stage": "search",
+        "run_id": "a-c197001594364fe099c046a4c1c8a3b2",
+        "status": "completed",
+        "elapsed_ms": 250.459,
+        "reason_code": "ok",
+        "details": {
+          "primary_search": true
+        }
+      },
+      {
+        "stage": "fact_resolution",
+        "run_id": "a-c197001594364fe099c046a4c1c8a3b2",
+        "status": "completed",
+        "elapsed_ms": 0.0012,
+        "reason_code": "ok",
+        "details": {
+          "evidence_ids": [
+            "revenue-2024-ev"
+          ],
+          "candidate_metadata": [
+            {
+              "currency": "RUB",
+              "definition_id": "revenue:nonfinancial_ifrs_reported_v1",
+              "document_id": "method-synthetic-2024",
+              "evidence_id": "revenue-2024-ev",
+              "fact_id": "revenue-2024",
+              "metric_id": "revenue",
+              "period": {
+                "duration_type": "full_year",
+                "end": "2024-12-31",
+                "kind": "duration",
+                "start": "2024-01-01"
+              },
+              "scale": 1,
+              "version_id": "own-2024-v1"
+            }
+          ],
+          "source": "found_prepared_only"
+        }
+      },
+      {
+        "stage": "source_validation",
+        "run_id": "a-c197001594364fe099c046a4c1c8a3b2",
+        "status": "completed",
+        "elapsed_ms": 0.0002,
+        "reason_code": "ok",
+        "details": {
+          "performed_in_primary_worker": true,
+          "primary_reannotation": false
+        }
+      },
+      {
+        "stage": "model_selection",
+        "run_id": "a-c197001594364fe099c046a4c1c8a3b2",
+        "status": "error",
+        "elapsed_ms": 237.029,
+        "reason_code": "selection_operation_mismatch",
+        "details": {
+          "error_type": "ContractError"
+        }
+      },
+      {
+        "stage": "calculation",
+        "run_id": "a-c197001594364fe099c046a4c1c8a3b2",
+        "status": "skipped",
+        "elapsed_ms": 0,
+        "reason_code": "not_reached",
+        "details": {}
+      },
+      {
+        "stage": "result_validation",
+        "run_id": "a-c197001594364fe099c046a4c1c8a3b2",
+        "status": "skipped",
+        "elapsed_ms": 0,
+        "reason_code": "not_reached",
+        "details": {}
+      },
+      {
+        "stage": "answer",
+        "run_id": "a-c197001594364fe099c046a4c1c8a3b2",
+        "status": "completed",
+        "elapsed_ms": 0.0005,
+        "reason_code": "ok",
+        "details": {
+          "financial_result_present": false
+        }
+      }
+    ],
+    "context_digest": "cd6c692b96036b7c1b8e4797541390222bde267b4b9fab2bb95232d998b036fb",
+    "source_input_digest": "03886d50b23740c022c0c333b5e8b58070d1a59e5d750bc26eb9811ed0dcc678",
+    "saved_run": {
+      "resource_id": "6ac05d79ef89399db8f09a1cc113f1da057beef1e249dc79fb6276e330a42654.json",
+      "status": "written",
+      "private": true
+    },
+    "model_calls": 0,
+    "selection": {
+      "protocol": "kp3-one-shot-a-0.1",
+      "prompt": "one-shot-financial-selection-v1",
+      "adapter": {
+        "kind": "mock",
+        "adapter": "own-one-shot-protocol-test",
+        "strategy": "wrong_operation"
+      },
+      "limits": {
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "top_k": 32,
+        "max_output_tokens": 384,
+        "max_choice_bytes": 4096,
+        "max_observation_bytes": 32768
+      },
+      "model_attempts": 0,
+      "mock_choices": 1,
+      "choice": {
+        "inputs": [
+          {
+            "fact_id": "revenue-2024",
+            "role": "fact"
+          }
+        ],
+        "operation_id": "relative_change_v1",
+        "schema_version": "kp3-a-choice-0.1"
+      },
+      "choice_valid": false,
+      "usage": {
+        "input_tokens": null,
+        "output_tokens": null,
+        "known_chat_requests": 0,
+        "unknown_requests": 0
+      },
+      "events": [
+        {
+          "kind": "worker",
+          "run_id": "a-c197001594364fe099c046a4c1c8a3b2",
+          "purpose": "primary",
+          "status": "completed",
+          "phase": "source_validation",
+          "reason_code": "ok",
+          "elapsed_ms": 250.407,
+          "search_count": 1
+        },
+        {
+          "kind": "choice",
+          "run_id": "a-c197001594364fe099c046a4c1c8a3b2",
+          "choice": {
+            "inputs": [
+              {
+                "fact_id": "revenue-2024",
+                "role": "fact"
+              }
+            ],
+            "operation_id": "relative_change_v1",
+            "schema_version": "kp3-a-choice-0.1"
+          },
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null
+          },
+          "chat_requests": 0,
+          "error": null,
+          "diagnostic": {
+            "own_test": true
+          },
+          "elapsed_ms": 236.946
+        }
+      ],
+      "search_audit": [
+        {
+          "index_sha256": "06c06c79788e1352690914b10415de0b7efb4222c20aa28ad97ea667ab023d07",
+          "purpose": "primary",
+          "reason_code": "ok",
+          "spec_digest": "1429a5d73b4eab7a128e462b240a211e33a34c10d584b5c08d56280cb32cbf1f",
+          "status": "found"
+        }
+      ],
+      "primary_searches": 1,
+      "validation_searches": 0,
+      "unknown_search_steps": [],
+      "observation_digest": "87108d28c5564118997b7864c8d7c93aa4c6d3378ca1bdf40447d180093d840b",
+      "stop_reason": "selection_operation_mismatch"
+    }
+  },
+  "control": null,
+  "details": {
+    "adapter_kind": "explicit_mock_controller_fixture_not_actual_C_or_A_model",
+    "new_real_chat_requests": 0
+  }
+}

@@ -1,0 +1,5 @@
+usage: check_kp3_release.py [-h] [--manifest MANIFEST]
+                            [--profile {code,B,A,C,UI}]
+                            [--resources RESOURCES] [--context CONTEXT]
+                            --report REPORT [--smoke] [--work-dir WORK_DIR]
+check_kp3_release.py: error: Report must be a NEW file under this checkout tmp/

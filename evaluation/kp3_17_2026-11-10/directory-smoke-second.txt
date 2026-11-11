@@ -1,0 +1,1 @@
+{"own_files": 329, "new_directory_B_smoke": true, "counts": {"financial_known": 14, "clarification": 1, "technical_faults": 2, "scenario_known": 2, "unique_financial_numeric": 7, "new_model_chat": 0}, "models_copied": 0, "pdfs_copied": 0}

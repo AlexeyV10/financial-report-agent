@@ -1,0 +1,20 @@
+{
+  "dictionary_version": "1.0",
+  "definitions": 3,
+  "method_operations": 7,
+  "synthetic_runtime_facts": 6,
+  "open_dev_cases": 62,
+  "outcome_counts": {
+    "completed/answered": 22,
+    "completed/unsupported": 8,
+    "completed/conflict": 13,
+    "completed/missing": 5,
+    "error/None": 12,
+    "limit_exceeded/None": 1,
+    "awaiting_clarification/None": 1
+  },
+  "independent_gold_matches": true,
+  "production_answer_calls": 0,
+  "new_real_financial_facts": 0,
+  "quality_metric": false
+}

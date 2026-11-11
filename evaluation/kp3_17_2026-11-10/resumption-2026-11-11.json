@@ -1,0 +1,22 @@
+{
+  "resumed_at": "2026-11-11T00:10:13.423541+00:00",
+  "original_evaluation_directory": "Started2026-11-10; retained without renaming",
+  "release_manifest_unchanged": true,
+  "manifest_sha256": "1aadafb7640f27758bb2b7f04a2d6310b668da5b8746cb8dcf8b0d10cce5765c",
+  "candidate_pins_unchanged": 329,
+  "freeze_files_unchanged": 134,
+  "physical_resources_unchanged": 28,
+  "Git_head_before_delivery": "d0d46a576345d21c5d79b4250b453ea0d32cd2c0",
+  "code_changes_on_resume": 0,
+  "new_model_chat": 0,
+  "model_server_started_by_this_task": false,
+  "initial_A_C": "10Nov adapter_unavailable, originals retained",
+  "current_A_C": "11Nov existing pinned endpoint probe ready; no new actual financial A/C execution and no cold/warm claim",
+  "B_UI_ready": true,
+  "previous_approval_failure": {
+    "reason": "Usage limit: automatic approval review could not complete; action not executed, no unsafe-action determination",
+    "previous_action": "fetch/merge-tree/prepare/commit block",
+    "resolved": "Same normal approval review accepted after user resume and retry11Nov; no bypass"
+  },
+  "next_step18_started": false
+}

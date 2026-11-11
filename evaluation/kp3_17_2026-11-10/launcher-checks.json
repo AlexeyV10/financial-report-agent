@@ -1,0 +1,90 @@
+{
+  "scope": "Actual guarded launcher/process/HTTP; unchanged UI reused, not new CUA",
+  "own_ui_pid": 30452,
+  "own_release_ui_port": 8522,
+  "own_ui_started": true,
+  "own_ui_stopped": true,
+  "health_before_stop": 200,
+  "own_owner_receipt_unchanged_on_repeat": true,
+  "foreign_old_ui8521_kept_running": true,
+  "foreign_port_not_accepted_as_release": true,
+  "model_server_started": false,
+  "model_chat": 0,
+  "commands": [
+    {
+      "name": "status",
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-NonInteractive",
+        "-File",
+        "scripts/release_ui.ps1",
+        "status",
+        "-Port",
+        "8522"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0
+    },
+    {
+      "name": "repeat-start",
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-NonInteractive",
+        "-File",
+        "scripts/release_ui.ps1",
+        "start",
+        "-Port",
+        "8522"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0
+    },
+    {
+      "name": "foreign-port",
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-NonInteractive",
+        "-File",
+        "scripts/release_ui.ps1",
+        "start",
+        "-Port",
+        "8521"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1
+    },
+    {
+      "name": "stop",
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-NonInteractive",
+        "-File",
+        "scripts/release_ui.ps1",
+        "stop",
+        "-Port",
+        "8522"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0
+    },
+    {
+      "name": "status-stopped",
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-NonInteractive",
+        "-File",
+        "scripts/release_ui.ps1",
+        "status",
+        "-Port",
+        "8522"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1
+    }
+  ]
+}

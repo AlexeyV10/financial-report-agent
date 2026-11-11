@@ -1,0 +1,171 @@
+{
+  "schema_version": "kp3-release-check-0.1",
+  "release_id": "kp3-rc1-2026-11-10",
+  "profile": "A",
+  "execution_status": "error",
+  "reason_code": "adapter_unavailable",
+  "code_verified": true,
+  "runtime_ready": false,
+  "financial_result": null,
+  "model_chat_requests": 0,
+  "resources": [
+    {
+      "resource_id": "index:prepared",
+      "status": "ready"
+    },
+    {
+      "resource_id": "index_manifest:prepared",
+      "status": "ready"
+    },
+    {
+      "resource_id": "pdf:phosagro-2023",
+      "status": "ready"
+    },
+    {
+      "resource_id": "pdf:phosagro-2024",
+      "status": "ready"
+    },
+    {
+      "resource_id": "pdf:phosagro-2025",
+      "status": "ready"
+    },
+    {
+      "resource_id": "pdf:phosagro-2025-9m",
+      "status": "ready"
+    },
+    {
+      "resource_id": "pdf:phosagro-2025-h1",
+      "status": "ready"
+    },
+    {
+      "resource_id": "pdf:phosagro-2025-q1",
+      "status": "ready"
+    },
+    {
+      "resource_id": "pdf:segezha-2021",
+      "status": "ready"
+    },
+    {
+      "resource_id": "pdf:segezha-2022",
+      "status": "ready"
+    },
+    {
+      "resource_id": "model:blob:2d54db2b9bb29ce7db54fea63a891f5859603813c555b1f88b5e0994652897f9",
+      "status": "ready"
+    },
+    {
+      "resource_id": "model:blob:359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+      "status": "ready"
+    },
+    {
+      "resource_id": "model:blob:3e4cb14174460404e7a233e531675303b2fbf7749c02f91864fe311ab6344e4f",
+      "status": "ready"
+    },
+    {
+      "resource_id": "model:blob:cff3f395ef3756ab63e58b0ad1b32bb6f802905cae1472e6a12034e4246fbbdb",
+      "status": "ready"
+    },
+    {
+      "resource_id": "model:blob:d18a5cc71b84bc4af394a31116bd3932b42241de70c77d2b76d69a314ec8aa12",
+      "status": "ready"
+    },
+    {
+      "resource_id": "model:blob:e18a783aae5525fd2852fc94c985541a77e791e034abc2d3056474d59de336fc",
+      "status": "ready"
+    },
+    {
+      "resource_id": "model:server",
+      "status": "ready"
+    },
+    {
+      "resource_id": "model:tag_manifest",
+      "status": "ready"
+    }
+  ],
+  "readiness": {
+    "documents": [
+      {
+        "document_id": "phosagro-2023",
+        "file": "ready",
+        "reason": "ok",
+        "preparation": "assistant_checked",
+        "publication": "unknown",
+        "human_reviewed": false
+      },
+      {
+        "document_id": "phosagro-2024",
+        "file": "ready",
+        "reason": "ok",
+        "preparation": "assistant_checked",
+        "publication": "unknown",
+        "human_reviewed": false
+      },
+      {
+        "document_id": "phosagro-2025",
+        "file": "ready",
+        "reason": "ok",
+        "preparation": "assistant_checked",
+        "publication": "unknown",
+        "human_reviewed": false
+      },
+      {
+        "document_id": "phosagro-2025-q1",
+        "file": "ready",
+        "reason": "ok",
+        "preparation": "assistant_checked",
+        "publication": "unknown",
+        "human_reviewed": false
+      },
+      {
+        "document_id": "phosagro-2025-h1",
+        "file": "ready",
+        "reason": "ok",
+        "preparation": "assistant_checked",
+        "publication": "unknown",
+        "human_reviewed": false
+      },
+      {
+        "document_id": "phosagro-2025-9m",
+        "file": "ready",
+        "reason": "ok",
+        "preparation": "assistant_checked",
+        "publication": "unknown",
+        "human_reviewed": false
+      },
+      {
+        "document_id": "segezha-2021",
+        "file": "ready",
+        "reason": "ok",
+        "preparation": "assistant_checked",
+        "publication": "unknown",
+        "human_reviewed": false
+      },
+      {
+        "document_id": "segezha-2022",
+        "file": "ready",
+        "reason": "ok",
+        "preparation": "assistant_checked",
+        "publication": "unknown",
+        "human_reviewed": false
+      }
+    ],
+    "index_kind": "prepared",
+    "index_sha256": "1cd853349a3c034c0823eddebc00965acfbc374b765e0d28712ece048f666f3f",
+    "ready": true,
+    "retrieval_performed": false,
+    "model_calls": 0
+  },
+  "model_probe": null,
+  "environment": {
+    "python": "3.14.7",
+    "sqlite": "3.53.4"
+  },
+  "limitations": [
+    "Readiness is not a financial answer, new source annotation or model-quality measurement"
+  ],
+  "manifest_sha256": "1aadafb7640f27758bb2b7f04a2d6310b668da5b8746cb8dcf8b0d10cce5765c",
+  "file_errors": [],
+  "evaluated_raw_verified": 138,
+  "failed_stage": "model_probe",
+  "error_type": "RunFailure"
+}

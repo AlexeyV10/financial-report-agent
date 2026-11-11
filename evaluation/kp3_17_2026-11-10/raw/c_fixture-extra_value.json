@@ -1,0 +1,355 @@
+{
+  "result": {
+    "schema_version": "kp3-answer-0.2",
+    "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+    "task_id": "c-3a568cdb359a41e78f967842d93506d2",
+    "method": "C",
+    "execution_status": "limit",
+    "request_status": "error",
+    "financial_status": null,
+    "reason_code": "call_limit",
+    "original_question": "Явная собственная учебная форма.",
+    "normalized_input": {
+      "schema_version": "kp3-input-0.1",
+      "input_id": "c-3a568cdb359a41e78f967842d93506d2",
+      "original_question": "Явная собственная учебная форма.",
+      "input_kind": "form",
+      "raw_fields": {
+        "organization": "method_synthetic_group",
+        "operation_id": "relative_change_v1",
+        "metric_ids": [
+          "revenue"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1"
+          }
+        ],
+        "mode": "snapshot"
+      },
+      "fields": {
+        "organization": "method_synthetic_group",
+        "consolidation": "group",
+        "accounting_standard": "IFRS",
+        "operation_id": "relative_change_v1",
+        "metric_ids": [
+          "revenue"
+        ],
+        "definition_ids": [
+          "revenue:nonfinancial_ifrs_reported_v1"
+        ],
+        "periods": [
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2023-01-01",
+            "end": "2023-12-31"
+          },
+          {
+            "kind": "duration",
+            "duration_type": "full_year",
+            "start": "2024-01-01",
+            "end": "2024-12-31"
+          }
+        ],
+        "documents": [
+          {
+            "document_id": "method-synthetic-2024",
+            "version_id": "own-2024-v1"
+          }
+        ],
+        "version_policy": "explicit_versions",
+        "source_unit": {
+          "currency": "RUB",
+          "scale": 1
+        },
+        "result_unit": {
+          "kind": "percent"
+        },
+        "mode": "snapshot",
+        "as_of": null,
+        "comparability_id": null
+      },
+      "field_origins": {
+        "organization": "form",
+        "consolidation": "catalog_unique",
+        "accounting_standard": "catalog_unique",
+        "operation_id": "form",
+        "metric_ids": "form",
+        "definition_ids": "catalog_unique",
+        "periods": "form",
+        "documents": "form",
+        "version_policy": "catalog_unique",
+        "source_unit": "catalog_unique",
+        "result_unit": "operation",
+        "mode": "form",
+        "as_of": "unset",
+        "comparability_id": "unset"
+      },
+      "assumptions": [],
+      "assumption_origin": "none",
+      "hints": {
+        "years": [],
+        "as_of_text": null,
+        "document_report_year": null,
+        "organization_unmatched": null
+      },
+      "issues": [],
+      "unsupported_reasons": [],
+      "unfulfilled_requests": [],
+      "history": [],
+      "catalog_digest": "7e740e6abc3270c59f045f8e07365e63488c6b6ff76a4222deebeed6e6582df4",
+      "language_version": "ru-input-v1"
+    },
+    "clarifications": [],
+    "financial_result": null,
+    "outcome": null,
+    "assumption_checks": [],
+    "unfulfilled_requests": [],
+    "retrieval": null,
+    "trace": [
+      {
+        "stage": "input",
+        "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+        "status": "completed",
+        "elapsed_ms": 0.9251,
+        "reason_code": "ok",
+        "details": {}
+      },
+      {
+        "stage": "catalog_filters",
+        "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+        "status": "completed",
+        "elapsed_ms": 1.1443,
+        "reason_code": "ok",
+        "details": {
+          "preliminary_only": true
+        }
+      },
+      {
+        "stage": "search",
+        "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+        "status": "skipped",
+        "elapsed_ms": 0,
+        "reason_code": "not_reached",
+        "details": {}
+      },
+      {
+        "stage": "fact_resolution",
+        "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+        "status": "skipped",
+        "elapsed_ms": 0,
+        "reason_code": "not_reached",
+        "details": {}
+      },
+      {
+        "stage": "source_validation",
+        "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+        "status": "skipped",
+        "elapsed_ms": 0,
+        "reason_code": "not_reached",
+        "details": {}
+      },
+      {
+        "stage": "calculation",
+        "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+        "status": "skipped",
+        "elapsed_ms": 0,
+        "reason_code": "not_reached",
+        "details": {}
+      },
+      {
+        "stage": "result_validation",
+        "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+        "status": "skipped",
+        "elapsed_ms": 0,
+        "reason_code": "not_reached",
+        "details": {}
+      },
+      {
+        "stage": "answer",
+        "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+        "status": "completed",
+        "elapsed_ms": 0,
+        "reason_code": "call_limit",
+        "details": {
+          "financial_result_present": false
+        }
+      }
+    ],
+    "context_digest": "7ae65aa8d8ba1d0cee61d5c2b4eb805aec4d3b9829eebc13edf43ea4b03249a0",
+    "source_input_digest": "dc325a9cd951205f6de0836f397396e90bed75e3fb42c109f3128298c2676e9b",
+    "saved_run": {
+      "resource_id": "8e53abd4db7e47173d66786a962931cd39b5bcae69d323f09420467384848544.json",
+      "status": "written",
+      "private": true
+    },
+    "model_calls": 0,
+    "agent": {
+      "protocol": "kp3-agent-0.2",
+      "prompt": "bounded-financial-tools-v2",
+      "adapter": {
+        "kind": "mock",
+        "adapter": "own-scripted-controller-tests",
+        "strategy": "smart"
+      },
+      "limits": {
+        "max_calls": 4,
+        "timeout_s": 180,
+        "per_call_s": 60,
+        "max_search_results": 32,
+        "max_output_tokens": 384,
+        "max_action_bytes": 4096,
+        "max_observation_bytes": 32768,
+        "max_tool_bytes": 8192
+      },
+      "decisions": 4,
+      "model_attempts": 0,
+      "mock_decisions": 4,
+      "usage": {
+        "known_input_tokens": 0,
+        "known_output_tokens": 0,
+        "unknown_usage": 4,
+        "known_chat_requests": 0,
+        "unknown_requests": 0
+      },
+      "events": [
+        {
+          "kind": "decision",
+          "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+          "number": 1,
+          "state": "ready",
+          "action": {
+            "arguments": {
+              "query": "выручка",
+              "top_k": 32,
+              "value": 999
+            },
+            "tool": "search_evidence"
+          },
+          "error": null,
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null
+          },
+          "chat_requests": 0,
+          "elapsed_ms": 216.706
+        },
+        {
+          "kind": "rejected_action",
+          "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+          "reason_code": "invalid_tool_arguments"
+        },
+        {
+          "kind": "decision",
+          "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+          "number": 2,
+          "state": "ready",
+          "action": {
+            "arguments": {
+              "query": "выручка",
+              "top_k": 32,
+              "value": 999
+            },
+            "tool": "search_evidence"
+          },
+          "error": null,
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null
+          },
+          "chat_requests": 0,
+          "elapsed_ms": 210.594
+        },
+        {
+          "kind": "rejected_action",
+          "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+          "reason_code": "invalid_tool_arguments"
+        },
+        {
+          "kind": "decision",
+          "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+          "number": 3,
+          "state": "ready",
+          "action": {
+            "arguments": {
+              "query": "выручка",
+              "top_k": 32,
+              "value": 999
+            },
+            "tool": "search_evidence"
+          },
+          "error": null,
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null
+          },
+          "chat_requests": 0,
+          "elapsed_ms": 205.227
+        },
+        {
+          "kind": "rejected_action",
+          "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+          "reason_code": "invalid_tool_arguments"
+        },
+        {
+          "kind": "receipt",
+          "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+          "receipt_id": "receipt-a80f94bb241e82365d63a293",
+          "request_status": "error",
+          "reason_code": "call_limit",
+          "execution_status": "limit"
+        },
+        {
+          "kind": "decision",
+          "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+          "number": 4,
+          "state": "terminal",
+          "action": {
+            "arguments": {
+              "query": "выручка",
+              "top_k": 32,
+              "value": 999
+            },
+            "tool": "search_evidence"
+          },
+          "error": null,
+          "usage": {
+            "input_tokens": null,
+            "output_tokens": null
+          },
+          "chat_requests": 0,
+          "elapsed_ms": 205.496
+        },
+        {
+          "kind": "rejected_action",
+          "run_id": "c-3a568cdb359a41e78f967842d93506d2",
+          "reason_code": "tool_not_allowed"
+        }
+      ],
+      "stop_reason": "call_limit",
+      "finished": false,
+      "receipt_id": "receipt-a80f94bb241e82365d63a293"
+    }
+  },
+  "control": null,
+  "details": {
+    "adapter_kind": "explicit_mock_controller_fixture_not_actual_C_or_A_model",
+    "new_real_chat_requests": 0
+  }
+}

@@ -1,0 +1,26 @@
+test_B_cannot_silently_require_model (test_release_candidate17.ReleaseCandidateTests.test_B_cannot_silently_require_model) ... ok
+test_B_does_not_require_or_read_model (test_release_candidate17.ReleaseCandidateTests.test_B_does_not_require_or_read_model) ... ok
+test_changed_code_is_not_intact (test_release_candidate17.ReleaseCandidateTests.test_changed_code_is_not_intact) ... ok
+test_changed_resource_bytes (test_release_candidate17.ReleaseCandidateTests.test_changed_resource_bytes) ... ok
+test_duplicate_json_keys (test_release_candidate17.ReleaseCandidateTests.test_duplicate_json_keys) ... ok
+test_evaluation_identity_is_bound (test_release_candidate17.ReleaseCandidateTests.test_evaluation_identity_is_bound) ... ok
+test_evaluator_data_never_passed_to_runtime (test_release_candidate17.ReleaseCandidateTests.test_evaluator_data_never_passed_to_runtime) ... ok
+test_extra_manifest_fields (test_release_candidate17.ReleaseCandidateTests.test_extra_manifest_fields) ... ok
+test_invalid_hash (test_release_candidate17.ReleaseCandidateTests.test_invalid_hash) ... ok
+test_invalid_manifest_has_no_financial_result_or_chat (test_release_candidate17.ReleaseCandidateTests.test_invalid_manifest_has_no_financial_result_or_chat) ... ok
+test_missing_code_is_not_ready (test_release_candidate17.ReleaseCandidateTests.test_missing_code_is_not_ready) ... ok
+test_no_full_P0_overclaim (test_release_candidate17.ReleaseCandidateTests.test_no_full_P0_overclaim) ... ok
+test_no_unseen_overclaim (test_release_candidate17.ReleaseCandidateTests.test_no_unseen_overclaim) ... ok
+test_nonfinite_json (test_release_candidate17.ReleaseCandidateTests.test_nonfinite_json) ... ok
+test_oversized_json (test_release_candidate17.ReleaseCandidateTests.test_oversized_json) ... ok
+test_resource_missing_is_technical (test_release_candidate17.ReleaseCandidateTests.test_resource_missing_is_technical) ... ok
+test_unknown_and_duplicate_profile_ids (test_release_candidate17.ReleaseCandidateTests.test_unknown_and_duplicate_profile_ids) ... ok
+test_unknown_binding_is_rejected (test_release_candidate17.ReleaseCandidateTests.test_unknown_binding_is_rejected) ... ok
+test_unsafe_manifest_paths (test_release_candidate17.ReleaseCandidateTests.test_unsafe_manifest_paths) ... ok
+test_valid_shape_and_intact_file (test_release_candidate17.ReleaseCandidateTests.test_valid_shape_and_intact_file) ... ok
+test_wrong_schema_version (test_release_candidate17.ReleaseCandidateTests.test_wrong_schema_version) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.144s
+
+OK

@@ -1,0 +1,76 @@
+{
+  "new_UI_operations": 3,
+  "old_UI_operations_already_tested": [
+    "absolute_change_v1",
+    "relative_change_v1"
+  ],
+  "all_five_UI_paths": true,
+  "new_financial_gold": false,
+  "new_model_chat": 0,
+  "proof": [
+    {
+      "operation": "direct_fact_v1",
+      "source": "Old immutable07 gold/oracle on assistant_checked05 exact cells; hand expected UI test literals",
+      "matches": [
+        {
+          "old_case_id": "real-037",
+          "fact_ids": [
+            "phosagro-2025-q1-revenue-2025"
+          ],
+          "independent_reference": {
+            "status": "answered",
+            "reason": "ok",
+            "exact_result": {
+              "numerator": "159390",
+              "denominator": "1"
+            },
+            "display_value": "159390"
+          }
+        }
+      ]
+    },
+    {
+      "operation": "scale_v1",
+      "source": "Old immutable07 gold/oracle on assistant_checked05 exact cells; hand expected UI test literals",
+      "matches": [
+        {
+          "old_case_id": "real-038",
+          "fact_ids": [
+            "phosagro-2025-q1-revenue-2025"
+          ],
+          "independent_reference": {
+            "status": "answered",
+            "reason": "ok",
+            "exact_result": {
+              "numerator": "15939",
+              "denominator": "100"
+            },
+            "display_value": "159.39"
+          }
+        }
+      ]
+    },
+    {
+      "operation": "operating_margin_v1",
+      "source": "Old immutable07 gold/oracle on assistant_checked05 exact cells; hand expected UI test literals",
+      "matches": [
+        {
+          "old_case_id": "real-127",
+          "fact_ids": [
+            "phosagro-2025-q1-operating_profit-2025",
+            "phosagro-2025-q1-revenue-2025"
+          ],
+          "independent_reference": {
+            "status": "answered",
+            "reason": "ok",
+            "exact_result": {
+              "numerator": "388160",
+              "denominator": "15939"
+            },
+            "display_value": "24.35"
+          }
+        }
+      ]
+    }
+  ]
+}

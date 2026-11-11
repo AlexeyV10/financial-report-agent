@@ -1,0 +1,1 @@
+{"schema_version": "kp3-release-check-0.1", "release_id": "kp3-rc1-2026-11-10", "profile": "UI", "execution_status": "error", "reason_code": "ui_dependency_version_mismatch", "runtime_ready": false, "model_chat_requests": 0}
