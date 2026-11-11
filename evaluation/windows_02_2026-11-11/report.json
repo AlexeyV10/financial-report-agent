@@ -1,0 +1,20 @@
+{
+  "stage": "WIN-02",
+  "status": "host_validated_clean_vm_pending",
+  "selected_ui": "WPF with private Python worker",
+  "installer_sha256": "f69523d44f474eacb0905d66e4f90294a3124a3d348c44222e6fe8e9ec3e56cf",
+  "installer_bytes": 22434104,
+  "payload_bytes": 46157740,
+  "payload_files": 271,
+  "actual_installation_and_uninstallation": true,
+  "environment": "existing Windows11 host, not clean VM",
+  "source_pins_unchanged": "preservation.json",
+  "new_model_calls": 0,
+  "existing_Qwen_probed": false,
+  "code_license_selected": false,
+  "public_binary_uploaded": false,
+  "WIN03": "not_started",
+  "WIN04": "not_started",
+  "next": "WIN-02B clean-VM installer acceptance and remaining gates",
+  "merge_authorized": false
+}

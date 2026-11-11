@@ -1,0 +1,51 @@
+{
+  "status": "host_validated_clean_vm_pending",
+  "closed_on_host": [
+    "Complete private Python/renderer+WPF payload installs per-user outside repo in Cyrillic/space path without admin.",
+    "Created shortcut launches app; no global Python/PATH/Git/cwd dependency in actual private-runtime controls.",
+    "Readonly installed assets, expected15.00/source highlight, cancellation/crash/recovery and parent hard-crash child cleanup.",
+    "Uninstall removes own package/shortcut/HKCU entry, preserves46 data files and unknown install file; PATH unchanged."
+  ],
+  "open": [
+    {
+      "id": "CVM",
+      "reason": "No accessible clean Windows11 VM/Sandbox supplied or found in short inventory. Sandbox exe/services/Hyper-V module and known VM CLIs absent; no virtualization settings changed.",
+      "needed": "A controllable clean Windows11x64 guest or separate clean machine with a standard non-admin account, an authorized OS image and permitted artifact transfer/control."
+    },
+    {
+      "id": "DOTNET",
+      "reason": "Minimum4.8 is checked in installer/host; actual host4.8.1 works. Clean-VM framework baseline not practically verified."
+    },
+    {
+      "id": "OFFLINE",
+      "reason": "Host stayed connected. A clean guest without Python/Ollama and network must run the same own fixture offline."
+    },
+    {
+      "id": "ACCESSIBILITY",
+      "reason": "System200/high contrast unavailable through current Settings UI; Narrator speech unobservable, full keyboard coverage pending."
+    },
+    {
+      "id": "FIRST-PAINT",
+      "reason": "Early white captured client needs first-launch observation on the guest before interaction."
+    },
+    {
+      "id": "MAINTAINED-PYTHON",
+      "reason": "Official3.12.10 is last full Windows3.12 maintenance package; newer security source releases exist. This feasibility artifact is not an approved maintained public runtime."
+    },
+    {
+      "id": "PATH-MIGRATION",
+      "reason": "25 of69 final shipped-core cross-root cases refused legacy private paths. Do not weaken guards; full installed old-workflow compatibility belongs to scoped WIN-03/04 work."
+    },
+    {
+      "id": "RELEASE",
+      "reason": "No own code license/signing/clean-VM or complete redistribution/security audit; binary artifact local only. No SmartScreen/Defender bypass."
+    },
+    {
+      "id": "INSTALLER-HARDENING",
+      "reason": "Interactive wizard, interrupted/low-disk install/upgrade/recovery, MOTW download and broad Windows matrix not tested. No production-updater claim."
+    }
+  ],
+  "WIN03": "not_started",
+  "WIN04": "not_started",
+  "WIN54": "not_completed"
+}

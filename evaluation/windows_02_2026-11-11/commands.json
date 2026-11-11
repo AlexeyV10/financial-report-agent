@@ -1,0 +1,20 @@
+{
+  "context": "Trusted developer commands; variables represent explicit local paths, not global PATH changes.",
+  "commands": [
+    "Fresh git fetch/API verified parentPR20/head ae59496c and main; created codex/windows-02-private-runtime-installer worktree before code changes.",
+    "Downloaded official CPython3.12.10 embeddable x64 and SBOM; compared SHA256 against SBOM. NSIS3.13 official SourceForge ZIP extracted only into tmp/.",
+    "DEV_PY -X utf8 spikes/windows_02/build.py --downloads tmp/downloads --wheels ../windows-01-wheels --demo ../windows-01-worktree/tmp/demo --out tmp/build-v4",
+    "DEV_PY -X utf8 spikes/windows_02/test_package.py --payload tmp/build-v4/payload (final10 passed in actual v4 installation)",
+    "DEV_PY -X utf8 spikes/windows_02/check_host.py install --build tmp/build-v4 (actual /S per-user install, no admin)",
+    "DEV_PY -X utf8 spikes/windows_02/check_host.py diagnose (actual installed private runtime, system32-only PATH and hostile PYTHONHOME/PYTHONPATH)",
+    "DEV_PY -X utf8 spikes/windows_02/test_package.py --payload INSTALLED (all10 passed in actual final v4 installed copy)",
+    "DEV_PY -X utf8 spikes/windows_02/check_host.py measures (3 idle +3 full component runs sequentially)",
+    "Installed private Python -I -B -X utf8 tmp/regress_private.py (shipped cross-root69:28 guarded path errors); tmp/regress_original_root.py (same private interpreter, original root69/69 passed)",
+    "DEV_PY -X utf8 spikes/windows_02/check_host.py parent-crash (actual private worker absent500ms after own GUI hard kill)",
+    "Created .lnk launched through Windows shell; real installed window file-open/calc/source/cancel/crash/recovery/UIA/large font/Narrator attempt; CUA completion_summary observed.",
+    "DEV_PY -X utf8 spikes/windows_02/check_host.py uninstall; verified data/unknown-file/PATH preservation and no own worker; moved only known own control file to tmp and removed empty own target nonrecursively.",
+    "Byte snapshots/old UI-env hashes/329 RC pins and prefix preservation; fresh main/diff/conflicts; allowlist commits/push/dependent PR/host-only technical tag; no merge."
+  ],
+  "exact_build_commands": "build.json; versioned build.py and installer.nsi",
+  "rebuild_is_not_claimed_bit_identical": true
+}

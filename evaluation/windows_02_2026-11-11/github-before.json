@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-11-11T12:39:18.947530+00:00",
+  "main": "f349717c5ca2acc33decf3dd7ce12b2756ce6d8b",
+  "parent_pr": {
+    "number": 20,
+    "state": "open",
+    "head": "ae59496c9e1d0fc29b833c86309c16fe63ccf0fb",
+    "branch": "codex/windows-01-native-spike",
+    "base": "codex/windows-app-research-plan"
+  },
+  "tag_target": "4cb7a39087690ba862a0d5f7bc73c12a4b5005e1",
+  "ruleset_active": true,
+  "bypass_actors": []
+}

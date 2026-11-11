@@ -1,0 +1,1636 @@
+{
+  "schema": "win02-build-1",
+  "python": {
+    "version": "3.12.10",
+    "source": "official CPython embeddable x64",
+    "archive_sha256": "4acbed6dd1c744b0376e3b1cf57ce906f9dc9e95e68824584c8099a63025a3c3",
+    "maintained_runtime_release_gate_open": true
+  },
+  "nsis": {
+    "version": "3.13",
+    "sha256": "ba63dffc4410ee89193e1cb5a41989991bd77c61068da17e3156d136b7b0b3d8",
+    "compression": "zlib"
+  },
+  "framework": {
+    "minimum": "4.8",
+    "release_minimum": 528040,
+    "bundled": false,
+    "actual_host_release": 533509
+  },
+  "wheel_inputs": [
+    {
+      "file": "pypdfium2-5.15.2-py3-none-win_amd64.whl",
+      "bytes": 4187589,
+      "sha256": "74d1bace34fb01c660d0b64344d5a4b7d276942b7c6623c88ab59ea21c5acfbd",
+      "license_notice_files": [
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/abseil.txt",
+          "sha256": "2b6958687fd4b5127aaa0398910ea51a33ec501e99b1043884ae2422b48f5120",
+          "bytes": 34
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/agg23.txt",
+          "sha256": "000aa4a787d3f3e5e02ebb02e55560bb1f04fa383a4ea262eed60c7e2bcc1d11",
+          "bytes": 739
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/dragonbox-Apache2-LLVM.txt",
+          "sha256": "2be7ca5745e68fd3534f124b44970fbb5d506053f0a2e81fb490d6e0d360e62f",
+          "bytes": 933
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/dragonbox-Boost.txt",
+          "sha256": "beb8e42e9d6b4284e03304d05a81a0755200a965fc8d0a5e0aea1e84cf805d6e",
+          "bytes": 1361
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/fast_float.txt",
+          "sha256": "bf1b57355feca8fce77ee95f48002f8d4789fb71b30ec7599c06cda4901fbb2b",
+          "bytes": 1106
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/freetype.txt",
+          "sha256": "93db264e083fa85b7494b3dd47a214a4043b37170d7079cd4b16eb05842f5eac",
+          "bytes": 6910
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/harfbuzz.txt",
+          "sha256": "bd836c0ddca8ea0bab54a03cd32b6ff7256cbb3840fca2edc1249a4ed92c5b02",
+          "bytes": 2013
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/highway.txt",
+          "sha256": "a4e3fb11044d78e2a9464e6dd9357834fe35a6ded21157f73a8c370207629630",
+          "bytes": 32
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/icu.txt",
+          "sha256": "fcd7d69d457ebec8024269777c5d9cf3afc554592484d3dc7d9e619872f89c9c",
+          "bytes": 25697
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/lcms.txt",
+          "sha256": "295009507fa4dae3cf8e30b4487a5b16d69714a8e4176eef6c42a9143f490751",
+          "bytes": 1381
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/libjpeg_turbo.ijg",
+          "sha256": "db16a04128171879c60708d171b88d97345a2dd20f9bfc173680a4497c73f704",
+          "bytes": 13059
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/libjpeg_turbo.md",
+          "sha256": "be2b2b5ab168bce87bc3e31f2a5c5adba4b7f6e9e51d618e958d1d46972ebd95",
+          "bytes": 5755
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/libopenjpeg.txt",
+          "sha256": "f24f5b3d732a99ae41f2307626289ceffdf4f8a28e4d0cd4c07d58d7a8005d4a",
+          "bytes": 1826
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/libpng.txt",
+          "sha256": "0ad3bfee8be10e5519949e7af492e36bc349376b75fbeb412229a5967e3e9434",
+          "bytes": 5479
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/libtiff.txt",
+          "sha256": "8eeab3915f97f6f7b62a8008bf77e7ac3bfbb034b04d93cd63aafa10b2dd6614",
+          "bytes": 1160
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/pdfium-binaries.txt",
+          "sha256": "ae10144a9b76a631144bb743737e63ef4c9521572affbad4f26cb5cb98b03ff7",
+          "bytes": 1186
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/pdfium.txt",
+          "sha256": "d8a7290709944ec857b508f663d983cc051464e48cec11040240bcc14c566765",
+          "bytes": 1596
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/simdutf.txt",
+          "sha256": "c172a0ba936ff31230febb5dad869e25cb7c1a07480c7a381be8cf011bb52719",
+          "bytes": 1077
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/zlib.txt",
+          "sha256": "254398acc7ecebe67b2cab0582f82dac00557b959f75cdff19c00885758fc141",
+          "bytes": 1357
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/SHARED/Apache-2.0.txt",
+          "sha256": "e8de1a7393457e9c88768b78e6ba790622fbefb040ce48194c2cb0f1b6d4e9ff",
+          "bytes": 11562
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/all_except_musl/llvm-libc.txt",
+          "sha256": "6016472d2a5cada75c572758af89b2d0acbb8ca50f54471ede2304e2150e9911",
+          "bytes": 3872
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/android/catapult.txt",
+          "sha256": "eb09f5a3f8ad0e302f5a9212f77b2360bce8b56ad7539294fd38ad16d6ff4101",
+          "bytes": 1510
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/android/cpu_features.txt",
+          "sha256": "7d14bd360e234545369b9cf0df2043642dfacf22f29913e54d3c1c53aee259d8",
+          "bytes": 1581
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/android/libunwind.txt",
+          "sha256": "6f26e5314b2437de6860ef81700271ee4d58acc560ef940206f5b65bc20a216b",
+          "bytes": 5471
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/cibw_musl/libgcc_and_libstdc++.txt",
+          "sha256": "46a0436acebcd76e074f6a4a518ece8262ec1e23a4f986ccc97f07ebe727955b",
+          "bytes": 36563
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/pbin_and_sbuild/brotli.txt",
+          "sha256": "60ae0f13e76cc2eaaa108677eefa4ce16b647f6bbe8cf0a1ac9429d82eca7248",
+          "bytes": 1103
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/pbin_and_sbuild/libyuv.txt",
+          "sha256": "91b2be0a4696a7f98e38ec95d53fb3c1e8a476ce7246f54390276f94d9508ec2",
+          "bytes": 1535
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/pbin_musl/musl.txt",
+          "sha256": "78b7299d4ca6d7cb8927e957b83e4bc85fd3a86f2c2c97f8b802a34ac512d775",
+          "bytes": 6389
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/bigint.txt",
+          "sha256": "e6c59961fac76abbcdfba5868e85f7fe7eb4f710de816bae63302e4315951121",
+          "bytes": 3438
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/fdlibm.txt",
+          "sha256": "9117ecd79d00160524d0c923aa41c10cd3cab3753bc985e3069eaa9f1481cc17",
+          "bytes": 256
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/fp16.txt",
+          "sha256": "379a933d79d62910b33cc9f17f63a3430c16a8ee216a82e824e9e0169c0e1702",
+          "bytes": 1170
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/inspector_protocol.txt",
+          "sha256": "947e007730399c016f392ecbfcfa9e2c1bfa227924fd2823e74ec1e10964e47d",
+          "bytes": 1564
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/strongtalk.txt",
+          "sha256": "45d1dff3ad3ed6aec8947f7ce6a4781c535f1d73450b703c594d8bc6285c7736",
+          "bytes": 1511
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/v8.txt",
+          "sha256": "befd10530f302b2108022be94d74eed4943880fc0626ab762ca7b53521813eeb",
+          "bytes": 1553
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/LICENSES/Apache-2.0.txt",
+          "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+          "bytes": 11560
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/LICENSES/BSD-3-Clause.txt",
+          "sha256": "ad9a9e823df025f42389c1812eae28019f657d1ed7b3a4ebfd5010b0736a0da4",
+          "bytes": 1485
+        },
+        {
+          "path": "pypdfium2-5.15.2.dist-info/licenses/LICENSES/CC-BY-4.0.txt",
+          "sha256": "f1b1748301cd4274f46733c218d510929661b4990855de5fc645dacd69c4371c",
+          "bytes": 14844
+        }
+      ]
+    },
+    {
+      "file": "pillow-13.0.0-cp312-cp312-win_amd64.whl",
+      "bytes": 7272166,
+      "sha256": "ff3fe9eb621fbb9db4c4be33ab946f6bac5f98ab50ca8d3260503653656c961b",
+      "license_notice_files": [
+        {
+          "path": "pillow-13.0.0.dist-info/licenses/LICENSE",
+          "sha256": "988ffe8ab3480b0f4e9a0ab2702bffd73d9fb6b47198043fb3ba101a62fac236",
+          "bytes": 78481
+        }
+      ]
+    }
+  ],
+  "core_source_sha256": {
+    "__init__.py": "eea0bfd15364208285f19580630c0e9312142e1bc876cf5fc23af7fc473834e7",
+    "fact_admission.py": "701248c3fc769e409df75e59b7884c1f68785e7f50458ec7bfeba95912a2bad4",
+    "financial_calculator.py": "2ad61a8a314f7c139037dfdaff8a67b73972c637094284db53adfd505fab6ec8",
+    "calculation_contracts.py": "0548b85afab5f44348a479f7b3ccaec2b8b47c51e5a80a8a8a2c0d50fb678a53",
+    "catalog.py": "bd6f6f32d8c43db3f8d11a686a2fb63a16029c59e73b12996e6919a50805a8ae",
+    "document_extraction.py": "93414d9bbfd21d7722ac9bca63b38d9e8f0aa321fee3f9c342f1f90307d944e8",
+    "retrieval_v2.py": "95671f2c32044792319bc30619cb75c93a3933f3b8a0b87b8488224dc877fab2",
+    "contracts_v2.py": "bc6162e7aabf4a4b69a55cd0454c5c8ae8955a306d2779dd12c2fffa0f4dfddc",
+    "contracts.py": "5894effc517efdbddb3b9a10d4bd7268f9d277bde283e2e476fe9ea0b8a55ac2"
+  },
+  "wpf_packaging_delta": {
+    "original_sha": "1bdf3907d93c1efc04ce9305af40391461e7ac65630053c6e537099f10d36fd8",
+    "generated_sha": "c2fc8107b64a6a0c90f5bcec90c3de9aa31c6f4c304536fd31319e7972aa4ad0",
+    "change": "Only trusted Python invocation gains -I -B; original stage01 file unchanged."
+  },
+  "csc_command": [
+    "${WINDIR}\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe",
+    "/nologo",
+    "/target:winexe",
+    "/platform:x64",
+    "/optimize+",
+    "/codepage:65001",
+    "/main:RuntimeHost",
+    "/out:${WORKTREE}\\tmp\\build-v4\\payload\\ProjectPractice.exe",
+    "/win32manifest:${WORKTREE}\\spikes\\windows_01\\wpf.manifest",
+    "/reference:${WINDIR}\\Microsoft.NET\\Framework64\\v4.0.30319\\WPF\\PresentationFramework.dll",
+    "/reference:${WINDIR}\\Microsoft.NET\\Framework64\\v4.0.30319\\WPF\\PresentationCore.dll",
+    "/reference:${WINDIR}\\Microsoft.NET\\Framework64\\v4.0.30319\\WPF\\WindowsBase.dll",
+    "/reference:${WINDIR}\\Microsoft.NET\\Framework64\\v4.0.30319\\WPF\\UIAutomationTypes.dll",
+    "/reference:System.Xaml.dll",
+    "/reference:System.Web.Extensions.dll",
+    "${WORKTREE}\\tmp\\build-v4\\WpfPackaged.cs",
+    "${WORKTREE}\\spikes\\windows_02\\RuntimeHost.cs"
+  ],
+  "nsis_command": [
+    "${WORKTREE}\\tmp\\build-v4\\tools\\nsis-3.13\\makensis.exe",
+    "/V4",
+    "/INPUTCHARSET",
+    "UTF8",
+    "/DPAYLOAD=${WORKTREE}\\tmp\\build-v4\\payload",
+    "/DOUTPUT=${WORKTREE}\\tmp\\build-v4\\ProjectPractice-WIN02-setup.exe",
+    "/DUNINSTALL_LIST=${WORKTREE}\\tmp\\build-v4\\uninstall-files.nsh",
+    "/DREADONLY_LIST=${WORKTREE}\\tmp\\build-v4\\readonly-files.nsh",
+    "${WORKTREE}\\spikes\\windows_02\\installer.nsi"
+  ],
+  "payload_files": [
+    {
+      "path": "app/assets/demo/admission.json",
+      "bytes": 593,
+      "sha256": "75552d5bd93e1af801cfaa9072920aceafa64e72f505385223d1c0010becfebc"
+    },
+    {
+      "path": "app/assets/demo/catalog.json",
+      "bytes": 6798,
+      "sha256": "0c34ab6ed310fef17d33f6e899b04f80fa09f87c6c8674ee7b530c4ace409b6a"
+    },
+    {
+      "path": "app/assets/demo/dictionary.json",
+      "bytes": 8998,
+      "sha256": "99a48df712795a3f7ba9ca2a177989b7fcbaeb944d49caec7bc81cfaf69d438c"
+    },
+    {
+      "path": "app/assets/demo/manifest.json",
+      "bytes": 595,
+      "sha256": "4f6b91ef62a1455ab9c8de32395c550489670549cc8319dd580e93501eb4dc5f"
+    },
+    {
+      "path": "app/assets/demo/own-demo-v1.pdf",
+      "bytes": 2327,
+      "sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451"
+    },
+    {
+      "path": "app/spikes/windows_01/adapter.py",
+      "bytes": 3067,
+      "sha256": "fd3a8d97e0355c5aa48c21a141d1fff90b82ba6743dda4746a345420a3abd276"
+    },
+    {
+      "path": "app/spikes/windows_01/common.py",
+      "bytes": 2234,
+      "sha256": "b9e4f84ed6cb580799aa78518faf0a3e233db1ecfe499a546297e889cec53446"
+    },
+    {
+      "path": "app/spikes/windows_01/renderer.py",
+      "bytes": 986,
+      "sha256": "5363241be91b945563230ba986531a8e4e59a0bff0065575ed19d2846154e9d3"
+    },
+    {
+      "path": "app/spikes/windows_01/worker.py",
+      "bytes": 1588,
+      "sha256": "5af37f04b1916fa9c95e7462bdb7f0235c188937c4e4bf5461bed36849a29749"
+    },
+    {
+      "path": "app/spikes/windows_02/runtime_probe.py",
+      "bytes": 1239,
+      "sha256": "d4dc8dfe5ed65a7312f39d45a271645ad2f586574c52f3017ab16840d624d7d8"
+    },
+    {
+      "path": "app/src/financial_assistant/__init__.py",
+      "bytes": 76,
+      "sha256": "eea0bfd15364208285f19580630c0e9312142e1bc876cf5fc23af7fc473834e7"
+    },
+    {
+      "path": "app/src/financial_assistant/calculation_contracts.py",
+      "bytes": 8294,
+      "sha256": "0548b85afab5f44348a479f7b3ccaec2b8b47c51e5a80a8a8a2c0d50fb678a53"
+    },
+    {
+      "path": "app/src/financial_assistant/catalog.py",
+      "bytes": 13748,
+      "sha256": "bd6f6f32d8c43db3f8d11a686a2fb63a16029c59e73b12996e6919a50805a8ae"
+    },
+    {
+      "path": "app/src/financial_assistant/contracts.py",
+      "bytes": 21912,
+      "sha256": "5894effc517efdbddb3b9a10d4bd7268f9d277bde283e2e476fe9ea0b8a55ac2"
+    },
+    {
+      "path": "app/src/financial_assistant/contracts_v2.py",
+      "bytes": 8101,
+      "sha256": "bc6162e7aabf4a4b69a55cd0454c5c8ae8955a306d2779dd12c2fffa0f4dfddc"
+    },
+    {
+      "path": "app/src/financial_assistant/document_extraction.py",
+      "bytes": 11681,
+      "sha256": "93414d9bbfd21d7722ac9bca63b38d9e8f0aa321fee3f9c342f1f90307d944e8"
+    },
+    {
+      "path": "app/src/financial_assistant/fact_admission.py",
+      "bytes": 7032,
+      "sha256": "701248c3fc769e409df75e59b7884c1f68785e7f50458ec7bfeba95912a2bad4"
+    },
+    {
+      "path": "app/src/financial_assistant/financial_calculator.py",
+      "bytes": 17425,
+      "sha256": "2ad61a8a314f7c139037dfdaff8a67b73972c637094284db53adfd505fab6ec8"
+    },
+    {
+      "path": "app/src/financial_assistant/retrieval_v2.py",
+      "bytes": 24868,
+      "sha256": "95671f2c32044792319bc30619cb75c93a3933f3b8a0b87b8488224dc877fab2"
+    },
+    {
+      "path": "licenses/CPython-LICENSE.txt",
+      "bytes": 36874,
+      "sha256": "e502c6b880ff58d614901495a9009c136539cd0b1e2a2abb8fc00b934c203419"
+    },
+    {
+      "path": "licenses/CPython-SBOM.spdx.json",
+      "bytes": 15267,
+      "sha256": "efa53ba4f26e8a06410677ec6d010e97133a7a1ab38e0485f6936da2911879fa"
+    },
+    {
+      "path": "licenses/NSIS-COPYING.txt",
+      "bytes": 15632,
+      "sha256": "388357c1215ff403c5ebde3a5ecd273e68f8b79a579996775245d1ee65442aba"
+    },
+    {
+      "path": "licenses/OWN-CODE-STATUS.txt",
+      "bytes": 355,
+      "sha256": "8e8a7ebbfb3d88d3809aed226e72c311ae345ecad27424f3f2eeea683ec2cd55"
+    },
+    {
+      "path": "payload.json",
+      "bytes": 32444,
+      "sha256": "b31c8997198f0d0be682e180fb6ee3391608e5dbfc39a7f336e06c7992615d73"
+    },
+    {
+      "path": "ProjectPractice.exe",
+      "bytes": 41472,
+      "sha256": "a81156d71d6f322857b02c97477b47630c164553d3613d3289c62af6661d87c2"
+    },
+    {
+      "path": "ProjectPractice.exe.config",
+      "bytes": 340,
+      "sha256": "08540cb96db9a6a9c3f01f79ba59ada6bdcb1f1aa293c69eeb9857cb11b6e930"
+    },
+    {
+      "path": "runtime/_asyncio.pyd",
+      "bytes": 74096,
+      "sha256": "c77de90cad749087a0c5dc5e19d78d24f6ef44e7e5ac19b8420cfc0cea62395d"
+    },
+    {
+      "path": "runtime/_bz2.pyd",
+      "bytes": 86896,
+      "sha256": "65f610646d10d5babea080e060d244b546ec52c54012e5e937dc72dcc2e2e7bc"
+    },
+    {
+      "path": "runtime/_ctypes.pyd",
+      "bytes": 127480,
+      "sha256": "0e56107a891100535f2da79d85a5ae65ff1227b4765bd108f8593ac1a1110d81"
+    },
+    {
+      "path": "runtime/_decimal.pyd",
+      "bytes": 262000,
+      "sha256": "aeacfead2befcc0768063a037bb64bd32109ae09cb144e5f571b04dd7965db9d"
+    },
+    {
+      "path": "runtime/_elementtree.pyd",
+      "bytes": 135160,
+      "sha256": "5009a9a53c03ef8387443b5cf6ce08e5c3a79727466a0b931c5bbca915bf89ca"
+    },
+    {
+      "path": "runtime/_hashlib.pyd",
+      "bytes": 68976,
+      "sha256": "03d233dbace599168eaffec823de6ed7beec8c2a4ebfe9b8a3d8e042a59af3ba"
+    },
+    {
+      "path": "runtime/_lzma.pyd",
+      "bytes": 161136,
+      "sha256": "e3deecc1f59a3b811c608861decd84de1e8df8bafd5e2b39188861318c5a38cf"
+    },
+    {
+      "path": "runtime/_msi.pyd",
+      "bytes": 46584,
+      "sha256": "b49332bae154ebdd8c3d5e7ddfdde336d9c47f91ba028dc67bafb2420b3dbb5c"
+    },
+    {
+      "path": "runtime/_multiprocessing.pyd",
+      "bytes": 37368,
+      "sha256": "2c636df7059cb0dd7e978dd735c7c5c8ddb09cf94754cf9e232296b96c5c545a"
+    },
+    {
+      "path": "runtime/_overlapped.pyd",
+      "bytes": 57336,
+      "sha256": "662126ff80c3a1b4cedf74074029c12ae4743e6d3b37376e39ac70aacb7d4d3c"
+    },
+    {
+      "path": "runtime/_queue.pyd",
+      "bytes": 33784,
+      "sha256": "48e76e0ad63f6932b4a77b5819f41c1e7595636ca8d9e824f0943a14b8bb5035"
+    },
+    {
+      "path": "runtime/_socket.pyd",
+      "bytes": 85496,
+      "sha256": "3efa4636cf9e350856f6927d67a4c2564bf9bd2758a00bbf17d3aece5b60016d"
+    },
+    {
+      "path": "runtime/_sqlite3.pyd",
+      "bytes": 126184,
+      "sha256": "64b51df2805c58b023a875e8ae3be7ac7f61ef664f32ca6c90f6315da47ef0bc"
+    },
+    {
+      "path": "runtime/_ssl.pyd",
+      "bytes": 179432,
+      "sha256": "0bc527d2dbc50009f43b2ed5d5982c4f63f4b647647ffa9eda612dcda80f6040"
+    },
+    {
+      "path": "runtime/_uuid.pyd",
+      "bytes": 27128,
+      "sha256": "acce4f281d7ffb2dec0997527faf25b1df62ad7bd3032c568ddcf65c90edc867"
+    },
+    {
+      "path": "runtime/_wmi.pyd",
+      "bytes": 40304,
+      "sha256": "a980f1e7a29842bd946863fc2693fbeb555a9dc0f9e1630dfed9a2fcdef3ece2"
+    },
+    {
+      "path": "runtime/_zoneinfo.pyd",
+      "bytes": 49656,
+      "sha256": "76f1439cda82ab6976df6ba505c4079444703f6d44d8b0259ce59c0ff4279fb4"
+    },
+    {
+      "path": "runtime/libcrypto-3.dll",
+      "bytes": 5231472,
+      "sha256": "ccfffddcd3defb8d899026298af9af43bc186130f8483d77e97c93233d5f27d7"
+    },
+    {
+      "path": "runtime/libffi-8.dll",
+      "bytes": 39696,
+      "sha256": "eff52743773eb550fcc6ce3efc37c85724502233b6b002a35496d828bd7b280a"
+    },
+    {
+      "path": "runtime/libssl-3.dll",
+      "bytes": 794992,
+      "sha256": "007142039f04d04e0ed607bda53de095e5bc6a8a10d26ecedde94ea7d2d7eefe"
+    },
+    {
+      "path": "runtime/LICENSE.txt",
+      "bytes": 36874,
+      "sha256": "e502c6b880ff58d614901495a9009c136539cd0b1e2a2abb8fc00b934c203419"
+    },
+    {
+      "path": "runtime/packages/PIL/__init__.py",
+      "bytes": 2122,
+      "sha256": "3fffff8502f4b59ca61d39cce713d55ffef046954262fce1abac3e97f3803734"
+    },
+    {
+      "path": "runtime/packages/PIL/__main__.py",
+      "bytes": 140,
+      "sha256": "5fc788a469661df9e9ef36b3a7999d6afdb6f08b5c7f696488c3f4b4b53a5fd7"
+    },
+    {
+      "path": "runtime/packages/PIL/_avif.cp312-win_amd64.pyd",
+      "bytes": 7893504,
+      "sha256": "3c31d65c8b3b4c91ac2838d5c843a6b2479d775b6904fe654d60b56d41772411"
+    },
+    {
+      "path": "runtime/packages/PIL/_avif.pyi",
+      "bytes": 66,
+      "sha256": "cc3f2f0283c2f1a1085637dc90bb45b24456e6c6a255e977fac254036a476867"
+    },
+    {
+      "path": "runtime/packages/PIL/_binary.py",
+      "bytes": 2728,
+      "sha256": "b95d3f4e5dde3d80029f4b27aa5b93139803ab2487989971054db7543d710e56"
+    },
+    {
+      "path": "runtime/packages/PIL/_deprecate.py",
+      "bytes": 2141,
+      "sha256": "dcede15593dee08f34af4e5cc29f286959faca1280e6dbbfea6901698924a680"
+    },
+    {
+      "path": "runtime/packages/PIL/_imaging.cp312-win_amd64.pyd",
+      "bytes": 2662400,
+      "sha256": "7140f56d38dd6cd51512f8122386bcb914c5df2a82eb5f719c973527d9213cee"
+    },
+    {
+      "path": "runtime/packages/PIL/_imaging.pyi",
+      "bytes": 924,
+      "sha256": "8d2446dead5dc2204ca8ec0884bb5305edcb30ac2c8b76244dc0dfb0a577d84d"
+    },
+    {
+      "path": "runtime/packages/PIL/_imagingcms.cp312-win_amd64.pyd",
+      "bytes": 275456,
+      "sha256": "2640857cace64d69735bdcaa3987e9ad70f85168abc1a8662079c77ac44b5301"
+    },
+    {
+      "path": "runtime/packages/PIL/_imagingcms.pyi",
+      "bytes": 4576,
+      "sha256": "e7f48329eecac13f5a6f911e1bec27e85e6cbff7ecd28db5db1a0f066dc7f88a"
+    },
+    {
+      "path": "runtime/packages/PIL/_imagingft.cp312-win_amd64.pyd",
+      "bytes": 2250752,
+      "sha256": "985228f6086171978abb5d04f2f625c489fdc9d7f0a92f2077a621ff184a599e"
+    },
+    {
+      "path": "runtime/packages/PIL/_imagingft.pyi",
+      "bytes": 1903,
+      "sha256": "535ae9c2a417d6150bbd3028f1f634fc8ad79e0f953ee09755a581523da9d73d"
+    },
+    {
+      "path": "runtime/packages/PIL/_imagingmath.cp312-win_amd64.pyd",
+      "bytes": 21504,
+      "sha256": "01c6f9de6f0d6ed46d1df1d4a9cdf47e399306870453f26a5326368f7db0b3ad"
+    },
+    {
+      "path": "runtime/packages/PIL/_imagingmath.pyi",
+      "bytes": 66,
+      "sha256": "cc3f2f0283c2f1a1085637dc90bb45b24456e6c6a255e977fac254036a476867"
+    },
+    {
+      "path": "runtime/packages/PIL/_imagingmorph.cp312-win_amd64.pyd",
+      "bytes": 12288,
+      "sha256": "e74547cf128ee13d81d7c4ef6d5be079f230062b5a8e9ec648afdc9ce228af39"
+    },
+    {
+      "path": "runtime/packages/PIL/_imagingmorph.pyi",
+      "bytes": 66,
+      "sha256": "cc3f2f0283c2f1a1085637dc90bb45b24456e6c6a255e977fac254036a476867"
+    },
+    {
+      "path": "runtime/packages/PIL/_imagingtk.cp312-win_amd64.pyd",
+      "bytes": 14336,
+      "sha256": "e1c87f73e96d2269395624d03b3808300f4b0f795f5fad1ecc3d1492e5dcc7c2"
+    },
+    {
+      "path": "runtime/packages/PIL/_imagingtk.pyi",
+      "bytes": 66,
+      "sha256": "cc3f2f0283c2f1a1085637dc90bb45b24456e6c6a255e977fac254036a476867"
+    },
+    {
+      "path": "runtime/packages/PIL/_tkinter_finder.py",
+      "bytes": 558,
+      "sha256": "1f5530ddd57b8161c88ffa2c527245c56875691b10d8c74aa4d3f7bd0c10716d"
+    },
+    {
+      "path": "runtime/packages/PIL/_typing.py",
+      "bytes": 1001,
+      "sha256": "b2658d157a9fced3fe7deb919155779a9dfe96b6242951db1d7f39a399f555ea"
+    },
+    {
+      "path": "runtime/packages/PIL/_util.py",
+      "bytes": 713,
+      "sha256": "78ff087e658999b13f3ea6d425be2a4ea18d2e2e334f44d369daebaa6ca483b6"
+    },
+    {
+      "path": "runtime/packages/PIL/_version.py",
+      "bytes": 91,
+      "sha256": "ef8061e8a3ed8b658ee877f5693d4d2f6fae25b4a44a4e83c654cd528b55e68c"
+    },
+    {
+      "path": "runtime/packages/PIL/_webp.cp312-win_amd64.pyd",
+      "bytes": 415744,
+      "sha256": "bb9c64d38a6e4857bd3358e14dbe6cf3a4593b1efcd1185fdba1ef8931550896"
+    },
+    {
+      "path": "runtime/packages/PIL/_webp.pyi",
+      "bytes": 66,
+      "sha256": "cc3f2f0283c2f1a1085637dc90bb45b24456e6c6a255e977fac254036a476867"
+    },
+    {
+      "path": "runtime/packages/PIL/AvifImagePlugin.py",
+      "bytes": 9718,
+      "sha256": "d64fe66e4ff27d628780faadd129f664d0e713d65a6bdcf4f946bd422d87d6ad"
+    },
+    {
+      "path": "runtime/packages/PIL/BdfFontFile.py",
+      "bytes": 3382,
+      "sha256": "68909057709d4a55dfbffed11595a4a3dfd074c24361b388a686d40c1867ba82"
+    },
+    {
+      "path": "runtime/packages/PIL/BlpImagePlugin.py",
+      "bytes": 17032,
+      "sha256": "ba361f6039637e1136020155f042002882835ad3402084c9e027d6c063de1af8"
+    },
+    {
+      "path": "runtime/packages/PIL/BmpImagePlugin.py",
+      "bytes": 20917,
+      "sha256": "cd3d30275991e278244b490db80c751342c5e555131204fb428b3875e54bc118"
+    },
+    {
+      "path": "runtime/packages/PIL/BufrStubImagePlugin.py",
+      "bytes": 1745,
+      "sha256": "c8f042b828044ba702b1840d0093ed746b4f4db8d481e2576cba22a30fa18f1f"
+    },
+    {
+      "path": "runtime/packages/PIL/ContainerIO.py",
+      "bytes": 4824,
+      "sha256": "bb8bb2fd765e650e4363c66a90c69ba10e92a4f44318ec075dad7bd222db8479"
+    },
+    {
+      "path": "runtime/packages/PIL/CurImagePlugin.py",
+      "bytes": 2852,
+      "sha256": "992c71d697e796375883d1a0261b3438f88844f54bea5e5c8d6167bbf8726590"
+    },
+    {
+      "path": "runtime/packages/PIL/DcxImagePlugin.py",
+      "bytes": 2406,
+      "sha256": "0938ea04cb87adaced56786ee2239e5a4c875376838140a0c146d0790a777636"
+    },
+    {
+      "path": "runtime/packages/PIL/DdsImagePlugin.py",
+      "bytes": 19819,
+      "sha256": "a03adf884e427d56e0f05638c11fa29cc84fe8ba72e6e3eee3de1b47d6e716ae"
+    },
+    {
+      "path": "runtime/packages/PIL/EpsImagePlugin.py",
+      "bytes": 17627,
+      "sha256": "678faa7c7b712bfdf9c7b6536906ced6c66ab8c7a30374d85ca33030cd9730cc"
+    },
+    {
+      "path": "runtime/packages/PIL/ExifTags.py",
+      "bytes": 10301,
+      "sha256": "8a2248027fbdd9877ee789de6bf8b15e6df5eecc13b30f0f0637a46894ca0794"
+    },
+    {
+      "path": "runtime/packages/PIL/features.py",
+      "bytes": 11214,
+      "sha256": "377f0ed5a0d19df432fc38dc04160c8565863c48dfef72f676b269d44563d454"
+    },
+    {
+      "path": "runtime/packages/PIL/FitsImagePlugin.py",
+      "bytes": 5536,
+      "sha256": "3b116af52aad541376f2125ef93785832dc7bb36fb67e815a85cc917d6abf317"
+    },
+    {
+      "path": "runtime/packages/PIL/FliImagePlugin.py",
+      "bytes": 5358,
+      "sha256": "62ee542fd7c0c79c567b933299c316676bdbd059697a84c004f88debc65f6c17"
+    },
+    {
+      "path": "runtime/packages/PIL/FontFile.py",
+      "bytes": 4486,
+      "sha256": "58bf3a4021a8667f50c6cbc7974f7a14794b5bb4c26ba9a91a6e1855a00a8b63"
+    },
+    {
+      "path": "runtime/packages/PIL/FpxImagePlugin.py",
+      "bytes": 7762,
+      "sha256": "a85c06b977caa670404b998193d75c7bfbcecec266e9a634095fdc1350289a09"
+    },
+    {
+      "path": "runtime/packages/PIL/FtexImagePlugin.py",
+      "bytes": 3832,
+      "sha256": "0e8d7591b3a8b44352652b0f1e0d0aa49a6b21618a87345ef29450055e26ef7e"
+    },
+    {
+      "path": "runtime/packages/PIL/GbrImagePlugin.py",
+      "bytes": 3166,
+      "sha256": "8de0ccf95823b05c8e8b04ecb84539938de70f61a85c30f58323af5710367981"
+    },
+    {
+      "path": "runtime/packages/PIL/GdImageFile.py",
+      "bytes": 3041,
+      "sha256": "dd9031c22d100698bd9e9a0be41d86f0720eb512241c83c70ee6be3c77315c2c"
+    },
+    {
+      "path": "runtime/packages/PIL/GifImagePlugin.py",
+      "bytes": 40756,
+      "sha256": "041d5e36d20d6312f93e0a1c37ede1b23b253a0d68b0931df8b68a708596068c"
+    },
+    {
+      "path": "runtime/packages/PIL/GimpGradientFile.py",
+      "bytes": 4183,
+      "sha256": "1e40e531e47d151f2f894dbd73f5b77a70803a6833e6bcc614e82cc6ef0dfe2f"
+    },
+    {
+      "path": "runtime/packages/PIL/GimpPaletteFile.py",
+      "bytes": 1965,
+      "sha256": "11ed314ce1879a6d15375338a7c175cd3b44292d6e5819987c4b1ca6392b01dd"
+    },
+    {
+      "path": "runtime/packages/PIL/GribStubImagePlugin.py",
+      "bytes": 1774,
+      "sha256": "ab11a4fb573e6407003cd220b03728c181ff8e94ee35adaa3b0194b170953a4d"
+    },
+    {
+      "path": "runtime/packages/PIL/Hdf5StubImagePlugin.py",
+      "bytes": 1756,
+      "sha256": "25535b5b9b989001957216e4483096ca67ac0b646e65457f586d79d001db49b9"
+    },
+    {
+      "path": "runtime/packages/PIL/IcnsImagePlugin.py",
+      "bytes": 12885,
+      "sha256": "e6ca44bcfd36458185869db3941a79e96f64f79a16f2bbdd4612a92ed3bbe0bb"
+    },
+    {
+      "path": "runtime/packages/PIL/IcoImagePlugin.py",
+      "bytes": 14235,
+      "sha256": "8e929e093d1f1c9925bdf0cf7bed986a94565ccf8bc14577315d4fb6284c973b"
+    },
+    {
+      "path": "runtime/packages/PIL/Image.py",
+      "bytes": 158236,
+      "sha256": "6646cf8a0aa91c440293112934d0e0802cd90c207a07137281a1926c3465e23f"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageChops.py",
+      "bytes": 7355,
+      "sha256": "aa3f9d10bf3fa3323cbb36658e5553123da84dc7352821af075ba058c6f4ce72"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageCms.py",
+      "bytes": 41232,
+      "sha256": "7da688dee7037961d3c346ef55a8dfec3a6d787b2c9093e9e6d34a2553a1f702"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageColor.py",
+      "bytes": 9809,
+      "sha256": "96100944dee28c2b8b69ef70a26fe056e58550bb4f664d0d466e2382ed2b3a19"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageDraw.py",
+      "bytes": 36410,
+      "sha256": "01294915e47335edd158415c45c492d54bcef767b4dd51a21d576d9404461000"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageDraw2.py",
+      "bytes": 7584,
+      "sha256": "9ecda8290d6bd903d610a1cfab92d73b549665e8bb19e93cf226fdff76a79f56"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageEnhance.py",
+      "bytes": 3694,
+      "sha256": "9c6ec5314220bc03833fb234df6143d728431daf9b79e77ea0336850000d3e7b"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageFile.py",
+      "bytes": 31184,
+      "sha256": "3de270f19469348052ec2f4937fd6f4cdd487ee998c15590a13fbb2b2032399c"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageFilter.py",
+      "bytes": 19533,
+      "sha256": "36c87a7656c2324b6b675eb82b0718e85d0a983abf35d713b8c1913d2489e0af"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageFont.py",
+      "bytes": 65235,
+      "sha256": "0b8494851d5cd92126e88903fafdd505f163f4f454d72a1dacba0d141a4b123a"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageGrab.py",
+      "bytes": 8325,
+      "sha256": "086bfd888d5a4d3a64d4d9a21cea42ee1e408cb115cfbef0d79c03ddd2fbd70b"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageMath.py",
+      "bytes": 10652,
+      "sha256": "934bf61017576ce1f7f5ff914314a9951a831c3590b683a0f8e17354ea79ff4e"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageMode.py",
+      "bytes": 2480,
+      "sha256": "d6298e37f99ea7fdb5ed1996741d2bbc55c1c9b8c5e2e06da6aabaac90bd7049"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageMorph.py",
+      "bytes": 10702,
+      "sha256": "93b5d16d19caecb69e8124ba690c40e829e6ffcf8acee9bc09464469b00bbe7e"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageOps.py",
+      "bytes": 28585,
+      "sha256": "cafa9bfb486530860c624c9399889a581b2e34b78927eb479a2fe359dd8e5819"
+    },
+    {
+      "path": "runtime/packages/PIL/ImagePalette.py",
+      "bytes": 10410,
+      "sha256": "45c408096fb30600b27d3b9b1de85f9d1d645907102188a79e930d88d5bb8814"
+    },
+    {
+      "path": "runtime/packages/PIL/ImagePath.py",
+      "bytes": 391,
+      "sha256": "6679c9baf40db5b2918429abeb54c4984875bd5579ffdd163043cbf0ea72e65f"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageQt.py",
+      "bytes": 7284,
+      "sha256": "6f270bf0f2411e2c5f4312b7e08009d93a50d4767e6e80f07f062f493bb34369"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageSequence.py",
+      "bytes": 2406,
+      "sha256": "fbe8d8911099d785df6f2c3ba7909ce60c814b0ca80e7ab26dae766ee9108f95"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageShow.py",
+      "bytes": 10778,
+      "sha256": "f2029eb1dbd9eba059ce3443b8b12b7568332aeab9e33b3ecc74c4fb703ea99e"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageStat.py",
+      "bytes": 5676,
+      "sha256": "cbafd84437cb1ce3717ff7c000bc83ef3f91dae63adbcd850ed1e2d2d288a4c4"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageText.py",
+      "bytes": 19169,
+      "sha256": "cbbdbc984427708ed8afe21c53141502b57dd6838eca813816d7f8faa594aa3b"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageTk.py",
+      "bytes": 8441,
+      "sha256": "576f31c02699504d32328522ecc1f39ae00fdff5694e59492d57c27c940e95c9"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageTransform.py",
+      "bytes": 4102,
+      "sha256": "8d69d1d3ea19c71365ca94bcaba4641391d35203c263abac3dfcbcf189c422fa"
+    },
+    {
+      "path": "runtime/packages/PIL/ImageWin.py",
+      "bytes": 8345,
+      "sha256": "27fddec11b775f810e8c390093a916031f4a0a0766d037ecbb0d86b1baa8e530"
+    },
+    {
+      "path": "runtime/packages/PIL/ImImagePlugin.py",
+      "bytes": 12233,
+      "sha256": "87ae476922b90329669da7a8f754e3d57480d69e0beb24641fa56a18a40395a2"
+    },
+    {
+      "path": "runtime/packages/PIL/ImtImagePlugin.py",
+      "bytes": 2768,
+      "sha256": "43d604d4388ecd41dd06336d9575fee504bf1d5e0d12954f50c861da96159d2f"
+    },
+    {
+      "path": "runtime/packages/PIL/IptcImagePlugin.py",
+      "bytes": 6719,
+      "sha256": "5a07318590623d9e2c26c1193960e56a2f5518e2f0f2767aa706c805d3505c43"
+    },
+    {
+      "path": "runtime/packages/PIL/Jpeg2KImagePlugin.py",
+      "bytes": 15306,
+      "sha256": "2e1f0aab8c845a8110ae0a71fa70ab59bc4dece7fa63bf29765f105a5220091d"
+    },
+    {
+      "path": "runtime/packages/PIL/JpegImagePlugin.py",
+      "bytes": 32951,
+      "sha256": "520455ec7590a7372ad0fe52d082f590adf598ef2ac3ffb3457d9c4a081769ad"
+    },
+    {
+      "path": "runtime/packages/PIL/JpegPresets.py",
+      "bytes": 12611,
+      "sha256": "38bacfb90e0ca8ca81ecedcd00ced6feb2d200417cd0f45c468dc96e10b58a73"
+    },
+    {
+      "path": "runtime/packages/PIL/McIdasImagePlugin.py",
+      "bytes": 1988,
+      "sha256": "77159cb1e3322e6aaa8ab6c9c8b2965f694a551c6bead3ef5362ff73d698a14c"
+    },
+    {
+      "path": "runtime/packages/PIL/MicImagePlugin.py",
+      "bytes": 2793,
+      "sha256": "85490810328a3769d2185b43f6161cba8631b08002f1add5d6946f6cbcd9178c"
+    },
+    {
+      "path": "runtime/packages/PIL/MpegImagePlugin.py",
+      "bytes": 2180,
+      "sha256": "f7525282c71c17714b05673bd4353a3f2330299064ae1f173b4bd3772d51b4a9"
+    },
+    {
+      "path": "runtime/packages/PIL/MpoImagePlugin.py",
+      "bytes": 7208,
+      "sha256": "a77a2d046108a1adc47a4399d26cdb08f6808957f8ae5cbee56c046b2f0079bb"
+    },
+    {
+      "path": "runtime/packages/PIL/MspImagePlugin.py",
+      "bytes": 6348,
+      "sha256": "a5c3b0cfad52469b0ff1756398871d329d9e147e4474ccd50a102a63dd9cb2b8"
+    },
+    {
+      "path": "runtime/packages/PIL/PaletteFile.py",
+      "bytes": 1354,
+      "sha256": "6428748a8e9dedfa1a275f9c46baf20e19317aaa372b1dfba8db4e4f2ff4c66c"
+    },
+    {
+      "path": "runtime/packages/PIL/PalmImagePlugin.py",
+      "bytes": 9042,
+      "sha256": "c1cf7ce4a8cc6318334f9dd0e4b8346e72f405f56787a727a60786394b208fe8"
+    },
+    {
+      "path": "runtime/packages/PIL/PcdImagePlugin.py",
+      "bytes": 1842,
+      "sha256": "819b027170c8a845532b6cfe1962a9b53db9a455350143a0a6bdc9d3a7233c28"
+    },
+    {
+      "path": "runtime/packages/PIL/PcfFontFile.py",
+      "bytes": 7267,
+      "sha256": "566c39c442879ed989e35c4b04b04b170868ccf8ece9b73a3e175c32b34a5c9f"
+    },
+    {
+      "path": "runtime/packages/PIL/PcxImagePlugin.py",
+      "bytes": 6681,
+      "sha256": "de3b85748748698e4e728738e1de606268a45c9f7d39442f5b395a94ddff5136"
+    },
+    {
+      "path": "runtime/packages/PIL/PdfImagePlugin.py",
+      "bytes": 9486,
+      "sha256": "62c0eb2e3f64fcb2caf0fccedc58fb44b0054c00b8923ef9a64b3bfc4e5d37a1"
+    },
+    {
+      "path": "runtime/packages/PIL/PdfParser.py",
+      "bytes": 41113,
+      "sha256": "ea722a6d82bee2783fb8c8e73b83189ce4af553dbe0ac8e04138d85b77845a12"
+    },
+    {
+      "path": "runtime/packages/PIL/PixarImagePlugin.py",
+      "bytes": 1868,
+      "sha256": "a78958489e99b851e177ae03b450e093509f549c25608105e463bdcf4c33df4b"
+    },
+    {
+      "path": "runtime/packages/PIL/PngImagePlugin.py",
+      "bytes": 55767,
+      "sha256": "a2e0daf92e893125153d8a012d30b9a6259e82fe36841ecda6ff1d2a809539de"
+    },
+    {
+      "path": "runtime/packages/PIL/PpmImagePlugin.py",
+      "bytes": 12813,
+      "sha256": "0e5d73b94cd0abf6e1d88f241a86453b358bace042dfa68ce35214925c2a7c87"
+    },
+    {
+      "path": "runtime/packages/PIL/PsdImagePlugin.py",
+      "bytes": 9324,
+      "sha256": "308f00e2cfb351e59d96a64e34e4be5a0aaa641365c7b52d83dfede1239c162b"
+    },
+    {
+      "path": "runtime/packages/PIL/PSDraw.py",
+      "bytes": 7745,
+      "sha256": "8303a61dfc2b1ce4a312385f267b877826400444ba31e7930db9c784404746f5"
+    },
+    {
+      "path": "runtime/packages/PIL/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runtime/packages/PIL/QoiImagePlugin.py",
+      "bytes": 9268,
+      "sha256": "60fca52a0771bfbd3d5c3bf46e7e3c0db787f80006154e180f68ceb019711399"
+    },
+    {
+      "path": "runtime/packages/PIL/report.py",
+      "bytes": 105,
+      "sha256": "ea6ecd3afd5adb8e7bed9889a315fcf62a7925e3a07f63b517de5febed4ae5a3"
+    },
+    {
+      "path": "runtime/packages/PIL/SgiImagePlugin.py",
+      "bytes": 6698,
+      "sha256": "1acf6d419b289ac80db952c8bf01bc3c13b7bfa93e6db968aa1cb0c5e6fefe81"
+    },
+    {
+      "path": "runtime/packages/PIL/SpiderImagePlugin.py",
+      "bytes": 10623,
+      "sha256": "7f8500ac64f2fbcf9cd884202262dfca77325cf3a354ed88bcdd7ffd9a033d6a"
+    },
+    {
+      "path": "runtime/packages/PIL/SunImagePlugin.py",
+      "bytes": 4772,
+      "sha256": "cddde6e2afdf7fc37808eac728b4206924e8776dc135fca6f7ee3a841f7fb1ed"
+    },
+    {
+      "path": "runtime/packages/PIL/TarIO.py",
+      "bytes": 1708,
+      "sha256": "6a28227e29b71a09b083299061f98bb9b031b830f26e4aef027ac000dbcf259d"
+    },
+    {
+      "path": "runtime/packages/PIL/TgaImagePlugin.py",
+      "bytes": 8383,
+      "sha256": "57fc21d319c1f23a5e36e2be04d049849b8cf9890b3f956dcd59acdf91a58235"
+    },
+    {
+      "path": "runtime/packages/PIL/TiffImagePlugin.py",
+      "bytes": 90539,
+      "sha256": "760a92047f0ad1037e0c85b242b4486bdc1c46304615d748686177c3541826f7"
+    },
+    {
+      "path": "runtime/packages/PIL/TiffTags.py",
+      "bytes": 17894,
+      "sha256": "b0fff0431110dae372f9960305f689997dc60e50c8bae5dfb1fc236f0585a202"
+    },
+    {
+      "path": "runtime/packages/PIL/WalImageFile.py",
+      "bytes": 5981,
+      "sha256": "647699a10bc2cb53f1c39ec2bce2a2706591afe08081b6000417be880ddbaab1"
+    },
+    {
+      "path": "runtime/packages/PIL/WebPImagePlugin.py",
+      "bytes": 11457,
+      "sha256": "7dcc4c8cbb725266615082da2f060be254db4ff81527b01c05e29746b3ea4d72"
+    },
+    {
+      "path": "runtime/packages/PIL/WmfImagePlugin.py",
+      "bytes": 5711,
+      "sha256": "39f197555b7be30242332561afff5f9aecd9b8d67dd61247ba4d9bb07d2c692a"
+    },
+    {
+      "path": "runtime/packages/PIL/XbmImagePlugin.py",
+      "bytes": 3849,
+      "sha256": "7c136acba923d8a8a193e3b7d8626e0bc1d23d576a651edc6ebe8e39105038d6"
+    },
+    {
+      "path": "runtime/packages/PIL/XpmImagePlugin.py",
+      "bytes": 5300,
+      "sha256": "1ae86981783d2a8c6234fe1aca13346129846b127c7099e59e5ed2b4caeebf40"
+    },
+    {
+      "path": "runtime/packages/PIL/XVThumbImagePlugin.py",
+      "bytes": 2209,
+      "sha256": "aee34d7d9b0b869d2222b841026937876e78fd710aa4e39022aba9d2abd473b8"
+    },
+    {
+      "path": "runtime/packages/pillow-13.0.0.dist-info/licenses/LICENSE",
+      "bytes": 78481,
+      "sha256": "988ffe8ab3480b0f4e9a0ab2702bffd73d9fb6b47198043fb3ba101a62fac236"
+    },
+    {
+      "path": "runtime/packages/pillow-13.0.0.dist-info/METADATA",
+      "bytes": 9300,
+      "sha256": "140f39cb31ec9b46109828a6286f034a4848621263d6aab38d2f142083dd06c5"
+    },
+    {
+      "path": "runtime/packages/pillow-13.0.0.dist-info/RECORD",
+      "bytes": 9294,
+      "sha256": "8de8a68f4121ae55a3ca459a3305dd8aca90bb311a4d56deceb8edd804924640"
+    },
+    {
+      "path": "runtime/packages/pillow-13.0.0.dist-info/sboms/pillow-13.0.0.cdx.json",
+      "bytes": 21892,
+      "sha256": "fe1ca6e3a4f73e7018a3805a75a19377453f342d203712f37387ad6ee853fd44"
+    },
+    {
+      "path": "runtime/packages/pillow-13.0.0.dist-info/top_level.txt",
+      "bytes": 4,
+      "sha256": "ae266aae4fa1c99aa1e5fd59d19c228b774a7f112c07286ef5c53d20e0c5f8d6"
+    },
+    {
+      "path": "runtime/packages/pillow-13.0.0.dist-info/WHEEL",
+      "bytes": 101,
+      "sha256": "547199cfb31450578b25778938b82f94e190e69e750e6c850e3b6d657fa1a30f"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/__init__.py",
+      "bytes": 653,
+      "sha256": "e4dea381d513bf1c657cc94d83701ff7a216721d64822d078522af1b38fd6491"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/__main__.py",
+      "bytes": 914,
+      "sha256": "cc9bc7ec16b8fb3724faf4b2f13f2886c193bdb107432246e0150a1278cd5f0d"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/_helpers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/_helpers/attachment.py",
+      "bytes": 7701,
+      "sha256": "594d548ad08a77ea0c93b22387845dc23ad84d64e787dcabf1d8886d838d45c3"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/_helpers/bitmap.py",
+      "bytes": 20822,
+      "sha256": "9aaf773a88ee6baa6382ddbd1f348bac48dd20529211e029398b0333a61bea0d"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/_helpers/document.py",
+      "bytes": 30441,
+      "sha256": "b4d112176efcd8bacef8be71b652cc02fd873d3c597e57ca06d9afbb4cd252a1"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/_helpers/matrix.py",
+      "bytes": 6615,
+      "sha256": "4eab322995c9bb6ae9bfe8ead5bd723a5b946d23e4abd66d9a4bc1bc8ac07107"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/_helpers/misc.py",
+      "bytes": 1578,
+      "sha256": "0de38c4d38e8ffd24349d3e7b753e269d07efe3ee1390c057f88f5099e90b81f"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/_helpers/page.py",
+      "bytes": 24174,
+      "sha256": "0c756c5542c58bdffa3a09e527508e651f3083a5d0d0e44910f2421bc820bc51"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/_helpers/pageobjects.py",
+      "bytes": 27441,
+      "sha256": "3ccbca76c25ec3d39ee177b0b162f85bdb9982fdc9b7f9b244a97ce3a30426c5"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/_helpers/sysfontinfo.py",
+      "bytes": 12468,
+      "sha256": "c97d9502e5004ff9b3de1071823dca410eec8182a9fb7368efc3864b2f9c45b4"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/_helpers/textpage.py",
+      "bytes": 14058,
+      "sha256": "d8899cda5e394d26da5eeadf998644a417b8ce7ac10c20c33da512eed369446d"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/_helpers/unsupported.py",
+      "bytes": 2651,
+      "sha256": "a46a7101a8865e094cad1923d5356d2377fbebc683ad673357418f07b74fbb8f"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/_lazy.py",
+      "bytes": 871,
+      "sha256": "0b946874c8df7a542568f6a873843e8a63aeca1340520738777ea87bd8475b19"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/_library_scope.py",
+      "bytes": 2190,
+      "sha256": "76bc03e49d1bbdbaa0d9c0f507561cc1531e60c417083016c33c4f4d99f55b84"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/internal/__init__.py",
+      "bytes": 242,
+      "sha256": "ca51eac7bb2637e09bbb3e9b17f5c9ce69cb0f472b6176b0fbe32433d552da17"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/internal/bases.py",
+      "bytes": 7015,
+      "sha256": "c07594ee4598c6687e64e6514698dd8b873fef65dd54bf6ac3609dc2dfa0b315"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/internal/consts.py",
+      "bytes": 8057,
+      "sha256": "4444cc73ed21386abf41959b16c33c6ff692f703851c6e0c0352ec6330e574a6"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/internal/utils.py",
+      "bytes": 3073,
+      "sha256": "69117299be5ee6cd062a7ee946d1ce9b044546f3610cafa3aabcf1e550c03802"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/raw.py",
+      "bytes": 273,
+      "sha256": "78f7cd3ff66290d97cf63771f3868729481b6edc4d808b93b2841304462951bb"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/version.json",
+      "bytes": 171,
+      "sha256": "ad088fca6d3954a77d830b295dc4d964b75c1bbc0bb3a921e67b480e5c627b92"
+    },
+    {
+      "path": "runtime/packages/pypdfium2/version.py",
+      "bytes": 2779,
+      "sha256": "722db25612df52d609dc30c0a4aa74dda5210befd723fdf2ac3994effaf66ce8"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/entry_points.txt",
+      "bytes": 62,
+      "sha256": "39f3e2f656f1c386b806c26ecf2b9f92dd0e1927b6db2d496c8ddd014d779a27"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/abseil.txt",
+      "bytes": 34,
+      "sha256": "2b6958687fd4b5127aaa0398910ea51a33ec501e99b1043884ae2422b48f5120"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/agg23.txt",
+      "bytes": 739,
+      "sha256": "000aa4a787d3f3e5e02ebb02e55560bb1f04fa383a4ea262eed60c7e2bcc1d11"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/all_except_musl/llvm-libc.txt",
+      "bytes": 3872,
+      "sha256": "6016472d2a5cada75c572758af89b2d0acbb8ca50f54471ede2304e2150e9911"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/android/catapult.txt",
+      "bytes": 1510,
+      "sha256": "eb09f5a3f8ad0e302f5a9212f77b2360bce8b56ad7539294fd38ad16d6ff4101"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/android/cpu_features.txt",
+      "bytes": 1581,
+      "sha256": "7d14bd360e234545369b9cf0df2043642dfacf22f29913e54d3c1c53aee259d8"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/android/libunwind.txt",
+      "bytes": 5471,
+      "sha256": "6f26e5314b2437de6860ef81700271ee4d58acc560ef940206f5b65bc20a216b"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/cibw_musl/libgcc_and_libstdc++.txt",
+      "bytes": 36563,
+      "sha256": "46a0436acebcd76e074f6a4a518ece8262ec1e23a4f986ccc97f07ebe727955b"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/dragonbox-Apache2-LLVM.txt",
+      "bytes": 933,
+      "sha256": "2be7ca5745e68fd3534f124b44970fbb5d506053f0a2e81fb490d6e0d360e62f"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/dragonbox-Boost.txt",
+      "bytes": 1361,
+      "sha256": "beb8e42e9d6b4284e03304d05a81a0755200a965fc8d0a5e0aea1e84cf805d6e"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/fast_float.txt",
+      "bytes": 1106,
+      "sha256": "bf1b57355feca8fce77ee95f48002f8d4789fb71b30ec7599c06cda4901fbb2b"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/freetype.txt",
+      "bytes": 6910,
+      "sha256": "93db264e083fa85b7494b3dd47a214a4043b37170d7079cd4b16eb05842f5eac"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/harfbuzz.txt",
+      "bytes": 2013,
+      "sha256": "bd836c0ddca8ea0bab54a03cd32b6ff7256cbb3840fca2edc1249a4ed92c5b02"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/highway.txt",
+      "bytes": 32,
+      "sha256": "a4e3fb11044d78e2a9464e6dd9357834fe35a6ded21157f73a8c370207629630"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/icu.txt",
+      "bytes": 25697,
+      "sha256": "fcd7d69d457ebec8024269777c5d9cf3afc554592484d3dc7d9e619872f89c9c"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/lcms.txt",
+      "bytes": 1381,
+      "sha256": "295009507fa4dae3cf8e30b4487a5b16d69714a8e4176eef6c42a9143f490751"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/libjpeg_turbo.ijg",
+      "bytes": 13059,
+      "sha256": "db16a04128171879c60708d171b88d97345a2dd20f9bfc173680a4497c73f704"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/libjpeg_turbo.md",
+      "bytes": 5755,
+      "sha256": "be2b2b5ab168bce87bc3e31f2a5c5adba4b7f6e9e51d618e958d1d46972ebd95"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/libopenjpeg.txt",
+      "bytes": 1826,
+      "sha256": "f24f5b3d732a99ae41f2307626289ceffdf4f8a28e4d0cd4c07d58d7a8005d4a"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/libpng.txt",
+      "bytes": 5479,
+      "sha256": "0ad3bfee8be10e5519949e7af492e36bc349376b75fbeb412229a5967e3e9434"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/libtiff.txt",
+      "bytes": 1160,
+      "sha256": "8eeab3915f97f6f7b62a8008bf77e7ac3bfbb034b04d93cd63aafa10b2dd6614"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/pbin_and_sbuild/brotli.txt",
+      "bytes": 1103,
+      "sha256": "60ae0f13e76cc2eaaa108677eefa4ce16b647f6bbe8cf0a1ac9429d82eca7248"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/pbin_and_sbuild/libyuv.txt",
+      "bytes": 1535,
+      "sha256": "91b2be0a4696a7f98e38ec95d53fb3c1e8a476ce7246f54390276f94d9508ec2"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/pbin_musl/musl.txt",
+      "bytes": 6389,
+      "sha256": "78b7299d4ca6d7cb8927e957b83e4bc85fd3a86f2c2c97f8b802a34ac512d775"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/pdfium-binaries.txt",
+      "bytes": 1186,
+      "sha256": "ae10144a9b76a631144bb743737e63ef4c9521572affbad4f26cb5cb98b03ff7"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/pdfium.txt",
+      "bytes": 1596,
+      "sha256": "d8a7290709944ec857b508f663d983cc051464e48cec11040240bcc14c566765"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/SHARED/Apache-2.0.txt",
+      "bytes": 11562,
+      "sha256": "e8de1a7393457e9c88768b78e6ba790622fbefb040ce48194c2cb0f1b6d4e9ff"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/simdutf.txt",
+      "bytes": 1077,
+      "sha256": "c172a0ba936ff31230febb5dad869e25cb7c1a07480c7a381be8cf011bb52719"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/bigint.txt",
+      "bytes": 3438,
+      "sha256": "e6c59961fac76abbcdfba5868e85f7fe7eb4f710de816bae63302e4315951121"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/fdlibm.txt",
+      "bytes": 256,
+      "sha256": "9117ecd79d00160524d0c923aa41c10cd3cab3753bc985e3069eaa9f1481cc17"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/fp16.txt",
+      "bytes": 1170,
+      "sha256": "379a933d79d62910b33cc9f17f63a3430c16a8ee216a82e824e9e0169c0e1702"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/inspector_protocol.txt",
+      "bytes": 1564,
+      "sha256": "947e007730399c016f392ecbfcfa9e2c1bfa227924fd2823e74ec1e10964e47d"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/strongtalk.txt",
+      "bytes": 1511,
+      "sha256": "45d1dff3ad3ed6aec8947f7ce6a4781c535f1d73450b703c594d8bc6285c7736"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/v8_xfa/v8.txt",
+      "bytes": 1553,
+      "sha256": "befd10530f302b2108022be94d74eed4943880fc0626ab762ca7b53521813eeb"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/BUILD_LICENSES/zlib.txt",
+      "bytes": 1357,
+      "sha256": "254398acc7ecebe67b2cab0582f82dac00557b959f75cdff19c00885758fc141"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/LICENSES/Apache-2.0.txt",
+      "bytes": 11560,
+      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/LICENSES/BSD-3-Clause.txt",
+      "bytes": 1485,
+      "sha256": "ad9a9e823df025f42389c1812eae28019f657d1ed7b3a4ebfd5010b0736a0da4"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/licenses/LICENSES/CC-BY-4.0.txt",
+      "bytes": 14844,
+      "sha256": "f1b1748301cd4274f46733c218d510929661b4990855de5fc645dacd69c4371c"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/METADATA",
+      "bytes": 65326,
+      "sha256": "e0ce0a92c2cd69ceff1ef581fa19f83a59e9fbbc68b3f71463fabc0077e69650"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/RECORD",
+      "bytes": 8983,
+      "sha256": "067fcc7facb2503b59347360eb6df3d55af760f6aee5783b3440ee7e841cdaed"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/top_level.txt",
+      "bytes": 52,
+      "sha256": "07e2cb6d8ff0e395a284a74697fa4ceab81bfb3dbe45886aca406b5d7fc90fc5"
+    },
+    {
+      "path": "runtime/packages/pypdfium2-5.15.2.dist-info/WHEEL",
+      "bytes": 98,
+      "sha256": "efd042ceb5c124e6b6615eae80aacae7d76a5a27cc1a302481577fe8042ba9b5"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cfg/__init__.py",
+      "bytes": 550,
+      "sha256": "bea7f49aa76d7fe04b562ddd918bcd7ff3a09069e9a7b75dfc40c2cbdf4d8489"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cfg/_shared/__init__.py",
+      "bytes": 160,
+      "sha256": "0172429091cdb5c12636b432b475b8f1b79407e35d483a5bd9d15f9bf0bdbe05"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cfg/_shared/stl.py",
+      "bytes": 5104,
+      "sha256": "8137e768075ca0dd7de25e70e7dd63c6d7d5a301028c4a41ece6e59b6555be5d"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cfg/stl.py",
+      "bytes": 170,
+      "sha256": "e1d5069541783ff83910fe440f19581484014d836c3bd61402f2d4c99e61fb03"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cli/__init__.py",
+      "bytes": 119,
+      "sha256": "eb2b49690efe149596377bf9e2156556b67dc0c843b5939e5b872e2e791f6641"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cli/__main__.py",
+      "bytes": 3954,
+      "sha256": "fd5f3e196b8511d8417f0365700dced5e7bafe77a22bb5170fdc347564a1f45b"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cli/_parsers.py",
+      "bytes": 3070,
+      "sha256": "789d22cfef6030c33b16e2f4d68e2c54b2d400d390d85eee1918a878cb6e7c7f"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cli/_setup.py",
+      "bytes": 2326,
+      "sha256": "4e887dada62d361b3d3b6820ea7d5fedaa07b9cae51482a2e6c1de0469a68f60"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cli/_sysfonts.py",
+      "bytes": 3251,
+      "sha256": "d706fac6677a8583ea20939d0cb2fde39e4f246804c7398af98079a65b834337"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cli/arrange.py",
+      "bytes": 1521,
+      "sha256": "19a4caaf2f4824467a9535bd7960fad6fb5e688d3c8512e304258650941da16c"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cli/attachments.py",
+      "bytes": 3184,
+      "sha256": "0ebb6e3edd530e980b4f06a148b61f4877b509c13ee92102ca6a1fef69c7c565"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cli/default_fonts.py",
+      "bytes": 1918,
+      "sha256": "cc9661d671e794a9cad12756a81f8311d346123ad2708cd4fb1ed02c7295a7cd"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cli/extract_images.py",
+      "bytes": 3092,
+      "sha256": "4dfc5a83b30d6473c2a086b054e23416a2ed3827c3a6647c986d6ac363cbcabf"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cli/extract_text.py",
+      "bytes": 1386,
+      "sha256": "184bd80f4bc679448f9db82ce58e5bc16b8f6ea00fe079a49467ff0c5f0811de"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cli/fonts.py",
+      "bytes": 2829,
+      "sha256": "89567f0973ff3e4cb01b07bc61641f616d7d04dd858016713b5cd3db0bdcee37"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cli/imgtopdf.py",
+      "bytes": 2024,
+      "sha256": "5a9f60f9245dc205e05dcdba08704740e1c53af59eb69be1f50076616418e126"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cli/pageobjects.py",
+      "bytes": 4029,
+      "sha256": "be77329253a71a4b6d14f40e30f46b2f64874713b231b1ef46cbbbf78c0f699c"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cli/pdfinfo.py",
+      "bytes": 1949,
+      "sha256": "d2b8bdf2124e24120f912de2ba0c316dfd969235447cfcce374a1dedd5b0b7c0"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cli/render.py",
+      "bytes": 21027,
+      "sha256": "889962a4636c29b327c03642468c95aa94da6365dcc06bdac16e8d3d61ff94b7"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cli/tile.py",
+      "bytes": 2325,
+      "sha256": "c276716f90abf0528f3936ff7c20af54880a3c6f9c87327a8b102c3967011ae1"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_cli/toc.py",
+      "bytes": 2749,
+      "sha256": "49dbd40b0753161f6d824bcb8c5a51fc48259383e864858df2a4aa6a76fcc97c"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_raw/__init__.py",
+      "bytes": 841,
+      "sha256": "c8279b9e5b5171d37a3bcdb6628b7da8fb009d2cb803ea0e877c0381f52722d8"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_raw/bindings.py",
+      "bytes": 153280,
+      "sha256": "68cfceb3b265e25fd38a6041e9ebedfce8ba051eec6569709af5a36465ce85b5"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_raw/pdfium.dll",
+      "bytes": 7835648,
+      "sha256": "42d87f68957d745ce9377dfb1d8d63691e19082a7ec29ff421d22779d3142b29"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_raw/version.json",
+      "bytes": 160,
+      "sha256": "e7176483fc8dc8eb85f10b13f60635f27a9c3e2e8e117d910e766f83d3227a4f"
+    },
+    {
+      "path": "runtime/packages/pypdfium2_raw/version.py",
+      "bytes": 2664,
+      "sha256": "650422c7beaa6b233576531011a4a478eb3b73dc319febc5acd46c24b55ac241"
+    },
+    {
+      "path": "runtime/pyexpat.pyd",
+      "bytes": 205304,
+      "sha256": "d615e193d1affcdbfe504e90d3621cbdcff94bf72b79d899126534507fd6d27a"
+    },
+    {
+      "path": "runtime/python.cat",
+      "bytes": 574231,
+      "sha256": "5d85439736ae088d9680b391e2bca55ca7e9cc5b41a12ebe8e2f554506c7e72e"
+    },
+    {
+      "path": "runtime/python.exe",
+      "bytes": 104952,
+      "sha256": "4d6f5f81a4bca11191c4c7c6b43632694d0a4ce74e068619d8fdc161d469859a"
+    },
+    {
+      "path": "runtime/python3.dll",
+      "bytes": 70376,
+      "sha256": "fb975a606e7fbf74f64260e3f60c3490b4f74a183c0926fd6ed1ac4c52ac7b1c"
+    },
+    {
+      "path": "runtime/python312._pth",
+      "bytes": 92,
+      "sha256": "787c9493b5310d3da317ad0b0843760388b36943b1749f61bff76b2f2f317010"
+    },
+    {
+      "path": "runtime/python312.dll",
+      "bytes": 6945272,
+      "sha256": "9a0e3435aaa680d868150f87ab3e388ad2eebc22f87e036155c7b4eda8cd2120"
+    },
+    {
+      "path": "runtime/python312.zip",
+      "bytes": 3835482,
+      "sha256": "fb131c0ef7e35cc5250a74c8cd18744bf4115fb8163710711f3758d7df3d1f88"
+    },
+    {
+      "path": "runtime/pythonw.exe",
+      "bytes": 104304,
+      "sha256": "d72294fb338bc2fc8896d25a7395a4db466425427e1559e77185d5135a830681"
+    },
+    {
+      "path": "runtime/select.pyd",
+      "bytes": 33136,
+      "sha256": "d4d7181b11db0bd22a6cd5cda6f8583d1f5c77615fd0a6ca33350619d6e0438a"
+    },
+    {
+      "path": "runtime/sqlite3.dll",
+      "bytes": 1583608,
+      "sha256": "8daa45684bf6688fca28d956b2e8942f2fa98f656675ce68e6d61dd869848a7a"
+    },
+    {
+      "path": "runtime/unicodedata.pyd",
+      "bytes": 1140592,
+      "sha256": "208ee1cd3cbad0828433ca7246b05be2b1ff5569983d27d296c0b38888585488"
+    },
+    {
+      "path": "runtime/vcruntime140.dll",
+      "bytes": 120400,
+      "sha256": "052ad6a20d375957e82aa6a3c441ea548d89be0981516ca7eb306e063d5027f4"
+    },
+    {
+      "path": "runtime/vcruntime140_1.dll",
+      "bytes": 49776,
+      "sha256": "6a99bc0128e0c7d6cbbf615fcc26909565e17d4ca3451b97f8987f9c6acbc6c8"
+    },
+    {
+      "path": "runtime/winsound.pyd",
+      "bytes": 31736,
+      "sha256": "100e8d676777603c7258daf9b2f23ef001f09f1596d8708de359326fff72bddd"
+    }
+  ],
+  "payload_bytes": 46157740,
+  "installer_bytes": 22434104,
+  "installer_sha256": "f69523d44f474eacb0905d66e4f90294a3124a3d348c44222e6fe8e9ec3e56cf",
+  "no_qt": true,
+  "clean_vm_tested": false,
+  "signed": false,
+  "bit_identical_rebuild_claimed": false
+}

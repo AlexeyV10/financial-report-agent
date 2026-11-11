@@ -1,0 +1,24 @@
+{
+  "environment": "installed copy on existing host; not clean VM",
+  "launcher": "Created Start-menu .lnk launched through Windows shell.",
+  "native_app": "WIN-02 WPF window actually observed; no HTTP UI server.",
+  "manual": [
+    "Ctrl+O opened native own-file picker; double-click chose own registered PDF.",
+    "Own full page/source/page1/profit18 exact green outline visually observed.",
+    "Calculate produced15.00% in visible text and complete UIA Value/document_text.",
+    "Background progress observed. One Escape attempt was too late and task completed; later immediate Escape successfully cancelled with empty answer.",
+    "Crash showed error/no financial answer; next calculation recovered to15.00%.",
+    "Large text19px observed at actual system125%; outer scrolling retained lower result.",
+    "Narrator started; result focus observed and Insert+r read command sent. Audio not observable; spoken reading not passed. Own Narrator exited.",
+    "Alt+F4 closed own app; later list_windows showed no own app or Narrator."
+  ],
+  "UIA_snapshot": "tmp/uia-installed-result.json and tmp/uia-installed-final-v4.json (local only)",
+  "system125": true,
+  "system200": "Not tested: SystemSettings.exe launch exposed no targetable window; fresh inventory also empty. No setting changed.",
+  "system_high_contrast": "Not tested; current system palette/high contrast false is not a contrast-mode pass.",
+  "keyboard_only": "Partial actions only; exhaustive keyboard/Narrator acceptance pending.",
+  "initial_capture": "First captures showed white client area while UIA had controls; after own native file selection the v3 app/page/result rendered visibly. Final v4 initial capture showed controls before interaction; no causal claim about the earlier white capture. Guest first-launch observation remains pending.",
+  "CUA_completion_summary": true,
+  "installer_UI": "Silent /S install/uninstall exercised; interactive wizard click-through not separately accepted.",
+  "offline": "No model/network path implemented for own slice; network remained connected on host. Actual disconnected clean-VM acceptance pending."
+}

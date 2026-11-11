@@ -1,0 +1,16 @@
+{
+  "environment": "existing host, not clean VM",
+  "uninstaller_launcher_exit": 0,
+  "owned_program_removed": true,
+  "shortcut_removed": true,
+  "HKCU_uninstall_removed": true,
+  "user_data_preserved_files": 46,
+  "unknown_install_file_preserved": true,
+  "no_recursive_delete": true,
+  "PATH_unchanged": true,
+  "no_own_orphan_process": true,
+  "install_folder_left_for_unknown_file": true,
+  "own_test_control_moved_to_workspace_after_preservation_proof": true,
+  "empty_own_install_dir_removed_nonrecursively": true,
+  "user_data_left_untouched": true
+}
