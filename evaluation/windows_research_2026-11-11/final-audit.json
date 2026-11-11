@@ -1,0 +1,69 @@
+{
+  "stage": "Windows research plan",
+  "status": "passed",
+  "preparation_manifest_sha256": "493f79a63e2fbf33fff6f4381910dbe3ba785601d11689643aa8130b564fd82c",
+  "checks": {
+    "stage": "windows-research-plan",
+    "status": "passed",
+    "research_date": "2026-11-11",
+    "scope": "research_and_implementation_plan_only",
+    "tasks": 61,
+    "research_complete": 1,
+    "implementation_proposed": 60,
+    "dependency_dag_nodes": 61,
+    "local_markdown_links_checked": 15,
+    "primary_source_urls": 146,
+    "reviewed_primary_urls": 145,
+    "unread_content_urls": [
+      "https://publication.pravo.gov.ru/document/0001202403220016"
+    ],
+    "parent_files": 1818,
+    "parent_old_files_unchanged": 1815,
+    "parent_changed_only_preserved_prefix_docs": [
+      "README.md",
+      "STATUS.md",
+      "docs/decisions.md"
+    ],
+    "root_old_files": 529,
+    "root_old_files_unchanged": 527,
+    "root_changed_only_preserved_prefix_docs": [
+      "STATUS.md",
+      "docs/decisions.md"
+    ],
+    "rc_component_pins_unchanged": 329,
+    "runtime_code_or_data_changed": false,
+    "new_primary_documents": 0,
+    "model_calls": 0,
+    "new_ocr": 0,
+    "dependencies_installed": 0,
+    "new_ui": false,
+    "new_unit_tests_run": 0,
+    "new_benchmark": false,
+    "previous_799_unit_18_apptest": "historical17_evidence_not_rerun_not_native_tests",
+    "final_eval_freeze14_unchanged": true,
+    "academic_report_slides18": false,
+    "implementation_started": false,
+    "next_prompt_prepared": true,
+    "next_prompt_applied": false,
+    "merge_authorized": false,
+    "environment": {
+      "python": "3.14.7 (main, Aug  8 2026, 21:15:19)  [MINGW GCC UCRT 16.2.0 64 bit (AMD64)]",
+      "executable": "C:\\msys64\\ucrt64\\bin\\python.exe",
+      "sqlite": "3.53.4",
+      "platform": "Windows-11-10.0.26200-SP0"
+    },
+    "checks": [
+      "old byte preservation",
+      "RC component SHA pins",
+      "61 unique task IDs and acyclic valid dependencies",
+      "proposed/complete status separation",
+      "nonempty deliverable and negative gates",
+      "source registry uniqueness/classification/no failed guessed URLs",
+      "local Markdown links exist and stay within worktree",
+      "main source citations covered by registry",
+      "scope/local AI/universal pack/forecast/native delivery vocabulary"
+    ]
+  },
+  "merge_authorized": false,
+  "primary_materials_in_git": false
+}

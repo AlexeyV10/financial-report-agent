@@ -1,0 +1,29 @@
+{
+  "errors": [
+    {
+      "stage": "review_correction_generator",
+      "error": "AssertionError on unused identity replacement for lower-case string",
+      "effect": "plan corrections already written; generator not saved; no runtime files affected",
+      "resolution": "removed unused identity replacements; made plan replacement idempotent; rerun passed"
+    },
+    {
+      "stage": "historical_report_address_read",
+      "error": "attempted evaluation/kp3_17_2026-11-11/report.json missing",
+      "effect": "read-only wrong date; no changes",
+      "resolution": "actual historical directory is evaluation/kp3_17_2026-11-10; baseline/pins verified separately"
+    },
+    {
+      "stage": "plan_validator_first_run",
+      "error": "link check encountered report.json before its first generation",
+      "effect": "documentation validation failed; no production change",
+      "resolution": "write honest validation_in_progress report at entry, overwrite passed report only after every check succeeds; final run passed"
+    }
+  ],
+  "sandbox_network": "bootstrap GitHub/fetch worktree used actual escalation; no sandbox bypass or alternate network installation",
+  "known_failed_research_urls": [
+    "guessed factset.com/solutions/financial-data",
+    "guessed www.quartr.com/products/pro",
+    "guessed www.daloopa.com/products/data",
+    "publication.pravo.gov.ru/document/0001202403220016 content fetch failed; identified only"
+  ]
+}
