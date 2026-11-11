@@ -1,0 +1,19 @@
+{
+  "origin": "independent hand specified oracle, never imported by runtime",
+  "operation": "operating_margin_v1",
+  "period": ["2025-01-01", "2025-12-31"],
+  "currency": "RUB",
+  "scale": 1000000,
+  "raw_revenue": "120",
+  "raw_operating_profit": "18",
+  "exact_percent": {"numerator": "15", "denominator": "1"},
+  "display": "15.00",
+  "page_size": [420, 360],
+  "profit_pdf_rect": [300, 150, 340, 174],
+  "profit_pixel_rect_at_scale1": {
+    "0": [300, 186, 340, 210],
+    "90": [150, 300, 174, 340],
+    "180": [80, 150, 120, 174],
+    "270": [186, 80, 210, 120]
+  }
+}
