@@ -1,0 +1,10 @@
+{
+  "base_sha": "3d6a2eccb83c30b1b477a5da0129266e51b8ef37",
+  "base_branch": "codex/windows-02b-clean-vm-acceptance",
+  "parent_pr": "https://github.com/AlexeyV10/financial-report-agent/pull/22",
+  "main": "f349717c5ca2acc33decf3dd7ce12b2756ce6d8b",
+  "ruleset_active": true,
+  "bypass_actors": [],
+  "root_branch_preserved": true,
+  "created_at": "2026-11-11T14:28:49.208225+00:00"
+}

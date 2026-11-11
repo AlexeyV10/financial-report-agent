@@ -1,0 +1,19 @@
+{
+  "stage": "WIN-02B VM installation media download",
+  "status": "downloads_verified_vm_not_created",
+  "official_files_downloaded": 2,
+  "integrity_passed": true,
+  "oracle_signature": "Valid",
+  "virtualbox_installed": false,
+  "guest_created": false,
+  "guest_booted": false,
+  "guest_acceptance": false,
+  "host_settings_changed": false,
+  "Qwen_probed": false,
+  "model_calls": 0,
+  "original_installer_rebuilt": false,
+  "WIN02": "host_validated_clean_vm_pending",
+  "WIN02B": "resource_blocked_kit_prepared",
+  "next": "Separate authorized installation of downloaded VirtualBox, then create and provision a clean Windows guest under Microsoft evaluation conditions.",
+  "merge_authorized": false
+}

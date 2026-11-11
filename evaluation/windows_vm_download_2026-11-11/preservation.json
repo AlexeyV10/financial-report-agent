@@ -1,0 +1,36 @@
+{
+  "root": {
+    "old_files": 627,
+    "unchanged": 624,
+    "allowed_changed": [
+      "README.md",
+      "STATUS.md",
+      "docs/decisions.md"
+    ],
+    "branch_unchanged": true,
+    "head_unchanged": true
+  },
+  "parent": {
+    "old_files": 1945,
+    "unchanged": 1945,
+    "allowed_changed": [],
+    "branch_unchanged": true,
+    "head_unchanged": true
+  },
+  "worktree": {
+    "old_files": 1945,
+    "unchanged": 1942,
+    "allowed_changed": [
+      "README.md",
+      "STATUS.md",
+      "docs/decisions.md"
+    ]
+  },
+  "original_installer_sha256": "f69523d44f474eacb0905d66e4f90294a3124a3d348c44222e6fe8e9ec3e56cf",
+  "existing_kit_sha256": "c99bd95e771a5f8e92c442459fe6d45f96cd7f44ead59cf5ed655cc4599a0fbb",
+  "original_installer_and_kit_unchanged": true,
+  "core_frozen_and_release_files_in_old_file_hash_check": true,
+  "UI_environment": "not used or modified; no new installer executed",
+  "host_changes": "only downloaded files and own documentation/evidence, no system settings",
+  "guest_acceptance": false
+}

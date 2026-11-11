@@ -1,3 +1,18 @@
+Подготовка VM,11.11.2026: downloads_verified_vm_not_created. По просьбе пользователя
+скачаны официальный VirtualBox7.2.22 Windows x64 (178101352байт) и Windows11
+Enterprise Evaluation26H2 x64 en-US (8225329152байт,90-дневная оценка). Оба SHA256
+совпали с Oracle/Microsoft, подпись Oracle Valid. Это файлы для создания гостя;
+VirtualBox не установлен, VM не создана/не запущена, WIN-02B не принят. Установка
+системных драйверов/регистрация/вход/активация ещё не выполнялись. Хост, Qwen,
+старый UI и прежний installer/kit не менялись. Файлы только локально в
+tmp/windows-vm-download-worktree/tmp/downloads, не в Git. Инструкция:
+docs/windows/virtual_machine_download.md; доказательства:
+evaluation/windows_vm_download_2026-11-11/. Следующий отдельный шаг:
+prompts/windows_vm_installation_next.md — после поручения на системную установку.
+WIN-02 остаётся host_validated_clean_vm_pending. Ветка codex/windows-02b-vm-download
+зависит от PR22; фактическая доставка в git-publication и финальной локальной
+квитанции. Merge не поручен. Старый текст ниже сохранён побайтовым суффиксом.
+
 WIN-02B,11.11.2026: resource_blocked_kit_prepared. Пользователь подтвердил:
 готовой чистой VM/отдельного ПК пока нет. Свежая инвентаризация доступной чистой
 Windows-среды не выявила. Приёмка guest не исполнялась; WIN-02 остаётся
