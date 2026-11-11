@@ -1,0 +1,66 @@
+{
+  "environment": "existing host, not clean VM",
+  "protocol": "3 idle and 3 full component runs, sequential. External ready polls20ms plus scheduling. No cache purge/reboot. Idle sampled ready+.3 through+1.1s, idle-only window terminated by harness; separate normal close observed manually. Tree RSS double-counts shared pages.",
+  "runs": [
+    {
+      "run": "f062064a06874176a475807771bed400",
+      "probe": false,
+      "external_ready_s": 0.3497459888458252,
+      "peak_tree_RSS_bytes": 134660096,
+      "peak_tree_private_bytes": 121241600,
+      "idle_tree_RSS_median": 134651904.0,
+      "idle_samples": 30,
+      "max_heartbeat_gap_ms": null
+    },
+    {
+      "run": "71e48df5f349490c8b62e5ba43a0d3de",
+      "probe": true,
+      "external_ready_s": 0.3966081142425537,
+      "peak_tree_RSS_bytes": 282304512,
+      "peak_tree_private_bytes": 247078912,
+      "idle_tree_RSS_median": null,
+      "idle_samples": 0,
+      "max_heartbeat_gap_ms": 138.75820000000002
+    },
+    {
+      "run": "77fd5628e36c4d62830268358805e3f0",
+      "probe": false,
+      "external_ready_s": 0.372272253036499,
+      "peak_tree_RSS_bytes": 134836224,
+      "peak_tree_private_bytes": 121401344,
+      "idle_tree_RSS_median": 134828032,
+      "idle_samples": 29,
+      "max_heartbeat_gap_ms": null
+    },
+    {
+      "run": "856c64b61dd94290aa831e2d540de9b2",
+      "probe": true,
+      "external_ready_s": 0.3735463619232178,
+      "peak_tree_RSS_bytes": 283799552,
+      "peak_tree_private_bytes": 247865344,
+      "idle_tree_RSS_median": null,
+      "idle_samples": 0,
+      "max_heartbeat_gap_ms": 136.86619999999994
+    },
+    {
+      "run": "9746e28471da40f8a18557aea07d2220",
+      "probe": false,
+      "external_ready_s": 0.3449065685272217,
+      "peak_tree_RSS_bytes": 132521984,
+      "peak_tree_private_bytes": 119607296,
+      "idle_tree_RSS_median": 132513792,
+      "idle_samples": 29,
+      "max_heartbeat_gap_ms": null
+    },
+    {
+      "run": "7d622fdd4dbc4e3f93b0a78addce84fd",
+      "probe": true,
+      "external_ready_s": 0.36935997009277344,
+      "peak_tree_RSS_bytes": 287371264,
+      "peak_tree_private_bytes": 253804544,
+      "idle_tree_RSS_median": null,
+      "idle_samples": 0,
+      "max_heartbeat_gap_ms": 138.22670000000016
+    }
+  ]
+}

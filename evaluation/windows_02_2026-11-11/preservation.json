@@ -1,0 +1,49 @@
+{
+  "worktree": {
+    "old_files": 1884,
+    "unchanged": 1878,
+    "allowed_changed": [
+      "README.md",
+      "STATUS.md",
+      "docs/decisions.md",
+      "docs/windows/backlog.md",
+      "docs/windows/roadmap.json",
+      "ПЛАН_РАЗВИТИЯ_WINDOWS.md"
+    ],
+    "head_before": "ae59496c9e1d0fc29b833c86309c16fe63ccf0fb",
+    "checked_head": "ae59496c9e1d0fc29b833c86309c16fe63ccf0fb",
+    "branch": "codex/windows-02-private-runtime-installer"
+  },
+  "RC329pins_unchanged": true,
+  "parent": {
+    "old_files": 1882,
+    "unchanged": 1882,
+    "allowed_changed": [],
+    "head_before": "ae59496c9e1d0fc29b833c86309c16fe63ccf0fb",
+    "checked_head": "ae59496c9e1d0fc29b833c86309c16fe63ccf0fb",
+    "branch": "codex/windows-01-native-spike"
+  },
+  "root": {
+    "old_files": 575,
+    "unchanged": 569,
+    "allowed_changed": [
+      "README.md",
+      "STATUS.md",
+      "docs/decisions.md",
+      "docs/windows/backlog.md",
+      "docs/windows/roadmap.json",
+      "ПЛАН_РАЗВИТИЯ_WINDOWS.md"
+    ],
+    "head_before": "c18e3febfdbce731c542607a1041cccf190f5798",
+    "checked_head": "c18e3febfdbce731c542607a1041cccf190f5798",
+    "branch": "codex/kp3-01-02-scope-baseline"
+  },
+  "old_UI_env": {
+    "files": 10140,
+    "all_file_hashes_and_file_set_unchanged": true,
+    "baseline_sha256": "3161d65e8a725cb0ad0efa8ad706b45a87494dd8c5055120f5cfb47b686226e1"
+  },
+  "root_historical_suffixes_preserved": true,
+  "status": "passed",
+  "clean_VM_tested": false
+}

@@ -1,0 +1,7 @@
+{
+  "environment": "existing host, not clean VM",
+  "actual_slow_worker_count": 1,
+  "parent_hard_killed": true,
+  "worker_absent_at_500ms": true,
+  "kill_on_job_close": true
+}

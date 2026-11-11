@@ -1,0 +1,40 @@
+{
+  "package_tests_final": {
+    "passed": 10,
+    "seconds": 4.276,
+    "location": "final build-v4 actual installed copy; includes2 actual rejected-host manifest controls"
+  },
+  "installed_package_tests": {
+    "passed": 10,
+    "seconds": 4.276,
+    "location": "actual final v4 per-user installed copy before uninstall; same10 tests, not an extra10"
+  },
+  "private_original_root_regression": {
+    "tests": 69,
+    "passed": 69,
+    "seconds": 2.271,
+    "scope": "unchanged calculator/admission/retrieval tests on private CPython3.12.10 using original repo-root context"
+  },
+  "shipped_core_cross_root_attempt": {
+    "tests": 69,
+    "passed": 44,
+    "errors": 25,
+    "failures": 0,
+    "reason": "preserved private_path_required / repository-root path assumptions",
+    "status": "not_installed_parity",
+    "guard_weakened": false
+  },
+  "initial_v3_attempt": {
+    "tests": 69,
+    "passed": 41,
+    "errors": 28,
+    "path_errors": 25,
+    "missing_legacy_contracts_errors": 3,
+    "resolution": "Added unchanged legacy contracts.py to final package; v4 retains25 path errors, no missing-module errors"
+  },
+  "actual_GUI_component_runs": 3,
+  "component_run_expectations": "Each had2 calculations15.00,5 renders,actual slow cancel+worker absent300ms,crash23,recovery,normal component close.",
+  "actual_parent_hard_crash_worker_control": "One real private worker observed; gone500ms after killing own GUI parent.",
+  "legacy_799_unit_and_18_AppTest": "Historical baseline only, not rerun here. Full WIN-03 compatibility is not declared.",
+  "new_model_calls": 0
+}

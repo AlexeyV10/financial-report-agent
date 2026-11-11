@@ -1,0 +1,64 @@
+{
+  "errors": [
+    {
+      "stage": "initial context read",
+      "result": "Python stdout default cp1251 could not encode a Unicode arrow; read failed.",
+      "resolution": "Subsequent context reads used -X utf8; no source bytes changed."
+    },
+    {
+      "stage": "inventory command",
+      "result": "PowerShell parser rejected Bash-style brace file list before command execution.",
+      "resolution": "Used explicit paths/Python AST inspection, not shell-dependent brace expansion."
+    },
+    {
+      "stage": "NSIS documentation fetch",
+      "result": "First Download-page web fetch timed out.",
+      "resolution": "Official NSIS main page and SourceForge3.13 listing read; official archive downloaded successfully."
+    },
+    {
+      "stage": "runtime packaging v1",
+      "result": "Review found legacy WPF worker invocation lacked -I -B, risking package cache writes/external environment.",
+      "resolution": "Builder applies one explicit trusted invocation delta to a generated copy; old WPF source unchanged. Final installed tests verify no __pycache__ and ignored hostile Python env."
+    },
+    {
+      "stage": "runtime diagnostic v2",
+      "result": "Actual stdout decoded with UTF-8 but Python default cp1251 corrupted Cyrillic path text. Numeric result was correct.",
+      "resolution": "runtime_probe explicitly sets UTF-8; final v3/v4 diagnostic verifies exact private paths and Cyrillic/space installation."
+    },
+    {
+      "stage": "shipped-core cross-root regression",
+      "result": "Initial v3:69 tests,25 private-path errors and3 missing legacy contracts.py errors,41 passed.",
+      "resolution": "Added the unchanged missing contracts.py to package; final v4:44 passed,25 private-path errors. No guard/gold changed. Separately69/69 original-root tests passed on same private interpreter."
+    },
+    {
+      "stage": "CUA initialization",
+      "result": "A stale/bare sky binding was undefined.",
+      "resolution": "Re-imported documented API and used globalThis.sky; fresh unique own window selected."
+    },
+    {
+      "stage": "initial captured frame",
+      "result": "White client captured although UIA exposed controls.",
+      "resolution": "After native file selection full own page and controls visibly verified. First-paint/capture cause unresolved, guest check pending."
+    },
+    {
+      "stage": "manual cancel timing",
+      "result": "First Escape arrived after slow task completed; another snapshot request incorrectly disabled both text/image.",
+      "resolution": "Refreshed own state and later immediate Escape visibly cancelled with empty result. Delayed real-process cancellation separately passed in component runs."
+    },
+    {
+      "stage": "CUA target geometry",
+      "result": "One index click reported coordinate geometry unavailable.",
+      "resolution": "Fresh screenshot-backed state used for a single retry; large font observed."
+    },
+    {
+      "stage": "system Settings",
+      "result": "SystemSettings.exe did not expose a targetable window; later fresh list empty.",
+      "resolution": "No system scale/contrast settings changed; OS200/high-contrast remain untested."
+    },
+    {
+      "stage": "Narrator",
+      "result": "launch_app initially exposed no targetable window; later hidden Narrator panel appeared.",
+      "resolution": "Own result focus/read command observed, audio not observable. Narrator exited; full spoken acceptance not claimed."
+    }
+  ]
+}

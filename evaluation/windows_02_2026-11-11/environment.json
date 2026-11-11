@@ -1,0 +1,54 @@
+{
+  "ObservedOn": "2026-11-11",
+  "OS": "Майкрософт Windows 11 Pro",
+  "Version": "10.0.26200",
+  "CPU": "Intel(R) Core(TM) i7-14700HX",
+  "RAMBytes": 16873545728,
+  "AdminToken": false,
+  "PreinstalledFrameworkRelease": 533509,
+  "PreinstalledFrameworkVersion": "4.8.09221",
+  "Commands": [
+    {
+      "Name": "dotnet",
+      "Available": false
+    },
+    {
+      "Name": "iscc",
+      "Available": false
+    },
+    {
+      "Name": "makensis",
+      "Available": false
+    },
+    {
+      "Name": "candle",
+      "Available": false
+    },
+    {
+      "Name": "light",
+      "Available": false
+    },
+    {
+      "Name": "qemu-system-x86_64",
+      "Available": false
+    },
+    {
+      "Name": "VBoxManage",
+      "Available": false
+    },
+    {
+      "Name": "vmrun",
+      "Available": false
+    }
+  ],
+  "SandboxExePresent": false,
+  "VMMSServicePresent": false,
+  "VMComputeServicePresent": false,
+  "HyperVModulePresent": false,
+  "HypervisorPresent": true,
+  "FirmwareVirtualizationReported": false,
+  "CleanVMTested": false,
+  "VirtualizationSettingsChanged": false,
+  "ExistingQwenProbed": false,
+  "NewModelCalls": 0
+}

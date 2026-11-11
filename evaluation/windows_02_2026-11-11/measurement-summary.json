@@ -1,0 +1,24 @@
+{
+  "environment": "same existing host, not clean VM",
+  "installer_bytes": 22434104,
+  "payload_bytes": 46157740,
+  "payload_files": 271,
+  "startup_all_median_s": 0.37081611156463623,
+  "startup_first_s": 0.3497459888458252,
+  "startup_warm_median_s": 0.372272253036499,
+  "idle_RSS_median_bytes": 134651904.0,
+  "full_peak_tree_RSS_median_bytes": 283799552,
+  "full_peak_tree_private_median_bytes": 247865344,
+  "gap_range_ms": [
+    136.86619999999994,
+    138.75820000000002
+  ],
+  "cold_boot_measured": false,
+  "notes": [
+    "6 sequential launches: 3 idle and3 full component probes. No parallel tests during measurements.",
+    "External ready polls20ms plus scheduling; idle32–33 samples in ready+.3 to+1.1s.",
+    "RSS double-counts shared pages; private bytes also recorded.",
+    "First launch is not OS cold boot; no cache purge/restart.",
+    "Tiny own fixture/10000 technical rows, no model; no general hardware minimum or financial quality inference."
+  ]
+}

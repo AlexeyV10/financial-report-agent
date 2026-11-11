@@ -1,10 +1,10 @@
 # Backlog Windows-приложения — версия1.0
 
-61 задача: WIN-00 — завершённое исследование, WIN-01 — завершённый feasibility с ограничениями; WIN-02–60 — предлагаемые работы, ещё не выполненные. Это не список уже реализованных возможностей. Зависимости образуют DAG; security/evaluation/accessibility начинаются рано, CROSS-задачи завершают их проверку. Оценка готовности опирается на артефакт и наблюдаемое поведение, а не наличие JSON или красивого экрана.
+61 задача: WIN-00 — завершённое исследование, WIN-01 — завершённый feasibility с ограничениями; WIN-02 — host validated, clean VM pending; WIN-03–60 — предлагаемые работы, ещё не выполненные. Это не список уже реализованных возможностей. Зависимости образуют DAG; security/evaluation/accessibility начинаются рано, CROSS-задачи завершают их проверку. Оценка готовности опирается на артефакт и наблюдаемое поведение, а не наличие JSON или красивого экрана.
 
 При каждом этапе: свежий fetch/main/PR; отдельная codex/ветка и worktree; сохранить исходные байты; allowlist commits/push/PR/technical tag; merge только по поручению. Новые факты/метрики/модели требуют собственной версии/проверок. Неприкосновенность старых gold/manifests и права на данные сохраняются.
 
-[Основной план](../../ПЛАН_РАЗВИТИЯ_WINDOWS.md) · [JSON](roadmap.json) · [Следующий самостоятельный промт WIN-02](../../prompts/windows_02_private_runtime_installer_spike.md)
+[Основной план](../../ПЛАН_РАЗВИТИЯ_WINDOWS.md) · [JSON](roadmap.json) · [Следующий самостоятельный промт WIN-02B](../../prompts/windows_02b_clean_vm_acceptance.md)
 
 ## WIN-00. Зафиксировать исследование и продуктовые границы
 
@@ -26,11 +26,13 @@
 
 ## WIN-02. Проверить private runtime и installer в clean VM
 
-Выпуск: D0. Зависимости: WIN-01. Состояние: proposed_not_implemented.
+Выпуск: D0. Зависимости: WIN-01. Состояние: host_validated_clean_vm_pending.
 
 **Результат:** Минимальная поставка выбранного GUI, PDF renderer и частного Python; per-user installer, manifest dependencies.
 
 **Готовность и отрицательные проверки:** Windows11 x64 без Python/Ollama/admin, Unicode путь, offline запуск собственного примера, uninstall; без PATH/global installs. Это feasibility, не подписанный публичный релиз.
+
+**Фактически11.11:** per-user installer22434104байт, private CPython/PDFium/WPF, install/shortcut/source15,00%/cancel/crash/uninstall на хосте проверены;10 package checks прошли. Clean VM отсутствует, OS200/contrast/Narrator speech не приняты;25 legacy cross-root path guards сохранены. Полная приёмка02 не закрыта. [Результат](installer_spike_02.md), [evidence](../../evaluation/windows_02_2026-11-11/README.md), [WIN-02B](../../prompts/windows_02b_clean_vm_acceptance.md).
 
 ## WIN-03. Выбрать stock CPython и зафиксировать зависимости
 

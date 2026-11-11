@@ -1,3 +1,26 @@
+WIN-02,11.11.2026: host_validated_clean_vm_pending. Собран полный локальный
+per-user installer WPF + private official CPython3.12.10 + PDFium/Pillow;
+22434104байт, SHA f69523d44f474eacb0905d66e4f90294a3124a3d348c44222e6fe8e9ec3e56cf.
+Реальная установка/созданный ярлык/own PDF15,00%/source highlight/readonly assets/
+cancel/crash/recovery/Job Object/удаление проверены на текущем хосте без admin.
+Удаление сохранило46 файлов данных, неизвестный install file и PATH; собственный
+контрольный остаток перенесён в tmp. Глобальный Python/старый UI/venv не менялись.
+10 новых checks прошли в final v4 installed copy,69 прежних calculator/retrieval
+tests — на private Python в оригинальном repo-root. Shipped cross-root v4:44pass/
+25private-path errors, guards не ослаблены; initial3 missing-module errors исправлены
+добавлением неизменённого contracts.py. Это не полная installed legacy parity.
+Чистая VM отсутствует: WIN-02 не принят целиком. OS200/high contrast/слышимый
+Narrator не подтверждены; host network оставалась подключена. Поддерживаемый runtime
+публичного продукта/собственная code-license/подпись/обновления ещё не утверждены.
+Qwen не запускался/не опрашивался/не менялся, новых фактов/OCR/формул нет.
+Документация: docs/windows/installer_spike_02.md; код: spikes/windows_02/;
+evidence: evaluation/windows_02_2026-11-11/. Следующий отдельный шаг — только
+WIN-02B: prompts/windows_02b_clean_vm_acceptance.md; он не начат. WIN-03/04 и
+академические18/19/20 не выполнялись. Git — codex/windows-02-private-runtime-installer,
+зависимая база WIN-01 ae59496c; фактические PR/head/host-only tag в git-publication
+и финальной локальной квитанции. Merge не поручен. Исторические разделы ниже
+сохранены побайтовым суффиксом; это текущий статус вместо прежних proposed/не начат.
+
 WIN-01,11.11.2026: сравнительный native feasibility завершён с ограничениями.
 Основной UI для WIN-02 — WPF + общий Python worker: Qt source работал, но имел
 gap695–760мс, а Qt onedir упал при импорте QtCore DLL. WPF реально исполнен на

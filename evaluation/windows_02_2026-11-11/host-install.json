@@ -1,0 +1,15 @@
+{
+  "environment": "existing host, not clean VM",
+  "installation_s": 6.103947600000538,
+  "installer_exit": 0,
+  "per_user": true,
+  "admin_used": false,
+  "unicode_space_path": true,
+  "outside_repository": true,
+  "shortcut_created": true,
+  "HKCU_uninstall_created": true,
+  "private_payload_files": 271,
+  "readonly_payload": true,
+  "PATH_unchanged": true,
+  "sentinel_sha256": "b36e9eaedf1b995ff3c0c66615a4d63b7030be311d6cd90d2a71d8f064fcbbfd"
+}

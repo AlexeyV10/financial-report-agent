@@ -1,0 +1,29 @@
+{
+  "files": [
+    {
+      "file": "python-3.12.10-embed-amd64.zip",
+      "url": "https://www.python.org/ftp/python/3.12.10/python-3.12.10-embed-amd64.zip",
+      "final_url": "https://www.python.org/ftp/python/3.12.10/python-3.12.10-embed-amd64.zip",
+      "bytes": 11133606,
+      "sha256": "4acbed6dd1c744b0376e3b1cf57ce906f9dc9e95e68824584c8099a63025a3c3"
+    },
+    {
+      "file": "python-3.12.10-embed-amd64.zip.spdx.json",
+      "url": "https://www.python.org/ftp/python/3.12.10/python-3.12.10-embed-amd64.zip.spdx.json",
+      "final_url": "https://www.python.org/ftp/python/3.12.10/python-3.12.10-embed-amd64.zip.spdx.json",
+      "bytes": 15267,
+      "sha256": "efa53ba4f26e8a06410677ec6d010e97133a7a1ab38e0485f6936da2911879fa"
+    },
+    {
+      "file": "nsis-3.13.zip",
+      "url": "https://downloads.sourceforge.net/project/nsis/NSIS%203/3.13/nsis-3.13.zip",
+      "final_url": "https://unlimited.dl.sourceforge.net/project/nsis/NSIS%203/3.13/nsis-3.13.zip",
+      "bytes": 2363925,
+      "sha256": "ba63dffc4410ee89193e1cb5a41989991bd77c61068da17e3156d136b7b0b3d8"
+    }
+  ],
+  "python_sha_matches_official_SBOM": true,
+  "NSIS": "official SourceForge project archive, HTTPS, computed SHA pinned for replay; no independent signature asserted",
+  "private_cpython": "Official embeddable3.12.10, last full Windows3.12 maintenance release; newer security source releases exist. Packaging feasibility only; maintained runtime choice remains release gate.",
+  "redirect_query_omitted": "Transient SourceForge CDN routing query omitted; not a reusable source URL."
+}

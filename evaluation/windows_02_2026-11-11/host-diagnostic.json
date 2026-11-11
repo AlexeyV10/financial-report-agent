@@ -1,0 +1,80 @@
+{
+  "schema": "win02-installed-diagnostic-1",
+  "execution_status": "completed",
+  "financial_status": "answered",
+  "display": "15.00",
+  "operation": "operating_margin_v1",
+  "source_sha": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+  "renders": [
+    {
+      "width": 1680,
+      "height": 1440,
+      "rect": [
+        1200,
+        744,
+        1360,
+        840
+      ],
+      "page": 1,
+      "sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+      "zoom": 2,
+      "dpi": 2,
+      "rotation": 0
+    },
+    {
+      "width": 1440,
+      "height": 1680,
+      "rect": [
+        600,
+        1200,
+        696,
+        1360
+      ],
+      "page": 1,
+      "sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+      "zoom": 2,
+      "dpi": 2,
+      "rotation": 90
+    },
+    {
+      "width": 1680,
+      "height": 1440,
+      "rect": [
+        320,
+        600,
+        480,
+        696
+      ],
+      "page": 1,
+      "sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+      "zoom": 2,
+      "dpi": 2,
+      "rotation": 180
+    },
+    {
+      "width": 1440,
+      "height": 1680,
+      "rect": [
+        744,
+        320,
+        840,
+        480
+      ],
+      "page": 1,
+      "sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+      "zoom": 2,
+      "dpi": 2,
+      "rotation": 270
+    }
+  ],
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "isolated": 1,
+  "no_user_site": 1,
+  "pdfium": "159.0.8149.0@sourcebuild-toolchained",
+  "qt_present": false,
+  "new_model_calls": 0,
+  "environment": "existing host, not clean VM",
+  "independent_cwd": true,
+  "hostile_python_environment_ignored": true,
+  "all_python_paths_inside_install": true
+}
