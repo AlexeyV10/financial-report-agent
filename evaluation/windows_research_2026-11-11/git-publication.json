@@ -1,0 +1,21 @@
+{
+  "stage": "Windows research plan",
+  "pull_request": "https://github.com/AlexeyV10/financial-report-agent/pull/19",
+  "pr_number": 19,
+  "branch": "codex/windows-app-research-plan",
+  "base_branch": "codex/kp3-17-release-candidate",
+  "base_sha": "1b9cc821a0ddbfc6054c2622613b2b76df09a2c9",
+  "code_commit": "f61023a0dc3bd0bbbf10277b7e12fc160cbbb2c3",
+  "verified_stage_head": "1c9d1b6d18b14a21cb1fabcb4bd5d6080fdb0f88",
+  "technical_tag": "windows-research-plan-v1-2026-11-11",
+  "tag_object": "9ddfb5d2e59e3525e04b4effa7d3f58b0df91787",
+  "tag_target": "1c9d1b6d18b14a21cb1fabcb4bd5d6080fdb0f88",
+  "state": "open",
+  "merged": false,
+  "diff_files": 27,
+  "allowlist_matches": true,
+  "remote_tree_matches": true,
+  "remote_blobs": 1842,
+  "receipt_followup": "Final head in final-local-receipt.json; tag targets tested stage",
+  "merge_authorized": false
+}
