@@ -1,0 +1,51 @@
+{
+  "schema": "win02b-kit-1",
+  "installer_sha256": "f69523d44f474eacb0905d66e4f90294a3124a3d348c44222e6fe8e9ec3e56cf",
+  "installer_bytes": 22434104,
+  "installer_rebuilt": false,
+  "kit_files": [
+    {
+      "name": "artifact.json",
+      "bytes": 335,
+      "sha256": "8b8c22bea4ab9dea4e2935c3f67988bd54047b707b5a313facffcb5271ae9d7c"
+    },
+    {
+      "name": "GuestEvidence.exe",
+      "bytes": 35840,
+      "sha256": "1b8ef13b26222d3298eb07a2b3239db224d15ef82465b8dd811f26e3358923d6"
+    },
+    {
+      "name": "ProjectPractice-WIN02-setup.exe",
+      "bytes": 22434104,
+      "sha256": "f69523d44f474eacb0905d66e4f90294a3124a3d348c44222e6fe8e9ec3e56cf"
+    },
+    {
+      "name": "provenance.json",
+      "bytes": 177,
+      "sha256": "b5532a050cc1a791a7d04ccc6e72adf78d60a0a0cfd6c95edc731d2c1fc12142"
+    },
+    {
+      "name": "RUNBOOK_RU.md",
+      "bytes": 13754,
+      "sha256": "8ecd86d57c7d1fd5c68e6ccba9f649b500e61f37ae8be6a474b3e160334ce68c"
+    }
+  ],
+  "private_host_guard_included": true,
+  "zip_bytes": 22366270,
+  "zip_sha256": "c99bd95e771a5f8e92c442459fe6d45f96cd7f44ead59cf5ed655cc4599a0fbb",
+  "collector_sha256": "1b8ef13b26222d3298eb07a2b3239db224d15ef82465b8dd811f26e3358923d6",
+  "synthetic_controls": {
+    "synthetic_gate_controls_passed": 17,
+    "guest_acceptance_tested": false
+  },
+  "actual_host_refusal": {
+    "schema": "win02b-checkpoint-1",
+    "status": "original_host_rejected",
+    "phase": "preflight",
+    "guest_accepted": false,
+    "guest_environment_collected": false,
+    "model_calls": 0
+  },
+  "guest_acceptance_tested": false,
+  "private_guard_not_for_public_git": true
+}

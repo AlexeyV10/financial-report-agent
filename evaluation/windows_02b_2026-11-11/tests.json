@@ -1,0 +1,13 @@
+{
+  "kit_integrity_passed": true,
+  "installer_bytes_unchanged": true,
+  "zip_installer_sha_matches": true,
+  "provenance_template_unconfirmed": true,
+  "actual_original_host_refusal": true,
+  "invalid_command_rejected": true,
+  "modified_same_size_installer_rejected_before_output": true,
+  "synthetic_gate_controls": 17,
+  "guest_acceptance_tested": false,
+  "installer_executed": false,
+  "model_calls": 0
+}

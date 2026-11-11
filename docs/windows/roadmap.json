@@ -64,7 +64,16 @@
         "25 shipped cross-root private-path errors remain; no guard changes/full legacy parity",
         "Unsigned local binary; own code license undecided; no public binary release"
       ],
-      "continuation": "prompts/windows_02b_clean_vm_acceptance.md"
+      "continuation": "prompts/windows_02b_resume_when_guest_ready.md",
+      "acceptance_preparation": {
+        "id": "WIN-02B",
+        "status": "resource_blocked_kit_prepared",
+        "clean_resource_user_confirmed_absent": true,
+        "kit_prepared": true,
+        "installer_unchanged": true,
+        "guest_tested": false,
+        "report": "docs/windows/clean_vm_acceptance_02b.md"
+      }
     },
     {
       "id": "WIN-03",

@@ -1,0 +1,11 @@
+{
+  "unexpected_build_or_test_errors": [],
+  "blocking_condition": "No clean Windows resource; user confirmed and current inventory found none.",
+  "expected_negative_controls": [
+    "actual same-host refusal exit21 before guest inventory",
+    "unknown phase refusal exit64",
+    "same-size modified installer rejected before output directory creation"
+  ],
+  "review_adjustment": "Before final kit-v2, collector own-data traversal was bounded to5000 files/50MB per file/100MB total and refuses reparse points; no observed guest error is invented.",
+  "guest_failures": "not_observed_no_guest_run"
+}

@@ -1,0 +1,17 @@
+{
+  "sequence": [
+    "Read current request, instructions/status/receipts and fresh short VM inventory; user confirmed no ready resource.",
+    "Fresh git fetch/API verified parentPR21/head656424de and tag targetb7989aaa; created codex/windows-02b-clean-vm-acceptance before source changes.",
+    "DEV_PY -X utf8 spikes/windows_02b/prepare_kit.py --installer ../windows-02-worktree/tmp/build-v4/ProjectPractice-WIN02-setup.exe --out tmp/kit-v2",
+    "csc Framework64 v4.0.30319 /target:exe /platform:x64 /codepage:65001 /reference:System.Web.Extensions.dll /reference:System.Management.dll /main:GuestEvidence [own source]; separate /main:CollectorTests for synthetic controls",
+    "DEV_PY -X utf8 spikes/windows_02b/verify_kit.py --build tmp/kit-v2",
+    "Validate old files/history suffixes/329RCpins/10140 old UI-env files and unchanged original installer.",
+    "Allowlisted commits/push/dependent PR/preparation-only tag, fresh main/conflicts/diff/remote tree; no merge."
+  ],
+  "not_done": [
+    "Guest install/uninstall/UI/offline/Narrator/DPI",
+    "Host reinstall or runtime rebuild",
+    "Global SDK/hypervisor/settings/PowerShell policy changes",
+    "Qwen probing or model generation"
+  ]
+}

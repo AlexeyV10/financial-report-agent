@@ -1,3 +1,12 @@
+# WIN-02B — подготовка к приёмке, ресурс пока отсутствует
+
+Статус resource_blocked_kit_prepared: готов kit/collector/runbook, пользователь
+подтвердил отсутствие чистой VM/ПК. Guest-тесты не выполнялись, WIN-02 остаётся
+host_validated_clean_vm_pending; WIN-03/04/54 не приняты.
+[Результат](docs/windows/clean_vm_acceptance_02b.md) ·
+[Возобновить при появлении guest](prompts/windows_02b_resume_when_guest_ready.md).
+Предыдущие редакции плана ниже сохранены побайтово.
+
 # Актуализация после host-проверки WIN-02 — 11.11.2026
 
 WIN-02: **host_validated_clean_vm_pending**. Полный WPF/private Python/PDFium

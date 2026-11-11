@@ -1,0 +1,19 @@
+{
+  "collector_positive_guest_path_tested": false,
+  "collector_is_not_acceptance": true,
+  "provenance_is_operator_declaration": true,
+  "host_comparison_is_not_authentication": true,
+  "global_dependency_discovery_is_not_exhaustive": true,
+  "WindowsApps_aliases_need_manual_review": true,
+  "interface_state_is_not_full_offline_workflow": true,
+  "no_IP_MAC_hostname_raw_machine_ID_export": true,
+  "private_comparison_config": "Only local kit, omitted from public receipt file hashes.",
+  "existing_WIN02_gates_preserved": [
+    "25 cross-root private-path errors",
+    "maintained private Python selection",
+    "spoken Narrator/OS200/high contrast",
+    "interactive wizard/clean offline guest cycle",
+    "own license/signing/public release/upgrade/full Windows matrix"
+  ],
+  "no_automatic_guest_pass": true
+}
