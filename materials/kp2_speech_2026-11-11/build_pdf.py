@@ -106,7 +106,7 @@ def build():
     for slide in DATA["slides"]:
         md.extend([f"## Слайд {slide['number']}. {slide['title']}", "", f"Выступает: {slide['speaker']}",
                    "", slide["text"], ""])
-    (HERE / "speech.md").write_text("\n".join(md), encoding="utf-8")
+    (HERE / "speech.md").write_text("\n".join(md), encoding="utf-8", newline="\n")
     (HERE / "KP2_speech_3_minutes_ru.pdf").write_bytes(OUT.read_bytes())
     spoken = " ".join(s["text"] for s in DATA["slides"])
     summary = {"pdf": str(OUT), "pages": 2,
