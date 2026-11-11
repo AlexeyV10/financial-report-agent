@@ -1,0 +1,23 @@
+{
+  "branch": "codex/kp2-three-minute-speech-20261111",
+  "pr_url": "https://github.com/AlexeyV10/financial-report-agent/pull/23",
+  "pr_number": 23,
+  "base_sha_at_review": "f349717c5ca2acc33decf3dd7ce12b2756ce6d8b",
+  "reviewed_content_head": "eb056427c7917e7dc7684a1b5fe3ac8a25a50779",
+  "state": "open",
+  "merged": false,
+  "mergeable_at_read": null,
+  "files_reviewed": [
+    ".gitignore",
+    "STATUS.md",
+    "evaluation/kp2_speech_2026-11-11/checks.json",
+    "materials/kp2_speech_2026-11-11/KP2_speech_3_minutes_ru.pdf",
+    "materials/kp2_speech_2026-11-11/build_pdf.py",
+    "materials/kp2_speech_2026-11-11/speech.json",
+    "materials/kp2_speech_2026-11-11/speech.md",
+    "prompts/kp2_three_minute_speech_continuation.md"
+  ],
+  "checks": "Rendered PDF/text/speakers/arithmetic/primary cells reviewed; git diff --check passed; no new model or code tests",
+  "tag_planned": "kp2-speech-3min-v1-2026-11-11",
+  "merge_authorized": false
+}
