@@ -1,0 +1,22 @@
+{
+  "mode": "read_only_specialist_review",
+  "reviewers": [
+    "market_document_tools",
+    "windows_architecture",
+    "financial_analysis_forecasting"
+  ],
+  "result": "no blocking factual contradictions; concrete corrections incorporated",
+  "corrections": [
+    "local upload guarantee distinguished from OS OneDrive/network sync",
+    "own rights-cleared D0 source demo mandatory for clean install",
+    "semantic admission mapping and independent false-admission evaluation",
+    "full IFRS pack includes equity changes and OCI",
+    "instant/duration/YTD/quarter and precise IFRS18 start-period gate",
+    "model selection on dev; locked test not hyperparameter selection",
+    "actual target vintage fixed before forecast evaluation",
+    "active-network/foreign-endpoint LocalOnly test",
+    "snapshot database restore and no new writes before update health check",
+    "supported Windows build/arch/security lifecycle matrix",
+    "illustrative schedule not claimed probability/date"
+  ]
+}

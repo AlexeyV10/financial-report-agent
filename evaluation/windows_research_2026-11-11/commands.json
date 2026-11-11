@@ -1,0 +1,13 @@
+{
+  "commands": [
+    "bootstrap_windows_research.py (fresh GitHub/fetch/worktree and before snapshots)",
+    "build_windows_roadmap.py (authored61tasks/backlog/source URL catalog)",
+    "refine_windows_plan.py (apply read-only review corrections)",
+    "evaluation/windows_research_2026-11-11/validate_plan.py (docs/DAG/links/bytepins)",
+    "stage_windows_delivery.py prepare/commit/publish/receipt_commit/final (allowlisted authorized Git delivery)"
+  ],
+  "code_generation": "own documentation/checker code only",
+  "runtime_or_models_executed": false,
+  "installation": false,
+  "ui_computer_use": false
+}

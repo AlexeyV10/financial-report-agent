@@ -1,0 +1,1477 @@
+{
+  "schema": "windows-research-sources-1.0",
+  "as_of": "2026-11-11",
+  "scope": "Primary-source review, product docs are supplier claims. No paid trials; price/region/service/redistribution availability not proven.",
+  "not_a_full_world_inventory": true,
+  "primary_pages": 146,
+  "failed_or_unread_content": 1,
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2105.07624",
+      "notes": [
+        "research_agent_retrieval_security.md",
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-001"
+    },
+    {
+      "url": "https://arxiv.org/abs/2109.00122",
+      "notes": [
+        "research_agent_retrieval_security.md",
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-002"
+    },
+    {
+      "url": "https://arxiv.org/abs/2311.11944",
+      "notes": [
+        "research_agent_retrieval_security.md",
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-003"
+    },
+    {
+      "url": "https://arxiv.org/abs/2408.09869",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-004"
+    },
+    {
+      "url": "https://arxiv.org/abs/2507.05595",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-005"
+    },
+    {
+      "url": "https://basis.myseldon.com/ru/home/capabilities",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-006"
+    },
+    {
+      "url": "https://bo.nalog.gov.ru/about",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-007"
+    },
+    {
+      "url": "https://bo.nalog.gov.ru/faq",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-008"
+    },
+    {
+      "url": "https://developers.llamaindex.ai/python/examples/cookbooks/local_rag_with_chroma_and_ollama/",
+      "notes": [
+        "research_agent_retrieval_security.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-009"
+    },
+    {
+      "url": "https://developers.llamaindex.ai/python/framework/getting_started/installation/",
+      "notes": [
+        "research_agent_retrieval_security.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-010"
+    },
+    {
+      "url": "https://developers.rossum.ai/docs/data-capture-automation",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-011"
+    },
+    {
+      "url": "https://doc.qt.io/QT-6/accessible-qwidget.html",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-012"
+    },
+    {
+      "url": "https://doc.qt.io/qt-6.8/qtpdf-index.html",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-013"
+    },
+    {
+      "url": "https://doc.qt.io/qt-6/accessible.html",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-014"
+    },
+    {
+      "url": "https://doc.qt.io/qtforpython-6/",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-015"
+    },
+    {
+      "url": "https://doc.qt.io/qtforpython-6/deployment/deployment-pyside6-deploy.html",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-016"
+    },
+    {
+      "url": "https://docling-project.github.io/docling/",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-017"
+    },
+    {
+      "url": "https://docs.aws.amazon.com/textract/latest/dg/limits-document.html",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-018"
+    },
+    {
+      "url": "https://docs.cloud.google.com/document-ai/docs/enterprise-document-ocr",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-019"
+    },
+    {
+      "url": "https://docs.cloud.google.com/document-ai/docs/layout-parse-chunk",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-020"
+    },
+    {
+      "url": "https://docs.daloopa.com/docs/daloopa-hub-overview",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-021"
+    },
+    {
+      "url": "https://docs.fiscal.ai/docs/introduction",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-022"
+    },
+    {
+      "url": "https://docs.haystack.deepset.ai/docs/creating-pipelines",
+      "notes": [
+        "research_agent_retrieval_security.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-023"
+    },
+    {
+      "url": "https://docs.haystack.deepset.ai/docs/document-store",
+      "notes": [
+        "research_agent_retrieval_security.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-024"
+    },
+    {
+      "url": "https://docs.langchain.com/oss/python/langgraph/persistence",
+      "notes": [
+        "research_agent_retrieval_security.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-025"
+    },
+    {
+      "url": "https://docs.ollama.com/faq",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-026"
+    },
+    {
+      "url": "https://docs.python.org/3.13/using/windows.html#the-embeddable-package",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-027"
+    },
+    {
+      "url": "https://docs.unstructured.io/open-source/core-functionality/partitioning",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-028"
+    },
+    {
+      "url": "https://duckdb.org/",
+      "notes": [
+        "research_agent_retrieval_security.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-029"
+    },
+    {
+      "url": "https://experienceleague.adobe.com/en/docs/document-cloud-learn/acrobat-learning/get-started/ai/ai-assistant",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-030"
+    },
+    {
+      "url": "https://fiscal.ai/blog/series-a-announcement/",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-031"
+    },
+    {
+      "url": "https://focus.kontur.ru/site/features/financial-analysis",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-032"
+    },
+    {
+      "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+      "notes": [
+        "research_agent_retrieval_security.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-033"
+    },
+    {
+      "url": "https://github.com/Nixtla/statsforecast",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-034"
+    },
+    {
+      "url": "https://github.com/PaddlePaddle/PaddleOCR",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-035"
+    },
+    {
+      "url": "https://github.com/Unstructured-IO/unstructured",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-036"
+    },
+    {
+      "url": "https://github.com/amazon-science/chronos-forecasting",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-037"
+    },
+    {
+      "url": "https://github.com/datalab-to/surya",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-038"
+    },
+    {
+      "url": "https://github.com/docling-project/docling",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-039"
+    },
+    {
+      "url": "https://github.com/electron/electron/blob/main/docs/tutorial/security.md",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-040"
+    },
+    {
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "notes": [
+        "research_agent_retrieval_security.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-041"
+    },
+    {
+      "url": "https://github.com/ggml-org/llama.cpp/blob/master/LICENSE",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-042"
+    },
+    {
+      "url": "https://github.com/ggml-org/llama.cpp/blob/master/docs/build.md",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-043"
+    },
+    {
+      "url": "https://github.com/google-research/timesfm",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-044"
+    },
+    {
+      "url": "https://github.com/google-research/timesfm#license-notice-for-pretrained-weights",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-045"
+    },
+    {
+      "url": "https://github.com/jsvine/pdfplumber",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-046"
+    },
+    {
+      "url": "https://github.com/microsoft/table-transformer",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-047"
+    },
+    {
+      "url": "https://github.com/ollama/ollama/blob/master/LICENSE",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-048"
+    },
+    {
+      "url": "https://github.com/opendatalab/OmniDocBench",
+      "notes": [
+        "research_agent_retrieval_security.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-049"
+    },
+    {
+      "url": "https://github.com/tesseract-ocr/tesseract/blob/main/LICENSE",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-050"
+    },
+    {
+      "url": "https://help.abbyy.com/en-us/finereader/16/user_guide/formats/",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-051"
+    },
+    {
+      "url": "https://help.abbyy.com/en-us/finereaderengine/12/user_guide/licensing_licensing/",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-052"
+    },
+    {
+      "url": "https://help.alpha-sense.com/hc/en-us/articles/41666587181203-Interacting-with-Generative-Search",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-053"
+    },
+    {
+      "url": "https://help.dext.com/en/articles/416691-what-information-does-dext-extract-from-costs-and-sales-documents",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-054"
+    },
+    {
+      "url": "https://help.dext.com/en/articles/416727-getting-started-with-dext-for-accountants-and-bookkeepers",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-055"
+    },
+    {
+      "url": "https://help.planfact.io/article/6649",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-056"
+    },
+    {
+      "url": "https://helpx.adobe.com/in/acrobat/desktop/use-acrobat-ai/get-started-with-generative-ai/ai-tech-requirements.html",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-057"
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-058"
+    },
+    {
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-059"
+    },
+    {
+      "url": "https://investor.factset.com/news-releases/news-release-details/factset-launches-factset-mercury-supercharge-junior-banker",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-060"
+    },
+    {
+      "url": "https://jrsoftware.org/ishelp/topic_admininstallmode.htm",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-061"
+    },
+    {
+      "url": "https://jrsoftware.org/ishelp/topic_setup_signeduninstaller.htm",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-062"
+    },
+    {
+      "url": "https://knowledgecenter.docuware.com/docs/preconfigured-solutions-invoice-processing-usa",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-063"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/language-support/ocr?view=doc-intel-4.0.0",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-064"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/layout?view=doc-intel-4.0.0",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-065"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/dotnet/desktop/wpf/overview",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-066"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/dotnet/standard/security/how-to-use-data-protection",
+      "notes": [
+        "research_agent_retrieval_security.md",
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-067"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/microsoft-edge/webview2/concepts/distribution",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-068"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/power-query/connectors/pdf",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-069"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/packaging/",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-070"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-071"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/msix/app-installer/auto-update-and-repair--overview",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-072"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/procthread/job-objects",
+      "notes": [
+        "research_agent_retrieval_security.md",
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-073"
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/windows/win32/shell/knownfolderid",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-074"
+    },
+    {
+      "url": "https://learn.microsoft.com/microsoft-edge/webview2/concepts/working-with-local-content",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-075"
+    },
+    {
+      "url": "https://learn.microsoft.com/windows/apps/get-started/windows-developer-faq",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-076"
+    },
+    {
+      "url": "https://learn.microsoft.com/windows/apps/package-and-deploy/deploy-overview",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-077"
+    },
+    {
+      "url": "https://learn.microsoft.com/windows/msix/package/signing-package-overview",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-078"
+    },
+    {
+      "url": "https://learn.microsoft.com/windows/win32/ipc/named-pipes",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-079"
+    },
+    {
+      "url": "https://learn.microsoft.com/windows/win32/secauthz/app-isolation-overview",
+      "notes": [
+        "research_agent_retrieval_security.md",
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-080"
+    },
+    {
+      "url": "https://learn.microsoft.com/windows/win32/winauto",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-081"
+    },
+    {
+      "url": "https://nuitka.net/user-documentation/user-manual.html",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-082"
+    },
+    {
+      "url": "https://otexts.com/fpp3/judgmental.html",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-083"
+    },
+    {
+      "url": "https://otexts.com/fpp3/toolbox.html",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-084"
+    },
+    {
+      "url": "https://pdf.abbyy.com/how-to/compare-documents/",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-085"
+    },
+    {
+      "url": "https://planfact.io/features",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-086"
+    },
+    {
+      "url": "https://professional.bloomberg.com/products/data/enterprise-catalog/cofi/",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-087"
+    },
+    {
+      "url": "https://publication.pravo.gov.ru/document/0001202403220016",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "identified_but_fetch_failed_not_content_verified",
+      "method": "access failure recorded; full normative text must be read before RAS implementation",
+      "source_id": "SRC-088"
+    },
+    {
+      "url": "https://pydantic.dev/docs/ai/core-concepts/output/",
+      "notes": [
+        "research_agent_retrieval_security.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-089"
+    },
+    {
+      "url": "https://pydantic.dev/docs/ai/models/ollama/",
+      "notes": [
+        "research_agent_retrieval_security.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-090"
+    },
+    {
+      "url": "https://pyinstaller.org/en/stable/operating-mode.html",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-091"
+    },
+    {
+      "url": "https://pymupdf.readthedocs.io/en/latest/about.html",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-092"
+    },
+    {
+      "url": "https://pywebview.flowrl.com/api/",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-093"
+    },
+    {
+      "url": "https://quartr.com/features/ai-chat",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-094"
+    },
+    {
+      "url": "https://quartr.com/features/global-search",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-095"
+    },
+    {
+      "url": "https://rossum.ai/data-Capture/",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-096"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/common_pitfalls.html",
+      "notes": [
+        "research_agent_retrieval_security.md",
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-097"
+    },
+    {
+      "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-098"
+    },
+    {
+      "url": "https://seldongroup.ru/system/basis/api",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-099"
+    },
+    {
+      "url": "https://spark-interfax.ru/features/financial-analysis",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-100"
+    },
+    {
+      "url": "https://start.docuware.com/en-gb/process-incoming-invoices",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-101"
+    },
+    {
+      "url": "https://support.abbyy.com/hc/en-us/articles/360002992360-Runtime-license-for-distribution",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-102"
+    },
+    {
+      "url": "https://support.microsoft.com/en-us/excel/create-a-forecast-in-excel-for-windows",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-103"
+    },
+    {
+      "url": "https://tesseract-ocr.github.io/tessdoc/",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-104"
+    },
+    {
+      "url": "https://tesseract-ocr.github.io/tessdoc/ImproveQuality.html",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-105"
+    },
+    {
+      "url": "https://v2.tauri.app/concept/inter-process-communication/",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-106"
+    },
+    {
+      "url": "https://v2.tauri.app/develop/sidecar/",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-107"
+    },
+    {
+      "url": "https://v2.tauri.app/security/capabilities/",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-108"
+    },
+    {
+      "url": "https://www.abbyy.com/ocr-sdk/",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-109"
+    },
+    {
+      "url": "https://www.adobe.com/learn/acrobat/web/ai-assistant-multiple-documents",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-110"
+    },
+    {
+      "url": "https://www.alt-invest.ru/program/",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-111"
+    },
+    {
+      "url": "https://www.alt-invest.ru/program/alt-finance/",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-112"
+    },
+    {
+      "url": "https://www.bamsec.com/features",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-113"
+    },
+    {
+      "url": "https://www.bamsec.com/features/table-tools",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-114"
+    },
+    {
+      "url": "https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/evaluating-quality-financial-reports",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-115"
+    },
+    {
+      "url": "https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/financial-analysis-techniques",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-116"
+    },
+    {
+      "url": "https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/financial-reporting-quality",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-117"
+    },
+    {
+      "url": "https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/integration-financial-statement-analysis-techniques",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-118"
+    },
+    {
+      "url": "https://www.cfainstitute.org/insights/professional-learning/refresher-readings/2026/introduction-financial-statement-analysis",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-119"
+    },
+    {
+      "url": "https://www.daloopa.com/faqs",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-120"
+    },
+    {
+      "url": "https://www.e-disclosure.ru/",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-121"
+    },
+    {
+      "url": "https://www.electronjs.org/docs/latest",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-122"
+    },
+    {
+      "url": "https://www.electronjs.org/docs/latest/tutorial/distribution-overview",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-123"
+    },
+    {
+      "url": "https://www.factset.com/product-blog/overviews/from-deal-sourcing-to-due-diligence-inside-factset-workstation-for-private-capital",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-124"
+    },
+    {
+      "url": "https://www.gnucash.org/docs/v5/C/gnucash-manual/trans-import.html",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-125"
+    },
+    {
+      "url": "https://www.gnucash.org/features.phtml?lang=en_US",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-126"
+    },
+    {
+      "url": "https://www.iaasb.org/publications/isa-570-revised-2024-going-concern",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-127"
+    },
+    {
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/ias-24-related-party-disclosures/",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-128"
+    },
+    {
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/ias-34-interim-financial-reporting/",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-129"
+    },
+    {
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/ias-7-statement-of-cash-flows/",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-130"
+    },
+    {
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/ias-8-basis-of-preparation-of-financial-statements/",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-131"
+    },
+    {
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/ifrs-18-presentation-and-disclosure-in-financial-statements/",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-132"
+    },
+    {
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/ifrs-7-financial-instruments-disclosures/",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-133"
+    },
+    {
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/ifrs-8-operating-segments/",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-134"
+    },
+    {
+      "url": "https://www.koyfin.com/features/financial-analysis/",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-135"
+    },
+    {
+      "url": "https://www.koyfin.com/help/actuals-consensus/",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-136"
+    },
+    {
+      "url": "https://www.koyfin.com/help/faq/where-do-you-get-your-data/",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-137"
+    },
+    {
+      "url": "https://www.luminance.com/analyze/",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-138"
+    },
+    {
+      "url": "https://www.nalog.gov.ru/rn68/ifns/imns68_gmich/info/16605556/",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-139"
+    },
+    {
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "notes": [
+        "research_agent_retrieval_security.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-140"
+    },
+    {
+      "url": "https://www.paddleocr.ai/main/en/index/",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-141"
+    },
+    {
+      "url": "https://www.qt.io/development/open-source-lgpl-obligations",
+      "notes": [
+        "research_architecture.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-142"
+    },
+    {
+      "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+      "notes": [
+        "research_agent_retrieval_security.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-143"
+    },
+    {
+      "url": "https://www.spglobal.com/market-intelligence/en/solutions/products/sp-capital-iq-pro",
+      "notes": [
+        "research_market.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-144"
+    },
+    {
+      "url": "https://www.sqlite.org/fts5.html",
+      "notes": [
+        "research_agent_retrieval_security.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-145"
+    },
+    {
+      "url": "https://www.statsmodels.org/stable/statespace.html",
+      "notes": [
+        "research_finance.md"
+      ],
+      "source_type": "primary_official_documentation_product_or_original_paper",
+      "review_status": "reviewed_in_research_session",
+      "method": "official web source read by root or delegated researcher; no installed-product benchmark",
+      "source_id": "SRC-146"
+    }
+  ]
+}

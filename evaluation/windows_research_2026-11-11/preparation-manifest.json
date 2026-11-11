@@ -1,0 +1,31 @@
+{
+  "stage": "Windows research plan",
+  "scope": "open_dev_not_final_eval_freeze",
+  "file_sha256": {
+    "ПЛАН_РАЗВИТИЯ_WINDOWS.md": "306f099605e8a7e856dd9225054bf21a5f42f380875f214284c36d9daef0564b",
+    "docs/windows/backlog.md": "8b803b1438e51343bd09ddb14f10f96209b82503440413b50c392356c58823c5",
+    "docs/windows/research_agent_retrieval_security.md": "d0d3a3440c8a4bd9869efede1d2f5c17863a38e647cccf52a557abd7288cb805",
+    "docs/windows/research_architecture.md": "6238efd5d70ef6eec9c5df6026340ff8d56b591412d2447b23148a9875811997",
+    "docs/windows/research_finance.md": "a527421039eee4082ad5ba8313063626fba0bdee6b55a7b59989d5f8ce9c6ac7",
+    "docs/windows/research_market.md": "cff927faff33968bbf176e315b86a9e9c753d98ed63a47ecdc6a9fa60a752c47",
+    "docs/windows/roadmap.json": "3301f138760623ad5d9642130530a7af626863d3f2ec88a274166cb2e8fae394",
+    "docs/windows/sources.json": "4bc2f49b69c35857376a6d9ee85bd92c1d74bc795d1335f7797c024a5d071678",
+    "README.md": "1d27214013d5663a1b42dccd2dfe52d0fbec51ffaf2e5095410e060e01099f95",
+    "STATUS.md": "2ec5d44802b414c75dfac1b26e87ed76e9dca34a600de177ab996fcd74c6edc4",
+    "docs/decisions.md": "72818abe727e442c9cf5153dfdaf76b2db1d69d8c569c98c382535bd437b7780",
+    "evaluation/windows_research_2026-11-11/before.json": "cf6f5236ebeb4ceac42d539f4862fcfb53acdef4e3c66aeea05c98a512a330f2",
+    "evaluation/windows_research_2026-11-11/commands.json": "51077f30e60297ad91b7815221a909a1b7672d55195e622c74cc849fba535431",
+    "evaluation/windows_research_2026-11-11/first-errors.json": "98340d28a336e6a086cf88f87ce872c4c2f4ec7b878633efcdab67e7f5abf95d",
+    "evaluation/windows_research_2026-11-11/git-compatibility.json": "fc7219b28d2fa9b60f181623b9f7fa95895fd59dd2498f96bb623907bf9a28e6",
+    "evaluation/windows_research_2026-11-11/github-before.json": "7818d19240000be2b8f5f59cfe4619cdf137289876198ec5d0b1ea7437ddaf3f",
+    "evaluation/windows_research_2026-11-11/github-prepublication.json": "8c51ab4d2ec2217cec7df7ec89cd3dada8cb6ed0c389c76ae9ba405daf0d86e0",
+    "evaluation/windows_research_2026-11-11/parent-before.json": "cf6f5236ebeb4ceac42d539f4862fcfb53acdef4e3c66aeea05c98a512a330f2",
+    "evaluation/windows_research_2026-11-11/peer-review.json": "dff85bd39970adc09d825bacd14edadb0df5f05d03931278af51d47409f65816",
+    "evaluation/windows_research_2026-11-11/report.json": "30ce66969bae2135f72560d4da1ee2de752009934ef3b0d0c706902eeded8c60",
+    "evaluation/windows_research_2026-11-11/research-protocol.json": "e02db20e5e565c89e419fcb2f4c7a9989b57915c2297e63ee9e2e61808ccce25",
+    "evaluation/windows_research_2026-11-11/root-before.json": "6187d368333f448ca926aa27c29b7d16d5f8a03ff2983ebde2f8275ebbb76556",
+    "evaluation/windows_research_2026-11-11/validate_plan.py": "4bcf13e799800538729f98c37d720e41a1f5eef9025c49bb7203c9ef6afa622b",
+    "evaluation/windows_research_2026-11-11/validation.json": "9ccb7d2467281bdd0dc6f36c4438e7060e1df9e73a4b40bfedec9d2927e2c25f",
+    "prompts/windows_01_native_desktop_spike.md": "b69c08ff501841b8022e7d9f3198657daf9a9784e9bd91250779ff526bd9947b"
+  }
+}

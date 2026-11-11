@@ -1,0 +1,850 @@
+{
+  "schema": "windows-roadmap-1.0",
+  "created_on": "2026-11-11",
+  "kind": "proposed_product_plan_not_runtime",
+  "preferences": {
+    "document_scope": "maximally_universal_financial_documents",
+    "ai": "local_Qwen_initially_cloud_not_required",
+    "platform": "installed_native_Windows"
+  },
+  "implemented_tasks": [],
+  "completed_research_tasks": [
+    "WIN-00"
+  ],
+  "release_policy": "D5/RND optional; V1 declares only measured capability packs. Crosscutting baseline begins with foundation/import.",
+  "tasks": [
+    {
+      "id": "WIN-00",
+      "title": "Зафиксировать исследование и продуктовые границы",
+      "depends_on": [],
+      "release": "RESEARCH",
+      "status": "research_complete",
+      "deliverable": "Исследование классов продуктов, документов, native architectures, локального AI и прогнозов; отдельный Windows-план и продолжение.",
+      "acceptance": "Решения пользователя сохранены; текущий код/данные/старые gold неизменны; источники и непроверенные гипотезы отделены. Это завершение исследования, не готовое приложение.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-01",
+      "title": "Сравнительный native spike Qt и WPF",
+      "depends_on": [
+        "WIN-00"
+      ],
+      "release": "D0",
+      "status": "proposed_not_implemented",
+      "deliverable": "Одинаковый короткий slice: собственный PDF, таблица10000строк, одна старая операция, источник, background job/cancel; основной кандидат Qt.",
+      "acceptance": "Сопоставимые записи startup/RAM/DPI/UIA/keyboard, лицензии фактически выбранных модулей, no UI HTTP; timebox и ADR. Не две полные реализации и не screenshot-only решение.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-02",
+      "title": "Проверить private runtime и installer в clean VM",
+      "depends_on": [
+        "WIN-01"
+      ],
+      "release": "D0",
+      "status": "proposed_not_implemented",
+      "deliverable": "Минимальная поставка выбранного GUI, PDF renderer и частного Python; per-user installer, manifest dependencies.",
+      "acceptance": "Windows11 x64 без Python/Ollama/admin, Unicode путь, offline запуск собственного примера, uninstall; без PATH/global installs. Это feasibility, не подписанный публичный релиз.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-03",
+      "title": "Выбрать stock CPython и зафиксировать зависимости",
+      "depends_on": [
+        "WIN-02"
+      ],
+      "release": "D0",
+      "status": "proposed_not_implemented",
+      "deliverable": "Проверка текущего ядра на private stock CPython; lock/hash wheels и worker runtimes; MSYS2 baseline сохраняется.",
+      "acceptance": "Подходящая полная старая регрессия на новом runtime, native DLL/plugins inventory, повторяемая сборка. Отсутствующая совместимость явно исправляется новой версией, frozen receipts не переписываются.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-04",
+      "title": "Ввести ApplicationPaths и WorkspaceContext",
+      "depends_on": [
+        "WIN-01",
+        "WIN-03"
+      ],
+      "release": "D0",
+      "status": "proposed_not_implemented",
+      "deliverable": "Readonly assets отдельно от AppData/vault/cache/models/logs; адаптер исторического ROOT/tmp и реестра exact-resources.",
+      "acceptance": "Два vault, read-only install, перемещение и source-missing/hash-mismatch; нет Value/OneDrive/Git cwd defaults; исходные v1/заморозки сохраняются.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-05",
+      "title": "Отделить ApplicationService и typed IPC",
+      "depends_on": [
+        "WIN-04"
+      ],
+      "release": "D0",
+      "status": "proposed_not_implemented",
+      "deliverable": "GUI/CLI вызывают одну версию service; serializable commands, run_id, context/version/size limits, structured outcome.",
+      "acceptance": "Неверная/лишняя schema, stale context, duplicate IDs, malformed/oversized response, worker crash; UI не получает право на произвольный shell/path/SQL.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-06",
+      "title": "Сделать supervisor долговременных заданий",
+      "depends_on": [
+        "WIN-05"
+      ],
+      "release": "D0",
+      "status": "proposed_not_implemented",
+      "deliverable": "Job states/progress/cancel/deadline/retry/resume, event log, process ownership, one-heavy-job queue.",
+      "acceptance": "Повторный клик идемпотентен; late results не применяются; cancel/crash/reopen без поддельного completed, orphan worker и повреждённого vault.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-07",
+      "title": "Создать локальное хранилище и миграции",
+      "depends_on": [
+        "WIN-04",
+        "WIN-05"
+      ],
+      "release": "D0",
+      "status": "proposed_not_implemented",
+      "deliverable": "SQLite metadata/FTS, immutable originals, revisioned derived assets, atomic commits, backup и recovery skeleton.",
+      "acceptance": "Диск заполнен/обрыв записи/schema mismatch/restore; исходник не перезаписывается, версии не смешиваются; несколько vault изолированы.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-08",
+      "title": "Создать native оболочку и понятную навигацию",
+      "depends_on": [
+        "WIN-01",
+        "WIN-05",
+        "WIN-06"
+      ],
+      "release": "D0",
+      "status": "proposed_not_implemented",
+      "deliverable": "Qt/WPF shell в согласованном бело-зелёном направлении; projects/documents/analysis, labels, empty/loading/error states.",
+      "acceptance": "Реальные действия, длинные русские подписи, клавиатура/фокус/Narrator/125–200%DPI. Нет нефункциональных кнопок и UI-side финансовой арифметики.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-09",
+      "title": "Встроить просмотр документа и точный источник",
+      "depends_on": [
+        "WIN-07",
+        "WIN-08"
+      ],
+      "release": "D0",
+      "status": "proposed_not_implemented",
+      "deliverable": "Сменный renderer, lazy pages, text/table alternative, cell highlight и page/sheet locator.",
+      "acceptance": "Rotation/crop/zoom/DPI/printed page/page index; opening только через trusted resource ID. Viewer success не считается новой сверкой числа; licenses зафиксированы.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-10",
+      "title": "Доставить D0: пять прежних операций в Windows",
+      "depends_on": [
+        "WIN-03",
+        "WIN-04",
+        "WIN-05",
+        "WIN-06",
+        "WIN-07",
+        "WIN-08",
+        "WIN-09"
+      ],
+      "release": "D0",
+      "status": "proposed_not_implemented",
+      "deliverable": "Direct/delta/relative/scale/margin через прежний B и admission, уточнения, source/trace; private runtime installer и собственный rights-cleared demo с исходником/evidence.",
+      "acceptance": "Прежние financial gates, поиск без полного комплекта блокирует ответ, publication unknown/technical failure; новые desktop workflows на clean VM. Нет Streamlit/browser UI server.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-11",
+      "title": "Сделать безопасный универсальный импорт",
+      "depends_on": [
+        "WIN-06",
+        "WIN-07"
+      ],
+      "release": "D1",
+      "status": "proposed_not_implemented",
+      "deliverable": "Определение типа по содержимому, immutable asset/SHA, duplicate handling, quotas, encrypted/corrupted/unsupported states.",
+      "acceptance": "Zip-slip/bomb, oversized images/pages, вложенный executable/макрос/JS не исполняется; file/extraction/semantic states различаются. Security controls вводятся здесь, не откладываются до50.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-12",
+      "title": "Добавить CSV/XLSX/DOCX/TXT адаптеры",
+      "depends_on": [
+        "WIN-11"
+      ],
+      "release": "D1",
+      "status": "proposed_not_implemented",
+      "deliverable": "Encoding/delimiter/locale, workbook sheets/cells/styles/merged headers, DOCX paragraph/table locators; safe HTML sanitization.",
+      "acceptance": "Десятичная запятая/пробел/скобки, external refs/VBA/DDE/формулы и cached value stale; нет произвольного пересчёта Excel-кодом. CSV formula injection обезвреживается при экспорте.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-13",
+      "title": "Подготовить DocumentIR digital PDF",
+      "depends_on": [
+        "WIN-09",
+        "WIN-11"
+      ],
+      "release": "D1",
+      "status": "proposed_not_implemented",
+      "deliverable": "Text spans/boxes/table geometry/compound headers/multi-page linkage с parser/config/environment fingerprints.",
+      "acceptance": "Потерянные headers, rotation, columns, split table, units/signs, отсутствующая страница; результат на exact cell/context, не только красивый Markdown.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-14",
+      "title": "Провести RU/EN OCR benchmark",
+      "depends_on": [
+        "WIN-11",
+        "WIN-13"
+      ],
+      "release": "D1",
+      "status": "proposed_not_implemented",
+      "deliverable": "Rights-cleared diverse sample: pdfplumber baseline vs Docling/Paddle/Tesseract; time/RAM/Windows compatibility/code+weights licenses.",
+      "acceptance": "Независимый cell/context gold, held-out layouts, failed docs в знаменателе; OCR/structure/semantic accuracy отдельно. Публичные заявления поставщика не заменяют измерение.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-15",
+      "title": "Интегрировать выбранные OCR и языковые пакеты",
+      "depends_on": [
+        "WIN-14",
+        "WIN-06"
+      ],
+      "release": "D1",
+      "status": "proposed_not_implemented",
+      "deliverable": "Один основной и ограниченный fallback adapter, page-at-a-time processing, model-pack hashes/licenses/import/download.",
+      "acceptance": "Чистая offline машина, cancel/OOM/mixed PDF/low disk; нет скрытого скачивания/облака. Fallback не повышает непроверенное число до Fact.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-16",
+      "title": "Определять тип и контекст документа",
+      "depends_on": [
+        "WIN-12",
+        "WIN-13"
+      ],
+      "release": "D1",
+      "status": "proposed_not_implemented",
+      "deliverable": "Rule/Qwen proposals: класс, стороны/группа, стандарт, периоды, единицы, структура и confidence-by-field.",
+      "acceptance": "Банк/RAS/IFRS/управленческий не смешиваются; неизвестный тип/alias/поле требуют уточнения; upload/signature/report/publication dates отдельно.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-17",
+      "title": "Утвердить rich DocumentIR и provenance schema",
+      "depends_on": [
+        "WIN-12",
+        "WIN-13",
+        "WIN-16"
+      ],
+      "release": "D1",
+      "status": "proposed_not_implemented",
+      "deliverable": "Версионированные документы/страницы/таблицы/ячейки/поля, transforms, original lexical value, relationships.",
+      "acceptance": "Round-trip и stale source invalidation; unit/period/header/source references обязательны для поддержанной схемы; extraction version не перезаписывает прежнюю.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-18",
+      "title": "Сделать Fact vNext и admission profiles",
+      "depends_on": [
+        "WIN-17"
+      ],
+      "release": "D1",
+      "status": "proposed_not_implemented",
+      "deliverable": "Candidate/Fact/DerivedValue и separate machine-checked policy; semantic mapping/versioned pack, false-admission/abstention evaluation; старые gates не ослаблять.",
+      "acceptance": "Кандидат/Qwen/structure_checked не автоматически admitted; изменённый source/config/index блокируется; human_reviewed только фактическое действие. Independent gold вне runtime.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-19",
+      "title": "Создать рабочее место проверки и исправлений",
+      "depends_on": [
+        "WIN-08",
+        "WIN-09",
+        "WIN-18"
+      ],
+      "release": "D1",
+      "status": "proposed_not_implemented",
+      "deliverable": "Очередь неоднозначных полей с источником, локальное исправление, audit history, versioned template/profile.",
+      "acceptance": "Исправление одной ячейки не подтверждает весь документ; прежние версии сохраняются; отмена/две конфликтующие правки/смена исходника не скрываются.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-20",
+      "title": "Расширить структурированный и текстовый поиск",
+      "depends_on": [
+        "WIN-07",
+        "WIN-17",
+        "WIN-18"
+      ],
+      "release": "D1",
+      "status": "proposed_not_implemented",
+      "deliverable": "SQLite FTS5 + filters + table context; optional local embeddings/reranker по результатам сравнения.",
+      "acceptance": "Evidence coverage/recall и wrong-version negatives; partial retrieval/timeout/missing index не превращаются в финансовый ответ; fulltext и raw docs приватны.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-21",
+      "title": "Расширить IFRS pack до трёх форм и примечаний",
+      "depends_on": [
+        "WIN-18",
+        "WIN-19",
+        "WIN-20"
+      ],
+      "release": "D2",
+      "status": "proposed_not_implemented",
+      "deliverable": "Definition mapping/perimeter/reporting basis для balance/P&L/CF/notes/audit; IFRS18 отдельная проверка основы.",
+      "acceptance": "Original/comparative, full/YTD/instant, OP composition/final CFO, отрицательные числа/единицы; поздняя comparative не original; прав на PDF не добавляется.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-22",
+      "title": "Создать независимый РСБУ pack",
+      "depends_on": [
+        "WIN-18",
+        "WIN-19",
+        "WIN-20"
+      ],
+      "release": "D2",
+      "status": "proposed_not_implemented",
+      "deliverable": "Проверенные действующие редакции форм/пояснений/FSBU и dictionary юрлица, versioned line mapping.",
+      "acceptance": "Нормативные тексты реально прочитаны и применимость доказана; не переносить IFRS definitions по похожему имени. Иной период/код строки/редакция требуют проверки.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-23",
+      "title": "Импортировать банковские CSV/XLSX",
+      "depends_on": [
+        "WIN-12",
+        "WIN-18",
+        "WIN-19"
+      ],
+      "release": "D1",
+      "status": "proposed_not_implemented",
+      "deliverable": "Account/transaction model, opening/closing, transaction/posting dates, currencies, categories и internal transfers.",
+      "acceptance": "Debit/credit direction, duplicates, refunds/fees, missing balance, несколько счетов и same transfer. Приход не равен выручке; корректировка категории аудируема.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-24",
+      "title": "Добавить PDF-выписки и сканы",
+      "depends_on": [
+        "WIN-15",
+        "WIN-17",
+        "WIN-23"
+      ],
+      "release": "D2",
+      "status": "proposed_not_implemented",
+      "deliverable": "Bank-layout profiles с geometry и переносом строк, source каждой транзакции, неполные страницы.",
+      "acceptance": "Held-out bank layouts/многовалютность/расхождение opening+flows=closing; неподдержанные строки не исчезают из знаменателя и не дополняются моделью.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-25",
+      "title": "Добавить счета, чеки и акты",
+      "depends_on": [
+        "WIN-15",
+        "WIN-17",
+        "WIN-18",
+        "WIN-19"
+      ],
+      "release": "D2",
+      "status": "proposed_not_implemented",
+      "deliverable": "Document/line item/VAT/totals/parties/due dates, duplicate IDs; нормализация с оригинальной записью.",
+      "acceptance": "Net+tax=gross по объявленной политике округления, discounts/returns, неверный контрагент/период; документ не доказывает оплату или recognized revenue.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-26",
+      "title": "Связать документы и платежи",
+      "depends_on": [
+        "WIN-23",
+        "WIN-25"
+      ],
+      "release": "D2",
+      "status": "proposed_not_implemented",
+      "deliverable": "Reconciliation graph: contract/invoice/act/payment, partial/many-to-many match с объяснением признаков.",
+      "acceptance": "Похожие суммы/номера, commissions/FX, split/overpayment/refund, duplicates; ambiguous links требует выбора; match не меняет исходные документы.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-27",
+      "title": "Извлекать договорные обязательства",
+      "depends_on": [
+        "WIN-16",
+        "WIN-18",
+        "WIN-19",
+        "WIN-20"
+      ],
+      "release": "D2",
+      "status": "proposed_not_implemented",
+      "deliverable": "Contracts/amendments/loans/leases: сроки, условия, ставки, индексация, security/covenants, conditional obligations.",
+      "acceptance": "Действующая редакция/приложение/условность/отмена/просрочка; буквальный clause и интерпретация разделены; нет окончательного юридического заключения от Qwen.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-28",
+      "title": "Поддержать управленческие и пользовательские схемы",
+      "depends_on": [
+        "WIN-12",
+        "WIN-18",
+        "WIN-19"
+      ],
+      "release": "D2",
+      "status": "proposed_not_implemented",
+      "deliverable": "Mapping статей/проектов/центров затрат, plan/actual, пользовательский chart of accounts без обязательного IFRS.",
+      "acceptance": "Units/periods/currencies и aggregation rules, explicit user mapping, не сравнивать budget соactual как два reported Facts; профиль не распространяется скрыто на все файлы.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-29",
+      "title": "Расширить registry финансовых показателей",
+      "depends_on": [
+        "WIN-18",
+        "WIN-21"
+      ],
+      "release": "D2",
+      "status": "proposed_not_implemented",
+      "deliverable": "Небольшие пакеты profitability/liquidity/leverage/efficiency с formula version/admission/variants/reference.",
+      "acceptance": "Independent Fraction/Decimal checks, zero/negative denominator, средние vs closing, days/scale/FX gates. EBITDA/FCF/net debt только отдельная доказанная методика; старые пять операций unchanged.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-30",
+      "title": "Согласовать три финансовые формы",
+      "depends_on": [
+        "WIN-21",
+        "WIN-29"
+      ],
+      "release": "D2",
+      "status": "proposed_not_implemented",
+      "deliverable": "Balance/equity/debt/cash bridges и coverage residual; бухгалтерские уравнения по фактическим строкам.",
+      "acceptance": "Неполный комплект/разные версии/округление/currency translation; unexplained residual виден, Qwen не создаёт балансирующую статью.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-31",
+      "title": "Сделать тренды, common-size и variance bridges",
+      "depends_on": [
+        "WIN-29",
+        "WIN-30"
+      ],
+      "release": "D2",
+      "status": "proposed_not_implemented",
+      "deliverable": "Сопоставимые динамики, доли, вклад статей, user-selected periods/entities; reported vs normalized distinction.",
+      "acceptance": "Несопоставимость/период нестандартной длины/negative base; арифметический вклад не причинность, annualized не выдаётся за actual quarter.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-32",
+      "title": "Добавить анализ cash quality и working capital",
+      "depends_on": [
+        "WIN-21",
+        "WIN-29",
+        "WIN-30"
+      ],
+      "release": "D2",
+      "status": "proposed_not_implemented",
+      "deliverable": "Profit/CFO, receivables/inventory/payables, DSO/DIO/DPO/CCC, cash capex/FCF при достаточных входах.",
+      "acceptance": "Средние и подходящие потоки/дни, acquisitions/noncash/reclassifications; нельзя автоматически использовать revenue вместо purchases или accrual capex вместо cash.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-33",
+      "title": "Добавить долг, ковенанты и ликвидность",
+      "depends_on": [
+        "WIN-27",
+        "WIN-29",
+        "WIN-30"
+      ],
+      "release": "D2",
+      "status": "proposed_not_implemented",
+      "deliverable": "Debt maturity, fixed/floating/FX, lease/restricted-cash policy, covenant headroom и liquidity calendar.",
+      "acceptance": "Правила конкретного договора, future interest assumptions, missing facilities, inconsistent units; scenario covenant breach не объявляется actual нарушением.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-34",
+      "title": "Анализировать сегменты, риски, notes и аудит",
+      "depends_on": [
+        "WIN-20",
+        "WIN-21",
+        "WIN-29"
+      ],
+      "release": "D2",
+      "status": "proposed_not_implemented",
+      "deliverable": "Segments/concentration/related parties/contingencies/accounting changes/audit flags с exact passages.",
+      "acceptance": "Scope и consolidation eliminations, разные restated segments, conditional language; не делать fraud/solvency guarantee. Source silence/нет prepared Fact не доказывает отсутствие раскрытия.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-35",
+      "title": "Сравнивать версии и совместимые компании",
+      "depends_on": [
+        "WIN-20",
+        "WIN-21",
+        "WIN-22",
+        "WIN-29"
+      ],
+      "release": "D2",
+      "status": "proposed_not_implemented",
+      "deliverable": "Version diff numeric+text, original/comparative map, compatibility proofs и peer cohorts из доступных файлов.",
+      "acceptance": "Дата/периметр/definition/currency/стандарт/период; Segezha CFO не автоматически эквивалентны; внешние market data/FX только отдельные будущие доверенные входы.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-36",
+      "title": "Создать native аналитическое рабочее пространство",
+      "depends_on": [
+        "WIN-08",
+        "WIN-09",
+        "WIN-19",
+        "WIN-31"
+      ],
+      "release": "D2",
+      "status": "proposed_not_implemented",
+      "deliverable": "Overview/three statements/metrics/charts/notes/sources/review, novice explanations и detailed mode.",
+      "acceptance": "Нет чисел без locator/units/version; смена фильтра инвалидирует answer; клавиатура/контраст/масштаб; ratios показываются только по выпущенным packs.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-37",
+      "title": "Расширить natural input и явные уточнения",
+      "depends_on": [
+        "WIN-18",
+        "WIN-20",
+        "WIN-36",
+        "WIN-40"
+      ],
+      "release": "D3",
+      "status": "proposed_not_implemented",
+      "deliverable": "Local Qwen semantic proposals + deterministic schema/domain validation, structured equivalent для каждого workflow.",
+      "acceptance": "Original/raw/origins/history/direction/why сохраняются; multi-intent/unfulfilled requests; unsupported schema/limit не считается успешным ответом. Ни model value, ни формула не trusted Fact.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-38",
+      "title": "Сделать durable многошаговый исследовательский агент",
+      "depends_on": [
+        "WIN-06",
+        "WIN-20",
+        "WIN-37",
+        "WIN-40"
+      ],
+      "release": "D3",
+      "status": "proposed_not_implemented",
+      "deliverable": "Видимый bounded plan/tools, dependency execution, checkpoints/resume/coverage, read-only analysis by default.",
+      "acceptance": "Tool injection/loop/budget/deadline/crash/cancel, partial search, stale inputs, no arbitrary exec/SQL/path/URL. Явно отделить настоящие calls от mock/dev и B быстрых операций.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-39",
+      "title": "Проверять grounded аналитические объяснения",
+      "depends_on": [
+        "WIN-29",
+        "WIN-34",
+        "WIN-38"
+      ],
+      "release": "D3",
+      "status": "proposed_not_implemented",
+      "deliverable": "Claim graph: reported/calculated/interpretation/scenario/forecast, cited support, coverage and unresolved why.",
+      "acceptance": "Неверная предпосылка, unsupported causality, число/версия/единица не из inputs, omission/counter-evidence; текст не создаёт admission и не прячет неисполненные требования.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-40",
+      "title": "Создать local model registry и hardware policy",
+      "depends_on": [
+        "WIN-03",
+        "WIN-06",
+        "WIN-07"
+      ],
+      "release": "D3",
+      "status": "proposed_not_implemented",
+      "deliverable": "Pinned Qwen/Ollama initial adapter, optional llama.cpp/embeddings/reranker, model licenses/SHA/template/context, LocalOnlyPolicy.",
+      "acceptance": "No cloud/env fallback; active-network/hostile-config/foreign-endpoint test, owned loopback process policy; no executable model code, explicit downloads/import/resume; RAM/VRAM/CPU profiling, known tasks parity. Модель не обязательна для базового чтения/расчётов.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-41",
+      "title": "Добавить повторяемые workflows и локальную обратную связь",
+      "depends_on": [
+        "WIN-19",
+        "WIN-38",
+        "WIN-39"
+      ],
+      "release": "D3",
+      "status": "proposed_not_implemented",
+      "deliverable": "Шаблоны исследования, approved-folder intake с явным выбором, сохранённые настройки/правки без скрытого обучения.",
+      "acceptance": "Только выбранная папка, duplicate idempotency, document change invalidation, остановка наблюдения; feedback не становится новым verified Fact в другом документе.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-42",
+      "title": "Сделать переносимые аналитические экспорты",
+      "depends_on": [
+        "WIN-18",
+        "WIN-36",
+        "WIN-39"
+      ],
+      "release": "D3",
+      "status": "proposed_not_implemented",
+      "deliverable": "CSV/XLSX/Markdown и собственный PDF анализа с inputs/provenance/versions/limitations, без первичных чужих страниц.",
+      "acceptance": "Formula injection, округление/locale, источники/единицы/периоды, redaction; экспорт не требует Excel и не копирует PDF/полный текст без прав.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-43",
+      "title": "Добавить бюджет и план/факт",
+      "depends_on": [
+        "WIN-28",
+        "WIN-31",
+        "WIN-36"
+      ],
+      "release": "D4",
+      "status": "proposed_not_implemented",
+      "deliverable": "Versions budgets, actual mapping, categories/projects, variance explanation and approval-independent local editing.",
+      "acceptance": "План не Fact, перенос статьи/периода версионирован, totals сходятся; неподдержанная классификация требует выбора, скрытая подгонка запрещена.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-44",
+      "title": "Собрать платёжный календарь и cash projection",
+      "depends_on": [
+        "WIN-23",
+        "WIN-26",
+        "WIN-27",
+        "WIN-43"
+      ],
+      "release": "D4",
+      "status": "proposed_not_implemented",
+      "deliverable": "Known obligations/expected collections, overdue, opening cash, user timing assumptions и scenario deficit.",
+      "acceptance": "Dates/working calendar/partial payments/double counting/conditional amounts; expected inflow не guaranteed. Нет переводов/торговли и невыраженного FX.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-45",
+      "title": "Реализовать driver what-if и сценарные три формы",
+      "depends_on": [
+        "WIN-29",
+        "WIN-30",
+        "WIN-43",
+        "WIN-44"
+      ],
+      "release": "D4",
+      "status": "proposed_not_implemented",
+      "deliverable": "Volume/price/cost/tax/working-capital/debt drivers, base/upside/downside, sensitivity and assumption provenance.",
+      "acceptance": "Сценарный баланс и cash bridges, negative cases/constraints, immutable versions; predicted не reported Fact, Qwen не подставляет неизвестные drivers.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-46",
+      "title": "Проверять пригодность временных рядов и vintages",
+      "depends_on": [
+        "WIN-18",
+        "WIN-35",
+        "WIN-43"
+      ],
+      "release": "D5",
+      "status": "proposed_not_implemented",
+      "deliverable": "Unique regular periods, definitions/perimeter/currency, revisions/as_of/publication и target actual vintage заранее, series inventory/readiness report.",
+      "acceptance": "Сравнительные ячейки не новые периоды; unknown publication блокирует historical claims; нынешний snapshot forecast отдельно. Нет универсального magic minimum samples.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-47",
+      "title": "Ввести статистические baseline и backtesting",
+      "depends_on": [
+        "WIN-46"
+      ],
+      "release": "D5",
+      "status": "proposed_not_implemented",
+      "deliverable": "Naive/seasonal/ETS/ARIMA candidate pipeline, rolling origin + locked temporal holdout, independent metrics/report.",
+      "acceptance": "No future leakage in preprocessing/HPO/covariates, MAE/bias/MASE when defined, coverage/width/horizon, regime breaks/zero/negative data. Неуспех baseline comparison сохраняется.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-48",
+      "title": "Показать прогнозы, интервалы и историю ошибок",
+      "depends_on": [
+        "WIN-36",
+        "WIN-47"
+      ],
+      "release": "D5",
+      "status": "proposed_not_implemented",
+      "deliverable": "ForecastVintage/model+data hashes/as_of/horizon/assumptions, interval charts and matured actual comparison.",
+      "acceptance": "Forecast/plan/scenario/consensus раздельны, no point-only confidence, stale/revised actuals handled; Qwen объясняет код. Непригодный ряд не получает вымышленную кривую.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-49",
+      "title": "Исследовать foundation time-series models опционально",
+      "depends_on": [
+        "WIN-47",
+        "WIN-48"
+      ],
+      "release": "RND",
+      "status": "proposed_not_implemented",
+      "deliverable": "Отдельный feature-flag benchmark лицензированных local weights против baseline на неизменном holdout.",
+      "acceptance": "Выбор на dev/validation, locked test не для подбора; лицензия конкретных checkpoint/quantization/deps, Windows/RAM/latency; TimesFM3 non-production weights не включать в production. Нет улучшения — не включать, не задерживать V1.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-50",
+      "title": "Завершить threat model и hardening",
+      "depends_on": [
+        "WIN-10",
+        "WIN-11",
+        "WIN-18",
+        "WIN-38"
+      ],
+      "release": "CROSS",
+      "status": "proposed_not_implemented",
+      "deliverable": "Модель угроз, изоляция parsing/model workers, broker/allowlists/limits, dependency vulnerability process; baseline с11.",
+      "acceptance": "Malicious PDF/DOCX/zip/path/reparse point, prompt injection, cross-vault access, no arbitrary exec, parser crash/DoS; Job Objects не называются полным sandbox.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-51",
+      "title": "Добавить защиту данных и переносимый recovery",
+      "depends_on": [
+        "WIN-07",
+        "WIN-50"
+      ],
+      "release": "CROSS",
+      "status": "proposed_not_implemented",
+      "deliverable": "Проверенное encryption/key storage/DPAPI policy, secrets/log redaction, encrypted portable backup/recovery.",
+      "acceptance": "Restore на другом разрешённом устройстве, forgotten key story, damaged backup, no plaintext sensitive logs; DPAPI сам по себе не encrypted SQLite.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-52",
+      "title": "Измерить performance и ресурсные профили",
+      "depends_on": [
+        "WIN-06",
+        "WIN-15",
+        "WIN-36",
+        "WIN-40"
+      ],
+      "release": "CROSS",
+      "status": "proposed_not_implemented",
+      "deliverable": "Cold/warm start/import/OCR/search/AI, peak RAM/VRAM/disk, cache invalidation, queue priorities and lazy pages.",
+      "acceptance": "8/16/32GB tiers проверяются, OOM graceful, UI responsive/cancel, no runaway cache, model file size не RAM requirement. Цели утверждаются после baseline.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-53",
+      "title": "Автоматизировать native UIA и доступность",
+      "depends_on": [
+        "WIN-08",
+        "WIN-09",
+        "WIN-36"
+      ],
+      "release": "CROSS",
+      "status": "proposed_not_implemented",
+      "deliverable": "Accessibility identifiers, keyboard/Narrator/high contrast/DPI, component/UIA regression and actual user paths.",
+      "acceptance": "Long RU/large numbers/multiple monitors/focus/error/cancel, источники text alternative. Старые18AppTest не записываются как native tests; checks вводятся с8.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-54",
+      "title": "Настроить license/SBOM/signing/update pipeline",
+      "depends_on": [
+        "WIN-02",
+        "WIN-03",
+        "WIN-50"
+      ],
+      "release": "CROSS",
+      "status": "proposed_not_implemented",
+      "deliverable": "Собственная лицензия по решению пользователя, per-module/weights inventory, trusted signing channel и signed staged updates.",
+      "acceptance": "Code vs weights/PDF/GPU licenses, no unsigned substitution/old vulnerable rollback, signature/hash/version, cert availability реальные. SmartScreen не обходится; ранний inventory с1.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-55",
+      "title": "Проверить полную поставку на чистых Windows",
+      "depends_on": [
+        "WIN-10",
+        "WIN-51",
+        "WIN-52",
+        "WIN-53",
+        "WIN-54"
+      ],
+      "release": "CROSS",
+      "status": "proposed_not_implemented",
+      "deliverable": "VM matrix install/import/basic/offline/model-pack/update/migration/rollback/backup/uninstall, artifacts/receipts.",
+      "acceptance": "Pinned supported Windows build/arch/security lifecycle, no Python/admin/CLI/Ollama manual setup, Unicode paths/low disk/proxy/offline/interrupted update/Mark-of-the-Web; snapshot restore после schema migration, no writes before health check. User data retained by default; no orphan processes.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-56",
+      "title": "Создать новый eval corpus и независимые эталоны",
+      "depends_on": [
+        "WIN-00",
+        "WIN-11"
+      ],
+      "release": "CROSS",
+      "status": "proposed_not_implemented",
+      "deliverable": "Начать с14/18 и расширять с каждым pack: rights-cleared diverse docs, hand-labelled context/cell/claims, grouped/temporal split.",
+      "acceptance": "Known dev vs locked holdout, raw failures/denominators/family provenance, independent numeric references вне runtime. Старые freeze14/gold/QA не переписываются; не ждать всех функций для начала eval.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-57",
+      "title": "Провести будущий usability pilot",
+      "depends_on": [
+        "WIN-36",
+        "WIN-39",
+        "WIN-53",
+        "WIN-55"
+      ],
+      "release": "V1",
+      "status": "proposed_not_implemented",
+      "deliverable": "Добровольцы разного опыта выполняют реальные novice tasks, наблюдения/task metrics/confusion/fixes.",
+      "acceptance": "Согласованное использование собственных/разрешённых данных, честные n/время/ошибки, реальные действия; не приписывать интервью или вклад формальным ролям. Нет требования чужой формальной приёмки.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-58",
+      "title": "Подготовить scoped public beta и поддержку",
+      "depends_on": [
+        "WIN-42",
+        "WIN-54",
+        "WIN-55",
+        "WIN-56",
+        "WIN-57"
+      ],
+      "release": "V1",
+      "status": "proposed_not_implemented",
+      "deliverable": "Подписанный installer, собственный demo project, onboarding/help/capabilities/limitations/privacy/support/preview diagnostics.",
+      "acceptance": "Только прошедшие packs/hardware/Windows объявлены supported; no secret telemetry; PDF/model redistribution licenses проверены. Документация продукта, не отменённый академический отчёт18.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-59",
+      "title": "Выпустить устойчивую V1 в измеренном scope",
+      "depends_on": [
+        "WIN-58"
+      ],
+      "release": "V1",
+      "status": "proposed_not_implemented",
+      "deliverable": "Release checklist/artifacts/hashes/changelog/source licenses/update/recovery, перечень supported и unsupported.",
+      "acceptance": "Матрица обязательных сценариев/финансовых gates/security/UX/cleanVM пройдена, no invented unseen quality. D5/RND не блокируют V1, если явно исключены из выпуска.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    },
+    {
+      "id": "WIN-60",
+      "title": "Поддерживать адаптеры и планировать дальнейшее расширение",
+      "depends_on": [
+        "WIN-59"
+      ],
+      "release": "MAINTENANCE",
+      "status": "proposed_not_implemented",
+      "deliverable": "Regression новых форм/моделей/нормативов, security updates, новые domain/language packs и structured-source connectors по правам.",
+      "acceptance": "Не ломать user vault/старые receipts; каждое расширение version+tests+PR. Future cloud seam выключен до отдельного задания; никакого автоматического scraping/trading.",
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+    }
+  ]
+}

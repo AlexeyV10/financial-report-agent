@@ -1,0 +1,28 @@
+{
+  "stage": "windows-research-plan",
+  "request": "deep_research_and_maximally_complete_implementation_plan",
+  "preferences": {
+    "scope": "any_financial_documents_via_explicit_packs",
+    "ai": "local_existing_Qwen_initially_no_cloud",
+    "platform": "installed_Windows_app_not_localhost_UI",
+    "academic_report_slides": "not_requested_now"
+  },
+  "methods": [
+    "review actual repository/status/workflow/plan and final17 receipts",
+    "read primary official product/framework/standards/model-license docs and original papers",
+    "parallel market/finance/Windows analysis with read-only cross-review",
+    "map product needs to typed packs, admission boundaries, architecture and staged backlog",
+    "independent preservation/task DAG/link/source-catalog validation"
+  ],
+  "research_limits": [
+    "not exhaustive inventory of every product worldwide",
+    "no paid vendor trials or accuracy/performance ranking",
+    "no confirmed clients/interviews/deployments",
+    "price/region/payment/signing entitlement not verified",
+    "official full RAS normative text fetch failed; not declared read",
+    "no new own financial or model benchmark; previous results unchanged",
+    "roadmap estimates illustrative, calendar revisited after spikes"
+  ],
+  "primary_material_policy": "Only own notes/minimal metadata. No third-party full webpages, PDFs/pages/text/indexes or weights added.",
+  "next": "WIN-01 prompt prepared; not executed"
+}
