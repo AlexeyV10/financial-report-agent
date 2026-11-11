@@ -69,6 +69,11 @@
       "stage": "measurement receipt read",
       "result": "First attempt to read packaged Qt ui.json failed because startup had produced no UI receipt.",
       "resolution": "Read real stderr and recorded DLL failure; no fabricated build-success result."
+    },
+    {
+      "stage": "Git publication receipt",
+      "result": "PR20 and tag were published; first receipt attempt failed reading UTF-8 allowlist with implicit Windows cp1251, UnicodeDecodeError byte0x98.",
+      "resolution": "Delivery helper now reads UTF-8 explicitly; failure occurred before receipt mutation or commit. Retry verifies the same published stage and PR."
     }
   ]
 }
