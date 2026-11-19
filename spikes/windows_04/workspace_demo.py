@@ -18,13 +18,10 @@ def bootstrap(install_root):
             and Path(sys.prefix).resolve() == install / 'runtime')
 
 
-def execute(args):
-    from financial_assistant.application_paths import ApplicationPaths, WorkspaceContext
+def calculate_workspace_demo(paths, workspace, run_id):
     from adapter import DemoAdapter
     from renderer import PdfiumRenderer
 
-    paths = ApplicationPaths(args.install_root, args.app_data)
-    workspace = WorkspaceContext.open(paths, args.vault)
     source = workspace.resolve_resource(SOURCE_ID)
     for name in ('catalog.json', 'dictionary.json', 'admission.json'):
         paths.asset('app/assets/demo/' + name)
@@ -34,12 +31,12 @@ def execute(args):
     if adapter.manifest['sha256'] != SOURCE_SHA:
         raise ValueError('Unexpected fixture identity')
     adapter.pdf = source
-    result = adapter.run(args.run_id)
+    result = adapter.run(run_id)
     frame = PdfiumRenderer().render(adapter, 1, 0, 1)
-    receipt = {
+    return {
         'schema': 'win04-workspace-demo-1',
         'workspace_id': workspace.workspace_id,
-        'run_id': args.run_id,
+        'run_id': run_id,
         'source_id': SOURCE_ID,
         'source_sha256': frame['sha256'],
         'source_page': frame['page'],
@@ -49,6 +46,14 @@ def execute(args):
         'financial_status': result['financial_status'],
         'model_calls': 0,
     }
+
+
+def execute(args):
+    from financial_assistant.application_paths import ApplicationPaths, WorkspaceContext
+
+    paths = ApplicationPaths(args.install_root, args.app_data)
+    workspace = WorkspaceContext.open(paths, args.vault)
+    receipt = calculate_workspace_demo(paths, workspace, args.run_id)
     workspace.write_receipt(args.run_id, receipt)
     return receipt
 
