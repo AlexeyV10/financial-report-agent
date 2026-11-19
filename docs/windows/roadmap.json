@@ -132,10 +132,13 @@
         "WIN-05"
       ],
       "release": "D0",
-      "status": "proposed_not_implemented",
+      "status": "owned_windows_job_supervisor_validated",
       "deliverable": "Job states/progress/cancel/deadline/retry/resume, event log, process ownership, one-heavy-job queue.",
       "acceptance": "Повторный клик идемпотентен; late results не применяются; cancel/crash/reopen без поддельного completed, orphan worker и повреждённого vault.",
-      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction",
+      "report": "docs/windows/job_supervisor.md",
+      "evidence": "evaluation/windows_06_2026-11-19/supervision.json",
+      "continuation": "prompts/windows_07_vault_storage.md"
     },
     {
       "id": "WIN-07",

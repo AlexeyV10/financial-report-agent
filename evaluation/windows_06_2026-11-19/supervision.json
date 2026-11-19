@@ -1,0 +1,119 @@
+{
+  "schema": "win06-windows-supervision-proof-1",
+  "cancel": {
+    "error": "worker_cancelled",
+    "both_processes_confirmed_stopped": true,
+    "premature_reply_discarded": true
+  },
+  "deadline": {
+    "error": "worker_timeout",
+    "both_processes_confirmed_stopped": true,
+    "premature_reply_discarded": true
+  },
+  "crash": {
+    "controller_killed": true,
+    "both_processes_confirmed_stopped": true,
+    "reopen_state": "interrupted",
+    "financial_result_recovered": false
+  },
+  "installed_cli": {
+    "display": "15.00",
+    "source_sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+    "source_page": 1,
+    "idempotent_cli_restart": true,
+    "install_files_unchanged": 272,
+    "event_count": 6,
+    "model_calls": 0
+  },
+  "unrelated_control_stayed_alive": true,
+  "focused_tests": {
+    "schema": "win06-focused-tests-1",
+    "worktree_base": "488200f",
+    "tested_files": {
+      "spikes/windows_06/test_job_supervisor.py": "7fb09051b2462c8f0d8c87ca5722b1cdb4bbe3c9def7a4cc9ed99d44aad5fba7",
+      "src/financial_assistant/job_supervisor.py": "5f4b180841f529f5604c5c2a518481fb70e59da19e0ec7e717472d654181cb0c",
+      "src/financial_assistant/application_paths.py": "ba466347f22938f75b718acfcba2feb49ff99f8795ee8783de88a82dd6290cd3",
+      "src/financial_assistant/typed_ipc.py": "9f52ce79dfa73ef2796fea67b00cd73c7feb3d8d6746b2bb31ea7e94ccacf6bd"
+    },
+    "results": {
+      "msys2": {
+        "runtime": "Python 3.14.7",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "-I",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "spikes/windows_06",
+          "-p",
+          "test_job_supervisor.py",
+          "-v"
+        ],
+        "ran": 10,
+        "passed": 10,
+        "skipped": 0,
+        "seconds": 1.113,
+        "returncode": 0,
+        "raw_private_log": "jobs-unittest-msys2.log",
+        "failed_or_errored": 0
+      },
+      "stock": {
+        "runtime": "Python 3.14.10",
+        "command": [
+          "../windows-03-worktree/tmp/runtime-a/runtime/python.exe",
+          "-X",
+          "utf8",
+          "-I",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "spikes/windows_06",
+          "-p",
+          "test_job_supervisor.py",
+          "-v"
+        ],
+        "ran": 10,
+        "passed": 10,
+        "skipped": 0,
+        "seconds": 1.1,
+        "returncode": 0,
+        "raw_private_log": "jobs-unittest-stock.log",
+        "failed_or_errored": 0
+      }
+    },
+    "unit_executor": "injected deterministic callbacks",
+    "initial_development_observation": "FIFO journal_write_failed on first paired run; cause unestablished; not repeated in subsequent isolated, paired or traced runs",
+    "traced_fifo_repeat": {
+      "msys2_passed": 4,
+      "stock_passed": 4,
+      "observed_journal_os_errors": 0
+    },
+    "models_started": false
+  },
+  "prior_service_workflow": {
+    "native_and_cli": "passed",
+    "own_fixture": "15.00",
+    "ipc_unittest": "12/12"
+  },
+  "scope": "Win32 process ownership and installed supervised CLI using a fictional fixture; one active job per supervisor",
+  "status": "owned_windows_job_supervisor_validated",
+  "date": "2026-11-19",
+  "base": "488200f5b461336ce7760485603f2d1b5e548bda",
+  "next": "prompts/windows_07_vault_storage.md",
+  "frozen_pins": [
+    {
+      "manifest": "evaluation/protocols/kp3_eval_v1/freeze-manifest.json",
+      "matching": 134
+    },
+    {
+      "manifest": "data/releases/kp3_rc1/manifest.json",
+      "matching": 329
+    }
+  ]
+}

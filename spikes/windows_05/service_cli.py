@@ -14,6 +14,7 @@ def startup_args():
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument('--run-id')
     mode.add_argument('--worker', action='store_true')
+    parser.add_argument('--supervised', action='store_true')
     return parser.parse_args()
 
 
@@ -25,6 +26,8 @@ def print_final(response, *, success):
 
 def main():
     args = startup_args()
+    if args.worker and args.supervised:
+        return 4
     if (not args.install_root.is_absolute() or args.install_root.drive.startswith('\\\\')
             or not sys.flags.isolated or not sys.flags.no_user_site):
         return 4
@@ -50,12 +53,18 @@ def main():
             sys.stdout.buffer.flush()
             return 0
 
-        _, context_id = service.context()
+        workspace, context_id = service.context()
         request = make_request(context_id, args.run_id)
         worker_argv = [str(root / 'runtime/python.exe'), '-I', '-B', '-X', 'utf8', str(script),
                        '--install-root', str(paths.install_root), '--app-data', str(paths.app_data_root),
                        '--vault', str(args.vault), '--worker']
-        response = service.persist(request, exchange(worker_argv, request, cwd=root))
+        if args.supervised:
+            sys.path.append(str(app / 'spikes/windows_06'))
+            from supervised_service import run_supervised
+
+            response = run_supervised(service, workspace.vault_root, worker_argv, request, cwd=root)
+        else:
+            response = service.persist(request, exchange(worker_argv, request, cwd=root))
     except TypedIpcError as error:
         if args.worker or request is None:
             return 4

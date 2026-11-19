@@ -5,7 +5,7 @@ import os
 from queue import Empty, Queue
 import re
 import subprocess
-from threading import Thread, TIMEOUT_MAX
+from threading import Event, Thread, TIMEOUT_MAX
 from time import monotonic
 
 
@@ -194,46 +194,88 @@ def _worker_options(argv, cwd, timeout):
     return argv, cwd
 
 
-def exchange(argv, request: dict, *, cwd, timeout=10.0) -> dict:
-    """Run trusted launcher argv with bounded pipes. Requests never supply argv or cwd."""
+def _remaining(deadline, cancel_event):
+    if cancel_event is not None and cancel_event.is_set():
+        raise TypedIpcError("worker_cancelled")
+    remaining = deadline - monotonic()
+    if remaining <= 0:
+        raise TypedIpcError("worker_timeout")
+    return remaining
+
+
+def _close_tree(job):
+    try:
+        job.close()
+    except OSError:
+        raise TypedIpcError("worker_tree_cleanup_failed") from None
+
+
+def exchange(argv, request: dict, *, cwd, timeout=10.0, cancel_event=None, own_tree=False) -> dict:
+    """Run trusted launcher argv with bounded pipes and optional Windows tree ownership.
+
+    A worker using tree ownership must wait for stdin before starting any work or
+    spawning descendants. Requests never supply argv, cwd or ownership options.
+    """
     data = encode_request(request)
     request = decode_request(data)
     argv, cwd = _worker_options(argv, cwd, timeout)
+    if type(own_tree) is not bool or (cancel_event is not None and not isinstance(cancel_event, Event)):
+        raise TypedIpcError("invalid_worker_options")
     deadline = monotonic() + timeout
+    job = None
+    worker = None
     try:
-        worker = subprocess.Popen(argv, cwd=cwd, shell=False, close_fds=True, bufsize=0,
-                                  stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
-                                  creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
-    except (OSError, ValueError):
-        raise TypedIpcError("worker_start_failed") from None
+        _remaining(deadline, cancel_event)
+        if own_tree:
+            try:
+                from .windows_job import WindowsJob
 
-    messages = Queue()
-    tasks = (("stdout", worker.stdout, _read_limited, MAX_RESPONSE_BYTES, "response_too_large"),
-             ("stderr", worker.stderr, _read_limited, MAX_STDERR_BYTES, "stderr_too_large"),
-             ("stdin", worker.stdin, _write_request, data))
-    outputs = {}
-    try:
+                job = WindowsJob()
+            except (ImportError, OSError):
+                raise TypedIpcError("worker_tree_unavailable") from None
+        try:
+            worker = subprocess.Popen(argv, cwd=cwd, shell=False, close_fds=True, bufsize=0,
+                                      stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                      creationflags=subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0)
+        except (OSError, ValueError):
+            raise TypedIpcError("worker_start_failed") from None
+        if job is not None:
+            try:
+                job.attach(worker)
+            except OSError:
+                raise TypedIpcError("worker_tree_attach_failed") from None
+        _remaining(deadline, cancel_event)
+
+        messages = Queue()
+        tasks = (("stdout", worker.stdout, _read_limited, MAX_RESPONSE_BYTES, "response_too_large"),
+                 ("stderr", worker.stderr, _read_limited, MAX_STDERR_BYTES, "stderr_too_large"),
+                 ("stdin", worker.stdin, _write_request, data))
+        outputs = {}
         for task in tasks:
             Thread(target=_pipe_task, args=(messages, *task), daemon=True).start()
-        for _ in tasks:
-            remaining = deadline - monotonic()
-            if remaining <= 0:
-                raise TypedIpcError("worker_timeout")
+        while len(outputs) < len(tasks):
+            remaining = _remaining(deadline, cancel_event)
+            if job is not None and worker.poll() is not None:
+                # Descendants can outlive the worker while retaining its pipe handles.
+                _close_tree(job)
+            if cancel_event is not None or job is not None:
+                remaining = min(remaining, 0.05)
             try:
                 name, value = messages.get(timeout=remaining)
             except Empty:
-                raise TypedIpcError("worker_timeout") from None
+                continue
             if isinstance(value, TypedIpcError) and value.code != "worker_io_error":
                 raise value
             outputs[name] = value
 
-        try:
-            remaining = deadline - monotonic()
-            if remaining <= 0:
-                raise TypedIpcError("worker_timeout")
-            exit_code = worker.wait(timeout=remaining)
-        except subprocess.TimeoutExpired:
-            raise TypedIpcError("worker_timeout") from None
+        while True:
+            remaining = _remaining(deadline, cancel_event)
+            try:
+                exit_code = worker.wait(timeout=remaining if cancel_event is None else min(remaining, 0.05))
+                break
+            except subprocess.TimeoutExpired:
+                continue
+        _remaining(deadline, cancel_event)
         if exit_code:
             raise TypedIpcError("worker_exit")
         if any(isinstance(value, TypedIpcError) for value in outputs.values()):
@@ -241,13 +283,18 @@ def exchange(argv, request: dict, *, cwd, timeout=10.0) -> dict:
         return decode_response(outputs["stdout"], request)
     finally:
         try:
-            if worker.poll() is None:
-                worker.kill()
-                worker.wait(timeout=1.0)
-        except (OSError, subprocess.TimeoutExpired):
-            pass
-        for _, stream, *_ in tasks:
-            try:
-                stream.close()
-            except OSError:
-                pass
+            if job is not None:
+                _close_tree(job)
+        finally:
+            if worker is not None:
+                try:
+                    if worker.poll() is None:
+                        worker.kill()
+                        worker.wait(timeout=1.0)
+                except (OSError, subprocess.TimeoutExpired):
+                    pass
+                for stream in (worker.stdin, worker.stdout, worker.stderr):
+                    try:
+                        stream.close()
+                    except OSError:
+                        pass
