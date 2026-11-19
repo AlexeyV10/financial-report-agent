@@ -14,6 +14,7 @@ from .application_paths import WorkspaceContext, WorkspacePathError, _component,
 DB_FILENAME = "vault.sqlite3"
 APPLICATION_ID = int.from_bytes(b"PPVS", "big")
 SCHEMA_VERSION = 1
+CAPTURE_SCHEMA_VERSION = 2
 MAX_CAPTURE_BYTES = 16 * 1024 * 1024
 MAX_TEXT_BYTES = 16 * 1024 * 1024
 MAX_QUERY_BYTES = 4096
@@ -22,6 +23,7 @@ MIN_SQLITE = (3, 44, 0)
 _ID = re.compile(r"[A-Za-z0-9][A-Za-z0-9_.-]{0,127}")
 _SHA = re.compile(r"[a-f0-9]{64}")
 _COUNTS = ("documents", "originals", "versions", "revisions", "fts_rows")
+CAPTURE_FILE_TYPES = ("pdf", "xlsx", "docx", "png", "jpeg", "tiff", "csv", "txt")
 _SCHEMA = {
     "vault_metadata": "CREATE TABLE vault_metadata (workspace_id TEXT PRIMARY KEY NOT NULL) STRICT",
     "documents": "CREATE TABLE documents (document_id TEXT PRIMARY KEY NOT NULL) STRICT",
@@ -41,6 +43,13 @@ _SCHEMA = {
     ),
     "revision_fts": "CREATE VIRTUAL TABLE revision_fts USING fts5(text, tokenize='unicode61')",
 }
+_CAPTURE_TABLE = (
+    "CREATE TABLE captures (sha256 TEXT PRIMARY KEY NOT NULL REFERENCES originals "
+    "CHECK (length(sha256) = 64 AND sha256 NOT GLOB '*[^0-9a-f]*'), "
+    "file_type TEXT NOT NULL CHECK (file_type IN ("
+    + ", ".join(f"'{file_type}'" for file_type in CAPTURE_FILE_TYPES) + "))) STRICT"
+)
+_SCHEMAS = {SCHEMA_VERSION: _SCHEMA, CAPTURE_SCHEMA_VERSION: {**_SCHEMA, "captures": _CAPTURE_TABLE}}
 _FTS_SHADOWS = {"revision_fts_" + suffix for suffix in ("data", "idx", "content", "docsize", "config")}
 _SQLITE_ERRORS = {
     sqlite3.SQLITE_FULL: "storage_full", sqlite3.SQLITE_BUSY: "storage_busy",
@@ -141,7 +150,7 @@ def _check_identity(connection, workspace_id):
     application_id, version = _metadata(connection)
     if application_id != APPLICATION_ID:
         raise VaultStorageError("storage_application_mismatch")
-    if version != SCHEMA_VERSION:
+    if version not in _SCHEMAS:
         raise VaultStorageError("storage_version_mismatch")
     rows = connection.execute("SELECT type, name, sql FROM sqlite_schema")
     definitions, shadows = {}, set()
@@ -154,10 +163,11 @@ def _check_identity(connection, workspace_id):
             shadows.add(name)
         else:
             definitions[name] = definition
-    if definitions != _SCHEMA or shadows != _FTS_SHADOWS:
+    if definitions != _SCHEMAS[version] or shadows != _FTS_SHADOWS:
         raise VaultStorageError("storage_schema_mismatch")
     if connection.execute("SELECT workspace_id FROM vault_metadata LIMIT 2").fetchall() != [(workspace_id,)]:
         raise VaultStorageError("workspace_mismatch")
+    return version
 
 
 def _initialize(connection, workspace_id):
@@ -174,11 +184,25 @@ def _initialize(connection, workspace_id):
 
 def _summary(connection):
     counts = connection.execute(
-        "SELECT (SELECT count(*) FROM documents), (SELECT count(*) FROM originals), "
+        "SELECT (SELECT count(*) FROM documents), (SELECT count(DISTINCT sha256) FROM document_versions), "
         "(SELECT count(*) FROM document_versions), (SELECT count(*) FROM revisions), "
         "(SELECT count(*) FROM revision_fts)"
     ).fetchone()
     return dict(zip(_COUNTS, counts, strict=True))
+
+
+def _ensure_original(connection, digest, data):
+    row = connection.execute("SELECT byte_count, data FROM originals WHERE sha256=?", (digest,)).fetchone()
+    if row is None:
+        connection.execute("INSERT INTO originals VALUES (?, ?, ?)", (digest, len(data), data))
+    elif row != (len(data), data):
+        raise VaultStorageError("storage_integrity_failed")
+
+
+def _checked_original(digest, length, data):
+    if type(data) is not bytes or len(data) != length or _sha(data) != digest:
+        raise VaultStorageError("storage_integrity_failed")
+    return data
 
 
 class VaultStore:
@@ -198,7 +222,9 @@ class VaultStore:
                 if create:
                     _initialize(connection, self.workspace_id)
                 else:
-                    _check_identity(connection, self.workspace_id)
+                    with connection:
+                        connection.execute("BEGIN")
+                        _check_identity(connection, self.workspace_id)
             except BaseException:
                 connection.close()
                 raise
@@ -212,6 +238,51 @@ class VaultStore:
 
     def close(self):
         self._connection.close()
+
+    def capture_original(self, data: bytes, file_type: str) -> dict:
+        """Store the detected file's exact bytes without creating any indexed version."""
+        if type(data) is not bytes or not data:
+            raise VaultStorageError("invalid_capture")
+        if len(data) > MAX_CAPTURE_BYTES:
+            raise VaultStorageError("capture_too_large")
+        if type(file_type) is not str or file_type not in CAPTURE_FILE_TYPES:
+            raise VaultStorageError("invalid_file_type")
+
+        digest = _sha(data)
+        connection = self._connection
+        with _sqlite_errors(), connection:
+            connection.execute("BEGIN IMMEDIATE")
+            if _check_identity(connection, self.workspace_id) == SCHEMA_VERSION:
+                connection.execute(_CAPTURE_TABLE)
+                connection.execute(f"PRAGMA user_version={CAPTURE_SCHEMA_VERSION}")
+            _ensure_original(connection, digest, data)
+            prior = connection.execute("SELECT file_type FROM captures WHERE sha256=?", (digest,)).fetchone()
+            if prior is None:
+                connection.execute("INSERT INTO captures VALUES (?, ?)", (digest, file_type))
+            elif prior[0] not in CAPTURE_FILE_TYPES:
+                raise VaultStorageError("storage_integrity_failed")
+            elif prior[0] != file_type:
+                raise VaultStorageError("capture_type_mismatch")
+        return {"sha256": digest, "byte_count": len(data), "file_type": file_type, "duplicate": prior is not None}
+
+    def get_capture(self, sha256: str) -> dict:
+        digest = _digest(sha256)
+        connection = self._connection
+        with _sqlite_errors(), connection:
+            connection.execute("BEGIN")
+            if _check_identity(connection, self.workspace_id) == SCHEMA_VERSION:
+                raise VaultStorageError("capture_missing")
+            row = connection.execute(
+                "SELECT o.byte_count, o.data, c.file_type FROM captures c "
+                "LEFT JOIN originals o ON o.sha256=c.sha256 WHERE c.sha256=?", (digest,),
+            ).fetchone()
+            if row is None:
+                raise VaultStorageError("capture_missing")
+            length, data, file_type = row
+            if file_type not in CAPTURE_FILE_TYPES or length == 0:
+                raise VaultStorageError("storage_integrity_failed")
+            _checked_original(digest, length, data)
+        return {"sha256": digest, "byte_count": length, "file_type": file_type}
 
     def import_revision(self, document_id: str, data: bytes, *, expected_sha256: str,
                         text: str, extractor: str) -> dict:
@@ -231,11 +302,7 @@ class VaultStore:
         connection = self._connection
         with _sqlite_errors(), connection:
             connection.execute("BEGIN IMMEDIATE")
-            blob = connection.execute("SELECT data FROM originals WHERE sha256=?", (digest,)).fetchone()
-            if blob is None:
-                connection.execute("INSERT INTO originals VALUES (?, ?, ?)", (digest, len(data), data))
-            elif blob[0] != data:
-                raise VaultStorageError("storage_integrity_failed")
+            _ensure_original(connection, digest, data)
 
             connection.execute("INSERT INTO documents VALUES (?) ON CONFLICT(document_id) DO NOTHING", (document_id,))
             version_row = connection.execute(
@@ -275,9 +342,7 @@ class VaultStore:
         if row is None:
             raise VaultStorageError("original_missing")
         length, data = row
-        if len(data) != length or _sha(data) != digest:
-            raise VaultStorageError("storage_integrity_failed")
-        return data
+        return _checked_original(digest, length, data)
 
     def list_versions(self, document_id: str) -> list:
         document_id = _identifier(document_id, "invalid_document_id")
@@ -337,17 +402,25 @@ class VaultStore:
             source.backup(dest, pages=64, progress=progress, sleep=0.025)
 
 
-def _check_contents(connection):
+def _check_contents(connection, version):
     if connection.execute("PRAGMA integrity_check").fetchall() != [("ok",)]:
         raise VaultStorageError("storage_integrity_failed")
     if connection.execute("PRAGMA foreign_key_check").fetchone() is not None:
         raise VaultStorageError("storage_integrity_failed")
     for digest, length, data in connection.execute("SELECT sha256, byte_count, data FROM originals"):
-        if len(data) != length or _sha(data) != digest:
-            raise VaultStorageError("storage_integrity_failed")
+        _checked_original(digest, length, data)
     for digest, text in connection.execute("SELECT text_sha256, text FROM revisions"):
         if _sha(_text_bytes(text, MAX_TEXT_BYTES, "storage_integrity_failed")) != digest:
             raise VaultStorageError("storage_integrity_failed")
+    orphaned = "SELECT 1 FROM originals o LEFT JOIN document_versions v ON v.sha256=o.sha256 WHERE v.id IS NULL"
+    if version == CAPTURE_SCHEMA_VERSION:
+        placeholders = ", ".join("?" for _ in CAPTURE_FILE_TYPES)
+        if connection.execute(
+            "SELECT 1 FROM captures c JOIN originals o ON o.sha256=c.sha256 "
+            f"WHERE o.byte_count=0 OR c.file_type NOT IN ({placeholders}) LIMIT 1", CAPTURE_FILE_TYPES,
+        ).fetchone() is not None:
+            raise VaultStorageError("storage_integrity_failed")
+        orphaned += " AND NOT EXISTS (SELECT 1 FROM captures c WHERE c.sha256=o.sha256)"
     invalid = (
         "SELECT 1 FROM revisions r LEFT JOIN revision_fts f ON f.rowid=r.id WHERE f.rowid IS NULL OR f.text IS NOT r.text LIMIT 1",
         "SELECT 1 FROM revision_fts f LEFT JOIN revisions r ON r.id=f.rowid WHERE r.id IS NULL LIMIT 1",
@@ -355,7 +428,7 @@ def _check_contents(connection):
         "GROUP BY v.id HAVING MIN(r.revision) IS NOT 1 OR MAX(r.revision) <> COUNT(r.id) LIMIT 1",
         "SELECT 1 FROM documents d LEFT JOIN document_versions v ON v.document_id=d.document_id "
         "GROUP BY d.document_id HAVING MIN(v.version) IS NOT 1 OR MAX(v.version) <> COUNT(v.id) LIMIT 1",
-        "SELECT 1 FROM originals o LEFT JOIN document_versions v ON v.sha256=o.sha256 WHERE v.id IS NULL LIMIT 1",
+        orphaned + " LIMIT 1",
     )
     if any(connection.execute(query).fetchone() is not None for query in invalid):
         raise VaultStorageError("storage_integrity_failed")
@@ -369,9 +442,11 @@ def verify_storage_file(path: Path, workspace_id: str) -> dict:
         raise VaultStorageError("storage_missing")
     with _sqlite_errors(), closing(_connect(path, "ro")) as connection, connection:
         connection.execute("BEGIN")
-        _check_identity(connection, workspace_id)
-        _check_contents(connection)
+        version = _check_identity(connection, workspace_id)
+        _check_contents(connection, version)
         counts = _summary(connection)
-    return {"workspace_id": workspace_id, "application_id": APPLICATION_ID, "schema_version": SCHEMA_VERSION,
+        if version == CAPTURE_SCHEMA_VERSION:
+            counts["captures"], = connection.execute("SELECT count(*) FROM captures").fetchone()
+    return {"workspace_id": workspace_id, "application_id": APPLICATION_ID, "schema_version": version,
             "integrity_ok": True, "foreign_keys_ok": True, "original_hashes_ok": True, "fts_consistency_ok": True,
             **counts}

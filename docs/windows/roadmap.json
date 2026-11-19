@@ -218,10 +218,13 @@
         "WIN-07"
       ],
       "release": "D1",
-      "status": "proposed_not_implemented",
+      "status": "local_safe_capture_validated_d1",
       "deliverable": "Определение типа по содержимому, immutable asset/SHA, duplicate handling, quotas, encrypted/corrupted/unsupported states.",
       "acceptance": "Zip-slip/bomb, oversized images/pages, вложенный executable/макрос/JS не исполняется; file/extraction/semantic states различаются. Security controls вводятся здесь, не откладываются до50.",
-      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction",
+      "report": "docs/windows/safe_import.md",
+      "evidence": "evaluation/windows_11_2026-11-19/import.json",
+      "continuation": "prompts/windows_12_office_text_adapters.md"
     },
     {
       "id": "WIN-12",
