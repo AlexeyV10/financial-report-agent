@@ -1,14 +1,16 @@
 """Deterministic tests of the native job supervisor and durable recovery."""
 
 from copy import deepcopy
+import errno
 import hashlib
 import json
+import os
 from pathlib import Path
 import sys
 from tempfile import TemporaryDirectory
 from threading import Event, Lock
 import unittest
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
 
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -66,6 +68,62 @@ class SupervisorTests(unittest.TestCase):
     @staticmethod
     def publish():
         return Mock(side_effect=lambda request, candidate: candidate)
+
+    @unittest.skipUnless(os.name == 'nt', 'Windows destination-file sharing semantics')
+    def test_journal_replaces_after_a_transient_held_destination(self):
+        started, release, first_replace_denied = Event(), Event(), Event()
+        observed = []
+
+        def execute(request, *, cancel_event, timeout, report_progress):
+            started.set()
+            if not release.wait(3):
+                raise RuntimeError('test gate was not released')
+            report_progress(90)
+            return response(request)
+
+        publish = self.publish()
+        with jobs.JobSupervisor(self.journal, execute, publish) as supervisor:
+            try:
+                supervisor.submit(self.request('held-destination'))
+                self.assertTrue(started.wait(3))
+                destination, = self.journal.glob('*.json')
+                replace = Path.replace
+
+                def observe(pending, target):
+                    try:
+                        return replace(pending, target)
+                    except OSError as error:
+                        if target == destination:
+                            observed.append(error.winerror)
+                            first_replace_denied.set()
+                        raise
+
+                with patch.object(Path, 'replace', observe):
+                    with destination.open('rb') as held:
+                        before = held.read()
+                        self.assertEqual(json.loads(before)['state'], 'running')
+                        release.set()
+                        self.assertTrue(first_replace_denied.wait(2))
+                        held.seek(0)
+                        self.assertEqual(held.read(), before)
+                    result = supervisor.wait('held-destination', timeout=3)
+                self.assertIn(observed[0], {5, 32, 33})
+                self.assertEqual(result['state'], 'completed')
+                self.assertEqual([event['kind'] for event in result['events']],
+                                 ['queued', 'running', 'progress', 'committing', 'completed'])
+                self.assertFalse(list(self.journal.glob('*.pending')))
+            finally:
+                release.set()
+        publish.assert_called_once()
+
+    def test_journal_does_not_retry_disk_full(self):
+        with jobs.JobSupervisor(self.journal, Mock(), self.publish()) as supervisor:
+            with patch.object(Path, 'replace', side_effect=OSError(errno.ENOSPC, 'disk full')) as replace:
+                self.assert_code('journal_write_failed', supervisor.submit, self.request('disk-full'))
+            replace.assert_called_once()
+            self.assert_code('unknown_job', supervisor.get, 'disk-full')
+            self.assertFalse(list(self.journal.glob('*.json')))
+            self.assertFalse(list(self.journal.glob('*.pending')))
 
     def test_fifo_runs_only_one_worker_and_reports_progress(self):
         started = Event()

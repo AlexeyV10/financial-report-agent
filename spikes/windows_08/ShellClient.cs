@@ -20,7 +20,7 @@ internal sealed class ShellReply
 
 // The window supplies the selected vault and the search text, never an executable,
 // script, SQL fragment or operation name. Each invocation uses the installed entry point.
-internal sealed class ShellClient : IDisposable
+internal sealed partial class ShellClient : IDisposable
 {
     private const string VaultEntry = @"app\spikes\windows_07\vault_cli.py";
     private const string ServiceEntry = @"app\spikes\windows_05\service_cli.py";
@@ -88,7 +88,7 @@ internal sealed class ShellClient : IDisposable
         catch (Exception) { return ShellReply.Failure("worker_protocol"); }
     }
 
-    private TypedHost.WorkerOutcome Run(string vault, string entry, string command)
+    private TypedHost.WorkerOutcome Run(string vault, string entry, string command, int maxOutput = 65536)
     {
         if (token.IsCancellationRequested) return new TypedHost.WorkerOutcome {Error = "worker_cancelled"};
         string selected;
@@ -110,7 +110,7 @@ internal sealed class ShellClient : IDisposable
         string args = "-I -B -X utf8 " + TypedHost.Quote(script)
             + " --install-root " + TypedHost.Quote(install) + " --app-data " + TypedHost.Quote(appData)
             + " --vault " + TypedHost.Quote(selected) + " " + command;
-        return TypedHost.InvokeFixed(python, args, install, token);
+        return TypedHost.InvokeFixed(python, args, install, token, maxOutput);
     }
 
     private static bool PlainFile(string path)
