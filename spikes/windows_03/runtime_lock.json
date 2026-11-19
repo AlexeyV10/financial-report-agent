@@ -1,0 +1,39 @@
+{
+  "schema": "win03-runtime-lock-1",
+  "platform": "Windows x86-64",
+  "python": "3.14.10",
+  "files": [
+    {
+      "role": "runtime",
+      "file": "python-3.14.10-embed-amd64.zip",
+      "source": "https://www.python.org/ftp/python/3.14.10/python-3.14.10-embed-amd64.zip",
+      "verification": "https://www.python.org/downloads/release/python-31410/",
+      "bytes": 12619664,
+      "sha256": "90905e64a840557d8c1bc4f5b74db3d7ee85e3ffb217611cac1c7813acea4159"
+    },
+    {
+      "role": "sbom",
+      "file": "python-3.14.10-embed-amd64.zip.spdx.json",
+      "source": "https://www.python.org/ftp/python/3.14.10/python-3.14.10-embed-amd64.zip.spdx.json",
+      "verification": "https://www.python.org/downloads/release/python-31410/",
+      "bytes": 15254,
+      "sha256": "d448c78f5fae170303d3b022d61507155e4d30e541c32bff3a4edd2b1e8dbf47"
+    },
+    {
+      "role": "wheel",
+      "file": "pillow-13.0.0-cp314-cp314-win_amd64.whl",
+      "source": "https://files.pythonhosted.org/packages/50/e2/7ad17747517e4c813dca78257d6bb593466f8231baf1384bc98d92745edb/pillow-13.0.0-cp314-cp314-win_amd64.whl",
+      "verification": "https://pypi.org/pypi/pillow/13.0.0/json",
+      "bytes": 7281830,
+      "sha256": "f7cbb7a64e7ec664775195e4f81923bc8a93d9451b963f844e59118f63147a7a"
+    },
+    {
+      "role": "wheel",
+      "file": "pypdfium2-5.15.2-py3-none-win_amd64.whl",
+      "source": "https://files.pythonhosted.org/packages/fe/7f/8aa446529fa14523e5c18f89e823afc95526689f76a75efe68a82a10d850/pypdfium2-5.15.2-py3-none-win_amd64.whl",
+      "verification": "https://pypi.org/pypi/pypdfium2/5.15.2/json",
+      "bytes": 4187589,
+      "sha256": "74d1bace34fb01c660d0b64344d5a4b7d276942b7c6623c88ab59ea21c5acfbd"
+    }
+  ]
+}
