@@ -102,10 +102,13 @@
         "WIN-03"
       ],
       "release": "D0",
-      "status": "proposed_not_implemented",
+      "status": "native_workspace_paths_validated",
       "deliverable": "Readonly assets отдельно от AppData/vault/cache/models/logs; адаптер исторического ROOT/tmp и реестра exact-resources.",
       "acceptance": "Два vault, read-only install, перемещение и source-missing/hash-mismatch; нет Value/OneDrive/Git cwd defaults; исходные v1/заморозки сохраняются.",
-      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction",
+      "report": "docs/windows/application_paths.md",
+      "evidence": "evaluation/windows_04_2026-11-19/workflow.json",
+      "continuation": "prompts/windows_05_typed_service.md"
     },
     {
       "id": "WIN-05",

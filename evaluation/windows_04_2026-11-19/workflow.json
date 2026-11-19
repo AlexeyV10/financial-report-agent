@@ -1,0 +1,154 @@
+{
+  "schema": "win04-workspace-proof-1",
+  "workspace_a": {
+    "schema": "win04-workspace-demo-1",
+    "workspace_id": "workspace-a",
+    "run_id": "shared-run",
+    "source_id": "own-demo-v1",
+    "source_sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+    "source_page": 1,
+    "source_highlight": [
+      300,
+      186,
+      340,
+      210
+    ],
+    "operation": "operating_margin_v1",
+    "display": "15.00",
+    "financial_status": "answered",
+    "model_calls": 0
+  },
+  "workspace_b": {
+    "schema": "win04-workspace-demo-1",
+    "workspace_id": "workspace-b",
+    "run_id": "shared-run",
+    "source_id": "own-demo-v1",
+    "source_sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+    "source_page": 1,
+    "source_highlight": [
+      300,
+      186,
+      340,
+      210
+    ],
+    "operation": "operating_margin_v1",
+    "display": "15.00",
+    "financial_status": "answered",
+    "model_calls": 0
+  },
+  "after_relocation": {
+    "schema": "win04-workspace-demo-1",
+    "workspace_id": "workspace-a",
+    "run_id": "relocated-run",
+    "source_id": "own-demo-v1",
+    "source_sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+    "source_page": 1,
+    "source_highlight": [
+      300,
+      186,
+      340,
+      210
+    ],
+    "operation": "operating_margin_v1",
+    "display": "15.00",
+    "financial_status": "answered",
+    "model_calls": 0
+  },
+  "readonly_install_write_denied": true,
+  "install_files_unchanged": 266,
+  "cwd_files_unchanged": true,
+  "duplicate_run_refused_without_mutation": true,
+  "missing_source": "source_missing",
+  "same_length_changed_source": "source_hash_mismatch",
+  "negative_workflow_preserved_vault_files": true,
+  "isolated_worker": true,
+  "model_calls": 0,
+  "status": "native_workspace_paths_validated",
+  "date": "2026-11-19",
+  "base": "a010fe3c73d8bffc144b48c3ba1f96c28848cede",
+  "runtime": "WIN-03 stock CPython 3.14.10 Windows AMD64",
+  "legacy_wpf_installer_modified": false,
+  "full_gui_integration": false,
+  "pending": "prompts/windows_05_typed_service.md",
+  "focused_unit_tests": {
+    "schema": "win04-focused-tests-1",
+    "worktree_base": "a010fe3",
+    "tested_files": {
+      "spikes/windows_04/test_application_paths.py": "d0845908d4f59c530c5db14b3bfd82255b26f0a7a72e34b6834a1ee6be6bf4df",
+      "src/financial_assistant/application_paths.py": "13137606f90cedfdada7914ce9302b4da41fc562118f49d9db5adc45cff016d0"
+    },
+    "results": {
+      "msys2": {
+        "runtime": "Python 3.14.7",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "-I",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "spikes/windows_04",
+          "-p",
+          "test_application_paths.py",
+          "-v"
+        ],
+        "ran": 10,
+        "passed": 10,
+        "skipped": 0,
+        "failed_or_errored": 0,
+        "seconds": 0.544,
+        "returncode": 0,
+        "reparse_test": "ok",
+        "junction_skip_reason": null,
+        "raw_private_log": "paths-unittest-msys2.log"
+      },
+      "stock": {
+        "runtime": "Python 3.14.10",
+        "command": [
+          "../windows-03-worktree/tmp/runtime-a/runtime/python.exe",
+          "-X",
+          "utf8",
+          "-I",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "spikes/windows_04",
+          "-p",
+          "test_application_paths.py",
+          "-v"
+        ],
+        "ran": 10,
+        "passed": 10,
+        "skipped": 0,
+        "failed_or_errored": 0,
+        "seconds": 0.539,
+        "returncode": 0,
+        "reparse_test": "ok",
+        "junction_skip_reason": null,
+        "raw_private_log": "paths-unittest-stock.log"
+      }
+    },
+    "execution_mode": "reviewed scoped Windows test run",
+    "prior_ordinary_workspace_result": "9 pass; 1 skip due to reparse fixture creation",
+    "models_started": false
+  },
+  "frozen_pins": [
+    {
+      "manifest": "evaluation/protocols/kp3_eval_v1/freeze-manifest.json",
+      "pins": 134,
+      "matching": 134,
+      "bytes_equal_to_base": true
+    },
+    {
+      "manifest": "data/releases/kp3_rc1/manifest.json",
+      "pins": 329,
+      "matching": 329,
+      "bytes_equal_to_base": true
+    }
+  ]
+}
