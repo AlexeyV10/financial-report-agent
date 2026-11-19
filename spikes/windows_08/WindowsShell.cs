@@ -22,7 +22,7 @@ internal sealed class WindowsShell : Window
 
     private sealed class Options
     {
-        internal string Install, AppData, VaultA, VaultB, ProbeImportPath, ProbeExtractPath;
+        internal string Install, AppData, VaultA, VaultB, ProbeImportPath, ProbeExtractPath, ProbePdfIrPath;
         internal bool Probe, ProbeViewer, D0, ProbeD0, ProbeD0Retry;
 
         internal static Options Parse(string[] args)
@@ -31,21 +31,25 @@ internal sealed class WindowsShell : Window
                 || args[2] != "--vault-a" || args[4] != "--vault-b"
                 || (args.Length == 7 && args[6] != "--probe" && args[6] != "--probe-viewer"
                     && args[6] != "--d0" && args[6] != "--probe-d0" && args[6] != "--probe-d0-retry")
-                || (args.Length == 8 && args[6] != "--probe-import" && args[6] != "--probe-extract"))
+                || (args.Length == 8 && args[6] != "--probe-import" && args[6] != "--probe-extract"
+                    && args[6] != "--probe-pdf-ir"))
                 throw new ArgumentException("startup_arguments");
             string mode = args.Length > 6 ? args[6] : null;
             bool retry = mode == "--probe-d0-retry";
             bool d0Probe = mode == "--probe-d0" || retry;
             bool importProbe = mode == "--probe-import";
             bool extractProbe = mode == "--probe-extract";
-            if (importProbe || extractProbe) TypedHost.LocalPath(args[7]);
+            bool pdfProbe = mode == "--probe-pdf-ir";
+            if (importProbe || extractProbe || pdfProbe) TypedHost.LocalPath(args[7]);
             var options = new Options {
                 Install = TypedHost.LocalPath(AppDomain.CurrentDomain.BaseDirectory), AppData = TypedHost.LocalPath(args[1]),
                 VaultA = TypedHost.LocalPath(args[3]), VaultB = TypedHost.LocalPath(args[5]),
                 Probe = mode != null && mode != "--d0", ProbeViewer = mode == "--probe-viewer",
-                D0 = mode == "--d0" || d0Probe || importProbe || extractProbe, ProbeD0 = d0Probe, ProbeD0Retry = retry,
+                D0 = mode == "--d0" || d0Probe || importProbe || extractProbe || pdfProbe,
+                ProbeD0 = d0Probe, ProbeD0Retry = retry,
                 ProbeImportPath = importProbe ? args[7] : null,
-                ProbeExtractPath = extractProbe ? args[7] : null
+                ProbeExtractPath = extractProbe ? args[7] : null,
+                ProbePdfIrPath = pdfProbe ? args[7] : null
             };
             string[] roots = {options.Install, options.AppData, options.VaultA, options.VaultB};
             for (int left = 0; left < roots.Length; left++)
@@ -352,7 +356,7 @@ internal sealed class WindowsShell : Window
             if (options.Probe && !probeStarted)
             {
                 probeStarted = true;
-                Action probe = options.ProbeExtractPath != null ? new Action(ProbeExtract)
+                Action probe = options.ProbeExtractPath != null || options.ProbePdfIrPath != null ? new Action(ProbeExtract)
                     : options.ProbeImportPath != null ? new Action(ProbeImport)
                     : options.ProbeD0 ? new Action(ProbeD0) : new Action(Probe);
                 Dispatcher.BeginInvoke(DispatcherPriority.ApplicationIdle, probe);
@@ -717,8 +721,9 @@ internal sealed class WindowsShell : Window
         if (reply.Completed)
         {
             SetImportLabel(importExtractionState, "Извлечение: завершено.");
+            string extractedKind = asset.FileType == "pdf" ? "Цифровой PDF · " : "";
             SetImportLabel(extractionSummary, String.Format(CultureInfo.CurrentCulture,
-                "Таблицы: {0} · Текстовые блоки: {1}", reply.TableCount, reply.ParagraphCount));
+                "{0}Таблицы: {1} · Текстовые блоки: {2}", extractedKind, reply.TableCount, reply.ParagraphCount));
             if (reply.Preview.Length > 0)
             {
                 extractionPreview.Text = String.Join(Environment.NewLine, reply.Preview);
@@ -726,6 +731,11 @@ internal sealed class WindowsShell : Window
                 if (page == Page.Documents) FocusWhenReady(extractionPreview);
             }
             SetStatus(reply.Status == "reused" ? "Показано ранее извлечённое содержимое." : "Содержимое извлечено.");
+        }
+        else if (reply.RequiresOcr)
+        {
+            SetImportLabel(importExtractionState, "Извлечение: требуется распознавание текста (OCR).");
+            SetStatus("PDF сохранён. Для извлечения требуется распознавание текста (OCR).");
         }
         else
         {
@@ -1005,8 +1015,12 @@ internal sealed class WindowsShell : Window
 
     private async void ProbeExtract()
     {
-        const string firstCellLocator = "CSV · строка 1 · столбец 1: ";
+        bool pdf = options.ProbePdfIrPath != null;
+        string fileType = pdf ? "pdf" : "csv";
+        string firstLocator = pdf ? "PDF · страница 1 · " : "CSV · строка 1 · столбец 1: ";
+        string fixture = pdf ? options.ProbePdfIrPath : options.ProbeExtractPath;
         var receipt = new ExtractProbeReceipt {incomplete_step = "open_workspace"};
+        if (pdf) receipt.schema = "win13-pdf-ir-probe-1";
         int exit = 0;
         try
         {
@@ -1018,29 +1032,32 @@ internal sealed class WindowsShell : Window
             Expect(!extractContents.IsEnabled && !extractionPreview.IsVisible);
 
             receipt.incomplete_step = "capture_file";
-            BeginCapture(options.ProbeExtractPath);
+            BeginCapture(fixture);
             await operation;
             ImportReply asset = lastImportReply;
-            Expect(asset != null && asset.Status == "captured" && asset.FileType == "csv" && extractContents.IsEnabled);
+            Expect(asset != null && asset.Status == "captured" && asset.FileType == fileType && extractContents.IsEnabled);
             receipt.captured_status = asset.Status;
             receipt.asset_sha256 = asset.AssetSha256;
             receipt.file_type = asset.FileType;
 
-            receipt.incomplete_step = "extract_csv";
+            receipt.incomplete_step = "extract_" + fileType;
             extractContents.ProbeClick();
             await operation;
             ExtractReply extracted = lastExtractReply;
-            Expect(extracted != null && extracted.Status == "extracted" && extracted.TableCount == 1
-                && extracted.ParagraphCount == 0 && extracted.ExtractionState == "extracted"
+            Expect(extracted != null && extracted.Status == "extracted"
+                && (pdf ? extracted.TableCount > 0 && extracted.ParagraphCount > 0
+                    : extracted.TableCount == 1 && extracted.ParagraphCount == 0)
+                && extracted.ExtractionState == "extracted"
                 && extracted.SemanticState == "not_reviewed" && hasStoredDocuments == searchableBefore);
             receipt.extraction_status = extracted.Status;
             receipt.table_count = extracted.TableCount;
             receipt.paragraph_count = extracted.ParagraphCount;
             receipt.semantic_state = extracted.SemanticState;
 
-            receipt.incomplete_step = "preview_csv";
+            receipt.incomplete_step = "preview_" + fileType;
             Expect(extractionPreview.IsVisible && extractionPreview.IsReadOnly
-                && extractionPreview.Text.StartsWith(firstCellLocator, StringComparison.Ordinal)
+                && extractionPreview.Text.StartsWith(firstLocator, StringComparison.Ordinal)
+                && (!pdf || extractionSummary.Text.StartsWith("Цифровой PDF · ", StringComparison.Ordinal))
                 && importSemanticState.Text == "Содержательная проверка: не выполнена.");
             receipt.locator_verified = true;
 
@@ -1081,7 +1098,7 @@ internal sealed class WindowsShell : Window
             }
         }
         if (closing) return;
-        try { SaveProbe("win12-extract-probe.json", receipt); }
+        try { SaveProbe(pdf ? "win13-pdf-ir-probe.json" : "win12-extract-probe.json", receipt); }
         catch (Exception) { exit = 5; }
         ScheduleShutdown(exit);
     }

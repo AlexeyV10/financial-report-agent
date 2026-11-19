@@ -1,0 +1,139 @@
+{
+  "schema": "win13-digital-pdf-proof-1",
+  "native": {
+    "asset_sha256": "b2c791cadfe385fd67b5e546392280c451eab80e40774385cc9f213c5d41983a",
+    "captured_status": "captured",
+    "extraction_status": "extracted",
+    "failure_error": null,
+    "failure_status": null,
+    "file_type": "pdf",
+    "incomplete_step": null,
+    "locator_verified": true,
+    "ok": true,
+    "paragraph_count": 12,
+    "reused_status": "reused",
+    "same_preview": true,
+    "schema": "win13-pdf-ir-probe-1",
+    "scope_cleared": true,
+    "semantic_state": "not_reviewed",
+    "table_count": 1
+  },
+  "digital": {
+    "pages": 2,
+    "tables": 1,
+    "cells_with_exact_source": 8,
+    "printed_pages": [
+      "7",
+      "8"
+    ],
+    "pdf_page_labels": [
+      "Statement-A",
+      "Statement-B"
+    ],
+    "continuation_basis": "repeated_context",
+    "negative_lexeme": "-4",
+    "merged_header_candidates": 0,
+    "parser": {
+      "binding": "pypdfium2",
+      "binding_version": "5.15.2",
+      "name": "PDFium",
+      "sha256": "e9ff9b9f3f60c4b47ec293d4012129888a4412c94541b29e4cf4fa42ca77ea4c",
+      "version": "159.0.8149.0@sourcebuild-toolchained"
+    },
+    "fingerprints_verified": true
+  },
+  "extras": {
+    "missing": {
+      "asset_sha256": "8a3f2bb2fcf09b13ee40b32dec5931b4ca42c0dc34fbe88ca606aa75fb82b6de",
+      "status": "extracted",
+      "error": null
+    },
+    "scan": {
+      "asset_sha256": "a28194ad6a49bab7819505b0d0e35bb7defb10a91eb61d191dda0a1a881273c1",
+      "status": "pending",
+      "error": "pdf_ocr_pending"
+    }
+  },
+  "cross_vault_refused": true,
+  "pdf_export_refused": true,
+  "archive_bytes_unchanged": true,
+  "indexed_rows": 0,
+  "program_hashes_unchanged": 290,
+  "date": "2026-11-20",
+  "base": "a64707d8f36620806c269da8baca9c2b53b2d74d",
+  "status": "digital_pdf_document_ir_validated_d1",
+  "next": "prompts/windows_14_ocr_benchmark.md",
+  "text_tests": {
+    "schema": "win13-pdf-text-ir-tests-1",
+    "command_arguments": "-X utf8 -I -B -m unittest discover -s spikes/windows_13 -p test_pdf_text_ir.py -v",
+    "runtime": {
+      "interpreter": "WIN-03 stock Windows AMD64 CPython",
+      "python": "3.14.10",
+      "pypdfium2": "5.15.2",
+      "pdfium": "159.0.8149.0@sourcebuild-toolchained"
+    },
+    "passed": 5,
+    "failed": 0,
+    "skipped": 0,
+    "checks": {
+      "effective_crop_rotation_and_pdfium_character_ranges": [
+        0,
+        90,
+        180,
+        270
+      ],
+      "separate_prose_columns_keep_table_rows_intact": true,
+      "printed_footer_distinct_from_metadata_and_ambiguity_unresolved": true,
+      "image_only_page_ocr_pending_without_rendering": true,
+      "corrupt_pdf_and_layout_budgets_refused": true,
+      "own_d0_printed_page": "1",
+      "own_d0_pdf_page_label": null,
+      "own_d0_revenue_row_matches_primary": true
+    },
+    "config_sha256": "439fe43d1c4d2cae85b67b6cd2a2afbd93c2bd7afeb6834cebae2f29ef1108ad",
+    "sha256": {
+      "src/financial_assistant/pdf_text_ir.py": "5ef796ee6ddc38e171305dc9e828e305c7dbd2d0014a8bea619b2a2fb9510ad6",
+      "spikes/windows_13/test_pdf_text_ir.py": "309872e0f43e02eb7c4d5d25c9f2792a261d3cf6b77c38f97a2d40353e8fb34e"
+    },
+    "other_runtime": {
+      "name": "MSYS2 UCRT64 CPython",
+      "ran": false,
+      "reason": "PDFium binding unavailable"
+    }
+  },
+  "table_tests": {
+    "windows_cpython_passed": 6,
+    "msys2_cpython_passed": 6,
+    "absent_intervening_page_keeps_tables_separate": true,
+    "merged_header_with_observed_geometry": true,
+    "incompatible_period_order_or_layout_rejected": true
+  },
+  "regression": {
+    "win09_viewer_tests": 9,
+    "win12_formats": [
+      "csv",
+      "docx",
+      "txt",
+      "xlsx"
+    ],
+    "win10_d0_operations": 5,
+    "margin_source_page": 1,
+    "model_calls": 0
+  },
+  "frozen_pins": [
+    {
+      "manifest": "evaluation/protocols/kp3_eval_v1/freeze-manifest.json",
+      "matching": 134
+    },
+    {
+      "manifest": "data/releases/kp3_rc1/manifest.json",
+      "matching": 329
+    }
+  ],
+  "limitations": [
+    "synthetic_only",
+    "ocr_not_run",
+    "system_file_picker_not_exercised",
+    "no_aggregate_financial_fact_admission"
+  ]
+}

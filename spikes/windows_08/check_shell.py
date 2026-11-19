@@ -18,7 +18,7 @@ from financial_assistant.vault_storage import DB_FILENAME, VaultStore
 
 MODULES = ('application_service', 'typed_ipc', 'job_supervisor', 'windows_job', 'vault_storage',
            'vault_backup', 'document_viewer', 'safe_import', 'office_extraction_common', 'office_extraction',
-           'text_extract', 'spreadsheet_extract', 'docx_extract')
+           'text_extract', 'spreadsheet_extract', 'docx_extract', 'pdf_document_ir', 'pdf_text_ir', 'pdf_table_ir')
 ENTRIES = ('windows_05/service_cli.py', 'windows_06/supervised_service.py', 'windows_07/vault_cli.py',
            'windows_09/viewer_cli.py', 'windows_11/import_cli.py', 'windows_12/extract_cli.py')
 

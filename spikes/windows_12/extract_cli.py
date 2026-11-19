@@ -1,4 +1,4 @@
-"""Extract a captured CSV, XLSX, DOCX or TXT by its exact digest."""
+"""Extract a captured office, text or PDF file by its exact digest."""
 
 import argparse
 import json
@@ -64,12 +64,16 @@ def main():
     from financial_assistant.office_extraction import extract_capture, preview_rows
     from financial_assistant.office_extraction_common import ExtractionError
     from financial_assistant.text_extract import csv_export
-    from financial_assistant.vault_storage import VaultStorageError
+    from financial_assistant.vault_storage import VaultStorageError, VaultStore
 
     scope = None
     try:
         workspace = WorkspaceContext.open(ApplicationPaths(args.install_root, args.app_data), args.vault)
         scope = workspace.workspace_id
+        if args.export_csv:
+            with VaultStore(workspace) as store:
+                if store.get_capture(args.asset_sha)['file_type'] == 'pdf':
+                    raise ExtractionError('pdf_table_export_unavailable')
         status, capture, data = extract_capture(workspace, args.asset_sha)
         file_type = capture['file_type']
         if args.export_csv:
@@ -79,8 +83,11 @@ def main():
             sys.stdout.buffer.flush()
             return 0
         preview = preview_rows(data, file_type) if data is not None else []
+        error = None
+        if status == 'unsupported':
+            error = 'pdf_ocr_pending' if file_type == 'pdf' else 'unsupported_extraction_type'
         return _emit(status, scope=scope, asset=args.asset_sha, file_type=file_type,
-                     error='unsupported_extraction_type' if status == 'unsupported' else None, data=data, preview=preview)
+                     error=error, data=data, preview=preview)
     except (WorkspacePathError, VaultStorageError, ExtractionError) as error:
         return _emit('error', scope=scope, error=error.code)
     except (OSError, ValueError, TypeError):
