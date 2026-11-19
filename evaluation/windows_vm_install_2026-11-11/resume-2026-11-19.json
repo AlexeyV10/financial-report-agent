@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-19",
+  "vm": "ProjectPractice-WIN02B-W11",
+  "historical_guest_os": {
+    "edition": "Windows 11 Enterprise Evaluation",
+    "version": "26H2",
+    "build": "26300.9457",
+    "architecture": "x64",
+    "source": "guest Settings, 2026-11-11"
+  },
+  "user_previously_reported_standard_account_created_and_signed_in": true,
+  "standard_account_membership_verified": false,
+  "dotnet_release_verified": false,
+  "snapshot": {
+    "name": "Before-WIN02B-2026-11-19",
+    "observed_in_snapshot_list": true,
+    "taken_when_powered_off": true,
+    "before_test_media_attached": true
+  },
+  "guest_boot_from_vdi_verified_desktop": true,
+  "guest_virtual_cable_off": true,
+  "guest_media_mounted": true,
+  "guest_media_sha256": "38eb6a4374ea064da7c86074d7f44236da1d1beefa1e223df6797c780bf86a0d",
+  "guest_evaluation_watermark_days": 82,
+  "guest_preflight_observed": false,
+  "windows_installer_executed_in_guest": false,
+  "host_settings_changed": false,
+  "qwen_started_or_probed": false,
+  "first_cli_error": "E_ACCESSDENIED from default execution; exact VirtualBox operations worked after approved escalation",
+  "window_control": "Initial application access timed out; subsequent connection succeeded. Guest Explorer did not open via window input; user given manual preflight steps.",
+  "status": "snapshot_saved_guest_preflight_pending",
+  "observation_phase": "Initial recovery before the successful preflight later on 2026-11-19"
+}

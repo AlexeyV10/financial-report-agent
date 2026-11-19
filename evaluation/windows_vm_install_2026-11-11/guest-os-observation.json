@@ -1,0 +1,20 @@
+{
+  "ObservedAtUTC": "2026-11-11T20:37:38.1001667Z",
+  "Source": "Guest Settings > System > About, observed through VM console",
+  "Edition": "Windows 11 Enterprise Evaluation",
+  "Version": "26H2",
+  "OSBuild": "26300.9457",
+  "SystemType": "64-bit operating system, x64-based processor",
+  "RAMDisplayed": "3.98 GB",
+  "InstallationDateDisplayed": "11/11/2026",
+  "DesktopObserved": true,
+  "AccountKindDisplayed": "Local Account",
+  "AccountAdministratorStatus": "not yet checked",
+  "LicenseWatermark": "Windows License valid for 90 days",
+  "DesktopWatermarkBaseBuild": "26100.ge_release.240331-1435; separate from actual OS build in Settings",
+  "ActivationState": "not yet checked",
+  "FrameworkRelease": "not yet checked",
+  "CredentialsCollected": false,
+  "DeviceAndProductIDsPublished": false,
+  "GuestApplicationInstalled": false
+}

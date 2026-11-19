@@ -1,0 +1,7 @@
+{
+  "PromptDetectedFromOwnVMFirmwareLog": true,
+  "Key": "Enter down/up 1c9c",
+  "API": "documented VBoxManage controlvm keyboardputscancode",
+  "HostInputAutomated": false,
+  "ObservedAtUTC": "2026-11-11T20:06:00.1421354Z"
+}

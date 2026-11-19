@@ -1,0 +1,14 @@
+{
+  "Status": "windows_installed_oobe_user_action_pending",
+  "ObservedAtUTC": "2026-11-11T20:26:38.6054932Z",
+  "EditionObserved": "Windows 11 Enterprise Evaluation",
+  "OOBEScreen": "Let us set things up for your work or school; Microsoft Sign in; Sign-in options",
+  "AccountCredentialsEnteredByAssistant": false,
+  "AccountCreatedByAssistant": false,
+  "PrivacySettingsChosenByAssistant": false,
+  "GuestDesktopObserved": false,
+  "StandardTestAccountVerified": false,
+  "CleanSnapshotCreated": false,
+  "GuestApplicationInstalled": false,
+  "Next": "User completes legitimate account setup and privacy choices in guest; notify after desktop is visible"
+}

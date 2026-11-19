@@ -1,0 +1,15 @@
+{
+  "source": "https://github.com/VirtualBox/virtualbox/issues/799",
+  "source_kind": "firsthand bug reports and maintainer discussion in the official project",
+  "local_observation_2_vCPUs": "Black display before Windows Setup; EFI log stopped near PciHostBridgeDxe; NEM/Windows hypervisor engine in use",
+  "single_configuration_change": "vCPUs increased from 2 to 4, memory remains 4096 MiB",
+  "local_observation_4_vCPUs": "EFI passed; Press any key to boot from CD or DVD appeared, followed by no-OS boot dialog after its timeout",
+  "interpretation": "Consistent with reported issue; not a full root-cause proof or repeated benchmark",
+  "first_modify_after_poweroff": "Write lock still being released; command refused. Retried successfully after shutdown completed; no forced lock removal",
+  "Windows_Setup_started": false,
+  "SecureBoot_disabled": false,
+  "TPM_disabled": false,
+  "host_HyperV_or_security_settings_changed": false,
+  "downgrade_installed": false,
+  "raw_logs": "kept only in ignored tmp"
+}

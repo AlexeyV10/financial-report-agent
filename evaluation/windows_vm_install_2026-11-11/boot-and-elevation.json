@@ -1,0 +1,13 @@
+{
+  "ObservedAtUTC": "2026-11-11T19:42:50.7021757Z",
+  "VirtualBoxManagerElevation": "elevated",
+  "AssistantElevation": "ordinary",
+  "UIInputDidNotDismissBootDialog": true,
+  "CPUsBefore": 2,
+  "CPUsNow": 4,
+  "FourCPUObserved": "Passed EFI; DVD press-any-key prompt and no-OS boot dialog observed",
+  "OSInstallationStarted": false,
+  "DiskBytes": 2097152,
+  "PowerOffExit": 0,
+  "NeededAction": "User closes elevated Manager; then relaunch ordinarily"
+}

@@ -1,0 +1,22 @@
+{
+  "stage": "WIN-02B guest environment preparation",
+  "continued_on": "2026-11-19",
+  "status": "guest_ready_for_win02b_acceptance",
+  "guest": "ProjectPractice-WIN02B-W11",
+  "virtualbox": "7.2.22r175245",
+  "snapshot": "Before-WIN02B-2026-11-19",
+  "powered_off_snapshot_before_test_media_and_application": true,
+  "guest_os_desktop_observed": true,
+  "evaluation_watermark_days_observed_on_2026_11_19": 82,
+  "full_activation_panel_checked": false,
+  "guest_network_offline_verified": true,
+  "guest_optical_drive_verified": "D: WIN02B_KIT",
+  "guest_preflight": "preflight-observed-2026-11-19.json",
+  "guest_preflight_passed": true,
+  "application_installation_started": false,
+  "guest_application_acceptance_passed": false,
+  "win_02_status": "host_validated_clean_vm_pending",
+  "next_prompt": "prompts/windows_02b_execute_guest_acceptance.md",
+  "source_of_record": "Sanitized facts manually transcribed from the guest screenshot and VirtualBox CLI output. Raw captures, VM files, installation media and comparison configuration stay local.",
+  "model_calls": 0
+}
