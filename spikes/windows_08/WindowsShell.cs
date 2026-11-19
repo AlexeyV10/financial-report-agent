@@ -21,18 +21,23 @@ internal sealed class WindowsShell : Window
     private sealed class Options
     {
         internal string Install, AppData, VaultA, VaultB;
-        internal bool Probe, ProbeViewer;
+        internal bool Probe, ProbeViewer, D0, ProbeD0, ProbeD0Retry;
 
         internal static Options Parse(string[] args)
         {
             if ((args.Length != 6 && args.Length != 7) || args[0] != "--app-data"
                 || args[2] != "--vault-a" || args[4] != "--vault-b"
-                || (args.Length == 7 && args[6] != "--probe" && args[6] != "--probe-viewer"))
+                || (args.Length == 7 && args[6] != "--probe" && args[6] != "--probe-viewer"
+                    && args[6] != "--d0" && args[6] != "--probe-d0" && args[6] != "--probe-d0-retry"))
                 throw new ArgumentException("startup_arguments");
+            string mode = args.Length == 7 ? args[6] : null;
+            bool retry = mode == "--probe-d0-retry";
+            bool d0Probe = mode == "--probe-d0" || retry;
             var options = new Options {
                 Install = TypedHost.LocalPath(AppDomain.CurrentDomain.BaseDirectory), AppData = TypedHost.LocalPath(args[1]),
                 VaultA = TypedHost.LocalPath(args[3]), VaultB = TypedHost.LocalPath(args[5]),
-                Probe = args.Length == 7, ProbeViewer = args.Length == 7 && args[6] == "--probe-viewer"
+                Probe = mode != null && mode != "--d0", ProbeViewer = mode == "--probe-viewer",
+                D0 = mode == "--d0" || d0Probe, ProbeD0 = d0Probe, ProbeD0Retry = retry
             };
             string[] roots = {options.Install, options.AppData, options.VaultA, options.VaultB};
             for (int left = 0; left < roots.Length; left++)
@@ -90,6 +95,41 @@ internal sealed class WindowsShell : Window
         [DataMember] public bool crop_to_source, green_outline;
     }
 
+    [DataContract]
+    private sealed class D0CaseReceipt
+    {
+        [DataMember] public string operation, status, display, reason, source_sha256;
+        [DataMember] public int? source_page;
+        [DataMember] public string[] trace;
+
+        internal D0CaseReceipt(D0Reply value)
+        {
+            operation = value.Operation;
+            status = value.Status;
+            display = value.Display;
+            reason = value.Reason;
+            source_sha256 = value.SourceSha256;
+            source_page = value.SourcePage;
+            trace = value.Trace;
+        }
+    }
+
+    [DataContract]
+    private sealed class D0ProbeReceipt
+    {
+        [DataMember] public string schema = "win10-d0-probe-1", historical_status, historical_reason, historical_display,
+            clarify_status, clarify_reason, incomplete_step;
+        [DataMember] public string probe_failure, failure_operation, failure_status, failure_reason;
+        [DataMember] public string[] failure_trace;
+        [DataMember] public bool ok, clear_on_workspace_change, historical_result_empty, clarify_result_empty;
+        [DataMember] public bool documents_search_verified;
+        [DataMember] public bool margin_source_opened, margin_source_alternative_verified;
+        [DataMember] public double dpi_scale;
+        [DataMember] public string margin_source_printed_page;
+        [DataMember] public int[] margin_source_highlight;
+        [DataMember] public List<D0CaseReceipt> operations = new List<D0CaseReceipt>();
+    }
+
     private readonly Options options;
     private readonly ShellClient client;
     private readonly ActionButton[] tabs = new ActionButton[3];
@@ -98,18 +138,20 @@ internal sealed class WindowsShell : Window
     private readonly Border statusBar;
     private readonly ActionButton selectA, selectB, importDocument, searchDocuments, runAnalysis, openSource;
     private readonly DocumentViewerPanel viewer;
+    private readonly D0Panel d0;
     private readonly TextBox query, result;
     private readonly ListBox documents;
     private readonly ScrollViewer contentArea;
     private Page page;
     private string selectedVault, selectedName, workspaceId;
-    private bool workspaceUsable;
+    private bool workspaceUsable, hasStoredDocuments;
     private bool busy, closing, probeStarted, statusIsError;
     private int scopeGeneration, viewerGeneration;
     private SourceScope analysisSource;
     private Task worker;
     private Task operation = Task.FromResult(0);
     private ShellReply lastReply;
+    private D0Reply lastD0Reply;
 
     private WindowsShell(Options launch)
     {
@@ -151,10 +193,12 @@ internal sealed class WindowsShell : Window
 
         var projects = Section("Проекты", "Выберите хранилище для документов и расчётов.");
         var choices = new WrapPanel {Margin = new Thickness(0, 4, 0, 4)};
-        selectA = Button("Выбрать проект А", "selectVaultA");
-        selectA.Click += (sender, args) => SelectVault(options.VaultA, "Проект А");
-        selectB = Button("Выбрать проект Б", "selectVaultB");
-        selectB.Click += (sender, args) => SelectVault(options.VaultB, "Проект Б");
+        string projectA = options.D0 ? "Учебный проект" : "Проект А";
+        string projectB = options.D0 ? "Пустой проект" : "Проект Б";
+        selectA = Button(options.D0 ? "Выбрать учебный проект" : "Выбрать проект А", "selectVaultA");
+        selectA.Click += (sender, args) => SelectVault(options.VaultA, projectA);
+        selectB = Button(options.D0 ? "Выбрать пустой проект" : "Выбрать проект Б", "selectVaultB");
+        selectB.Click += (sender, args) => SelectVault(options.VaultB, projectB);
         choices.Children.Add(selectA);
         choices.Children.Add(selectB);
         projects.Children.Add(choices);
@@ -162,9 +206,11 @@ internal sealed class WindowsShell : Window
         projects.Children.Add(projectSummary);
         pages[(int)Page.Projects] = Card(projects);
 
-        var docs = Section("Документы", "Сохраните собственный учебный PDF в выбранном хранилище.");
+        var docs = Section("Документы", options.D0 ? "Поиск по сохранённому отчёту выбранного проекта."
+            : "Сохраните собственный учебный PDF в выбранном хранилище.");
         importDocument = Button("Импортировать учебный документ", "importDocument");
         importDocument.Click += ImportDocument;
+        if (options.D0) importDocument.Visibility = Visibility.Collapsed;
         docs.Children.Add(importDocument);
         documentSummary = Label("Выберите проект, чтобы увидеть его документы.", 14, muted: true);
         documentSummary.Margin = new Thickness(0, 4, 0, 18);
@@ -213,7 +259,15 @@ internal sealed class WindowsShell : Window
         openSource.Margin = new Thickness(0, 12, 8, 0);
         openSource.Click += OpenSource;
         analysis.Children.Add(openSource);
-        pages[(int)Page.Analysis] = Card(analysis);
+        if (options.D0)
+        {
+            d0 = new D0Panel();
+            d0.CalculationRequested += StartD0;
+            d0.SourceRequested += OpenActiveSource;
+            d0.OutputInvalidated += () => { analysisSource = null; };
+            pages[(int)Page.Analysis] = d0;
+        }
+        else pages[(int)Page.Analysis] = Card(analysis);
         viewer = new DocumentViewerPanel();
         viewer.BackRequested += () => ShowPage(Page.Analysis, moveFocus: true);
         viewer.ViewChanged += RefreshViewer;
@@ -237,7 +291,8 @@ internal sealed class WindowsShell : Window
             if (options.Probe && !probeStarted)
             {
                 probeStarted = true;
-                Dispatcher.BeginInvoke(DispatcherPriority.ApplicationIdle, new Action(Probe));
+                Dispatcher.BeginInvoke(DispatcherPriority.ApplicationIdle,
+                    options.ProbeD0 ? new Action(ProbeD0) : new Action(Probe));
             }
         };
         Closing += (sender, args) => {
@@ -327,7 +382,9 @@ internal sealed class WindowsShell : Window
         contentArea.ScrollToTop();
         if (moveFocus)
         {
-            Control[] firstActions = {selectA, importDocument, openSource.IsEnabled ? openSource : runAnalysis, viewer.BackButton};
+            Control analysisFocus = openSource.IsEnabled ? openSource : runAnalysis;
+            if (d0 != null) analysisFocus = d0.SourceControl.IsEnabled ? d0.SourceControl : d0.FirstControl;
+            Control[] firstActions = {selectA, d0 == null ? (Control)importDocument : query, analysisFocus, viewer.BackButton};
             FocusWhenReady(firstActions[(int)destination]);
         }
     }
@@ -395,9 +452,12 @@ internal sealed class WindowsShell : Window
     {
         bool scoped = workspaceUsable && !busy && !closing;
         selectA.IsEnabled = selectB.IsEnabled = !busy && !closing;
-        importDocument.IsEnabled = runAnalysis.IsEnabled = scoped;
-        searchDocuments.IsEnabled = scoped && query.Text.Trim().Length > 0;
+        importDocument.IsEnabled = scoped && d0 == null;
+        runAnalysis.IsEnabled = scoped;
+        query.IsEnabled = d0 == null || scoped && hasStoredDocuments;
+        searchDocuments.IsEnabled = scoped && query.IsEnabled && query.Text.Trim().Length > 0;
         openSource.IsEnabled = scoped && analysisSource != null;
+        if (d0 != null) d0.SetEnabled(scoped);
     }
 
     private void ApplyWorkspaceId(ShellReply reply)
@@ -413,6 +473,7 @@ internal sealed class WindowsShell : Window
         selectedVault = root;
         selectedName = name;
         workspaceUsable = false;
+        hasStoredDocuments = false;
         MarkActive(selectA, root == options.VaultA, "Выбран");
         MarkActive(selectB, root == options.VaultB, "Выбран");
         workspaceId = null;
@@ -427,6 +488,7 @@ internal sealed class WindowsShell : Window
             {
                 workspaceUsable = true;
                 ApplyWorkspaceId(reply);
+                hasStoredDocuments = reply.DocumentCount > 0;
                 projectSummary.Text = String.Format(CultureInfo.InvariantCulture,
                     "Документы: {0}  ·  Ревизии: {1}", reply.DocumentCount, reply.RevisionCount);
                 documentSummary.Text = reply.DocumentCount == 0
@@ -436,7 +498,8 @@ internal sealed class WindowsShell : Window
             else if (reply.Error == "storage_missing")
             {
                 workspaceUsable = true;
-                projectSummary.Text = "Проект выбран. Хранилище будет создано при импорте.";
+                projectSummary.Text = d0 == null ? "Проект выбран. Хранилище будет создано при импорте."
+                    : "В проекте нет подготовленных учебных документов.";
                 documentSummary.Text = "В проекте пока нет сохранённых документов.";
                 SetStatus("Проект выбран.");
             }
@@ -504,13 +567,21 @@ internal sealed class WindowsShell : Window
     {
         analysisSource = null;
         result.Clear();
+        lastD0Reply = null;
+        if (d0 != null) d0.ResetScope();
         viewerGeneration++;
         viewer.Reset(0);
     }
 
     private void OpenSource(object sender, RoutedEventArgs args)
     {
-        if (!openSource.IsEnabled || analysisSource == null) return;
+        OpenActiveSource();
+    }
+
+    private void OpenActiveSource()
+    {
+        Control button = d0 == null ? (Control)openSource : d0.SourceControl;
+        if (!button.IsEnabled || analysisSource == null) return;
         viewerGeneration++;
         viewer.Reset(analysisSource.PageIndex);
         ShowPage(Page.Viewer, moveFocus: true);
@@ -583,6 +654,42 @@ internal sealed class WindowsShell : Window
         operation = Finish(activity, scopeGeneration, present);
     }
 
+    private void StartD0(D0Request request)
+    {
+        if (busy || closing || !workspaceUsable || selectedVault == null || page != Page.Analysis) return;
+        string vault = selectedVault, run = Guid.NewGuid().ToString("N");
+        d0.ClearOutput();
+        lastD0Reply = null;
+        viewerGeneration++;
+        viewer.Reset(0);
+        busy = true;
+        SetStatus("Проверяем исходные данные и рассчитываем…");
+        UpdateControls();
+        Task<D0Reply> activity = Task.Run(() => client.AnalyzeD0(vault, run, request.Operation, request.Historical, request.Question));
+        worker = activity;
+        operation = FinishD0(activity, request, vault, run, scopeGeneration);
+    }
+
+    private async Task FinishD0(Task<D0Reply> activity, D0Request request, string vault, string run, int generation)
+    {
+        D0Reply reply;
+        try { reply = await activity; }
+        catch (Exception) { reply = D0Reply.Failure(request.Operation, run, "worker_start_failed"); }
+        if (closing || generation != scopeGeneration || vault != selectedVault) return;
+        lastD0Reply = reply;
+        busy = false;
+        string label = d0.Present(request, reply);
+        if (reply.Status == "answered")
+        {
+            analysisSource = new SourceScope {Vault = vault, WorkspaceId = workspaceId, RunId = reply.RunId,
+                ResourceId = ShellClient.D0SourceId, Sha256 = reply.SourceSha256, PageIndex = reply.SourcePage.Value - 1,
+                Generation = generation};
+            if (page == Page.Analysis) FocusWhenReady(d0.ResultControl);
+        }
+        SetStatus(label, error: reply.Status == "error");
+        UpdateControls();
+    }
+
     private async Task Finish(Task<ShellReply> activity, int generation, Action<ShellReply> present)
     {
         ShellReply reply;
@@ -599,6 +706,117 @@ internal sealed class WindowsShell : Window
     private static void Expect(bool satisfied)
     {
         if (!satisfied) throw new InvalidOperationException("unexpected_probe_state");
+    }
+
+    private async void ProbeD0()
+    {
+        var receipt = new D0ProbeReceipt {dpi_scale = DpiScale(), incomplete_step = "open_provisioned_workspace"};
+        int exit = 0;
+        try
+        {
+            tabs[(int)Page.Projects].ProbeClick();
+            selectA.ProbeClick();
+            await operation;
+            Expect(lastReply != null && lastReply.Error == null && lastReply.DocumentCount == 1);
+
+            receipt.incomplete_step = "find_the_d0_document";
+            tabs[(int)Page.Documents].ProbeClick();
+            query.Text = "operating";
+            searchDocuments.ProbeClick();
+            await operation;
+            Expect(lastReply != null && lastReply.Error == null && lastReply.MatchCount == 1 && documents.Items.Count == 1
+                && lastReply.Documents[0].StartsWith(ShellClient.D0SourceId + " ·", StringComparison.Ordinal));
+            receipt.documents_search_verified = true;
+
+            tabs[(int)Page.Analysis].ProbeClick();
+            string[] operations = {"direct", "delta", "relative", "scale", "margin"};
+            string[] answers = {"120", "20", "20.00", "0.12", "15.00"};
+            for (int index = 0; index < operations.Length; index++)
+            {
+                string selected = operations[index];
+                receipt.incomplete_step = selected;
+                d0.ProbeConfigure(selected, false);
+                d0.ProbeCalculate();
+                await operation;
+                Expect(lastD0Reply != null && lastD0Reply.Operation == selected && lastD0Reply.Status == "answered"
+                    && lastD0Reply.Display == answers[index] && lastD0Reply.SourcePage == 1
+                    && lastD0Reply.SourceSha256 == ShellClient.D0SourceSha
+                    && Array.IndexOf(lastD0Reply.Trace, "search") >= 0 && Array.IndexOf(lastD0Reply.Trace, "calculation") >= 0
+                    && d0.FinancialText.StartsWith(answers[index], StringComparison.Ordinal)
+                    && d0.CitationText.Contains(ShellClient.D0SourceSha));
+                receipt.operations.Add(new D0CaseReceipt(lastD0Reply));
+            }
+
+            receipt.incomplete_step = "open_margin_source";
+            d0.ProbeOpenSource();
+            await operation;
+            var frame = viewer.Frame;
+            Expect(frame != null && frame.ResourceId == ShellClient.D0SourceId && frame.SourceSha256 == ShellClient.D0SourceSha
+                && frame.PageIndex == 0 && frame.PrintedPage == "1" && viewer.GreenOutlineVisible()
+                && viewer.AlternativesMatchFrame && frame.Highlight != null && frame.Highlight.Length == 4);
+            int[] marginBoxAt100 = {246, 175, 303, 224};
+            for (int index = 0; index < marginBoxAt100.Length; index++)
+                Expect(Math.Abs(frame.Highlight[index] - marginBoxAt100[index] * frame.DpiPercent / 100.0) <= 1.0);
+            receipt.margin_source_opened = receipt.margin_source_alternative_verified = true;
+            receipt.margin_source_printed_page = frame.PrintedPage;
+            receipt.margin_source_highlight = frame.Highlight;
+            viewer.ProbeBack();
+            Expect(page == Page.Analysis && viewer.Frame == null && d0.FinancialText.StartsWith("15.00", StringComparison.Ordinal));
+
+            receipt.incomplete_step = "clarification";
+            d0.ProbeConfigure("direct", false, "Какая выручка за 2025 год?");
+            d0.ProbeCalculate();
+            await operation;
+            Expect(lastD0Reply != null && lastD0Reply.Status == "clarify" && lastD0Reply.Reason == "missing_organization"
+                && lastD0Reply.Display == null && d0.FinancialText == "" && d0.CitationText == "" && !d0.SourceControl.IsEnabled);
+            receipt.clarify_status = lastD0Reply.Status;
+            receipt.clarify_reason = lastD0Reply.Reason;
+            receipt.clarify_result_empty = true;
+
+            receipt.incomplete_step = "historical_publication_unknown";
+            d0.ProbeConfigure("margin", true);
+            d0.ProbeCalculate();
+            await operation;
+            Expect(lastD0Reply != null && lastD0Reply.Status == "blocked" && lastD0Reply.Reason == "publication_unknown"
+                && lastD0Reply.Display == null && d0.FinancialText == "" && d0.CitationText == "" && !d0.SourceControl.IsEnabled
+                && Array.IndexOf(lastD0Reply.Trace, "calculation") < 0);
+            receipt.historical_status = lastD0Reply.Status;
+            receipt.historical_reason = lastD0Reply.Reason;
+            receipt.historical_display = lastD0Reply.Display;
+            receipt.historical_result_empty = true;
+
+            receipt.incomplete_step = "switch_to_empty_workspace";
+            tabs[(int)Page.Projects].ProbeClick();
+            selectB.ProbeClick();
+            await operation;
+            Expect(lastReply != null && lastReply.Error == "storage_missing" && d0.OutputsEmpty
+                && analysisSource == null && viewer.Frame == null && !d0.SourceControl.IsEnabled);
+            receipt.clear_on_workspace_change = true;
+            receipt.incomplete_step = null;
+            receipt.ok = true;
+        }
+        catch (Exception error)
+        {
+            exit = 4;
+            receipt.probe_failure = error is InvalidOperationException && error.Message == "unexpected_probe_state"
+                ? "unexpected_probe_state" : "probe_execution_error";
+            if (lastD0Reply != null)
+            {
+                receipt.failure_operation = lastD0Reply.Operation;
+                receipt.failure_status = lastD0Reply.Status;
+                receipt.failure_reason = lastD0Reply.Reason;
+                receipt.failure_trace = lastD0Reply.Trace;
+            }
+            else if (lastReply != null && lastReply.Error != null)
+            {
+                receipt.failure_status = "error";
+                receipt.failure_reason = lastReply.Error;
+            }
+        }
+        if (closing) return;
+        try { SaveProbe(options.ProbeD0Retry ? "win10-d0-retry.json" : "win10-d0-probe.json", receipt); }
+        catch (Exception) { exit = 5; }
+        ScheduleShutdown(exit);
     }
 
     private void Mark(ProbeReceipt receipt, string step)

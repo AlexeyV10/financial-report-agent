@@ -1,0 +1,339 @@
+{
+  "schema": "win10-d0-installed-cli-proof-1",
+  "source_sha256": "ebabc9e49fbde3063f63f98393a271734bc16d0686ea035938ccd8d90db2caf0",
+  "answers": {
+    "direct": {
+      "display": "120",
+      "trace_stages": [
+        "input",
+        "catalog_filters",
+        "search",
+        "fact_resolution",
+        "source_validation",
+        "calculation",
+        "result_validation",
+        "answer"
+      ],
+      "source_page": 1
+    },
+    "delta": {
+      "display": "20",
+      "trace_stages": [
+        "input",
+        "catalog_filters",
+        "search",
+        "fact_resolution",
+        "source_validation",
+        "calculation",
+        "result_validation",
+        "answer"
+      ],
+      "source_page": 1
+    },
+    "relative": {
+      "display": "20.00",
+      "trace_stages": [
+        "input",
+        "catalog_filters",
+        "search",
+        "fact_resolution",
+        "source_validation",
+        "calculation",
+        "result_validation",
+        "answer"
+      ],
+      "source_page": 1
+    },
+    "scale": {
+      "display": "0.12",
+      "trace_stages": [
+        "input",
+        "catalog_filters",
+        "search",
+        "fact_resolution",
+        "source_validation",
+        "calculation",
+        "result_validation",
+        "answer"
+      ],
+      "source_page": 1
+    },
+    "margin": {
+      "display": "15.00",
+      "trace_stages": [
+        "input",
+        "catalog_filters",
+        "search",
+        "fact_resolution",
+        "source_validation",
+        "calculation",
+        "result_validation",
+        "answer"
+      ],
+      "source_page": 1
+    }
+  },
+  "unknown_publication": "publication_unknown",
+  "clarification": "missing_organization",
+  "technical_missing_source": "source_missing",
+  "same_size_corruption_rejected": true,
+  "duplicate_denied_without_rewriting_receipt": true,
+  "other_vault_rejected": true,
+  "exact_archived_page_after_missing_source": true,
+  "program_hashes_unchanged": 302,
+  "model_calls": 0,
+  "native": {
+    "clarify_reason": "missing_organization",
+    "clarify_result_empty": true,
+    "clarify_status": "clarify",
+    "clear_on_workspace_change": true,
+    "documents_search_verified": true,
+    "dpi_scale": 1.25,
+    "failure_operation": null,
+    "failure_reason": null,
+    "failure_status": null,
+    "failure_trace": null,
+    "historical_display": null,
+    "historical_reason": "publication_unknown",
+    "historical_result_empty": true,
+    "historical_status": "blocked",
+    "incomplete_step": null,
+    "margin_source_alternative_verified": true,
+    "margin_source_highlight": [
+      307,
+      218,
+      379,
+      280
+    ],
+    "margin_source_opened": true,
+    "margin_source_printed_page": "1",
+    "ok": true,
+    "operations": [
+      {
+        "display": "120",
+        "operation": "direct",
+        "reason": "ok",
+        "source_page": 1,
+        "source_sha256": "ebabc9e49fbde3063f63f98393a271734bc16d0686ea035938ccd8d90db2caf0",
+        "status": "answered",
+        "trace": [
+          "input",
+          "catalog_filters",
+          "search",
+          "fact_resolution",
+          "source_validation",
+          "calculation",
+          "result_validation",
+          "answer"
+        ]
+      },
+      {
+        "display": "20",
+        "operation": "delta",
+        "reason": "ok",
+        "source_page": 1,
+        "source_sha256": "ebabc9e49fbde3063f63f98393a271734bc16d0686ea035938ccd8d90db2caf0",
+        "status": "answered",
+        "trace": [
+          "input",
+          "catalog_filters",
+          "search",
+          "fact_resolution",
+          "source_validation",
+          "calculation",
+          "result_validation",
+          "answer"
+        ]
+      },
+      {
+        "display": "20.00",
+        "operation": "relative",
+        "reason": "ok",
+        "source_page": 1,
+        "source_sha256": "ebabc9e49fbde3063f63f98393a271734bc16d0686ea035938ccd8d90db2caf0",
+        "status": "answered",
+        "trace": [
+          "input",
+          "catalog_filters",
+          "search",
+          "fact_resolution",
+          "source_validation",
+          "calculation",
+          "result_validation",
+          "answer"
+        ]
+      },
+      {
+        "display": "0.12",
+        "operation": "scale",
+        "reason": "ok",
+        "source_page": 1,
+        "source_sha256": "ebabc9e49fbde3063f63f98393a271734bc16d0686ea035938ccd8d90db2caf0",
+        "status": "answered",
+        "trace": [
+          "input",
+          "catalog_filters",
+          "search",
+          "fact_resolution",
+          "source_validation",
+          "calculation",
+          "result_validation",
+          "answer"
+        ]
+      },
+      {
+        "display": "15.00",
+        "operation": "margin",
+        "reason": "ok",
+        "source_page": 1,
+        "source_sha256": "ebabc9e49fbde3063f63f98393a271734bc16d0686ea035938ccd8d90db2caf0",
+        "status": "answered",
+        "trace": [
+          "input",
+          "catalog_filters",
+          "search",
+          "fact_resolution",
+          "source_validation",
+          "calculation",
+          "result_validation",
+          "answer"
+        ]
+      }
+    ],
+    "probe_failure": null,
+    "schema": "win10-d0-probe-1"
+  },
+  "status": "d0_five_operations_clean_windows_validated",
+  "next": "prompts/windows_11_safe_import.md",
+  "date": "2026-11-19",
+  "base": "5c0fa14b80039b7ec00cffd095f8af404b42560f",
+  "own_pdf": {
+    "schema": "win10-own-d0-primary-check-1",
+    "source_sha256": "ebabc9e49fbde3063f63f98393a271734bc16d0686ea035938ccd8d90db2caf0",
+    "source_bytes": 1445,
+    "page": 1,
+    "precise_pdf_cells_checked": 3,
+    "same_group_and_ifrs": true,
+    "currency": "RUB",
+    "scale": 1000000,
+    "publication": "unknown",
+    "human_reviewed": false,
+    "expected_display": {
+      "direct": "120",
+      "delta": "20",
+      "relative": "20.00",
+      "scale": "0.12",
+      "margin": "15.00"
+    }
+  },
+  "build": {
+    "schema": "win10-d0-build-1",
+    "python_runtime": "3.14.10",
+    "runtime_manifest_sha256": "9d8fd9a0b38c4a23250f84b6e43458f8ec44c9424f8bd7ae9959b8ac9176c77d",
+    "nsis_version": "3.13",
+    "nsis_archive_sha256": "ba63dffc4410ee89193e1cb5a41989991bd77c61068da17e3156d136b7b0b3d8",
+    "launcher_compiler_sha256": "46809206887326d2d24db1eff1f3064de972c3451abe766b49111450a5e08e00",
+    "installer": {
+      "name": "ProjectPractice-WIN10-D0-setup.exe",
+      "bytes": 23783020,
+      "sha256": "2b2e03faa0b3da795d7647d81606473e46fcd1518bb7993f9971fa2640efcf15"
+    },
+    "signed": false,
+    "install_location": "%LOCALAPPDATA%\\Programs\\Проектная практика D0",
+    "workspace_location": "%LOCALAPPDATA%\\ProjectPracticeWIN10\\workspaces",
+    "payload_file_count": 302,
+    "payload_bytes": 48394513,
+    "payload_manifest_sha256": "4ddf10b86e49b3bb9d07db1acf61a64be0a3eb799f9a129997e7d9e28cc84095",
+    "provisioning_smoke": {
+      "unicode_vault": true,
+      "private_worker": true,
+      "cwd_empty": true,
+      "status": "answered"
+    }
+  },
+  "guest_first_trial": {
+    "schema": "win10-guest-observation-1",
+    "installer_sha256": "49ee46e4b7f299ddd8ca1b777c47bd8eaf0ba9dd5744002410329e8b49748d8f",
+    "regular_user": true,
+    "offline": true,
+    "installation_complete": true,
+    "uac_prompt_observed": false,
+    "launch_from_installer_finish": true,
+    "start_menu_launch": true,
+    "documents_search_verified": true,
+    "system_scale": 1.25,
+    "incomplete_step": "direct",
+    "operations": [],
+    "ok": false,
+    "error_code_recorded": false,
+    "trace_path_units_before": 289,
+    "trace_path_units_after": 224
+  },
+  "guest_final_trial": {
+    "schema": "win10-guest-acceptance-1",
+    "installer_sha256": "2b2e03faa0b3da795d7647d81606473e46fcd1518bb7993f9971fa2640efcf15",
+    "media_sha256": "8442edf1811ecc0ac60818e123c589ec0d5e9fe5d1d26a48596904fa6ce483b6",
+    "os": "Windows 11 Enterprise Evaluation x64",
+    "regular_user": true,
+    "offline": true,
+    "system_scale": 1.25,
+    "reinstalled_existing_workspace": true,
+    "uac_prompt_observed": false,
+    "first_file_and_new_receipt_distinct": true,
+    "documents_search_verified": true,
+    "operations": {
+      "direct": "120",
+      "delta": "20",
+      "relative": "20.00",
+      "scale": "0.12",
+      "margin": "15.00"
+    },
+    "margin_source_printed_page": "1",
+    "margin_source_highlight": [
+      307,
+      218,
+      379,
+      280
+    ],
+    "margin_source_alternative_verified": true,
+    "historical_reason": "publication_unknown",
+    "historical_result_empty": true,
+    "clarify_reason": "missing_organization",
+    "clarify_result_empty": true,
+    "clear_on_workspace_change": true,
+    "interactive_uninstall": true,
+    "work_data_retained": true,
+    "observed_remaining_data": [
+      "PDF",
+      "SQLite vault",
+      "workspace metadata",
+      "result receipts"
+    ],
+    "receipt_reopened_from_disk_after_uninstall": true,
+    "manual_keyboard_start_menu_verified_on_first_install": true,
+    "workflows_through_native_probe_handlers": true,
+    "ok": true
+  },
+  "guest_capture_sha256": {
+    "first_failure": "6d3f485e0a346f93db889494617deb90514527a3a04da338ea7074bbdc38a8d5",
+    "retry_install_complete": "1c5a7a186b3a6323abc21e406a99b2d366ef711e75388c8597707437628f4ee3",
+    "retry_result": "c26a4193b8db24b38c021be12f1e3f8b57193c5ae4a3847c54ed2660417812d0",
+    "uninstall_complete": "55eadfd58f7d50beeaf50352abd7e733476103e0b8dd356250b3807a51547e0c",
+    "retained_project_files": "1c15ae438b99fe5b9039c2c00a73adf03f7ec0d44148128ad75c53c0f4cf6ff7",
+    "receipt_opened_after_uninstall": "0bf1c81cb804d32a73c21f81281bf67576844e7d8a4b605c9af6b5460e5313d3"
+  },
+  "prior_regressions": {
+    "service_b_tests_passed": 39,
+    "win09_native": true
+  },
+  "frozen_pins": [
+    {
+      "manifest": "evaluation/protocols/kp3_eval_v1/freeze-manifest.json",
+      "matching": 134
+    },
+    {
+      "manifest": "data/releases/kp3_rc1/manifest.json",
+      "matching": 329
+    }
+  ]
+}
