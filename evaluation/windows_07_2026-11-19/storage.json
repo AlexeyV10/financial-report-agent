@@ -1,0 +1,152 @@
+{
+  "schema": "win07-installed-storage-proof-1",
+  "source_sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+  "display": "15.00",
+  "source_page": 1,
+  "independent_vaults": true,
+  "idempotent_import": true,
+  "original_bytes_preserved": true,
+  "stored_bytes_survive_absent_input": true,
+  "revision_1_and_2_separate": true,
+  "utf8_fts": true,
+  "actual_worker_exit_before_commit": 93,
+  "uncommitted_original_revision_and_index_absent": true,
+  "baseline_after_reopen": {
+    "documents": 1,
+    "originals": 1,
+    "versions": 1,
+    "revisions": 2,
+    "fts_rows": 2
+  },
+  "backup": {
+    "schema": "win07-backup-1",
+    "workspace_id": "vault-a",
+    "application_id": 1347442259,
+    "schema_version": 1,
+    "integrity_ok": true,
+    "foreign_keys_ok": true,
+    "original_hashes_ok": true,
+    "fts_consistency_ok": true,
+    "documents": 1,
+    "originals": 1,
+    "versions": 1,
+    "revisions": 2,
+    "fts_rows": 2,
+    "sha256": "8b88f70544c56cfaf038568788d7a49c4d4a4239d2fbeb6cf3ab63846c9345ee",
+    "bytes": 73728
+  },
+  "restore": {
+    "schema": "win07-restore-1",
+    "backup_sha256": "8b88f70544c56cfaf038568788d7a49c4d4a4239d2fbeb6cf3ab63846c9345ee",
+    "workspace_id": "vault-a",
+    "application_id": 1347442259,
+    "schema_version": 1,
+    "integrity_ok": true,
+    "foreign_keys_ok": true,
+    "original_hashes_ok": true,
+    "fts_consistency_ok": true,
+    "documents": 1,
+    "originals": 1,
+    "versions": 1,
+    "revisions": 2,
+    "fts_rows": 2,
+    "sha256": "8b88f70544c56cfaf038568788d7a49c4d4a4239d2fbeb6cf3ab63846c9345ee",
+    "bytes": 73728
+  },
+  "restored_to_distinct_vault": true,
+  "install_files_unchanged": 269,
+  "model_calls": 0,
+  "focused_tests": {
+    "schema": "win07-focused-tests-1",
+    "worktree_base": "9b55191",
+    "tested_files": {
+      "spikes/windows_07/test_vault_storage.py": "3bfe6375e52f05a83d75efa086acafd8627de1e1b6520e5c0a3a56c3250d6bea",
+      "src/financial_assistant/vault_storage.py": "fe4d69d0ddd561faab6b9a18a4ac1bd0be4f7e5d68ca01e166e7ed61315048a4",
+      "src/financial_assistant/vault_backup.py": "83298619effb41071e79c9345fe487329beb27556878babdd2fe1c15bb5d693a",
+      "src/financial_assistant/application_paths.py": "ba466347f22938f75b718acfcba2feb49ff99f8795ee8783de88a82dd6290cd3"
+    },
+    "results": {
+      "msys2": {
+        "runtime": "3.14.7",
+        "sqlite": "3.53.4",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "-I",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "spikes/windows_07",
+          "-p",
+          "test_vault_storage.py",
+          "-v"
+        ],
+        "ran": 10,
+        "passed": 10,
+        "skipped": 0,
+        "seconds": 0.908,
+        "returncode": 0,
+        "raw_private_log": "vault-unittest-msys2.log",
+        "failed_or_errored": 0
+      },
+      "stock": {
+        "runtime": "3.14.10",
+        "sqlite": "3.50.4",
+        "command": [
+          "../windows-03-worktree/tmp/runtime-a/runtime/python.exe",
+          "-X",
+          "utf8",
+          "-I",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "spikes/windows_07",
+          "-p",
+          "test_vault_storage.py",
+          "-v"
+        ],
+        "ran": 10,
+        "passed": 10,
+        "skipped": 0,
+        "seconds": 0.895,
+        "returncode": 0,
+        "raw_private_log": "vault-unittest-stock.log",
+        "failed_or_errored": 0
+      }
+    },
+    "sqlite_full": "Real SQLITE_FULL from PRAGMA max_page_count on each isolated active connection; no host disk fill",
+    "integrity_controls": [
+      "FTS text mismatch with equal row count",
+      "revision ordinal gap",
+      "same-size stored blob corruption"
+    ],
+    "backup_controls": [
+      "standalone point-in-time snapshot",
+      "separate vault restore",
+      "no overwrite",
+      "wrong workspace identity",
+      "non-SQLite input",
+      "active sidecar refusal"
+    ],
+    "models_started": false
+  },
+  "frozen_pins": [
+    {
+      "manifest": "evaluation/protocols/kp3_eval_v1/freeze-manifest.json",
+      "matching": 134
+    },
+    {
+      "manifest": "data/releases/kp3_rc1/manifest.json",
+      "matching": 329
+    }
+  ],
+  "status": "local_sqlite_storage_and_restore_validated",
+  "next": "prompts/windows_08_native_shell.md",
+  "date": "2026-11-19",
+  "base": "9b551918cce65602dd364b577ade054235527bd6"
+}
