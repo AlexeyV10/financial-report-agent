@@ -97,6 +97,79 @@ internal static class TypedHost
         if (!condition) throw new InvalidDataException("worker_protocol");
     }
 
+    // The .NET Framework JSON-to-XML reader accepts some non-JSON forms.
+    // Check grammar and full-frame consumption before using its typed elements.
+    private sealed class JsonGrammar
+    {
+        private static readonly Regex Tokens = new Regex(
+            @"\G[\t ]*(""(?:[^""\\\x00-\x1f]|\\(?:[""\\/bfnrt]|u[0-9a-fA-F]{4}))*""|true|false|null|-?(?:0|[1-9][0-9]*)(?:\.[0-9]+)?(?:[eE][+-]?[0-9]+)?|[{}\[\],:])",
+            RegexOptions.CultureInvariant, TimeSpan.FromMilliseconds(250));
+        private readonly string text;
+        private int offset;
+        private string token;
+
+        private JsonGrammar(string frame) { text = frame; Advance(); }
+
+        private void Advance()
+        {
+            var match = Tokens.Match(text, offset);
+            if (match.Success)
+            {
+                offset += match.Length;
+                token = match.Groups[1].Value;
+                return;
+            }
+            for (; offset < text.Length; offset++) Require(text[offset] == ' ' || text[offset] == '\t');
+            token = null;
+        }
+
+        private bool Take(string expected)
+        {
+            if (token != expected) return false;
+            Advance();
+            return true;
+        }
+
+        private void ReadObject(int depth)
+        {
+            if (Take("}")) return;
+            do
+            {
+                Require(token != null && token[0] == '"');
+                Advance();
+                Require(Take(":"));
+                ReadValue(depth);
+            } while (Take(","));
+            Require(Take("}"));
+        }
+
+        private void ReadArray(int depth)
+        {
+            if (Take("]")) return;
+            do { ReadValue(depth); } while (Take(","));
+            Require(Take("]"));
+        }
+
+        private void ReadValue(int depth)
+        {
+            Require(depth < 8 && token != null);
+            if (Take("{")) ReadObject(depth + 1);
+            else if (Take("[")) ReadArray(depth + 1);
+            else
+            {
+                Require(token != "}" && token != "]" && token != "," && token != ":");
+                Advance();
+            }
+        }
+
+        internal static void Validate(string frame)
+        {
+            var grammar = new JsonGrammar(frame);
+            grammar.ReadValue(0);
+            Require(grammar.token == null);
+        }
+    }
+
     private static void Shape(XElement node, string kind, params string[] fields)
     {
         Require(node.Name.NamespaceName.Length == 0 && (string)node.Attribute("type") == kind
@@ -128,7 +201,7 @@ internal static class TypedHost
         Require(frameLength > 0 && bytes[0] == (byte)'{'
                 && Array.IndexOf(bytes, (byte)'\n', 0, frameLength) < 0
                 && Array.IndexOf(bytes, (byte)'\r', 0, frameLength) < 0);
-        Utf8.GetCharCount(bytes, 0, frameLength);
+        JsonGrammar.Validate(Utf8.GetString(bytes, 0, frameLength));
         var quotas = new XmlDictionaryReaderQuotas {
             MaxDepth = 8, MaxArrayLength = 16, MaxBytesPerRead = 1024,
             MaxStringContentLength = 1024, MaxNameTableCharCount = 2048

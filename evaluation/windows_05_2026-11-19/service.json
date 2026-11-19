@@ -163,5 +163,27 @@
     }
   ],
   "base": "98c79aa137600f93ddd11b33d5069861bd015fb4",
-  "next": "prompts/windows_06_supervisor.md"
+  "next": "prompts/windows_06_supervisor.md",
+  "native_strict_parser": {
+    "source_sha256": "277626a918a379a40bdcd6c79c8d3cdaa8f68fdebba6cd7120ca34234673680e",
+    "framework_x64_compiled": true,
+    "reflection_positive_count": 2,
+    "reflection_negative_count": 16,
+    "cases": [
+      "trailing object or array commas",
+      "second object or frame",
+      "leading zero",
+      "bad separators",
+      "truncation",
+      "duplicate keys",
+      "invalid types",
+      "stale run ID",
+      "wrong operation",
+      "NaN",
+      "invalid UTF-8",
+      "pipe size cap",
+      "nonzero worker exit"
+    ],
+    "same_installed_e2e_verified_after_fix": true
+  }
 }
