@@ -1,0 +1,17 @@
+{
+  "dated": "2026-11-19",
+  "baseline_files_matching_before_documentation_update": {
+    "root": 642,
+    "parent_worktree": 1959,
+    "implementation_worktree": 1959
+  },
+  "existing_markdown_body_preserved": true,
+  "roadmap_change_limited_to_WIN_02": true,
+  "artifact_sha256": {
+    "installer": "f69523d44f474eacb0905d66e4f90294a3124a3d348c44222e6fe8e9ec3e56cf",
+    "original_kit": "c99bd95e771a5f8e92c442459fe6d45f96cd7f44ead59cf5ed655cc4599a0fbb",
+    "guest_media": "38eb6a4374ea064da7c86074d7f44236da1d1beefa1e223df6797c780bf86a0d"
+  },
+  "host_settings_changed_in_continuation": false,
+  "model_calls": 0
+}

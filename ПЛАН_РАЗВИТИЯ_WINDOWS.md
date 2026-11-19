@@ -1,3 +1,19 @@
+19.11.2026 · WIN-02B · Чистая гостевая Windows готова к испытанию установщика.
+
+В VirtualBox работает ProjectPractice-WIN02B-W11, Windows 11 Enterprise Evaluation
+x64. Полная сборка 26300.9457 наблюдалась при установке. Снимок Before-WIN02B-2026-11-19
+сделан на выключенной машине до подключения проверочного диска. В госте диск виден
+как D: WIN02B_KIT, сетевой кабель отключён. Сборщик подтвердил .NET Release 533509,
+обычную учётную запись, совпадение SHA установщика, Ethernet Down и отсутствие
+приложения. Проверки известных Python/Ollama вернули 0. Препятствий по сборщику нет.
+
+Испытание установщика впереди. WIN-02 сохраняет статус host_validated_clean_vm_pending.
+Описание: [подготовка Windows](docs/windows/virtual_machine_installation.md).
+[Результат проверки](evaluation/windows_vm_install_2026-11-11/preflight-observed-2026-11-19.json).
+[Промт испытания](prompts/windows_02b_execute_guest_acceptance.md).
+
+История до 19.11.2026 сохранена ниже.
+
 # WIN-02B — подготовка к приёмке, ресурс пока отсутствует
 
 Статус resource_blocked_kit_prepared: готов kit/collector/runbook, пользователь

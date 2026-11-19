@@ -1,0 +1,15 @@
+{
+  "bytes": 22546432,
+  "sha256": "38eb6a4374ea064da7c86074d7f44236da1d1beefa1e223df6797c780bf86a0d",
+  "files_verified": 7,
+  "original_installer_unchanged": true,
+  "collector_byte_identical": true,
+  "original_private_guard_unchanged": true,
+  "only_kit_metadata_change": "provenance declaration for the actual fresh VM; original kit is preserved",
+  "additional_file": "START-PREFLIGHT.lnk targets D:/GuestEvidence.exe with fixed preflight argument; verify guest drive D before use",
+  "terminal_script_in_media": false,
+  "mounted": false,
+  "guest_application_installed": false,
+  "guest_accepted": false,
+  "private_guard_values_not_published": true
+}

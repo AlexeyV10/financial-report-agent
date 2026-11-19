@@ -1,0 +1,12 @@
+{
+  "base_sha": "1e2f3f38c694391db0cebeec0df282a9adf9126c",
+  "base_branch": "codex/windows-02b-vm-download",
+  "parent_pr": "https://github.com/AlexeyV10/financial-report-agent/pull/24",
+  "main": "f349717c5ca2acc33decf3dd7ce12b2756ce6d8b",
+  "ruleset_active": true,
+  "bypass_actors": [],
+  "user_authorization": "Install VirtualBox and create Windows; received explicitly in chat 11.11.2026",
+  "artifacts_reverified": true,
+  "root_branch_preserved": true,
+  "created_at": "2026-11-11T18:38:06.445476+00:00"
+}

@@ -1,0 +1,10 @@
+{
+  "ObservedAtUTC": "2026-11-11T18:40:15.0120278Z",
+  "InstallerLaunchMethod": "computer-use sky.launch_app",
+  "LaunchResult": "request timed out",
+  "TargetableInstallerWindows": 0,
+  "ConsentProcessPresent": true,
+  "UserHandoffRequested": true,
+  "ConsentAutomated": false,
+  "InstalledFilePresent": false
+}

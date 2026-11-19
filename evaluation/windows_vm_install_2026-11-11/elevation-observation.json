@@ -1,0 +1,11 @@
+{
+  "ObservedAtUTC": "2026-11-11T19:31:26.3580178Z",
+  "UserReported": "UAC request did not appear",
+  "SkyLaunchResult": "launch_app timeout",
+  "ShellElevationResult": "Windows reported operation cancelled",
+  "AttributedToUserCancellation": false,
+  "InstallerWindowPresent": false,
+  "InstalledFilesPresent": false,
+  "SecuritySettingsChanged": false,
+  "Next": "User opens the verified installer directly in Explorer; no repeated elevation loop"
+}
