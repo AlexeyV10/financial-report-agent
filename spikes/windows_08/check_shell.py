@@ -22,17 +22,9 @@ ENTRIES = ('windows_05/service_cli.py', 'windows_06/supervised_service.py', 'win
            'windows_09/viewer_cli.py')
 
 
-def stage(args, output):
-    if not output.is_relative_to(ROOT / 'tmp') or output == ROOT / 'tmp':
-        raise ValueError('Use a fresh output path under tmp/')
-    output.mkdir(parents=True)
-    install, app_data, cwd, vault_a, vault_b = (output / name for name in (
-        'Установка оболочки', 'Данные оболочки', 'Пустой каталог', 'Проект А', 'Проект Б',
-    ))
-    cwd.mkdir()
-    app_data.mkdir()
+def stage_install(runtime_build, demo, install, *, executable_name='ProjectPractice-WIN08.exe'):
     old = runpy.run_path(str(ROOT / 'spikes/windows_04/check_workflow.py'))
-    old['prepare_install'](args.runtime_build.resolve(), args.demo.resolve(), install)
+    old['prepare_install'](runtime_build.resolve(), demo.resolve(), install)
     files = [f'src/financial_assistant/{name}.py' for name in MODULES]
     files += [f'spikes/{name}' for name in ENTRIES]
     for relative in files:
@@ -41,7 +33,7 @@ def stage(args, output):
         path.chmod(stat.S_IREAD)
 
     framework = Path(os.environ['SystemRoot']) / 'Microsoft.NET/Framework64/v4.0.30319'
-    executable = install / 'ProjectPractice-WIN08.exe'
+    executable = install / executable_name
     args_csc = [str(framework / 'csc.exe'), '/nologo', '/warnaserror+', '/target:winexe', '/platform:x64',
                 '/codepage:65001', '/main:WindowsShell', '/out:' + str(executable),
                 '/win32manifest:' + str(ROOT / 'spikes/windows_01/wpf.manifest')]
@@ -52,7 +44,8 @@ def stage(args, output):
     args_csc += [str(ROOT / 'spikes/windows_05/TypedHost.cs'),
                  str(Path(__file__).with_name('ShellClient.cs')), str(Path(__file__).with_name('WindowsShell.cs')),
                  str(ROOT / 'spikes/windows_09/ViewerClient.cs'),
-                 str(ROOT / 'spikes/windows_09/DocumentViewerPanel.cs')]
+                 str(ROOT / 'spikes/windows_09/DocumentViewerPanel.cs'),
+                 str(ROOT / 'spikes/windows_10/D0Client.cs'), str(ROOT / 'spikes/windows_10/D0Panel.cs')]
     subprocess.run(args_csc, check=True, timeout=25)
     executable.chmod(stat.S_IREAD)
     config = executable.with_suffix('.exe.config')
@@ -64,7 +57,19 @@ def stage(args, output):
         '</runtime></configuration>\n', encoding='utf-8',
     )
     config.chmod(stat.S_IREAD)
+    return old, executable
 
+
+def stage(args, output):
+    if not output.is_relative_to(ROOT / 'tmp') or output == ROOT / 'tmp':
+        raise ValueError('Use a fresh output path under tmp/')
+    output.mkdir(parents=True)
+    install, app_data, cwd, vault_a, vault_b = (output / name for name in (
+        'Установка оболочки', 'Данные оболочки', 'Пустой каталог', 'Проект А', 'Проект Б',
+    ))
+    cwd.mkdir()
+    app_data.mkdir()
+    old, executable = stage_install(args.runtime_build, args.demo, install)
     pdf = args.demo.resolve() / 'own-demo-v1.pdf'
     assert old['sha'](pdf) == old['OWN_PDF_SHA']
     old['prepare_vault'](vault_a, 'workspace-a', pdf, 'Отчёты/Учебный пример.pdf')

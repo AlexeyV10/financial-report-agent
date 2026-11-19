@@ -62,8 +62,12 @@ def main():
     try:
         paths = ApplicationPaths(args.install_root, args.app_data)
         workspace = WorkspaceContext.open(paths, args.vault)
-        response = render_workspace_source(workspace, args.run_id, args.resource_id, args.page_index,
-                                           args.zoom_percent, args.rotation, args.dpi_percent, args.crop_to_source)
+        render = render_workspace_source
+        if args.resource_id == "d0-own-v1":
+            from financial_assistant.d0_viewer import render_d0_source
+            render = render_d0_source
+        response = render(workspace, args.run_id, args.resource_id, args.page_index,
+                          args.zoom_percent, args.rotation, args.dpi_percent, args.crop_to_source)
         frame = _frame(response)
     except (DocumentViewerError, WorkspacePathError) as error:
         return _error(error.code)

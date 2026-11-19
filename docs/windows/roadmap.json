@@ -202,10 +202,13 @@
         "WIN-09"
       ],
       "release": "D0",
-      "status": "proposed_not_implemented",
+      "status": "d0_five_operations_clean_windows_validated",
       "deliverable": "Direct/delta/relative/scale/margin через прежний B и admission, уточнения, source/trace; private runtime installer и собственный rights-cleared demo с исходником/evidence.",
       "acceptance": "Прежние financial gates, поиск без полного комплекта блокирует ответ, publication unknown/technical failure; новые desktop workflows на clean VM. Нет Streamlit/browser UI server.",
-      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction",
+      "report": "docs/windows/d0_delivery.md",
+      "evidence": "evaluation/windows_10_2026-11-19/d0.json",
+      "continuation": "prompts/windows_11_safe_import.md"
     },
     {
       "id": "WIN-11",

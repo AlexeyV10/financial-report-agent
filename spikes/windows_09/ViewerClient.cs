@@ -21,11 +21,15 @@ internal sealed partial class ShellClient
     private const int ViewerMaxOutput = 2 * 1024 * 1024;
     private const int ViewerMaxDimension = 4096;
     private const string ViewerSchema = "win09-viewer-1";
+    internal const string D0SourceId = "d0-own-v1";
+    internal const string D0SourceSha = "ebabc9e49fbde3063f63f98393a271734bc16d0686ea035938ccd8d90db2caf0";
 
     internal ViewerReply View(string vault, string runId, string resourceId, string sha256, int pageIndex,
                               int zoomPercent, int rotation, int dpiPercent, bool cropToSource)
     {
-        if (!TypedHost.RunId(runId) || resourceId != TypedHost.SourceId || sha256 != TypedHost.SourceSha)
+        bool legacy = resourceId == TypedHost.SourceId && sha256 == TypedHost.SourceSha;
+        bool d0 = resourceId == D0SourceId && sha256 == D0SourceSha;
+        if (!TypedHost.RunId(runId) || (!legacy && !d0))
             return ViewerReply.Failure("viewer_untrusted_source");
         if (pageIndex < 0 || pageIndex >= 100 || zoomPercent < 50 || zoomPercent > 200
             || dpiPercent < 50 || dpiPercent > 200 || rotation < 0 || rotation > 270 || rotation % 90 != 0)
