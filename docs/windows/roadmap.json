@@ -50,7 +50,7 @@
         "WIN-01"
       ],
       "release": "D0",
-      "status": "host_validated_clean_vm_pending",
+      "status": "guest_workflow_validated_accessibility_pending",
       "deliverable": "Минимальная поставка выбранного GUI, PDF renderer и частного Python; per-user installer, manifest dependencies.",
       "acceptance": "Windows11 x64 без Python/Ollama/admin, Unicode путь, offline запуск собственного примера, uninstall; без PATH/global installs. Это feasibility, не подписанный публичный релиз.",
       "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction",
@@ -64,17 +64,19 @@
         "25 shipped cross-root private-path errors remain; no guard changes/full legacy parity",
         "Unsigned local binary; own code license undecided; no public binary release"
       ],
-      "continuation": "prompts/windows_02b_execute_guest_acceptance.md",
+      "continuation": "prompts/windows_03_runtime_regression.md",
       "acceptance_preparation": {
         "id": "WIN-02B",
-        "status": "guest_ready_for_win02b_acceptance",
+        "status": "guest_workflow_validated_accessibility_pending",
         "kit_prepared": true,
         "installer_unchanged": true,
-        "guest_tested": false,
-        "report": "docs/windows/virtual_machine_installation.md",
-        "evidence": "evaluation/windows_vm_install_2026-11-11/preflight-observed-2026-11-19.json",
+        "guest_tested": true,
+        "report": "docs/windows/guest_acceptance_result.md",
+        "evidence": "evaluation/windows_02b_guest_2026-11-19/report.json",
         "snapshot": "Before-WIN02B-2026-11-19",
-        "guest_preflight_passed": true
+        "guest_preflight_passed": true,
+        "guest_workflow_passed": true,
+        "full_accessibility_passed": false
       }
     },
     {

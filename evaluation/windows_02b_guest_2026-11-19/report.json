@@ -1,0 +1,127 @@
+{
+  "date": "2026-11-19",
+  "vm": "ProjectPractice-WIN02B-W11",
+  "snapshot": "Before-WIN02B-2026-11-19",
+  "guest_build": 26300,
+  "framework_release": 533509,
+  "installer_sha256": "f69523d44f474eacb0905d66e4f90294a3124a3d348c44222e6fe8e9ec3e56cf",
+  "offline": true,
+  "standard_account": true,
+  "installation": {
+    "interactive": true,
+    "elevation_prompt_observed": false,
+    "install_outside_checkout": true,
+    "unicode_and_space_path": true,
+    "copying_observed_ms": [
+      911,
+      4914
+    ],
+    "finish_wizard_observed": true,
+    "finish_time_ms": null
+  },
+  "shortcut": {
+    "observed": true,
+    "launch_retry_needed": true,
+    "rendered_before_app_input": true,
+    "rendered_by_ms_of_retry": 1199,
+    "first_launch_actuation_confirmed": false
+  },
+  "demo": {
+    "source": "installed own-demo-v1.pdf",
+    "page": 1,
+    "period": 2025,
+    "currency_scale": "RUB million",
+    "operating_profit": 18,
+    "revenue": 120,
+    "profit_cell_visually_highlighted": true,
+    "formula_in_result": "18 / 120 × 100",
+    "visible_margin": "15.00%"
+  },
+  "worker": {
+    "intermediate_stage_visible": "2 of 40",
+    "intermediate_observed_ms": 1176,
+    "escape_submitted_ms": 1232,
+    "cancel_status_and_empty_result_observed": true,
+    "crash_status_and_empty_result_observed": true,
+    "recovered_visible_margin": "15.00%"
+  },
+  "accessibility": {
+    "keyboard_tab_shift_tab_space_ctrl_o_escape_page_down_observed": true,
+    "visible_focus_observed": true,
+    "large_russian_text_observed": true,
+    "system_scale_observed_percent": 125,
+    "display_modes_visible_percent": [
+      100,
+      125
+    ],
+    "resolution_locked": "1024x768",
+    "system_200_percent_observed": false,
+    "contrast_initial": "None",
+    "contrast_tested": "Aquatic",
+    "contrast_effect_visible_in_application": true,
+    "contrast_restored": "None",
+    "spoken_narrator_observed": false,
+    "uia_observer_started_twice": true,
+    "uia_receipt_observed": false,
+    "working_set_bytes": null,
+    "peak_working_set_bytes": null
+  },
+  "control_file": {
+    "name": "WIN02B-control-2026-11-19.txt",
+    "content": "WIN02B own preservation control, 2026-11-19.",
+    "created_in_guest_app_data": true,
+    "same_sha256_before_and_after": "fd717d4aa8384c602fb5fbd5fef5f923bfaa1bb0c2d8188e72e92f1bfcdb10ae"
+  },
+  "model_calls": 0,
+  "status": "guest_workflow_validated_accessibility_pending",
+  "guest_workflow_passed": true,
+  "full_accessibility_passed": false,
+  "application_release_accepted": false,
+  "observed_from": "Private VirtualBox screenshots and guest checkpoints read in Notepad. Guest clock not synchronized with host.",
+  "diagnose": {
+    "working_directory": "Optical drive D:",
+    "execution_status": "completed",
+    "financial_status": "answered",
+    "python": "CPython 3.12.10 AMD64",
+    "prefix_under_install": true,
+    "all_observed_sys_path_entries_under_install": true,
+    "isolated": 1,
+    "no_user_site": 1,
+    "display": "15.00",
+    "source_sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+    "pdfium_diagnostic": "159.0.8149.0@sourcebuild-toolchained",
+    "new_model_calls": 0
+  },
+  "installed_checkpoint": {
+    "install_present": true,
+    "payload_matches_pinned_manifest": true,
+    "checked_payload_files": 270,
+    "readonly_assets": true,
+    "shortcut_present": true,
+    "hkcu_uninstall_present": true
+  },
+  "closing": {
+    "window_absent_at_first_observation_ms": 900,
+    "own_processes_before_uninstall": 0,
+    "process_read_complete": true
+  },
+  "uninstalled_checkpoint": {
+    "completed_in_interactive_wizard": true,
+    "install_present": false,
+    "shortcut_present": false,
+    "hkcu_uninstall_present": false,
+    "own_processes": 0,
+    "process_read_complete": true,
+    "data_preserved_from_before_uninstall": true,
+    "matching_data_files": 6
+  },
+  "remaining": [
+    "native system scale 200%",
+    "guest UIA names and result Value",
+    "audible reading of the result by Narrator",
+    "guest GUI/worker RAM samples",
+    "precise setup completion timestamp",
+    "independent Installed Apps review"
+  ],
+  "next": "prompts/windows_03_runtime_regression.md"
+}
