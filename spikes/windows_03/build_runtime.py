@@ -2,6 +2,7 @@
 
 import argparse
 import hashlib
+import io
 import json
 from pathlib import Path, PureWindowsPath
 import shutil
@@ -21,13 +22,16 @@ def sha256(path):
         return hashlib.file_digest(file, 'sha256').hexdigest()
 
 
-def check_input(path, item):
-    if path.stat().st_size != item['bytes'] or sha256(path) != item['sha256']:
+def read_locked_input(path, item):
+    with path.open('rb') as file:
+        data = file.read(item['bytes'] + 1)
+    if len(data) != item['bytes'] or hashlib.sha256(data).hexdigest() != item['sha256']:
         raise ValueError(f"Input differs from runtime lock: {item['file']}")
+    return data
 
 
-def extract(archive, destination):
-    with zipfile.ZipFile(archive) as package:
+def extract(data, destination):
+    with zipfile.ZipFile(io.BytesIO(data)) as package:
         entries = set()
         for member in package.infolist():
             relative = PureWindowsPath(member.filename)
@@ -73,20 +77,19 @@ def inventory(directory):
 
 def build(downloads, output):
     lock = json.loads(LOCK.read_bytes())
-    for item in lock['files']:
-        check_input(downloads / item['file'], item)
+    verified_inputs = [(item['role'], read_locked_input(downloads / item['file'], item))
+                       for item in lock['files']]
     if not output.is_relative_to(ROOT / 'tmp') or output == ROOT / 'tmp':
         raise ValueError('Choose a new output directory under this checkout’s tmp/')
     output.mkdir(parents=True)
     runtime = output / 'runtime'
-    for item in lock['files']:
-        source = downloads / item['file']
-        if item['role'] == 'runtime':
-            extract(source, runtime)
-        elif item['role'] == 'sbom':
-            shutil.copyfile(source, runtime / 'CPython-SBOM.spdx.json')
+    for role, data in verified_inputs:
+        if role == 'runtime':
+            extract(data, runtime)
+        elif role == 'sbom':
+            (runtime / 'CPython-SBOM.spdx.json').write_bytes(data)
         else:
-            extract(source, runtime / 'packages')
+            extract(data, runtime / 'packages')
 
     major, minor, _ = lock['python'].split('.')
     stem = f'python{major}{minor}'
