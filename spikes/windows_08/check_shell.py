@@ -16,8 +16,10 @@ from financial_assistant.application_paths import ApplicationPaths, WorkspaceCon
 from financial_assistant.vault_storage import DB_FILENAME, VaultStore
 
 
-MODULES = ('application_service', 'typed_ipc', 'job_supervisor', 'windows_job', 'vault_storage', 'vault_backup')
-ENTRIES = ('windows_05/service_cli.py', 'windows_06/supervised_service.py', 'windows_07/vault_cli.py')
+MODULES = ('application_service', 'typed_ipc', 'job_supervisor', 'windows_job', 'vault_storage',
+           'vault_backup', 'document_viewer')
+ENTRIES = ('windows_05/service_cli.py', 'windows_06/supervised_service.py', 'windows_07/vault_cli.py',
+           'windows_09/viewer_cli.py')
 
 
 def stage(args, output):
@@ -40,7 +42,7 @@ def stage(args, output):
 
     framework = Path(os.environ['SystemRoot']) / 'Microsoft.NET/Framework64/v4.0.30319'
     executable = install / 'ProjectPractice-WIN08.exe'
-    args_csc = [str(framework / 'csc.exe'), '/nologo', '/target:winexe', '/platform:x64',
+    args_csc = [str(framework / 'csc.exe'), '/nologo', '/warnaserror+', '/target:winexe', '/platform:x64',
                 '/codepage:65001', '/main:WindowsShell', '/out:' + str(executable),
                 '/win32manifest:' + str(ROOT / 'spikes/windows_01/wpf.manifest')]
     for name in ('System.Runtime.Serialization', 'System.Xml.Linq', 'System.Web.Extensions', 'System.Xaml'):
@@ -48,7 +50,9 @@ def stage(args, output):
     for name in ('PresentationFramework', 'PresentationCore', 'WindowsBase', 'UIAutomationTypes'):
         args_csc.append('/reference:' + str(framework / 'WPF' / (name + '.dll')))
     args_csc += [str(ROOT / 'spikes/windows_05/TypedHost.cs'),
-                 str(Path(__file__).with_name('ShellClient.cs')), str(Path(__file__).with_name('WindowsShell.cs'))]
+                 str(Path(__file__).with_name('ShellClient.cs')), str(Path(__file__).with_name('WindowsShell.cs')),
+                 str(ROOT / 'spikes/windows_09/ViewerClient.cs'),
+                 str(ROOT / 'spikes/windows_09/DocumentViewerPanel.cs')]
     subprocess.run(args_csc, check=True, timeout=25)
     executable.chmod(stat.S_IREAD)
     config = executable.with_suffix('.exe.config')
@@ -74,15 +78,18 @@ def stage(args, output):
     return old, fixture
 
 
-def run_probe(old, fixture, output):
+def run_probe(old, fixture, output, viewer_probe=False):
     config = {key: Path(value) for key, value in fixture.items()}
     install, app_data, cwd, vault_a, vault_b = (config[key] for key in ('installation', 'app_data', 'cwd', 'vault_a', 'vault_b'))
     before = old['files'](install)
+    mode = '--probe-viewer' if viewer_probe else '--probe'
     command = [str(config['executable']), '--app-data', str(app_data), '--vault-a', str(vault_a),
-               '--vault-b', str(vault_b), '--probe']
-    process = subprocess.run(command, cwd=cwd, capture_output=True, timeout=75)
-    assert process.returncode == 0, process.returncode
-    native = json.loads((app_data / 'win08-shell-probe.json').read_bytes())
+               '--vault-b', str(vault_b), mode]
+    process = subprocess.run(command, cwd=cwd, capture_output=True, timeout=100)
+    receipt_path = app_data / ('win09-viewer-probe.json' if viewer_probe else 'win08-shell-probe.json')
+    assert receipt_path.is_file(), f'{mode} exited with {process.returncode} before writing its receipt'
+    native = json.loads(receipt_path.read_bytes())
+    assert process.returncode == 0 and native['ok'], (process.returncode, native['incomplete_step'])
     paths = ApplicationPaths(install, app_data)
     with VaultStore(WorkspaceContext.open(paths, vault_a)) as store:
         counts = store.summary()
@@ -98,7 +105,8 @@ def run_probe(old, fixture, output):
     b_jobs = [json.loads(path.read_bytes()) for path in (vault_b / 'jobs').glob('*.json')]
     assert any(item['state'] == 'failed' and item['error'] == 'source_missing' for item in b_jobs)
     assert old['files'](install) == before and old['files'](cwd) == {}
-    receipt = {'schema': 'win08-installed-shell-proof-1', 'native': native, 'vault_a_counts': counts,
+    schema = 'win09-native-viewer-proof-1' if viewer_probe else 'win08-installed-shell-proof-1'
+    receipt = {'schema': schema, 'native': native, 'vault_a_counts': counts,
                'successful_source_sha256': matches[0]['sha256'], 'successful_display': '15.00',
                'other_vault_db_absent': True, 'other_vault_no_receipt_on_missing_source': True,
                'install_files_unchanged': len(before), 'cwd_empty': True, 'model_calls': 0}
@@ -112,11 +120,12 @@ def main():
     parser.add_argument('--demo', type=Path, required=True)
     parser.add_argument('--out', type=Path, required=True)
     parser.add_argument('--prepare-only', action='store_true')
+    parser.add_argument('--viewer-probe', action='store_true')
     args = parser.parse_args()
     output = args.out.resolve()
     old, fixture = stage(args, output)
     if not args.prepare_only:
-        run_probe(old, fixture, output)
+        run_probe(old, fixture, output, args.viewer_probe)
 
 
 if __name__ == '__main__':

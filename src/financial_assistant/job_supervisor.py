@@ -11,7 +11,7 @@ import re
 import stat
 import tempfile
 from threading import Condition, Event, Thread, Timer, TIMEOUT_MAX
-from time import monotonic
+from time import monotonic, sleep
 
 from .application_paths import WorkspacePathError, _directory, _inspect, _root
 from .typed_ipc import TypedIpcError, decode_request, decode_response, encode_request, encode_response
@@ -30,6 +30,8 @@ _ID = re.compile(r"[A-Za-z0-9][A-Za-z0-9_.-]{0,127}")
 _SHA = re.compile(r"[0-9a-f]{64}")
 _CODE = re.compile(r"[a-z][a-z0-9_]{0,63}")
 _MAX_JOURNAL_BYTES = 131072
+_REPLACE_RETRY_DELAYS = (0.01, 0.02, 0.04, 0.08, 0.10)
+_READONLY = getattr(stat, "FILE_ATTRIBUTE_READONLY", 1)
 
 
 class JobSupervisorError(ValueError):
@@ -163,6 +165,32 @@ def _lock_journal(directory):
     return stream
 
 
+def _replace_snapshot(pending, destination, previous):
+    delays = iter(_REPLACE_RETRY_DELAYS)
+    while True:
+        try:
+            pending.replace(destination)
+            return
+        except OSError as error:
+            winerror = getattr(error, "winerror", None)
+            # On Windows a held source produces sharing violation; replacing a held
+            # destination may instead produce access denied, even if it is writable.
+            existing_writable = previous is not None and not (
+                getattr(previous, "st_file_attributes", 0) & _READONLY)
+            delay = next(delays, None)
+            if (os.name != "nt" or delay is None
+                    or not (winerror in {32, 33} or (winerror == 5 and existing_writable))):
+                raise
+        sleep(delay)
+        _directory(destination.parent)
+        current = _inspect(destination)
+        if ((previous is None) != (current is None)
+                or (current is not None and (not stat.S_ISREG(current.st_mode)
+                    or not os.path.samestat(previous, current)
+                    or getattr(current, "st_file_attributes", 0) & _READONLY))):
+            raise JobSupervisorError("journal_write_failed")
+
+
 @dataclass(slots=True)
 class _Active:
     key: str
@@ -268,7 +296,7 @@ class JobSupervisor:
                 stream.flush()
                 os.fsync(stream.fileno())
             _directory(self.root)
-            pending.replace(destination)
+            _replace_snapshot(pending, destination, info)
             pending = None
         except (OSError, WorkspacePathError):
             raise JobSupervisorError("journal_write_failed") from None

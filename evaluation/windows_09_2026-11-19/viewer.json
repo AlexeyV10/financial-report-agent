@@ -1,0 +1,247 @@
+{
+  "schema": "win09-native-viewer-proof-1",
+  "native": {
+    "alternative_text_verified": true,
+    "display": "15.00",
+    "dpi_scale": 1.25,
+    "incomplete_step": null,
+    "ok": true,
+    "operation_error": null,
+    "page_count": 1,
+    "page_index": 0,
+    "panning_offset_after": 220,
+    "panning_offset_before": 0,
+    "panning_verified": true,
+    "pdf_page_label": null,
+    "printed_page": "1",
+    "return_to_analysis": true,
+    "schema": "win09-viewer-probe-1",
+    "scope_cleared": true,
+    "source_sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+    "steps": [
+      "open_exact_cited_page",
+      "pan_without_rerender",
+      "zoom_and_rotate_page",
+      "crop_to_source_rectangle",
+      "return_to_analysis_and_reopen",
+      "source_cleared_for_project_b",
+      "fresh_analysis_source_available"
+    ],
+    "views": [
+      {
+        "crop_to_source": false,
+        "dpi_percent": 125,
+        "green_outline": true,
+        "height": 450,
+        "highlight": [
+          375,
+          232,
+          425,
+          263
+        ],
+        "rotation": 0,
+        "width": 525,
+        "zoom_percent": 100
+      },
+      {
+        "crop_to_source": false,
+        "dpi_percent": 125,
+        "green_outline": true,
+        "height": 675,
+        "highlight": [
+          562,
+          348,
+          638,
+          394
+        ],
+        "rotation": 0,
+        "width": 788,
+        "zoom_percent": 150
+      },
+      {
+        "crop_to_source": false,
+        "dpi_percent": 125,
+        "green_outline": true,
+        "height": 788,
+        "highlight": [
+          281,
+          562,
+          327,
+          638
+        ],
+        "rotation": 90,
+        "width": 675,
+        "zoom_percent": 150
+      },
+      {
+        "crop_to_source": false,
+        "dpi_percent": 125,
+        "green_outline": true,
+        "height": 675,
+        "highlight": [
+          150,
+          281,
+          225,
+          327
+        ],
+        "rotation": 180,
+        "width": 788,
+        "zoom_percent": 150
+      },
+      {
+        "crop_to_source": false,
+        "dpi_percent": 125,
+        "green_outline": true,
+        "height": 788,
+        "highlight": [
+          348,
+          150,
+          394,
+          225
+        ],
+        "rotation": 270,
+        "width": 675,
+        "zoom_percent": 150
+      },
+      {
+        "crop_to_source": true,
+        "dpi_percent": 125,
+        "green_outline": true,
+        "height": 121,
+        "highlight": [
+          22,
+          23,
+          68,
+          98
+        ],
+        "rotation": 270,
+        "width": 91,
+        "zoom_percent": 150
+      },
+      {
+        "crop_to_source": false,
+        "dpi_percent": 125,
+        "green_outline": true,
+        "height": 450,
+        "highlight": [
+          375,
+          232,
+          425,
+          263
+        ],
+        "rotation": 0,
+        "width": 525,
+        "zoom_percent": 100
+      }
+    ]
+  },
+  "vault_a_counts": {
+    "documents": 1,
+    "originals": 1,
+    "versions": 1,
+    "revisions": 1,
+    "fts_rows": 1
+  },
+  "successful_source_sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+  "successful_display": "15.00",
+  "other_vault_db_absent": true,
+  "other_vault_no_receipt_on_missing_source": true,
+  "install_files_unchanged": 279,
+  "cwd_empty": true,
+  "model_calls": 0,
+  "python_viewer_tests": {
+    "schema": "win09-viewer-unit-tests-1",
+    "command_from_stage_root": "../windows-03-worktree/tmp/runtime-a/runtime/python.exe -X utf8 -I -B -m unittest discover -s spikes/windows_09 -p test_document_viewer.py -v",
+    "runtime": {
+      "platform": "Windows AMD64",
+      "python": "3.14.10",
+      "pillow": "13.0.0",
+      "pypdfium2": "5.15.2",
+      "pdfium": "159.0.8149.0@sourcebuild-toolchained"
+    },
+    "ran": 9,
+    "passed": 9,
+    "failed": 0,
+    "skipped": 0,
+    "elapsed_seconds": 2.495,
+    "checks": {
+      "rotations_zoom_dpi_and_png_green_frame": 64,
+      "crop_geometry_and_png": 3,
+      "observed_pdf_page_load_indexes": [
+        1
+      ],
+      "pdf_metadata_page_label": "Annex-7",
+      "pdf_printed_page_text": "Printed folio 42",
+      "installed_fixture_persisted_receipt_and_archive_unchanged": true,
+      "archived_pdf_render_without_loose_source": true,
+      "wrong_resource_page_run_and_vault_refused": true,
+      "tampered_receipt_and_same_size_archive_corruption_refused": true,
+      "missing_storage_refused": true,
+      "cli_rejects_direct_pdf_path": true
+    },
+    "sha256": {
+      "src/financial_assistant/document_viewer.py": "bffe374b2c607f45e7330a4b095c9321ca9f5065a5af222643d313b38c2afb78",
+      "spikes/windows_09/viewer_cli.py": "37f215394d8dafe39d34df912bf216fd65460827b9b81a3832f4ff85e1052356",
+      "spikes/windows_09/test_document_viewer.py": "f5c864bd35202315c41eb953347fe622de6d3c943c6b2502565af7cdd4565b7f"
+    },
+    "other_runtime": {
+      "name": "MSYS2 UCRT64 Python",
+      "ran": false,
+      "reason": "Bundled PDFium binding is not installed in this interpreter"
+    }
+  },
+  "archive_cli": {
+    "cached_view_after_source_removal_identical": true,
+    "source_sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+    "financial_receipt_unchanged": true,
+    "archive_runtime": "stock CPython 3.14.10",
+    "path_as_id_refused": true,
+    "file_argument_refused": true,
+    "other_vault_refused": true,
+    "printed_page": "1",
+    "page_index": 0,
+    "pdf_page_label": null,
+    "crop_highlight": [
+      12,
+      12,
+      52,
+      36
+    ]
+  },
+  "regression": {
+    "win05_native_and_cli": true,
+    "win08_native": true,
+    "dotnet_frame_checks_positive": 2,
+    "dotnet_frame_checks_negative": 10,
+    "frozen_service_b_passed": 39,
+    "supervisor_windows_stock_tests_passed": 12,
+    "real_journal_lock_regression_passed": true,
+    "disk_full_has_no_retry": true
+  },
+  "journal_probe_prior_run": {
+    "last_durable_state": "running",
+    "last_progress": 90,
+    "durable_success_receipt": false,
+    "original_os_error_observed": false
+  },
+  "acceptance_scope": {
+    "native_system_scale_pct": 125,
+    "renderer_tested_dpi_max_pct": 200,
+    "real_system_200_percent_confirmed": false,
+    "sheet_locator_available": false
+  },
+  "frozen_pins": [
+    {
+      "manifest": "evaluation/protocols/kp3_eval_v1/freeze-manifest.json",
+      "matching": 134
+    },
+    {
+      "manifest": "data/releases/kp3_rc1/manifest.json",
+      "matching": 329
+    }
+  ],
+  "status": "native_pdf_source_viewer_validated_d0",
+  "next": "prompts/windows_10_d0_delivery.md",
+  "date": "2026-11-19",
+  "base": "fa90c6b0787b3dc4c4c7c07fa8c3a29b9f2f580e"
+}

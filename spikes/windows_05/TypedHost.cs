@@ -104,7 +104,7 @@ internal static class TypedHost
     private sealed class JsonGrammar
     {
         private static readonly Regex Tokens = new Regex(
-            @"\G[\t ]*(""(?:[^""\\\x00-\x1f]|\\(?:[""\\/bfnrt]|u[0-9a-fA-F]{4}))*""|true|false|null|-?(?:0|[1-9][0-9]*)(?:\.[0-9]+)?(?:[eE][+-]?[0-9]+)?|[{}\[\],:])",
+            @"\G[\t ]*(""(?>[^""\\\x00-\x1f]*)(?:\\(?:[""\\/bfnrt]|u[0-9a-fA-F]{4})(?>[^""\\\x00-\x1f]*))*""|true|false|null|-?(?:0|[1-9][0-9]*)(?:\.[0-9]+)?(?:[eE][+-]?[0-9]+)?|[{}\[\],:])",
             RegexOptions.CultureInvariant, TimeSpan.FromMilliseconds(250));
         private readonly string text;
         private int offset;
@@ -194,7 +194,7 @@ internal static class TypedHost
         return value;
     }
 
-    internal static XElement ReadFrame(byte[] bytes, bool allowCrLf, int maximumArrayLength)
+    internal static XElement ReadFrame(byte[] bytes, bool allowCrLf, int maximumArrayLength, int maxText = 1024)
     {
         Require(bytes.Length > 1 && bytes[bytes.Length - 1] == (byte)'\n');
         int frameLength = bytes.Length - 1;
@@ -205,10 +205,15 @@ internal static class TypedHost
         JsonGrammar.Validate(Utf8.GetString(bytes, 0, frameLength));
         var quotas = new XmlDictionaryReaderQuotas {
             MaxDepth = 8, MaxArrayLength = maximumArrayLength, MaxBytesPerRead = 1024,
-            MaxStringContentLength = 1024, MaxNameTableCharCount = 2048
+            MaxStringContentLength = maxText, MaxNameTableCharCount = 2048
         };
         using (var reader = JsonReaderWriterFactory.CreateJsonReader(bytes, 0, frameLength, quotas))
-            return XDocument.Load(reader).Root;
+        {
+            var root = XDocument.Load(reader).Root;
+            Require(!root.Descendants().Any(node => (string)node.Attribute("type") == "string"
+                                                  && node.Value.Length > maxText));
+            return root;
+        }
     }
 
     internal static void RequireHighlight(XElement highlight)
@@ -257,7 +262,7 @@ internal static class TypedHost
             WorkspaceId = workspace, SourceId = SourceId, SourceSha256 = SourceSha};
     }
 
-    private static byte[] ReadPipe(Stream stream)
+    private static byte[] ReadPipe(Stream stream, int maxBytes)
     {
         using (var output = new MemoryStream())
         {
@@ -265,7 +270,7 @@ internal static class TypedHost
             int bytes;
             while ((bytes = stream.Read(buffer, 0, buffer.Length)) > 0)
             {
-                Require(output.Length + bytes <= MaxPipeBytes);
+                Require(output.Length + bytes <= maxBytes);
                 output.Write(buffer, 0, bytes);
             }
             return output.ToArray();
@@ -279,7 +284,8 @@ internal static class TypedHost
         internal int ExitCode;
     }
 
-    internal static WorkerOutcome InvokeFixed(string python, string args, string directory, CancellationToken cancel)
+    internal static WorkerOutcome InvokeFixed(string python, string args, string directory, CancellationToken cancel,
+                                              int maxOutput = MaxPipeBytes)
     {
         var info = new ProcessStartInfo(python, args) {
             UseShellExecute = false, CreateNoWindow = true, RedirectStandardInput = true,
@@ -296,8 +302,8 @@ internal static class TypedHost
                 started = process.Start();
                 if (!started) return new WorkerOutcome {Error = "worker_start"};
                 process.StandardInput.Close();
-                stdout = Task.Run(() => ReadPipe(process.StandardOutput.BaseStream));
-                stderr = Task.Run(() => ReadPipe(process.StandardError.BaseStream));
+                stdout = Task.Run(() => ReadPipe(process.StandardOutput.BaseStream, maxOutput));
+                stderr = Task.Run(() => ReadPipe(process.StandardError.BaseStream, MaxPipeBytes));
                 while (!process.HasExited || !stdout.IsCompleted || !stderr.IsCompleted)
                 {
                     cancel.ThrowIfCancellationRequested();

@@ -16,22 +16,23 @@ using System.Windows.Threading;
 
 internal sealed class WindowsShell : Window
 {
-    private enum Page { Projects, Documents, Analysis }
+    private enum Page { Projects, Documents, Analysis, Viewer }
 
     private sealed class Options
     {
         internal string Install, AppData, VaultA, VaultB;
-        internal bool Probe;
+        internal bool Probe, ProbeViewer;
 
         internal static Options Parse(string[] args)
         {
             if ((args.Length != 6 && args.Length != 7) || args[0] != "--app-data"
                 || args[2] != "--vault-a" || args[4] != "--vault-b"
-                || (args.Length == 7 && args[6] != "--probe"))
+                || (args.Length == 7 && args[6] != "--probe" && args[6] != "--probe-viewer"))
                 throw new ArgumentException("startup_arguments");
             var options = new Options {
                 Install = TypedHost.LocalPath(AppDomain.CurrentDomain.BaseDirectory), AppData = TypedHost.LocalPath(args[1]),
-                VaultA = TypedHost.LocalPath(args[3]), VaultB = TypedHost.LocalPath(args[5]), Probe = args.Length == 7
+                VaultA = TypedHost.LocalPath(args[3]), VaultB = TypedHost.LocalPath(args[5]),
+                Probe = args.Length == 7, ProbeViewer = args.Length == 7 && args[6] == "--probe-viewer"
             };
             string[] roots = {options.Install, options.AppData, options.VaultA, options.VaultB};
             for (int left = 0; left < roots.Length; left++)
@@ -61,13 +62,42 @@ internal sealed class WindowsShell : Window
         [DataMember] public List<string> steps = new List<string>();
     }
 
+    private sealed class SourceScope
+    {
+        internal string Vault, WorkspaceId, RunId, ResourceId, Sha256;
+        internal int PageIndex, Generation;
+    }
+
+    [DataContract]
+    private sealed class ViewerProbeReceipt
+    {
+        [DataMember] public string schema = "win09-viewer-probe-1";
+        [DataMember] public bool ok, alternative_text_verified, scope_cleared, return_to_analysis;
+        [DataMember] public bool panning_verified;
+        [DataMember] public double dpi_scale, panning_offset_before, panning_offset_after;
+        [DataMember] public int page_index, page_count;
+        [DataMember] public string printed_page, pdf_page_label, display, source_sha256, incomplete_step;
+        [DataMember] public string operation_error;
+        [DataMember] public List<string> steps = new List<string>();
+        [DataMember] public List<ViewerFrameReceipt> views = new List<ViewerFrameReceipt>();
+    }
+
+    [DataContract]
+    private sealed class ViewerFrameReceipt
+    {
+        [DataMember] public int rotation, zoom_percent, dpi_percent, width, height;
+        [DataMember] public int[] highlight;
+        [DataMember] public bool crop_to_source, green_outline;
+    }
+
     private readonly Options options;
     private readonly ShellClient client;
     private readonly ActionButton[] tabs = new ActionButton[3];
-    private readonly FrameworkElement[] pages = new FrameworkElement[3];
+    private readonly FrameworkElement[] pages = new FrameworkElement[4];
     private readonly TextBlock scope, projectSummary, documentSummary, status;
     private readonly Border statusBar;
-    private readonly ActionButton selectA, selectB, importDocument, searchDocuments, runAnalysis;
+    private readonly ActionButton selectA, selectB, importDocument, searchDocuments, runAnalysis, openSource;
+    private readonly DocumentViewerPanel viewer;
     private readonly TextBox query, result;
     private readonly ListBox documents;
     private readonly ScrollViewer contentArea;
@@ -75,8 +105,9 @@ internal sealed class WindowsShell : Window
     private string selectedVault, selectedName, workspaceId;
     private bool workspaceUsable;
     private bool busy, closing, probeStarted, statusIsError;
-    private int scopeGeneration;
-    private Task<ShellReply> worker;
+    private int scopeGeneration, viewerGeneration;
+    private SourceScope analysisSource;
+    private Task worker;
     private Task operation = Task.FromResult(0);
     private ShellReply lastReply;
 
@@ -178,7 +209,15 @@ internal sealed class WindowsShell : Window
         result.SetResourceReference(BorderBrushProperty, "Line");
         Identify(result, "analysisResult", "Результат анализа");
         analysis.Children.Add(result);
+        openSource = Button("Открыть источник расчёта", "openAnalysisSource");
+        openSource.Margin = new Thickness(0, 12, 8, 0);
+        openSource.Click += OpenSource;
+        analysis.Children.Add(openSource);
         pages[(int)Page.Analysis] = Card(analysis);
+        viewer = new DocumentViewerPanel();
+        viewer.BackRequested += () => ShowPage(Page.Analysis, moveFocus: true);
+        viewer.ViewChanged += RefreshViewer;
+        pages[(int)Page.Viewer] = viewer;
         foreach (FrameworkElement panel in pages) layer.Children.Add(panel);
 
         status = Label("Выберите проект для работы с документами.", 14);
@@ -271,17 +310,24 @@ internal sealed class WindowsShell : Window
 
     private void ShowPage(Page destination, bool moveFocus)
     {
+        if (page == Page.Viewer && destination != Page.Viewer)
+        {
+            viewerGeneration++;
+            viewer.Reset(0);
+            if (analysisSource != null) SetStatus("Расчёт завершён.");
+        }
         page = destination;
+        foreach (FrameworkElement panel in pages) panel.Visibility = Visibility.Collapsed;
+        pages[(int)destination].Visibility = Visibility.Visible;
         for (int index = 0; index < tabs.Length; index++)
         {
-            bool active = index == (int)destination;
-            pages[index].Visibility = active ? Visibility.Visible : Visibility.Collapsed;
+            bool active = index == (int)(destination == Page.Viewer ? Page.Analysis : destination);
             MarkActive(tabs[index], active, "Открыто");
         }
         contentArea.ScrollToTop();
         if (moveFocus)
         {
-            Control[] firstActions = {selectA, importDocument, runAnalysis};
+            Control[] firstActions = {selectA, importDocument, openSource.IsEnabled ? openSource : runAnalysis, viewer.BackButton};
             FocusWhenReady(firstActions[(int)destination]);
         }
     }
@@ -351,6 +397,7 @@ internal sealed class WindowsShell : Window
         selectA.IsEnabled = selectB.IsEnabled = !busy && !closing;
         importDocument.IsEnabled = runAnalysis.IsEnabled = scoped;
         searchDocuments.IsEnabled = scoped && query.Text.Trim().Length > 0;
+        openSource.IsEnabled = scoped && analysisSource != null;
     }
 
     private void ApplyWorkspaceId(ShellReply reply)
@@ -370,7 +417,7 @@ internal sealed class WindowsShell : Window
         MarkActive(selectB, root == options.VaultB, "Выбран");
         workspaceId = null;
         scope.Text = name;
-        result.Clear();
+        ClearAnalysis();
         documents.Items.Clear();
         query.Clear();
         projectSummary.Text = "Проверяем хранилище…";
@@ -406,7 +453,7 @@ internal sealed class WindowsShell : Window
     {
         if (!importDocument.IsEnabled) return;
         string root = selectedVault;
-        result.Clear();
+        ClearAnalysis();
         documents.Items.Clear();
         Start("Проверяем и сохраняем учебный документ…", () => client.Import(root), reply => {
             if (reply.Error != null) { SetStatus("Не удалось импортировать учебный документ.", error: true); return; }
@@ -434,7 +481,7 @@ internal sealed class WindowsShell : Window
     {
         if (!runAnalysis.IsEnabled) return;
         string root = selectedVault, run = Guid.NewGuid().ToString("N");
-        result.Clear();
+        ClearAnalysis();
         Start("Проверяем источник и рассчитываем маржу…", () => client.Analyze(root, run), reply => {
             if (reply.Error != null)
             {
@@ -443,11 +490,85 @@ internal sealed class WindowsShell : Window
                 return;
             }
             ApplyWorkspaceId(reply);
+            analysisSource = new SourceScope {Vault = root, WorkspaceId = reply.WorkspaceId, RunId = run,
+                ResourceId = reply.SourceId, Sha256 = reply.SourceSha256, PageIndex = reply.SourcePage - 1,
+                Generation = scopeGeneration};
             result.Text = "Операционная маржа: " + reply.Display + "%\nСобственный учебный PDF, страница "
                 + reply.SourcePage.ToString(CultureInfo.InvariantCulture) + ".";
             SetStatus("Расчёт завершён.");
             if (page == Page.Analysis) FocusWhenReady(result);
         });
+    }
+
+    private void ClearAnalysis()
+    {
+        analysisSource = null;
+        result.Clear();
+        viewerGeneration++;
+        viewer.Reset(0);
+    }
+
+    private void OpenSource(object sender, RoutedEventArgs args)
+    {
+        if (!openSource.IsEnabled || analysisSource == null) return;
+        viewerGeneration++;
+        viewer.Reset(analysisSource.PageIndex);
+        ShowPage(Page.Viewer, moveFocus: true);
+        RefreshViewer();
+    }
+
+    private double DpiScale()
+    {
+        var visual = PresentationSource.FromVisual(this);
+        return visual == null || visual.CompositionTarget == null ? 1.0 : visual.CompositionTarget.TransformToDevice.M11;
+    }
+
+    private void RefreshViewer()
+    {
+        var source = analysisSource;
+        if (closing || busy || page != Page.Viewer || source == null || source.Generation != scopeGeneration
+            || source.WorkspaceId != workspaceId || source.Vault != selectedVault) return;
+        busy = true;
+        SetStatus("Открываем страницу PDF…");
+        UpdateControls();
+        viewer.SetBusy(true);
+        viewer.Clear("Страница загружается…");
+        int zoom = viewer.ZoomPercent, rotation = viewer.Rotation;
+        int dpi = Math.Max(50, Math.Min(200, (int)Math.Round(DpiScale() * 100.0)));
+        bool crop = viewer.CropToSource;
+        Task<ViewerReply> activity = Task.Run(() => client.View(source.Vault, source.RunId, source.ResourceId,
+            source.Sha256, source.PageIndex, zoom, rotation, dpi, crop));
+        worker = activity;
+        operation = FinishViewer(activity, source, viewerGeneration, zoom, rotation, dpi, crop);
+    }
+
+    private async Task FinishViewer(Task<ViewerReply> activity, SourceScope source, int generation,
+                                    int zoom, int rotation, int dpi, bool crop)
+    {
+        ViewerReply reply;
+        try { reply = await activity; }
+        catch (Exception) { reply = null; }
+        if (closing) return;
+        busy = false;
+        viewer.SetBusy(false);
+        UpdateControls();
+        if (page != Page.Viewer || generation != viewerGeneration || source != analysisSource
+            || source.Generation != scopeGeneration || source.WorkspaceId != workspaceId) return;
+        try
+        {
+            if (reply == null || reply.Error != null || reply.ResourceId != source.ResourceId
+                || reply.SourceSha256 != source.Sha256 || reply.PageIndex != source.PageIndex
+                || reply.ZoomPercent != zoom || reply.Rotation != rotation || reply.DpiPercent != dpi
+                || reply.CropToSource != crop)
+                throw new InvalidDataException("viewer_reply_invalid");
+            viewer.Present(reply);
+            SetStatus("Открыт источник расчёта.");
+        }
+        catch (Exception)
+        {
+            viewer.Clear("Страница недоступна.");
+            SetStatus("Не удалось открыть источник расчёта.", error: true);
+        }
     }
 
     private void Start(string waiting, Func<ShellReply> request, Action<ShellReply> present)
@@ -457,8 +578,9 @@ internal sealed class WindowsShell : Window
         lastReply = null;
         SetStatus(waiting);
         UpdateControls();
-        worker = Task.Run(request);
-        operation = Finish(worker, scopeGeneration, present);
+        Task<ShellReply> activity = Task.Run(request);
+        worker = activity;
+        operation = Finish(activity, scopeGeneration, present);
     }
 
     private async Task Finish(Task<ShellReply> activity, int generation, Action<ShellReply> present)
@@ -490,6 +612,8 @@ internal sealed class WindowsShell : Window
         var visual = PresentationSource.FromVisual(this);
         var receipt = new ProbeReceipt {high_contrast = SystemParameters.HighContrast,
             dpi_scale = visual == null || visual.CompositionTarget == null ? 0.0 : visual.CompositionTarget.TransformToDevice.M11};
+        var viewerReceipt = options.ProbeViewer ? new ViewerProbeReceipt {dpi_scale = DpiScale(),
+            incomplete_step = "analysis_setup"} : null;
         int exit = 0;
         try
         {
@@ -527,6 +651,13 @@ internal sealed class WindowsShell : Window
             receipt.source_page = lastReply.SourcePage;
             receipt.source_sha256 = lastReply.SourceSha256;
             Mark(receipt, "supervised_margin_a");
+            if (viewerReceipt != null)
+            {
+                viewerReceipt.display = receipt.display;
+                viewerReceipt.source_sha256 = receipt.source_sha256;
+                await ProbeViewer(viewerReceipt);
+                viewerReceipt.incomplete_step = "scope_change_and_new_calculation";
+            }
 
             receipt.incomplete_step = "separate_project_b";
             tabs[(int)Page.Projects].ProbeClick();
@@ -546,6 +677,12 @@ internal sealed class WindowsShell : Window
             receipt.failure_result_empty = result.Text.Length == 0;
             Expect(lastReply != null && lastReply.Error == "source_missing" && receipt.failure_result_empty);
             Mark(receipt, "failed_margin_without_stale_value");
+            if (viewerReceipt != null)
+            {
+                Expect(!openSource.IsEnabled && analysisSource == null && viewer.Frame == null);
+                viewerReceipt.scope_cleared = true;
+                viewerReceipt.steps.Add("source_cleared_for_project_b");
+            }
 
             receipt.incomplete_step = "reopen_project_a";
             tabs[(int)Page.Projects].ProbeClick();
@@ -564,23 +701,114 @@ internal sealed class WindowsShell : Window
                 && lastReply.SourceSha256 == receipt.source_sha256 && result.Text.Contains("15.00%"));
             Mark(receipt, "fresh_margin_after_reopen");
             receipt.ok = true;
+            if (viewerReceipt != null)
+            {
+                Expect(openSource.IsEnabled && viewer.Frame == null);
+                viewerReceipt.steps.Add("fresh_analysis_source_available");
+                viewerReceipt.incomplete_step = null;
+                viewerReceipt.ok = true;
+            }
         }
-        catch (Exception) { exit = 4; }
+        catch (Exception)
+        {
+            if (viewerReceipt != null && receipt.incomplete_step != null && viewerReceipt.incomplete_step != null)
+            {
+                viewerReceipt.incomplete_step = receipt.incomplete_step;
+                viewerReceipt.operation_error = lastReply == null ? null : lastReply.Error;
+            }
+            exit = 4;
+        }
         if (closing) return;
-        try { SaveProbe(receipt); }
+        try
+        {
+            if (viewerReceipt != null) SaveProbe("win09-viewer-probe.json", viewerReceipt);
+            else SaveProbe("win08-shell-probe.json", receipt);
+        }
         catch (Exception) { exit = 5; }
         ScheduleShutdown(exit);
     }
 
-    private void SaveProbe(ProbeReceipt receipt)
+    private ViewerReply RecordFrame(ViewerProbeReceipt receipt, int zoom, int rotation, bool crop)
+    {
+        var frame = viewer.Frame;
+        Expect(page == Page.Viewer && frame != null && frame.PageIndex == 0 && frame.PageCount == 1
+            && frame.SourceSha256 == receipt.source_sha256 && frame.ZoomPercent == zoom && frame.Rotation == rotation
+            && frame.CropToSource == crop && viewer.GreenOutlineVisible());
+        receipt.views.Add(new ViewerFrameReceipt {rotation = frame.Rotation, zoom_percent = frame.ZoomPercent,
+            dpi_percent = frame.DpiPercent, width = frame.Width, height = frame.Height, highlight = frame.Highlight,
+            crop_to_source = frame.CropToSource, green_outline = true});
+        return frame;
+    }
+
+    private async Task ProbeViewer(ViewerProbeReceipt receipt)
+    {
+        receipt.incomplete_step = "open_exact_cited_page";
+        openSource.ProbeClick();
+        await operation;
+        var initial = RecordFrame(receipt, 100, 0, false);
+        Expect(viewer.AlternativesMatchFrame && initial.PrintedPage == "1" && String.IsNullOrEmpty(initial.PdfPageLabel));
+        receipt.page_index = initial.PageIndex;
+        receipt.page_count = initial.PageCount;
+        receipt.printed_page = initial.PrintedPage;
+        receipt.pdf_page_label = initial.PdfPageLabel;
+        receipt.alternative_text_verified = true;
+        receipt.steps.Add("open_exact_cited_page");
+
+        receipt.incomplete_step = "zoom_and_rotate_page";
+        viewer.ProbeZoom(150);
+        await operation;
+        var enlarged = RecordFrame(receipt, 150, 0, false);
+        Expect(enlarged.Width > initial.Width && enlarged.Height > initial.Height);
+        receipt.incomplete_step = "pan_without_rerender";
+        await Dispatcher.InvokeAsync(new Action(() => { }), DispatcherPriority.ApplicationIdle);
+        receipt.panning_offset_before = viewer.VerticalOffset;
+        Task rendered = operation;
+        viewer.ProbePanDown();
+        await Dispatcher.InvokeAsync(new Action(() => { }), DispatcherPriority.ApplicationIdle);
+        receipt.panning_offset_after = viewer.VerticalOffset;
+        Expect(receipt.panning_offset_after > receipt.panning_offset_before
+            && ReferenceEquals(enlarged, viewer.Frame) && ReferenceEquals(rendered, operation));
+        receipt.panning_verified = true;
+        receipt.steps.Add("pan_without_rerender");
+
+        receipt.incomplete_step = "rotate_page";
+        ViewerReply full = enlarged;
+        foreach (int angle in new[] {90, 180, 270})
+        {
+            viewer.ProbeRotate();
+            await operation;
+            full = RecordFrame(receipt, 150, angle, false);
+            Expect(full.Width == (angle == 180 ? enlarged.Width : enlarged.Height)
+                && full.Height == (angle == 180 ? enlarged.Height : enlarged.Width));
+        }
+        receipt.steps.Add("zoom_and_rotate_page");
+
+        receipt.incomplete_step = "crop_to_source_rectangle";
+        viewer.ProbeCrop();
+        await operation;
+        var cropped = RecordFrame(receipt, 150, 270, true);
+        Expect(cropped.Width < full.Width && cropped.Height < full.Height && viewer.AlternativesMatchFrame);
+        receipt.steps.Add("crop_to_source_rectangle");
+
+        receipt.incomplete_step = "return_to_analysis_and_reopen";
+        viewer.ProbeBack();
+        Expect(page == Page.Analysis && viewer.Frame == null && openSource.IsEnabled && result.Text.Contains("15.00%"));
+        receipt.return_to_analysis = true;
+        openSource.ProbeClick();
+        await operation;
+        RecordFrame(receipt, 100, 0, false);
+        receipt.steps.Add("return_to_analysis_and_reopen");
+    }
+
+    private void SaveProbe(string filename, object receipt)
     {
         for (var folder = new DirectoryInfo(options.AppData); folder != null; folder = folder.Parent)
             if (!folder.Exists || (folder.Attributes & FileAttributes.ReparsePoint) != 0)
                 throw new IOException("probe_directory_unavailable");
-        using (var stream = new FileStream(Path.Combine(options.AppData, "win08-shell-probe.json"),
+        using (var stream = new FileStream(Path.Combine(options.AppData, filename),
                  FileMode.CreateNew, FileAccess.Write, FileShare.None))
         {
-            new DataContractJsonSerializer(typeof(ProbeReceipt)).WriteObject(stream, receipt);
+            new DataContractJsonSerializer(receipt.GetType()).WriteObject(stream, receipt);
             stream.Flush(true);
         }
     }
