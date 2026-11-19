@@ -121,6 +121,14 @@ def _unique_fields(pairs):
     return fields
 
 
+def _receipt_filename(run_id):
+    key = _identifier(run_id, "invalid_run_id").lower()
+    try:
+        return _component(key + ".json")
+    except WorkspacePathError:
+        raise WorkspacePathError("invalid_run_id") from None
+
+
 @dataclass(frozen=True, slots=True)
 class _ExactResource:
     parts: tuple[str, ...]
@@ -247,11 +255,7 @@ class WorkspaceContext:
         return hashlib.sha256(encoded).hexdigest()
 
     def write_receipt(self, run_id: str, payload: dict) -> Path:
-        key = _identifier(run_id, "invalid_run_id").lower()
-        try:
-            filename = _component(key + ".json")
-        except WorkspacePathError:
-            raise WorkspacePathError("invalid_run_id") from None
+        filename = _receipt_filename(run_id)
         try:
             text = json.dumps(payload, ensure_ascii=False, allow_nan=False, sort_keys=True)
             if type(payload) is not dict or json.loads(text) != payload:
@@ -294,6 +298,23 @@ class WorkspaceContext:
                     # Preserve the publication outcome if a separate cleanup fails.
                     pass
         return target
+
+    def read_receipt(self, run_id: str, *, max_bytes: int = 65536) -> dict:
+        if type(max_bytes) is not int or not 1 <= max_bytes <= 1048576:
+            raise WorkspacePathError("invalid_receipt")
+        target = self.vault_root / "runs" / _receipt_filename(run_id)
+        _regular_file(target, missing="receipt_missing")
+        try:
+            with target.open("rb") as stream:
+                data = stream.read(max_bytes + 1)
+            if len(data) > max_bytes:
+                raise ValueError()
+            decoded = json.loads(data, object_pairs_hook=_unique_fields)
+            if type(decoded) is not dict:
+                raise ValueError()
+        except (OSError, ValueError, RecursionError):
+            raise WorkspacePathError("invalid_receipt") from None
+        return decoded
 
 
 def resolve_legacy_resource(legacy_root: Path, bindings: Mapping[str, dict], resource_id: str) -> Path:
