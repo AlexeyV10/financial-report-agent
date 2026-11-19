@@ -60,6 +60,12 @@ def startup_args():
     return args
 
 
+def write_reply(payload):
+    frame = json.dumps(payload, ensure_ascii=True, separators=(',', ':')).encode('ascii')
+    sys.stdout.buffer.write(frame + b'\n')
+    sys.stdout.buffer.flush()
+
+
 def main():
     args = startup_args()
     if (not args.install_root.is_absolute() or args.install_root.drive.startswith('\\\\')
@@ -92,12 +98,12 @@ def main():
                 else:
                     result = backup_store(store, args.backup_file)
     except (WorkspacePathError, VaultStorageError) as error:
-        print(json.dumps({'error': error.code}))
+        write_reply({'error': error.code})
         return 3
     except (OSError, ValueError):
-        print(json.dumps({'error': 'vault_operation_failed'}))
+        write_reply({'error': 'vault_operation_failed'})
         return 3
-    print(json.dumps(result, ensure_ascii=True))
+    write_reply(result)
     return 0
 
 

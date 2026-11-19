@@ -1,0 +1,203 @@
+{
+  "schema": "win08-installed-shell-proof-1",
+  "native": {
+    "display": "15.00",
+    "dpi_scale": 1.25,
+    "failure_error": "source_missing",
+    "failure_result_empty": true,
+    "high_contrast": false,
+    "incomplete_step": null,
+    "ok": true,
+    "schema": "win08-shell-probe-1",
+    "scope_isolated": true,
+    "source_page": 1,
+    "source_sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+    "steps": [
+      "empty_project_a",
+      "import_own_document",
+      "search_one_match",
+      "supervised_margin_a",
+      "separate_project_b",
+      "failed_margin_without_stale_value",
+      "reopen_project_a",
+      "fresh_margin_after_reopen"
+    ]
+  },
+  "vault_a_counts": {
+    "documents": 1,
+    "originals": 1,
+    "versions": 1,
+    "revisions": 1,
+    "fts_rows": 1
+  },
+  "successful_source_sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+  "successful_display": "15.00",
+  "other_vault_db_absent": true,
+  "other_vault_no_receipt_on_missing_source": true,
+  "install_files_unchanged": 277,
+  "cwd_empty": true,
+  "model_calls": 0,
+  "uia_projects": {
+    "schema": "win08-shell-uia-1",
+    "ok": true,
+    "image_matches": true,
+    "window_title_matches": true,
+    "process_scope_verified": true,
+    "screen": "projects",
+    "expected_screen_matched": true,
+    "expected_status_matched": true,
+    "status_visible_named": true,
+    "completed_status_observed": false,
+    "navigation_keyboard_focusable": true,
+    "active_controls_match": true,
+    "analysis_result_value_pattern": false,
+    "analysis_result_read_only": false,
+    "analysis_result_has_text": false,
+    "exact_demo_result_observed": false,
+    "focused_element": null,
+    "input_performed": false,
+    "controls": [
+      {
+        "automation_id": "projectsTab",
+        "visible": true,
+        "unique": true,
+        "named": true,
+        "stable_name_matched": true,
+        "keyboard_focusable": true,
+        "enabled": true
+      },
+      {
+        "automation_id": "documentsTab",
+        "visible": true,
+        "unique": true,
+        "named": true,
+        "stable_name_matched": true,
+        "keyboard_focusable": true,
+        "enabled": true
+      },
+      {
+        "automation_id": "analysisTab",
+        "visible": true,
+        "unique": true,
+        "named": true,
+        "stable_name_matched": true,
+        "keyboard_focusable": true,
+        "enabled": true
+      },
+      {
+        "automation_id": "selectVaultA",
+        "visible": true,
+        "unique": true,
+        "named": true,
+        "stable_name_matched": null,
+        "keyboard_focusable": true,
+        "enabled": true
+      },
+      {
+        "automation_id": "selectVaultB",
+        "visible": true,
+        "unique": true,
+        "named": true,
+        "stable_name_matched": null,
+        "keyboard_focusable": true,
+        "enabled": true
+      },
+      {
+        "automation_id": "importDocument",
+        "visible": false,
+        "unique": true,
+        "named": true,
+        "stable_name_matched": null,
+        "keyboard_focusable": false,
+        "enabled": false
+      },
+      {
+        "automation_id": "documentQuery",
+        "visible": false,
+        "unique": true,
+        "named": true,
+        "stable_name_matched": true,
+        "keyboard_focusable": false,
+        "enabled": true
+      },
+      {
+        "automation_id": "searchDocuments",
+        "visible": false,
+        "unique": true,
+        "named": true,
+        "stable_name_matched": null,
+        "keyboard_focusable": false,
+        "enabled": false
+      },
+      {
+        "automation_id": "documentResults",
+        "visible": false,
+        "unique": true,
+        "named": true,
+        "stable_name_matched": true,
+        "keyboard_focusable": false,
+        "enabled": true
+      },
+      {
+        "automation_id": "runAnalysis",
+        "visible": false,
+        "unique": true,
+        "named": true,
+        "stable_name_matched": null,
+        "keyboard_focusable": false,
+        "enabled": false
+      },
+      {
+        "automation_id": "analysisResult",
+        "visible": false,
+        "unique": true,
+        "named": true,
+        "stable_name_matched": true,
+        "keyboard_focusable": false,
+        "enabled": true
+      },
+      {
+        "automation_id": "shellStatus",
+        "visible": true,
+        "unique": true,
+        "named": true,
+        "stable_name_matched": null,
+        "keyboard_focusable": false,
+        "enabled": true
+      }
+    ]
+  },
+  "regressions": {
+    "typed_ipc_stock_python_tests_passed": 12,
+    "sqlite_stock_python_tests_passed": 10,
+    "win05_e2e_display": "15.00",
+    "win05_e2e_missing_source": true
+  },
+  "remaining_acceptance": [
+    "physical_keyboard_workflow",
+    "interactive_focus_all_screens",
+    "windows_200_percent_dpi",
+    "audible_narrator",
+    "guest_launch_of_win08"
+  ],
+  "guest_transfer_media": {
+    "files": 283,
+    "installation_files": 277,
+    "guest_launch_verified": false,
+    "sha256": "5b8b5ee8105b75fc3401a25aeec3e51733cc5edbbe3ce72471450553eac7ec20"
+  },
+  "frozen_pins": [
+    {
+      "manifest": "evaluation/protocols/kp3_eval_v1/freeze-manifest.json",
+      "matching": 134
+    },
+    {
+      "manifest": "data/releases/kp3_rc1/manifest.json",
+      "matching": 329
+    }
+  ],
+  "status": "native_shell_workflow_validated_accessibility_pending",
+  "next": "prompts/windows_09_document_viewer.md",
+  "date": "2026-11-19",
+  "base": "3a93f8e0a7f59066da8e5a20252cbc311e6495cc"
+}

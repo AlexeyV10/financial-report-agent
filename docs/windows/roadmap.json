@@ -165,10 +165,13 @@
         "WIN-06"
       ],
       "release": "D0",
-      "status": "proposed_not_implemented",
+      "status": "native_shell_workflow_validated_accessibility_pending",
       "deliverable": "Qt/WPF shell в согласованном бело-зелёном направлении; projects/documents/analysis, labels, empty/loading/error states.",
       "acceptance": "Реальные действия, длинные русские подписи, клавиатура/фокус/Narrator/125–200%DPI. Нет нефункциональных кнопок и UI-side финансовой арифметики.",
-      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction",
+      "report": "docs/windows/native_shell.md",
+      "evidence": "evaluation/windows_08_2026-11-19/shell.json",
+      "continuation": "prompts/windows_09_document_viewer.md"
     },
     {
       "id": "WIN-09",

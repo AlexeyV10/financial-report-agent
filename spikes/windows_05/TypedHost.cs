@@ -19,9 +19,10 @@ using System.Xml.Linq;
 internal static class TypedHost
 {
     private const string Command = "own_margin";
-    private const string SourceSha = "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451";
+    internal const string SourceId = "own-demo-v1";
+    internal const string SourceSha = "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451";
     private const int MaxPipeBytes = 65536;
-    private static readonly Encoding Utf8 = new UTF8Encoding(false, true);
+    internal static readonly Encoding Utf8 = new UTF8Encoding(false, true);
 
     private sealed class Launch
     {
@@ -44,12 +45,12 @@ internal static class TypedHost
         }
     }
 
-    private static bool RunId(string value)
+    internal static bool RunId(string value)
     {
         return value != null && Regex.IsMatch(value, @"\A[a-zA-Z0-9][a-zA-Z0-9_.-]{0,63}\z");
     }
 
-    private static string LocalPath(string value)
+    internal static string LocalPath(string value)
     {
         if (!Regex.IsMatch(value, @"\A[a-zA-Z]:[\\/]") || value.IndexOf('"') >= 0
             || value.IndexOf(':', 2) >= 0 || value.Any(char.IsControl))
@@ -58,7 +59,7 @@ internal static class TypedHost
         return full.Length == 3 ? full : full.TrimEnd('\\');
     }
 
-    private static void CheckDisjoint(string first, string second)
+    internal static void CheckDisjoint(string first, string second)
     {
         string firstPrefix = first.TrimEnd('\\') + "\\";
         string secondPrefix = second.TrimEnd('\\') + "\\";
@@ -67,7 +68,7 @@ internal static class TypedHost
             throw new ArgumentException("launch_path_overlap");
     }
 
-    private static string Quote(string value)
+    internal static string Quote(string value)
     {
         if (value.IndexOf('"') >= 0 || value.Any(char.IsControl))
             throw new ArgumentException("launch_argument");
@@ -76,7 +77,7 @@ internal static class TypedHost
     }
 
     [DataContract]
-    private sealed class Receipt
+    internal sealed class Receipt
     {
         [DataMember] public string schema = "win05-native-probe-1";
         [DataMember] public bool button_activated = true;
@@ -85,6 +86,7 @@ internal static class TypedHost
         [DataMember] public string run_id, context_id, status, display, error;
         [DataMember] public int? source_page;
         internal int ExitCode;
+        internal string WorkspaceId, SourceId, SourceSha256;
 
         internal static Receipt Failure(string run, string context, string errorCode, int exitCode)
         {
@@ -92,7 +94,7 @@ internal static class TypedHost
         }
     }
 
-    private static void Require(bool condition)
+    internal static void Require(bool condition)
     {
         if (!condition) throw new InvalidDataException("worker_protocol");
     }
@@ -170,7 +172,7 @@ internal static class TypedHost
         }
     }
 
-    private static void Shape(XElement node, string kind, params string[] fields)
+    internal static void Shape(XElement node, string kind, params string[] fields)
     {
         Require(node.Name.NamespaceName.Length == 0 && (string)node.Attribute("type") == kind
                 && node.Attributes().Count() == 1);
@@ -179,71 +181,80 @@ internal static class TypedHost
                 && fields.All(field => children.Count(item => item.Name == field) == 1));
     }
 
-    private static string Scalar(XElement node, string kind)
+    internal static string Scalar(XElement node, string kind)
     {
         Shape(node, kind);
         return node.Value;
     }
 
-    private static int Integer(XElement node)
+    internal static int Integer(XElement node)
     {
         int value;
         Require(int.TryParse(Scalar(node, "number"), NumberStyles.None, CultureInfo.InvariantCulture, out value));
         return value;
     }
 
-    private static Receipt Interpret(byte[] bytes, string run, int exitCode)
+    internal static XElement ReadFrame(byte[] bytes, bool allowCrLf, int maximumArrayLength)
     {
-        if (exitCode != 0 && exitCode != 3) return Receipt.Failure(run, null, "worker_exit", 4);
         Require(bytes.Length > 1 && bytes[bytes.Length - 1] == (byte)'\n');
         int frameLength = bytes.Length - 1;
-        if (bytes[frameLength - 1] == (byte)'\r') frameLength--;
+        if (allowCrLf && bytes[frameLength - 1] == (byte)'\r') frameLength--;
         Require(frameLength > 0 && bytes[0] == (byte)'{'
                 && Array.IndexOf(bytes, (byte)'\n', 0, frameLength) < 0
                 && Array.IndexOf(bytes, (byte)'\r', 0, frameLength) < 0);
         JsonGrammar.Validate(Utf8.GetString(bytes, 0, frameLength));
         var quotas = new XmlDictionaryReaderQuotas {
-            MaxDepth = 8, MaxArrayLength = 16, MaxBytesPerRead = 1024,
+            MaxDepth = 8, MaxArrayLength = maximumArrayLength, MaxBytesPerRead = 1024,
             MaxStringContentLength = 1024, MaxNameTableCharCount = 2048
         };
         using (var reader = JsonReaderWriterFactory.CreateJsonReader(bytes, 0, frameLength, quotas))
-        {
-            var frame = XDocument.Load(reader).Root;
-            Shape(frame, "object", "schema", "run_id", "context_id", "command", "status", "result", "error");
-            Require(Scalar(frame.Element("schema"), "string") == "win05-response-1"
-                    && Scalar(frame.Element("run_id"), "string") == run
-                    && Scalar(frame.Element("command"), "string") == Command);
-            string context = Scalar(frame.Element("context_id"), "string");
-            Require(Regex.IsMatch(context, @"\A[0-9a-f]{64}\z"));
-            string status = Scalar(frame.Element("status"), "string");
-            var result = frame.Element("result");
-            if (exitCode == 3)
-            {
-                string error = Scalar(frame.Element("error"), "string");
-                Require(status == "failed" && Scalar(result, "null").Length == 0
-                        && Regex.IsMatch(error, @"\A[a-z][a-z0-9_]{0,63}\z"));
-                return Receipt.Failure(run, context, error, 3);
-            }
+            return XDocument.Load(reader).Root;
+    }
 
-            Require(status == "completed" && Scalar(frame.Element("error"), "null").Length == 0);
-            Shape(result, "object", "workspace_id", "source_id", "source_sha256", "source_page",
-                  "source_highlight", "operation", "display", "financial_status", "model_calls");
-            int page = Integer(result.Element("source_page"));
-            string display = Scalar(result.Element("display"), "string");
-            Require(Regex.IsMatch(Scalar(result.Element("workspace_id"), "string"), @"\A[a-zA-Z0-9][a-zA-Z0-9_.-]{0,127}\z")
-                    && Scalar(result.Element("source_id"), "string") == "own-demo-v1"
-                    && Scalar(result.Element("source_sha256"), "string") == SourceSha
-                    && Scalar(result.Element("operation"), "string") == "operating_margin_v1"
-                    && Scalar(result.Element("financial_status"), "string") == "answered"
-                    && display == "15.00" && page == 1 && Integer(result.Element("model_calls")) == 0);
-            var highlight = result.Element("source_highlight");
-            var points = highlight.Elements().ToArray();
-            Require((string)highlight.Attribute("type") == "array" && highlight.Attributes().Count() == 1
-                    && points.Length == 4 && points.All(point => point.Name == "item"));
-            int[] rect = points.Select(Integer).ToArray();
-            Require(rect[0] < rect[2] && rect[1] < rect[3] && rect[2] <= 420 && rect[3] <= 360);
-            return new Receipt {run_id = run, context_id = context, status = status, display = display, source_page = page};
+    internal static void RequireHighlight(XElement highlight)
+    {
+        var points = highlight.Elements().ToArray();
+        Require((string)highlight.Attribute("type") == "array" && highlight.Attributes().Count() == 1
+                && points.Length == 4 && points.All(point => point.Name == "item"));
+        int[] rect = points.Select(Integer).ToArray();
+        Require(rect[0] < rect[2] && rect[1] < rect[3] && rect[2] <= 420 && rect[3] <= 360);
+    }
+
+    internal static Receipt Interpret(byte[] bytes, string run, int exitCode, bool allowCrLf = true)
+    {
+        if (exitCode != 0 && exitCode != 3) return Receipt.Failure(run, null, "worker_exit", 4);
+        var frame = ReadFrame(bytes, allowCrLf, 16);
+        Shape(frame, "object", "schema", "run_id", "context_id", "command", "status", "result", "error");
+        Require(Scalar(frame.Element("schema"), "string") == "win05-response-1"
+                && Scalar(frame.Element("run_id"), "string") == run
+                && Scalar(frame.Element("command"), "string") == Command);
+        string context = Scalar(frame.Element("context_id"), "string");
+        Require(Regex.IsMatch(context, @"\A[0-9a-f]{64}\z"));
+        string status = Scalar(frame.Element("status"), "string");
+        var result = frame.Element("result");
+        if (exitCode == 3)
+        {
+            string error = Scalar(frame.Element("error"), "string");
+            Require(status == "failed" && Scalar(result, "null").Length == 0
+                    && Regex.IsMatch(error, @"\A[a-z][a-z0-9_]{0,63}\z"));
+            return Receipt.Failure(run, context, error, 3);
         }
+
+        Require(status == "completed" && Scalar(frame.Element("error"), "null").Length == 0);
+        Shape(result, "object", "workspace_id", "source_id", "source_sha256", "source_page",
+              "source_highlight", "operation", "display", "financial_status", "model_calls");
+        int page = Integer(result.Element("source_page"));
+        string display = Scalar(result.Element("display"), "string");
+        string workspace = Scalar(result.Element("workspace_id"), "string");
+        Require(Regex.IsMatch(workspace, @"\A[a-zA-Z0-9][a-zA-Z0-9_.-]{0,127}\z")
+                && Scalar(result.Element("source_id"), "string") == SourceId
+                && Scalar(result.Element("source_sha256"), "string") == SourceSha
+                && Scalar(result.Element("operation"), "string") == "operating_margin_v1"
+                && Scalar(result.Element("financial_status"), "string") == "answered"
+                && display == "15.00" && page == 1 && Integer(result.Element("model_calls")) == 0);
+        RequireHighlight(result.Element("source_highlight"));
+        return new Receipt {run_id = run, context_id = context, status = status, display = display, source_page = page,
+            WorkspaceId = workspace, SourceId = SourceId, SourceSha256 = SourceSha};
     }
 
     private static byte[] ReadPipe(Stream stream)
@@ -261,16 +272,18 @@ internal static class TypedHost
         }
     }
 
-    private static Receipt InvokeService(Launch launch, string run, CancellationToken cancel)
+    internal sealed class WorkerOutcome
     {
-        string python = Path.Combine(launch.Install, @"runtime\python.exe");
-        string entry = Path.Combine(launch.Install, @"app\spikes\windows_05\service_cli.py");
-        if (!File.Exists(python) || !File.Exists(entry)) return Receipt.Failure(run, null, "worker_missing", 4);
-        var info = new ProcessStartInfo(python, "-I -B -X utf8 " + Quote(entry)
-            + " --install-root " + Quote(launch.Install) + " --app-data " + Quote(launch.AppData)
-            + " --vault " + Quote(launch.Vault) + " --run-id " + Quote(run)) {
+        internal byte[] Frame;
+        internal string Error;
+        internal int ExitCode;
+    }
+
+    internal static WorkerOutcome InvokeFixed(string python, string args, string directory, CancellationToken cancel)
+    {
+        var info = new ProcessStartInfo(python, args) {
             UseShellExecute = false, CreateNoWindow = true, RedirectStandardInput = true,
-            RedirectStandardOutput = true, RedirectStandardError = true, WorkingDirectory = launch.Install
+            RedirectStandardOutput = true, RedirectStandardError = true, WorkingDirectory = directory
         };
         using (var process = new Process {StartInfo = info})
         {
@@ -281,23 +294,23 @@ internal static class TypedHost
                 cancel.ThrowIfCancellationRequested();
                 var time = Stopwatch.StartNew();
                 started = process.Start();
-                if (!started) return Receipt.Failure(run, null, "worker_start", 4);
+                if (!started) return new WorkerOutcome {Error = "worker_start"};
                 process.StandardInput.Close();
                 stdout = Task.Run(() => ReadPipe(process.StandardOutput.BaseStream));
                 stderr = Task.Run(() => ReadPipe(process.StandardError.BaseStream));
                 while (!process.HasExited || !stdout.IsCompleted || !stderr.IsCompleted)
                 {
                     cancel.ThrowIfCancellationRequested();
-                    if (time.ElapsedMilliseconds >= 15000) return Receipt.Failure(run, null, "worker_timeout", 4);
+                    if (time.ElapsedMilliseconds >= 15000) return new WorkerOutcome {Error = "worker_timeout"};
                     Require(!stdout.IsFaulted && !stderr.IsFaulted);
                     Thread.Sleep(20);
                 }
                 cancel.ThrowIfCancellationRequested();
                 stderr.GetAwaiter().GetResult();
-                return Interpret(stdout.GetAwaiter().GetResult(), run, process.ExitCode);
+                return new WorkerOutcome {Frame = stdout.GetAwaiter().GetResult(), ExitCode = process.ExitCode};
             }
-            catch (OperationCanceledException) { return Receipt.Failure(run, null, "worker_cancelled", 4); }
-            catch (Exception) { return Receipt.Failure(run, null, started ? "worker_protocol" : "worker_start", 4); }
+            catch (OperationCanceledException) { return new WorkerOutcome {Error = "worker_cancelled"}; }
+            catch (Exception) { return new WorkerOutcome {Error = started ? "worker_protocol" : "worker_start"}; }
             finally
             {
                 if (started)
@@ -310,6 +323,19 @@ internal static class TypedHost
                 if (stderr != null && stderr.IsFaulted) GC.KeepAlive(stderr.Exception);
             }
         }
+    }
+
+    private static Receipt InvokeService(Launch launch, string run, CancellationToken cancel)
+    {
+        string python = Path.Combine(launch.Install, @"runtime\python.exe");
+        string entry = Path.Combine(launch.Install, @"app\spikes\windows_05\service_cli.py");
+        if (!File.Exists(python) || !File.Exists(entry)) return Receipt.Failure(run, null, "worker_missing", 4);
+        var worker = InvokeFixed(python, "-I -B -X utf8 " + Quote(entry)
+            + " --install-root " + Quote(launch.Install) + " --app-data " + Quote(launch.AppData)
+            + " --vault " + Quote(launch.Vault) + " --run-id " + Quote(run), launch.Install, cancel);
+        if (worker.Error != null) return Receipt.Failure(run, null, worker.Error, 4);
+        try { return Interpret(worker.Frame, run, worker.ExitCode); }
+        catch (Exception) { return Receipt.Failure(run, null, "worker_protocol", 4); }
     }
 
     private static void SaveProbe(string appData, Receipt receipt)
