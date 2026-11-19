@@ -10,6 +10,7 @@ internal sealed class ExtractReply
     internal string[] Preview = new string[0];
 
     internal bool Completed { get { return Status == "extracted" || Status == "reused"; } }
+    internal bool RequiresOcr { get { return Status == "unsupported" && Error == "pdf_ocr_pending"; } }
 
     internal static ExtractReply Failure(string error)
     {
@@ -28,7 +29,7 @@ internal sealed partial class ShellClient
 
     internal static bool CanExtractType(string type)
     {
-        return type == "csv" || type == "xlsx" || type == "docx" || type == "txt";
+        return type == "csv" || type == "xlsx" || type == "docx" || type == "txt" || type == "pdf";
     }
 
     internal ExtractReply ExtractAsset(string vault, ImportReply asset)
@@ -79,6 +80,8 @@ internal sealed partial class ShellClient
                 || (reply.Status == "error" && exitCode == 3 && reply.ExtractionState == "failed"))
                 && reply.Error != null && Regex.IsMatch(reply.Error, @"\A[a-z][a-z0-9_]{0,63}\z")
                 && reply.TableCount == 0 && reply.ParagraphCount == 0 && reply.Preview.Length == 0);
+            if (reply.Error == "pdf_ocr_pending")
+                TypedHost.Require(reply.RequiresOcr && fileType == "pdf" && workspace != null && sha != null);
         }
         return reply;
     }

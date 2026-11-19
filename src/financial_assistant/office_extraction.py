@@ -5,6 +5,7 @@ import json
 from .application_paths import WorkspacePathError
 from .docx_extract import extract_docx
 from .office_extraction_common import ExtractionError
+from .pdf_document_ir import extract_pdf_document
 from .safe_import import ImportValidationError, classify_bytes
 from .spreadsheet_extract import extract_xlsx
 from .text_extract import extract_text
@@ -12,8 +13,9 @@ from .vault_storage import VaultStore
 
 
 _DATA_SCHEMA = 'win12-structured-extraction-1'
+_PDF_SCHEMA = 'win13-digital-pdf-ir-1'
 _ARTIFACT_LIMIT = 1024 * 1024
-_SUPPORTED = {'csv', 'xlsx', 'docx', 'txt'}
+_SUPPORTED = {'csv', 'xlsx', 'docx', 'txt', 'pdf'}
 _PREVIEW_LIMIT = 16
 
 
@@ -36,6 +38,8 @@ def _archive(workspace, sha256):
 
 
 def _derive(data, file_type):
+    if file_type == 'pdf':
+        return extract_pdf_document(data)
     if file_type == 'xlsx':
         return extract_xlsx(data)
     if file_type == 'docx':
@@ -43,12 +47,13 @@ def _derive(data, file_type):
     return extract_text(data, file_type)
 
 
-def _artifact_key(sha256):
-    return 'win12-extract-v1-' + sha256
+def _artifact_key(sha256, file_type):
+    prefix = 'win13-pdf-ir-v1-' if file_type == 'pdf' else 'win12-extract-v1-'
+    return prefix + sha256
 
 
 def _publish(workspace, artifact):
-    run = _artifact_key(artifact['asset_sha256'])
+    run = _artifact_key(artifact['asset_sha256'], artifact['file_type'])
     try:
         workspace.write_receipt(run, artifact)
         return 'extracted'
@@ -62,10 +67,12 @@ def _publish(workspace, artifact):
 
 def extract_capture(workspace, sha256):
     capture, data = _archive(workspace, sha256)
-    if data is None:
+    file_type = capture['file_type']
+    structured = _derive(data, file_type) if data is not None else None
+    if structured is None:
         return 'unsupported', capture, None
-    structured = _derive(data, capture['file_type'])
-    artifact = {'schema': _DATA_SCHEMA, 'asset_sha256': sha256, 'workspace_id': workspace.workspace_id,
+    schema = _PDF_SCHEMA if file_type == 'pdf' else _DATA_SCHEMA
+    artifact = {'schema': schema, 'asset_sha256': sha256, 'workspace_id': workspace.workspace_id,
                 'file_type': capture['file_type'], 'semantic_state': 'not_reviewed', 'data': structured}
     wire = (json.dumps(artifact, ensure_ascii=False, allow_nan=False, sort_keys=True) + '\n').encode('utf-8')
     if len(wire) > _ARTIFACT_LIMIT:
@@ -83,6 +90,9 @@ def _one_line(label, value):
 
 def _table_label(file_type, cell):
     locator = cell['locator']
+    if file_type == 'pdf':
+        return (f"PDF · страница {locator['page_index'] + 1} · строка {locator['row']} · "
+                f"столбец {locator['column']}: ")
     if file_type == 'xlsx':
         return f"Лист {locator['sheet']} · {locator['address']}: "
     if file_type == 'docx':
@@ -110,6 +120,11 @@ def preview_rows(data, file_type):
                     return result
     for paragraph in data['paragraphs'][:_PREVIEW_LIMIT - len(result)]:
         locator = paragraph['locator']
-        title = f"DOCX · абзац {locator['paragraph']}: " if file_type == 'docx' else f"TXT · строка {locator['line']}: "
+        if file_type == 'pdf':
+            title = f"PDF · страница {locator['page_index'] + 1} · строка {locator['line']}: "
+        elif file_type == 'docx':
+            title = f"DOCX · абзац {locator['paragraph']}: "
+        else:
+            title = f"TXT · строка {locator['line']}: "
         result.append(_one_line(title, paragraph['text']))
     return result

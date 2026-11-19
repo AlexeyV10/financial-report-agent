@@ -249,10 +249,13 @@
         "WIN-11"
       ],
       "release": "D1",
-      "status": "proposed_not_implemented",
+      "status": "digital_pdf_document_ir_validated_d1",
       "deliverable": "Text spans/boxes/table geometry/compound headers/multi-page linkage с parser/config/environment fingerprints.",
       "acceptance": "Потерянные headers, rotation, columns, split table, units/signs, отсутствующая страница; результат на exact cell/context, не только красивый Markdown.",
-      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction"
+      "branch_rule": "Separate codex/ branch before significant implementation; allowlisted commit/push/PR/tag; no merge without instruction",
+      "report": "docs/windows/digital_pdf_document_ir.md",
+      "evidence": "evaluation/windows_13_2026-11-20/digital-pdf.json",
+      "continuation": "prompts/windows_14_ocr_benchmark.md"
     },
     {
       "id": "WIN-14",
