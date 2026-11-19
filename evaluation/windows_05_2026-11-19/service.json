@@ -1,0 +1,167 @@
+{
+  "schema": "win05-native-and-cli-proof-1",
+  "cli": {
+    "schema": "win05-response-1",
+    "run_id": "typed-cli",
+    "command": "own_margin",
+    "status": "completed",
+    "result": {
+      "workspace_id": "workspace-a",
+      "source_id": "own-demo-v1",
+      "source_sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+      "source_page": 1,
+      "source_highlight": [
+        300,
+        186,
+        340,
+        210
+      ],
+      "operation": "operating_margin_v1",
+      "display": "15.00",
+      "financial_status": "answered",
+      "model_calls": 0
+    },
+    "error": null
+  },
+  "native_probe": {
+    "button_activated": true,
+    "command": "own_margin",
+    "content_rendered": true,
+    "display": "15.00",
+    "error": null,
+    "run_id": "typed-wpf",
+    "schema": "win05-native-probe-1",
+    "source_page": 1,
+    "status": "completed"
+  },
+  "native_receipt": {
+    "command": "own_margin",
+    "error": null,
+    "result": {
+      "display": "15.00",
+      "financial_status": "answered",
+      "model_calls": 0,
+      "operation": "operating_margin_v1",
+      "source_highlight": [
+        300,
+        186,
+        340,
+        210
+      ],
+      "source_id": "own-demo-v1",
+      "source_page": 1,
+      "source_sha256": "c749435d1d445664dd5b28f54e6fd19f5fbcdb91d505e6ac112d1ba7f4715451",
+      "workspace_id": "workspace-b"
+    },
+    "run_id": "typed-wpf",
+    "schema": "win05-response-1",
+    "status": "completed"
+  },
+  "native_refusal_probe": {
+    "button_activated": true,
+    "command": "own_margin",
+    "content_rendered": true,
+    "display": null,
+    "error": "source_missing",
+    "run_id": "wpf-missing",
+    "schema": "win05-native-probe-1",
+    "source_page": null,
+    "status": "failed"
+  },
+  "duplicate_refused_and_original_preserved": true,
+  "cross_vault_context_refused": true,
+  "install_files_unchanged": 270,
+  "different_working_directory": true,
+  "model_calls": 0,
+  "context_ids_distinct": true,
+  "opaque_context_fields_omitted": true,
+  "status": "typed_native_and_cli_service_validated",
+  "runtime": "Windows AMD64 stock CPython 3.14.10 and native .NET Framework WPF",
+  "scope": "Native application desktop probe and CLI on the host with a staged own fixture",
+  "date": "2026-11-19",
+  "ipc_unit_tests": {
+    "schema": "win05-focused-tests-1",
+    "worktree_base": "98c79aa",
+    "tested_files": {
+      "spikes/windows_05/test_typed_ipc.py": "24ca508f27f8da852d0fbed3dec3f79814147a3374fb7fbb178555d965bf6fbd",
+      "src/financial_assistant/typed_ipc.py": "c8a10c9effd06010a3b32b42d23fb5dca1340af5598e9e8c0bb5de3979151f83"
+    },
+    "results": {
+      "msys2": {
+        "runtime": "Python 3.14.7",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "-I",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "spikes/windows_05",
+          "-p",
+          "test_typed_ipc.py",
+          "-v"
+        ],
+        "ran": 12,
+        "passed": 12,
+        "skipped": 0,
+        "seconds": 1.038,
+        "returncode": 0,
+        "raw_private_log": "ipc-unittest-msys2.log",
+        "failed_or_errored": 0
+      },
+      "stock": {
+        "runtime": "Python 3.14.10",
+        "command": [
+          "../windows-03-worktree/tmp/runtime-a/runtime/python.exe",
+          "-X",
+          "utf8",
+          "-I",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "spikes/windows_05",
+          "-p",
+          "test_typed_ipc.py",
+          "-v"
+        ],
+        "ran": 12,
+        "passed": 12,
+        "skipped": 0,
+        "seconds": 0.899,
+        "returncode": 0,
+        "raw_private_log": "ipc-unittest-stock.log",
+        "failed_or_errored": 0
+      }
+    },
+    "context_id_format": "64 lowercase hex characters",
+    "real_child": "fixed test fixture, no shell",
+    "models_started": false
+  },
+  "win04_regression": {
+    "e2e": "passed",
+    "focused_tests": {
+      "runtime": "CPython 3.14.10",
+      "ran": 10,
+      "passed": 10,
+      "skipped": 0,
+      "seconds": 0.6
+    }
+  },
+  "frozen_pins": [
+    {
+      "manifest": "evaluation/protocols/kp3_eval_v1/freeze-manifest.json",
+      "matching": 134
+    },
+    {
+      "manifest": "data/releases/kp3_rc1/manifest.json",
+      "matching": 329
+    }
+  ],
+  "base": "98c79aa137600f93ddd11b33d5069861bd015fb4",
+  "next": "prompts/windows_06_supervisor.md"
+}

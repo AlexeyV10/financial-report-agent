@@ -237,6 +237,15 @@ class WorkspaceContext:
             raise WorkspacePathError("resource_not_registered")
         return resource.resolve(self.vault_root)
 
+    @property
+    def resource_registry_sha256(self) -> str:
+        bindings = [
+            (key, '/'.join(resource.parts), resource.size, resource.digest)
+            for key, resource in sorted(self._resources.items())
+        ]
+        encoded = json.dumps(bindings, ensure_ascii=True, separators=(',', ':')).encode('ascii')
+        return hashlib.sha256(encoded).hexdigest()
+
     def write_receipt(self, run_id: str, payload: dict) -> Path:
         key = _identifier(run_id, "invalid_run_id").lower()
         try:
