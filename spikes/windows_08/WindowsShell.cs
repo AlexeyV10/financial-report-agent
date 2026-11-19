@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
+using System.Linq;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Threading.Tasks;
@@ -21,7 +22,7 @@ internal sealed class WindowsShell : Window
 
     private sealed class Options
     {
-        internal string Install, AppData, VaultA, VaultB, ProbeImportPath;
+        internal string Install, AppData, VaultA, VaultB, ProbeImportPath, ProbeExtractPath;
         internal bool Probe, ProbeViewer, D0, ProbeD0, ProbeD0Retry;
 
         internal static Options Parse(string[] args)
@@ -30,19 +31,21 @@ internal sealed class WindowsShell : Window
                 || args[2] != "--vault-a" || args[4] != "--vault-b"
                 || (args.Length == 7 && args[6] != "--probe" && args[6] != "--probe-viewer"
                     && args[6] != "--d0" && args[6] != "--probe-d0" && args[6] != "--probe-d0-retry")
-                || (args.Length == 8 && args[6] != "--probe-import"))
+                || (args.Length == 8 && args[6] != "--probe-import" && args[6] != "--probe-extract"))
                 throw new ArgumentException("startup_arguments");
             string mode = args.Length > 6 ? args[6] : null;
             bool retry = mode == "--probe-d0-retry";
             bool d0Probe = mode == "--probe-d0" || retry;
             bool importProbe = mode == "--probe-import";
-            if (importProbe) TypedHost.LocalPath(args[7]);
+            bool extractProbe = mode == "--probe-extract";
+            if (importProbe || extractProbe) TypedHost.LocalPath(args[7]);
             var options = new Options {
                 Install = TypedHost.LocalPath(AppDomain.CurrentDomain.BaseDirectory), AppData = TypedHost.LocalPath(args[1]),
                 VaultA = TypedHost.LocalPath(args[3]), VaultB = TypedHost.LocalPath(args[5]),
                 Probe = mode != null && mode != "--d0", ProbeViewer = mode == "--probe-viewer",
-                D0 = mode == "--d0" || d0Probe || importProbe, ProbeD0 = d0Probe, ProbeD0Retry = retry,
-                ProbeImportPath = importProbe ? args[7] : null
+                D0 = mode == "--d0" || d0Probe || importProbe || extractProbe, ProbeD0 = d0Probe, ProbeD0Retry = retry,
+                ProbeImportPath = importProbe ? args[7] : null,
+                ProbeExtractPath = extractProbe ? args[7] : null
             };
             string[] roots = {options.Install, options.AppData, options.VaultA, options.VaultB};
             for (int left = 0; left < roots.Length; left++)
@@ -146,17 +149,28 @@ internal sealed class WindowsShell : Window
         [DataMember] public string failure_status, failure_error;
     }
 
+    [DataContract]
+    private sealed class ExtractProbeReceipt
+    {
+        [DataMember] public string schema = "win12-extract-probe-1";
+        [DataMember] public bool ok, same_preview, scope_cleared, locator_verified;
+        [DataMember] public string captured_status, extraction_status, reused_status, asset_sha256, file_type;
+        [DataMember] public int table_count, paragraph_count;
+        [DataMember] public string semantic_state, incomplete_step, failure_status, failure_error;
+    }
+
     private readonly Options options;
     private readonly ShellClient client;
     private readonly ActionButton[] tabs = new ActionButton[3];
     private readonly FrameworkElement[] pages = new FrameworkElement[4];
     private readonly TextBlock scope, projectSummary, documentSummary, status;
     private readonly TextBlock importFileState, importExtractionState, importSemanticState, importDetails;
+    private readonly TextBlock extractionSummary;
     private readonly Border statusBar;
-    private readonly ActionButton selectA, selectB, importDocument, addFile, searchDocuments, runAnalysis, openSource;
+    private readonly ActionButton selectA, selectB, importDocument, addFile, extractContents, searchDocuments, runAnalysis, openSource;
     private readonly DocumentViewerPanel viewer;
     private readonly D0Panel d0;
-    private readonly TextBox query, result;
+    private readonly TextBox query, result, extractionPreview;
     private readonly ListBox documents;
     private readonly ScrollViewer contentArea;
     private Page page;
@@ -170,6 +184,7 @@ internal sealed class WindowsShell : Window
     private ShellReply lastReply;
     private D0Reply lastD0Reply;
     private ImportReply lastImportReply;
+    private ExtractReply lastExtractReply;
 
     private WindowsShell(Options launch)
     {
@@ -236,6 +251,17 @@ internal sealed class WindowsShell : Window
         importExtractionState = ImportLabel("importExtractionState", "Состояние извлечения");
         importSemanticState = ImportLabel("importSemanticState", "Содержательная проверка");
         importDetails = ImportLabel("importDetails", "Сведения о принятом файле");
+        extractContents = Button("Извлечь содержимое", "extractContents");
+        extractContents.Margin = new Thickness(0, 10, 8, 8);
+        extractContents.Click += ExtractContents;
+        extractionSummary = ImportLabel("extractionSummary", "Структура извлечённого содержимого");
+        extractionPreview = new TextBox {IsReadOnly = true, TextWrapping = TextWrapping.Wrap, MinHeight = 48,
+            MaxHeight = 196, Padding = new Thickness(8), Margin = new Thickness(0, 6, 0, 12),
+            VerticalScrollBarVisibility = ScrollBarVisibility.Auto, Visibility = Visibility.Collapsed};
+        extractionPreview.SetResourceReference(BackgroundProperty, "ResultSurface");
+        extractionPreview.SetResourceReference(ForegroundProperty, "Ink");
+        extractionPreview.SetResourceReference(BorderBrushProperty, "Line");
+        Identify(extractionPreview, "extractionPreview", "Фрагменты исходного файла и их расположение");
         if (options.D0)
         {
             docs.Children.Add(addFile);
@@ -243,6 +269,9 @@ internal sealed class WindowsShell : Window
             docs.Children.Add(importExtractionState);
             docs.Children.Add(importSemanticState);
             docs.Children.Add(importDetails);
+            docs.Children.Add(extractContents);
+            docs.Children.Add(extractionSummary);
+            docs.Children.Add(extractionPreview);
         }
         documentSummary = Label("Выберите проект, чтобы увидеть его документы.", 14, muted: true);
         documentSummary.Margin = new Thickness(0, 4, 0, 18);
@@ -323,7 +352,8 @@ internal sealed class WindowsShell : Window
             if (options.Probe && !probeStarted)
             {
                 probeStarted = true;
-                Action probe = options.ProbeImportPath != null ? new Action(ProbeImport)
+                Action probe = options.ProbeExtractPath != null ? new Action(ProbeExtract)
+                    : options.ProbeImportPath != null ? new Action(ProbeImport)
                     : options.ProbeD0 ? new Action(ProbeD0) : new Action(Probe);
                 Dispatcher.BeginInvoke(DispatcherPriority.ApplicationIdle, probe);
             }
@@ -504,6 +534,8 @@ internal sealed class WindowsShell : Window
         selectA.IsEnabled = selectB.IsEnabled = !busy && !closing;
         importDocument.IsEnabled = scoped && d0 == null;
         addFile.IsEnabled = scoped && d0 != null;
+        extractContents.IsEnabled = addFile.IsEnabled && lastImportReply != null && lastImportReply.Accepted
+            && lastImportReply.WorkspaceId == workspaceId && ShellClient.CanExtractType(lastImportReply.FileType);
         runAnalysis.IsEnabled = scoped;
         query.IsEnabled = d0 == null || scoped && hasStoredDocuments;
         searchDocuments.IsEnabled = scoped && query.IsEnabled && query.Text.Trim().Length > 0;
@@ -596,10 +628,19 @@ internal sealed class WindowsShell : Window
     private void ClearImport()
     {
         lastImportReply = null;
+        ClearExtraction();
         SetImportLabel(importFileState, "");
         SetImportLabel(importExtractionState, "");
         SetImportLabel(importSemanticState, "");
         SetImportLabel(importDetails, "");
+    }
+
+    private void ClearExtraction()
+    {
+        lastExtractReply = null;
+        SetImportLabel(extractionSummary, "");
+        extractionPreview.Clear();
+        extractionPreview.Visibility = Visibility.Collapsed;
     }
 
     private void BeginCapture(string path)
@@ -647,6 +688,52 @@ internal sealed class WindowsShell : Window
         }
         SetImportLabel(importFileState, caption);
         SetStatus(caption, error: !reply.Accepted);
+        UpdateControls();
+    }
+
+    private void ExtractContents(object sender, RoutedEventArgs args)
+    {
+        if (!extractContents.IsEnabled || page != Page.Documents || selectedVault == null) return;
+        string vault = selectedVault;
+        ImportReply asset = lastImportReply;
+        ClearExtraction();
+        busy = true;
+        SetImportLabel(importExtractionState, "Извлечение: выполняется.");
+        SetStatus("Извлекаем содержимое сохранённого файла…");
+        UpdateControls();
+        Task<ExtractReply> activity = Task.Run(() => client.ExtractAsset(vault, asset));
+        worker = activity;
+        operation = FinishExtract(activity, vault, asset, scopeGeneration);
+    }
+
+    private async Task FinishExtract(Task<ExtractReply> activity, string vault, ImportReply asset, int generation)
+    {
+        ExtractReply reply;
+        try { reply = await activity; }
+        catch (Exception) { reply = ExtractReply.Failure("worker_start_failed"); }
+        if (closing || generation != scopeGeneration || vault != selectedVault || asset != lastImportReply) return;
+        lastExtractReply = reply;
+        busy = false;
+        if (reply.Completed)
+        {
+            SetImportLabel(importExtractionState, "Извлечение: завершено.");
+            SetImportLabel(extractionSummary, String.Format(CultureInfo.CurrentCulture,
+                "Таблицы: {0} · Текстовые блоки: {1}", reply.TableCount, reply.ParagraphCount));
+            if (reply.Preview.Length > 0)
+            {
+                extractionPreview.Text = String.Join(Environment.NewLine, reply.Preview);
+                extractionPreview.Visibility = Visibility.Visible;
+                if (page == Page.Documents) FocusWhenReady(extractionPreview);
+            }
+            SetStatus(reply.Status == "reused" ? "Показано ранее извлечённое содержимое." : "Содержимое извлечено.");
+        }
+        else
+        {
+            string message = reply.Status == "unsupported" ? "Извлечение: формат пока не поддерживается."
+                : "Извлечение: не удалось обработать файл.";
+            SetImportLabel(importExtractionState, message);
+            SetStatus(message, error: true);
+        }
         UpdateControls();
     }
 
@@ -912,6 +999,89 @@ internal sealed class WindowsShell : Window
         }
         if (closing) return;
         try { SaveProbe("win11-import-probe.json", receipt); }
+        catch (Exception) { exit = 5; }
+        ScheduleShutdown(exit);
+    }
+
+    private async void ProbeExtract()
+    {
+        const string firstCellLocator = "CSV · строка 1 · столбец 1: ";
+        var receipt = new ExtractProbeReceipt {incomplete_step = "open_workspace"};
+        int exit = 0;
+        try
+        {
+            selectA.ProbeClick();
+            await operation;
+            Expect(workspaceUsable);
+            bool searchableBefore = hasStoredDocuments;
+            tabs[(int)Page.Documents].ProbeClick();
+            Expect(!extractContents.IsEnabled && !extractionPreview.IsVisible);
+
+            receipt.incomplete_step = "capture_file";
+            BeginCapture(options.ProbeExtractPath);
+            await operation;
+            ImportReply asset = lastImportReply;
+            Expect(asset != null && asset.Status == "captured" && asset.FileType == "csv" && extractContents.IsEnabled);
+            receipt.captured_status = asset.Status;
+            receipt.asset_sha256 = asset.AssetSha256;
+            receipt.file_type = asset.FileType;
+
+            receipt.incomplete_step = "extract_csv";
+            extractContents.ProbeClick();
+            await operation;
+            ExtractReply extracted = lastExtractReply;
+            Expect(extracted != null && extracted.Status == "extracted" && extracted.TableCount == 1
+                && extracted.ParagraphCount == 0 && extracted.ExtractionState == "extracted"
+                && extracted.SemanticState == "not_reviewed" && hasStoredDocuments == searchableBefore);
+            receipt.extraction_status = extracted.Status;
+            receipt.table_count = extracted.TableCount;
+            receipt.paragraph_count = extracted.ParagraphCount;
+            receipt.semantic_state = extracted.SemanticState;
+
+            receipt.incomplete_step = "preview_csv";
+            Expect(extractionPreview.IsVisible && extractionPreview.IsReadOnly
+                && extractionPreview.Text.StartsWith(firstCellLocator, StringComparison.Ordinal)
+                && importSemanticState.Text == "Содержательная проверка: не выполнена.");
+            receipt.locator_verified = true;
+
+            receipt.incomplete_step = "reuse_extraction";
+            extractContents.ProbeClick();
+            await operation;
+            ExtractReply reused = lastExtractReply;
+            Expect(reused != null && reused.Status == "reused" && reused.TableCount == extracted.TableCount
+                && reused.ParagraphCount == extracted.ParagraphCount && reused.Preview.SequenceEqual(extracted.Preview)
+                && extractionPreview.Text == String.Join(Environment.NewLine, extracted.Preview));
+            receipt.reused_status = reused.Status;
+            receipt.same_preview = true;
+
+            receipt.incomplete_step = "switch_workspace";
+            tabs[(int)Page.Projects].ProbeClick();
+            selectB.ProbeClick();
+            await operation;
+            tabs[(int)Page.Documents].ProbeClick();
+            Expect(selectedVault == options.VaultB && workspaceUsable && lastImportReply == null && lastExtractReply == null
+                && !extractContents.IsEnabled && !extractionPreview.IsVisible && extractionPreview.Text == ""
+                && extractionSummary.Text == "" && importExtractionState.Text == "");
+            receipt.scope_cleared = true;
+            receipt.incomplete_step = null;
+            receipt.ok = true;
+        }
+        catch (Exception)
+        {
+            exit = 4;
+            if (lastExtractReply != null)
+            {
+                receipt.failure_status = lastExtractReply.Status;
+                receipt.failure_error = lastExtractReply.Error;
+            }
+            else if (lastImportReply != null)
+            {
+                receipt.failure_status = lastImportReply.Status;
+                receipt.failure_error = lastImportReply.Error;
+            }
+        }
+        if (closing) return;
+        try { SaveProbe("win12-extract-probe.json", receipt); }
         catch (Exception) { exit = 5; }
         ScheduleShutdown(exit);
     }
