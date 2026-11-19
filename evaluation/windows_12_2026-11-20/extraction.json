@@ -1,0 +1,108 @@
+{
+  "schema": "win12-native-extraction-proof-1",
+  "native": {
+    "asset_sha256": "20abe870227f4ce0cd82e53b1e4ce11811f6a171eb7c96a7167561d27d06d197",
+    "captured_status": "captured",
+    "extraction_status": "extracted",
+    "failure_error": null,
+    "failure_status": null,
+    "file_type": "csv",
+    "incomplete_step": null,
+    "locator_verified": true,
+    "ok": true,
+    "paragraph_count": 0,
+    "reused_status": "reused",
+    "same_preview": true,
+    "schema": "win12-extract-probe-1",
+    "scope_cleared": true,
+    "semantic_state": "not_reviewed",
+    "table_count": 1
+  },
+  "formats": {
+    "csv": {
+      "tables": 1,
+      "paragraphs": 0,
+      "preview_rows": 15,
+      "reused_equal": true
+    },
+    "xlsx": {
+      "tables": 1,
+      "paragraphs": 0,
+      "preview_rows": 6,
+      "reused_equal": true
+    },
+    "docx": {
+      "tables": 1,
+      "paragraphs": 7,
+      "preview_rows": 12,
+      "reused_equal": true
+    },
+    "txt": {
+      "tables": 0,
+      "paragraphs": 3,
+      "preview_rows": 3,
+      "reused_equal": true
+    }
+  },
+  "csv_formula_escape_verified": true,
+  "cross_vault_refused": true,
+  "indexed_rows": 0,
+  "concurrent_txt_single_receipt": true,
+  "external_formula_refused": true,
+  "program_hashes_unchanged": 287,
+  "docx_tests": {
+    "schema": "win12-docx-adapter-tests-1",
+    "command_arguments": "-X utf8 -I -B -m unittest discover -s spikes/windows_12 -p test_docx_extract.py -v",
+    "runtimes": [
+      {
+        "interpreter": "WIN-03 stock Windows AMD64 CPython",
+        "version": "3.14.10",
+        "passed": 6,
+        "failed": 0,
+        "skipped": 0
+      },
+      {
+        "interpreter": "MSYS2 UCRT64 CPython",
+        "version": "3.14.7",
+        "passed": 6,
+        "failed": 0,
+        "skipped": 0
+      }
+    ],
+    "checks": {
+      "literal_word_text_and_exact_part_paragraph_cell_locators": true,
+      "row_headers_grid_span_vertical_and_legacy_horizontal_merge": true,
+      "nested_tables_and_strict_namespace": true,
+      "bound_text_and_grid_and_reject_invalid_merge": true,
+      "external_relationship_and_embedded_parts_refused_by_package_gate": true,
+      "dynamic_field_marker_split_across_runs_refused": true,
+      "ordinary_field_instructions_and_cached_contents_omitted": true,
+      "ancillary_parts_omission_reported": true
+    },
+    "sha256": {
+      "src/financial_assistant/docx_extract.py": "4fbbc03d7c9b11dcff8340fdc4b7f9b8fa65ffe8494b556bd88cda214e98c596",
+      "spikes/windows_12/test_docx_extract.py": "a3ba10f70b865b21c095707af71da53322f9b35950884b086eda1757d1db50ca"
+    }
+  },
+  "regression": {
+    "safe_import_tests": 13,
+    "win11_native": true,
+    "d0_operations": 5,
+    "margin_source": true,
+    "model_calls": 0
+  },
+  "frozen_pins": [
+    {
+      "manifest": "evaluation/protocols/kp3_eval_v1/freeze-manifest.json",
+      "matching": 134
+    },
+    {
+      "manifest": "data/releases/kp3_rc1/manifest.json",
+      "matching": 329
+    }
+  ],
+  "status": "office_text_extraction_validated_d1",
+  "next": "prompts/windows_13_digital_pdf_document_ir.md",
+  "date": "2026-11-20",
+  "base": "f72d578887375434aa44e31b1f16051e5953f0e4"
+}

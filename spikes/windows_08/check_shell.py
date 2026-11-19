@@ -17,9 +17,10 @@ from financial_assistant.vault_storage import DB_FILENAME, VaultStore
 
 
 MODULES = ('application_service', 'typed_ipc', 'job_supervisor', 'windows_job', 'vault_storage',
-           'vault_backup', 'document_viewer', 'safe_import')
+           'vault_backup', 'document_viewer', 'safe_import', 'office_extraction_common', 'office_extraction',
+           'text_extract', 'spreadsheet_extract', 'docx_extract')
 ENTRIES = ('windows_05/service_cli.py', 'windows_06/supervised_service.py', 'windows_07/vault_cli.py',
-           'windows_09/viewer_cli.py', 'windows_11/import_cli.py')
+           'windows_09/viewer_cli.py', 'windows_11/import_cli.py', 'windows_12/extract_cli.py')
 
 
 def stage_install(runtime_build, demo, install, *, executable_name='ProjectPractice-WIN08.exe'):
@@ -46,7 +47,7 @@ def stage_install(runtime_build, demo, install, *, executable_name='ProjectPract
                  str(ROOT / 'spikes/windows_09/ViewerClient.cs'),
                  str(ROOT / 'spikes/windows_09/DocumentViewerPanel.cs'),
                  str(ROOT / 'spikes/windows_10/D0Client.cs'), str(ROOT / 'spikes/windows_10/D0Panel.cs'),
-                 str(ROOT / 'spikes/windows_11/ImportClient.cs')]
+                 str(ROOT / 'spikes/windows_11/ImportClient.cs'), str(ROOT / 'spikes/windows_12/ExtractClient.cs')]
     subprocess.run(args_csc, check=True, timeout=25)
     executable.chmod(stat.S_IREAD)
     config = executable.with_suffix('.exe.config')

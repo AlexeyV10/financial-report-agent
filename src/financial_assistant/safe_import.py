@@ -369,26 +369,35 @@ def _image_pixels(image):
     return pixels
 
 
-def _looks_csv(text):
+def _csv_delimiter(text):
     sample = text[:_MAX_CSV_SAMPLE]
     if len(text) > len(sample):
         sample = sample.rpartition("\n")[0]
-    candidates = 0
+    exact, sparse = [], []
     for delimiter in (",", ";", "\t"):
         try:
             widths = [len(row) for row in csv.reader(StringIO(sample, newline=""), delimiter=delimiter, strict=True)
                       if row and any(value.strip() for value in row)]
         except csv.Error:
             continue
-        if len(widths) >= 2 and 2 <= widths[0] <= 128 and all(width == widths[0] for width in widths):
-            candidates += 1
-    return candidates == 1
+        if widths and 2 <= widths[0] <= 128 and max(widths) == widths[0]:
+            full = widths.count(widths[0])
+            if full >= 2 and full == len(widths):
+                exact.append(delimiter)
+            elif full >= 2 and full * 2 >= len(widths):
+                sparse.append(delimiter)
+    candidates = exact or sparse
+    return candidates[0] if len(candidates) == 1 else None
 
 
-def _classify_text(data):
+def _decode_text(data):
     if data.startswith((b"\xff\xfe\0\0", b"\0\0\xfe\xff")):
         raise ImportValidationError("unsupported_format")
-    encoding = "utf-16" if data.startswith((b"\xff\xfe", b"\xfe\xff")) else "utf-8-sig"
+    encoding = "utf-8"
+    if data.startswith((b"\xff\xfe", b"\xfe\xff")):
+        encoding = "utf-16"
+    elif data.startswith(b"\xef\xbb\xbf"):
+        encoding = "utf-8-sig"
     try:
         text = data.decode(encoding)
     except UnicodeError:
@@ -396,7 +405,7 @@ def _classify_text(data):
     if not text.strip() or any(char not in "\r\n\t" and not char.isprintable()
                                and unicodedata.category(char) != "Zs" for char in text):
         raise ImportValidationError("text_invalid")
-    return "csv" if _looks_csv(text) else "txt"
+    return text, encoding
 
 
 def classify_bytes(data: bytes) -> str:
@@ -419,4 +428,5 @@ def classify_bytes(data: bytes) -> str:
         return _classify_image(data, "tiff", "TIFF")
     if data.startswith((b"MZ", b"\x7fELF", b"\x1f\x8b", b"7z\xbc\xaf'\x1c", b"\xd0\xcf\x11\xe0")):
         raise ImportValidationError("unsupported_format")
-    return _classify_text(data)
+    text, _ = _decode_text(data)
+    return "csv" if _csv_delimiter(text) is not None else "txt"
