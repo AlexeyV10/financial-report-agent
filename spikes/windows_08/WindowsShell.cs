@@ -13,6 +13,7 @@ using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Threading;
+using Microsoft.Win32;
 
 internal sealed class WindowsShell : Window
 {
@@ -20,24 +21,28 @@ internal sealed class WindowsShell : Window
 
     private sealed class Options
     {
-        internal string Install, AppData, VaultA, VaultB;
+        internal string Install, AppData, VaultA, VaultB, ProbeImportPath;
         internal bool Probe, ProbeViewer, D0, ProbeD0, ProbeD0Retry;
 
         internal static Options Parse(string[] args)
         {
-            if ((args.Length != 6 && args.Length != 7) || args[0] != "--app-data"
+            if (args.Length < 6 || args.Length > 8 || args[0] != "--app-data"
                 || args[2] != "--vault-a" || args[4] != "--vault-b"
                 || (args.Length == 7 && args[6] != "--probe" && args[6] != "--probe-viewer"
-                    && args[6] != "--d0" && args[6] != "--probe-d0" && args[6] != "--probe-d0-retry"))
+                    && args[6] != "--d0" && args[6] != "--probe-d0" && args[6] != "--probe-d0-retry")
+                || (args.Length == 8 && args[6] != "--probe-import"))
                 throw new ArgumentException("startup_arguments");
-            string mode = args.Length == 7 ? args[6] : null;
+            string mode = args.Length > 6 ? args[6] : null;
             bool retry = mode == "--probe-d0-retry";
             bool d0Probe = mode == "--probe-d0" || retry;
+            bool importProbe = mode == "--probe-import";
+            if (importProbe) TypedHost.LocalPath(args[7]);
             var options = new Options {
                 Install = TypedHost.LocalPath(AppDomain.CurrentDomain.BaseDirectory), AppData = TypedHost.LocalPath(args[1]),
                 VaultA = TypedHost.LocalPath(args[3]), VaultB = TypedHost.LocalPath(args[5]),
                 Probe = mode != null && mode != "--d0", ProbeViewer = mode == "--probe-viewer",
-                D0 = mode == "--d0" || d0Probe, ProbeD0 = d0Probe, ProbeD0Retry = retry
+                D0 = mode == "--d0" || d0Probe || importProbe, ProbeD0 = d0Probe, ProbeD0Retry = retry,
+                ProbeImportPath = importProbe ? args[7] : null
             };
             string[] roots = {options.Install, options.AppData, options.VaultA, options.VaultB};
             for (int left = 0; left < roots.Length; left++)
@@ -130,13 +135,25 @@ internal sealed class WindowsShell : Window
         [DataMember] public List<D0CaseReceipt> operations = new List<D0CaseReceipt>();
     }
 
+    [DataContract]
+    private sealed class ImportProbeReceipt
+    {
+        [DataMember] public string schema = "win11-import-probe-1";
+        [DataMember] public bool ok, duplicate_same_asset, cleared_on_workspace_switch;
+        [DataMember] public string captured_status, duplicate_status, asset_sha256, file_type;
+        [DataMember] public int? byte_count;
+        [DataMember] public string file_state, extraction_state, semantic_state, incomplete_step;
+        [DataMember] public string failure_status, failure_error;
+    }
+
     private readonly Options options;
     private readonly ShellClient client;
     private readonly ActionButton[] tabs = new ActionButton[3];
     private readonly FrameworkElement[] pages = new FrameworkElement[4];
     private readonly TextBlock scope, projectSummary, documentSummary, status;
+    private readonly TextBlock importFileState, importExtractionState, importSemanticState, importDetails;
     private readonly Border statusBar;
-    private readonly ActionButton selectA, selectB, importDocument, searchDocuments, runAnalysis, openSource;
+    private readonly ActionButton selectA, selectB, importDocument, addFile, searchDocuments, runAnalysis, openSource;
     private readonly DocumentViewerPanel viewer;
     private readonly D0Panel d0;
     private readonly TextBox query, result;
@@ -152,6 +169,7 @@ internal sealed class WindowsShell : Window
     private Task operation = Task.FromResult(0);
     private ShellReply lastReply;
     private D0Reply lastD0Reply;
+    private ImportReply lastImportReply;
 
     private WindowsShell(Options launch)
     {
@@ -206,12 +224,26 @@ internal sealed class WindowsShell : Window
         projects.Children.Add(projectSummary);
         pages[(int)Page.Projects] = Card(projects);
 
-        var docs = Section("Документы", options.D0 ? "Поиск по сохранённому отчёту выбранного проекта."
+        var docs = Section("Документы", options.D0 ? "Добавьте файл или ищите в подготовленных документах выбранного проекта."
             : "Сохраните собственный учебный PDF в выбранном хранилище.");
         importDocument = Button("Импортировать учебный документ", "importDocument");
         importDocument.Click += ImportDocument;
         if (options.D0) importDocument.Visibility = Visibility.Collapsed;
         docs.Children.Add(importDocument);
+        addFile = Button("Добавить файл…", "addFile");
+        addFile.Click += ChooseFile;
+        importFileState = ImportLabel("importFileState", "Состояние файла");
+        importExtractionState = ImportLabel("importExtractionState", "Состояние извлечения");
+        importSemanticState = ImportLabel("importSemanticState", "Содержательная проверка");
+        importDetails = ImportLabel("importDetails", "Сведения о принятом файле");
+        if (options.D0)
+        {
+            docs.Children.Add(addFile);
+            docs.Children.Add(importFileState);
+            docs.Children.Add(importExtractionState);
+            docs.Children.Add(importSemanticState);
+            docs.Children.Add(importDetails);
+        }
         documentSummary = Label("Выберите проект, чтобы увидеть его документы.", 14, muted: true);
         documentSummary.Margin = new Thickness(0, 4, 0, 18);
         docs.Children.Add(documentSummary);
@@ -291,8 +323,9 @@ internal sealed class WindowsShell : Window
             if (options.Probe && !probeStarted)
             {
                 probeStarted = true;
-                Dispatcher.BeginInvoke(DispatcherPriority.ApplicationIdle,
-                    options.ProbeD0 ? new Action(ProbeD0) : new Action(Probe));
+                Action probe = options.ProbeImportPath != null ? new Action(ProbeImport)
+                    : options.ProbeD0 ? new Action(ProbeD0) : new Action(Probe);
+                Dispatcher.BeginInvoke(DispatcherPriority.ApplicationIdle, probe);
             }
         };
         Closing += (sender, args) => {
@@ -314,6 +347,21 @@ internal sealed class WindowsShell : Window
             FontWeight = bold ? FontWeights.SemiBold : FontWeights.Normal};
         label.SetResourceReference(TextBlock.ForegroundProperty, muted ? "Muted" : "Ink");
         return label;
+    }
+
+    private static TextBlock ImportLabel(string id, string name)
+    {
+        var label = Label("", 14);
+        Identify(label, id, name);
+        label.Visibility = Visibility.Collapsed;
+        return label;
+    }
+
+    private static void SetImportLabel(TextBlock label, string text)
+    {
+        label.Text = text;
+        label.Visibility = text.Length == 0 ? Visibility.Collapsed : Visibility.Visible;
+        AutomationProperties.SetName(label, text);
     }
 
     private static StackPanel Section(string heading, string helper)
@@ -384,7 +432,9 @@ internal sealed class WindowsShell : Window
         {
             Control analysisFocus = openSource.IsEnabled ? openSource : runAnalysis;
             if (d0 != null) analysisFocus = d0.SourceControl.IsEnabled ? d0.SourceControl : d0.FirstControl;
-            Control[] firstActions = {selectA, d0 == null ? (Control)importDocument : query, analysisFocus, viewer.BackButton};
+            Control documentsFocus = d0 == null ? importDocument : addFile;
+            if (!documentsFocus.IsEnabled && query.IsEnabled) documentsFocus = query;
+            Control[] firstActions = {selectA, documentsFocus, analysisFocus, viewer.BackButton};
             FocusWhenReady(firstActions[(int)destination]);
         }
     }
@@ -453,6 +503,7 @@ internal sealed class WindowsShell : Window
         bool scoped = workspaceUsable && !busy && !closing;
         selectA.IsEnabled = selectB.IsEnabled = !busy && !closing;
         importDocument.IsEnabled = scoped && d0 == null;
+        addFile.IsEnabled = scoped && d0 != null;
         runAnalysis.IsEnabled = scoped;
         query.IsEnabled = d0 == null || scoped && hasStoredDocuments;
         searchDocuments.IsEnabled = scoped && query.IsEnabled && query.Text.Trim().Length > 0;
@@ -479,6 +530,7 @@ internal sealed class WindowsShell : Window
         workspaceId = null;
         scope.Text = name;
         ClearAnalysis();
+        ClearImport();
         documents.Items.Clear();
         query.Clear();
         projectSummary.Text = "Проверяем хранилище…";
@@ -490,9 +542,12 @@ internal sealed class WindowsShell : Window
                 ApplyWorkspaceId(reply);
                 hasStoredDocuments = reply.DocumentCount > 0;
                 projectSummary.Text = String.Format(CultureInfo.InvariantCulture,
-                    "Документы: {0}  ·  Ревизии: {1}", reply.DocumentCount, reply.RevisionCount);
+                    d0 == null ? "Документы: {0}  ·  Ревизии: {1}" : "Подготовленные документы: {0}  ·  Ревизии: {1}",
+                    reply.DocumentCount, reply.RevisionCount);
                 documentSummary.Text = reply.DocumentCount == 0
-                    ? "В проекте пока нет сохранённых документов." : projectSummary.Text;
+                    ? (d0 == null ? "В проекте пока нет сохранённых документов."
+                        : "В проекте пока нет документов для поиска.")
+                    : projectSummary.Text;
                 SetStatus("Проект открыт.");
             }
             else if (reply.Error == "storage_missing")
@@ -500,7 +555,8 @@ internal sealed class WindowsShell : Window
                 workspaceUsable = true;
                 projectSummary.Text = d0 == null ? "Проект выбран. Хранилище будет создано при импорте."
                     : "В проекте нет подготовленных учебных документов.";
-                documentSummary.Text = "В проекте пока нет сохранённых документов.";
+                documentSummary.Text = d0 == null ? "В проекте пока нет сохранённых документов."
+                    : "В проекте пока нет документов для поиска.";
                 SetStatus("Проект выбран.");
             }
             else
@@ -524,6 +580,92 @@ internal sealed class WindowsShell : Window
             projectSummary.Text = documentSummary.Text = "Учебный документ сохранён в хранилище.";
             SetStatus("Учебный документ сохранён.");
         });
+    }
+
+    private void ChooseFile(object sender, RoutedEventArgs args)
+    {
+        if (!addFile.IsEnabled) return;
+        var dialog = new OpenFileDialog {
+            Title = "Выберите файл для добавления", Filter = "Все файлы (*.*)|*.*",
+            Multiselect = false, CheckFileExists = true, CheckPathExists = true,
+            DereferenceLinks = false, ValidateNames = true
+        };
+        if (dialog.ShowDialog(this) == true) BeginCapture(dialog.FileName);
+    }
+
+    private void ClearImport()
+    {
+        lastImportReply = null;
+        SetImportLabel(importFileState, "");
+        SetImportLabel(importExtractionState, "");
+        SetImportLabel(importSemanticState, "");
+        SetImportLabel(importDetails, "");
+    }
+
+    private void BeginCapture(string path)
+    {
+        if (!addFile.IsEnabled || page != Page.Documents || selectedVault == null) return;
+        string vault = selectedVault;
+        ClearImport();
+        busy = true;
+        SetStatus("Проверяем и сохраняем выбранный файл…");
+        UpdateControls();
+        Task<ImportReply> activity = Task.Run(() => client.CaptureFile(vault, path));
+        worker = activity;
+        operation = FinishCapture(activity, vault, scopeGeneration);
+    }
+
+    private async Task FinishCapture(Task<ImportReply> activity, string vault, int generation)
+    {
+        ImportReply reply;
+        try { reply = await activity; }
+        catch (Exception) { reply = ImportReply.Failure("worker_start_failed"); }
+        if (closing || generation != scopeGeneration || vault != selectedVault) return;
+        if (workspaceId != null && reply.WorkspaceId != null && reply.WorkspaceId != workspaceId)
+            reply = ImportReply.Failure("workspace_mismatch");
+        lastImportReply = reply;
+        busy = false;
+
+        string caption;
+        if (reply.Accepted)
+        {
+            workspaceId = reply.WorkspaceId;
+            scope.Text = selectedName + " · " + workspaceId;
+            caption = reply.Status == "captured" ? "Файл принят." : "Этот файл уже сохранён.";
+            SetImportLabel(importExtractionState, "Извлечение: ожидает обработки.");
+            SetImportLabel(importSemanticState, "Содержательная проверка: не выполнена.");
+            SetImportLabel(importDetails, String.Format(CultureInfo.InvariantCulture, "{0} · {1} байт\nSHA-256: {2}",
+                reply.FileType.ToUpperInvariant(), reply.ByteCount.Value, reply.AssetSha256));
+        }
+        else
+        {
+            caption = reply.Status == "rejected" ? RejectionCaption(reply.Error)
+                : reply.Error == "invalid_candidate_path" ? "Выберите обычный локальный файл."
+                : "Не удалось сохранить файл.";
+            SetImportLabel(importExtractionState, "Извлечение: не начато.");
+            SetImportLabel(importSemanticState, "Содержательная проверка: не начата.");
+        }
+        SetImportLabel(importFileState, caption);
+        SetStatus(caption, error: !reply.Accepted);
+        UpdateControls();
+    }
+
+    private static string RejectionCaption(string error)
+    {
+        switch (error)
+        {
+            case "capture_too_large": return "Файл отклонён: размер превышает 16 МБ.";
+            case "empty_capture": return "Файл отклонён: файл пуст.";
+            case "invalid_source_path": return "Файл отклонён: выберите обычный локальный файл.";
+            case "source_missing":
+            case "source_read_failed": return "Файл отклонён: не удалось прочитать выбранный файл.";
+            case "source_changed": return "Файл отклонён: содержимое изменилось при чтении.";
+            case "pdf_encrypted":
+            case "archive_encrypted": return "Файл отклонён: содержимое зашифровано.";
+            case "archive_active_payload": return "Файл отклонён: обнаружено активное содержимое.";
+            case "unsupported_format": return "Файл отклонён: формат не поддерживается.";
+            default: return "Файл отклонён при проверке формата или доступности.";
+        }
     }
 
     private void SearchDocuments(object sender, RoutedEventArgs args)
@@ -706,6 +848,72 @@ internal sealed class WindowsShell : Window
     private static void Expect(bool satisfied)
     {
         if (!satisfied) throw new InvalidOperationException("unexpected_probe_state");
+    }
+
+    private async void ProbeImport()
+    {
+        var receipt = new ImportProbeReceipt {incomplete_step = "open_workspace"};
+        int exit = 0;
+        try
+        {
+            selectA.ProbeClick();
+            await operation;
+            Expect(workspaceUsable);
+            tabs[(int)Page.Documents].ProbeClick();
+            Expect(addFile.IsVisible && addFile.IsEnabled);
+
+            receipt.incomplete_step = "capture_file";
+            BeginCapture(options.ProbeImportPath);
+            await operation;
+            ImportReply captured = lastImportReply;
+            Expect(captured != null && captured.Status == "captured" && importDetails.IsVisible
+                && importDetails.Text.Contains(captured.AssetSha256) && importFileState.Text == "Файл принят."
+                && importExtractionState.Text == "Извлечение: ожидает обработки."
+                && importSemanticState.Text == "Содержательная проверка: не выполнена.");
+            receipt.captured_status = captured.Status;
+            receipt.asset_sha256 = captured.AssetSha256;
+            receipt.file_type = captured.FileType;
+            receipt.byte_count = captured.ByteCount;
+            receipt.file_state = captured.FileState;
+            receipt.extraction_state = captured.ExtractionState;
+            receipt.semantic_state = captured.SemanticState;
+
+            receipt.incomplete_step = "capture_duplicate";
+            BeginCapture(options.ProbeImportPath);
+            await operation;
+            ImportReply duplicate = lastImportReply;
+            Expect(duplicate != null && duplicate.Status == "duplicate" && duplicate.AssetSha256 == captured.AssetSha256
+                && duplicate.WorkspaceId == captured.WorkspaceId && duplicate.FileType == captured.FileType
+                && duplicate.ByteCount == captured.ByteCount && importDetails.Text.Contains(captured.AssetSha256)
+                && importFileState.Text == "Этот файл уже сохранён.");
+            receipt.duplicate_status = duplicate.Status;
+            receipt.duplicate_same_asset = true;
+
+            receipt.incomplete_step = "switch_workspace";
+            tabs[(int)Page.Projects].ProbeClick();
+            selectB.ProbeClick();
+            await operation;
+            tabs[(int)Page.Documents].ProbeClick();
+            Expect(selectedVault == options.VaultB && workspaceUsable && lastImportReply == null
+                && importFileState.Text == "" && importExtractionState.Text == ""
+                && importSemanticState.Text == "" && importDetails.Text == "" && !importDetails.IsVisible);
+            receipt.cleared_on_workspace_switch = true;
+            receipt.incomplete_step = null;
+            receipt.ok = true;
+        }
+        catch (Exception)
+        {
+            exit = 4;
+            if (lastImportReply != null)
+            {
+                receipt.failure_status = lastImportReply.Status;
+                receipt.failure_error = lastImportReply.Error;
+            }
+        }
+        if (closing) return;
+        try { SaveProbe("win11-import-probe.json", receipt); }
+        catch (Exception) { exit = 5; }
+        ScheduleShutdown(exit);
     }
 
     private async void ProbeD0()

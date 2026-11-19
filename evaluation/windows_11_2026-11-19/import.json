@@ -1,0 +1,103 @@
+{
+  "schema": "win11-native-import-proof-1",
+  "native": {
+    "asset_sha256": "74757b6f619feeeee85b002eaba844c750cd9e5cc0c380fd4eec4190a96d0312",
+    "byte_count": 114,
+    "captured_status": "captured",
+    "cleared_on_workspace_switch": true,
+    "duplicate_same_asset": true,
+    "duplicate_status": "duplicate",
+    "extraction_state": "pending",
+    "failure_error": null,
+    "failure_status": null,
+    "file_state": "accepted",
+    "file_type": "csv",
+    "incomplete_step": null,
+    "ok": true,
+    "schema": "win11-import-probe-1",
+    "semantic_state": "not_reviewed"
+  },
+  "archive_path_denied_before_vault_write": true,
+  "publication_or_admission_from_import": false,
+  "concurrent_same_digest_single_capture": true,
+  "independent_vaults": true,
+  "original_bytes_compared": true,
+  "indexed_rows_each": 0,
+  "install_files_unchanged": 281,
+  "status": "local_safe_capture_validated_d1",
+  "next": "prompts/windows_12_office_text_adapters.md",
+  "date": "2026-11-19",
+  "base": "8d059ebf4bf1b3afdff2f2258e54aa83d23dcd15",
+  "format_tests": {
+    "schema": "win11-import-format-tests-1",
+    "passed": 13,
+    "failed": 0,
+    "skipped": 0,
+    "runtime": {
+      "python": "3.14.10",
+      "pillow": "13.0.0",
+      "pdfium": "159.0.8149.0@sourcebuild-toolchained"
+    },
+    "sha256": {
+      "src/financial_assistant/safe_import.py": "e9454a262ae25c498b903ae3dc7aca1862ada1e1b9171426294890e4f0fe4d9f",
+      "spikes/windows_11/test_safe_import.py": "19917a327f4c8189a41e9022bf897f23450092e38bb758b93c0bf284fef3a1a0"
+    }
+  },
+  "vault_tests": {
+    "schema": "win11-vault-capture-tests-1",
+    "focused_arguments": "-X utf8 -I -B -m unittest discover -s spikes/windows_11 -p test_vault_capture.py -v",
+    "regression_arguments": "-X utf8 -I -B -m unittest discover -s spikes/windows_07 -p test_vault_storage.py -v",
+    "runtimes": [
+      {
+        "interpreter": "WIN-03 stock Windows AMD64 CPython",
+        "python": "3.14.10",
+        "sqlite": "3.50.4",
+        "focused_passed": 9,
+        "regression_passed": 10,
+        "failed": 0,
+        "skipped": 0
+      },
+      {
+        "interpreter": "MSYS2 UCRT64 CPython",
+        "python": "3.14.7",
+        "sqlite": "3.53.4",
+        "focused_passed": 9,
+        "regression_passed": 10,
+        "failed": 0,
+        "skipped": 0
+      }
+    ],
+    "checks": {
+      "ordinary_store_remains_v1_until_first_capture": true,
+      "first_capture_migrates_transactionally_to_v2": true,
+      "real_sqlite_full_preserves_preexisting_v1_bytes": true,
+      "metadata_write_error_reverts_new_blob_and_migration": true,
+      "same_vault_duplicate_preserves_database_bytes": true,
+      "concurrent_first_capture_creates_one_digest": true,
+      "captures_do_not_create_versions_revisions_or_fts_rows": true,
+      "same_digest_in_other_vault_remains_independent": true,
+      "v1_and_v2_backup_restore_preserve_exact_data": true,
+      "invalid_metadata_corrupt_blob_and_orphan_refused": true,
+      "future_and_mismatched_schema_refused_without_writes": true
+    },
+    "sha256": {
+      "src/financial_assistant/vault_storage.py": "456445d165f099af035e438e87dc197f56c290dda27fb43f4a4c5d425f21f748",
+      "src/financial_assistant/vault_backup.py": "83298619effb41071e79c9345fe487329beb27556878babdd2fe1c15bb5d693a",
+      "spikes/windows_11/test_vault_capture.py": "ea4310621d7adaca089b6ed6165abe575357dd2eae4d1ab5d0a0b73444c84064"
+    }
+  },
+  "prior_regression": {
+    "d0_five_operations_passed": true,
+    "model_calls": 0
+  },
+  "frozen_pins": [
+    {
+      "manifest": "evaluation/protocols/kp3_eval_v1/freeze-manifest.json",
+      "matching": 134
+    },
+    {
+      "manifest": "data/releases/kp3_rc1/manifest.json",
+      "matching": 329
+    }
+  ]
+}
